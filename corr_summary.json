@@ -1,0 +1,16 @@
+{
+  "overlap_start": "2021-05-11",
+  "overlap_end": "2026-09-27",
+  "n_days": 1966,
+  "full_corr": 0.5809680651323575,
+  "roll30_mean": 0.6827831740397514,
+  "roll30_latest": 0.810830840656846,
+  "roll90_mean": 0.6529751035088974,
+  "roll90_latest": 0.6752971125913426,
+  "shib_first": 3.466e-05,
+  "shib_last": 5.91e-06,
+  "shib_ath_date": "2021-10-27",
+  "shib_ath": 7.906e-05,
+  "btc_first": 56670.02,
+  "btc_last": 84500.01
+}

@@ -1,0 +1,230 @@
+{
+  "generated_at_kst": "2026-09-27",
+  "timezone_note": "Event dates are calendar dates as reported by cited sources. Prices never invented — only from Binance SHIBUSDT 1d klines CSV.",
+  "price_data": {
+    "symbol": "SHIBUSDT",
+    "source": "https://data-api.binance.vision/api/v3/klines",
+    "interval": "1d",
+    "csv": "shib_usdt_1d.csv",
+    "first_candle_utc": "2021-05-10",
+    "last_candle_utc": "2026-09-27",
+    "n_candles": 1967
+  },
+  "disclaimer_ko": "상관관계는 인과가 아님. 뉴스·가격 수치는 인용 소스와 Binance CSV에만 기반하며 창작하지 않음.",
+  "event_count": 15,
+  "events": [
+    {
+      "id": "binance-shibusdt-listing",
+      "title_ko": "바이낸스 SHIB/USDT·SHIB/BUSD 상장(Innovation Zone)",
+      "title_en": "Binance lists SHIB/USDT & SHIB/BUSD",
+      "start": "2021-05-10",
+      "end": "2021-05-10",
+      "category": "exchange",
+      "severity": 5,
+      "summary_ko": "바이낸스 Innovation Zone에서 SHIB/USDT·SHIB/BUSD 거래 개시(약 11:00 UTC). 이 패키지 SHIB 일봉 시계열의 시작점. CZ는 'super high risk' 경고.",
+      "sources": [
+        "https://cryptopotato.com/binance-to-list-doges-inspired-shiba-inu-shib-spikes-70-immediately-to-new-ath/",
+        "https://decrypt.co/70432/binance-dogecoin-rival-shib-cz-warns-high-risk",
+        "https://data-api.binance.vision/api/v3/klines?symbol=SHIBUSDT&interval=1d&startTime=1620604800000&limit=1"
+      ]
+    },
+    {
+      "id": "vitalik-shib-india-donation",
+      "title_ko": "비탈릭, 인도 COVID 구호에 ~50조 SHIB 기부",
+      "title_en": "Vitalik donates ~50T SHIB to India COVID relief",
+      "start": "2021-05-12",
+      "end": "2021-05-12",
+      "category": "burn_supply",
+      "severity": 5,
+      "summary_ko": "이더리움 공동창업자 비탈릭 부테린이 India COVID-Crypto Relief Fund에 약 50.7조 SHIB(당시 보도 ~$1B 규모)를 이전. 창립 시 공급의 절반이 그의 지갑에 할당된 뒤의 조치.",
+      "sources": [
+        "https://techcrunch.com/2021/05/12/vitalik-buterin-donates-1-billion-worth-of-meme-coins-to-india-covid-relief-fund/",
+        "https://decrypt.co/71107/ethereum-co-founder-vitalik-buterin-burns-6-74-billion-in-shiba-inu"
+      ]
+    },
+    {
+      "id": "vitalik-shib-burn",
+      "title_ko": "비탈릭, ~410조 SHIB를 소각 주소로 이전",
+      "title_en": "Vitalik transfers ~410T SHIB to burn address",
+      "start": "2021-05-16",
+      "end": "2021-05-16",
+      "category": "burn_supply",
+      "severity": 5,
+      "summary_ko": "잔여 보유분의 약 90%인 약 410.24조 SHIB를 0xdead… 주소로 이전(사실상 유통 제외). 본인은 'locus of power'가 되고 싶지 않다고 설명. 당시 보도 가치 약 $6.7B.",
+      "sources": [
+        "https://decrypt.co/71107/ethereum-co-founder-vitalik-buterin-burns-6-74-billion-in-shiba-inu",
+        "https://cryptoslate.com/heres-why-ethereums-vitalik-buterin-burned-7-billion-in-shiba-inu-shib/"
+      ]
+    },
+    {
+      "id": "shibaswap-launch",
+      "title_ko": "ShibaSwap DEX 출시",
+      "title_en": "ShibaSwap launch",
+      "start": "2021-07-07",
+      "end": "2021-07-07",
+      "category": "ecosystem",
+      "severity": 4,
+      "summary_ko": "SHIB 생태계 DEX ShibaSwap 출시. 유동성·스테이킹 및 BONE 거버넌스/보상 토큰이 본격화.",
+      "sources": [
+        "https://dailycoin.com/shiba-inu-coin-history-timeline-key-moments/",
+        "http://www.currencies.ru/shiba-inu-shib-dex-shibaswap-exceeds-15b-tvl-adds-three-21071302004137.htm"
+      ]
+    },
+    {
+      "id": "coinbase-pro-shib",
+      "title_ko": "Coinbase Pro SHIB 거래 개시",
+      "title_en": "Coinbase Pro lists SHIB",
+      "start": "2021-09-09",
+      "end": "2021-09-09",
+      "category": "exchange",
+      "severity": 5,
+      "summary_ko": "6월 예고 후 기술 이슈로 지연됐던 Coinbase Pro SHIB 거래가 9/9(09:00 PT 이후) 개시. 미국 대형 거래소 접근성 확대.",
+      "sources": [
+        "https://www.coinbase.com/blog/chiliz-chz-keep-network-keep-and-shiba-inu-shib-are-launching-on-coinbase-pro",
+        "https://www.theblock.co/post/117079/coinbase-pro-adds-memecoin-shiba-inu-following-on-from-dogecoin"
+      ]
+    },
+    {
+      "id": "coinbase-retail-shib",
+      "title_ko": "Coinbase 일반(웹·앱) SHIB 상장",
+      "title_en": "Coinbase retail (web/app) lists SHIB",
+      "start": "2021-09-16",
+      "end": "2021-09-16",
+      "category": "exchange",
+      "severity": 5,
+      "summary_ko": "Coinbase.com 및 iOS/Android 앱에서 SHIB 거래·보관 가능. 소매 접근성 확대 국면(일봉상 SHIB 급등일과 겹침).",
+      "sources": [
+        "https://www.coinbase.com/th/blog/shiba-inu-shib-is-now-available-on-coinbase",
+        "https://cryptobriefing.com/shiba-inu-token-is-up-25-following-coinbase-listing/"
+      ]
+    },
+    {
+      "id": "shib-ath-2021",
+      "title_ko": "SHIB 사상 최고가 구간(바이낸스 일봉)",
+      "title_en": "SHIB all-time high window (Binance daily)",
+      "start": "2021-10-27",
+      "end": "2021-10-28",
+      "category": "markets",
+      "severity": 5,
+      "summary_ko": "바이낸스 SHIBUSDT 일봉 종가 기준 ATH는 2021-10-27(0.00007906). 소셜·상장 열기·알트 강세가 겹친 구간. CoinGecko 등 타 소스는 고점을 더 높게 표기하기도 함(거래소·집계 차이).",
+      "sources": [
+        "https://data-api.binance.vision/api/v3/klines?symbol=SHIBUSDT&interval=1d",
+        "https://coinjuice.com/research-hub/shib-price-history-launch-to-ath-analysis"
+      ]
+    },
+    {
+      "id": "robinhood-shib",
+      "title_ko": "Robinhood SHIB(및 SOL·MATIC·COMP) 상장",
+      "title_en": "Robinhood lists SHIB (with SOL, MATIC, COMP)",
+      "start": "2022-04-12",
+      "end": "2022-04-12",
+      "category": "exchange",
+      "severity": 4,
+      "summary_ko": "Robinhood Crypto에서 COMP·MATIC·SOL·SHIB 매매 개시(공식 뉴스룸 2022-04-12).",
+      "sources": [
+        "https://www.robinhood.com/us/en/newsroom/robinhood-lists-four-new-crypto-assets",
+        "https://www.nasdaq.com/articles/breaking:-shiba-inu-is-now-listed-on-robinhood.-should-you-buy"
+      ]
+    },
+    {
+      "id": "puppynet-beta",
+      "title_ko": "Shibarium 공개 베타 PuppyNet 개시",
+      "title_en": "Shibarium PuppyNet public beta live",
+      "start": "2023-03-11",
+      "end": "2023-03-11",
+      "category": "ecosystem",
+      "severity": 3,
+      "summary_ko": "Shibarium L2의 공개 베타 테스트넷 PuppyNet이 라이브. 메인넷 전 개발·커뮤니티 시험 단계.",
+      "sources": [
+        "https://dailyhodl.com/2023/03/11/shiba-inus-highly-anticipated-shibarium-officially-launches-in-beta-form-heres-how-to-test-the-ethereum-scaling-protocol/",
+        "https://coingape.com/shibarium-news-puppynet-early-public-beta-release-shiba-inu/"
+      ]
+    },
+    {
+      "id": "shibarium-mainnet",
+      "title_ko": "Shibarium 메인넷 런칭·브리지 혼선",
+      "title_en": "Shibarium mainnet launch & bridge disruption",
+      "start": "2023-08-16",
+      "end": "2023-08-17",
+      "category": "ecosystem",
+      "severity": 5,
+      "summary_ko": "ETH L2 Shibarium 메인넷 공개. 직후 트래픽 폭주로 네트워크/브리지 장애 보도(PeckShield 등: ~956 ETH 등 브리지에 묶임). 팀은 자금 안전·스케일링 필요를 강조.",
+      "sources": [
+        "https://www.coindesk.com/tech/2023/08/16/shiba-inus-ethereum-layer-2-blockchain-shibarium-goes-live-amid-push-for-defi-growth",
+        "https://www.globenewswire.com/news-release/2023/08/16/2726831/0/en/Mainnet-Launch-for-SHIB-s-Ethereum-Layer-2-Blockchain-Shibarium-as-Foundation-Strives-for-a-More-Decentralized-and-Equitable-World.html",
+        "https://beincrypto.com/shiba-inu-shibarium-launch-problems-1-7m-eth-stuck-bridge/",
+        "https://cointelegraph.com/news/shibarium-denies-bridge-issues-calls-it-fud"
+      ]
+    },
+    {
+      "id": "shibarium-bridge-restore",
+      "title_ko": "Shibarium 브리지 재개·기능 복구",
+      "title_en": "Shibarium bridge restored / fully functional",
+      "start": "2023-08-28",
+      "end": "2023-08-28",
+      "category": "ecosystem",
+      "severity": 4,
+      "summary_ko": "런칭 후 중단됐던 브리지 출금 등이 복구되며 'fully functional'로 보도. 모니터링·페일세이프 강화 후 재개.",
+      "sources": [
+        "https://www.coindesk.com/tech/2023/08/28/shiba-inus-highly-anticipated-shibarium-bridge-is-now-fully-functional",
+        "https://cointelegraph.com/news/shibarium-wallets-reach-milestone-developers-relaunch-bridge"
+      ]
+    },
+    {
+      "id": "shibtorch-burn-portal",
+      "title_ko": "ShibTorch 커뮤니티 소각 포털 메인넷 가동",
+      "title_en": "ShibTorch burn portal live on Shibarium",
+      "start": "2024-08-16",
+      "end": "2024-08-16",
+      "category": "burn_supply",
+      "severity": 4,
+      "summary_ko": "Shibarium EIP-1559 기반 수수료의 BONE을 SHIB로 스왑 후 소각하는 ShibTorch 포털이 메인넷에 오픈(공식 The Shib Daily 등).",
+      "sources": [
+        "https://news.shib.io/2024/08/16/shibtorch-ignites-community-driven-shib-burning-now-live-on-shibarium/",
+        "https://thecryptobasic.com/2024/08/17/every-transaction-to-burn-shiba-inu-as-long-awaited-shib-burn-portal-goes-live/"
+      ]
+    },
+    {
+      "id": "trowe-active-crypto-s1",
+      "title_ko": "T. Rowe Price Active Crypto ETF(S-1) — SHIB 적격자산 포함",
+      "title_en": "T. Rowe Price Active Crypto ETF S-1 (SHIB eligible)",
+      "start": "2025-10-22",
+      "end": "2025-10-22",
+      "category": "etf_reg",
+      "severity": 4,
+      "summary_ko": "T. Rowe Price Active Crypto ETF Form S-1 제출(2025-10-22). 단독 SHIB ETF가 아니라 복수 토큰 액티브 상품이며 SHIB는 적격(eligible) 자산 목록에 포함. 실제 편입은 운용 재량.",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/2089855/000199937125015832/activecrypto-s1_102225.htm",
+        "https://www.sec.gov/Archives/edgar/data/2089855/000199937125015832/0001999371-25-015832-index.htm"
+      ]
+    },
+    {
+      "id": "tknz-sec-approval",
+      "title_ko": "SEC, NYSE Arca TKNZ(Active Crypto ETF) 상장 승인",
+      "title_en": "SEC approves NYSE Arca listing of TKNZ",
+      "start": "2026-06-17",
+      "end": "2026-06-17",
+      "category": "etf_reg",
+      "importance": 4,
+      "summary_ko": "Federal Register/SEC 문서상 T. Rowe Price Active Crypto ETF 상장 규칙변경 승인(2026-06-17). SHIB 단독 ETF 승인으로 오해하면 안 됨 — 멀티토큰 액티브 ETP.",
+      "sources": [
+        "https://www.federalregister.gov/documents/2026/06/17/2026-12160/self-regulatory-organizations-nyse-arca-inc-order-granting-approval-of-a-proposed-rule-change-as",
+        "https://www.sec.gov/files/rules/sro/nysearca/2026/34-105681.pdf"
+      ]
+    },
+    {
+      "id": "tknz-trading-start",
+      "title_ko": "TKNZ(T. Rowe Active Crypto) 거래 개시 — SHIB 적격",
+      "title_en": "TKNZ begins trading; SHIB among eligible assets",
+      "start": "2026-07-16",
+      "end": "2026-07-16",
+      "category": "etf_reg",
+      "importance": 4,
+      "summary_ko": "산업 첫 액티브 멀티토큰 현물 크립토 ETP로 보도된 TKNZ 거래 개시. 적격 자산에 SHIB 포함(보유 보장 아님). SEC 8-K/prospectus 보충서류 참고.",
+      "sources": [
+        "https://investors.troweprice.com/news-releases/news-release-details/t-rowe-price-debuts-industrys-first-actively-managed-multi-token",
+        "https://www.sec.gov/Archives/edgar/data/2089855/000199937126014983/tknz_8k-071426.htm"
+      ]
+    }
+  ]
+}
