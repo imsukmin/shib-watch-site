@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0b1020" />
+<title>SEC, NYSE Arca TKNZ(Active Crypto ETF) 상장 승인 · 사건 자세히</title>
+<style>
+
+  :root {
+    --bg: #0b1020;
+    --bg2: #121933;
+    --card: #161e3a;
+    --card2: #1c2648;
+    --border: rgba(255,255,255,0.08);
+    --text: #e8ecf7;
+    --muted: #8b95b5;
+    --accent: #f39c12;
+    --shib: #e74c3c;
+    --btc: #f39c12;
+    --chip: #243056;
+    --radius: 14px;
+    --shadow: 0 8px 24px rgba(0,0,0,0.28);
+    --font: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font); }
+  body { min-height: 100vh; line-height: 1.55; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 16px 14px 48px; }
+  .hero {
+    background: linear-gradient(145deg, #182044 0%, #10162d 60%, #0d1328 100%);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 18px 16px 16px;
+    box-shadow: var(--shadow);
+    margin-bottom: 14px;
+  }
+  .hero h1 {
+    margin: 8px 0 6px;
+    font-size: 1.28rem;
+    letter-spacing: -0.02em;
+    font-weight: 750;
+    line-height: 1.35;
+  }
+  .hero .sub { color: var(--muted); font-size: 0.86rem; margin: 0 0 12px; }
+  .nav-links { display: flex; flex-wrap: wrap; gap: 8px; }
+  .nav-links a {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--chip); color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 999px; padding: 7px 12px;
+    font-size: 0.82rem; font-weight: 600;
+    text-decoration: none;
+  }
+  .nav-links a.btc { border-color: rgba(243,156,18,0.35); color: #ffc56a; }
+  .nav-links a.shib { border-color: rgba(231,76,60,0.35); color: #ff8f83; }
+  .nav-links a.gh { color: var(--muted); }
+  .chip {
+    display: inline-block; font-size: 0.68rem; font-weight: 700;
+    padding: 2px 7px; border-radius: 999px; background: var(--chip); color: #c7d0ee;
+  }
+  .chip.geo { background: rgba(231,76,60,0.18); color: #ff9b91; }
+  .chip.fed { background: rgba(52,152,219,0.18); color: #8fd0ff; }
+  .chip.crypto, .chip.exchange { background: rgba(155,89,186,0.18); color: #d5a8ff; }
+  .chip.policy, .chip.etf_reg { background: rgba(26,188,156,0.18); color: #7ff0d6; }
+  .chip.markets { background: rgba(243,156,18,0.18); color: #ffd28a; }
+  .chip.burn_supply, .chip.ecosystem { background: rgba(231,76,60,0.18); color: #ffb0a8; }
+  .chip.covid { background: rgba(46,204,113,0.18); color: #8dffb8; }
+  .chip.btctag { background: rgba(243,156,18,0.22); color: #ffd28a; }
+  .chip.shibtag { background: rgba(231,76,60,0.22); color: #ffb0a8; }
+  .meta-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 4px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 14px;
+    box-shadow: var(--shadow);
+    margin-bottom: 12px;
+  }
+  .section-label {
+    color: var(--muted); font-size: 0.72rem; font-weight: 700;
+    letter-spacing: 0.06em; text-transform: uppercase; margin: 0 0 8px;
+  }
+  .article-body h2 {
+    margin: 18px 0 8px; font-size: 1.02rem; font-weight: 720;
+    color: #ffd28a;
+  }
+  .article-body h2:first-child { margin-top: 0; }
+  .article-body p {
+    margin: 0 0 12px; color: var(--text); font-size: 0.92rem;
+  }
+  .article-body p:last-child { margin-bottom: 0; }
+  .phases { margin: 0; padding: 0; list-style: none; }
+  .phases li {
+    border-left: 2px solid rgba(243,156,18,0.35);
+    padding: 6px 0 6px 12px; margin-bottom: 6px;
+  }
+  .phases .pdate { color: var(--muted); font-size: 0.75rem; font-weight: 650; }
+  .phases .ptitle { font-weight: 700; font-size: 0.88rem; margin: 2px 0; }
+  .phases .pnote { color: var(--muted); font-size: 0.8rem; }
+  .sources { list-style: none; margin: 0; padding: 0; }
+  .sources li {
+    margin-bottom: 8px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .sources a { font-weight: 650; font-size: 0.88rem; word-break: break-word; }
+  .sources .url {
+    display: block; color: var(--muted); font-size: 0.72rem;
+    margin-top: 4px; word-break: break-all;
+  }
+  .footer {
+    margin-top: 22px; padding: 12px; color: var(--muted); font-size: 0.72rem;
+    border-top: 1px solid var(--border); text-align: center;
+  }
+  .back-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+  .back-row a {
+    background: var(--chip); color: var(--text); border: 1px solid var(--border);
+    border-radius: 999px; padding: 7px 12px; font-size: 0.82rem; font-weight: 600;
+    text-decoration: none;
+  }
+
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="meta-row">
+      <span class="chip shibtag">시바</span>
+      <span class="chip etf_reg">ETF·규제</span>
+      <span class="chip">2026-06-17</span>
+      
+    </div>
+    <h1>SEC, NYSE Arca TKNZ(Active Crypto ETF) 상장 승인</h1>
+    <p class="sub">Federal Register/SEC 문서상 T. Rowe Price Active Crypto ETF 상장 규칙변경 승인(2026-06-17). SHIB 단독 ETF 승인으로 오해하면 안 됨 — 멀티토큰 액티브 ETP.</p>
+    <nav class="nav-links" aria-label="페이지 이동">
+      <a href="../index.html">대시보드</a>
+      <a class="btc" href="../chart.html">비트코인 차트</a>
+      <a class="shib" href="../shib.html">시바 비교</a>
+      <a class="gh" href="https://github.com/imsukmin/shib-watch-site" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <div class="back-row">
+    <a href="../index.html">← 대시보드</a>
+    <a href="../chart.html">비트코인 차트</a>
+    <a href="../shib.html">시바 비교</a>
+  </div>
+
+  <article class="card article-body">
+    <div class="section-label">자세히 읽기</div>
+    <h2>배경</h2>
+<p>S-1 제출 이후, 거래소 상장 규칙 변경이 SEC·연방관보 절차를 통과해야 실제 상장에 가까워집니다.</p>
+<h2>무슨 일</h2>
+<p>2026년 6월 17일 Federal Register/SEC 문서상 NYSE Arca의 T. Rowe Price Active Crypto ETF 관련 규칙 변경이 승인됐습니다. 시바만의 ETF 승인이 아니라, 여러 토큰을 담을 수 있는 액티브 ETP입니다.</p>
+<h2>시장·가격에 미친 영향</h2>
+<p>제도적 허들이 낮아졌다는 신호입니다. 그래도 구성 자산·비중은 운용사가 정하므로, SHIB 편입·비중을 단정할 수 없습니다.</p>
+  </article>
+
+  <section class="card">
+    <div class="section-label">출처</div>
+    <ul class="sources"><li><a href="https://www.federalregister.gov/documents/2026/06/17/2026-12160/self-regulatory-organizations-nyse-arca-inc-order-granting-approval-of-a-proposed-rule-change-as" target="_blank" rel="noopener noreferrer">Federal Register — NYSE Arca order granting approval (Active Crypto ETF)</a><span class="url">https://www.federalregister.gov/documents/2026/06/17/2026-12160/self-regulatory-organizations-nyse-arca-inc-order-granting-approval-of-a-proposed-rule-change-as</span></li><li><a href="https://www.sec.gov/files/rules/sro/nysearca/2026/34-105681.pdf" target="_blank" rel="noopener noreferrer">SEC — Order approving NYSE Arca rule change (TKNZ / Active Crypto ETF)</a><span class="url">https://www.sec.gov/files/rules/sro/nysearca/2026/34-105681.pdf</span></li></ul>
+  </section>
+
+  <footer class="footer">
+    숫자·날짜·주장은 위 출처와 바이낸스 공개 가격 CSV에만 기반합니다. 출처에 없는 내용은 적지 않았습니다. 투자 조언이 아닙니다.
+  </footer>
+</div>
+</body>
+</html>

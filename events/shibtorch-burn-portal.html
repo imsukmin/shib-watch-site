@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0b1020" />
+<title>ShibTorch 커뮤니티 소각 포털 메인넷 가동 · 사건 자세히</title>
+<style>
+
+  :root {
+    --bg: #0b1020;
+    --bg2: #121933;
+    --card: #161e3a;
+    --card2: #1c2648;
+    --border: rgba(255,255,255,0.08);
+    --text: #e8ecf7;
+    --muted: #8b95b5;
+    --accent: #f39c12;
+    --shib: #e74c3c;
+    --btc: #f39c12;
+    --chip: #243056;
+    --radius: 14px;
+    --shadow: 0 8px 24px rgba(0,0,0,0.28);
+    --font: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font); }
+  body { min-height: 100vh; line-height: 1.55; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 16px 14px 48px; }
+  .hero {
+    background: linear-gradient(145deg, #182044 0%, #10162d 60%, #0d1328 100%);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 18px 16px 16px;
+    box-shadow: var(--shadow);
+    margin-bottom: 14px;
+  }
+  .hero h1 {
+    margin: 8px 0 6px;
+    font-size: 1.28rem;
+    letter-spacing: -0.02em;
+    font-weight: 750;
+    line-height: 1.35;
+  }
+  .hero .sub { color: var(--muted); font-size: 0.86rem; margin: 0 0 12px; }
+  .nav-links { display: flex; flex-wrap: wrap; gap: 8px; }
+  .nav-links a {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--chip); color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 999px; padding: 7px 12px;
+    font-size: 0.82rem; font-weight: 600;
+    text-decoration: none;
+  }
+  .nav-links a.btc { border-color: rgba(243,156,18,0.35); color: #ffc56a; }
+  .nav-links a.shib { border-color: rgba(231,76,60,0.35); color: #ff8f83; }
+  .nav-links a.gh { color: var(--muted); }
+  .chip {
+    display: inline-block; font-size: 0.68rem; font-weight: 700;
+    padding: 2px 7px; border-radius: 999px; background: var(--chip); color: #c7d0ee;
+  }
+  .chip.geo { background: rgba(231,76,60,0.18); color: #ff9b91; }
+  .chip.fed { background: rgba(52,152,219,0.18); color: #8fd0ff; }
+  .chip.crypto, .chip.exchange { background: rgba(155,89,186,0.18); color: #d5a8ff; }
+  .chip.policy, .chip.etf_reg { background: rgba(26,188,156,0.18); color: #7ff0d6; }
+  .chip.markets { background: rgba(243,156,18,0.18); color: #ffd28a; }
+  .chip.burn_supply, .chip.ecosystem { background: rgba(231,76,60,0.18); color: #ffb0a8; }
+  .chip.covid { background: rgba(46,204,113,0.18); color: #8dffb8; }
+  .chip.btctag { background: rgba(243,156,18,0.22); color: #ffd28a; }
+  .chip.shibtag { background: rgba(231,76,60,0.22); color: #ffb0a8; }
+  .meta-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 4px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 14px;
+    box-shadow: var(--shadow);
+    margin-bottom: 12px;
+  }
+  .section-label {
+    color: var(--muted); font-size: 0.72rem; font-weight: 700;
+    letter-spacing: 0.06em; text-transform: uppercase; margin: 0 0 8px;
+  }
+  .article-body h2 {
+    margin: 18px 0 8px; font-size: 1.02rem; font-weight: 720;
+    color: #ffd28a;
+  }
+  .article-body h2:first-child { margin-top: 0; }
+  .article-body p {
+    margin: 0 0 12px; color: var(--text); font-size: 0.92rem;
+  }
+  .article-body p:last-child { margin-bottom: 0; }
+  .phases { margin: 0; padding: 0; list-style: none; }
+  .phases li {
+    border-left: 2px solid rgba(243,156,18,0.35);
+    padding: 6px 0 6px 12px; margin-bottom: 6px;
+  }
+  .phases .pdate { color: var(--muted); font-size: 0.75rem; font-weight: 650; }
+  .phases .ptitle { font-weight: 700; font-size: 0.88rem; margin: 2px 0; }
+  .phases .pnote { color: var(--muted); font-size: 0.8rem; }
+  .sources { list-style: none; margin: 0; padding: 0; }
+  .sources li {
+    margin-bottom: 8px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .sources a { font-weight: 650; font-size: 0.88rem; word-break: break-word; }
+  .sources .url {
+    display: block; color: var(--muted); font-size: 0.72rem;
+    margin-top: 4px; word-break: break-all;
+  }
+  .footer {
+    margin-top: 22px; padding: 12px; color: var(--muted); font-size: 0.72rem;
+    border-top: 1px solid var(--border); text-align: center;
+  }
+  .back-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+  .back-row a {
+    background: var(--chip); color: var(--text); border: 1px solid var(--border);
+    border-radius: 999px; padding: 7px 12px; font-size: 0.82rem; font-weight: 600;
+    text-decoration: none;
+  }
+
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="meta-row">
+      <span class="chip shibtag">시바</span>
+      <span class="chip burn_supply">소각</span>
+      <span class="chip">2024-08-16</span>
+      <span class="chip">★★★★</span>
+    </div>
+    <h1>ShibTorch 커뮤니티 소각 포털 메인넷 가동</h1>
+    <p class="sub">Shibarium EIP-1559 기반 수수료의 BONE을 SHIB로 스왑 후 소각하는 ShibTorch 포털이 메인넷에 오픈(공식 The Shib Daily 등).</p>
+    <nav class="nav-links" aria-label="페이지 이동">
+      <a href="../index.html">대시보드</a>
+      <a class="btc" href="../chart.html">비트코인 차트</a>
+      <a class="shib" href="../shib.html">시바 비교</a>
+      <a class="gh" href="https://github.com/imsukmin/shib-watch-site" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <div class="back-row">
+    <a href="../index.html">← 대시보드</a>
+    <a href="../chart.html">비트코인 차트</a>
+    <a href="../shib.html">시바 비교</a>
+  </div>
+
+  <article class="card article-body">
+    <div class="section-label">자세히 읽기</div>
+    <h2>배경</h2>
+<p>시바 커뮤니티는 소각(유통량 줄이기)을 꾸준히 추진해 왔습니다. Shibarium 수수료 구조와 연결한 자동·커뮤니티 소각이 목표였습니다.</p>
+<h2>무슨 일</h2>
+<p>2024년 8월 16일 ShibTorch 포털이 메인넷에 열렸습니다. Shibarium의 EIP-1559 기반 수수료에서 나오는 BONE을 SHIB로 바꾼 뒤 소각하는 방식입니다. 공식 The Shib Daily 등이 전했습니다.</p>
+<h2>시장·가격에 미친 영향</h2>
+<p>거래가 늘수록 소각이 늘어날 수 있다는 구조적 이야기의 출발점입니다. 실제 소각량·가격 효과는 시점마다 다르므로 공시·대시보드를 확인해야 합니다.</p>
+  </article>
+
+  <section class="card">
+    <div class="section-label">출처</div>
+    <ul class="sources"><li><a href="https://news.shib.io/2024/08/16/shibtorch-ignites-community-driven-shib-burning-now-live-on-shibarium/" target="_blank" rel="noopener noreferrer">ShibTorch Ignites: Community-Driven SHIB Burning Now Live on Shibarium – The Shib Daily</a><span class="url">https://news.shib.io/2024/08/16/shibtorch-ignites-community-driven-shib-burning-now-live-on-shibarium/</span></li><li><a href="https://thecryptobasic.com/2024/08/17/every-transaction-to-burn-shiba-inu-as-long-awaited-shib-burn-portal-goes-live/" target="_blank" rel="noopener noreferrer">Every Transaction to Burn Shiba Inu as Long Awaited SHIB Burn Portal Goes Live</a><span class="url">https://thecryptobasic.com/2024/08/17/every-transaction-to-burn-shiba-inu-as-long-awaited-shib-burn-portal-goes-live/</span></li></ul>
+  </section>
+
+  <footer class="footer">
+    숫자·날짜·주장은 위 출처와 바이낸스 공개 가격 CSV에만 기반합니다. 출처에 없는 내용은 적지 않았습니다. 투자 조언이 아닙니다.
+  </footer>
+</div>
+</body>
+</html>

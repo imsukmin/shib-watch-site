@@ -114,6 +114,10 @@
   .chip.btctag { background: rgba(243,156,18,0.22); color: #ffd28a; }
   .event-title { font-weight: 700; font-size: 0.92rem; margin: 2px 0 4px; }
   .event-sum { color: var(--muted); font-size: 0.8rem; }
+  .event-more {
+    display: inline-block; margin-top: 8px;
+    font-size: 0.78rem; font-weight: 700; color: var(--accent);
+  }
   .sev { margin-left: auto; color: var(--muted); font-size: 0.7rem; }
   .footer {
     margin-top: 22px; padding: 12px; color: var(--muted); font-size: 0.72rem;
@@ -199,6 +203,7 @@ function renderEvents() {
       </div>
       <div class="event-title">${e.title_ko}</div>
       <div class="event-sum">${e.summary_ko || ''}</div>
+      ${e.id ? `<a class="event-more" href="events/${e.id}.html">자세히 읽기 →</a>` : ''}
     </article>`;
   }).join('');
 }

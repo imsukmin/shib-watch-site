@@ -15,9 +15,13 @@
       "severity": 2,
       "summary_ko": "이 패키지 가격 시계열의 시작점. Binance 공개 klines API에서 BTCUSDT 일봉이 제공되는 최초일(2017-08-17 UTC).",
       "sources": [
-        "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&startTime=0&limit=1"
+        {
+          "title": "Binance Vision — BTCUSDT 일봉 klines API",
+          "url": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&startTime=0&limit=1"
+        }
       ],
-      "phases": []
+      "phases": [],
+      "body_ko": "배경\n이 사이트에서 쓰는 비트코인 가격 기록은 바이낸스 공개 데이터에서 가져옵니다. 하루 단위(일봉) 가격이 언제부터 있는지에 따라, 차트와 분석의 시작 날짜가 정해집니다.\n\n무슨 일\n공개 klines API를 기준으로, BTC/USDT 하루 가격이 제공되기 시작한 날은 2017-08-17(UTC)입니다. 그래서 이 패키지의 비트코인 시계열도 그날부터 시작합니다.\n\n시장·가격에 미친 영향\n이 날짜 자체는 ‘가격이 급등했다’는 뉴스 사건이라기보다, 데이터 시작점입니다. 이후 차트·사건 비교는 모두 이 시작일 이후의 바이낸스 가격만 사용합니다."
     },
     {
       "id": "btc-ath-2017",
@@ -29,10 +33,17 @@
       "severity": 4,
       "summary_ko": "ICO 붐 속 비트코인이 약 $19,000–20,000대 사상 최고치를 기록한 뒤 급락하며 2018 암호화폐 겨울로 전환.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Cryptocurrency_bubble",
-        "https://www.kraken.com/au/learn/bitcoin-price-history"
+        {
+          "title": "Cryptocurrency bubble",
+          "url": "https://en.wikipedia.org/wiki/Cryptocurrency_bubble"
+        },
+        {
+          "title": "Bitcoin price history: Timeline of its evolution [2009-2024]",
+          "url": "https://www.kraken.com/au/learn/bitcoin-price-history"
+        }
       ],
-      "phases": []
+      "phases": [],
+      "body_ko": "배경\n2017년에는 ICO(신규 코인 모집) 열기가 크고, 암호화폐에 대한 관심이 빠르게 늘었습니다. 비트코인도 그 흐름 안에서 큰 상승을 겪었습니다.\n\n무슨 일\n같은 해 12월 17일 전후로 비트코인이 약 1만 9천~2만 달러대 사상 최고치 구간에 도달했다는 기록이 가격 역사 자료에 남습니다. 그 직후 가격은 크게 꺾이며 2018년의 긴 약세장으로 이어집니다.\n\n시장·가격에 미친 영향\n고점 이후 급락은 ‘암호화폐 겨울’로 불리는 약세장의 출발점으로 자주 이야기됩니다. 이 구간의 숫자는 거래소·집계마다 조금 다를 수 있어, 이 사이트는 바이낸스 하루 종가 CSV와 인용 소스만 기준으로 합니다."
     },
     {
       "id": "crypto-winter-2018",
@@ -44,13 +55,28 @@
       "severity": 4,
       "summary_ko": "2017 고점 이후 장기간 약세. 연말 부근 일봉 종가가 $3,000대까지 하락한 구간으로, 규제·유동성 위축이 겹친 대표적 베어마켓.",
       "sources": [
-        "https://www.kraken.com/au/learn/bitcoin-price-history",
-        "https://bitcoincompleteguide.com/bitcoin-timeline/"
+        {
+          "title": "Bitcoin price history: Timeline of its evolution [2009-2024]",
+          "url": "https://www.kraken.com/au/learn/bitcoin-price-history"
+        },
+        {
+          "title": "The Complete Bitcoin Timeline: 2008 to Today",
+          "url": "https://bitcoincompleteguide.com/bitcoin-timeline/"
+        }
       ],
       "phases": [
-        {"date": "2018-01-16", "title_ko": "1월 급락 구간", "note": "고점 직후 급락이 본격화."},
-        {"date": "2018-12-15", "title_ko": "연말 저점 부근", "note": "사이클 저점 형성기(차트 일봉 기준)."}
-      ]
+        {
+          "date": "2018-01-16",
+          "title_ko": "1월 급락 구간",
+          "note": "고점 직후 급락이 본격화."
+        },
+        {
+          "date": "2018-12-15",
+          "title_ko": "연말 저점 부근",
+          "note": "사이클 저점 형성기(차트 일봉 기준)."
+        }
+      ],
+      "body_ko": "배경\n2017년 말 고점 이후 시장 분위기는 급격히 식었습니다. 규제 논의와 거래·유동성 위축이 겹치며 장기간 하락이 이어졌습니다.\n\n무슨 일\n2018년 한 해 동안 비트코인은 고점 대비 큰 폭으로 밀렸고, 연말 부근에는 하루 종가가 3,000달러대까지 내려간 구간으로 정리됩니다. 이른바 ‘암호화폐 겨울’로 불리는 대표적 약세장입니다.\n\n시장·가격에 미친 영향\n긴 하락은 투자 심리와 거래 활동을 동시에 위축시켰습니다. 이후 회복까지 상당한 시간이 걸렸고, 이후 사이클을 이야기할 때 자주 비교 기준으로 쓰입니다."
     },
     {
       "id": "covid-crash-fed-2020",
@@ -62,15 +88,37 @@
       "severity": 5,
       "summary_ko": "팬데믹 공포로 글로벌 리스크자산이 급락. 이른바 '블랙 서스데이'(3/12) 전후 BTC도 큰 폭 하락. 연준은 3/3·3/15 긴급 인하로 사실상 0%대 금리를 복원하고 대규모 유동성 지원을 발표.",
       "sources": [
-        "https://www.federalreserve.gov/fomc/fundsrate.htm",
-        "https://www.kraken.com/au/learn/bitcoin-price-history",
-        "https://bitcoincompleteguide.com/bitcoin-timeline/"
+        {
+          "title": "Federal Reserve — Federal funds rate history",
+          "url": "https://www.federalreserve.gov/fomc/fundsrate.htm"
+        },
+        {
+          "title": "Bitcoin price history: Timeline of its evolution [2009-2024]",
+          "url": "https://www.kraken.com/au/learn/bitcoin-price-history"
+        },
+        {
+          "title": "The Complete Bitcoin Timeline: 2008 to Today",
+          "url": "https://bitcoincompleteguide.com/bitcoin-timeline/"
+        }
       ],
       "phases": [
-        {"date": "2020-03-03", "title_ko": "연준 긴급 50bp 인하", "note": "코로나 대응 첫 긴급 인하(목표 1.00–1.25%)."},
-        {"date": "2020-03-12", "title_ko": "블랙 서스데이급 급락", "note": "글로벌 패닉 매도 속 BTC 급락 보도."},
-        {"date": "2020-03-15", "title_ko": "연준 100bp 인하→0–0.25%", "note": "주말 긴급회의로 제로금리 복원·QE 확대."}
-      ]
+        {
+          "date": "2020-03-03",
+          "title_ko": "연준 긴급 50bp 인하",
+          "note": "코로나 대응 첫 긴급 인하(목표 1.00–1.25%)."
+        },
+        {
+          "date": "2020-03-12",
+          "title_ko": "블랙 서스데이급 급락",
+          "note": "글로벌 패닉 매도 속 BTC 급락 보도."
+        },
+        {
+          "date": "2020-03-15",
+          "title_ko": "연준 100bp 인하→0–0.25%",
+          "note": "주말 긴급회의로 제로금리 복원·QE 확대."
+        }
+      ],
+      "body_ko": "배경\n2020년 초 코로나19 확산으로 세계 금융시장이 큰 충격을 받았습니다. 주식·원자재 같은 위험자산과 함께 비트코인도 같은 방향으로 흔들렸습니다.\n\n무슨 일\n연준은 3월 3일 긴급으로 기준금리를 0.50%포인트 내렸고(목표 1.00–1.25%), 3월 12일 전후로는 ‘블랙 서스데이’급 패닉 매도 속에 비트코인도 크게 하락했다는 보도가 있습니다. 이어 3월 15일 주말 긴급회의로 금리를 사실상 0–0.25%로 되돌리고 대규모 유동성 지원을 발표했습니다.\n\n시장·가격에 미친 영향\n단기적으로는 급락이 컸지만, 이후 완화 정책과 유동성 확대가 이어지며 2020–21년 강세장의 배경으로 자주 인용됩니다. 금리·유동성 뉴스가 암호화폐에도 크게 영향을 준 대표 사례로 남습니다."
     },
     {
       "id": "btc-halving-2020",
@@ -82,10 +130,17 @@
       "severity": 4,
       "summary_ko": "블록 보상 12.5→6.25 BTC. 이후 기관 매수·유동성 확대와 맞물려 2020–21 강세장의 공급 측 배경으로 자주 인용.",
       "sources": [
-        "https://www.bit.com/knowledge-hub/bitcoin-cycle",
-        "https://bitcoincompleteguide.com/bitcoin-timeline/"
+        {
+          "title": "Bitcoin Cycles: The 4-Year Halving Pattern Explained",
+          "url": "https://www.bit.com/knowledge-hub/bitcoin-cycle"
+        },
+        {
+          "title": "The Complete Bitcoin Timeline: 2008 to Today",
+          "url": "https://bitcoincompleteguide.com/bitcoin-timeline/"
+        }
       ],
-      "phases": []
+      "phases": [],
+      "body_ko": "배경\n비트코인은 약 4년마다 ‘반감기’가 옵니다. 새로 만들어지는 코인 보상(블록 보상)이 절반으로 줄어드는 규칙입니다.\n\n무슨 일\n2020년 5월 11일 3차 반감기로 블록 보상이 12.5 BTC에서 6.25 BTC로 줄었습니다. 공급이 느려지는 시점으로, 이후 기관 매수·유동성 확대와 함께 이야기되는 경우가 많습니다.\n\n시장·가격에 미친 영향\n반감기만으로 가격이 바로 정해지는 것은 아닙니다. 다만 2020–21년 상승장을 설명할 때 공급 쪽 배경으로 자주 언급됩니다. 실제 가격 움직임은 수요·거시 환경과 함께 봐야 합니다."
     },
     {
       "id": "tesla-btc-buy-2021",
@@ -97,10 +152,17 @@
       "severity": 4,
       "summary_ko": "테슬라가 SEC 공시로 약 15억 달러 상당 BTC 매입과 향후 결제 수용 가능성을 밝히며 기관 채택 내러티브를 강화.",
       "sources": [
-        "https://apnews.com/article/tesla-buys-billion-bitcoin-061817c6795e75d1c3c9e9d6cfc4a911",
-        "https://techcrunch.com/2021/02/08/tesla-buys-1-5b-in-bitcoin-may-accept-the-cryptocurrency-as-payment-in-the-future/"
+        {
+          "title": "Tesla buys $1.5B in Bitcoin, will accept as payment soon",
+          "url": "https://apnews.com/article/tesla-buys-billion-bitcoin-061817c6795e75d1c3c9e9d6cfc4a911"
+        },
+        {
+          "title": "Tesla buys $1.5B in bitcoin, may accept the cryptocurrency as payment in the future",
+          "url": "https://techcrunch.com/2021/02/08/tesla-buys-1-5b-in-bitcoin-may-accept-the-cryptocurrency-as-payment-in-the-future/"
+        }
       ],
-      "phases": []
+      "phases": [],
+      "body_ko": "배경\n2021년 초에는 기업이 비트코인을 재무에 넣는지가 큰 관심사였습니다. ‘기관이 산다’는 이야기가 시장 분위기를 끌어올리는 시기였습니다.\n\n무슨 일\n테슬라는 SEC 공시로 약 15억 달러 상당의 비트코인을 매입했고, 앞으로 결제에도 받을 수 있다고 밝혔습니다. AP·TechCrunch 등 주요 매체가 이를 보도했습니다.\n\n시장·가격에 미친 영향\n대형 상장사의 매입 소식은 기관 채택 이야기에 힘을 실었습니다. 단기 가격 반응과 별개로, ‘기업도 산다’는 인식이 넓어진 이정표로 남습니다."
     },
     {
       "id": "china-crypto-ban-2021",
@@ -112,10 +174,17 @@
       "severity": 4,
       "summary_ko": "인민은행 등 당국이 암호화폐 관련 업무를 불법으로 규정·단속을 강화. 채굴·거래 단속이 이어지며 단기 가격·해시레이트에 충격.",
       "sources": [
-        "https://www.reuters.com/world/china/china-central-bank-vows-crackdown-cryptocurrency-trading-2021-09-24/",
-        "https://bitcoincompleteguide.com/bitcoin-timeline/"
+        {
+          "title": "Reuters — China central bank vows crackdown on cryptocurrency trading",
+          "url": "https://www.reuters.com/world/china/china-central-bank-vows-crackdown-cryptocurrency-trading-2021-09-24/"
+        },
+        {
+          "title": "The Complete Bitcoin Timeline: 2008 to Today",
+          "url": "https://bitcoincompleteguide.com/bitcoin-timeline/"
+        }
       ],
-      "phases": []
+      "phases": [],
+      "body_ko": "배경\n중국은 수년간 채굴·거래에 대한 규제를 강화해 왔습니다. 2021년에는 그 단속이 한층 분명히 ‘불법’ 규정으로 정리된 국면이 보도됐습니다.\n\n무슨 일\n2021년 9월 24일 전후, 인민은행 등 당국이 암호화폐 관련 업무를 불법으로 규정하고 단속을 강화한다는 소식이 나왔습니다. 로이터 등이 이를 전했습니다.\n\n시장·가격에 미친 영향\n채굴·거래 위축 우려로 단기 가격과 해시레이트(채굴 연산량)에 충격이 있었습니다. 이후 채굴 지역이 다른 나라로 옮겨가는 흐름과 함께 이야기됩니다."
     },
     {
       "id": "bito-futures-etf-2021",
@@ -127,10 +196,17 @@
       "severity": 3,
       "summary_ko": "ProShares Bitcoin Strategy ETF(BITO)가 NYSE Arca에서 거래 개시. 현물 ETF는 아직 불허이나, 규제된 ETF 형태로 BTC 노출을 제공한 이정표.",
       "sources": [
-        "https://www.proshares.com/press-releases/proshares-to-launch-the-first-u.s.-bitcoin-linked-etf-on-october-19",
-        "https://bitcoincompleteguide.com/bitcoin-timeline/"
+        {
+          "title": "ProShares to Launch the First U.S. Bitcoin-Linked ETF on October 19",
+          "url": "https://www.proshares.com/press-releases/proshares-to-launch-the-first-u.s.-bitcoin-linked-etf-on-october-19"
+        },
+        {
+          "title": "The Complete Bitcoin Timeline: 2008 to Today",
+          "url": "https://bitcoincompleteguide.com/bitcoin-timeline/"
+        }
       ],
-      "phases": []
+      "phases": [],
+      "body_ko": "배경\n미국에서 비트코인을 ‘규제된 펀드 상품’으로 사기 쉽게 만들려는 시도가 이어졌습니다. 현물 ETF는 아직 막혀 있던 시기입니다.\n\n무슨 일\n2021년 10월 19일 ProShares Bitcoin Strategy ETF(BITO)가 NYSE Arca에서 거래를 시작했습니다. 비트코인 선물에 연동된 상품으로, 미국 첫 비트코인 연계 ETF로 소개됐습니다.\n\n시장·가격에 미친 영향\n현물을 직접 담는 ETF는 아니었지만, 증권 계좌에서 BTC 노출을 얻는 길이 열렸다는 점에서 이정표로 평가됩니다. 이후 2024년 현물 ETF 승인으로 이어지는 과정의 앞단계로 자주 언급됩니다."
     },
     {
       "id": "btc-ath-2021",
@@ -142,10 +218,17 @@
       "severity": 4,
       "summary_ko": "기관 매수·유동성 호황 속 비트코인이 약 $69,000대 고점을 기록한 뒤 2022 약세로 전환.",
       "sources": [
-        "https://www.bit.com/knowledge-hub/bitcoin-cycle",
-        "https://bitcoincompleteguide.com/bitcoin-timeline/"
+        {
+          "title": "Bitcoin Cycles: The 4-Year Halving Pattern Explained",
+          "url": "https://www.bit.com/knowledge-hub/bitcoin-cycle"
+        },
+        {
+          "title": "The Complete Bitcoin Timeline: 2008 to Today",
+          "url": "https://bitcoincompleteguide.com/bitcoin-timeline/"
+        }
       ],
-      "phases": []
+      "phases": [],
+      "body_ko": "배경\n2020–21년에는 저금리·유동성 확대와 기관 매수 이야기가 겹치며 암호화폐 전반이 강세를 보였습니다.\n\n무슨 일\n2021년 11월 10일 전후 비트코인이 약 6만 9천 달러대 사이클 고점에 도달했다는 기록이 있습니다. 이후 2022년 약세장으로 전환됩니다.\n\n시장·가격에 미친 영향\n고점 이후 하락은 금리 인상, 대형 프로젝트·거래소 사고와 맞물리며 가팔라졌습니다. 사이클 고점을 말할 때 자주 인용되는 날짜입니다."
     },
     {
       "id": "fed-hiking-cycle-2022-23",
@@ -157,15 +240,37 @@
       "severity": 5,
       "summary_ko": "인플레 대응으로 2022-03-16 첫 인상 이후 약 16개월간 공격적 인상. 연방기금금리 목표 상단이 2023-07 5.25–5.50%까지 상승. 리스크자산·암호화폐에 강한 매크로 역풍.",
       "sources": [
-        "https://www.reuters.com/world/us/all-systems-go-feds-liftoff-us-interest-rates-2022-03-16/",
-        "https://www.federalreserve.gov/monetarypolicy/files/monetary20220316a1.pdf",
-        "https://www.federalreserve.gov/fomc/fundsrate.htm"
+        {
+          "title": "Reuters — Fed liftoff on US interest rates (2022-03-16)",
+          "url": "https://www.reuters.com/world/us/all-systems-go-feds-liftoff-us-interest-rates-2022-03-16/"
+        },
+        {
+          "title": "Federal Reserve — FOMC statement (2022-03-16)",
+          "url": "https://www.federalreserve.gov/monetarypolicy/files/monetary20220316a1.pdf"
+        },
+        {
+          "title": "Federal Reserve — Federal funds rate history",
+          "url": "https://www.federalreserve.gov/fomc/fundsrate.htm"
+        }
       ],
       "phases": [
-        {"date": "2022-03-16", "title_ko": "첫 인상(+25bp)", "note": "0–0.25% → 0.25–0.50%."},
-        {"date": "2022-06-15", "title_ko": "+75bp 대형 인상", "note": "기대 상향 재가격 + 크립토 유동성 위기와 중첩."},
-        {"date": "2023-07-26", "title_ko": "사이클 마지막 인상", "note": "목표 5.25–5.50% (보도·연준 자료 기준 7/26–27 회의)."}
-      ]
+        {
+          "date": "2022-03-16",
+          "title_ko": "첫 인상(+25bp)",
+          "note": "0–0.25% → 0.25–0.50%."
+        },
+        {
+          "date": "2022-06-15",
+          "title_ko": "+75bp 대형 인상",
+          "note": "기대 상향 재가격 + 크립토 유동성 위기와 중첩."
+        },
+        {
+          "date": "2023-07-26",
+          "title_ko": "사이클 마지막 인상",
+          "note": "목표 5.25–5.50% (보도·연준 자료 기준 7/26–27 회의)."
+        }
+      ],
+      "body_ko": "배경\n물가가 빠르게 오르자 미국 중앙은행(연준)은 완화에서 긴축으로 방향을 바꿨습니다. 위험자산에는 불리한 환경으로 바뀌는 국면이었습니다.\n\n무슨 일\n2022년 3월 16일 첫 인상 이후 약 16개월간 공격적으로 금리를 올렸고, 2023년 7월에는 연방기금금리 목표 상단이 5.25–5.50%까지 높아졌습니다. 연준 공개 자료와 로이터 보도로 확인됩니다.\n\n시장·가격에 미친 영향\n높은 금리는 주식·암호화폐 같은 위험자산에 강한 역풍이 됐습니다. 2022년 급락장과 함께 이야기되는 핵심 매크로(큰 경제·정책) 배경입니다."
     },
     {
       "id": "terra-luna-collapse-2022",
@@ -177,13 +282,28 @@
       "severity": 5,
       "summary_ko": "알고리즘 스테이블코인 UST 디페그 → LUNA 초인플레이션·생태계 붕괴. 수십억 달러 규모 손실과 연쇄 청산으로 업계 신뢰·유동성에 큰 타격.",
       "sources": [
-        "https://www.bloomberg.com/graphics/2022-crypto-contagion-from-bitcoin-to-FTX/",
-        "https://bitcoincompleteguide.com/bitcoin-timeline/"
+        {
+          "title": "Bloomberg — Crypto contagion from Bitcoin to FTX",
+          "url": "https://www.bloomberg.com/graphics/2022-crypto-contagion-from-bitcoin-to-FTX/"
+        },
+        {
+          "title": "The Complete Bitcoin Timeline: 2008 to Today",
+          "url": "https://bitcoincompleteguide.com/bitcoin-timeline/"
+        }
       ],
       "phases": [
-        {"date": "2022-05-09", "title_ko": "UST 디페그 심화", "note": "페그 이탈이 본격화."},
-        {"date": "2022-05-12", "title_ko": "LUNA 사실상 붕괴", "note": "가격·시총 증발, 거래소 상장폐지 논의."}
-      ]
+        {
+          "date": "2022-05-09",
+          "title_ko": "UST 디페그 심화",
+          "note": "페그 이탈이 본격화."
+        },
+        {
+          "date": "2022-05-12",
+          "title_ko": "LUNA 사실상 붕괴",
+          "note": "가격·시총 증발, 거래소 상장폐지 논의."
+        }
+      ],
+      "body_ko": "배경\n알고리듬으로 달러 가치를 맞추려던 스테이블코인 UST와 그 생태계 토큰 LUNA가 큰 주목을 받던 시기였습니다.\n\n무슨 일\n2022년 5월 9–13일 전후 UST가 1달러에서 크게 벗어나며(디페그) LUNA는 초인플레이션·사실상 붕괴로 이어졌습니다. 수십억 달러 규모 손실과 연쇄 청산이 보도됐습니다.\n\n시장·가격에 미친 영향\n업계 신뢰와 유동성에 큰 타격을 줬고, 이후 다른 업체·펀드의 연쇄 위기로 이어지는 ‘전염’의 시작점으로 자주 그려집니다. 비트코인 등 시장 전반도 함께 약세를 보였습니다."
     },
     {
       "id": "ftx-collapse-2022",
@@ -195,11 +315,21 @@
       "severity": 5,
       "summary_ko": "유동성 위기·고객 자산 유용 의혹 속 FTX 등 계열사가 Chapter 11 신청(11/11). SBF 사임, John J. Ray III 신임 CEO. 업계 신뢰 추락과 함께 BTC가 다년 저점 부근으로 하락.",
       "sources": [
-        "https://en.wikipedia.org/wiki/Bankruptcy_of_FTX",
-        "https://abc7news.com/post/ftx-crypto-chapter-11-bankruptcy-price/12442197/",
-        "https://www.bloomberg.com/graphics/2022-crypto-contagion-from-bitcoin-to-FTX/"
+        {
+          "title": "Bankruptcy of FTX - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bankruptcy_of_FTX"
+        },
+        {
+          "title": "FTX bankruptcy filing: Why the $32B crypto company collapsed, what it means for the future of digital currency",
+          "url": "https://abc7news.com/post/ftx-crypto-chapter-11-bankruptcy-price/12442197/"
+        },
+        {
+          "title": "Bloomberg — Crypto contagion from Bitcoin to FTX",
+          "url": "https://www.bloomberg.com/graphics/2022-crypto-contagion-from-bitcoin-to-FTX/"
+        }
       ],
-      "phases": []
+      "phases": [],
+      "body_ko": "배경\n대형 암호화폐 거래소 FTX는 한때 업계 상징처럼 여겨졌습니다. 그러나 유동성·고객 자산 관리 문제가 한꺼번에 드러났습니다.\n\n무슨 일\n2022년 11월 11일 FTX 등 계열사가 미국 파산법 Chapter 11을 신청했습니다. 창업자 SBF는 사임하고 John J. Ray III가 신임 CEO로 들어갔습니다. 위키피디아·ABC 등에서 사건 개요가 정리돼 있습니다.\n\n시장·가격에 미친 영향\n업계 신뢰가 크게 흔들렸고, 비트코인은 다년 저점 부근까지 밀렸다는 기록이 있습니다. 2022년 약세장의 마지막 대형 충격으로 자주 꼽힙니다."
     },
     {
       "id": "svb-collapse-2023",
@@ -211,10 +341,17 @@
       "severity": 4,
       "summary_ko": "캘리포니아 당국이 SVB를 폐쇄하고 FDIC를 관재인으로 지정. 지역은행 불안과 유동성 우려 속에 BTC는 상대적으로 강세를 보이며 '유동성/헤지' 내러티브가 부각.",
       "sources": [
-        "https://www.fdic.gov/resources/resolutions/bank-failures/failed-bank-list/silicon-valley.html",
-        "https://bitcoincompleteguide.com/bitcoin-timeline/"
+        {
+          "title": "Silicon Valley Bank | FDIC.gov",
+          "url": "https://www.fdic.gov/resources/resolutions/bank-failures/failed-bank-list/silicon-valley.html"
+        },
+        {
+          "title": "The Complete Bitcoin Timeline: 2008 to Today",
+          "url": "https://bitcoincompleteguide.com/bitcoin-timeline/"
+        }
       ],
-      "phases": []
+      "phases": [],
+      "body_ko": "배경\n2023년 3월 미국 지역은행 불안이 금융시장을 흔들었습니다. 실리콘밸리은행(SVB)이 그 중심에 있었습니다.\n\n무슨 일\n캘리포니아 당국이 SVB를 폐쇄하고 FDIC를 관재인으로 지정했습니다. FDIC 공식 실패 은행 목록에 정리돼 있습니다.\n\n시장·가격에 미친 영향\n은행 불안과 유동성 우려 속에서, 비트코인은 상대적으로 강세를 보이며 ‘유동성·헤지’ 이야기가 다시 나온 구간으로 기록됩니다. 다만 은행 위기와 코인 가격의 관계를 하나로 단정할 수는 없습니다."
     },
     {
       "id": "blackrock-spot-etf-filing-2023",
@@ -226,9 +363,13 @@
       "severity": 3,
       "summary_ko": "세계 최대 자산운용사 블랙록의 현물 BTC ETF 신청이 보도되며 승인 기대가 재점화. 이후 다수 운용사 신청·법원 판결이 2024-01 승인으로 이어짐.",
       "sources": [
-        "https://bitcoincompleteguide.com/bitcoin-timeline/"
+        {
+          "title": "The Complete Bitcoin Timeline: 2008 to Today",
+          "url": "https://bitcoincompleteguide.com/bitcoin-timeline/"
+        }
       ],
-      "phases": []
+      "phases": [],
+      "body_ko": "배경\n현물 비트코인 ETF는 오랫동안 승인되지 않았습니다. 대형 자산운용사의 신청이 나올 때마다 기대가 커졌습니다.\n\n무슨 일\n2023년 6월 15일 전후 세계 최대 자산운용사 블랙록의 현물 BTC ETF 신청이 보도되며 승인 기대가 다시 커졌습니다. 이후 여러 운용사 신청과 법원이 얽히며 2024년 1월 승인으로 이어집니다.\n\n시장·가격에 미친 영향\n‘이번엔 정말 될까’라는 기대가 가격과 거래 심리에 반영된 구간으로 이야기됩니다. 실제 승인은 이듬해에 이뤄졌습니다."
     },
     {
       "id": "spot-btc-etf-approval-2024",
@@ -240,14 +381,32 @@
       "severity": 5,
       "summary_ko": "2024-01-10 SEC가 다수 현물 BTC ETP 상장·거래를 승인. 익일부터 BlackRock·Fidelity·Grayscale 등 상품 거래 개시. 기관 접근성 확대의 핵심 이정표.",
       "sources": [
-        "https://www.sec.gov/newsroom/speeches-statements/gensler-statement-spot-bitcoin-011023",
-        "https://research.grayscale.com/market-commentary/january-2024-the-debut-of-spot-bitcoin-etfs",
-        "https://www.congress.gov/crs-product/IF12573"
+        {
+          "title": "SEC.gov | Statement on the Approval of Spot Bitcoin Exchange-Traded Products",
+          "url": "https://www.sec.gov/newsroom/speeches-statements/gensler-statement-spot-bitcoin-011023"
+        },
+        {
+          "title": "Grayscale Research — January 2024: Debut of spot Bitcoin ETFs",
+          "url": "https://research.grayscale.com/market-commentary/january-2024-the-debut-of-spot-bitcoin-etfs"
+        },
+        {
+          "title": "SEC Approves Bitcoin Exchange-Traded Products (ETPs)",
+          "url": "https://www.congress.gov/crs-product/IF12573"
+        }
       ],
       "phases": [
-        {"date": "2024-01-10", "title_ko": "SEC 승인", "note": "Chair Gensler 성명·승인 명령."},
-        {"date": "2024-01-11", "title_ko": "거래 개시", "note": "다수 현물 ETF 첫 거래일."}
-      ]
+        {
+          "date": "2024-01-10",
+          "title_ko": "SEC 승인",
+          "note": "Chair Gensler 성명·승인 명령."
+        },
+        {
+          "date": "2024-01-11",
+          "title_ko": "거래 개시",
+          "note": "다수 현물 ETF 첫 거래일."
+        }
+      ],
+      "body_ko": "배경\n수년간 막혀 있던 ‘현물’ 비트코인 ETF가 미국 증권 규제 당국의 문턱을 넘는지가 관건이었습니다. 선물 ETF와 달리 실제 비트코인을 담는 형태에 가깝습니다.\n\n무슨 일\n2024년 1월 10일 SEC가 여러 현물 BTC ETP의 상장·거래를 승인했고, 익일부터 블랙록·피델리티·그레이스케일 등 상품 거래가 시작됐습니다. SEC 의장 성명과 의회 CRS 자료 등에서 확인됩니다.\n\n시장·가격에 미친 영향\n기관·일반 투자자가 증권 계좌로 비트코인에 접근하기 쉬워진 핵심 이정표로 평가됩니다. 이후 유입·유출과 가격 논의가 이어졌습니다."
     },
     {
       "id": "btc-halving-2024",
@@ -259,10 +418,17 @@
       "severity": 4,
       "summary_ko": "블록 보상 6.25→3.125 BTC. 로이터 등 보도는 2024-04-19 전후로 반감기 완료를 전함. 현물 ETF 유입과 맞물린 공급 충격으로 해석.",
       "sources": [
-        "https://www.reuters.com/markets/currencies/crypto-fans-count-down-bitcoins-halving-2024-04-19/",
-        "https://www.bit.com/knowledge-hub/bitcoin-cycle"
+        {
+          "title": "Reuters — Crypto fans count down Bitcoin's halving",
+          "url": "https://www.reuters.com/markets/currencies/crypto-fans-count-down-bitcoins-halving-2024-04-19/"
+        },
+        {
+          "title": "Bitcoin Cycles: The 4-Year Halving Pattern Explained",
+          "url": "https://www.bit.com/knowledge-hub/bitcoin-cycle"
+        }
       ],
-      "phases": []
+      "phases": [],
+      "body_ko": "배경\n4차 반감기는 현물 ETF 승인 직후라, 공급 감소와 신규 접근성 확대가 겹친다는 해석이 많았습니다.\n\n무슨 일\n블록 보상이 6.25 BTC에서 3.125 BTC로 줄었습니다. 로이터 등 보도는 2024년 4월 19일 전후로 반감기가 완료됐다고 전했습니다.\n\n시장·가격에 미친 영향\n공급이 더 느려지는 시점과 ETF 유입이 맞물리며 ‘공급 충격’으로 해석되기도 했습니다. 다만 가격은 수요·거시 환경에 따라 달라지므로, 반감기만의 결과로 단정하지는 않습니다."
     },
     {
       "id": "fed-cutting-cycle-2024",
@@ -274,13 +440,29 @@
       "severity": 4,
       "summary_ko": "2024-09-18 첫 50bp 인하(목표 4.75–5.00%)로 긴축 사이클에서 완화로 선회. 이후 11월·12월에도 각 25bp 인하(연준 공개 자료).",
       "sources": [
-        "https://www.federalreserve.gov/fomc/fundsrate.htm"
+        {
+          "title": "Federal Reserve — Federal funds rate history",
+          "url": "https://www.federalreserve.gov/fomc/fundsrate.htm"
+        }
       ],
       "phases": [
-        {"date": "2024-09-18", "title_ko": "첫 인하 −50bp", "note": "5.25–5.50% → 4.75–5.00%."},
-        {"date": "2024-11-07", "title_ko": "−25bp", "note": "4.50–4.75%."},
-        {"date": "2024-12-18", "title_ko": "−25bp", "note": "4.25–4.50%."}
-      ]
+        {
+          "date": "2024-09-18",
+          "title_ko": "첫 인하 −50bp",
+          "note": "5.25–5.50% → 4.75–5.00%."
+        },
+        {
+          "date": "2024-11-07",
+          "title_ko": "−25bp",
+          "note": "4.50–4.75%."
+        },
+        {
+          "date": "2024-12-18",
+          "title_ko": "−25bp",
+          "note": "4.25–4.50%."
+        }
+      ],
+      "body_ko": "배경\n2022–23년 긴축 이후, 물가 둔화와 함께 연준이 언제 금리를 내릴지가 시장 초점이었습니다.\n\n무슨 일\n2024년 9월 18일 첫 0.50%포인트 인하로 목표를 4.75–5.00%로 낮추며 완화로 선회했습니다. 이후 11월·12월에도 각 0.25%포인트씩 추가 인하했다는 연준 공개 자료가 있습니다.\n\n시장·가격에 미친 영향\n금리 인하 기대는 위험자산에 우호적으로 받아들여지는 경우가 많습니다. 같은 시기 대선·ETF 이슈와 겹치며 비트코인 강세 논의가 이어졌습니다."
     },
     {
       "id": "trump-election-2024",
@@ -292,10 +474,17 @@
       "severity": 4,
       "summary_ko": "친크립토 공약을 내건 도널드 트럼프가 대선에서 승리. 규제 완화·전략비축 등 기대가 겹치며 BTC 강세가 이어짐.",
       "sources": [
-        "https://english.elpais.com/economy-and-business/2024-12-27/bitcoins-golden-year-from-etf-approval-to-donald-trumps-win.html",
-        "https://abc7ny.com/post/bitcoin-price-cryptocurrency-races-past-100000-fueled-post-election-rally/15624358/"
+        {
+          "title": "Bitcoin’s golden year: From ETF approval to Donald Trump’s win",
+          "url": "https://english.elpais.com/economy-and-business/2024-12-27/bitcoins-golden-year-from-etf-approval-to-donald-trumps-win.html"
+        },
+        {
+          "title": "Bitcoin price: Cryptocurrency races past $100,000, fueled by post-election rally",
+          "url": "https://abc7ny.com/post/bitcoin-price-cryptocurrency-races-past-100000-fueled-post-election-rally/15624358/"
+        }
       ],
-      "phases": []
+      "phases": [],
+      "body_ko": "배경\n2024년 미국 대선에서 암호화폐 규제·정책 공약이 전례 없이 크게 다뤄졌습니다. 트럼프 후보는 상대적으로 친크립토 메시지를 냈습니다.\n\n무슨 일\n2024년 11월 5일 도널드 트럼프가 대선에서 승리했습니다. 규제 완화·전략비축 등 기대가 보도에 함께 실렸습니다.\n\n시장·가격에 미친 영향\n대선 이후 랠리 속에서 비트코인 강세가 이어졌다는 보도가 있습니다. 이후 $100,000 돌파 보도와도 연결됩니다."
     },
     {
       "id": "btc-100k-2024",
@@ -307,10 +496,17 @@
       "severity": 4,
       "summary_ko": "대선 이후 랠리 속에서 BTC가 사상 처음 $100,000을 돌파했다는 주요 언론 보도.",
       "sources": [
-        "https://abc7ny.com/post/bitcoin-price-cryptocurrency-races-past-100000-fueled-post-election-rally/15624358/",
-        "https://cointelegraph.com/news/bitcoin-hits-100k-first-time-since-january"
+        {
+          "title": "Bitcoin price: Cryptocurrency races past $100,000, fueled by post-election rally",
+          "url": "https://abc7ny.com/post/bitcoin-price-cryptocurrency-races-past-100000-fueled-post-election-rally/15624358/"
+        },
+        {
+          "title": "Bitcoin price reclaims $100K for first time since January",
+          "url": "https://cointelegraph.com/news/bitcoin-hits-100k-first-time-since-january"
+        }
       ],
-      "phases": []
+      "phases": [],
+      "body_ko": "배경\n대선 이후 낙관과 ETF·유동성 이야기가 겹치며 ‘10만 달러’가 심리적 이정표로 떠올랐습니다.\n\n무슨 일\n2024년 12월 5일 전후 비트코인이 사상 처음 10만 달러를 돌파했다는 주요 언론 보도가 나왔습니다. ABC7 등이 전했습니다.\n\n시장·가격에 미친 영향\n심리적 고지로 크게 보도됐고, 이후 취임·정책 기대와 맞물린 가격 논의가 이어졌습니다. 순간 고점과 하루 종가는 다를 수 있습니다."
     },
     {
       "id": "trump-inauguration-2025",
@@ -322,10 +518,17 @@
       "severity": 3,
       "summary_ko": "2025-01-20 취임. 취임 전후 BTC가 다시 $100k 부근 고점을 기록했다는 보도와 함께, 이후 관세·연준·중동 이슈가 시장을 지배.",
       "sources": [
-        "https://cointelegraph.com/news/bitcoin-hits-100k-first-time-since-january",
-        "https://abc7ny.com/post/bitcoin-price-cryptocurrency-races-past-100000-fueled-post-election-rally/15624358/"
+        {
+          "title": "Bitcoin price reclaims $100K for first time since January",
+          "url": "https://cointelegraph.com/news/bitcoin-hits-100k-first-time-since-january"
+        },
+        {
+          "title": "Bitcoin price: Cryptocurrency races past $100,000, fueled by post-election rally",
+          "url": "https://abc7ny.com/post/bitcoin-price-cryptocurrency-races-past-100000-fueled-post-election-rally/15624358/"
+        }
       ],
-      "phases": []
+      "phases": [],
+      "body_ko": "배경\n대선 승리 이후 실제 취임과 정책 집행이 시장 초점으로 옮겨갔습니다. 관세·연준·중동 이슈가 곧이어 전면에 나옵니다.\n\n무슨 일\n2025년 1월 20일 트럼프 2기 취임이 있었습니다. 취임 전후 비트코인이 다시 10만 달러 부근 고점을 기록했다는 보도가 있습니다.\n\n시장·가격에 미친 영향\n취임 자체보다 이후 관세·중동·금리 뉴스가 가격 변동을 더 크게 좌우했다는 평가가 많습니다. 이 날짜는 정책 사이클의 시작점으로 표시합니다."
     },
     {
       "id": "liberation-day-tariffs-2025",
@@ -337,15 +540,37 @@
       "severity": 5,
       "summary_ko": "트럼프가 2025-04-02를 'Liberation Day'로 선언하고 EO 14257로 광범위한 상호관세를 부과. 기본 10%(4/5 발효)와 국가별 가산(4/9) 구조. 이후 협상·유예·보복이 이어지며 리스크자산 변동성 확대.",
       "sources": [
-        "https://www.govinfo.gov/content/pkg/DCPD-202500423/html/DCPD-202500423.htm",
-        "https://en.wikipedia.org/wiki/Trump%27s_Liberation_Day_tariffs",
-        "https://privatebank.barclays.com/insights/market-perspectives-may-05-2026/liberation-day-one-year-on/"
+        {
+          "title": "US GovInfo — Presidential documents (DCPD-202500423, Liberation Day tariffs)",
+          "url": "https://www.govinfo.gov/content/pkg/DCPD-202500423/html/DCPD-202500423.htm"
+        },
+        {
+          "title": "Liberation Day tariffs",
+          "url": "https://en.wikipedia.org/wiki/Trump%27s_Liberation_Day_tariffs"
+        },
+        {
+          "title": "Liberation Day: a year on",
+          "url": "https://privatebank.barclays.com/insights/market-perspectives-may-05-2026/liberation-day-one-year-on/"
+        }
       ],
       "phases": [
-        {"date": "2025-04-02", "title_ko": "발표·EO 서명", "note": "Rose Garden 선언, EO 14257."},
-        {"date": "2025-04-05", "title_ko": "기본 10% 발효", "note": "대부분의 수입에 기본 관세."},
-        {"date": "2025-04-09", "title_ko": "국가별 상호관세 발효", "note": "고율 가산; 이후 일부 유예·협상 국면."}
-      ]
+        {
+          "date": "2025-04-02",
+          "title_ko": "발표·EO 서명",
+          "note": "Rose Garden 선언, EO 14257."
+        },
+        {
+          "date": "2025-04-05",
+          "title_ko": "기본 10% 발효",
+          "note": "대부분의 수입에 기본 관세."
+        },
+        {
+          "date": "2025-04-09",
+          "title_ko": "국가별 상호관세 발효",
+          "note": "고율 가산; 이후 일부 유예·협상 국면."
+        }
+      ],
+      "body_ko": "배경\n트럼프 2기 초반, 무역·관세가 세계 금융시장의 핵심 리스크로 떠올랐습니다. ‘해방의 날(Liberation Day)’로 불린 발표가 그 상징입니다.\n\n무슨 일\n2025년 4월 2일 상호관세를 광범위하게 부과하는 행정명령(EO 14257)이 나왔습니다. 기본 10%(4월 5일 발효)와 국가별 가산(4월 9일) 구조로, 이후 협상·유예·보복이 이어졌습니다. 미 정부 문서·위키피디아 등에 정리돼 있습니다.\n\n시장·가격에 미친 영향\n위험자산 전반의 변동성이 커졌습니다. 비트코인도 같은 매크로 충격 속에서 흔들린 구간으로 차트에 표시합니다."
     },
     {
       "id": "btc-ath-2025-oct",
@@ -357,10 +582,17 @@
       "severity": 3,
       "summary_ko": "이 패키지 Binance 일봉 CSV 기준, 종가 최고일이 2025-10-06(약 $124,659). 외부 보도의 순간 고점과 일봉 종가는 다를 수 있음.",
       "sources": [
-        "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d",
-        "https://www.bit.com/knowledge-hub/bitcoin-cycle"
+        {
+          "title": "Binance Vision — BTCUSDT 일봉 klines API",
+          "url": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d"
+        },
+        {
+          "title": "Bitcoin Cycles: The 4-Year Halving Pattern Explained",
+          "url": "https://www.bit.com/knowledge-hub/bitcoin-cycle"
+        }
       ],
-      "phases": []
+      "phases": [],
+      "body_ko": "배경\n2025년에도 정책·유동성·지정학 이슈가 겹치며 비트코인 가격은 큰 폭으로 움직였습니다. 이 사이트는 바이낸스 하루 종가만을 기준으로 고점을 표시합니다.\n\n무슨 일\n이 패키지 Binance 일봉 CSV 기준, 종가 최고일은 2025-10-06이며 약 124,659달러입니다. 외부 보도의 ‘순간 최고가’와 하루 종가는 다를 수 있습니다.\n\n시장·가격에 미친 영향\n신고점 구간 이후에도 중동·금리·규제 뉴스로 변동이 이어졌습니다. 숫자는 CSV에서만 확인하며 창작하지 않습니다."
     },
     {
       "id": "iran-war-hormuz-2026",
@@ -372,26 +604,86 @@
       "severity": 5,
       "summary_ko": "2026-02-28 미·이스라엘의 이란 공습으로 전쟁이 시작됐고, 이란은 호르무즈 통행 경고·공격 등으로 사실상 심각한 해상 교란을 초래했다. 완전·영구 봉쇄라기보다 통행량이 급감하고 미국이 이란 항만 봉쇄를 병행한 ‘실질적 폐쇄·교란’ 국면이 2026-09 현재까지 이어지고 있다.",
       "sources": [
-        "https://www.aljazeera.com/news/2026/2/28/us-israel-bomb-iran-a-timeline-of-talks-and-threats-leading-up-to-attacks",
-        "https://understandingwar.org/research/middle-east/iran-update-special-report-us-and-israeli-strikes-february-28-2026/",
-        "https://www.reuters.com/world/middle-east/hormuz-shipping-traffic-falls-single-digits-data-shows-2026-09-11/",
-        "https://www.aljazeera.com/news/2026/8/17/us-iran-memorandum-of-understanding-expires-how-and-why-it-fell-apart",
-        "https://www.reuters.com/world/middle-east/iran-awaits-us-move-after-wsj-report-says-trump-rejects-peace-plan-2026-09-26/"
+        {
+          "title": "US, Israel bomb Iran: A timeline of talks and threats leading up to attacks",
+          "url": "https://www.aljazeera.com/news/2026/2/28/us-israel-bomb-iran-a-timeline-of-talks-and-threats-leading-up-to-attacks"
+        },
+        {
+          "title": "Iran Update: US and Israeli Strikes, Feb. 28, 2026",
+          "url": "https://understandingwar.org/research/middle-east/iran-update-special-report-us-and-israeli-strikes-february-28-2026/"
+        },
+        {
+          "title": "Reuters — Hormuz shipping traffic falls to single digits",
+          "url": "https://www.reuters.com/world/middle-east/hormuz-shipping-traffic-falls-single-digits-data-shows-2026-09-11/"
+        },
+        {
+          "title": "US-Iran Memorandum of Understanding expires: How and why it fell apart",
+          "url": "https://www.aljazeera.com/news/2026/8/17/us-iran-memorandum-of-understanding-expires-how-and-why-it-fell-apart"
+        },
+        {
+          "title": "Reuters — Iran awaits US move after report Trump rejects peace plan",
+          "url": "https://www.reuters.com/world/middle-east/iran-awaits-us-move-after-wsj-report-says-trump-rejects-peace-plan-2026-09-26/"
+        }
       ],
       "phases": [
-        {"date": "2026-02-28", "title_ko": "전쟁 개시·호르무즈 경고", "note": "미·이스라엘 공습 개시. IRGC가 호르무즈 통행 금지 경고; 상업 통행량 급감."},
-        {"date": "2026-04-07", "title_ko": "2주 휴전 합의", "note": "트럼프, 조건부 2주 이란 휴전 합의."},
-        {"date": "2026-06-17", "title_ko": "이슬라마바드 MoU 서명", "note": "14개조 MoU: 전선 군사행동 중단, 60일 협상, 호르무즈 복원 목표."},
-        {"date": "2026-06-25", "title_ko": "Ever Lovely호 피격", "note": "오만 연안 항로 통과 상선 피격."},
-        {"date": "2026-06-27", "title_ko": "미군 보복 타격·상호 공격 재개", "note": "CENTCOM이 이란 남부 해안 시설 타격."},
-        {"date": "2026-07-08", "title_ko": "트럼프, MoU '끝났다' 선언", "note": "합의 종료 선언. 미·이란 공습 확대."},
-        {"date": "2026-07-14", "title_ko": "미국, 이란 항만 봉쇄 재시행", "note": "미군이 이란 항만 입출항 봉쇄를 중순 재개."},
-        {"date": "2026-08-17", "title_ko": "MoU 공식 만료", "note": "60일 시한 만료."},
-        {"date": "2026-09-11", "title_ko": "호르무즈 통행 한 자릿수", "note": "로이터: 일일 통행 급감(전쟁 전 ~125척/일 대비)."},
-        {"date": "2026-09-13", "title_ko": "사우디 파이프라인·호르무즈 공격 우려", "note": "우회 공급망 타격. 유가 재부상."},
-        {"date": "2026-09-25", "title_ko": "이란 7일 재개 제안·트럼프 거부 보도", "note": "이란 7일 내 해협 재개 제안. WSJ 트럼프 거부설."}
+        {
+          "date": "2026-02-28",
+          "title_ko": "전쟁 개시·호르무즈 경고",
+          "note": "미·이스라엘 공습 개시. IRGC가 호르무즈 통행 금지 경고; 상업 통행량 급감."
+        },
+        {
+          "date": "2026-04-07",
+          "title_ko": "2주 휴전 합의",
+          "note": "트럼프, 조건부 2주 이란 휴전 합의."
+        },
+        {
+          "date": "2026-06-17",
+          "title_ko": "이슬라마바드 MoU 서명",
+          "note": "14개조 MoU: 전선 군사행동 중단, 60일 협상, 호르무즈 복원 목표."
+        },
+        {
+          "date": "2026-06-25",
+          "title_ko": "Ever Lovely호 피격",
+          "note": "오만 연안 항로 통과 상선 피격."
+        },
+        {
+          "date": "2026-06-27",
+          "title_ko": "미군 보복 타격·상호 공격 재개",
+          "note": "CENTCOM이 이란 남부 해안 시설 타격."
+        },
+        {
+          "date": "2026-07-08",
+          "title_ko": "트럼프, MoU '끝났다' 선언",
+          "note": "합의 종료 선언. 미·이란 공습 확대."
+        },
+        {
+          "date": "2026-07-14",
+          "title_ko": "미국, 이란 항만 봉쇄 재시행",
+          "note": "미군이 이란 항만 입출항 봉쇄를 중순 재개."
+        },
+        {
+          "date": "2026-08-17",
+          "title_ko": "MoU 공식 만료",
+          "note": "60일 시한 만료."
+        },
+        {
+          "date": "2026-09-11",
+          "title_ko": "호르무즈 통행 한 자릿수",
+          "note": "로이터: 일일 통행 급감(전쟁 전 ~125척/일 대비)."
+        },
+        {
+          "date": "2026-09-13",
+          "title_ko": "사우디 파이프라인·호르무즈 공격 우려",
+          "note": "우회 공급망 타격. 유가 재부상."
+        },
+        {
+          "date": "2026-09-25",
+          "title_ko": "이란 7일 재개 제안·트럼프 거부 보도",
+          "note": "이란 7일 내 해협 재개 제안. WSJ 트럼프 거부설."
+        }
       ],
-      "hormuz_note": "2026년 '호르무즈 완전·영구 봉쇄'가 공식 선언된 단일 사건은 아님. 2/28 이후 이란 경고·공격·항로 통제와 미국 이란항 해상봉쇄로 통행이 사실상 마비·급감한 '실질적 폐쇄/교란'이 핵심."
+      "hormuz_note": "2026년 '호르무즈 완전·영구 봉쇄'가 공식 선언된 단일 사건은 아님. 2/28 이후 이란 경고·공격·항로 통제와 미국 이란항 해상봉쇄로 통행이 사실상 마비·급감한 '실질적 폐쇄/교란'이 핵심.",
+      "body_ko": "배경\n호르무즈 해협은 세계 원유 운송의 핵심 항로입니다. 이곳이 막히거나 크게 줄어들면 유가·인플레·위험자산 전반에 파급이 큽니다.\n\n무슨 일\n2026년 2월 28일 미·이스라엘의 이란 공습으로 전쟁이 시작됐고, 이란의 통행 경고·공격 등으로 해협 통행이 크게 줄었습니다. 완전·영구 봉쇄라기보다 통행량 급감과 미국 측 이란 항만 봉쇄가 겹친 ‘실질적 교란’이 이어졌습니다. 4월 2주 휴전, 6월 이슬라마바드 MoU(60일), 상선 피격과 합의 붕괴, 9월 통행 한 자릿수·유가 재상승 우려까지 단계가 이어집니다.\n\n시장·가격에 미친 영향\n유가·금리 우려와 위험자산 회피가 반복됐습니다. 비트코인도 같은 매크로 충격에 노출된 구간으로, 개별 하위 사건 페이지에서 더 자세히 볼 수 있습니다."
     },
     {
       "id": "warsh-nomination",
@@ -402,8 +694,14 @@
       "category": "fed",
       "severity": 3,
       "summary_ko": "트럼프 대통령이 케빈 워시를 연준 의장으로 지명. 이후 상원 인준·5/22 취임으로 이어짐.",
-      "sources": ["https://www.federalreserve.gov/newsevents/pressreleases/other20260522a.htm"],
-      "phases": []
+      "sources": [
+        {
+          "title": "Federal Reserve Board",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260522a.htm"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n연준 의장은 금리 방향을 좌우하는 핵심 자리입니다. 누가 앉느냐에 따라 시장의 긴축·완화 기대가 달라집니다.\n\n무슨 일\n2026년 3월 4일 트럼프 대통령이 케빈 워시를 연준 의장으로 지명했습니다. 이후 상원 인준을 거쳐 5월 22일 취임으로 이어집니다.\n\n시장·가격에 미친 영향\n새 의장 체제에서 금리 경로가 어떻게 바뀌는지가 초점으로 떠올랐습니다. 실제 첫 인상은 9월 FOMC에서 이뤄졌습니다."
     },
     {
       "id": "april-ceasefire",
@@ -415,10 +713,17 @@
       "severity": 4,
       "summary_ko": "4/7–8경 트럼프가 조건부로 2주 휴전을 수용. 호르무즈 상업 통행 조율이 핵심 조건 중 하나였으나 장기 평화로 이어지지 못함.",
       "sources": [
-        "https://www.reuters.com/world/asia-pacific/iran-defiant-eve-trumps-ceasefire-deadline-2026-04-07/",
-        "https://apnews.com/live/iran-war-israel-trump-04-07-2026"
+        {
+          "title": "Reuters — Iran defiant on eve of Trump's ceasefire deadline",
+          "url": "https://www.reuters.com/world/asia-pacific/iran-defiant-eve-trumps-ceasefire-deadline-2026-04-07/"
+        },
+        {
+          "title": "US and Iran agree to a two-week ceasefire",
+          "url": "https://apnews.com/live/iran-war-israel-trump-04-07-2026"
+        }
       ],
-      "phases": []
+      "phases": [],
+      "body_ko": "배경\n전쟁 시작 이후 유가·해상 운송 불안이 커지며 휴전·해협 재개 협상이 반복됐습니다.\n\n무슨 일\n2026년 4월 7–8일경 트럼프가 조건부 2주 휴전에 합의·수용했다는 보도가 있습니다. 호르무즈 상업 통행 조율이 핵심 조건 중 하나였으나, 장기 평화로 이어지지는 못했습니다. 로이터·AP 등이 전했습니다.\n\n시장·가격에 미친 영향\n단기적으로 긴장 완화 기대가 나왔지만, 이후 재교전과 MoU 붕괴로 다시 불안이 커졌습니다. 위험자산에는 ‘잠깐 쉬고 다시 흔들린’ 구간으로 남습니다."
     },
     {
       "id": "treasury-yields-april",
@@ -430,9 +735,13 @@
       "severity": 3,
       "summary_ko": "이란전·유가 충격으로 인플레·금리 우려가 커지며 미 30년물 등이 5%대에 근접/도달했다는 보도와 함께 비트코인 등 리스크자산 경계가 강화됨.",
       "sources": [
-        "https://www.coindesk.com/markets/2026/04/30/ouch-the-u-s-30-year-treasury-yield-just-hit-5-and-bitcoin-may-pay-the-price"
+        {
+          "title": "CoinDesk — US 30-year Treasury yield hits 5%; Bitcoin may pay the price",
+          "url": "https://www.coindesk.com/markets/2026/04/30/ouch-the-u-s-30-year-treasury-yield-just-hit-5-and-bitcoin-may-pay-the-price"
+        }
       ],
-      "phases": []
+      "phases": [],
+      "body_ko": "배경\n전쟁이 길어지고 유가 충격이 커지면, 물가·금리 우려로 미국 국채 금리가 오를 수 있습니다. 금리가 오르면 위험자산에는 부담이 됩니다.\n\n무슨 일\n2026년 4월 30일 전후 미국 30년물 국채 금리가 5%대에 근접·도달했다는 보도와 함께, 비트코인 등 위험자산이 압박받을 수 있다는 시장 코멘트가 나왔습니다. CoinDesk 등이 전했습니다.\n\n시장·가격에 미친 영향\n높은 장기금리는 주식·코인 같은 자산의 매력을 상대적으로 떨어뜨리는 요인으로 읽힙니다. 지정학과 금리가 한꺼번에 부담이 된 구간입니다."
     },
     {
       "id": "warsh-fed-chair-oath",
@@ -444,10 +753,17 @@
       "severity": 4,
       "summary_ko": "케빈 워시가 연준 이사회·FOMC 의장으로 취임(백악관 선서). 이후 9월 인상 등 통화정책 기조 전환의 배경.",
       "sources": [
-        "https://www.federalreserve.gov/newsevents/pressreleases/other20260522a.htm",
-        "https://www.cnn.com/2026/05/22/economy/kevin-warsh-sworn-in-fed-chair"
+        {
+          "title": "Federal Reserve Board",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260522a.htm"
+        },
+        {
+          "title": "CNN — Kevin Warsh sworn in as Fed chair",
+          "url": "https://www.cnn.com/2026/05/22/economy/kevin-warsh-sworn-in-fed-chair"
+        }
       ],
-      "phases": []
+      "phases": [],
+      "body_ko": "배경\n지명 이후 실제 취임으로 새 연준 체제가 시작됐습니다. 이후 통화정책 톤이 시장 관심사였습니다.\n\n무슨 일\n2026년 5월 22일 케빈 워시가 연준 이사회·FOMC 의장으로 취임했습니다(백악관 선서). 연준 보도자료와 CNN 등에서 확인됩니다.\n\n시장·가격에 미친 영향\n이후 9월 기준금리 인상 등 기조 전환의 배경으로 표시합니다. 의장 발언·성명 문구가 시장에 더 크게 다가온다는 분석도 보도됐습니다."
     },
     {
       "id": "may-iran-deal-optimism",
@@ -459,10 +775,17 @@
       "severity": 4,
       "summary_ko": "5월 말 트럼프가 이란과의 해협 재개·평화 합의가 상당 부분 협상됐다고 밝히며 유가·리스크자산 변동. 이후 신규 공습 보도로 낙관이 빠르게 후퇴.",
       "sources": [
-        "https://www.cnbc.com/2026/05/23/us-iran-war-talks.html",
-        "https://time.com/article/2026/05/26/us-iran-new-strikes-global-oil-prices-rise-peace-deal-talks-jeopardy/"
+        {
+          "title": "Trump says Iran deal reopening Strait of Hormuz 'largely negotiated,' will be announced soon",
+          "url": "https://www.cnbc.com/2026/05/23/us-iran-war-talks.html"
+        },
+        {
+          "title": "Global Oil Prices Rise as Fresh U.S. Strikes on Iran Cast Shadow Over Trump's Peace Deal",
+          "url": "https://time.com/article/2026/05/26/us-iran-new-strikes-global-oil-prices-rise-peace-deal-talks-jeopardy/"
+        }
       ],
-      "phases": []
+      "phases": [],
+      "body_ko": "배경\n해협 재개와 휴전이 유가·위험자산에 바로 영향을 주는 시기였습니다. 낙관 발언과 신규 공습 보도가 짧게 교차했습니다.\n\n무슨 일\n2026년 5월 23–26일 전후 트럼프가 이란과의 호르무즈 재개·평화 합의가 상당 부분 협상됐다고 밝혔습니다. 그러나 곧이어 신규 공습 보도로 낙관이 빠르게 후퇴했습니다. CNBC·TIME 등이 전했습니다.\n\n시장·가격에 미친 영향\n유가와 위험자산이 짧은 구간에 크게 출렁인 사례입니다. ‘합의됐다’는 말과 실제 이행이 어긋날 때 변동성이 커집니다."
     },
     {
       "id": "islamabad-mou",
@@ -474,16 +797,42 @@
       "severity": 5,
       "summary_ko": "파키스탄 중재 14개조 MoU로 군사행동 중단과 호르무즈 통행 복원 노력, 제재·재건 패키지 협상을 약속. 항로 해석 갈등·상선 피격으로 한 달 내 사실상 붕괴, 8/17 공식 만료.",
       "sources": [
-        "https://www.cnn.com/2026/06/17/middleeast/us-iran-war-mou-text-intl",
-        "https://www.aljazeera.com/news/2026/8/17/us-iran-memorandum-of-understanding-expires-how-and-why-it-fell-apart",
-        "https://www.presidency.ucsb.edu/documents/islamabad-memorandum-understanding-between-the-united-states-america-and-the-islamic"
+        {
+          "title": "CNN — US–Iran Islamabad MoU text",
+          "url": "https://www.cnn.com/2026/06/17/middleeast/us-iran-war-mou-text-intl"
+        },
+        {
+          "title": "US-Iran Memorandum of Understanding expires: How and why it fell apart",
+          "url": "https://www.aljazeera.com/news/2026/8/17/us-iran-memorandum-of-understanding-expires-how-and-why-it-fell-apart"
+        },
+        {
+          "title": "Islamabad Memorandum of Understanding Between the United States of America and the Islamic Republic of Iran",
+          "url": "https://www.presidency.ucsb.edu/documents/islamabad-memorandum-understanding-between-the-united-states-america-and-the-islamic"
+        }
       ],
       "phases": [
-        {"date": "2026-06-17", "title_ko": "서명", "note": "Pezeshkian–Trump MoU 서명."},
-        {"date": "2026-06-25", "title_ko": "상선 피격으로 균열", "note": "Ever Lovely 피격 후 상호 비난."},
-        {"date": "2026-07-08", "title_ko": "트럼프 종료 선언", "note": "합의 'over' 선언 후 봉쇄·공습 재개."},
-        {"date": "2026-08-17", "title_ko": "공식 만료", "note": "60일 시한 종료."}
-      ]
+        {
+          "date": "2026-06-17",
+          "title_ko": "서명",
+          "note": "Pezeshkian–Trump MoU 서명."
+        },
+        {
+          "date": "2026-06-25",
+          "title_ko": "상선 피격으로 균열",
+          "note": "Ever Lovely 피격 후 상호 비난."
+        },
+        {
+          "date": "2026-07-08",
+          "title_ko": "트럼프 종료 선언",
+          "note": "합의 'over' 선언 후 봉쇄·공습 재개."
+        },
+        {
+          "date": "2026-08-17",
+          "title_ko": "공식 만료",
+          "note": "60일 시한 종료."
+        }
+      ],
+      "body_ko": "배경\n파키스탄 중재로 미·이란이 문서화된 양해각서(MoU)를 만든 구간입니다. 군사 중단과 해협 복원, 제재·재건 협상을 묶으려 했습니다.\n\n무슨 일\n2026년 6월 17일 14개조 이슬라마바드 MoU가 서명됐습니다. 군사행동 중단, 호르무즈 통행 복원 노력, 60일 협상 등이 골자였습니다. 그러나 항로 해석 갈등과 상선(Ever Lovely) 피격 등으로 균열이 커졌고, 7월 트럼프가 합의 종료를 선언한 뒤 8월 17일 공식 만료됐습니다. CNN·알자지라·문서 전문 사이트에서 확인됩니다.\n\n시장·가격에 미친 영향\n서명 직후 완화 기대가 나왔다가, 붕괴 과정에서 다시 유가·지정학 프리미엄이 커졌습니다. 2026년 중동 리스크의 핵심 타임라인입니다."
     },
     {
       "id": "hormuz-single-digit-traffic",
@@ -495,9 +844,13 @@
       "severity": 4,
       "summary_ko": "로이터 선박추적: 일일 통행이 한 자릿수로 하락. 전쟁 전 약 125척/일 대비 극심한 위축.",
       "sources": [
-        "https://www.reuters.com/world/middle-east/hormuz-shipping-traffic-falls-single-digits-data-shows-2026-09-11/"
+        {
+          "title": "Reuters — Hormuz shipping traffic falls to single digits",
+          "url": "https://www.reuters.com/world/middle-east/hormuz-shipping-traffic-falls-single-digits-data-shows-2026-09-11/"
+        }
       ],
-      "phases": []
+      "phases": [],
+      "body_ko": "배경\n전쟁 전 호르무즈 일일 통행은 약 125척 수준으로 알려졌습니다. 통행이 크게 줄면 원유 공급 차질 우려가 바로 커집니다.\n\n무슨 일\n2026년 9월 11일 로이터 선박추적 보도에 따르면, 일일 통행이 한 자릿수로 떨어져 전쟁 이후 최저 수준으로 나타났습니다.\n\n시장·가격에 미친 영향\n공급 차질·유가 상승 우려가 재점화됐습니다. 위험자산에는 인플레·금리 부담으로 이어질 수 있는 신호로 읽혔습니다."
     },
     {
       "id": "saudi-pipeline-hormuz-sep",
@@ -509,9 +862,13 @@
       "severity": 4,
       "summary_ko": "사우디 동서 송유관 등 공격과 호르무즈·홍해 위협이 겹치며 유가가 $100 위로 재상승할 것이라는 시장 기대가 커짐.",
       "sources": [
-        "https://www.reuters.com/business/energy/new-report-attack-strait-hormuz-shipping-fans-fears-threats-oil-supplies-2026-09-13/"
+        {
+          "title": "Reuters — Attacks on Hormuz shipping fan oil supply fears",
+          "url": "https://www.reuters.com/business/energy/new-report-attack-strait-hormuz-shipping-fans-fears-threats-oil-supplies-2026-09-13/"
+        }
       ],
-      "phases": []
+      "phases": [],
+      "body_ko": "배경\n호르무즈가 막힐 때 사우디 동서 송유관 같은 우회 경로가 중요해집니다. 그 경로까지 위협받으면 유가 불안이 커집니다.\n\n무슨 일\n2026년 9월 13일 전후 사우디 송유관·호르무즈 공격과 홍해 위협이 겹친다는 보도가 나왔고, 유가가 100달러 위로 다시 오를 것이라는 시장 기대가 커졌습니다. 로이터가 전했습니다.\n\n시장·가격에 미친 영향\n에너지 가격 상승 우려는 인플레·금리·위험자산에 연쇄 부담이 됩니다. 비트코인도 같은 매크로 환경에서 변동성이 커질 수 있는 구간입니다."
     },
     {
       "id": "clarity-act-senate-fail",
@@ -523,10 +880,17 @@
       "severity": 4,
       "summary_ko": "트럼프가 지지한 디지털자산 시장구조법(Clarity Act)이 상원에서 60표 문턱을 넘지 못함. 비트코인 당일 5% 이상 하락 보도.",
       "sources": [
-        "https://www.reuters.com/legal/government/us-senate-vote-advancing-landmark-crypto-bill-2026-09-15/",
-        "https://www.cbsnews.com/news/senate-fails-to-advance-clarity-act-amid-democratic-concerns-about-crypto-bill/"
+        {
+          "title": "Reuters — US Senate vote on landmark crypto bill",
+          "url": "https://www.reuters.com/legal/government/us-senate-vote-advancing-landmark-crypto-bill-2026-09-15/"
+        },
+        {
+          "title": "Senate fails to advance Clarity Act amid Democratic concerns about crypto bill",
+          "url": "https://www.cbsnews.com/news/senate-fails-to-advance-clarity-act-amid-democratic-concerns-about-crypto-bill/"
+        }
       ],
-      "phases": []
+      "phases": [],
+      "body_ko": "배경\n미국에서는 암호화폐 시장 규칙을 법으로 정리하려는 ‘시장구조법’ 논의가 이어졌습니다. 트럼프 행정부가 지지한 Clarity Act가 그 중심이었습니다.\n\n무슨 일\n2026년 9월 15일 상원에서 Clarity Act가 60표 문턱을 넘지 못해 전진에 실패했습니다. 민주당 측 우려가 배경으로 보도됐습니다. 로이터·CBS 등이 전했습니다.\n\n시장·가격에 미친 영향\n규제 명확화 기대가 꺾이며 비트코인이 당일 5% 이상 하락했다는 보도가 있습니다. 정책 리스크가 가격에 바로 반영된 사례입니다."
     },
     {
       "id": "fomc-hike-sep-2026",
@@ -538,10 +902,17 @@
       "severity": 5,
       "summary_ko": "FOMC가 연방기금금리 목표를 3.75–4.00%로 25bp 인상(만장일치). 워시 의장 체제 첫 긴축.",
       "sources": [
-        "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
-        "https://www.reuters.com/business/warshs-words-may-matter-more-than-anticipated-fed-rate-hike-2026-09-16/"
+        {
+          "title": "Federal Reserve Board",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm"
+        },
+        {
+          "title": "Reuters — Fed rate hike under Warsh; statement wording in focus",
+          "url": "https://www.reuters.com/business/warshs-words-may-matter-more-than-anticipated-fed-rate-hike-2026-09-16/"
+        }
       ],
-      "phases": []
+      "phases": [],
+      "body_ko": "배경\n워시 의장 체제에서 첫 금리 결정이 시장 초점이었습니다. 인플레·성장·중동 충격이 겹친 환경이었습니다.\n\n무슨 일\n2026년 9월 16일 FOMC가 연방기금금리 목표를 3.75–4.00%로 0.25%포인트 인상했습니다(만장일치). 2023년 이후 첫 인상이며, 워시 체제 첫 긴축입니다. 연준 성명으로 확인됩니다.\n\n시장·가격에 미친 영향\n금리 인상은 위험자산에 부담이 될 수 있습니다. 동시에 의장 발언·성명 문구가 향후 경로 기대를 좌우한다는 분석이 보도됐습니다."
     },
     {
       "id": "trump-xi-truce-extension",
@@ -553,10 +924,17 @@
       "severity": 3,
       "summary_ko": "시진핑 방미·정상회담 전후로 관세 휴전이 2027-01-10로 연장. 즉각 관세 재인상은 피했으나 희토류·농업·기술 쟁점은 미해결.",
       "sources": [
-        "https://www.mfa.gov.cn/eng/xw/zyxw/202609/t20260925_12031181.html",
-        "https://www.moneycontrol.com/world/us-china-trade-truce-extended-to-january-10-what-trump-and-xi-still-need-to-settle-article-14036833.html"
+        {
+          "title": "President Xi Jinping Holds Talks with U.S. President Donald J. Trump_Ministry of Foreign Affairs of the People's Republic of China",
+          "url": "https://www.mfa.gov.cn/eng/xw/zyxw/202609/t20260925_12031181.html"
+        },
+        {
+          "title": "Moneycontrol — US–China trade truce extended to January 10",
+          "url": "https://www.moneycontrol.com/world/us-china-trade-truce-extended-to-january-10-what-trump-and-xi-still-need-to-settle-article-14036833.html"
+        }
       ],
-      "phases": []
+      "phases": [],
+      "body_ko": "배경\n미·중 관세 휴전은 세계 교역·위험자산 심리에 직접 영향을 줍니다. 만료가 다가오면 재인상 우려가 커집니다.\n\n무슨 일\n2026년 9월 24–25일 시진핑 방미·정상회담 전후로 관세 휴전이 2027년 1월 10일까지 연장됐습니다. 즉각 관세 재인상은 피했으나 희토류·농업·기술 쟁점은 미해결로 남았습니다. 중국 외교부 영문 보도 등에서 확인됩니다.\n\n시장·가격에 미친 영향\n최악의 즉시 충격은 미뤄졌지만, 구조적 갈등은 남아 있습니다. 위험자산에는 ‘안도 + 잔존 불확실성’이 공존하는 구간입니다."
     },
     {
       "id": "iran-7day-hormuz-proposal",
@@ -568,10 +946,17 @@
       "severity": 4,
       "summary_ko": "아라그치 외교장관이 미 이란항 봉쇄 해제·석유제재 완화 등을 조건으로 7일 내 해협 정상화 제안. WSJ는 트럼프 거부 보도; 이란은 공식 미 응답을 기다림.",
       "sources": [
-        "https://www.reuters.com/world/middle-east/iran-awaits-us-move-after-wsj-report-says-trump-rejects-peace-plan-2026-09-26/",
-        "https://timesofindia.indiatimes.com/world/middle-east/choice-now-rests-with-us-iran-offers-america-7-day-plan-to-reopen-strait-of-hormuz/articleshow/134495234.cms"
+        {
+          "title": "Reuters — Iran awaits US move after report Trump rejects peace plan",
+          "url": "https://www.reuters.com/world/middle-east/iran-awaits-us-move-after-wsj-report-says-trump-rejects-peace-plan-2026-09-26/"
+        },
+        {
+          "title": "‘Choice now rests with US’: Iran offers America 7-day plan to reopen Strait of Hormuz",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/choice-now-rests-with-us-iran-offers-america-7-day-plan-to-reopen-strait-of-hormuz/articleshow/134495234.cms"
+        }
       ],
-      "phases": []
+      "phases": [],
+      "body_ko": "배경\n9월에도 해협 통행은 극도로 부진한 상태였고, 외교 제안이 다시 나왔습니다.\n\n무슨 일\n이란 아라그치 외교장관이 미국 측 이란 항만 봉쇄 해제·석유제재 완화 등을 조건으로 7일 내 해협 정상화를 제안했습니다. WSJ는 트럼프 거부 보도를 냈고, 로이터에 따르면 이란은 공식 미국 응답을 기다린다고 했습니다.\n\n시장·가격에 미친 영향\n제안·거부 보도가 오가며 유가·위험자산 변동성이 커질 수 있는 국면입니다. 합의가 확정된 것은 아니므로, 사실 확인은 인용 보도에 따릅니다."
     },
     {
       "id": "centcom-iran-blockade-tally",
@@ -583,10 +968,17 @@
       "severity": 3,
       "summary_ko": "미 중부사령부가 이란 항만 입출항 봉쇄 집행 과정에서 상업선 122척을 우회시켰다고 발표(9/25 기준).",
       "sources": [
-        "https://www.iranintl.com/en/202609250333",
-        "https://www.unitedagainstnucleariran.com/analysis/iran-shipping-update-september-25-2026"
+        {
+          "title": "CENTCOM says US redirected 122 ships under Iran blockade",
+          "url": "https://www.iranintl.com/en/202609250333"
+        },
+        {
+          "title": "Iran Shipping Update – September 25, 2026",
+          "url": "https://www.unitedagainstnucleariran.com/analysis/iran-shipping-update-september-25-2026"
+        }
       ],
-      "phases": []
+      "phases": [],
+      "body_ko": "배경\n미국은 이란 항만 입출항을 막는 봉쇄를 집행해 왔습니다. 그 규모를 수치로 공개한 발표입니다.\n\n무슨 일\n2026년 9월 25일 기준, 미 중부사령부(CENTCOM)가 이란 항만 봉쇄 과정에서 상업선 122척을 우회시켰다고 발표했습니다. Iran International·UANI 분석 등에서 전했습니다.\n\n시장·가격에 미친 영향\n봉쇄가 ‘상징’이 아니라 실제로 선박 경로를 바꾸고 있다는 신호입니다. 해상 물류·에너지 공급 불안과 맞물려 매크로 리스크로 남습니다."
     }
   ]
 }

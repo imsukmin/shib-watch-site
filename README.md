@@ -21,4 +21,5 @@
 - **투자 조언이 아닙니다.**
 
 ## 데이터
-- `dashboard_data.json`, `chart_data.json`, `shib_chart_data.json`, `corr_summary.json`, `events.json`, `events_shib.json`
+- `dashboard_data.json`, `chart_data.json`, `shib_chart_data.json`, `corr_summary.json`, `dashboard_data.json`, `chart_data.json`, `shib_chart_data.json`, `corr_summary.json`, `events.json`, `events_shib.json`
+- `events/<id>.html` — 사건별 긴 한국어 기사와 출처 목록
