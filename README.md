@@ -7,6 +7,7 @@
 - **대시보드**: https://imsukmin.github.io/shib-watch-site/
 - **비트코인 차트**: https://imsukmin.github.io/shib-watch-site/chart.html
 - **시바 비교**: https://imsukmin.github.io/shib-watch-site/shib.html
+- **사건 기사 예**: https://imsukmin.github.io/shib-watch-site/events/spot-btc-etf-approval-2024.html
 
 ## 페이지
 | 파일 | 내용 |
@@ -14,6 +15,7 @@
 | `index.html` | 가격·같이 움직이는 정도·최근 소식 요약 |
 | `chart.html` | 비트코인 하루 가격 + 큰 사건 |
 | `shib.html` | 시바 vs 비트코인 (같은 출발선 비교) |
+| `events/<id>.html` | 사건별 긴 한국어 기사 + 출처 |
 
 ## 안내
 - 가격은 바이낸스 공개 자료(Binance Vision)를 씁니다. 숫자를 만들어 내지 않습니다.
@@ -21,5 +23,5 @@
 - **투자 조언이 아닙니다.**
 
 ## 데이터
-- `dashboard_data.json`, `chart_data.json`, `shib_chart_data.json`, `corr_summary.json`, `dashboard_data.json`, `chart_data.json`, `shib_chart_data.json`, `corr_summary.json`, `events.json`, `events_shib.json`
+- `dashboard_data.json`, `chart_data.json`, `shib_chart_data.json`, `corr_summary.json`, `events.json`, `events_shib.json`
 - `events/<id>.html` — 사건별 긴 한국어 기사와 출처 목록
