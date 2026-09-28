@@ -121,6 +121,15 @@
     border-radius: 999px; padding: 7px 12px; font-size: 0.82rem; font-weight: 600;
     text-decoration: none;
   }
+  .nav-links a.guide { border-color: rgba(46,204,113,0.35); color: #8dffb8; }
+  .learn-list { margin: 0; padding: 0 0 0 18px; }
+  .learn-list li { margin-bottom: 8px; font-size: 0.9rem; color: var(--text); }
+  .learn-again {
+    margin-top: 12px; padding-top: 10px;
+    border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 0.85rem;
+  }
+  .learn-again strong { color: #ffd28a; font-weight: 700; }
 
 </style>
 </head>
@@ -139,6 +148,7 @@
       <a href="../index.html">대시보드</a>
       <a class="btc" href="../chart.html">비트코인 차트</a>
       <a class="shib" href="../shib.html">시바 비교</a>
+      <a class="guide" href="../guide.html">초보 가이드</a>
       <a class="gh" href="https://github.com/imsukmin/shib-watch-site" target="_blank" rel="noopener">GitHub</a>
     </nav>
   </header>
@@ -147,6 +157,7 @@
     <a href="../index.html">← 대시보드</a>
     <a href="../chart.html">비트코인 차트</a>
     <a href="../shib.html">시바 비교</a>
+    <a href="../guide.html">초보 가이드</a>
   </div>
 
   <article class="card article-body">
@@ -158,6 +169,12 @@
 <h2>시장·가격에 미친 영향</h2>
 <p>인프라 안정화 신호로 받아들여졌고, 지갑 수 증가 등 생태계 지표 보도와 함께 나왔습니다. 장애 구간에서 벗어나는 전환점으로 표시합니다.</p>
   </article>
+
+  <section class="card">
+    <div class="section-label">이 사건에서 배울 점</div>
+    <ul class="learn-list"><li>장애 이후 복구·재개는 운영 안정성을 보는 포인트입니다.</li><li>복구 보도와 함께 무엇을 강화했는지(모니터링 등) 읽어 두면 좋습니다.</li></ul>
+    <div class="learn-again"><strong>비슷한 일이 또 오면</strong> 서비스 재개 뉴스가 나오면 중단 사유와 재발 방지 조치를 확인하세요.</div>
+  </section>
 
   <section class="card">
     <div class="section-label">출처</div>

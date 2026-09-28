@@ -138,6 +138,37 @@
     font-size: 0.88rem;
   }
   .intro strong { color: var(--text); font-weight: 650; }
+  .nav-links a.guide { border-color: rgba(46,204,113,0.35); color: #8dffb8; }
+  .so-what {
+    background: linear-gradient(145deg, #1a2748 0%, #161e3a 100%);
+    border: 1px solid rgba(243,156,18,0.28);
+    border-radius: var(--radius);
+    padding: 14px;
+    margin-bottom: 14px;
+    box-shadow: var(--shadow);
+  }
+  .so-what .label { color: #ffd28a; margin-bottom: 6px; }
+  .so-what p { margin: 0 0 8px; font-size: 0.9rem; color: var(--text); }
+  .so-what p:last-child { margin-bottom: 0; color: var(--muted); font-size: 0.82rem; }
+  .holdings-note {
+    background: var(--card);
+    border: 1px dashed rgba(255,255,255,0.14);
+    border-radius: var(--radius);
+    padding: 12px 14px;
+    margin-bottom: 14px;
+    color: var(--muted);
+    font-size: 0.84rem;
+  }
+  .summary-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px;
+    margin-bottom: 14px;
+    box-shadow: var(--shadow);
+  }
+  .summary-card .label { color: #ffd28a; margin-bottom: 6px; }
+  .summary-card p { margin: 0; font-size: 0.9rem; color: var(--text); line-height: 1.5; }
   @media (max-width: 420px) {
     .price { font-size: 1.15rem; }
     #chart { height: 300px; }
@@ -151,11 +182,12 @@
 <div class="wrap">
   <header class="hero">
     <h1>비트코인 가격과 큰 사건</h1>
-    <p class="sub">2017년 8월부터 오늘까지 · 바이낸스 하루 기준 가격</p>
+    <p class="sub">하루 종가와 큰 뉴스를 한 화면에 · 바이낸스 공개 가격</p>
     <nav class="nav-links" aria-label="페이지 이동">
       <a class="" href="index.html">대시보드</a>
       <a class="btc active" href="chart.html">비트코인 차트</a>
       <a class="shib" href="shib.html">시바 비교</a>
+      <a class="guide" href="guide.html">초보 가이드</a>
       <a class="gh" href="https://github.com/imsukmin/shib-watch-site" target="_blank" rel="noopener">GitHub</a>
     </nav>
   </header>
@@ -163,6 +195,11 @@
   <div class="intro">
     <strong>비트코인 하루 종가</strong> 위에 전쟁·금리·규제 같은 <strong>큰 뉴스·세계 사건</strong>을 겹쳐 봤습니다.
     점선은 사건 날짜입니다. 같이 움직인 구간이 있어도, 그 뉴스만의 원인으로 단정할 수는 없습니다.
+  </div>
+
+  <div class="summary-card" id="chartSummary">
+    <div class="label">한눈에 요약</div>
+    <p id="chartSummaryText">데이터를 불러오는 중…</p>
   </div>
 
   <div id="chart" class="card full tall" style="padding:0;"></div>
@@ -268,6 +305,27 @@ function renderChart() {
     scrollZoom: false,
   });
 }
+function renderChartSummary() {
+  const closes = DATA.close || [];
+  const dates = DATA.dates || [];
+  const el = document.getElementById('chartSummaryText');
+  if (!el || closes.length < 2) { if (el) el.textContent = '요약할 가격 데이터가 부족합니다.'; return; }
+  const last = Number(closes[closes.length - 1]);
+  const prev = Number(closes[closes.length - 2]);
+  const dayPct = prev ? ((last - prev) / prev) * 100 : 0;
+  const n30 = Math.min(30, closes.length - 1);
+  const ago30 = Number(closes[closes.length - 1 - n30]);
+  const mPct = ago30 ? ((last - ago30) / ago30) * 100 : 0;
+  const first = Number(closes[0]);
+  const allPct = first ? ((last - first) / first) * 100 : 0;
+  const fmt = (x) => (x >= 0 ? '+' : '') + x.toFixed(1) + '%';
+  const lastDate = dates[dates.length - 1] || '';
+  el.textContent = `최근 하루 종가는 $${last.toLocaleString('en-US', {maximumFractionDigits: 2})} (${lastDate})입니다. `
+    + `하루 전 대비 ${fmt(dayPct)}, 대략 한 달 전 대비 ${fmt(mPct)}, `
+    + `이 차트 시작(${dates[0] || ''})부터는 ${fmt(allPct)}입니다. `
+    + `아래 점선은 큰 뉴스 날짜이며, 그 뉴스만의 원인으로 단정하지는 않습니다.`;
+}
+renderChartSummary();
 renderChart();
 renderEvents();
 </script>

@@ -138,6 +138,37 @@
     font-size: 0.88rem;
   }
   .intro strong { color: var(--text); font-weight: 650; }
+  .nav-links a.guide { border-color: rgba(46,204,113,0.35); color: #8dffb8; }
+  .so-what {
+    background: linear-gradient(145deg, #1a2748 0%, #161e3a 100%);
+    border: 1px solid rgba(243,156,18,0.28);
+    border-radius: var(--radius);
+    padding: 14px;
+    margin-bottom: 14px;
+    box-shadow: var(--shadow);
+  }
+  .so-what .label { color: #ffd28a; margin-bottom: 6px; }
+  .so-what p { margin: 0 0 8px; font-size: 0.9rem; color: var(--text); }
+  .so-what p:last-child { margin-bottom: 0; color: var(--muted); font-size: 0.82rem; }
+  .holdings-note {
+    background: var(--card);
+    border: 1px dashed rgba(255,255,255,0.14);
+    border-radius: var(--radius);
+    padding: 12px 14px;
+    margin-bottom: 14px;
+    color: var(--muted);
+    font-size: 0.84rem;
+  }
+  .summary-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px;
+    margin-bottom: 14px;
+    box-shadow: var(--shadow);
+  }
+  .summary-card .label { color: #ffd28a; margin-bottom: 6px; }
+  .summary-card p { margin: 0; font-size: 0.9rem; color: var(--text); line-height: 1.5; }
   @media (max-width: 420px) {
     .price { font-size: 1.15rem; }
     #chart { height: 300px; }
@@ -151,11 +182,12 @@
 <div class="wrap">
   <header class="hero">
     <h1>시바 vs 비트코인</h1>
-    <p class="sub">시바(SHIB)와 비트코인이 얼마나 같이 움직였는지</p>
+    <p class="sub">같은 출발선으로 비교 · 같이 움직인 정도를 쉬운 말로</p>
     <nav class="nav-links" aria-label="페이지 이동">
       <a class="" href="index.html">대시보드</a>
       <a class="btc" href="chart.html">비트코인 차트</a>
       <a class="shib active" href="shib.html">시바 비교</a>
+      <a class="guide" href="guide.html">초보 가이드</a>
       <a class="gh" href="https://github.com/imsukmin/shib-watch-site" target="_blank" rel="noopener">GitHub</a>
     </nav>
   </header>
@@ -164,6 +196,11 @@
     두 가격을 <strong>같은 출발선(시작=100)</strong>으로 맞춰 비교합니다.
     아래 숫자는 “얼마나 비슷한 방향으로 움직였는지”를 보여 주며,
     <strong>같이 움직인다고 한쪽이 다른 쪽을 만든다는 뜻은 아닙니다</strong>.
+  </div>
+
+  <div class="summary-card" id="shibSummary">
+    <div class="label">한눈에 요약</div>
+    <p id="shibSummaryText">데이터를 불러오는 중…</p>
   </div>
 
   <div class="section-title">
@@ -283,6 +320,29 @@ function renderChart() {
   });
 }
 document.getElementById('disclaimer').textContent = DATA.disclaimer_ko || '';
+function renderShibSummary() {
+  const el = document.getElementById('shibSummaryText');
+  if (!el) return;
+  const sn = DATA.shib_norm || [], bn = DATA.btc_norm || [];
+  const c = DATA.corr || {};
+  if (!sn.length || !bn.length) { el.textContent = '요약할 데이터가 부족합니다.'; return; }
+  const s = Number(sn[sn.length - 1]), b = Number(bn[bn.length - 1]);
+  const sPct = s - 100, bPct = b - 100;
+  const sw = sPct >= 0 ? '올랐고' : '내려갔고';
+  const bw = bPct >= 0 ? '올랐습니다' : '내려갔습니다';
+  const roll = Number(c.roll30_latest);
+  let corrWord = '';
+  if (!isNaN(roll)) {
+    if (roll >= 0.7) corrWord = '최근 한 달에는 둘의 날 움직임이 꽤 비슷한 편입니다.';
+    else if (roll >= 0.4) corrWord = '최근 한 달에는 둘이 어느 정도 비슷한 방향으로 움직였습니다.';
+    else corrWord = '최근 한 달에는 둘이 꽤 다르게 움직인 구간도 있습니다.';
+  }
+  el.textContent = `시작일(${DATA.base_date || ''})=100으로 보면, 시바는 약 ${Math.abs(sPct).toFixed(0)}% ${sw} `
+    + `비트코인은 약 ${Math.abs(bPct).toFixed(0)}% ${bw}. `
+    + corrWord
+    + ' 같이 움직인다고 한쪽이 다른 쪽을 만든다는 뜻은 아닙니다.';
+}
+renderShibSummary();
 renderCorr();
 renderEvents();
 renderChart();

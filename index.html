@@ -138,6 +138,37 @@
     font-size: 0.88rem;
   }
   .intro strong { color: var(--text); font-weight: 650; }
+  .nav-links a.guide { border-color: rgba(46,204,113,0.35); color: #8dffb8; }
+  .so-what {
+    background: linear-gradient(145deg, #1a2748 0%, #161e3a 100%);
+    border: 1px solid rgba(243,156,18,0.28);
+    border-radius: var(--radius);
+    padding: 14px;
+    margin-bottom: 14px;
+    box-shadow: var(--shadow);
+  }
+  .so-what .label { color: #ffd28a; margin-bottom: 6px; }
+  .so-what p { margin: 0 0 8px; font-size: 0.9rem; color: var(--text); }
+  .so-what p:last-child { margin-bottom: 0; color: var(--muted); font-size: 0.82rem; }
+  .holdings-note {
+    background: var(--card);
+    border: 1px dashed rgba(255,255,255,0.14);
+    border-radius: var(--radius);
+    padding: 12px 14px;
+    margin-bottom: 14px;
+    color: var(--muted);
+    font-size: 0.84rem;
+  }
+  .summary-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px;
+    margin-bottom: 14px;
+    box-shadow: var(--shadow);
+  }
+  .summary-card .label { color: #ffd28a; margin-bottom: 6px; }
+  .summary-card p { margin: 0; font-size: 0.9rem; color: var(--text); line-height: 1.5; }
   @media (max-width: 420px) {
     .price { font-size: 1.15rem; }
     #chart { height: 300px; }
@@ -159,6 +190,7 @@
       <a class="active" href="index.html">대시보드</a>
       <a class="btc" href="chart.html">비트코인 차트</a>
       <a class="shib" href="shib.html">시바 비교</a>
+      <a class="guide" href="guide.html">초보 가이드</a>
       <a class="gh" href="https://github.com/imsukmin/shib-watch-site" target="_blank" rel="noopener">GitHub</a>
     </nav>
   </header>
@@ -181,6 +213,12 @@
       <div class="chg" id="btcChg">—</div>
       <div class="meta" id="btcMeta">하루 기준 가격</div>
     </div>
+  </div>
+
+  <div class="so-what" id="soWhatCard">
+    <div class="label">그래서 뭐?</div>
+    <p id="soWhatMain">데이터를 불러오는 중…</p>
+    <p id="soWhatHint">투자 조언이 아니라, 숫자 읽는 법을 돕는 짧은 설명입니다.</p>
   </div>
 
   <div class="section-title">
@@ -207,9 +245,15 @@
   </div>
   <div id="btcEvents"></div>
 
+  <div class="holdings-note">
+    <strong style="color:var(--text);">보유량 안내</strong> —
+    보유량을 알려주시면 가격 변동이 대략 얼마인지 보여 줄 수 있어요.
+    지금은 입력·저장 기능이 없고, 포트폴리오를 만들거나 추천하지 않습니다.
+  </div>
+
   <footer class="footer">
     <div id="disclaimer"></div>
-    <div style="margin-top:6px;">가격: Binance Vision 공개 API / 하루 기준 CSV · 사건은 인용 소스만 · 투자 조언 아님</div>
+    <div style="margin-top:6px;">가격: Binance Vision 공개 API / 하루 기준 CSV · 사건은 인용 소스만 · 투자 조언 아님 · <a href="guide.html">초보 가이드</a></div>
   </footer>
 </div>
 
@@ -356,10 +400,41 @@ async function fetchLive() {
     return false;
   }
 }
+function renderSoWhat() {
+  const c = DATA.corr || {};
+  const ch = DATA.chart365 || {};
+  const roll = Number(c.roll30_latest);
+  const full = Number(c.full_corr);
+  let corrLine = '';
+  if (!isNaN(roll)) {
+    if (roll >= 0.7) corrLine = '최근 30일에는 시바와 비트코인이 비슷한 날 움직임을 보인 편입니다.';
+    else if (roll >= 0.4) corrLine = '최근 30일에는 시바와 비트코인이 어느 정도 비슷한 방향으로 움직였습니다.';
+    else if (roll >= 0.15) corrLine = '최근 30일에는 둘이 가끔 같이, 가끔은 다르게 움직인 편입니다.';
+    else corrLine = '최근 30일에는 둘이 꽤 다른 날 움직임을 보인 편입니다.';
+  }
+  let priceLine = '';
+  const sn = ch.shib_norm, bn = ch.btc_norm;
+  if (sn && bn && sn.length && bn.length) {
+    const s = Number(sn[sn.length - 1]);
+    const b = Number(bn[bn.length - 1]);
+    const sPct = s - 100, bPct = b - 100;
+    const sWord = sPct >= 0 ? '올라' : '내려';
+    const bWord = bPct >= 0 ? '올라' : '내려';
+    priceLine = `같은 출발선(시작=100)으로 본 최근 1년은, 시바가 약 ${Math.abs(sPct).toFixed(0)}% ${sWord}가고 비트코인이 약 ${Math.abs(bPct).toFixed(0)}% ${bWord}간 자리입니다.`;
+  }
+  const main = [corrLine, priceLine].filter(Boolean).join(' ');
+  const hint = (!isNaN(full) ? `전체 기간 같이 움직이는 정도는 ${full.toFixed(2)}입니다. ` : '')
+    + '같이 움직인다고 한쪽이 다른 쪽을 만든다는 뜻은 아닙니다. 매매 신호가 아닙니다.';
+  const el = document.getElementById('soWhatMain');
+  const hintEl = document.getElementById('soWhatHint');
+  if (el) el.textContent = main || '설명을 만들 데이터가 부족합니다.';
+  if (hintEl) hintEl.textContent = hint;
+}
 function boot() {
   document.getElementById('disclaimer').textContent = DATA.disclaimer_ko || '';
   const p = DATA.prices;
   renderPrices(p.shib, p.btc, '저장된 하루 가격');
+  renderSoWhat();
   renderCorr();
   renderEvents('shibEvents', DATA.events_shib_recent, 'shibtag', '시바');
   renderEvents('btcEvents', DATA.events_btc_recent, 'btctag', '비트코인');
