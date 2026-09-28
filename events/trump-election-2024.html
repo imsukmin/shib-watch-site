@@ -5,8 +5,179 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="theme-color" content="#0b1020" />
 <title>트럼프 2024 대선 승리 · 사건 자세히</title>
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 <style>
-{CSS}
+
+  :root {
+    --bg: #0b1020;
+    --bg2: #121933;
+    --card: #161e3a;
+    --card2: #1c2648;
+    --border: rgba(255,255,255,0.08);
+    --text: #e8ecf7;
+    --muted: #8b95b5;
+    --accent: #f39c12;
+    --link: #9db4ff;
+    --shib: #ff7a9a;
+    --btc: #f39c12;
+    --down: #e74c3c;
+    --up: #2ecc71;
+    --chip: #243056;
+    --radius: 14px;
+    --shadow: 0 8px 24px rgba(0,0,0,0.28);
+    --font: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font); }
+  body { min-height: 100vh; line-height: 1.55; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 16px 14px 48px; }
+  .hero {
+    background: linear-gradient(145deg, #182044 0%, #10162d 60%, #0d1328 100%);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 18px 16px 16px;
+    box-shadow: var(--shadow);
+    margin-bottom: 14px;
+  }
+  .hero h1 {
+    margin: 8px 0 6px;
+    font-size: 1.28rem;
+    letter-spacing: -0.02em;
+    font-weight: 750;
+    line-height: 1.35;
+  }
+  .hero .sub { color: var(--muted); font-size: 0.86rem; margin: 0 0 12px; }
+  .nav-links {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    position: sticky; top: 0; z-index: 40;
+    background: rgba(13,19,40,0.94);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 8px 2px;
+    margin: 0 -2px;
+    border-radius: 12px;
+  }
+  .nav-links a {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--chip); color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 999px; padding: 7px 12px;
+    font-size: 0.82rem; font-weight: 600;
+    text-decoration: none;
+  }
+  .nav-links a.btc { border-color: rgba(243,156,18,0.35); color: #ffc56a; }
+  .nav-links a.shib { border-color: rgba(255,122,154,0.4); color: #ffb0c4; }
+  .chip {
+    display: inline-block; font-size: 0.75rem; font-weight: 700;
+    padding: 2px 7px; border-radius: 999px; background: var(--chip); color: #c7d0ee;
+  }
+  .chip.geo { background: rgba(231,76,60,0.18); color: #ff9b91; }
+  .chip.fed { background: rgba(52,152,219,0.18); color: #8fd0ff; }
+  .chip.crypto, .chip.exchange { background: rgba(155,89,186,0.18); color: #d5a8ff; }
+  .chip.policy, .chip.etf_reg { background: rgba(26,188,156,0.18); color: #7ff0d6; }
+  .chip.markets { background: rgba(243,156,18,0.18); color: #ffd28a; }
+  .chip.burn_supply, .chip.ecosystem { background: rgba(255,122,154,0.18); color: #ffb0c4; }
+  .chip.covid { background: rgba(46,204,113,0.18); color: #8dffb8; }
+  .chip.btctag { background: rgba(243,156,18,0.22); color: #ffd28a; }
+  .chip.shibtag { background: rgba(255,122,154,0.22); color: #ffb0c4; }
+  .chip.sev-high { background: rgba(243,156,18,0.2); color: #ffd28a; }
+  .chip.sev-mid { background: rgba(139,149,181,0.22); color: #c7d0ee; }
+  .chip.sev-low { background: rgba(139,149,181,0.14); color: #8b95b5; }
+  .meta-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 4px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 14px;
+    box-shadow: var(--shadow);
+    margin-bottom: 12px;
+  }
+  .card.takeaway {
+    border: 1px solid rgba(243,156,18,0.35);
+    border-left: 4px solid var(--accent);
+    background: linear-gradient(145deg, #1a2748 0%, #161e3a 100%);
+  }
+  .card.takeaway .section-label { color: #ffd28a; }
+  .card.demoted {
+    padding: 12px;
+    box-shadow: none;
+    background: var(--bg2);
+    opacity: 0.92;
+  }
+  .card.demoted .section-label { font-size: 0.7rem; margin-bottom: 6px; }
+  .section-label {
+    color: var(--muted); font-size: 0.78rem; font-weight: 700;
+    margin: 0 0 8px;
+  }
+  .article-body h2 {
+    margin: 18px 0 8px; font-size: 1.02rem; font-weight: 720;
+    color: #ffd28a;
+  }
+  .article-body h2:first-child { margin-top: 0; }
+  .article-body p {
+    margin: 0 0 12px; color: var(--text); font-size: 0.92rem;
+  }
+  .article-body p:last-child { margin-bottom: 0; }
+  .phases { margin: 0; padding: 0; list-style: none; }
+  .phases li {
+    border-left: 2px solid rgba(243,156,18,0.35);
+    padding: 6px 0 6px 12px; margin-bottom: 6px;
+  }
+  .phases .pdate { color: var(--muted); font-size: 0.75rem; font-weight: 650; }
+  .phases .ptitle { font-weight: 700; font-size: 0.88rem; margin: 2px 0; }
+  .phases .pnote { color: var(--muted); font-size: 0.8rem; }
+  .sources { list-style: none; margin: 0; padding: 0; }
+  .sources li {
+    margin-bottom: 8px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .sources a { font-weight: 650; font-size: 0.88rem; word-break: break-word; }
+  .sources .url {
+    display: block; color: var(--muted); font-size: 0.72rem;
+    margin-top: 4px; word-break: break-all;
+  }
+  .sources .why { display: block; color: var(--muted); font-size: 0.78rem; margin-top: 4px; }
+  .footer {
+    margin-top: 22px; padding: 12px; color: var(--muted); font-size: 0.72rem;
+    border-top: 1px solid var(--border); text-align: center;
+  }
+  .footer a { color: var(--muted); }
+  .learn-list { margin: 0; padding: 0 0 0 18px; }
+  .learn-list li { margin-bottom: 8px; font-size: 0.9rem; color: var(--text); }
+  .learn-again {
+    margin-top: 12px; padding-top: 10px;
+    border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 0.85rem;
+  }
+  .learn-again strong { color: #ffd28a; font-weight: 700; }
+  .similar-list { list-style: none; margin: 0; padding: 0; }
+  .similar-list li {
+    margin-bottom: 8px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .similar-list a { font-weight: 650; font-size: 0.88rem; }
+  .angle-inline {
+    margin-top: 12px; padding-top: 10px;
+    border-top: 1px solid var(--border);
+  }
+  .angle-inline .alabel {
+    color: #ffd28a; font-size: 0.78rem; font-weight: 700; margin: 8px 0 2px;
+  }
+  .angle-inline p { margin: 0 0 6px; font-size: 0.88rem; color: var(--text); }
+  .angle-block {
+    margin-bottom: 10px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .angle-block .alabel {
+    color: #ffd28a; font-size: 0.78rem; font-weight: 700; margin-bottom: 4px;
+  }
+  .angle-block p { margin: 0; font-size: 0.88rem; color: var(--text); }
+
 </style>
 </head>
 <body>
@@ -16,7 +187,7 @@
       <span class="chip btctag">비트코인</span>
       <span class="chip policy">정책</span>
       <span class="chip">2024-11-05</span>
-      <span class="chip">★★★★</span>
+      <span class="chip sev-mid">중요도 중간</span>
     </div>
     <h1>트럼프 2024 대선 승리</h1>
     <p class="sub">친크립토 공약을 내건 도널드 트럼프가 대선에서 승리. 규제 완화·전략비축 등 기대가 겹치며 BTC 강세가 이어짐.</p>
@@ -24,16 +195,14 @@
       <a href="../index.html">대시보드</a>
       <a class="btc" href="../chart.html">비트코인 차트</a>
       <a class="shib" href="../shib.html">시바 비교</a>
-      <a class="gh" href="https://github.com/imsukmin/shib-watch-site" target="_blank" rel="noopener">GitHub</a>
     </nav>
   </header>
 
-  <div class="back-row">
-    <a href="../index.html">← 대시보드</a>
-    <a href="../chart.html">비트코인 차트</a>
-    <a href="../shib.html">시바 비교</a>
-  </div>
 
+  <section class="card">
+    <div class="section-label">비슷한 과거 상황</div>
+    <ul class="similar-list"><li><a href="trump-inauguration-2025.html">트럼프 2기 취임</a></li><li><a href="btc-100k-2024.html">비트코인 첫 $100,000 돌파</a></li></ul>
+  </section>
   <article class="card article-body">
     <div class="section-label">자세히 읽기</div>
     <h2>배경</h2>
@@ -44,9 +213,11 @@
 <p>대선 이후 랠리 속에서 비트코인 강세가 이어졌다는 보도가 있습니다. 이후 $100,000 돌파 보도와도 연결됩니다.</p>
   </article>
 
-  <section class="card">
-    <div class="section-label">비슷한 과거 상황</div>
-    <ul class="similar-list"><li><a href="trump-inauguration-2025.html">트럼프 2기 취임</a><span class="url" style="display:block;color:var(--muted);font-size:0.72rem;margin-top:2px;">trump-inauguration-2025</span></li><li><a href="btc-100k-2024.html">비트코인 첫 $100,000 돌파</a><span class="url" style="display:block;color:var(--muted);font-size:0.72rem;margin-top:2px;">btc-100k-2024</span></li></ul>
+  <section class="card takeaway">
+    <div class="section-label">이 사건에서 배울 점</div>
+    <ul class="learn-list"><li>선거 결과는 정책 기대감을 바꾸는 큰 뉴스일 수 있습니다.</li><li>기대와 실제 정책 실행 사이에는 시간이 걸릴 수 있습니다.</li><li>가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다.</li></ul>
+    <div class="learn-again"><strong>비슷한 일이 또 오면</strong> 정치·선거 관련 뉴스에서는 ‘발표된 사실’과 ‘앞으로의 추측’을 구분해서 읽으세요.</div>
+    <div class="angle-inline"><div class="section-label" style="margin-top:4px;">여러 각도로 보기</div><div class="alabel">가격 · 시장 분위기</div><p>대선 이후 랠리·$100k 보도와 자주 함께 언급됩니다.</p><div class="alabel">뉴스 · 규제</div><p>발표된 사실(당선)과 앞으로의 추측(규제 완화 등)을 구분하세요.</p><div class="alabel">시바만의 이슈 vs 비트코인·큰 뉴스</div><p>정치·정책 기대 이슈입니다. 시바만의 뉴스는 아닙니다.</p></div>
   </section>
 
   <section class="card">
@@ -54,29 +225,15 @@
     <p style="margin:0;font-size:0.9rem;">선거 승리로 정책 기대가 바뀐 시점입니다. 취임(2025-01)·관세(Liberation Day)·중동·연준 인사 등은 그 이후 일정입니다. 기대와 실제 정책은 시차가 있습니다.</p>
   </section>
 
-  <section class="card">
-    <div class="section-label">여러 각도로 보기</div>
-    <div class="angle-block"><div class="alabel">가격 · 시장 분위기</div><p>대선 이후 랠리·$100k 보도와 자주 함께 언급됩니다.</p></div><div class="angle-block"><div class="alabel">뉴스 · 규제</div><p>발표된 사실(당선)과 앞으로의 추측(규제 완화 등)을 구분하세요.</p></div><div class="angle-block"><div class="alabel">시바만의 이슈 vs 비트코인·매크로</div><p>정치·정책 기대 이슈입니다. 시바만의 뉴스는 아닙니다.</p></div>
-  </section>
 
-  <section class="card">
-    <div class="section-label">이 사건에서 배울 점</div>
-    <ul class="learn-list"><li>선거 결과는 정책 기대감을 바꾸는 큰 뉴스일 수 있습니다.</li><li>기대와 실제 정책 실행 사이에는 시간이 걸릴 수 있습니다.</li><li>가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다.</li></ul>
-    <div class="learn-again"><strong>비슷한 일이 또 오면</strong> 정치·선거 관련 뉴스에서는 ‘발표된 사실’과 ‘앞으로의 추측’을 구분해서 읽으세요.</div>
-  </section>
-
-  <section class="card">
-    <div class="section-label">더 읽어볼 자료</div>
-    <ul class="further-list"><li><a href="https://english.elpais.com/economy-and-business/2024-12-27/bitcoins-golden-year-from-etf-approval-to-donald-trumps-win.html" target="_blank" rel="noopener noreferrer">Bitcoin’s golden year: From ETF approval to Donald Trump’s win</a><span class="why">사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다.</span></li><li><a href="https://abc7ny.com/post/bitcoin-price-cryptocurrency-races-past-100000-fueled-post-election-rally/15624358/" target="_blank" rel="noopener noreferrer">Bitcoin price: Cryptocurrency races past $100,000, fueled by post-election rally</a><span class="why">날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다.</span></li></ul>
-  </section>
-
-  <section class="card">
-    <div class="section-label">출처</div>
-    <ul class="sources"><li><a href="https://english.elpais.com/economy-and-business/2024-12-27/bitcoins-golden-year-from-etf-approval-to-donald-trumps-win.html" target="_blank" rel="noopener noreferrer">Bitcoin’s golden year: From ETF approval to Donald Trump’s win</a><span class="url">https://english.elpais.com/economy-and-business/2024-12-27/bitcoins-golden-year-from-etf-approval-to-donald-trumps-win.html</span></li><li><a href="https://abc7ny.com/post/bitcoin-price-cryptocurrency-races-past-100000-fueled-post-election-rally/15624358/" target="_blank" rel="noopener noreferrer">Bitcoin price: Cryptocurrency races past $100,000, fueled by post-election rally</a><span class="url">https://abc7ny.com/post/bitcoin-price-cryptocurrency-races-past-100000-fueled-post-election-rally/15624358/</span></li></ul>
+  <section class="card demoted">
+    <div class="section-label">출처 · 더 읽어볼 자료</div>
+    <ul class="sources"><li><a href="https://english.elpais.com/economy-and-business/2024-12-27/bitcoins-golden-year-from-etf-approval-to-donald-trumps-win.html" target="_blank" rel="noopener noreferrer">Bitcoin’s golden year: From ETF approval to Donald Trump’s win</a><span class="why">사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다.</span><span class="url">https://english.elpais.com/economy-and-business/2024-12-27/bitcoins-golden-year-from-etf-approval-to-donald-trumps-win.html</span></li><li><a href="https://abc7ny.com/post/bitcoin-price-cryptocurrency-races-past-100000-fueled-post-election-rally/15624358/" target="_blank" rel="noopener noreferrer">Bitcoin price: Cryptocurrency races past $100,000, fueled by post-election rally</a><span class="why">날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다.</span><span class="url">https://abc7ny.com/post/bitcoin-price-cryptocurrency-races-past-100000-fueled-post-election-rally/15624358/</span></li></ul>
   </section>
 
   <footer class="footer">
     숫자·날짜·주장은 위 출처와 바이낸스 공개 가격 CSV에만 기반합니다. 출처에 없는 내용은 적지 않았습니다. 투자 조언이 아닙니다.
+    <div style="margin-top:8px;"><a href="https://github.com/imsukmin/shib-watch-site" target="_blank" rel="noopener">GitHub</a></div>
   </footer>
 </div>
 </body>

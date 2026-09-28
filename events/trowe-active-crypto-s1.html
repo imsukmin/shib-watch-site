@@ -5,8 +5,179 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="theme-color" content="#0b1020" />
 <title>T. Rowe Price Active Crypto ETF(S-1) — SHIB 적격자산 포함 · 사건 자세히</title>
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 <style>
-{CSS}
+
+  :root {
+    --bg: #0b1020;
+    --bg2: #121933;
+    --card: #161e3a;
+    --card2: #1c2648;
+    --border: rgba(255,255,255,0.08);
+    --text: #e8ecf7;
+    --muted: #8b95b5;
+    --accent: #f39c12;
+    --link: #9db4ff;
+    --shib: #ff7a9a;
+    --btc: #f39c12;
+    --down: #e74c3c;
+    --up: #2ecc71;
+    --chip: #243056;
+    --radius: 14px;
+    --shadow: 0 8px 24px rgba(0,0,0,0.28);
+    --font: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font); }
+  body { min-height: 100vh; line-height: 1.55; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 16px 14px 48px; }
+  .hero {
+    background: linear-gradient(145deg, #182044 0%, #10162d 60%, #0d1328 100%);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 18px 16px 16px;
+    box-shadow: var(--shadow);
+    margin-bottom: 14px;
+  }
+  .hero h1 {
+    margin: 8px 0 6px;
+    font-size: 1.28rem;
+    letter-spacing: -0.02em;
+    font-weight: 750;
+    line-height: 1.35;
+  }
+  .hero .sub { color: var(--muted); font-size: 0.86rem; margin: 0 0 12px; }
+  .nav-links {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    position: sticky; top: 0; z-index: 40;
+    background: rgba(13,19,40,0.94);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 8px 2px;
+    margin: 0 -2px;
+    border-radius: 12px;
+  }
+  .nav-links a {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--chip); color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 999px; padding: 7px 12px;
+    font-size: 0.82rem; font-weight: 600;
+    text-decoration: none;
+  }
+  .nav-links a.btc { border-color: rgba(243,156,18,0.35); color: #ffc56a; }
+  .nav-links a.shib { border-color: rgba(255,122,154,0.4); color: #ffb0c4; }
+  .chip {
+    display: inline-block; font-size: 0.75rem; font-weight: 700;
+    padding: 2px 7px; border-radius: 999px; background: var(--chip); color: #c7d0ee;
+  }
+  .chip.geo { background: rgba(231,76,60,0.18); color: #ff9b91; }
+  .chip.fed { background: rgba(52,152,219,0.18); color: #8fd0ff; }
+  .chip.crypto, .chip.exchange { background: rgba(155,89,186,0.18); color: #d5a8ff; }
+  .chip.policy, .chip.etf_reg { background: rgba(26,188,156,0.18); color: #7ff0d6; }
+  .chip.markets { background: rgba(243,156,18,0.18); color: #ffd28a; }
+  .chip.burn_supply, .chip.ecosystem { background: rgba(255,122,154,0.18); color: #ffb0c4; }
+  .chip.covid { background: rgba(46,204,113,0.18); color: #8dffb8; }
+  .chip.btctag { background: rgba(243,156,18,0.22); color: #ffd28a; }
+  .chip.shibtag { background: rgba(255,122,154,0.22); color: #ffb0c4; }
+  .chip.sev-high { background: rgba(243,156,18,0.2); color: #ffd28a; }
+  .chip.sev-mid { background: rgba(139,149,181,0.22); color: #c7d0ee; }
+  .chip.sev-low { background: rgba(139,149,181,0.14); color: #8b95b5; }
+  .meta-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 4px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 14px;
+    box-shadow: var(--shadow);
+    margin-bottom: 12px;
+  }
+  .card.takeaway {
+    border: 1px solid rgba(243,156,18,0.35);
+    border-left: 4px solid var(--accent);
+    background: linear-gradient(145deg, #1a2748 0%, #161e3a 100%);
+  }
+  .card.takeaway .section-label { color: #ffd28a; }
+  .card.demoted {
+    padding: 12px;
+    box-shadow: none;
+    background: var(--bg2);
+    opacity: 0.92;
+  }
+  .card.demoted .section-label { font-size: 0.7rem; margin-bottom: 6px; }
+  .section-label {
+    color: var(--muted); font-size: 0.78rem; font-weight: 700;
+    margin: 0 0 8px;
+  }
+  .article-body h2 {
+    margin: 18px 0 8px; font-size: 1.02rem; font-weight: 720;
+    color: #ffd28a;
+  }
+  .article-body h2:first-child { margin-top: 0; }
+  .article-body p {
+    margin: 0 0 12px; color: var(--text); font-size: 0.92rem;
+  }
+  .article-body p:last-child { margin-bottom: 0; }
+  .phases { margin: 0; padding: 0; list-style: none; }
+  .phases li {
+    border-left: 2px solid rgba(243,156,18,0.35);
+    padding: 6px 0 6px 12px; margin-bottom: 6px;
+  }
+  .phases .pdate { color: var(--muted); font-size: 0.75rem; font-weight: 650; }
+  .phases .ptitle { font-weight: 700; font-size: 0.88rem; margin: 2px 0; }
+  .phases .pnote { color: var(--muted); font-size: 0.8rem; }
+  .sources { list-style: none; margin: 0; padding: 0; }
+  .sources li {
+    margin-bottom: 8px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .sources a { font-weight: 650; font-size: 0.88rem; word-break: break-word; }
+  .sources .url {
+    display: block; color: var(--muted); font-size: 0.72rem;
+    margin-top: 4px; word-break: break-all;
+  }
+  .sources .why { display: block; color: var(--muted); font-size: 0.78rem; margin-top: 4px; }
+  .footer {
+    margin-top: 22px; padding: 12px; color: var(--muted); font-size: 0.72rem;
+    border-top: 1px solid var(--border); text-align: center;
+  }
+  .footer a { color: var(--muted); }
+  .learn-list { margin: 0; padding: 0 0 0 18px; }
+  .learn-list li { margin-bottom: 8px; font-size: 0.9rem; color: var(--text); }
+  .learn-again {
+    margin-top: 12px; padding-top: 10px;
+    border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 0.85rem;
+  }
+  .learn-again strong { color: #ffd28a; font-weight: 700; }
+  .similar-list { list-style: none; margin: 0; padding: 0; }
+  .similar-list li {
+    margin-bottom: 8px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .similar-list a { font-weight: 650; font-size: 0.88rem; }
+  .angle-inline {
+    margin-top: 12px; padding-top: 10px;
+    border-top: 1px solid var(--border);
+  }
+  .angle-inline .alabel {
+    color: #ffd28a; font-size: 0.78rem; font-weight: 700; margin: 8px 0 2px;
+  }
+  .angle-inline p { margin: 0 0 6px; font-size: 0.88rem; color: var(--text); }
+  .angle-block {
+    margin-bottom: 10px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .angle-block .alabel {
+    color: #ffd28a; font-size: 0.78rem; font-weight: 700; margin-bottom: 4px;
+  }
+  .angle-block p { margin: 0; font-size: 0.88rem; color: var(--text); }
+
 </style>
 </head>
 <body>
@@ -16,7 +187,7 @@
       <span class="chip shibtag">시바</span>
       <span class="chip etf_reg">ETF·규제</span>
       <span class="chip">2025-10-22</span>
-      <span class="chip">★★★★</span>
+      <span class="chip sev-mid">중요도 중간</span>
     </div>
     <h1>T. Rowe Price Active Crypto ETF(S-1) — SHIB 적격자산 포함</h1>
     <p class="sub">T. Rowe Price Active Crypto ETF Form S-1 제출(2025-10-22). 단독 SHIB ETF가 아니라 복수 토큰 액티브 상품이며 SHIB는 적격(eligible) 자산 목록에 포함. 실제 편입은 운용 재량.</p>
@@ -24,16 +195,14 @@
       <a href="../index.html">대시보드</a>
       <a class="btc" href="../chart.html">비트코인 차트</a>
       <a class="shib" href="../shib.html">시바 비교</a>
-      <a class="gh" href="https://github.com/imsukmin/shib-watch-site" target="_blank" rel="noopener">GitHub</a>
     </nav>
   </header>
 
-  <div class="back-row">
-    <a href="../index.html">← 대시보드</a>
-    <a href="../chart.html">비트코인 차트</a>
-    <a href="../shib.html">시바 비교</a>
-  </div>
 
+  <section class="card">
+    <div class="section-label">비슷한 과거 상황</div>
+    <ul class="similar-list"><li><a href="tknz-sec-approval.html">SEC, NYSE Arca TKNZ(Active Crypto ETF) 상장 승인</a></li><li><a href="tknz-trading-start.html">TKNZ(T. Rowe Active Crypto) 거래 개시 — SHIB 적격</a></li><li><a href="spot-btc-etf-approval-2024.html">SEC, 미국 현물 비트코인 ETF 승인</a></li></ul>
+  </section>
   <article class="card article-body">
     <div class="section-label">자세히 읽기</div>
     <h2>배경</h2>
@@ -44,9 +213,11 @@
 <p>‘담을 수 있다’는 가능성은 관심 요인이 될 수 있으나, 실제 편입은 운용 재량입니다. SHIB 전용 승인으로 오해하면 안 됩니다.</p>
   </article>
 
-  <section class="card">
-    <div class="section-label">비슷한 과거 상황</div>
-    <ul class="similar-list"><li><a href="tknz-sec-approval.html">SEC, NYSE Arca TKNZ(Active Crypto ETF) 상장 승인</a><span class="url" style="display:block;color:var(--muted);font-size:0.72rem;margin-top:2px;">tknz-sec-approval</span></li><li><a href="tknz-trading-start.html">TKNZ(T. Rowe Active Crypto) 거래 개시 — SHIB 적격</a><span class="url" style="display:block;color:var(--muted);font-size:0.72rem;margin-top:2px;">tknz-trading-start</span></li><li><a href="spot-btc-etf-approval-2024.html">SEC, 미국 현물 비트코인 ETF 승인</a><span class="url" style="display:block;color:var(--muted);font-size:0.72rem;margin-top:2px;">spot-btc-etf-approval-2024</span></li></ul>
+  <section class="card takeaway">
+    <div class="section-label">이 사건에서 배울 점</div>
+    <ul class="learn-list"><li>S-1 제출은 상품 출시 준비 단계이며, 승인·거래와는 다릅니다.</li><li>SHIB가 ‘담을 수 있는’ 목록에 있어도 반드시 담는다는 뜻은 아닙니다.</li><li>가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다.</li></ul>
+    <div class="learn-again"><strong>비슷한 일이 또 오면</strong> ETF·공시 뉴스에서는 적격자산 목록과 실제 편입을 구분해서 읽으세요.</div>
+    <div class="angle-inline"><div class="section-label" style="margin-top:4px;">여러 각도로 보기</div><div class="alabel">가격 · 시장 분위기</div><p>제출만으로 거래가 시작된 것은 아닙니다.</p><div class="alabel">뉴스 · 규제</div><p>적격자산 목록과 실제 편입을 구분하세요.</p><div class="alabel">시바만의 이슈 vs 비트코인·큰 뉴스</div><p>시바가 ‘담길 수 있는’ 상품 공시입니다. BTC 단독 현물 ETF와 다릅니다.</p></div>
   </section>
 
   <section class="card">
@@ -54,29 +225,15 @@
     <p style="margin:0;font-size:0.9rem;">S-1 제출(신청·공시 준비) 단계입니다. 이후 상장 규칙 승인(2026-06)·거래 개시(2026-07)로 이어졌습니다. BTC 현물 ETF와 달리 멀티토큰 액티브 상품이며 SHIB는 적격 목록 포함입니다.</p>
   </section>
 
-  <section class="card">
-    <div class="section-label">여러 각도로 보기</div>
-    <div class="angle-block"><div class="alabel">가격 · 시장 분위기</div><p>제출만으로 거래가 시작된 것은 아닙니다.</p></div><div class="angle-block"><div class="alabel">뉴스 · 규제</div><p>적격자산 목록과 실제 편입을 구분하세요.</p></div><div class="angle-block"><div class="alabel">시바만의 이슈 vs 비트코인·매크로</div><p>시바가 ‘담길 수 있는’ 상품 공시입니다. BTC 단독 현물 ETF와 다릅니다.</p></div>
-  </section>
 
-  <section class="card">
-    <div class="section-label">이 사건에서 배울 점</div>
-    <ul class="learn-list"><li>S-1 제출은 상품 출시 준비 단계이며, 승인·거래와는 다릅니다.</li><li>SHIB가 ‘담을 수 있는’ 목록에 있어도 반드시 담는다는 뜻은 아닙니다.</li><li>가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다.</li></ul>
-    <div class="learn-again"><strong>비슷한 일이 또 오면</strong> ETF·공시 뉴스에서는 적격자산 목록과 실제 편입을 구분해서 읽으세요.</div>
-  </section>
-
-  <section class="card">
-    <div class="section-label">더 읽어볼 자료</div>
-    <ul class="further-list"><li><a href="https://www.sec.gov/Archives/edgar/data/2089855/000199937125015832/activecrypto-s1_102225.htm" target="_blank" rel="noopener noreferrer">SEC EDGAR — T. Rowe Price Active Crypto ETF Form S-1</a><span class="why">공식·규제 문서로, 표현과 날짜를 확인할 때 쓰기 좋습니다.</span></li><li><a href="https://www.sec.gov/Archives/edgar/data/2089855/000199937125015832/0001999371-25-015832-index.htm" target="_blank" rel="noopener noreferrer">EDGAR Filing Documents for 0001999371-25-015832</a><span class="why">공식·규제 문서로, 표현과 날짜를 확인할 때 쓰기 좋습니다.</span></li></ul>
-  </section>
-
-  <section class="card">
-    <div class="section-label">출처</div>
-    <ul class="sources"><li><a href="https://www.sec.gov/Archives/edgar/data/2089855/000199937125015832/activecrypto-s1_102225.htm" target="_blank" rel="noopener noreferrer">SEC EDGAR — T. Rowe Price Active Crypto ETF Form S-1</a><span class="url">https://www.sec.gov/Archives/edgar/data/2089855/000199937125015832/activecrypto-s1_102225.htm</span></li><li><a href="https://www.sec.gov/Archives/edgar/data/2089855/000199937125015832/0001999371-25-015832-index.htm" target="_blank" rel="noopener noreferrer">EDGAR Filing Documents for 0001999371-25-015832</a><span class="url">https://www.sec.gov/Archives/edgar/data/2089855/000199937125015832/0001999371-25-015832-index.htm</span></li></ul>
+  <section class="card demoted">
+    <div class="section-label">출처 · 더 읽어볼 자료</div>
+    <ul class="sources"><li><a href="https://www.sec.gov/Archives/edgar/data/2089855/000199937125015832/activecrypto-s1_102225.htm" target="_blank" rel="noopener noreferrer">SEC EDGAR — T. Rowe Price Active Crypto ETF Form S-1</a><span class="why">공식·규제 문서로, 표현과 날짜를 확인할 때 쓰기 좋습니다.</span><span class="url">https://www.sec.gov/Archives/edgar/data/2089855/000199937125015832/activecrypto-s1_102225.htm</span></li><li><a href="https://www.sec.gov/Archives/edgar/data/2089855/000199937125015832/0001999371-25-015832-index.htm" target="_blank" rel="noopener noreferrer">EDGAR Filing Documents for 0001999371-25-015832</a><span class="why">공식·규제 문서로, 표현과 날짜를 확인할 때 쓰기 좋습니다.</span><span class="url">https://www.sec.gov/Archives/edgar/data/2089855/000199937125015832/0001999371-25-015832-index.htm</span></li></ul>
   </section>
 
   <footer class="footer">
     숫자·날짜·주장은 위 출처와 바이낸스 공개 가격 CSV에만 기반합니다. 출처에 없는 내용은 적지 않았습니다. 투자 조언이 아닙니다.
+    <div style="margin-top:8px;"><a href="https://github.com/imsukmin/shib-watch-site" target="_blank" rel="noopener">GitHub</a></div>
   </footer>
 </div>
 </body>

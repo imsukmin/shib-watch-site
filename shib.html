@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="theme-color" content="#0b1020" />
 <title>시바 vs 비트코인</title>
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
 <style>
 
@@ -17,7 +18,8 @@
     --text: #e8ecf7;
     --muted: #8b95b5;
     --accent: #f39c12;
-    --shib: #e74c3c;
+    --link: #9db4ff;
+    --shib: #ff7a9a;
     --btc: #f39c12;
     --up: #2ecc71;
     --down: #e74c3c;
@@ -29,7 +31,7 @@
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font); }
   body { min-height: 100vh; line-height: 1.45; }
-  a { color: var(--accent); text-decoration: none; }
+  a { color: var(--link); text-decoration: none; }
   a:hover { text-decoration: underline; }
   .wrap { max-width: 720px; margin: 0 auto; padding: 16px 14px 48px; }
   .hero {
@@ -47,7 +49,16 @@
     font-weight: 750;
   }
   .hero .sub { color: var(--muted); font-size: 0.86rem; margin: 0 0 12px; }
-  .nav-links { display: flex; flex-wrap: wrap; gap: 8px; }
+  .nav-links {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    position: sticky; top: 0; z-index: 40;
+    background: rgba(13,19,40,0.94);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 8px 2px;
+    margin: 0 -2px;
+    border-radius: 12px;
+  }
   .nav-links a {
     display: inline-flex; align-items: center; gap: 6px;
     background: var(--chip); color: var(--text);
@@ -58,8 +69,7 @@
   }
   .nav-links a.active { border-color: rgba(243,156,18,0.5); background: #2a3658; }
   .nav-links a.btc { border-color: rgba(243,156,18,0.35); color: #ffc56a; }
-  .nav-links a.shib { border-color: rgba(231,76,60,0.35); color: #ff8f83; }
-  .nav-links a.gh { color: var(--muted); }
+  .nav-links a.shib { border-color: rgba(255,122,154,0.4); color: #ffb0c4; }
   .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
   .card {
     background: var(--card);
@@ -69,7 +79,7 @@
     box-shadow: var(--shadow);
   }
   .card.full { grid-column: 1 / -1; }
-  .label { color: var(--muted); font-size: 0.75rem; font-weight: 650; letter-spacing: 0.04em; text-transform: uppercase; }
+  .label { color: var(--muted); font-size: 0.78rem; font-weight: 650; }
   .price { font-size: 1.35rem; font-weight: 750; margin: 4px 0 2px; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
   .chg { font-size: 0.92rem; font-weight: 700; font-variant-numeric: tabular-nums; }
   .chg.up { color: var(--up); }
@@ -90,18 +100,24 @@
   }
   #chart.tall { height: 420px; }
   .corr-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-  .stat-val { font-size: 1.25rem; font-weight: 750; margin-top: 4px; font-variant-numeric: tabular-nums; }
+  .stat-val { font-size: 1.05rem; font-weight: 750; margin-top: 4px; line-height: 1.35; }
+  .stat-num { display: block; margin-top: 4px; color: var(--muted); font-size: 0.82rem; font-weight: 650; font-variant-numeric: tabular-nums; }
   .stat-hint { color: var(--muted); font-size: 0.72rem; margin-top: 4px; }
   .event {
+    display: block;
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 12px 12px 11px;
     margin-bottom: 8px;
+    color: inherit;
+    text-decoration: none;
+    transition: border-color 0.15s ease, background 0.15s ease;
   }
+  a.event:hover { text-decoration: none; border-color: rgba(157,180,255,0.35); background: #1a2344; }
   .event-top { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 4px; }
   .chip {
-    display: inline-block; font-size: 0.68rem; font-weight: 700;
+    display: inline-block; font-size: 0.75rem; font-weight: 700;
     padding: 2px 7px; border-radius: 999px; background: var(--chip); color: #c7d0ee;
   }
   .chip.geo { background: rgba(231,76,60,0.18); color: #ff9b91; }
@@ -109,20 +125,38 @@
   .chip.crypto, .chip.exchange { background: rgba(155,89,186,0.18); color: #d5a8ff; }
   .chip.policy, .chip.etf_reg { background: rgba(26,188,156,0.18); color: #7ff0d6; }
   .chip.markets { background: rgba(243,156,18,0.18); color: #ffd28a; }
-  .chip.burn_supply, .chip.ecosystem { background: rgba(231,76,60,0.18); color: #ffb0a8; }
-  .chip.shibtag { background: rgba(231,76,60,0.22); color: #ffb0a8; }
+  .chip.burn_supply, .chip.ecosystem { background: rgba(255,122,154,0.18); color: #ffb0c4; }
+  .chip.shibtag { background: rgba(255,122,154,0.22); color: #ffb0c4; }
   .chip.btctag { background: rgba(243,156,18,0.22); color: #ffd28a; }
-  .event-title { font-weight: 700; font-size: 0.92rem; margin: 2px 0 4px; }
-  .event-sum { color: var(--muted); font-size: 0.8rem; }
+  .event-title { font-weight: 700; font-size: 0.92rem; margin: 2px 0 4px; color: var(--text); }
+  .event-sum { color: var(--muted); font-size: 0.9rem; }
   .event-more {
     display: inline-block; margin-top: 8px;
-    font-size: 0.78rem; font-weight: 700; color: var(--accent);
+    font-size: 0.78rem; font-weight: 700; color: var(--link);
   }
-  .sev { margin-left: auto; color: var(--muted); font-size: 0.7rem; }
+  .sev { margin-left: auto; color: var(--muted); font-size: 0.72rem; font-weight: 650; }
+  .sev.high { color: #ffd28a; }
+  .more-link {
+    display: block; text-align: center; margin: 4px 0 10px;
+    padding: 10px 12px;
+    background: var(--card2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: var(--link); font-weight: 700; font-size: 0.86rem;
+    text-decoration: none;
+  }
+  .more-link:hover { text-decoration: underline; }
+  .chart-tools {
+    display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+    margin: 8px 2px 10px; color: var(--muted); font-size: 0.82rem;
+  }
+  .chart-tools label { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; user-select: none; }
+  .chart-tools input { accent-color: var(--accent); }
   .footer {
     margin-top: 22px; padding: 12px; color: var(--muted); font-size: 0.72rem;
     border-top: 1px solid var(--border); text-align: center;
   }
+  .footer a { color: var(--muted); }
   .live-dot {
     display: inline-block; width: 7px; height: 7px; border-radius: 50%;
     background: var(--up); margin-right: 5px; box-shadow: 0 0 8px rgba(46,204,113,0.7);
@@ -138,7 +172,6 @@
     font-size: 0.88rem;
   }
   .intro strong { color: var(--text); font-weight: 650; }
-  .nav-links a.guide { border-color: rgba(46,204,113,0.35); color: #8dffb8; }
   .so-what {
     background: linear-gradient(145deg, #1a2748 0%, #161e3a 100%);
     border: 1px solid rgba(243,156,18,0.28);
@@ -150,15 +183,7 @@
   .so-what .label { color: #ffd28a; margin-bottom: 6px; }
   .so-what p { margin: 0 0 8px; font-size: 0.9rem; color: var(--text); }
   .so-what p:last-child { margin-bottom: 0; color: var(--muted); font-size: 0.82rem; }
-  .holdings-note {
-    background: var(--card);
-    border: 1px dashed rgba(255,255,255,0.14);
-    border-radius: var(--radius);
-    padding: 12px 14px;
-    margin-bottom: 14px;
-    color: var(--muted);
-    font-size: 0.84rem;
-  }
+  .holdings-note { display: none; }
   .summary-card {
     background: var(--card);
     border: 1px solid var(--border);
@@ -169,8 +194,9 @@
   }
   .summary-card .label { color: #ffd28a; margin-bottom: 6px; }
   .summary-card p { margin: 0; font-size: 0.9rem; color: var(--text); line-height: 1.5; }
-  @media (max-width: 420px) {
-    .price { font-size: 1.15rem; }
+  @media (max-width: 480px) {
+    .grid { grid-template-columns: 1fr; }
+    .price { font-size: 1.2rem; }
     #chart { height: 300px; }
     #chart.tall { height: 360px; }
   }
@@ -187,7 +213,6 @@
       <a class="" href="index.html">대시보드</a>
       <a class="btc" href="chart.html">비트코인 차트</a>
       <a class="shib active" href="shib.html">시바 비교</a>
-      <a class="gh" href="https://github.com/imsukmin/shib-watch-site" target="_blank" rel="noopener">GitHub</a>
     </nav>
   </header>
 
@@ -206,6 +231,10 @@
     <h2>같은 출발선으로 본 가격</h2>
     <span>시작일 2021-05-10=100</span>
   </div>
+  <div class="chart-tools">
+    <label><input type="checkbox" id="showMarkers" /> 사건 표시</label>
+    <span>기본은 꺼 둠 · 켜면 시바 관련 사건 날짜를 점선으로</span>
+  </div>
   <div id="chart" class="card full tall" style="padding:0;"></div>
 
   <div class="section-title">
@@ -223,6 +252,7 @@
   <footer class="footer">
     <div id="disclaimer"></div>
     <div style="margin-top:6px;">가격: 바이낸스 공개 CSV · 사건은 인용 소스만 · 투자 조언 아님</div>
+    <div style="margin-top:8px;"><a href="https://github.com/imsukmin/shib-watch-site" target="_blank" rel="noopener">GitHub</a></div>
   </footer>
 </div>
 
@@ -242,6 +272,22 @@ function fmtShib(p) {
   if (n >= 0.001) return n.toFixed(6);
   return n.toFixed(8).replace(/0+$/, '').replace(/\.$/, '');
 }
+function sevLabel(n) {
+  const s = Number(n) || 0;
+  if (s >= 5) return { text: '중요도 높음', cls: 'high' };
+  if (s >= 3) return { text: '중요도 중간', cls: '' };
+  if (s >= 1) return { text: '중요도 낮음', cls: '' };
+  return { text: '', cls: '' };
+}
+function corrPlain(v) {
+  if (v == null || isNaN(v)) return '—';
+  const n = Number(v);
+  if (n >= 0.7) return '꽤 같이 움직임';
+  if (n >= 0.4) return '어느 정도 같이 움직임';
+  if (n >= 0.15) return '가끔 같이, 가끔 다르게';
+  if (n >= -0.15) return '거의 따로 움직임';
+  return '반대로 움직이는 편';
+}
 function renderCorr() {
   const c = DATA.corr;
   const items = [
@@ -250,41 +296,58 @@ function renderCorr() {
     { label: '최근 90일', val: c.roll90_latest, hint: '같은 기간 평균 ' + Number(c.roll90_mean).toFixed(3) },
     { label: '시바 최고가', val: null, hint: c.shib_ath_date + ' · 지금까지 가장 높았던 가격', custom: fmtShib(c.shib_ath) },
   ];
-  document.getElementById('corrCards').innerHTML = items.map(it => `
-    <div class="card">
+  document.getElementById('corrCards').innerHTML = items.map(it => {
+    if (it.custom != null) {
+      return `<div class="card">
       <div class="label">${it.label}</div>
-      <div class="stat-val">${it.custom != null ? it.custom : Number(it.val).toFixed(3)}</div>
+      <div class="stat-val">${it.custom}</div>
       <div class="stat-hint">${it.hint}</div>
-    </div>`).join('');
+    </div>`;
+    }
+    const plain = corrPlain(it.val);
+    const num = (it.val == null || isNaN(it.val)) ? '—' : Number(it.val).toFixed(2);
+    return `<div class="card">
+      <div class="label">${it.label}</div>
+      <div class="stat-val">${plain}<span class="stat-num">${num}</span></div>
+      <div class="stat-hint">${it.hint}</div>
+    </div>`;
+  }).join('');
 }
 function renderEvents() {
   const box = document.getElementById('eventCards');
   box.innerHTML = (DATA.events || []).map(e => {
     const cat = CAT_LABEL[e.category] || e.category || '';
-    const sev = '★'.repeat(Math.min(5, Math.max(1, Number(e.severity) || 3)));
-    return `<article class="event">
+    const sev = sevLabel(e.severity);
+    const href = e.id ? `events/${e.id}.html` : '';
+    const tip = e.tip_ko
+      ? `<div class="event-tip" style="margin-top:6px;font-size:0.78rem;color:var(--muted);">💡 ${e.tip_ko}</div>`
+      : `<div class="event-tip" style="margin-top:6px;font-size:0.78rem;color:var(--muted);">💡 자세히에서 비슷한 과거·여러 각도·출처를 볼 수 있어요</div>`;
+    const inner = `
       <div class="event-top">
         <span class="chip shibtag">시바</span>
         <span class="chip ${e.category || ''}">${cat}</span>
         <span class="chip">${e.start}${e.end && e.end !== e.start ? ' ~ ' + e.end : ''}</span>
-        <span class="sev">${sev}</span>
+        ${sev.text ? `<span class="sev ${sev.cls}">${sev.text}</span>` : ''}
       </div>
       <div class="event-title">${e.title_ko}</div>
       <div class="event-sum">${e.summary_ko || ''}</div>
-      ${e.tip_ko ? `<div class="event-tip" style="margin-top:6px;font-size:0.78rem;color:var(--muted);">💡 ${e.tip_ko}</div>` : `<div class="event-tip" style="margin-top:6px;font-size:0.78rem;color:var(--muted);">💡 자세히에서 비슷한 과거·여러 각도·출처를 볼 수 있어요</div>`}
-      ${e.id ? `<a class="event-more" href="events/${e.id}.html">자세히 읽기 →</a>` : ''}
-    </article>`;
+      ${tip}
+      ${href ? `<span class="event-more">자세히 읽기 →</span>` : ''}`;
+    return href ? `<a class="event" href="${href}">${inner}</a>` : `<article class="event">${inner}</article>`;
   }).join('');
 }
-function renderChart() {
-  const shapes = [];
+function markerShapes() {
   const d0 = DATA.dates[0], d1 = DATA.dates[DATA.dates.length - 1];
-  (DATA.markers || []).filter(m => m.date >= d0 && m.date <= d1).forEach(m => {
-    shapes.push({
-      type: 'line', x0: m.date, x1: m.date, y0: 0, y1: 1, yref: 'paper',
-      line: { color: 'rgba(231,76,60,0.4)', width: 1, dash: 'dot' }
-    });
-  });
+  const marks = (DATA.markers || []).filter(m => m.date >= d0 && m.date <= d1)
+    .slice().sort((a, b) => (b.date > a.date ? 1 : -1)).slice(0, 5);
+  return marks.map(m => ({
+    type: 'line', x0: m.date, x1: m.date, y0: 0, y1: 1, yref: 'paper',
+    line: { color: 'rgba(255,122,154,0.45)', width: 1, dash: 'dot' }
+  }));
+}
+function renderChart() {
+  const show = document.getElementById('showMarkers')?.checked;
+  const shapes = show ? markerShapes() : [];
   const layout = {
     paper_bgcolor: 'rgba(0,0,0,0)',
     plot_bgcolor: 'rgba(0,0,0,0)',
@@ -309,7 +372,7 @@ function renderChart() {
     {
       x: DATA.dates, y: DATA.shib_norm, name: '시바',
       type: 'scatter', mode: 'lines',
-      line: { color: '#e74c3c', width: 1.6 },
+      line: { color: '#ff7a9a', width: 1.6 },
       hovertemplate: '시바 %{y:.1f}<extra></extra>',
     },
   ];
@@ -346,6 +409,8 @@ renderShibSummary();
 renderCorr();
 renderEvents();
 renderChart();
+const tog = document.getElementById('showMarkers');
+if (tog) tog.addEventListener('change', renderChart);
 </script>
 </body>
 </html>

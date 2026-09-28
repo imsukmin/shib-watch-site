@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="theme-color" content="#0b1020" />
 <title>SHIB · BTC 한눈에 보기</title>
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
 <style>
 
@@ -17,7 +18,8 @@
     --text: #e8ecf7;
     --muted: #8b95b5;
     --accent: #f39c12;
-    --shib: #e74c3c;
+    --link: #9db4ff;
+    --shib: #ff7a9a;
     --btc: #f39c12;
     --up: #2ecc71;
     --down: #e74c3c;
@@ -29,7 +31,7 @@
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font); }
   body { min-height: 100vh; line-height: 1.45; }
-  a { color: var(--accent); text-decoration: none; }
+  a { color: var(--link); text-decoration: none; }
   a:hover { text-decoration: underline; }
   .wrap { max-width: 720px; margin: 0 auto; padding: 16px 14px 48px; }
   .hero {
@@ -47,7 +49,16 @@
     font-weight: 750;
   }
   .hero .sub { color: var(--muted); font-size: 0.86rem; margin: 0 0 12px; }
-  .nav-links { display: flex; flex-wrap: wrap; gap: 8px; }
+  .nav-links {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    position: sticky; top: 0; z-index: 40;
+    background: rgba(13,19,40,0.94);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 8px 2px;
+    margin: 0 -2px;
+    border-radius: 12px;
+  }
   .nav-links a {
     display: inline-flex; align-items: center; gap: 6px;
     background: var(--chip); color: var(--text);
@@ -58,8 +69,7 @@
   }
   .nav-links a.active { border-color: rgba(243,156,18,0.5); background: #2a3658; }
   .nav-links a.btc { border-color: rgba(243,156,18,0.35); color: #ffc56a; }
-  .nav-links a.shib { border-color: rgba(231,76,60,0.35); color: #ff8f83; }
-  .nav-links a.gh { color: var(--muted); }
+  .nav-links a.shib { border-color: rgba(255,122,154,0.4); color: #ffb0c4; }
   .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
   .card {
     background: var(--card);
@@ -69,7 +79,7 @@
     box-shadow: var(--shadow);
   }
   .card.full { grid-column: 1 / -1; }
-  .label { color: var(--muted); font-size: 0.75rem; font-weight: 650; letter-spacing: 0.04em; text-transform: uppercase; }
+  .label { color: var(--muted); font-size: 0.78rem; font-weight: 650; }
   .price { font-size: 1.35rem; font-weight: 750; margin: 4px 0 2px; font-variant-numeric: tabular-nums; letter-spacing: -0.02em; }
   .chg { font-size: 0.92rem; font-weight: 700; font-variant-numeric: tabular-nums; }
   .chg.up { color: var(--up); }
@@ -90,18 +100,24 @@
   }
   #chart.tall { height: 420px; }
   .corr-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-  .stat-val { font-size: 1.25rem; font-weight: 750; margin-top: 4px; font-variant-numeric: tabular-nums; }
+  .stat-val { font-size: 1.05rem; font-weight: 750; margin-top: 4px; line-height: 1.35; }
+  .stat-num { display: block; margin-top: 4px; color: var(--muted); font-size: 0.82rem; font-weight: 650; font-variant-numeric: tabular-nums; }
   .stat-hint { color: var(--muted); font-size: 0.72rem; margin-top: 4px; }
   .event {
+    display: block;
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 12px 12px 11px;
     margin-bottom: 8px;
+    color: inherit;
+    text-decoration: none;
+    transition: border-color 0.15s ease, background 0.15s ease;
   }
+  a.event:hover { text-decoration: none; border-color: rgba(157,180,255,0.35); background: #1a2344; }
   .event-top { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 4px; }
   .chip {
-    display: inline-block; font-size: 0.68rem; font-weight: 700;
+    display: inline-block; font-size: 0.75rem; font-weight: 700;
     padding: 2px 7px; border-radius: 999px; background: var(--chip); color: #c7d0ee;
   }
   .chip.geo { background: rgba(231,76,60,0.18); color: #ff9b91; }
@@ -109,20 +125,38 @@
   .chip.crypto, .chip.exchange { background: rgba(155,89,186,0.18); color: #d5a8ff; }
   .chip.policy, .chip.etf_reg { background: rgba(26,188,156,0.18); color: #7ff0d6; }
   .chip.markets { background: rgba(243,156,18,0.18); color: #ffd28a; }
-  .chip.burn_supply, .chip.ecosystem { background: rgba(231,76,60,0.18); color: #ffb0a8; }
-  .chip.shibtag { background: rgba(231,76,60,0.22); color: #ffb0a8; }
+  .chip.burn_supply, .chip.ecosystem { background: rgba(255,122,154,0.18); color: #ffb0c4; }
+  .chip.shibtag { background: rgba(255,122,154,0.22); color: #ffb0c4; }
   .chip.btctag { background: rgba(243,156,18,0.22); color: #ffd28a; }
-  .event-title { font-weight: 700; font-size: 0.92rem; margin: 2px 0 4px; }
-  .event-sum { color: var(--muted); font-size: 0.8rem; }
+  .event-title { font-weight: 700; font-size: 0.92rem; margin: 2px 0 4px; color: var(--text); }
+  .event-sum { color: var(--muted); font-size: 0.9rem; }
   .event-more {
     display: inline-block; margin-top: 8px;
-    font-size: 0.78rem; font-weight: 700; color: var(--accent);
+    font-size: 0.78rem; font-weight: 700; color: var(--link);
   }
-  .sev { margin-left: auto; color: var(--muted); font-size: 0.7rem; }
+  .sev { margin-left: auto; color: var(--muted); font-size: 0.72rem; font-weight: 650; }
+  .sev.high { color: #ffd28a; }
+  .more-link {
+    display: block; text-align: center; margin: 4px 0 10px;
+    padding: 10px 12px;
+    background: var(--card2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    color: var(--link); font-weight: 700; font-size: 0.86rem;
+    text-decoration: none;
+  }
+  .more-link:hover { text-decoration: underline; }
+  .chart-tools {
+    display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+    margin: 8px 2px 10px; color: var(--muted); font-size: 0.82rem;
+  }
+  .chart-tools label { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; user-select: none; }
+  .chart-tools input { accent-color: var(--accent); }
   .footer {
     margin-top: 22px; padding: 12px; color: var(--muted); font-size: 0.72rem;
     border-top: 1px solid var(--border); text-align: center;
   }
+  .footer a { color: var(--muted); }
   .live-dot {
     display: inline-block; width: 7px; height: 7px; border-radius: 50%;
     background: var(--up); margin-right: 5px; box-shadow: 0 0 8px rgba(46,204,113,0.7);
@@ -138,7 +172,6 @@
     font-size: 0.88rem;
   }
   .intro strong { color: var(--text); font-weight: 650; }
-  .nav-links a.guide { border-color: rgba(46,204,113,0.35); color: #8dffb8; }
   .so-what {
     background: linear-gradient(145deg, #1a2748 0%, #161e3a 100%);
     border: 1px solid rgba(243,156,18,0.28);
@@ -150,15 +183,7 @@
   .so-what .label { color: #ffd28a; margin-bottom: 6px; }
   .so-what p { margin: 0 0 8px; font-size: 0.9rem; color: var(--text); }
   .so-what p:last-child { margin-bottom: 0; color: var(--muted); font-size: 0.82rem; }
-  .holdings-note {
-    background: var(--card);
-    border: 1px dashed rgba(255,255,255,0.14);
-    border-radius: var(--radius);
-    padding: 12px 14px;
-    margin-bottom: 14px;
-    color: var(--muted);
-    font-size: 0.84rem;
-  }
+  .holdings-note { display: none; }
   .summary-card {
     background: var(--card);
     border: 1px solid var(--border);
@@ -169,8 +194,9 @@
   }
   .summary-card .label { color: #ffd28a; margin-bottom: 6px; }
   .summary-card p { margin: 0; font-size: 0.9rem; color: var(--text); line-height: 1.5; }
-  @media (max-width: 420px) {
-    .price { font-size: 1.15rem; }
+  @media (max-width: 480px) {
+    .grid { grid-template-columns: 1fr; }
+    .price { font-size: 1.2rem; }
     #chart { height: 300px; }
     #chart.tall { height: 360px; }
   }
@@ -184,13 +210,12 @@
     <h1>SHIB · BTC 한눈에 보기</h1>
     <p class="sub">
       <span id="liveIndicator"><span class="live-dot off"></span>데이터 로딩…</span>
-      · 업데이트 <span id="updatedAt">2026-09-27 20:39 KST</span>
+      · <span id="updatedAt">2026-09-27 20:39 KST</span>
     </p>
     <nav class="nav-links" aria-label="페이지 이동">
       <a class="active" href="index.html">대시보드</a>
       <a class="btc" href="chart.html">비트코인 차트</a>
       <a class="shib" href="shib.html">시바 비교</a>
-      <a class="gh" href="https://github.com/imsukmin/shib-watch-site" target="_blank" rel="noopener">GitHub</a>
     </nav>
   </header>
 
@@ -224,6 +249,10 @@
     <h2>같은 출발선으로 본 가격 (최근 1년)</h2>
     <span>시작일=100 · 자세한 비교는 시바 비교</span>
   </div>
+  <div class="chart-tools">
+    <label><input type="checkbox" id="showMarkers" /> 사건 표시</label>
+    <span>기본은 꺼 둠 · 켜면 큰 사건 날짜만 점선으로</span>
+  </div>
   <div id="chart" class="card full" style="padding:0;"></div>
 
   <div class="section-title">
@@ -244,15 +273,10 @@
   </div>
   <div id="btcEvents"></div>
 
-  <div class="holdings-note">
-    <strong style="color:var(--text);">보유량 안내</strong> —
-    보유량을 알려주시면 가격 변동이 대략 얼마인지 보여 줄 수 있어요.
-    지금은 입력·저장 기능이 없고, 포트폴리오를 만들거나 추천하지 않습니다.
-  </div>
-
   <footer class="footer">
     <div id="disclaimer"></div>
     <div style="margin-top:6px;">가격: Binance Vision 공개 API / 하루 기준 CSV · 사건은 인용 소스만 · 투자 조언 아님 · 자세한 학습은 각 사건 페이지에서</div>
+    <div style="margin-top:8px;"><a href="https://github.com/imsukmin/shib-watch-site" target="_blank" rel="noopener">GitHub</a></div>
   </footer>
 </div>
 
@@ -284,6 +308,29 @@ function setChg(el, pct) {
   el.textContent = fmtPct(pct);
   el.className = 'chg ' + (pct > 0 ? 'up' : pct < 0 ? 'down' : '');
 }
+function sevLabel(n) {
+  const s = Number(n) || 0;
+  if (s >= 5) return { text: '중요도 높음', cls: 'high' };
+  if (s >= 3) return { text: '중요도 중간', cls: '' };
+  if (s >= 1) return { text: '중요도 낮음', cls: '' };
+  return { text: '', cls: '' };
+}
+function corrPlain(v) {
+  if (v == null || isNaN(v)) return '—';
+  const n = Number(v);
+  if (n >= 0.7) return '꽤 같이 움직임';
+  if (n >= 0.4) return '어느 정도 같이 움직임';
+  if (n >= 0.15) return '가끔 같이, 가끔 다르게';
+  if (n >= -0.15) return '거의 따로 움직임';
+  return '반대로 움직이는 편';
+}
+function fmtRelativeKst(d) {
+  const fmt = new Intl.DateTimeFormat('ko-KR', {
+    timeZone: 'Asia/Seoul', hour: '2-digit', minute: '2-digit', hour12: false
+  });
+  const hm = fmt.format(d);
+  return '방금 · 오늘 ' + hm;
+}
 function renderPrices(shib, btc, sourceLabel) {
   document.getElementById('shibPrice').textContent = fmtShib(shib.price);
   document.getElementById('btcPrice').textContent = '$' + fmtBtc(btc.price);
@@ -301,50 +348,75 @@ function renderCorr() {
     { label: '시바 최고가', val: null, hint: c.shib_ath_date + ' · 지금까지 가장 높았던 가격', custom: fmtShib(c.shib_ath) },
   ];
   const box = document.getElementById('corrCards');
-  box.innerHTML = items.map(it => `
-    <div class="card">
+  box.innerHTML = items.map(it => {
+    if (it.custom != null) {
+      return `<div class="card">
       <div class="label">${it.label}</div>
-      <div class="stat-val">${it.custom != null ? it.custom : Number(it.val).toFixed(3)}</div>
+      <div class="stat-val">${it.custom}</div>
       <div class="stat-hint">${it.hint}</div>
-    </div>`).join('');
+    </div>`;
+    }
+    const plain = corrPlain(it.val);
+    const num = (it.val == null || isNaN(it.val)) ? '—' : Number(it.val).toFixed(2);
+    return `<div class="card">
+      <div class="label">${it.label}</div>
+      <div class="stat-val">${plain}<span class="stat-num">${num}</span></div>
+      <div class="stat-hint">${it.hint}</div>
+    </div>`;
+  }).join('');
 }
-function renderEvents(targetId, events, tagClass, tagLabel) {
+function eventCard(e, tagClass, tagLabel) {
+  const cat = CAT_LABEL[e.category] || e.category || '';
+  const sev = sevLabel(e.severity);
+  const href = e.id ? `events/${e.id}.html` : '';
+  const tip = e.tip_ko
+    ? `<div class="event-tip" style="margin-top:6px;font-size:0.78rem;color:var(--muted);">💡 ${e.tip_ko}</div>`
+    : `<div class="event-tip" style="margin-top:6px;font-size:0.78rem;color:var(--muted);">💡 자세히에서 비슷한 과거·여러 각도·출처를 볼 수 있어요</div>`;
+  const inner = `
+      <div class="event-top">
+        <span class="chip ${tagClass}">${tagLabel}</span>
+        <span class="chip ${e.category || ''}">${cat}</span>
+        <span class="chip">${e.start}${e.end && e.end !== e.start ? ' ~ ' + e.end : ''}</span>
+        ${sev.text ? `<span class="sev ${sev.cls}">${sev.text}</span>` : ''}
+      </div>
+      <div class="event-title">${e.title_ko}</div>
+      <div class="event-sum">${e.summary_ko || ''}</div>
+      ${tip}
+      ${href ? `<span class="event-more">자세히 읽기 →</span>` : ''}`;
+  if (href) return `<a class="event" href="${href}">${inner}</a>`;
+  return `<article class="event">${inner}</article>`;
+}
+function renderEvents(targetId, events, tagClass, tagLabel, moreHref, moreLabel) {
   const box = document.getElementById(targetId);
   if (!events || !events.length) {
     box.innerHTML = '<div class="event"><div class="event-sum">표시할 소식이 없습니다.</div></div>';
     return;
   }
-  box.innerHTML = events.map(e => {
-    const cat = CAT_LABEL[e.category] || e.category;
-    const sev = '★'.repeat(Math.min(5, Math.max(1, Number(e.severity) || 3)));
-    return `<article class="event">
-      <div class="event-top">
-        <span class="chip ${tagClass}">${tagLabel}</span>
-        <span class="chip ${e.category}">${cat}</span>
-        <span class="chip">${e.start}${e.end && e.end !== e.start ? ' ~ ' + e.end : ''}</span>
-        <span class="sev">${sev}</span>
-      </div>
-      <div class="event-title">${e.title_ko}</div>
-      <div class="event-sum">${e.summary_ko || ''}</div>
-      ${e.tip_ko ? `<div class="event-tip" style="margin-top:6px;font-size:0.78rem;color:var(--muted);">💡 ${e.tip_ko}</div>` : `<div class="event-tip" style="margin-top:6px;font-size:0.78rem;color:var(--muted);">💡 자세히에서 비슷한 과거·여러 각도·출처를 볼 수 있어요</div>`}
-      ${e.id ? `<a class="event-more" href="events/${e.id}.html">자세히 읽기 →</a>` : ''}
-    </article>`;
-  }).join('');
+  const top = events.slice(0, 3);
+  let html = top.map(e => eventCard(e, tagClass, tagLabel)).join('');
+  if (events.length > 3 && moreHref) {
+    html += `<a class="more-link" href="${moreHref}">${moreLabel || '더 보기'} (${events.length - 3}개 더) →</a>`;
+  }
+  box.innerHTML = html;
+}
+function markerShapes() {
+  const ch = DATA.chart365;
+  const d0 = ch.dates[0], d1 = ch.dates[ch.dates.length - 1];
+  const allMarks = [
+    ...DATA.markers_btc.map(m => ({...m, color: 'rgba(243,156,18,0.45)', rank: 2})),
+    ...DATA.markers_shib.map(m => ({...m, color: 'rgba(255,122,154,0.5)', rank: 1})),
+  ].filter(m => m.date >= d0 && m.date <= d1);
+  // Cap to 5 most recent in window for beginners
+  allMarks.sort((a, b) => (b.date > a.date ? 1 : b.date < a.date ? -1 : 0));
+  return allMarks.slice(0, 5).map(m => ({
+    type: 'line', x0: m.date, x1: m.date, y0: 0, y1: 1, yref: 'paper',
+    line: { color: m.color, width: 1, dash: 'dot' }
+  }));
 }
 function renderChart() {
   const ch = DATA.chart365;
-  const shapes = [];
-  const allMarks = [
-    ...DATA.markers_btc.map(m => ({...m, color: 'rgba(243,156,18,0.35)'})),
-    ...DATA.markers_shib.map(m => ({...m, color: 'rgba(231,76,60,0.45)'})),
-  ];
-  const d0 = ch.dates[0], d1 = ch.dates[ch.dates.length - 1];
-  allMarks.filter(m => m.date >= d0 && m.date <= d1).forEach(m => {
-    shapes.push({
-      type: 'line', x0: m.date, x1: m.date, y0: 0, y1: 1, yref: 'paper',
-      line: { color: m.color, width: 1, dash: 'dot' }
-    });
-  });
+  const show = document.getElementById('showMarkers')?.checked;
+  const shapes = show ? markerShapes() : [];
   const layout = {
     paper_bgcolor: 'rgba(0,0,0,0)',
     plot_bgcolor: 'rgba(0,0,0,0)',
@@ -369,7 +441,7 @@ function renderChart() {
     {
       x: ch.dates, y: ch.shib_norm, name: '시바',
       type: 'scatter', mode: 'lines',
-      line: { color: '#e74c3c', width: 1.8 },
+      line: { color: '#ff7a9a', width: 1.8 },
       hovertemplate: '시바 %{y:.1f}<extra></extra>',
     },
   ];
@@ -388,8 +460,7 @@ async function fetchLive() {
       '라이브 (Binance Vision)'
     );
     document.getElementById('liveIndicator').innerHTML = '<span class="live-dot"></span>라이브 시세';
-    document.getElementById('updatedAt').textContent =
-      new Date().toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' }) + ' KST';
+    document.getElementById('updatedAt').textContent = fmtRelativeKst(new Date());
     return true;
   } catch (err) {
     console.warn('live fetch failed, using baked CSV', err);
@@ -436,9 +507,11 @@ function boot() {
   renderPrices(p.shib, p.btc, '저장된 하루 가격');
   renderSoWhat();
   renderCorr();
-  renderEvents('shibEvents', DATA.events_shib_recent, 'shibtag', '시바');
-  renderEvents('btcEvents', DATA.events_btc_recent, 'btctag', '비트코인');
+  renderEvents('shibEvents', DATA.events_shib_recent, 'shibtag', '시바', 'shib.html', '시바 소식 더 보기');
+  renderEvents('btcEvents', DATA.events_btc_recent, 'btctag', '비트코인', 'chart.html', '비트코인 소식 더 보기');
   renderChart();
+  const tog = document.getElementById('showMarkers');
+  if (tog) tog.addEventListener('change', renderChart);
   fetchLive();
 }
 boot();
