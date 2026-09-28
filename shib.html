@@ -187,7 +187,6 @@
       <a class="" href="index.html">대시보드</a>
       <a class="btc" href="chart.html">비트코인 차트</a>
       <a class="shib active" href="shib.html">시바 비교</a>
-      <a class="guide" href="guide.html">초보 가이드</a>
       <a class="gh" href="https://github.com/imsukmin/shib-watch-site" target="_blank" rel="noopener">GitHub</a>
     </nav>
   </header>
@@ -272,6 +271,7 @@ function renderEvents() {
       </div>
       <div class="event-title">${e.title_ko}</div>
       <div class="event-sum">${e.summary_ko || ''}</div>
+      ${e.tip_ko ? `<div class="event-tip" style="margin-top:6px;font-size:0.78rem;color:var(--muted);">💡 ${e.tip_ko}</div>` : `<div class="event-tip" style="margin-top:6px;font-size:0.78rem;color:var(--muted);">💡 자세히에서 비슷한 과거·여러 각도·출처를 볼 수 있어요</div>`}
       ${e.id ? `<a class="event-more" href="events/${e.id}.html">자세히 읽기 →</a>` : ''}
     </article>`;
   }).join('');

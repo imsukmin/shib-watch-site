@@ -6,131 +6,7 @@
 <meta name="theme-color" content="#0b1020" />
 <title>TKNZ(T. Rowe Active Crypto) 거래 개시 — SHIB 적격 · 사건 자세히</title>
 <style>
-
-  :root {
-    --bg: #0b1020;
-    --bg2: #121933;
-    --card: #161e3a;
-    --card2: #1c2648;
-    --border: rgba(255,255,255,0.08);
-    --text: #e8ecf7;
-    --muted: #8b95b5;
-    --accent: #f39c12;
-    --shib: #e74c3c;
-    --btc: #f39c12;
-    --chip: #243056;
-    --radius: 14px;
-    --shadow: 0 8px 24px rgba(0,0,0,0.28);
-    --font: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, -apple-system, sans-serif;
-  }
-  * { box-sizing: border-box; }
-  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font); }
-  body { min-height: 100vh; line-height: 1.55; }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .wrap { max-width: 720px; margin: 0 auto; padding: 16px 14px 48px; }
-  .hero {
-    background: linear-gradient(145deg, #182044 0%, #10162d 60%, #0d1328 100%);
-    border: 1px solid var(--border);
-    border-radius: 18px;
-    padding: 18px 16px 16px;
-    box-shadow: var(--shadow);
-    margin-bottom: 14px;
-  }
-  .hero h1 {
-    margin: 8px 0 6px;
-    font-size: 1.28rem;
-    letter-spacing: -0.02em;
-    font-weight: 750;
-    line-height: 1.35;
-  }
-  .hero .sub { color: var(--muted); font-size: 0.86rem; margin: 0 0 12px; }
-  .nav-links { display: flex; flex-wrap: wrap; gap: 8px; }
-  .nav-links a {
-    display: inline-flex; align-items: center; gap: 6px;
-    background: var(--chip); color: var(--text);
-    border: 1px solid var(--border);
-    border-radius: 999px; padding: 7px 12px;
-    font-size: 0.82rem; font-weight: 600;
-    text-decoration: none;
-  }
-  .nav-links a.btc { border-color: rgba(243,156,18,0.35); color: #ffc56a; }
-  .nav-links a.shib { border-color: rgba(231,76,60,0.35); color: #ff8f83; }
-  .nav-links a.gh { color: var(--muted); }
-  .chip {
-    display: inline-block; font-size: 0.68rem; font-weight: 700;
-    padding: 2px 7px; border-radius: 999px; background: var(--chip); color: #c7d0ee;
-  }
-  .chip.geo { background: rgba(231,76,60,0.18); color: #ff9b91; }
-  .chip.fed { background: rgba(52,152,219,0.18); color: #8fd0ff; }
-  .chip.crypto, .chip.exchange { background: rgba(155,89,186,0.18); color: #d5a8ff; }
-  .chip.policy, .chip.etf_reg { background: rgba(26,188,156,0.18); color: #7ff0d6; }
-  .chip.markets { background: rgba(243,156,18,0.18); color: #ffd28a; }
-  .chip.burn_supply, .chip.ecosystem { background: rgba(231,76,60,0.18); color: #ffb0a8; }
-  .chip.covid { background: rgba(46,204,113,0.18); color: #8dffb8; }
-  .chip.btctag { background: rgba(243,156,18,0.22); color: #ffd28a; }
-  .chip.shibtag { background: rgba(231,76,60,0.22); color: #ffb0a8; }
-  .meta-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 4px; }
-  .card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 16px 14px;
-    box-shadow: var(--shadow);
-    margin-bottom: 12px;
-  }
-  .section-label {
-    color: var(--muted); font-size: 0.72rem; font-weight: 700;
-    letter-spacing: 0.06em; text-transform: uppercase; margin: 0 0 8px;
-  }
-  .article-body h2 {
-    margin: 18px 0 8px; font-size: 1.02rem; font-weight: 720;
-    color: #ffd28a;
-  }
-  .article-body h2:first-child { margin-top: 0; }
-  .article-body p {
-    margin: 0 0 12px; color: var(--text); font-size: 0.92rem;
-  }
-  .article-body p:last-child { margin-bottom: 0; }
-  .phases { margin: 0; padding: 0; list-style: none; }
-  .phases li {
-    border-left: 2px solid rgba(243,156,18,0.35);
-    padding: 6px 0 6px 12px; margin-bottom: 6px;
-  }
-  .phases .pdate { color: var(--muted); font-size: 0.75rem; font-weight: 650; }
-  .phases .ptitle { font-weight: 700; font-size: 0.88rem; margin: 2px 0; }
-  .phases .pnote { color: var(--muted); font-size: 0.8rem; }
-  .sources { list-style: none; margin: 0; padding: 0; }
-  .sources li {
-    margin-bottom: 8px; padding: 10px 12px;
-    background: var(--card2); border-radius: 10px;
-    border: 1px solid var(--border);
-  }
-  .sources a { font-weight: 650; font-size: 0.88rem; word-break: break-word; }
-  .sources .url {
-    display: block; color: var(--muted); font-size: 0.72rem;
-    margin-top: 4px; word-break: break-all;
-  }
-  .footer {
-    margin-top: 22px; padding: 12px; color: var(--muted); font-size: 0.72rem;
-    border-top: 1px solid var(--border); text-align: center;
-  }
-  .back-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
-  .back-row a {
-    background: var(--chip); color: var(--text); border: 1px solid var(--border);
-    border-radius: 999px; padding: 7px 12px; font-size: 0.82rem; font-weight: 600;
-    text-decoration: none;
-  }
-  .nav-links a.guide { border-color: rgba(46,204,113,0.35); color: #8dffb8; }
-  .learn-list { margin: 0; padding: 0 0 0 18px; }
-  .learn-list li { margin-bottom: 8px; font-size: 0.9rem; color: var(--text); }
-  .learn-again {
-    margin-top: 12px; padding-top: 10px;
-    border-top: 1px solid var(--border);
-    color: var(--muted); font-size: 0.85rem;
-  }
-  .learn-again strong { color: #ffd28a; font-weight: 700; }
-
+{CSS}
 </style>
 </head>
 <body>
@@ -148,7 +24,6 @@
       <a href="../index.html">대시보드</a>
       <a class="btc" href="../chart.html">비트코인 차트</a>
       <a class="shib" href="../shib.html">시바 비교</a>
-      <a class="guide" href="../guide.html">초보 가이드</a>
       <a class="gh" href="https://github.com/imsukmin/shib-watch-site" target="_blank" rel="noopener">GitHub</a>
     </nav>
   </header>
@@ -157,7 +32,6 @@
     <a href="../index.html">← 대시보드</a>
     <a href="../chart.html">비트코인 차트</a>
     <a href="../shib.html">시바 비교</a>
-    <a href="../guide.html">초보 가이드</a>
   </div>
 
   <article class="card article-body">
@@ -171,9 +45,29 @@
   </article>
 
   <section class="card">
+    <div class="section-label">비슷한 과거 상황</div>
+    <ul class="similar-list"><li><a href="tknz-sec-approval.html">SEC, NYSE Arca TKNZ(Active Crypto ETF) 상장 승인</a><span class="url" style="display:block;color:var(--muted);font-size:0.72rem;margin-top:2px;">tknz-sec-approval</span></li><li><a href="trowe-active-crypto-s1.html">T. Rowe Price Active Crypto ETF(S-1) — SHIB 적격자산 포함</a><span class="url" style="display:block;color:var(--muted);font-size:0.72rem;margin-top:2px;">trowe-active-crypto-s1</span></li><li><a href="spot-btc-etf-approval-2024.html">SEC, 미국 현물 비트코인 ETF 승인</a><span class="url" style="display:block;color:var(--muted);font-size:0.72rem;margin-top:2px;">spot-btc-etf-approval-2024</span></li></ul>
+  </section>
+
+  <section class="card">
+    <div class="section-label">그때와 지금 · 비슷한 사건과의 차이</div>
+    <p style="margin:0;font-size:0.9rem;">거래 개시로 일반 투자자가 상품을 사고팔 수 있게 된 시점입니다. 적격 목록에 SHIB가 있어도 지금 보유 중이라는 뜻은 아닙니다. S-1→승인→개시 순서를 한 줄로 보면 헷갈림이 줄어듭니다.</p>
+  </section>
+
+  <section class="card">
+    <div class="section-label">여러 각도로 보기</div>
+    <div class="angle-block"><div class="alabel">가격 · 시장 분위기</div><p>상품 거래와 SHIB 현물 가격을 바로 동일시하지 마세요.</p></div><div class="angle-block"><div class="alabel">뉴스 · 규제</div><p>운용사 보도자료·SEC 8-K를 확인하세요.</p></div><div class="angle-block"><div class="alabel">시바만의 이슈 vs 비트코인·매크로</div><p>시바 관련(적격) 규제 상품이지만, BTC 현물 ETF와는 다릅니다.</p></div>
+  </section>
+
+  <section class="card">
     <div class="section-label">이 사건에서 배울 점</div>
-    <ul class="learn-list"><li>거래 개시는 일반 투자자가 그 상품을 사고팔 수 있게 된 시점입니다.</li><li>적격 목록 포함 ≠ 운용사가 지금 SHIB를 보유 중이라는 뜻은 아닙니다.</li></ul>
+    <ul class="learn-list"><li>거래 개시는 일반 투자자가 그 상품을 사고팔 수 있게 된 시점입니다.</li><li>적격 목록 포함 ≠ 운용사가 지금 SHIB를 보유 중이라는 뜻은 아닙니다.</li><li>가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다.</li></ul>
     <div class="learn-again"><strong>비슷한 일이 또 오면</strong> 상품 거래 개시 뉴스와 보유 내역(공시)을 혼동하지 마세요.</div>
+  </section>
+
+  <section class="card">
+    <div class="section-label">더 읽어볼 자료</div>
+    <ul class="further-list"><li><a href="https://investors.troweprice.com/news-releases/news-release-details/t-rowe-price-debuts-industrys-first-actively-managed-multi-token" target="_blank" rel="noopener noreferrer">T. ROWE PRICE DEBUTS INDUSTRY&#x27;S FIRST ACTIVELY MANAGED MULTI-TOKEN SPOT EXCHANGE-TRADED PRODUCT</a><span class="why">당사자 공식 발표로, 무엇이 시작·포함됐는지 확인하기 좋습니다.</span></li><li><a href="https://www.sec.gov/Archives/edgar/data/2089855/000199937126014983/tknz_8k-071426.htm" target="_blank" rel="noopener noreferrer">SEC EDGAR — TKNZ Form 8-K (trading debut)</a><span class="why">공식·규제 문서로, 표현과 날짜를 확인할 때 쓰기 좋습니다.</span></li></ul>
   </section>
 
   <section class="card">

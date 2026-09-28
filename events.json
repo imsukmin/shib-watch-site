@@ -24,9 +24,27 @@
       "body_ko": "배경\n이 사이트에서 쓰는 비트코인 가격 기록은 바이낸스 공개 데이터에서 가져옵니다. 하루 단위(일봉) 가격이 언제부터 있는지에 따라, 차트와 분석의 시작 날짜가 정해집니다.\n\n무슨 일\n공개 klines API를 기준으로, BTC/USDT 하루 가격이 제공되기 시작한 날은 2017-08-17(UTC)입니다. 그래서 이 패키지의 비트코인 시계열도 그날부터 시작합니다.\n\n시장·가격에 미친 영향\n이 날짜 자체는 ‘가격이 급등했다’는 뉴스 사건이라기보다, 데이터 시작점입니다. 이후 차트·사건 비교는 모두 이 시작일 이후의 바이낸스 가격만 사용합니다.",
       "learn_points_ko": [
         "이 사이트의 비트코인 차트는 바이낸스 공개 하루 가격이 시작된 날부터 그립니다.",
-        "데이터가 어디서부터 있는지를 알면, 차트 비교 구간의 한계를 이해하기 쉽습니다."
+        "데이터가 어디서부터 있는지를 알면, 차트 비교 구간의 한계를 이해하기 쉽습니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "새 거래소·새 가격 출처를 쓸 때도 ‘어느 날부터 기록이 있는지’를 먼저 확인하면 좋습니다."
+      "learn_if_again_ko": "새 거래소·새 가격 출처를 쓸 때도 ‘어느 날부터 기록이 있는지’를 먼저 확인하면 좋습니다.",
+      "similar_event_ids": [
+        "binance-shibusdt-listing",
+        "btc-ath-2017"
+      ],
+      "then_vs_now_ko": "그때는 이 사이트가 쓰는 비트코인 하루 가격 기록이 막 시작된 시점입니다. 지금 차트·사건 비교도 모두 그 이후 바이낸스 가격만 씁니다. 시바 쪽은 훨씬 늦은 2021년 바이낸스 상장부터 기록이 있습니다.",
+      "angles_ko": {
+        "price_market": "가격 ‘급등 뉴스’라기보다 데이터 시작점입니다. 차트 왼쪽 끝이 여기서 끊깁니다.",
+        "news_reg": "거래소 공개 API 제공 시점과 맞물린 기술·데이터 이슈에 가깝습니다.",
+        "shib_vs_btc_macro": "비트코인 시계열만의 시작일입니다. 시바·매크로 사건과 직접 비교하려면 공통 구간(시바 상장 이후)을 보세요."
+      },
+      "further_reading": [
+        {
+          "title": "Binance Vision — BTCUSDT 일봉 klines API",
+          "url": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&startTime=0&limit=1",
+          "why_ko": "이 사이트가 쓰는 가격 데이터의 출처를 직접 확인할 수 있습니다."
+        }
+      ]
     },
     {
       "id": "btc-ath-2017",
@@ -51,9 +69,33 @@
       "body_ko": "배경\n2017년에는 ICO(신규 코인 모집) 열기가 크고, 암호화폐에 대한 관심이 빠르게 늘었습니다. 비트코인도 그 흐름 안에서 큰 상승을 겪었습니다.\n\n무슨 일\n같은 해 12월 17일 전후로 비트코인이 약 1만 9천~2만 달러대 사상 최고치 구간에 도달했다는 기록이 가격 역사 자료에 남습니다. 그 직후 가격은 크게 꺾이며 2018년의 긴 약세장으로 이어집니다.\n\n시장·가격에 미친 영향\n고점 이후 급락은 ‘암호화폐 겨울’로 불리는 약세장의 출발점으로 자주 이야기됩니다. 이 구간의 숫자는 거래소·집계마다 조금 다를 수 있어, 이 사이트는 바이낸스 하루 종가 CSV와 인용 소스만 기준으로 합니다.",
       "learn_points_ko": [
         "높은 고점만 보지 말고, 그 뒤 긴 하락(약세장)이 이어질 수 있다는 점을 함께 봅니다.",
-        "당시에는 ICO 붐 같은 시장 분위기가 겹쳤다는 기록이 있습니다."
+        "당시에는 ICO 붐 같은 시장 분위기가 겹쳤다는 기록이 있습니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "큰 고점 뉴스가 나와도, 그 전후 가격이 어떻게 이어졌는지 차트로 같이 보면 도움이 됩니다."
+      "learn_if_again_ko": "큰 고점 뉴스가 나와도, 그 전후 가격이 어떻게 이어졌는지 차트로 같이 보면 도움이 됩니다.",
+      "similar_event_ids": [
+        "crypto-winter-2018",
+        "btc-ath-2021",
+        "btc-ath-2025-oct"
+      ],
+      "then_vs_now_ko": "2017년 고점(~$20k) 뒤에는 긴 약세장(2018 암호화폐 겨울)이 이어졌습니다. 이후 2021·2024–25에도 더 높은 고점이 기록됐지만, ‘고점 직후 긴 조정’이 반복될 수 있다는 점은 같은 계열로 자주 비교됩니다.",
+      "angles_ko": {
+        "price_market": "ICO 붐 속 사상 최고치 구간으로, 고점만 보지 말고 이후 하락 구간을 같이 보면 흐름이 보입니다.",
+        "news_reg": "당시에는 신규 코인 공모(ICO) 열기와 규제 논의가 겹쳤다는 기록이 많습니다.",
+        "shib_vs_btc_macro": "시바가 나오기 전 시기입니다. 비트코인·알트 전반의 사이클 고점 사례로 읽습니다."
+      },
+      "further_reading": [
+        {
+          "title": "Cryptocurrency bubble",
+          "url": "https://en.wikipedia.org/wiki/Cryptocurrency_bubble",
+          "why_ko": "사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다."
+        },
+        {
+          "title": "Bitcoin price history: Timeline of its evolution [2009-2024]",
+          "url": "https://www.kraken.com/au/learn/bitcoin-price-history",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "crypto-winter-2018",
@@ -89,9 +131,33 @@
       "body_ko": "배경\n2017년 말 고점 이후 시장 분위기는 급격히 식었습니다. 규제 논의와 거래·유동성 위축이 겹치며 장기간 하락이 이어졌습니다.\n\n무슨 일\n2018년 한 해 동안 비트코인은 고점 대비 큰 폭으로 밀렸고, 연말 부근에는 하루 종가가 3,000달러대까지 내려간 구간으로 정리됩니다. 이른바 ‘암호화폐 겨울’로 불리는 대표적 약세장입니다.\n\n시장·가격에 미친 영향\n긴 하락은 투자 심리와 거래 활동을 동시에 위축시켰습니다. 이후 회복까지 상당한 시간이 걸렸고, 이후 사이클을 이야기할 때 자주 비교 기준으로 쓰입니다.",
       "learn_points_ko": [
         "약세장은 하루 사건이 아니라 여러 달이 이어지는 구간일 수 있습니다.",
-        "규제·거래 위축이 겹친 시기로 자주 언급됩니다."
+        "규제·거래 위축이 겹친 시기로 자주 언급됩니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "긴 하락 구간에서는 ‘하루 뉴스’와 ‘전체 추세’를 구분해서 보면 좋습니다."
+      "learn_if_again_ko": "긴 하락 구간에서는 ‘하루 뉴스’와 ‘전체 추세’를 구분해서 보면 좋습니다.",
+      "similar_event_ids": [
+        "btc-ath-2017",
+        "fed-hiking-cycle-2022-23",
+        "ftx-collapse-2022"
+      ],
+      "then_vs_now_ko": "2017 고점 이후의 긴 약세입니다. 2022년 Terra·FTX 충격과도 ‘긴 하락+신뢰 훼손’ 면에서 자주 비교되지만, 원인(ICO 붐 후퇴 vs 디파이·거래소 붕괴)은 다릅니다.",
+      "angles_ko": {
+        "price_market": "하루 사건이 아니라 여러 달에 걸친 약세 구간입니다. 연말 부근 $3,000대까지 내려간 기록이 있습니다.",
+        "news_reg": "규제·유동성 위축이 겹친 시기로 자주 정리됩니다.",
+        "shib_vs_btc_macro": "시바 등장 전입니다. 비트코인·시장 전체 분위기 사례로 봅니다."
+      },
+      "further_reading": [
+        {
+          "title": "Bitcoin price history: Timeline of its evolution [2009-2024]",
+          "url": "https://www.kraken.com/au/learn/bitcoin-price-history",
+          "why_ko": "사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다."
+        },
+        {
+          "title": "The Complete Bitcoin Timeline: 2008 to Today",
+          "url": "https://bitcoincompleteguide.com/bitcoin-timeline/",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "covid-crash-fed-2020",
@@ -136,9 +202,38 @@
       "body_ko": "배경\n2020년 초 코로나19 확산으로 세계 금융시장이 큰 충격을 받았습니다. 주식·원자재 같은 위험자산과 함께 비트코인도 같은 방향으로 흔들렸습니다.\n\n무슨 일\n연준은 3월 3일 긴급으로 기준금리를 0.50%포인트 내렸고(목표 1.00–1.25%), 3월 12일 전후로는 ‘블랙 서스데이’급 패닉 매도 속에 비트코인도 크게 하락했다는 보도가 있습니다. 이어 3월 15일 주말 긴급회의로 금리를 사실상 0–0.25%로 되돌리고 대규모 유동성 지원을 발표했습니다.\n\n시장·가격에 미친 영향\n단기적으로는 급락이 컸지만, 이후 완화 정책과 유동성 확대가 이어지며 2020–21년 강세장의 배경으로 자주 인용됩니다. 금리·유동성 뉴스가 암호화폐에도 크게 영향을 준 대표 사례로 남습니다.",
       "learn_points_ko": [
         "세계적인 충격이 오면 위험자산 가격이 한꺼번에 흔들릴 수 있습니다.",
-        "연준의 긴급 완화 같은 정책 대응도 같은 시기에 기록됩니다."
+        "연준의 긴급 완화 같은 정책 대응도 같은 시기에 기록됩니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "큰 위기 뉴스와 정책 발표가 겹칠 때는, 날짜별로 무슨 일이 있었는지 정리해 두면 읽기 쉽습니다."
+      "learn_if_again_ko": "큰 위기 뉴스와 정책 발표가 겹칠 때는, 날짜별로 무슨 일이 있었는지 정리해 두면 읽기 쉽습니다.",
+      "similar_event_ids": [
+        "fed-hiking-cycle-2022-23",
+        "svb-collapse-2023",
+        "fed-cutting-cycle-2024"
+      ],
+      "then_vs_now_ko": "팬데믹 공포로 위험자산이 한꺼번에 흔들린 뒤, 연준이 긴급 완화로 대응한 구간입니다. 2022–23 긴축·2024 인하·2026 재인상과는 ‘위기 → 정책 대응’이라는 뼈대는 비슷하지만, 금리 방향은 반대였습니다.",
+      "angles_ko": {
+        "price_market": "이른바 블랙 서스데이 전후 비트코인도 크게 흔들렸다는 기록이 있습니다.",
+        "news_reg": "연준 긴급 인하·유동성 지원 발표가 같은 시기에 나왔습니다.",
+        "shib_vs_btc_macro": "시바 상장 전입니다. 매크로·연준이 암호화폐 분위기에 어떻게 겹치는지 보는 대표 사례입니다."
+      },
+      "further_reading": [
+        {
+          "title": "Federal Reserve — Federal funds rate history",
+          "url": "https://www.federalreserve.gov/fomc/fundsrate.htm",
+          "why_ko": "공식·규제 문서로, 표현과 날짜를 확인할 때 쓰기 좋습니다."
+        },
+        {
+          "title": "Bitcoin price history: Timeline of its evolution [2009-2024]",
+          "url": "https://www.kraken.com/au/learn/bitcoin-price-history",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        },
+        {
+          "title": "The Complete Bitcoin Timeline: 2008 to Today",
+          "url": "https://bitcoincompleteguide.com/bitcoin-timeline/",
+          "why_ko": "같은 사건을 다른 매체·문서로 교차 확인할 수 있습니다."
+        }
+      ]
     },
     {
       "id": "btc-halving-2020",
@@ -163,9 +258,32 @@
       "body_ko": "배경\n비트코인은 약 4년마다 ‘반감기’가 옵니다. 새로 만들어지는 코인 보상(블록 보상)이 절반으로 줄어드는 규칙입니다.\n\n무슨 일\n2020년 5월 11일 3차 반감기로 블록 보상이 12.5 BTC에서 6.25 BTC로 줄었습니다. 공급이 느려지는 시점으로, 이후 기관 매수·유동성 확대와 함께 이야기되는 경우가 많습니다.\n\n시장·가격에 미친 영향\n반감기만으로 가격이 바로 정해지는 것은 아닙니다. 다만 2020–21년 상승장을 설명할 때 공급 쪽 배경으로 자주 언급됩니다. 실제 가격 움직임은 수요·거시 환경과 함께 봐야 합니다.",
       "learn_points_ko": [
         "반감기는 새로 나오는 비트코인 양이 줄어드는 예정된 일정입니다.",
-        "일정 자체와 그 전후 가격 움직임은 별도로 보는 편이 안전합니다."
+        "일정 자체와 그 전후 가격 움직임은 별도로 보는 편이 안전합니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "다음 반감기 때도 ‘일정’과 ‘가격 결과’를 섞어 단정하지 않도록 주의하면 좋습니다."
+      "learn_if_again_ko": "다음 반감기 때도 ‘일정’과 ‘가격 결과’를 섞어 단정하지 않도록 주의하면 좋습니다.",
+      "similar_event_ids": [
+        "btc-halving-2024",
+        "btc-ath-2021"
+      ],
+      "then_vs_now_ko": "3차 반감기(보상 12.5→6.25)입니다. 4차(2024, 6.25→3.125)와 같은 ‘공급 일정’이지만, 2024년에는 현물 ETF 등 참여자·시장 규모가 달랐습니다. 일정과 가격 결과를 섞어 단정하지 않는 것이 중요합니다.",
+      "angles_ko": {
+        "price_market": "새로 나오는 비트코인이 줄어드는 예정된 일정입니다. 이후 강세장과 자주 함께 언급되지만, 인과를 단정하긴 어렵습니다.",
+        "news_reg": "프로토콜 일정이라 규제 뉴스와는 성격이 다릅니다.",
+        "shib_vs_btc_macro": "비트코인만의 공급 이벤트입니다. 시바와는 직접 연결되지 않습니다."
+      },
+      "further_reading": [
+        {
+          "title": "Bitcoin Cycles: The 4-Year Halving Pattern Explained",
+          "url": "https://www.bit.com/knowledge-hub/bitcoin-cycle",
+          "why_ko": "사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다."
+        },
+        {
+          "title": "The Complete Bitcoin Timeline: 2008 to Today",
+          "url": "https://bitcoincompleteguide.com/bitcoin-timeline/",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "tesla-btc-buy-2021",
@@ -190,9 +308,32 @@
       "body_ko": "배경\n2021년 초에는 기업이 비트코인을 재무에 넣는지가 큰 관심사였습니다. ‘기관이 산다’는 이야기가 시장 분위기를 끌어올리는 시기였습니다.\n\n무슨 일\n테슬라는 SEC 공시로 약 15억 달러 상당의 비트코인을 매입했고, 앞으로 결제에도 받을 수 있다고 밝혔습니다. AP·TechCrunch 등 주요 매체가 이를 보도했습니다.\n\n시장·가격에 미친 영향\n대형 상장사의 매입 소식은 기관 채택 이야기에 힘을 실었습니다. 단기 가격 반응과 별개로, ‘기업도 산다’는 인식이 넓어진 이정표로 남습니다.",
       "learn_points_ko": [
         "큰 기업이 비트코인을 산다는 공시는 시장 관심을 끌 수 있습니다.",
-        "공시 내용(규모·목적)을 원문에서 확인하는 습관이 중요합니다."
+        "공시 내용(규모·목적)을 원문에서 확인하는 습관이 중요합니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "기업·기관의 매입·매도 뉴스가 나오면 공시·보도 원문을 먼저 확인하세요."
+      "learn_if_again_ko": "기업·기관의 매입·매도 뉴스가 나오면 공시·보도 원문을 먼저 확인하세요.",
+      "similar_event_ids": [
+        "spot-btc-etf-approval-2024",
+        "blackrock-spot-etf-filing-2023"
+      ],
+      "then_vs_now_ko": "대기업이 대량 매입을 공시한 사례입니다. 이후 현물 ETF(2024)처럼 ‘기관·규제 틀 안의 접근’이 더 넓어졌지만, 기업 재무 공시와 ETF 상품은 구조가 다릅니다.",
+      "angles_ko": {
+        "price_market": "기관 채택 내러티브가 강해진 구간으로 자주 인용됩니다.",
+        "news_reg": "SEC 공시·결제 수용 가능성 보도가 핵심입니다. 원문에서 규모·목적을 확인하는 습관이 좋습니다.",
+        "shib_vs_btc_macro": "비트코인 기관 매입 소식입니다. 시바 밈코인 열기와는 결이 다릅니다."
+      },
+      "further_reading": [
+        {
+          "title": "Tesla buys $1.5B in Bitcoin, will accept as payment soon",
+          "url": "https://apnews.com/article/tesla-buys-billion-bitcoin-061817c6795e75d1c3c9e9d6cfc4a911",
+          "why_ko": "통신·국제 보도로 일정과 사실을 빠르게 훑기에 좋습니다."
+        },
+        {
+          "title": "Tesla buys $1.5B in bitcoin, may accept the cryptocurrency as payment in the future",
+          "url": "https://techcrunch.com/2021/02/08/tesla-buys-1-5b-in-bitcoin-may-accept-the-cryptocurrency-as-payment-in-the-future/",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "china-crypto-ban-2021",
@@ -217,9 +358,32 @@
       "body_ko": "배경\n중국은 수년간 채굴·거래에 대한 규제를 강화해 왔습니다. 2021년에는 그 단속이 한층 분명히 ‘불법’ 규정으로 정리된 국면이 보도됐습니다.\n\n무슨 일\n2021년 9월 24일 전후, 인민은행 등 당국이 암호화폐 관련 업무를 불법으로 규정하고 단속을 강화한다는 소식이 나왔습니다. 로이터 등이 이를 전했습니다.\n\n시장·가격에 미친 영향\n채굴·거래 위축 우려로 단기 가격과 해시레이트(채굴 연산량)에 충격이 있었습니다. 이후 채굴 지역이 다른 나라로 옮겨가는 흐름과 함께 이야기됩니다.",
       "learn_points_ko": [
         "한 나라의 규제 강화는 거래·채굴 환경에 영향을 줄 수 있습니다.",
-        "정책 뉴스와 실제 가격 변화는 항상 1:1로 맞지 않습니다."
+        "정책 뉴스와 실제 가격 변화는 항상 1:1로 맞지 않습니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "강한 규제 뉴스가 나오면, 어느 나라·어떤 활동이 대상인지 구분해서 읽으면 좋습니다."
+      "learn_if_again_ko": "강한 규제 뉴스가 나오면, 어느 나라·어떤 활동이 대상인지 구분해서 읽으면 좋습니다.",
+      "similar_event_ids": [
+        "clarity-act-senate-fail",
+        "crypto-winter-2018"
+      ],
+      "then_vs_now_ko": "한 나라의 강한 규제 단속 사례입니다. 2026년 미국 CLARITY Act 부결과도 ‘규제 불확실성’ 면에서는 겹쳐 보이지만, 대상(중국 전면 불법화 vs 미국 법안 부결)과 시장 구조는 다릅니다.",
+      "angles_ko": {
+        "price_market": "채굴·거래 환경 변화와 단기 가격·해시레이트 충격이 함께 언급됩니다.",
+        "news_reg": "인민은행 등 당국의 불법화·단속 강화 보도가 중심입니다.",
+        "shib_vs_btc_macro": "비트코인·채굴에 초점이 맞춰진 정책 충격입니다. 시바만의 이슈는 아닙니다."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — China central bank vows crackdown on cryptocurrency trading",
+          "url": "https://www.reuters.com/world/china/china-central-bank-vows-crackdown-cryptocurrency-trading-2021-09-24/",
+          "why_ko": "통신·국제 보도로 일정과 사실을 빠르게 훑기에 좋습니다."
+        },
+        {
+          "title": "The Complete Bitcoin Timeline: 2008 to Today",
+          "url": "https://bitcoincompleteguide.com/bitcoin-timeline/",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "bito-futures-etf-2021",
@@ -244,9 +408,32 @@
       "body_ko": "배경\n미국에서 비트코인을 ‘규제된 펀드 상품’으로 사기 쉽게 만들려는 시도가 이어졌습니다. 현물 ETF는 아직 막혀 있던 시기입니다.\n\n무슨 일\n2021년 10월 19일 ProShares Bitcoin Strategy ETF(BITO)가 NYSE Arca에서 거래를 시작했습니다. 비트코인 선물에 연동된 상품으로, 미국 첫 비트코인 연계 ETF로 소개됐습니다.\n\n시장·가격에 미친 영향\n현물을 직접 담는 ETF는 아니었지만, 증권 계좌에서 BTC 노출을 얻는 길이 열렸다는 점에서 이정표로 평가됩니다. 이후 2024년 현물 ETF 승인으로 이어지는 과정의 앞단계로 자주 언급됩니다.",
       "learn_points_ko": [
         "선물 ETF는 현물을 직접 담는 상품과 구조가 다릅니다.",
-        "미국 시장에 ‘규제된 상품’으로 접근 경로가 생긴 사례로 볼 수 있습니다."
+        "미국 시장에 ‘규제된 상품’으로 접근 경로가 생긴 사례로 볼 수 있습니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "ETF 뉴스에서는 선물인지 현물인지, 무엇을 담는지부터 확인하세요."
+      "learn_if_again_ko": "ETF 뉴스에서는 선물인지 현물인지, 무엇을 담는지부터 확인하세요.",
+      "similar_event_ids": [
+        "spot-btc-etf-approval-2024",
+        "blackrock-spot-etf-filing-2023"
+      ],
+      "then_vs_now_ko": "미국 첫 비트코인 선물 ETF입니다. 2024년 현물 ETF 승인과 비교하면, 선물은 현물을 직접 담지 않는 구조라는 점이 가장 큰 차이입니다.",
+      "angles_ko": {
+        "price_market": "규제된 ETF 형태로 BTC 노출 경로가 생긴 이정표로 기록됩니다.",
+        "news_reg": "현물 ETF는 아직 불허인 상태에서 선물이 먼저 나온 단계입니다.",
+        "shib_vs_btc_macro": "비트코인 상품입니다. 시바 관련 멀티토큰 ETP(TKNZ 등)와는 자산·구조가 다릅니다."
+      },
+      "further_reading": [
+        {
+          "title": "ProShares to Launch the First U.S. Bitcoin-Linked ETF on October 19",
+          "url": "https://www.proshares.com/press-releases/proshares-to-launch-the-first-u.s.-bitcoin-linked-etf-on-october-19",
+          "why_ko": "당사자 공식 발표로, 무엇이 시작·포함됐는지 확인하기 좋습니다."
+        },
+        {
+          "title": "The Complete Bitcoin Timeline: 2008 to Today",
+          "url": "https://bitcoincompleteguide.com/bitcoin-timeline/",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "btc-ath-2021",
@@ -271,9 +458,33 @@
       "body_ko": "배경\n2020–21년에는 저금리·유동성 확대와 기관 매수 이야기가 겹치며 암호화폐 전반이 강세를 보였습니다.\n\n무슨 일\n2021년 11월 10일 전후 비트코인이 약 6만 9천 달러대 사이클 고점에 도달했다는 기록이 있습니다. 이후 2022년 약세장으로 전환됩니다.\n\n시장·가격에 미친 영향\n고점 이후 하락은 금리 인상, 대형 프로젝트·거래소 사고와 맞물리며 가팔라졌습니다. 사이클 고점을 말할 때 자주 인용되는 날짜입니다.",
       "learn_points_ko": [
         "사이클 고점은 나중에야 ‘그때가 고점이었다’고 정리되는 경우가 많습니다.",
-        "같은 해에도 상승·조정 구간이 반복될 수 있습니다."
+        "같은 해에도 상승·조정 구간이 반복될 수 있습니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "신고가 보도만 보지 말고, 그 전후 며칠·몇 주 차트를 함께 보면 흐름을 이해하기 쉽습니다."
+      "learn_if_again_ko": "신고가 보도만 보지 말고, 그 전후 며칠·몇 주 차트를 함께 보면 흐름을 이해하기 쉽습니다.",
+      "similar_event_ids": [
+        "btc-ath-2017",
+        "btc-ath-2025-oct",
+        "btc-halving-2020"
+      ],
+      "then_vs_now_ko": "2021년 사이클 고점(~$69k) 이후 2022 약세가 이어졌습니다. 2017 고점·2024 $100k·2025 신고점과 비교할 때는 시장 규모·참여자(기관·ETF)가 달라졌다는 점을 함께 둡니다.",
+      "angles_ko": {
+        "price_market": "나중에야 ‘그때가 고점이었다’고 정리되는 경우가 많습니다. 전후 차트를 같이 보세요.",
+        "news_reg": "기관 매수·유동성 호황이 겹친 시기로 자주 설명됩니다.",
+        "shib_vs_btc_macro": "같은 해 시바도 고점 구간(2021-10)을 기록했습니다. 알트·밈 열기와 BTC 사이클이 겹친 시기입니다."
+      },
+      "further_reading": [
+        {
+          "title": "Bitcoin Cycles: The 4-Year Halving Pattern Explained",
+          "url": "https://www.bit.com/knowledge-hub/bitcoin-cycle",
+          "why_ko": "사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다."
+        },
+        {
+          "title": "The Complete Bitcoin Timeline: 2008 to Today",
+          "url": "https://bitcoincompleteguide.com/bitcoin-timeline/",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "fed-hiking-cycle-2022-23",
@@ -318,9 +529,38 @@
       "body_ko": "배경\n물가가 빠르게 오르자 미국 중앙은행(연준)은 완화에서 긴축으로 방향을 바꿨습니다. 위험자산에는 불리한 환경으로 바뀌는 국면이었습니다.\n\n무슨 일\n2022년 3월 16일 첫 인상 이후 약 16개월간 공격적으로 금리를 올렸고, 2023년 7월에는 연방기금금리 목표 상단이 5.25–5.50%까지 높아졌습니다. 연준 공개 자료와 로이터 보도로 확인됩니다.\n\n시장·가격에 미친 영향\n높은 금리는 주식·암호화폐 같은 위험자산에 강한 역풍이 됐습니다. 2022년 급락장과 함께 이야기되는 핵심 매크로(큰 경제·정책) 배경입니다.",
       "learn_points_ko": [
         "금리를 올리는 긴축 구간에서는 위험자산이 부담을 받기 쉽다는 설명이 자주 나옵니다.",
-        "연준 결정은 한 번이 아니라 여러 차례에 걸쳐 이어질 수 있습니다."
+        "연준 결정은 한 번이 아니라 여러 차례에 걸쳐 이어질 수 있습니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "금리 인상·인하 사이클이 바뀌면, 한 번의 회의보다 ‘방향이 바뀌었는지’를 함께 보세요."
+      "learn_if_again_ko": "금리 인상·인하 사이클이 바뀌면, 한 번의 회의보다 ‘방향이 바뀌었는지’를 함께 보세요.",
+      "similar_event_ids": [
+        "fed-cutting-cycle-2024",
+        "fomc-hike-sep-2026",
+        "covid-crash-fed-2020"
+      ],
+      "then_vs_now_ko": "인플레 대응 공격적 인상 구간입니다. 2024년 인하 사이클, 2026년 9월 재인상(+25bp)과 비교하면 ‘금리 방향’이 시장 분위기 설명에 자주 등장합니다. 한 번의 회의보다 사이클 전체를 보는 편이 낫습니다.",
+      "angles_ko": {
+        "price_market": "긴축 구간에서는 위험자산·암호화폐가 부담을 받기 쉽다는 설명이 자주 나옵니다.",
+        "news_reg": "FOMC 성명·금리 목표 구간을 날짜별로 확인하는 것이 핵심입니다.",
+        "shib_vs_btc_macro": "매크로(연준) 이슈입니다. 시바·BTC 모두 위험자산 분위기와 겹칠 수 있습니다."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — Fed liftoff on US interest rates (2022-03-16)",
+          "url": "https://www.reuters.com/world/us/all-systems-go-feds-liftoff-us-interest-rates-2022-03-16/",
+          "why_ko": "통신·국제 보도로 일정과 사실을 빠르게 훑기에 좋습니다."
+        },
+        {
+          "title": "Federal Reserve — FOMC statement (2022-03-16)",
+          "url": "https://www.federalreserve.gov/monetarypolicy/files/monetary20220316a1.pdf",
+          "why_ko": "공식·규제 문서로, 표현과 날짜를 확인할 때 쓰기 좋습니다."
+        },
+        {
+          "title": "Federal Reserve — Federal funds rate history",
+          "url": "https://www.federalreserve.gov/fomc/fundsrate.htm",
+          "why_ko": "공식·규제 문서로, 표현과 날짜를 확인할 때 쓰기 좋습니다."
+        }
+      ]
     },
     {
       "id": "terra-luna-collapse-2022",
@@ -356,9 +596,32 @@
       "body_ko": "배경\n알고리듬으로 달러 가치를 맞추려던 스테이블코인 UST와 그 생태계 토큰 LUNA가 큰 주목을 받던 시기였습니다.\n\n무슨 일\n2022년 5월 9–13일 전후 UST가 1달러에서 크게 벗어나며(디페그) LUNA는 초인플레이션·사실상 붕괴로 이어졌습니다. 수십억 달러 규모 손실과 연쇄 청산이 보도됐습니다.\n\n시장·가격에 미친 영향\n업계 신뢰와 유동성에 큰 타격을 줬고, 이후 다른 업체·펀드의 연쇄 위기로 이어지는 ‘전염’의 시작점으로 자주 그려집니다. 비트코인 등 시장 전반도 함께 약세를 보였습니다.",
       "learn_points_ko": [
         "한 프로젝트의 붕괴가 시장 전체 분위기를 빠르게 바꿀 수 있습니다.",
-        "스테이블코인·디파이 구조의 위험을 공부하는 대표 사례로 자주 인용됩니다."
+        "스테이블코인·디파이 구조의 위험을 공부하는 대표 사례로 자주 인용됩니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "비슷한 붕괴 뉴스가 나오면, 그 프로젝트가 다른 자산과 어떻게 연결돼 있었는지 확인하세요."
+      "learn_if_again_ko": "비슷한 붕괴 뉴스가 나오면, 그 프로젝트가 다른 자산과 어떻게 연결돼 있었는지 확인하세요.",
+      "similar_event_ids": [
+        "ftx-collapse-2022",
+        "crypto-winter-2018"
+      ],
+      "then_vs_now_ko": "알고리즘 스테이블코인 붕괴로 업계 신뢰가 크게 흔들린 사건입니다. 이어진 FTX 파산과는 ‘연쇄 충격’ 면에서 연결돼 이야기되지만, 원인은(프로토콜 설계 vs 거래소 고객자산 문제) 다릅니다.",
+      "angles_ko": {
+        "price_market": "한 프로젝트 붕괴가 시장 전체 분위기를 빠르게 바꾼 사례입니다.",
+        "news_reg": "디파이·스테이블코인 구조 위험이 집중 조명됐습니다.",
+        "shib_vs_btc_macro": "시바만의 이슈가 아니라 크립토 전반 신뢰·유동성 충격입니다."
+      },
+      "further_reading": [
+        {
+          "title": "Bloomberg — Crypto contagion from Bitcoin to FTX",
+          "url": "https://www.bloomberg.com/graphics/2022-crypto-contagion-from-bitcoin-to-FTX/",
+          "why_ko": "사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다."
+        },
+        {
+          "title": "The Complete Bitcoin Timeline: 2008 to Today",
+          "url": "https://bitcoincompleteguide.com/bitcoin-timeline/",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "ftx-collapse-2022",
@@ -387,9 +650,37 @@
       "body_ko": "배경\n대형 암호화폐 거래소 FTX는 한때 업계 상징처럼 여겨졌습니다. 그러나 유동성·고객 자산 관리 문제가 한꺼번에 드러났습니다.\n\n무슨 일\n2022년 11월 11일 FTX 등 계열사가 미국 파산법 Chapter 11을 신청했습니다. 창업자 SBF는 사임하고 John J. Ray III가 신임 CEO로 들어갔습니다. 위키피디아·ABC 등에서 사건 개요가 정리돼 있습니다.\n\n시장·가격에 미친 영향\n업계 신뢰가 크게 흔들렸고, 비트코인은 다년 저점 부근까지 밀렸다는 기록이 있습니다. 2022년 약세장의 마지막 대형 충격으로 자주 꼽힙니다.",
       "learn_points_ko": [
         "거래소·중개 기관의 신뢰 문제는 시장 전체에 충격을 줄 수 있습니다.",
-        "‘어디에 자산을 두는지’가 왜 중요한지 보여주는 사례입니다."
+        "‘어디에 자산을 두는지’가 왜 중요한지 보여주는 사례입니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "거래소·중개사 관련 대형 사고가 나오면, 공식 발표와 규제 기관 언급을 우선 확인하세요."
+      "learn_if_again_ko": "거래소·중개사 관련 대형 사고가 나오면, 공식 발표와 규제 기관 언급을 우선 확인하세요.",
+      "similar_event_ids": [
+        "terra-luna-collapse-2022",
+        "svb-collapse-2023"
+      ],
+      "then_vs_now_ko": "대형 거래소 파산으로 업계 신뢰가 추락한 사건입니다. Terra 붕괴 직후 연쇄로 자주 묶여 설명됩니다. ‘어디에 자산을 두는지’가 왜 중요한지 보여주는 대표 사례입니다.",
+      "angles_ko": {
+        "price_market": "신뢰 추락과 함께 BTC가 다년 저점 부근으로 내려간 구간으로 기록됩니다.",
+        "news_reg": "파산 신청·경영진 교체 등 공식 절차와 보도를 우선 확인하는 학습이 필요합니다.",
+        "shib_vs_btc_macro": "거래소·중개 신뢰 문제로, 특정 밈코인만의 이슈가 아닙니다."
+      },
+      "further_reading": [
+        {
+          "title": "Bankruptcy of FTX - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bankruptcy_of_FTX",
+          "why_ko": "사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다."
+        },
+        {
+          "title": "FTX bankruptcy filing: Why the $32B crypto company collapsed, what it means for the future of digital currency",
+          "url": "https://abc7news.com/post/ftx-crypto-chapter-11-bankruptcy-price/12442197/",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        },
+        {
+          "title": "Bloomberg — Crypto contagion from Bitcoin to FTX",
+          "url": "https://www.bloomberg.com/graphics/2022-crypto-contagion-from-bitcoin-to-FTX/",
+          "why_ko": "같은 사건을 다른 매체·문서로 교차 확인할 수 있습니다."
+        }
+      ]
     },
     {
       "id": "svb-collapse-2023",
@@ -414,9 +705,32 @@
       "body_ko": "배경\n2023년 3월 미국 지역은행 불안이 금융시장을 흔들었습니다. 실리콘밸리은행(SVB)이 그 중심에 있었습니다.\n\n무슨 일\n캘리포니아 당국이 SVB를 폐쇄하고 FDIC를 관재인으로 지정했습니다. FDIC 공식 실패 은행 목록에 정리돼 있습니다.\n\n시장·가격에 미친 영향\n은행 불안과 유동성 우려 속에서, 비트코인은 상대적으로 강세를 보이며 ‘유동성·헤지’ 이야기가 다시 나온 구간으로 기록됩니다. 다만 은행 위기와 코인 가격의 관계를 하나로 단정할 수는 없습니다.",
       "learn_points_ko": [
         "은행·금융 시스템 뉴스도 암호화폐 가격 분위기와 겹칠 수 있습니다.",
-        "전통 금융과 크립토가 완전히 분리돼 있지 않다는 점을 보여 줍니다."
+        "전통 금융과 크립토가 완전히 분리돼 있지 않다는 점을 보여 줍니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "은행·유동성 이슈가 커지면, 암호화폐만이 아니라 위험자산 전반 반응을 같이 보면 좋습니다."
+      "learn_if_again_ko": "은행·유동성 이슈가 커지면, 암호화폐만이 아니라 위험자산 전반 반응을 같이 보면 좋습니다.",
+      "similar_event_ids": [
+        "ftx-collapse-2022",
+        "covid-crash-fed-2020"
+      ],
+      "then_vs_now_ko": "전통 은행 파산이 암호화폐 분위기와 겹친 사례입니다. FTX 같은 크립토 내부 사고와 달리, 전통 금융 불안 속에서 BTC가 상대적으로 강세를 보였다는 내러티브가 부각됐습니다.",
+      "angles_ko": {
+        "price_market": "은행·유동성 뉴스와 위험자산 반응이 같은 날 겹칠 수 있음을 보여 줍니다.",
+        "news_reg": "FDIC 관재·당국 발표가 사실 확인의 기준입니다.",
+        "shib_vs_btc_macro": "매크로·전통금융 이슈입니다. 시바만의 소식은 아닙니다."
+      },
+      "further_reading": [
+        {
+          "title": "Silicon Valley Bank | FDIC.gov",
+          "url": "https://www.fdic.gov/resources/resolutions/bank-failures/failed-bank-list/silicon-valley.html",
+          "why_ko": "사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다."
+        },
+        {
+          "title": "The Complete Bitcoin Timeline: 2008 to Today",
+          "url": "https://bitcoincompleteguide.com/bitcoin-timeline/",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "blackrock-spot-etf-filing-2023",
@@ -437,9 +751,27 @@
       "body_ko": "배경\n현물 비트코인 ETF는 오랫동안 승인되지 않았습니다. 대형 자산운용사의 신청이 나올 때마다 기대가 커졌습니다.\n\n무슨 일\n2023년 6월 15일 전후 세계 최대 자산운용사 블랙록의 현물 BTC ETF 신청이 보도되며 승인 기대가 다시 커졌습니다. 이후 여러 운용사 신청과 법원이 얽히며 2024년 1월 승인으로 이어집니다.\n\n시장·가격에 미친 영향\n‘이번엔 정말 될까’라는 기대가 가격과 거래 심리에 반영된 구간으로 이야기됩니다. 실제 승인은 이듬해에 이뤄졌습니다.",
       "learn_points_ko": [
         "큰 자산운용사의 신청은 ‘관심’의 신호일 수 있지만, 승인·거래와는 단계가 다릅니다.",
-        "신청 뉴스와 실제 상장 일정을 구분해서 읽으면 헷갈리지 않습니다."
+        "신청 뉴스와 실제 상장 일정을 구분해서 읽으면 헷갈리지 않습니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "ETF 관련 뉴스에서는 신청·승인·거래 개시 중 어느 단계인지 먼저 확인하세요."
+      "learn_if_again_ko": "ETF 관련 뉴스에서는 신청·승인·거래 개시 중 어느 단계인지 먼저 확인하세요.",
+      "similar_event_ids": [
+        "spot-btc-etf-approval-2024",
+        "bito-futures-etf-2021"
+      ],
+      "then_vs_now_ko": "신청 단계입니다. 이후 2024-01 현물 ETF 승인·거래로 이어졌습니다. 신청·승인·거래 개시를 섞어 읽으면 헷갈리기 쉽습니다.",
+      "angles_ko": {
+        "price_market": "대형 운용사의 신청이 관심·기대 신호로 읽힌 구간입니다.",
+        "news_reg": "신청과 승인·상장은 다른 단계입니다.",
+        "shib_vs_btc_macro": "비트코인 현물 ETF 트랙입니다. 시바 포함 멀티토큰 ETP(TKNZ)와는 상품이 다릅니다."
+      },
+      "further_reading": [
+        {
+          "title": "The Complete Bitcoin Timeline: 2008 to Today",
+          "url": "https://bitcoincompleteguide.com/bitcoin-timeline/",
+          "why_ko": "사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다."
+        }
+      ]
     },
     {
       "id": "spot-btc-etf-approval-2024",
@@ -479,9 +811,38 @@
       "body_ko": "배경\n수년간 막혀 있던 ‘현물’ 비트코인 ETF가 미국 증권 규제 당국의 문턱을 넘는지가 관건이었습니다. 선물 ETF와 달리 실제 비트코인을 담는 형태에 가깝습니다.\n\n무슨 일\n2024년 1월 10일 SEC가 여러 현물 BTC ETP의 상장·거래를 승인했고, 익일부터 블랙록·피델리티·그레이스케일 등 상품 거래가 시작됐습니다. SEC 의장 성명과 의회 CRS 자료 등에서 확인됩니다.\n\n시장·가격에 미친 영향\n기관·일반 투자자가 증권 계좌로 비트코인에 접근하기 쉬워진 핵심 이정표로 평가됩니다. 이후 유입·유출과 가격 논의가 이어졌습니다.",
       "learn_points_ko": [
         "현물 비트코인 ETF 승인은 미국 규제 틀 안에서 접근 경로가 넓어진 사건으로 기록됩니다.",
-        "승인 날짜와 그 전후 가격 움직임은 따로 보는 것이 안전합니다."
+        "승인 날짜와 그 전후 가격 움직임은 따로 보는 것이 안전합니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "비슷한 상품 승인 뉴스가 나오면, 승인 대상(현물/선물·어떤 자산)을 정확히 확인하세요."
+      "learn_if_again_ko": "비슷한 상품 승인 뉴스가 나오면, 승인 대상(현물/선물·어떤 자산)을 정확히 확인하세요.",
+      "similar_event_ids": [
+        "bito-futures-etf-2021",
+        "blackrock-spot-etf-filing-2023",
+        "btc-100k-2024"
+      ],
+      "then_vs_now_ko": "2021 선물 ETF(BITO)와 달리 현물을 담는 상품이 미국 규제 틀에서 승인된 사건입니다. 이후 $100k 돌파 등과 함께 ‘기관 접근성’ 이야기의 핵심으로 자주 인용됩니다.",
+      "angles_ko": {
+        "price_market": "승인 날짜와 전후 가격은 따로 보는 것이 안전합니다.",
+        "news_reg": "SEC 성명·다수 ETP 승인 보도가 1차 자료입니다.",
+        "shib_vs_btc_macro": "비트코인 현물 상품입니다. 시바가 적격에 포함된 액티브 멀티토큰 ETP와는 구분하세요."
+      },
+      "further_reading": [
+        {
+          "title": "SEC.gov | Statement on the Approval of Spot Bitcoin Exchange-Traded Products",
+          "url": "https://www.sec.gov/newsroom/speeches-statements/gensler-statement-spot-bitcoin-011023",
+          "why_ko": "공식·규제 문서로, 표현과 날짜를 확인할 때 쓰기 좋습니다."
+        },
+        {
+          "title": "Grayscale Research — January 2024: Debut of spot Bitcoin ETFs",
+          "url": "https://research.grayscale.com/market-commentary/january-2024-the-debut-of-spot-bitcoin-etfs",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        },
+        {
+          "title": "SEC Approves Bitcoin Exchange-Traded Products (ETPs)",
+          "url": "https://www.congress.gov/crs-product/IF12573",
+          "why_ko": "같은 사건을 다른 매체·문서로 교차 확인할 수 있습니다."
+        }
+      ]
     },
     {
       "id": "btc-halving-2024",
@@ -506,9 +867,32 @@
       "body_ko": "배경\n4차 반감기는 현물 ETF 승인 직후라, 공급 감소와 신규 접근성 확대가 겹친다는 해석이 많았습니다.\n\n무슨 일\n블록 보상이 6.25 BTC에서 3.125 BTC로 줄었습니다. 로이터 등 보도는 2024년 4월 19일 전후로 반감기가 완료됐다고 전했습니다.\n\n시장·가격에 미친 영향\n공급이 더 느려지는 시점과 ETF 유입이 맞물리며 ‘공급 충격’으로 해석되기도 했습니다. 다만 가격은 수요·거시 환경에 따라 달라지므로, 반감기만의 결과로 단정하지는 않습니다.",
       "learn_points_ko": [
         "4차 반감기도 공급 일정이 줄어드는 예정된 이벤트입니다.",
-        "과거 반감기와 비교할 때는 시장 규모·참여자가 달라졌다는 점도 함께 둡니다."
+        "과거 반감기와 비교할 때는 시장 규모·참여자가 달라졌다는 점도 함께 둡니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "반감기 전후에는 ‘일정 자체’와 ‘그때의 시장 분위기’를 나눠서 기록해 두면 학습에 도움이 됩니다."
+      "learn_if_again_ko": "반감기 전후에는 ‘일정 자체’와 ‘그때의 시장 분위기’를 나눠서 기록해 두면 학습에 도움이 됩니다.",
+      "similar_event_ids": [
+        "btc-halving-2020",
+        "spot-btc-etf-approval-2024"
+      ],
+      "then_vs_now_ko": "4차 반감기입니다. 2020년 3차와 같은 공급 일정이지만, 현물 ETF 유입 등 시장 환경이 달랐습니다. ‘반감기=무조건 상승’으로 단정하지 말고 일정과 분위기를 나눠 기록하세요.",
+      "angles_ko": {
+        "price_market": "블록 보상 6.25→3.125로 줄어든 예정 이벤트입니다.",
+        "news_reg": "프로토콜 일정 + 당시 시장 보도(로이터 등)를 함께 보면 좋습니다.",
+        "shib_vs_btc_macro": "비트코인 공급 이벤트입니다. 시바와 직접 연결된 일정은 아닙니다."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — Crypto fans count down Bitcoin's halving",
+          "url": "https://www.reuters.com/markets/currencies/crypto-fans-count-down-bitcoins-halving-2024-04-19/",
+          "why_ko": "통신·국제 보도로 일정과 사실을 빠르게 훑기에 좋습니다."
+        },
+        {
+          "title": "Bitcoin Cycles: The 4-Year Halving Pattern Explained",
+          "url": "https://www.bit.com/knowledge-hub/bitcoin-cycle",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "fed-cutting-cycle-2024",
@@ -545,9 +929,27 @@
       "body_ko": "배경\n2022–23년 긴축 이후, 물가 둔화와 함께 연준이 언제 금리를 내릴지가 시장 초점이었습니다.\n\n무슨 일\n2024년 9월 18일 첫 0.50%포인트 인하로 목표를 4.75–5.00%로 낮추며 완화로 선회했습니다. 이후 11월·12월에도 각 0.25%포인트씩 추가 인하했다는 연준 공개 자료가 있습니다.\n\n시장·가격에 미친 영향\n금리 인하 기대는 위험자산에 우호적으로 받아들여지는 경우가 많습니다. 같은 시기 대선·ETF 이슈와 겹치며 비트코인 강세 논의가 이어졌습니다.",
       "learn_points_ko": [
         "금리 인하 시작은 긴축에서 완화로 방향이 바뀌는 신호로 읽히곤 합니다.",
-        "한 번의 인하와 ‘사이클 전체’는 다를 수 있습니다."
+        "한 번의 인하와 ‘사이클 전체’는 다를 수 있습니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "금리 방향이 바뀌는 구간에서는 FOMC 발표문·기자회견 요지를 날짜별로 모아 보면 좋습니다."
+      "learn_if_again_ko": "금리 방향이 바뀌는 구간에서는 FOMC 발표문·기자회견 요지를 날짜별로 모아 보면 좋습니다.",
+      "similar_event_ids": [
+        "fed-hiking-cycle-2022-23",
+        "fomc-hike-sep-2026"
+      ],
+      "then_vs_now_ko": "2022–23 긴축에서 2024-09 첫 인하로 방향이 바뀐 구간입니다. 2026-09 재인상과는 반대 방향입니다. ‘한 번의 인하’와 ‘사이클 전체’를 구분하세요.",
+      "angles_ko": {
+        "price_market": "완화 전환 기대가 위험자산 분위기에 자주 연결돼 설명됩니다.",
+        "news_reg": "FOMC 발표·금리 목표 구간을 숫자로 확인하세요.",
+        "shib_vs_btc_macro": "연준 매크로 이슈로, 시바·BTC 모두에 간접적으로 겹칠 수 있습니다."
+      },
+      "further_reading": [
+        {
+          "title": "Federal Reserve — Federal funds rate history",
+          "url": "https://www.federalreserve.gov/fomc/fundsrate.htm",
+          "why_ko": "공식·규제 문서로, 표현과 날짜를 확인할 때 쓰기 좋습니다."
+        }
+      ]
     },
     {
       "id": "trump-election-2024",
@@ -572,9 +974,32 @@
       "body_ko": "배경\n2024년 미국 대선에서 암호화폐 규제·정책 공약이 전례 없이 크게 다뤄졌습니다. 트럼프 후보는 상대적으로 친크립토 메시지를 냈습니다.\n\n무슨 일\n2024년 11월 5일 도널드 트럼프가 대선에서 승리했습니다. 규제 완화·전략비축 등 기대가 보도에 함께 실렸습니다.\n\n시장·가격에 미친 영향\n대선 이후 랠리 속에서 비트코인 강세가 이어졌다는 보도가 있습니다. 이후 $100,000 돌파 보도와도 연결됩니다.",
       "learn_points_ko": [
         "선거 결과는 정책 기대감을 바꾸는 큰 뉴스일 수 있습니다.",
-        "기대와 실제 정책 실행 사이에는 시간이 걸릴 수 있습니다."
+        "기대와 실제 정책 실행 사이에는 시간이 걸릴 수 있습니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "정치·선거 관련 뉴스에서는 ‘발표된 사실’과 ‘앞으로의 추측’을 구분해서 읽으세요."
+      "learn_if_again_ko": "정치·선거 관련 뉴스에서는 ‘발표된 사실’과 ‘앞으로의 추측’을 구분해서 읽으세요.",
+      "similar_event_ids": [
+        "trump-inauguration-2025",
+        "btc-100k-2024"
+      ],
+      "then_vs_now_ko": "선거 승리로 정책 기대가 바뀐 시점입니다. 취임(2025-01)·관세(Liberation Day)·중동·연준 인사 등은 그 이후 일정입니다. 기대와 실제 정책은 시차가 있습니다.",
+      "angles_ko": {
+        "price_market": "대선 이후 랠리·$100k 보도와 자주 함께 언급됩니다.",
+        "news_reg": "발표된 사실(당선)과 앞으로의 추측(규제 완화 등)을 구분하세요.",
+        "shib_vs_btc_macro": "정치·정책 기대 이슈입니다. 시바만의 뉴스는 아닙니다."
+      },
+      "further_reading": [
+        {
+          "title": "Bitcoin’s golden year: From ETF approval to Donald Trump’s win",
+          "url": "https://english.elpais.com/economy-and-business/2024-12-27/bitcoins-golden-year-from-etf-approval-to-donald-trumps-win.html",
+          "why_ko": "사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다."
+        },
+        {
+          "title": "Bitcoin price: Cryptocurrency races past $100,000, fueled by post-election rally",
+          "url": "https://abc7ny.com/post/bitcoin-price-cryptocurrency-races-past-100000-fueled-post-election-rally/15624358/",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "btc-100k-2024",
@@ -599,9 +1024,33 @@
       "body_ko": "배경\n대선 이후 낙관과 ETF·유동성 이야기가 겹치며 ‘10만 달러’가 심리적 이정표로 떠올랐습니다.\n\n무슨 일\n2024년 12월 5일 전후 비트코인이 사상 처음 10만 달러를 돌파했다는 주요 언론 보도가 나왔습니다. ABC7 등이 전했습니다.\n\n시장·가격에 미친 영향\n심리적 고지로 크게 보도됐고, 이후 취임·정책 기대와 맞물린 가격 논의가 이어졌습니다. 순간 고점과 하루 종가는 다를 수 있습니다.",
       "learn_points_ko": [
         "심리적 큰 숫자(예: $100k) 돌파는 보도에서 자주 강조됩니다.",
-        "돌파 순간과 이후 유지·조정 여부는 차트로 이어 보면 이해가 쉬워집니다."
+        "돌파 순간과 이후 유지·조정 여부는 차트로 이어 보면 이해가 쉬워집니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "라운드 넘버 돌파 뉴스만 보지 말고, 전후 며칠 가격을 같이 확인하세요."
+      "learn_if_again_ko": "라운드 넘버 돌파 뉴스만 보지 말고, 전후 며칠 가격을 같이 확인하세요.",
+      "similar_event_ids": [
+        "btc-ath-2021",
+        "btc-ath-2025-oct",
+        "trump-election-2024"
+      ],
+      "then_vs_now_ko": "심리적 큰 숫자($100k) 첫 돌파 보도입니다. 2017·2021 고점과 비교하면 절대 가격 수준이 크게 달랐고, 이후 2025년 더 높은 일봉 종가도 기록됐습니다.",
+      "angles_ko": {
+        "price_market": "돌파 순간과 이후 유지·조정을 차트로 이어서 보면 이해가 쉽습니다.",
+        "news_reg": "주요 언론의 돌파 보도가 중심이며, 기준(순간가/종가)을 확인하세요.",
+        "shib_vs_btc_macro": "비트코인 가격 이정표입니다. 시바 ATH(2021)와는 시기·자산이 다릅니다."
+      },
+      "further_reading": [
+        {
+          "title": "Bitcoin price: Cryptocurrency races past $100,000, fueled by post-election rally",
+          "url": "https://abc7ny.com/post/bitcoin-price-cryptocurrency-races-past-100000-fueled-post-election-rally/15624358/",
+          "why_ko": "사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다."
+        },
+        {
+          "title": "Bitcoin price reclaims $100K for first time since January",
+          "url": "https://cointelegraph.com/news/bitcoin-hits-100k-first-time-since-january",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "trump-inauguration-2025",
@@ -626,9 +1075,32 @@
       "body_ko": "배경\n대선 승리 이후 실제 취임과 정책 집행이 시장 초점으로 옮겨갔습니다. 관세·연준·중동 이슈가 곧이어 전면에 나옵니다.\n\n무슨 일\n2025년 1월 20일 트럼프 2기 취임이 있었습니다. 취임 전후 비트코인이 다시 10만 달러 부근 고점을 기록했다는 보도가 있습니다.\n\n시장·가격에 미친 영향\n취임 자체보다 이후 관세·중동·금리 뉴스가 가격 변동을 더 크게 좌우했다는 평가가 많습니다. 이 날짜는 정책 사이클의 시작점으로 표시합니다.",
       "learn_points_ko": [
         "취임은 정치 일정의 한 지점이며, 정책은 이후 일정에 따라 진행됩니다.",
-        "일정 뉴스와 시장 반응을 바로 원인·결과로 묶지 않는 편이 안전합니다."
+        "일정 뉴스와 시장 반응을 바로 원인·결과로 묶지 않는 편이 안전합니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "정치 일정 뉴스가 나오면, 실제로 어떤 정책이 발표됐는지를 따로 확인하세요."
+      "learn_if_again_ko": "정치 일정 뉴스가 나오면, 실제로 어떤 정책이 발표됐는지를 따로 확인하세요.",
+      "similar_event_ids": [
+        "trump-election-2024",
+        "liberation-day-tariffs-2025"
+      ],
+      "then_vs_now_ko": "취임은 정치 일정의 한 지점입니다. 대선 승리(2024-11) 다음 단계이며, 이후 관세·연준·중동 이슈가 시장을 지배했다는 정리와 함께 읽으면 타임라인이 잡힙니다.",
+      "angles_ko": {
+        "price_market": "취임 전후 $100k 부근 보도와 함께 언급되기도 하지만, 원인·결과로 바로 묶지 않는 편이 안전합니다.",
+        "news_reg": "일정 뉴스와 실제 정책 발표를 구분하세요.",
+        "shib_vs_btc_macro": "정치 일정입니다. 시바 고유 이벤트와는 별개입니다."
+      },
+      "further_reading": [
+        {
+          "title": "Bitcoin price reclaims $100K for first time since January",
+          "url": "https://cointelegraph.com/news/bitcoin-hits-100k-first-time-since-january",
+          "why_ko": "사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다."
+        },
+        {
+          "title": "Bitcoin price: Cryptocurrency races past $100,000, fueled by post-election rally",
+          "url": "https://abc7ny.com/post/bitcoin-price-cryptocurrency-races-past-100000-fueled-post-election-rally/15624358/",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "liberation-day-tariffs-2025",
@@ -673,9 +1145,37 @@
       "body_ko": "배경\n트럼프 2기 초반, 무역·관세가 세계 금융시장의 핵심 리스크로 떠올랐습니다. ‘해방의 날(Liberation Day)’로 불린 발표가 그 상징입니다.\n\n무슨 일\n2025년 4월 2일 상호관세를 광범위하게 부과하는 행정명령(EO 14257)이 나왔습니다. 기본 10%(4월 5일 발효)와 국가별 가산(4월 9일) 구조로, 이후 협상·유예·보복이 이어졌습니다. 미 정부 문서·위키피디아 등에 정리돼 있습니다.\n\n시장·가격에 미친 영향\n위험자산 전반의 변동성이 커졌습니다. 비트코인도 같은 매크로 충격 속에서 흔들린 구간으로 차트에 표시합니다.",
       "learn_points_ko": [
         "관세·무역 정책은 위험자산 분위기에도 영향을 줄 수 있는 큰 뉴스입니다.",
-        "발표 내용(대상·시점)을 원문 보도로 확인하는 것이 중요합니다."
+        "발표 내용(대상·시점)을 원문 보도로 확인하는 것이 중요합니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "관세·무역 뉴스가 나오면 적용 대상과 시행 시점을 먼저 정리해 보세요."
+      "learn_if_again_ko": "관세·무역 뉴스가 나오면 적용 대상과 시행 시점을 먼저 정리해 보세요.",
+      "similar_event_ids": [
+        "trump-xi-truce-extension",
+        "trump-inauguration-2025"
+      ],
+      "then_vs_now_ko": "광범위 상호관세 발표로 무역·위험자산 변동성이 커진 사건입니다. 이후 미중 관세 휴전 연장(2026-09)과는 ‘긴장 → 일시 완화’ 흐름으로 이어져 비교할 수 있습니다.",
+      "angles_ko": {
+        "price_market": "관세·무역 뉴스는 위험자산 분위기에 영향을 줄 수 있는 큰 매크로 이슈입니다.",
+        "news_reg": "행정명령·대상·시행 시점을 원문·공식 문서에서 확인하세요.",
+        "shib_vs_btc_macro": "무역 정책 매크로입니다. 시바만의 이슈가 아닙니다."
+      },
+      "further_reading": [
+        {
+          "title": "US GovInfo — Presidential documents (DCPD-202500423, Liberation Day tariffs)",
+          "url": "https://www.govinfo.gov/content/pkg/DCPD-202500423/html/DCPD-202500423.htm",
+          "why_ko": "공식·규제 문서로, 표현과 날짜를 확인할 때 쓰기 좋습니다."
+        },
+        {
+          "title": "Liberation Day tariffs",
+          "url": "https://en.wikipedia.org/wiki/Trump%27s_Liberation_Day_tariffs",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        },
+        {
+          "title": "Liberation Day: a year on",
+          "url": "https://privatebank.barclays.com/insights/market-perspectives-may-05-2026/liberation-day-one-year-on/",
+          "why_ko": "같은 사건을 다른 매체·문서로 교차 확인할 수 있습니다."
+        }
+      ]
     },
     {
       "id": "btc-ath-2025-oct",
@@ -700,9 +1200,33 @@
       "body_ko": "배경\n2025년에도 정책·유동성·지정학 이슈가 겹치며 비트코인 가격은 큰 폭으로 움직였습니다. 이 사이트는 바이낸스 하루 종가만을 기준으로 고점을 표시합니다.\n\n무슨 일\n이 패키지 Binance 일봉 CSV 기준, 종가 최고일은 2025-10-06이며 약 124,659달러입니다. 외부 보도의 ‘순간 최고가’와 하루 종가는 다를 수 있습니다.\n\n시장·가격에 미친 영향\n신고점 구간 이후에도 중동·금리·규제 뉴스로 변동이 이어졌습니다. 숫자는 CSV에서만 확인하며 창작하지 않습니다.",
       "learn_points_ko": [
         "신고점(하루 종가 기준)은 데이터로 확인 가능한 사실입니다.",
-        "고점 이후에도 가격은 계속 변하므로, ‘그때의 숫자’와 ‘지금’을 구분합니다."
+        "고점 이후에도 가격은 계속 변하므로, ‘그때의 숫자’와 ‘지금’을 구분합니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "신고가 보도가 나오면, 어떤 기준(종가·순간가·어느 거래소)인지 확인하세요."
+      "learn_if_again_ko": "신고가 보도가 나오면, 어떤 기준(종가·순간가·어느 거래소)인지 확인하세요.",
+      "similar_event_ids": [
+        "btc-ath-2021",
+        "btc-100k-2024",
+        "btc-ath-2017"
+      ],
+      "then_vs_now_ko": "이 패키지 바이낸스 일봉 종가 기준 최고일입니다. 2017·2021 고점·2024 $100k와 비교할 때, ‘어느 거래소·종가/순간가’ 기준이 다르면 숫자가 달라질 수 있습니다.",
+      "angles_ko": {
+        "price_market": "데이터로 확인 가능한 종가 최고일입니다. 고점 이후에도 가격은 계속 변합니다.",
+        "news_reg": "외부 보도의 순간 고점과 일봉 종가는 다를 수 있습니다.",
+        "shib_vs_btc_macro": "비트코인 가격 기록입니다. 시바 ATH는 2021년 구간으로 따로 정리돼 있습니다."
+      },
+      "further_reading": [
+        {
+          "title": "Binance Vision — BTCUSDT 일봉 klines API",
+          "url": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d",
+          "why_ko": "이 사이트가 쓰는 가격 데이터의 출처를 직접 확인할 수 있습니다."
+        },
+        {
+          "title": "Bitcoin Cycles: The 4-Year Halving Pattern Explained",
+          "url": "https://www.bit.com/knowledge-hub/bitcoin-cycle",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "iran-war-hormuz-2026",
@@ -796,9 +1320,38 @@
       "body_ko": "배경\n호르무즈 해협은 세계 원유 운송의 핵심 항로입니다. 이곳이 막히거나 크게 줄어들면 유가·인플레·위험자산 전반에 파급이 큽니다.\n\n무슨 일\n2026년 2월 28일 미·이스라엘의 이란 공습으로 전쟁이 시작됐고, 이란의 통행 경고·공격 등으로 해협 통행이 크게 줄었습니다. 완전·영구 봉쇄라기보다 통행량 급감과 미국 측 이란 항만 봉쇄가 겹친 ‘실질적 교란’이 이어졌습니다. 4월 2주 휴전, 6월 이슬라마바드 MoU(60일), 상선 피격과 합의 붕괴, 9월 통행 한 자릿수·유가 재상승 우려까지 단계가 이어집니다.\n\n시장·가격에 미친 영향\n유가·금리 우려와 위험자산 회피가 반복됐습니다. 비트코인도 같은 매크로 충격에 노출된 구간으로, 개별 하위 사건 페이지에서 더 자세히 볼 수 있습니다.",
       "learn_points_ko": [
         "지정학 갈등과 에너지 수송로 이슈는 세계 시장 분위기를 흔들 수 있습니다.",
-        "비트코인만의 뉴스가 아니어도, 위험자산과 함께 움직이는 날이 있을 수 있습니다."
+        "비트코인만의 뉴스가 아니어도, 위험자산과 함께 움직이는 날이 있을 수 있습니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "전쟁·해협·유가 관련 뉴스가 나오면, 사실 확인된 일정과 추측성 보도를 구분하세요."
+      "learn_if_again_ko": "전쟁·해협·유가 관련 뉴스가 나오면, 사실 확인된 일정과 추측성 보도를 구분하세요.",
+      "similar_event_ids": [
+        "april-ceasefire",
+        "islamabad-mou",
+        "hormuz-single-digit-traffic"
+      ],
+      "then_vs_now_ko": "2026-02 전쟁 시작 이후 호르무즈 교란이 이어진 국면입니다. 4월 휴전·6월 MoU·9월 통행 급감 등과 한 줄기로 이어집니다. ‘완전 영구 봉쇄’보다 통행 급감·항만 봉쇄가 겹친 실질적 교란으로 정리돼 있습니다.",
+      "angles_ko": {
+        "price_market": "지정학·에너지 수송로 이슈는 세계 위험자산 분위기를 흔들 수 있습니다.",
+        "news_reg": "공습·해협·유가 관련 보도는 사실 확인된 일정과 추측을 구분해야 합니다.",
+        "shib_vs_btc_macro": "매크로·지정학입니다. 비트코인·시바 모두 ‘위험 선호’ 분위기와 겹칠 수 있으나, 시바만의 뉴스는 아닙니다."
+      },
+      "further_reading": [
+        {
+          "title": "US, Israel bomb Iran: A timeline of talks and threats leading up to attacks",
+          "url": "https://www.aljazeera.com/news/2026/2/28/us-israel-bomb-iran-a-timeline-of-talks-and-threats-leading-up-to-attacks",
+          "why_ko": "통신·국제 보도로 일정과 사실을 빠르게 훑기에 좋습니다."
+        },
+        {
+          "title": "Iran Update: US and Israeli Strikes, Feb. 28, 2026",
+          "url": "https://understandingwar.org/research/middle-east/iran-update-special-report-us-and-israeli-strikes-february-28-2026/",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        },
+        {
+          "title": "Reuters — Hormuz shipping traffic falls to single digits",
+          "url": "https://www.reuters.com/world/middle-east/hormuz-shipping-traffic-falls-single-digits-data-shows-2026-09-11/",
+          "why_ko": "통신·국제 보도로 일정과 사실을 빠르게 훑기에 좋습니다."
+        }
+      ]
     },
     {
       "id": "warsh-nomination",
@@ -819,9 +1372,27 @@
       "body_ko": "배경\n연준 의장은 금리 방향을 좌우하는 핵심 자리입니다. 누가 앉느냐에 따라 시장의 긴축·완화 기대가 달라집니다.\n\n무슨 일\n2026년 3월 4일 트럼프 대통령이 케빈 워시를 연준 의장으로 지명했습니다. 이후 상원 인준을 거쳐 5월 22일 취임으로 이어집니다.\n\n시장·가격에 미친 영향\n새 의장 체제에서 금리 경로가 어떻게 바뀌는지가 초점으로 떠올랐습니다. 실제 첫 인상은 9월 FOMC에서 이뤄졌습니다.",
       "learn_points_ko": [
         "연준 의장 지명은 앞으로의 통화정책 기조에 대한 기대를 바꿉니다.",
-        "지명·인준·취임은 서로 다른 단계입니다."
+        "지명·인준·취임은 서로 다른 단계입니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "인사 뉴스에서는 지명인지 취임인지, 실제 정책 결정은 언제인지 구분해 보세요."
+      "learn_if_again_ko": "인사 뉴스에서는 지명인지 취임인지, 실제 정책 결정은 언제인지 구분해 보세요.",
+      "similar_event_ids": [
+        "warsh-fed-chair-oath",
+        "fomc-hike-sep-2026"
+      ],
+      "then_vs_now_ko": "지명(3월) → 취임(5/22) → 9월 금리 인상으로 이어진 인사·정책 타임라인의 시작점입니다. 지명만으로 정책이 확정된 것은 아닙니다.",
+      "angles_ko": {
+        "price_market": "앞으로의 통화정책 기대가 바뀌는 신호로 읽히곤 합니다.",
+        "news_reg": "지명·인준·취임은 서로 다른 단계입니다.",
+        "shib_vs_btc_macro": "연준 인사 이슈입니다. 시바 고유 사건과 무관합니다."
+      },
+      "further_reading": [
+        {
+          "title": "Federal Reserve Board",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260522a.htm",
+          "why_ko": "공식·규제 문서로, 표현과 날짜를 확인할 때 쓰기 좋습니다."
+        }
+      ]
     },
     {
       "id": "april-ceasefire",
@@ -846,9 +1417,33 @@
       "body_ko": "배경\n전쟁 시작 이후 유가·해상 운송 불안이 커지며 휴전·해협 재개 협상이 반복됐습니다.\n\n무슨 일\n2026년 4월 7–8일경 트럼프가 조건부 2주 휴전에 합의·수용했다는 보도가 있습니다. 호르무즈 상업 통행 조율이 핵심 조건 중 하나였으나, 장기 평화로 이어지지는 못했습니다. 로이터·AP 등이 전했습니다.\n\n시장·가격에 미친 영향\n단기적으로 긴장 완화 기대가 나왔지만, 이후 재교전과 MoU 붕괴로 다시 불안이 커졌습니다. 위험자산에는 ‘잠깐 쉬고 다시 흔들린’ 구간으로 남습니다.",
       "learn_points_ko": [
         "휴전·합의 뉴스는 리스크 분위기를 바꿀 수 있지만, 유지 여부는 이후 일정을 봐야 합니다.",
-        "짧은 휴전과 긴 평화 합의는 성격이 다를 수 있습니다."
+        "짧은 휴전과 긴 평화 합의는 성격이 다를 수 있습니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "휴전·합의 보도가 나오면 기간·조건·파기 여부를 날짜별로 추적해 보세요."
+      "learn_if_again_ko": "휴전·합의 보도가 나오면 기간·조건·파기 여부를 날짜별로 추적해 보세요.",
+      "similar_event_ids": [
+        "iran-war-hormuz-2026",
+        "islamabad-mou",
+        "may-iran-deal-optimism"
+      ],
+      "then_vs_now_ko": "전쟁 국면 중 짧은 2주 휴전입니다. 이후 이슬라마바드 MoU(60일)와 비교하면 기간·형식은 달랐고, 둘 다 장기 평화로 이어지지 못했다는 점에서 비슷하게 묶여 설명됩니다.",
+      "angles_ko": {
+        "price_market": "휴전 뉴스는 리스크 분위기를 바꿀 수 있지만 유지 여부는 후속을 봐야 합니다.",
+        "news_reg": "기간·조건·파기 여부를 날짜별로 추적하세요.",
+        "shib_vs_btc_macro": "지정학입니다. 시바만의 이슈가 아닙니다."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — Iran defiant on eve of Trump's ceasefire deadline",
+          "url": "https://www.reuters.com/world/asia-pacific/iran-defiant-eve-trumps-ceasefire-deadline-2026-04-07/",
+          "why_ko": "통신·국제 보도로 일정과 사실을 빠르게 훑기에 좋습니다."
+        },
+        {
+          "title": "US and Iran agree to a two-week ceasefire",
+          "url": "https://apnews.com/live/iran-war-israel-trump-04-07-2026",
+          "why_ko": "통신·국제 보도로 일정과 사실을 빠르게 훑기에 좋습니다."
+        }
+      ]
     },
     {
       "id": "treasury-yields-april",
@@ -869,9 +1464,28 @@
       "body_ko": "배경\n전쟁이 길어지고 유가 충격이 커지면, 물가·금리 우려로 미국 국채 금리가 오를 수 있습니다. 금리가 오르면 위험자산에는 부담이 됩니다.\n\n무슨 일\n2026년 4월 30일 전후 미국 30년물 국채 금리가 5%대에 근접·도달했다는 보도와 함께, 비트코인 등 위험자산이 압박받을 수 있다는 시장 코멘트가 나왔습니다. CoinDesk 등이 전했습니다.\n\n시장·가격에 미친 영향\n높은 장기금리는 주식·코인 같은 자산의 매력을 상대적으로 떨어뜨리는 요인으로 읽힙니다. 지정학과 금리가 한꺼번에 부담이 된 구간입니다.",
       "learn_points_ko": [
         "장기금리가 크게 움직이면 위험자산에도 부담이 될 수 있다는 설명이 자주 나옵니다.",
-        "금리·주식·암호화폐가 같은 날 흔들릴 때가 있습니다."
+        "금리·주식·암호화폐가 같은 날 흔들릴 때가 있습니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "금리 급등·급락 뉴스와 암호화폐 움직임을 같은 날짜로 맞춰 보면 학습에 도움이 됩니다."
+      "learn_if_again_ko": "금리 급등·급락 뉴스와 암호화폐 움직임을 같은 날짜로 맞춰 보면 학습에 도움이 됩니다.",
+      "similar_event_ids": [
+        "fed-hiking-cycle-2022-23",
+        "iran-war-hormuz-2026",
+        "fomc-hike-sep-2026"
+      ],
+      "then_vs_now_ko": "이란전·유가 충격과 겹친 장기금리 급등 보도 구간입니다. 2022–23 긴축 때와 마찬가지로 ‘금리↑ → 위험자산 부담’ 설명이 자주 나옵니다. 2026-09 금리 인상과도 매크로 줄기로 연결해 볼 수 있습니다.",
+      "angles_ko": {
+        "price_market": "장기금리와 비트코인 등 위험자산이 같은 날 흔들릴 수 있음을 보여 줍니다.",
+        "news_reg": "금리 숫자·보도 출처(예: CoinDesk)를 확인하세요.",
+        "shib_vs_btc_macro": "매크로(금리) 이슈입니다. 시바 고유 뉴스가 아닙니다."
+      },
+      "further_reading": [
+        {
+          "title": "CoinDesk — US 30-year Treasury yield hits 5%; Bitcoin may pay the price",
+          "url": "https://www.coindesk.com/markets/2026/04/30/ouch-the-u-s-30-year-treasury-yield-just-hit-5-and-bitcoin-may-pay-the-price",
+          "why_ko": "사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다."
+        }
+      ]
     },
     {
       "id": "warsh-fed-chair-oath",
@@ -896,9 +1510,32 @@
       "body_ko": "배경\n지명 이후 실제 취임으로 새 연준 체제가 시작됐습니다. 이후 통화정책 톤이 시장 관심사였습니다.\n\n무슨 일\n2026년 5월 22일 케빈 워시가 연준 이사회·FOMC 의장으로 취임했습니다(백악관 선서). 연준 보도자료와 CNN 등에서 확인됩니다.\n\n시장·가격에 미친 영향\n이후 9월 기준금리 인상 등 기조 전환의 배경으로 표시합니다. 의장 발언·성명 문구가 시장에 더 크게 다가온다는 분석도 보도됐습니다.",
       "learn_points_ko": [
         "취임 이후의 FOMC 결정이 실제 정책 방향을 보여 줍니다.",
-        "인사 일정과 금리 결정을 연결해 타임라인으로 보면 이해하기 쉽습니다."
+        "인사 일정과 금리 결정을 연결해 타임라인으로 보면 이해하기 쉽습니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "새 의장 체제에서는 첫 몇 번의 회의 결과를 모아 두면 기조를 읽기 쉽습니다."
+      "learn_if_again_ko": "새 의장 체제에서는 첫 몇 번의 회의 결과를 모아 두면 기조를 읽기 쉽습니다.",
+      "similar_event_ids": [
+        "warsh-nomination",
+        "fomc-hike-sep-2026"
+      ],
+      "then_vs_now_ko": "취임 이후 실제 FOMC 결정(예: 9월 인상)이 기조를 보여 줍니다. 지명 뉴스만 볼 때보다 취임+회의 결과를 묶어 보면 타임라인이 명확해집니다.",
+      "angles_ko": {
+        "price_market": "인사 자체보다 이후 금리 결정이 시장 설명에 더 직접 등장합니다.",
+        "news_reg": "연준·백악관 등 공식 발표를 기준으로 하세요.",
+        "shib_vs_btc_macro": "연준 매크로입니다. 시바와 직접 연결된 사건은 아닙니다."
+      },
+      "further_reading": [
+        {
+          "title": "Federal Reserve Board",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20260522a.htm",
+          "why_ko": "공식·규제 문서로, 표현과 날짜를 확인할 때 쓰기 좋습니다."
+        },
+        {
+          "title": "CNN — Kevin Warsh sworn in as Fed chair",
+          "url": "https://www.cnn.com/2026/05/22/economy/kevin-warsh-sworn-in-fed-chair",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "may-iran-deal-optimism",
@@ -923,9 +1560,33 @@
       "body_ko": "배경\n해협 재개와 휴전이 유가·위험자산에 바로 영향을 주는 시기였습니다. 낙관 발언과 신규 공습 보도가 짧게 교차했습니다.\n\n무슨 일\n2026년 5월 23–26일 전후 트럼프가 이란과의 호르무즈 재개·평화 합의가 상당 부분 협상됐다고 밝혔습니다. 그러나 곧이어 신규 공습 보도로 낙관이 빠르게 후퇴했습니다. CNBC·TIME 등이 전했습니다.\n\n시장·가격에 미친 영향\n유가와 위험자산이 짧은 구간에 크게 출렁인 사례입니다. ‘합의됐다’는 말과 실제 이행이 어긋날 때 변동성이 커집니다.",
       "learn_points_ko": [
         "낙관적 발언만으로 상황이 확정된 것은 아닐 수 있습니다.",
-        "발언 이후 후속 보도(합의·재충돌)를 이어서 보는 것이 중요합니다."
+        "발언 이후 후속 보도(합의·재충돌)를 이어서 보는 것이 중요합니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "‘합의됐다’는 발언이 나오면, 공식 문서·후속 일정 확인 전까지 단정하지 마세요."
+      "learn_if_again_ko": "‘합의됐다’는 발언이 나오면, 공식 문서·후속 일정 확인 전까지 단정하지 마세요.",
+      "similar_event_ids": [
+        "april-ceasefire",
+        "islamabad-mou",
+        "iran-7day-hormuz-proposal"
+      ],
+      "then_vs_now_ko": "‘대체로 협상됨’ 발언 후 낙관이 빠르게 후퇴한 사례입니다. 이후 MoU·7일 제안과도 ‘합의 기대 ↔ 재충돌’ 패턴으로 비교됩니다. 발언≠확정 합의입니다.",
+      "angles_ko": {
+        "price_market": "낙관·비관 보도가 유가·위험자산 변동과 겹칠 수 있습니다.",
+        "news_reg": "발언 이후 후속 보도(합의·공습)를 이어서 보세요.",
+        "shib_vs_btc_macro": "지정학입니다. 시바만의 이슈가 아닙니다."
+      },
+      "further_reading": [
+        {
+          "title": "Trump says Iran deal reopening Strait of Hormuz 'largely negotiated,' will be announced soon",
+          "url": "https://www.cnbc.com/2026/05/23/us-iran-war-talks.html",
+          "why_ko": "사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다."
+        },
+        {
+          "title": "Global Oil Prices Rise as Fresh U.S. Strikes on Iran Cast Shadow Over Trump's Peace Deal",
+          "url": "https://time.com/article/2026/05/26/us-iran-new-strikes-global-oil-prices-rise-peace-deal-talks-jeopardy/",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "islamabad-mou",
@@ -975,9 +1636,38 @@
       "body_ko": "배경\n파키스탄 중재로 미·이란이 문서화된 양해각서(MoU)를 만든 구간입니다. 군사 중단과 해협 복원, 제재·재건 협상을 묶으려 했습니다.\n\n무슨 일\n2026년 6월 17일 14개조 이슬라마바드 MoU가 서명됐습니다. 군사행동 중단, 호르무즈 통행 복원 노력, 60일 협상 등이 골자였습니다. 그러나 항로 해석 갈등과 상선(Ever Lovely) 피격 등으로 균열이 커졌고, 7월 트럼프가 합의 종료를 선언한 뒤 8월 17일 공식 만료됐습니다. CNN·알자지라·문서 전문 사이트에서 확인됩니다.\n\n시장·가격에 미친 영향\n서명 직후 완화 기대가 나왔다가, 붕괴 과정에서 다시 유가·지정학 프리미엄이 커졌습니다. 2026년 중동 리스크의 핵심 타임라인입니다.",
       "learn_points_ko": [
         "양해각서(MoU)는 합의의 한 형태이며, 이행·파기 과정이 따로 있습니다.",
-        "기간이 정해진 합의는 만료일 전후 뉴스를 함께 보면 흐름이 보입니다."
+        "기간이 정해진 합의는 만료일 전후 뉴스를 함께 보면 흐름이 보입니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "외교 합의 뉴스가 나오면 시작일·만료일·핵심 조항을 메모해 두세요."
+      "learn_if_again_ko": "외교 합의 뉴스가 나오면 시작일·만료일·핵심 조항을 메모해 두세요.",
+      "similar_event_ids": [
+        "april-ceasefire",
+        "may-iran-deal-optimism",
+        "iran-war-hormuz-2026"
+      ],
+      "then_vs_now_ko": "60일 휴전·호르무즈 조항이 담긴 MoU입니다. 4월 2주 휴전보다 형식이 구체적이었지만, 이행 갈등으로 사실상 붕괴·만료했습니다. ‘문서 합의’와 ‘현장 이행’을 나누어 보는 학습 사례입니다.",
+      "angles_ko": {
+        "price_market": "합의 발표와 파기·만료 전후로 위험 인식이 달라질 수 있습니다.",
+        "news_reg": "전문·만료일·핵심 조항을 출처에서 확인하세요.",
+        "shib_vs_btc_macro": "외교·지정학입니다. BTC·시바 공통 매크로 배경에 가깝습니다."
+      },
+      "further_reading": [
+        {
+          "title": "CNN — US–Iran Islamabad MoU text",
+          "url": "https://www.cnn.com/2026/06/17/middleeast/us-iran-war-mou-text-intl",
+          "why_ko": "사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다."
+        },
+        {
+          "title": "US-Iran Memorandum of Understanding expires: How and why it fell apart",
+          "url": "https://www.aljazeera.com/news/2026/8/17/us-iran-memorandum-of-understanding-expires-how-and-why-it-fell-apart",
+          "why_ko": "통신·국제 보도로 일정과 사실을 빠르게 훑기에 좋습니다."
+        },
+        {
+          "title": "Islamabad Memorandum of Understanding Between the United States of America and the Islamic Republic of Iran",
+          "url": "https://www.presidency.ucsb.edu/documents/islamabad-memorandum-understanding-between-the-united-states-america-and-the-islamic",
+          "why_ko": "같은 사건을 다른 매체·문서로 교차 확인할 수 있습니다."
+        }
+      ]
     },
     {
       "id": "hormuz-single-digit-traffic",
@@ -998,9 +1688,28 @@
       "body_ko": "배경\n전쟁 전 호르무즈 일일 통행은 약 125척 수준으로 알려졌습니다. 통행이 크게 줄면 원유 공급 차질 우려가 바로 커집니다.\n\n무슨 일\n2026년 9월 11일 로이터 선박추적 보도에 따르면, 일일 통행이 한 자릿수로 떨어져 전쟁 이후 최저 수준으로 나타났습니다.\n\n시장·가격에 미친 영향\n공급 차질·유가 상승 우려가 재점화됐습니다. 위험자산에는 인플레·금리 부담으로 이어질 수 있는 신호로 읽혔습니다.",
       "learn_points_ko": [
         "수송량·통행량 같은 숫자 지표는 긴장 정도를 가늠하는 데 쓰이기도 합니다.",
-        "출처(선박추적·통신사)를 확인하는 습관이 필요합니다."
+        "출처(선박추적·통신사)를 확인하는 습관이 필요합니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "물류·해협 지표가 나오면 전쟁 전 평상시와 비교 숫자가 있는지 확인하세요."
+      "learn_if_again_ko": "물류·해협 지표가 나오면 전쟁 전 평상시와 비교 숫자가 있는지 확인하세요.",
+      "similar_event_ids": [
+        "iran-war-hormuz-2026",
+        "saudi-pipeline-hormuz-sep",
+        "centcom-iran-blockade-tally"
+      ],
+      "then_vs_now_ko": "전쟁 전 약 125척/일 대비 한 자릿수까지 통행이 줄었다는 선박추적 보도입니다. 전쟁 초기 ‘교란’ 서술과 비교해, 숫자로 긴장 정도를 가늠하는 자료입니다.",
+      "angles_ko": {
+        "price_market": "에너지 수송 위축은 유가·인플레 우려와 함께 위험자산 분위기에 연결되곤 합니다.",
+        "news_reg": "로이터 선박추적 등 출처와 기준일을 확인하세요.",
+        "shib_vs_btc_macro": "지정학·물류 지표입니다. 시바 고유 사건이 아닙니다."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — Hormuz shipping traffic falls to single digits",
+          "url": "https://www.reuters.com/world/middle-east/hormuz-shipping-traffic-falls-single-digits-data-shows-2026-09-11/",
+          "why_ko": "통신·국제 보도로 일정과 사실을 빠르게 훑기에 좋습니다."
+        }
+      ]
     },
     {
       "id": "saudi-pipeline-hormuz-sep",
@@ -1021,9 +1730,27 @@
       "body_ko": "배경\n호르무즈가 막힐 때 사우디 동서 송유관 같은 우회 경로가 중요해집니다. 그 경로까지 위협받으면 유가 불안이 커집니다.\n\n무슨 일\n2026년 9월 13일 전후 사우디 송유관·호르무즈 공격과 홍해 위협이 겹친다는 보도가 나왔고, 유가가 100달러 위로 다시 오를 것이라는 시장 기대가 커졌습니다. 로이터가 전했습니다.\n\n시장·가격에 미친 영향\n에너지 가격 상승 우려는 인플레·금리·위험자산에 연쇄 부담이 됩니다. 비트코인도 같은 매크로 환경에서 변동성이 커질 수 있는 구간입니다.",
       "learn_points_ko": [
         "에너지 인프라 공격 뉴스는 유가·위험 인식에 영향을 줄 수 있습니다.",
-        "여러 지정학 이슈가 겹치면 시장 분위기가 더 복잡해질 수 있습니다."
+        "여러 지정학 이슈가 겹치면 시장 분위기가 더 복잡해질 수 있습니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "유가·수송로 뉴스가 겹칠 때는 날짜별로 사건을 나눠 정리해 보세요."
+      "learn_if_again_ko": "유가·수송로 뉴스가 겹칠 때는 날짜별로 사건을 나눠 정리해 보세요.",
+      "similar_event_ids": [
+        "hormuz-single-digit-traffic",
+        "iran-war-hormuz-2026"
+      ],
+      "then_vs_now_ko": "호르무즈 통행 급감과 같은 시기에 에너지 인프라·유가 우려가 겹친 보도입니다. 한 이슈만 보기보다 날짜별로 사건을 나누면 헷갈림이 줄어듭니다.",
+      "angles_ko": {
+        "price_market": "유가 재상승 우려가 위험 인식에 영향을 줄 수 있습니다.",
+        "news_reg": "공격·위협 보도의 출처와 시점을 확인하세요.",
+        "shib_vs_btc_macro": "에너지·지정학 매크로입니다."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — Attacks on Hormuz shipping fan oil supply fears",
+          "url": "https://www.reuters.com/business/energy/new-report-attack-strait-hormuz-shipping-fans-fears-threats-oil-supplies-2026-09-13/",
+          "why_ko": "통신·국제 보도로 일정과 사실을 빠르게 훑기에 좋습니다."
+        }
+      ]
     },
     {
       "id": "clarity-act-senate-fail",
@@ -1048,9 +1775,32 @@
       "body_ko": "배경\n미국에서는 암호화폐 시장 규칙을 법으로 정리하려는 ‘시장구조법’ 논의가 이어졌습니다. 트럼프 행정부가 지지한 Clarity Act가 그 중심이었습니다.\n\n무슨 일\n2026년 9월 15일 상원에서 Clarity Act가 60표 문턱을 넘지 못해 전진에 실패했습니다. 민주당 측 우려가 배경으로 보도됐습니다. 로이터·CBS 등이 전했습니다.\n\n시장·가격에 미친 영향\n규제 명확화 기대가 꺾이며 비트코인이 당일 5% 이상 하락했다는 보도가 있습니다. 정책 리스크가 가격에 바로 반영된 사례입니다.",
       "learn_points_ko": [
         "법안이 통과되지 않으면 규제 불확실성이 이어질 수 있습니다.",
-        "정치 일정(표결·문턱 득표)을 알면 뉴스 해석이 쉬워집니다."
+        "정치 일정(표결·문턱 득표)을 알면 뉴스 해석이 쉬워집니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "암호화폐 관련 법안 뉴스에서는 통과·부결·재상정 여부를 확인하세요."
+      "learn_if_again_ko": "암호화폐 관련 법안 뉴스에서는 통과·부결·재상정 여부를 확인하세요.",
+      "similar_event_ids": [
+        "china-crypto-ban-2021",
+        "spot-btc-etf-approval-2024"
+      ],
+      "then_vs_now_ko": "미국 시장구조법 부결로 규제 불확실성이 이어진 사례입니다. 중국 전면 단속(2021)과는 성격이 다르고, 현물 ETF 승인(2024)처럼 ‘진전’ 뉴스의 반대편에 있는 정치 일정으로 읽을 수 있습니다.",
+      "angles_ko": {
+        "price_market": "부결 당일 비트코인 하락 보도가 함께 나왔습니다. 원인·결과를 단정하지 말고 일정과 가격을 나란히 보세요.",
+        "news_reg": "상원 문턱(60표) 등 표결 절차를 알면 해석이 쉬워집니다.",
+        "shib_vs_btc_macro": "미국 암호화폐 규제 정치입니다. 시바만의 법안은 아닙니다."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — US Senate vote on landmark crypto bill",
+          "url": "https://www.reuters.com/legal/government/us-senate-vote-advancing-landmark-crypto-bill-2026-09-15/",
+          "why_ko": "통신·국제 보도로 일정과 사실을 빠르게 훑기에 좋습니다."
+        },
+        {
+          "title": "Senate fails to advance Clarity Act amid Democratic concerns about crypto bill",
+          "url": "https://www.cbsnews.com/news/senate-fails-to-advance-clarity-act-amid-democratic-concerns-about-crypto-bill/",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "fomc-hike-sep-2026",
@@ -1075,9 +1825,33 @@
       "body_ko": "배경\n워시 의장 체제에서 첫 금리 결정이 시장 초점이었습니다. 인플레·성장·중동 충격이 겹친 환경이었습니다.\n\n무슨 일\n2026년 9월 16일 FOMC가 연방기금금리 목표를 3.75–4.00%로 0.25%포인트 인상했습니다(만장일치). 2023년 이후 첫 인상이며, 워시 체제 첫 긴축입니다. 연준 성명으로 확인됩니다.\n\n시장·가격에 미친 영향\n금리 인상은 위험자산에 부담이 될 수 있습니다. 동시에 의장 발언·성명 문구가 향후 경로 기대를 좌우한다는 분석이 보도됐습니다.",
       "learn_points_ko": [
         "오랜만의 금리 인상은 ‘방향이 다시 바뀌었다’는 신호로 읽히곤 합니다.",
-        "목표 금리 구간과 인상 폭(예: +25bp)을 숫자로 확인하는 것이 좋습니다."
+        "목표 금리 구간과 인상 폭(예: +25bp)을 숫자로 확인하는 것이 좋습니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "FOMC 결과가 나오면 금리 구간·만장일치 여부·성명 요지를 짧게 메모하세요."
+      "learn_if_again_ko": "FOMC 결과가 나오면 금리 구간·만장일치 여부·성명 요지를 짧게 메모하세요.",
+      "similar_event_ids": [
+        "fed-hiking-cycle-2022-23",
+        "fed-cutting-cycle-2024",
+        "warsh-fed-chair-oath"
+      ],
+      "then_vs_now_ko": "2023년 이후 첫 인상(+25bp)으로, 2024 인하 사이클에서 다시 긴축 신호가 나온 자리입니다. 2022–23 공격적 인상과는 폭·배경이 다르니 ‘방향이 바뀌었는지’에 초점을 두세요.",
+      "angles_ko": {
+        "price_market": "오랜만의 인상은 위험자산 설명에 자주 등장합니다.",
+        "news_reg": "목표 구간·만장일치 여부·성명 요지를 메모하세요.",
+        "shib_vs_btc_macro": "연준 매크로입니다. 시바·BTC 공통 배경이 될 수 있습니다."
+      },
+      "further_reading": [
+        {
+          "title": "Federal Reserve Board",
+          "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+          "why_ko": "공식·규제 문서로, 표현과 날짜를 확인할 때 쓰기 좋습니다."
+        },
+        {
+          "title": "Reuters — Fed rate hike under Warsh; statement wording in focus",
+          "url": "https://www.reuters.com/business/warshs-words-may-matter-more-than-anticipated-fed-rate-hike-2026-09-16/",
+          "why_ko": "통신·국제 보도로 일정과 사실을 빠르게 훑기에 좋습니다."
+        }
+      ]
     },
     {
       "id": "trump-xi-truce-extension",
@@ -1102,9 +1876,32 @@
       "body_ko": "배경\n미·중 관세 휴전은 세계 교역·위험자산 심리에 직접 영향을 줍니다. 만료가 다가오면 재인상 우려가 커집니다.\n\n무슨 일\n2026년 9월 24–25일 시진핑 방미·정상회담 전후로 관세 휴전이 2027년 1월 10일까지 연장됐습니다. 즉각 관세 재인상은 피했으나 희토류·농업·기술 쟁점은 미해결로 남았습니다. 중국 외교부 영문 보도 등에서 확인됩니다.\n\n시장·가격에 미친 영향\n최악의 즉시 충격은 미뤄졌지만, 구조적 갈등은 남아 있습니다. 위험자산에는 ‘안도 + 잔존 불확실성’이 공존하는 구간입니다.",
       "learn_points_ko": [
         "관세 휴전 연장은 ‘당장 재인상은 피했다’는 의미로 읽힐 수 있습니다.",
-        "미해결 쟁점(기술·희토류 등)이 남아 있을 수 있으니 후속 보도를 봅니다."
+        "미해결 쟁점(기술·희토류 등)이 남아 있을 수 있으니 후속 보도를 봅니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "무역 휴전·연장 뉴스에서는 종료일과 남은 쟁점을 함께 확인하세요."
+      "learn_if_again_ko": "무역 휴전·연장 뉴스에서는 종료일과 남은 쟁점을 함께 확인하세요.",
+      "similar_event_ids": [
+        "liberation-day-tariffs-2025",
+        "china-crypto-ban-2021"
+      ],
+      "then_vs_now_ko": "Liberation Day 관세 이후 미중 갈등의 ‘당장 재인상은 피한’ 연장입니다. 희토류·기술 등 미해결 쟁점은 남아 있습니다.",
+      "angles_ko": {
+        "price_market": "무역 긴장 완화가 위험자산 분위기에 영향을 줄 수 있다는 설명이 나옵니다.",
+        "news_reg": "종료일(2027-01-10)과 남은 쟁점을 함께 확인하세요.",
+        "shib_vs_btc_macro": "무역·외교 매크로입니다."
+      },
+      "further_reading": [
+        {
+          "title": "President Xi Jinping Holds Talks with U.S. President Donald J. Trump_Ministry of Foreign Affairs of the People's Republic of China",
+          "url": "https://www.mfa.gov.cn/eng/xw/zyxw/202609/t20260925_12031181.html",
+          "why_ko": "사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다."
+        },
+        {
+          "title": "Moneycontrol — US–China trade truce extended to January 10",
+          "url": "https://www.moneycontrol.com/world/us-china-trade-truce-extended-to-january-10-what-trump-and-xi-still-need-to-settle-article-14036833.html",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "iran-7day-hormuz-proposal",
@@ -1129,9 +1926,33 @@
       "body_ko": "배경\n9월에도 해협 통행은 극도로 부진한 상태였고, 외교 제안이 다시 나왔습니다.\n\n무슨 일\n이란 아라그치 외교장관이 미국 측 이란 항만 봉쇄 해제·석유제재 완화 등을 조건으로 7일 내 해협 정상화를 제안했습니다. WSJ는 트럼프 거부 보도를 냈고, 로이터에 따르면 이란은 공식 미국 응답을 기다린다고 했습니다.\n\n시장·가격에 미친 영향\n제안·거부 보도가 오가며 유가·위험자산 변동성이 커질 수 있는 국면입니다. 합의가 확정된 것은 아니므로, 사실 확인은 인용 보도에 따릅니다.",
       "learn_points_ko": [
         "제안·협상 단계는 합의 확정과 다릅니다.",
-        "한쪽 제안과 상대 응답을 구분해서 읽으면 헷갈림이 줄어듭니다."
+        "한쪽 제안과 상대 응답을 구분해서 읽으면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "협상 제안 뉴스가 나오면 ‘제안’인지 ‘합의 완료’인지 문장을 꼼꼼히 보세요."
+      "learn_if_again_ko": "협상 제안 뉴스가 나오면 ‘제안’인지 ‘합의 완료’인지 문장을 꼼꼼히 보세요.",
+      "similar_event_ids": [
+        "may-iran-deal-optimism",
+        "islamabad-mou",
+        "iran-war-hormuz-2026"
+      ],
+      "then_vs_now_ko": "제안·협상 단계이며 합의 확정이 아닙니다. 5월 ‘대체로 협상됨’ 발언·MoU와 같은 ‘기대 ↔ 미확정’ 패턴으로 비교할 수 있습니다.",
+      "angles_ko": {
+        "price_market": "제안 뉴스만으로 상황이 끝났다고 보기 어렵습니다.",
+        "news_reg": "한쪽 제안과 상대 응답·거부 보도를 구분하세요.",
+        "shib_vs_btc_macro": "지정학 협상입니다. 시바 고유 이슈가 아닙니다."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — Iran awaits US move after report Trump rejects peace plan",
+          "url": "https://www.reuters.com/world/middle-east/iran-awaits-us-move-after-wsj-report-says-trump-rejects-peace-plan-2026-09-26/",
+          "why_ko": "통신·국제 보도로 일정과 사실을 빠르게 훑기에 좋습니다."
+        },
+        {
+          "title": "‘Choice now rests with US’: Iran offers America 7-day plan to reopen Strait of Hormuz",
+          "url": "https://timesofindia.indiatimes.com/world/middle-east/choice-now-rests-with-us-iran-offers-america-7-day-plan-to-reopen-strait-of-hormuz/articleshow/134495234.cms",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "centcom-iran-blockade-tally",
@@ -1156,9 +1977,32 @@
       "body_ko": "배경\n미국은 이란 항만 입출항을 막는 봉쇄를 집행해 왔습니다. 그 규모를 수치로 공개한 발표입니다.\n\n무슨 일\n2026년 9월 25일 기준, 미 중부사령부(CENTCOM)가 이란 항만 봉쇄 과정에서 상업선 122척을 우회시켰다고 발표했습니다. Iran International·UANI 분석 등에서 전했습니다.\n\n시장·가격에 미친 영향\n봉쇄가 ‘상징’이 아니라 실제로 선박 경로를 바꾸고 있다는 신호입니다. 해상 물류·에너지 공급 불안과 맞물려 매크로 리스크로 남습니다.",
       "learn_points_ko": [
         "군·사령부 발표 숫자는 현장 긴장을 가늠하는 한 자료입니다.",
-        "발표 기준일·집계 범위를 확인하면 과장·축소 해석을 줄일 수 있습니다."
+        "발표 기준일·집계 범위를 확인하면 과장·축소 해석을 줄일 수 있습니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "군사·봉쇄 관련 집계가 나오면 발표 기관과 기준일을 메모해 두세요."
+      "learn_if_again_ko": "군사·봉쇄 관련 집계가 나오면 발표 기관과 기준일을 메모해 두세요.",
+      "similar_event_ids": [
+        "hormuz-single-digit-traffic",
+        "iran-war-hormuz-2026"
+      ],
+      "then_vs_now_ko": "미 중부사령부가 발표한 우회 척수 집계입니다. 통행 한 자릿수 보도와 함께 ‘현장 긴장’을 숫자로 보는 자료입니다. 기준일·집계 범위를 확인하세요.",
+      "angles_ko": {
+        "price_market": "직접 가격 뉴스라기보다 지정학 긴장 지표에 가깝습니다.",
+        "news_reg": "발표 기관(CENTCOM)과 기준일을 메모하세요.",
+        "shib_vs_btc_macro": "군사·봉쇄 집계입니다. 시바와 무관합니다."
+      },
+      "further_reading": [
+        {
+          "title": "CENTCOM says US redirected 122 ships under Iran blockade",
+          "url": "https://www.iranintl.com/en/202609250333",
+          "why_ko": "사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다."
+        },
+        {
+          "title": "Iran Shipping Update – September 25, 2026",
+          "url": "https://www.unitedagainstnucleariran.com/analysis/iran-shipping-update-september-25-2026",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     }
   ]
 }

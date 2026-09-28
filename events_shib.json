@@ -39,9 +39,38 @@
       "body_ko": "배경\n시바(SHIB)는 도지코인에서 영감을 받은 밈 코인으로 시작했습니다. 대형 거래소 상장은 접근성과 가격에 큰 영향을 줍니다.\n\n무슨 일\n2021년 5월 10일 바이낸스 Innovation Zone에서 SHIB/USDT·SHIB/BUSD 거래가 시작됐습니다(약 11:00 UTC). 이 패키지 시바 하루 가격 기록의 시작점이기도 합니다. 당시 CZ는 ‘매우 높은 위험’이라고 경고했습니다.\n\n시장·가격에 미친 영향\n상장 직후 가격이 크게 올랐다는 보도가 있습니다. 다만 변동성이 매우 큰 자산이므로, 상장 소식만으로 이후 수익을 보장하지는 않습니다.",
       "learn_points_ko": [
         "대형 거래소 상장은 접근성이 넓어지는 사건으로, 이 사이트 시바 가격 기록의 시작점이기도 합니다.",
-        "상장 공지와 함께 고위험 경고가 나온 사례입니다."
+        "상장 공지와 함께 고위험 경고가 나온 사례입니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "새 상장 뉴스가 나오면 거래 쌍·시작 시각·위험 고지 문구를 함께 확인하세요."
+      "learn_if_again_ko": "새 상장 뉴스가 나오면 거래 쌍·시작 시각·위험 고지 문구를 함께 확인하세요.",
+      "similar_event_ids": [
+        "coinbase-pro-shib",
+        "coinbase-retail-shib",
+        "robinhood-shib"
+      ],
+      "then_vs_now_ko": "시바 가격 기록이 시작하는 대형 거래소 상장입니다. 이후 Coinbase·Robinhood 상장과 같은 ‘접근성 확대’ 줄기로 이어집니다. BTC 데이터 시작(2017)보다 훨씬 늦은 2021년입니다.",
+      "angles_ko": {
+        "price_market": "상장 직후 관심·변동이 커질 수 있는 구간으로 보도됐습니다. CZ의 고위험 경고도 함께 나왔습니다.",
+        "news_reg": "Innovation Zone 상장 공지·위험 고지가 핵심입니다.",
+        "shib_vs_btc_macro": "시바만의 상장 이슈입니다. 비트코인·매크로 사건과 직접 같지는 않습니다."
+      },
+      "further_reading": [
+        {
+          "title": "CryptoPotato — Binance to list SHIB; price spikes",
+          "url": "https://cryptopotato.com/binance-to-list-doges-inspired-shiba-inu-shib-spikes-70-immediately-to-new-ath/",
+          "why_ko": "사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다."
+        },
+        {
+          "title": "Binance Lists Dogecoin Rival SHIB, But CEO CZ Warns It Is 'Super High Risk'",
+          "url": "https://decrypt.co/70432/binance-dogecoin-rival-shib-cz-warns-high-risk",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        },
+        {
+          "title": "Binance Vision — SHIBUSDT 일봉 klines API",
+          "url": "https://data-api.binance.vision/api/v3/klines?symbol=SHIBUSDT&interval=1d&startTime=1620604800000&limit=1",
+          "why_ko": "이 사이트가 쓰는 가격 데이터의 출처를 직접 확인할 수 있습니다."
+        }
+      ]
     },
     {
       "id": "vitalik-shib-india-donation",
@@ -65,9 +94,32 @@
       "body_ko": "배경\n시바 초기 공급의 큰 비중이 이더리움 공동창업자 비탈릭 부테린 지갑에 할당돼 있었습니다. 그 처리 방식이 시장 초점이었습니다.\n\n무슨 일\n2021년 5월 12일 비탈릭이 India COVID-Crypto Relief Fund에 약 50.7조 SHIB를 이전했습니다. 당시 보도 가치는 약 10억 달러 규모였습니다. TechCrunch 등이 전했습니다.\n\n시장·가격에 미친 영향\n대규모 이전이 공급·유통 인식을 바꿨고, 곧바로 이어진 소각과 함께 ‘공급 충격’ 이야기의 출발점이 됐습니다.",
       "learn_points_ko": [
         "대량 기부는 유통·인식에 영향을 줄 수 있는 온체인 사건입니다.",
-        "금액은 당시 가격 기준 보도이므로, ‘토큰 수량’과 ‘달러 환산’을 구분합니다."
+        "금액은 당시 가격 기준 보도이므로, ‘토큰 수량’과 ‘달러 환산’을 구분합니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "기부·이전 뉴스가 나오면 수량·수신처·출처 보도를 확인하세요."
+      "learn_if_again_ko": "기부·이전 뉴스가 나오면 수량·수신처·출처 보도를 확인하세요.",
+      "similar_event_ids": [
+        "vitalik-shib-burn",
+        "shibtorch-burn-portal"
+      ],
+      "then_vs_now_ko": "대량 기부 직후 잔여분 소각(0xdead)으로 이어진 공급 이벤트 줄기의 앞부분입니다. 이후 ShibTorch 같은 커뮤니티 소각 도구와는 ‘누가·왜’가 다릅니다.",
+      "angles_ko": {
+        "price_market": "토큰 수량과 당시 달러 환산을 구분해서 읽으세요.",
+        "news_reg": "기부 수신처·수량 보도를 원문에서 확인하세요.",
+        "shib_vs_btc_macro": "시바 온체인·공급 이슈입니다. BTC 반감기 같은 일정과는 성격이 다릅니다."
+      },
+      "further_reading": [
+        {
+          "title": "Ethereum creator donates $1 billion worth of meme coins to India",
+          "url": "https://techcrunch.com/2021/05/12/vitalik-buterin-donates-1-billion-worth-of-meme-coins-to-india-covid-relief-fund/",
+          "why_ko": "사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다."
+        },
+        {
+          "title": "Ethereum Co-Founder Vitalik Buterin Burns $6.74 Billion in Shiba Inu",
+          "url": "https://decrypt.co/71107/ethereum-co-founder-vitalik-buterin-burns-6-74-billion-in-shiba-inu",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "vitalik-shib-burn",
@@ -91,9 +143,32 @@
       "body_ko": "배경\n기부 이후에도 비탈릭 지갑에 남은 물량이 시장의 ‘매도 압력’ 우려로 남아 있었습니다.\n\n무슨 일\n2021년 5월 16일 잔여 보유분의 약 90%인 약 410.24조 SHIB를 0xdead… 소각 주소로 이전했습니다. 본인은 권력의 중심(locus of power)이 되고 싶지 않다고 설명했습니다. 당시 보도 가치는 약 67억 달러 규모였습니다.\n\n시장·가격에 미친 영향\n사실상 유통에서 빠지는 물량이 커지며 공급 측면 이슈로 크게 보도됐습니다. 가격은 이후에도 거래소 상장·소셜 열기에 크게 좌우됐습니다.",
       "learn_points_ko": [
         "소각 주소로 보낸 토큰은 사실상 유통에서 빠지는 것으로 설명됩니다.",
-        "공급이 줄어도 가격이 반드시 오른다는 뜻은 아닙니다."
+        "공급이 줄어도 가격이 반드시 오른다는 뜻은 아닙니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "소각 뉴스가 나오면 수량·주소·공식 설명(왜 보냈는지)을 확인하세요."
+      "learn_if_again_ko": "소각 뉴스가 나오면 수량·주소·공식 설명(왜 보냈는지)을 확인하세요.",
+      "similar_event_ids": [
+        "vitalik-shib-india-donation",
+        "shibtorch-burn-portal"
+      ],
+      "then_vs_now_ko": "기부 며칠 뒤 대량 소각입니다. 공급이 줄어도 가격이 반드시 오른다는 뜻은 아닙니다. 나중에 나온 커뮤니티 소각 포털과는 주체·목적이 다릅니다.",
+      "angles_ko": {
+        "price_market": "유통에서 빠지는 물량으로 설명되지만, 가격과 1:1로 단정하지 마세요.",
+        "news_reg": "소각 주소·본인 설명(권력의 중심이 되고 싶지 않다)이 보도에 나옵니다.",
+        "shib_vs_btc_macro": "시바 공급 이벤트입니다. 비트코인 매크로와는 별개입니다."
+      },
+      "further_reading": [
+        {
+          "title": "Ethereum Co-Founder Vitalik Buterin Burns $6.74 Billion in Shiba Inu",
+          "url": "https://decrypt.co/71107/ethereum-co-founder-vitalik-buterin-burns-6-74-billion-in-shiba-inu",
+          "why_ko": "사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다."
+        },
+        {
+          "title": "Here's why Ethereum's Vitalik Buterin burned $7 billion in Shiba Inu (SHIB)",
+          "url": "https://cryptoslate.com/heres-why-ethereums-vitalik-buterin-burned-7-billion-in-shiba-inu-shib/",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "shibaswap-launch",
@@ -117,9 +192,32 @@
       "body_ko": "배경\n시바 커뮤니티는 단순 밈을 넘어 탈중앙 거래소(DEX)·거버넌스 토큰 등 생태계를 키우려 했습니다.\n\n무슨 일\n2021년 7월 7일 ShibaSwap이 출시됐습니다. 유동성 공급·스테이킹과 BONE 거버넌스/보상 토큰이 본격화됐습니다. 타임라인·TVL 관련 보도가 있습니다.\n\n시장·가격에 미친 영향\n생태계 뉴스와 함께 관심·거래가 늘어난 구간으로 이야기됩니다. DEX TVL 수치는 시점·집계에 따라 달라질 수 있어, 상세 숫자는 인용 소스를 확인하세요.",
       "learn_points_ko": [
         "DEX·스테이킹 출시는 생태계 기능을 늘리는 단계입니다.",
-        "새 기능과 토큰 가격을 바로 원인·결과로 단정하지 않는 편이 안전합니다."
+        "새 기능과 토큰 가격을 바로 원인·결과로 단정하지 않는 편이 안전합니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "생태계 출시 뉴스에서는 무엇이 새로 가능해졌는지를 기능 중심으로 정리하세요."
+      "learn_if_again_ko": "생태계 출시 뉴스에서는 무엇이 새로 가능해졌는지를 기능 중심으로 정리하세요.",
+      "similar_event_ids": [
+        "shibarium-mainnet",
+        "puppynet-beta"
+      ],
+      "then_vs_now_ko": "생태계 DEX·스테이킹이 본격화된 단계입니다. 이후 PuppyNet·Shibarium 메인넷으로 ‘체인/인프라’ 단계가 이어집니다. 기능 출시와 가격을 바로 원인·결과로 묶지 마세요.",
+      "angles_ko": {
+        "price_market": "새 기능 출시 전후 변동이 있을 수 있으나 단정은 어렵습니다.",
+        "news_reg": "무엇이 새로 가능해졌는지(스왑·스테이킹·BONE)를 기능 중심으로 정리하세요.",
+        "shib_vs_btc_macro": "시바 생태계 이슈입니다. BTC ETF·연준 뉴스와는 결이 다릅니다."
+      },
+      "further_reading": [
+        {
+          "title": "Shiba Inu Coin History: A Timeline",
+          "url": "https://dailycoin.com/shiba-inu-coin-history-timeline-key-moments/",
+          "why_ko": "사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다."
+        },
+        {
+          "title": "Currencies.ru — ShibaSwap DEX TVL report",
+          "url": "http://www.currencies.ru/shiba-inu-shib-dex-shibaswap-exceeds-15b-tvl-adds-three-21071302004137.htm",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "coinbase-pro-shib",
@@ -143,9 +241,33 @@
       "body_ko": "배경\n미국 대형 거래소 상장은 일반 투자자 접근성을 크게 바꿉니다. 코인베이스 프로 상장은 그 첫 단계였습니다.\n\n무슨 일\n6월 예고 후 기술 이슈로 미뤄졌던 Coinbase Pro SHIB 거래가 2021년 9월 9일(09:00 PT 이후) 시작됐습니다. 코인베이스 블로그·The Block이 전했습니다.\n\n시장·가격에 미친 영향\n미국 규제 거래소 경로가 열리며 접근성이 확대됐습니다. 곧이어 일반 앱·웹 상장으로 이어집니다.",
       "learn_points_ko": [
         "미국 대형 거래소 상장은 접근성 확대의 대표 사례입니다.",
-        "예고와 실제 개시 사이에 지연이 있을 수 있습니다."
+        "예고와 실제 개시 사이에 지연이 있을 수 있습니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "상장 예고가 나오면 실제 개시일·지원 상품(Pro/일반)을 구분하세요."
+      "learn_if_again_ko": "상장 예고가 나오면 실제 개시일·지원 상품(Pro/일반)을 구분하세요.",
+      "similar_event_ids": [
+        "coinbase-retail-shib",
+        "binance-shibusdt-listing",
+        "robinhood-shib"
+      ],
+      "then_vs_now_ko": "미국 대형 거래소 Pro 상장입니다. 며칠 뒤 일반 앱·웹 상장으로 접근성이 한 단계 더 넓어졌습니다. 바이낸스 상장과도 ‘거래소 접근성’ 면에서는 같은 줄기입니다.",
+      "angles_ko": {
+        "price_market": "예고와 실제 개시 사이에 지연이 있었던 사례입니다.",
+        "news_reg": "Coinbase 공식 블로그의 개시 안내가 1차 자료입니다.",
+        "shib_vs_btc_macro": "시바 상장 이슈입니다. BTC 현물 ETF와는 상품·규제가 다릅니다."
+      },
+      "further_reading": [
+        {
+          "title": "Chiliz (CHZ) Keep Network (KEEP) and Shiba Inu (SHIB) are launching on Coinbase Pro",
+          "url": "https://www.coinbase.com/blog/chiliz-chz-keep-network-keep-and-shiba-inu-shib-are-launching-on-coinbase-pro",
+          "why_ko": "당사자 공식 발표로, 무엇이 시작·포함됐는지 확인하기 좋습니다."
+        },
+        {
+          "title": "Coinbase Pro adds memecoin Shiba Inu, following on from Dogecoin",
+          "url": "https://www.theblock.co/post/117079/coinbase-pro-adds-memecoin-shiba-inu-following-on-from-dogecoin",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "coinbase-retail-shib",
@@ -169,9 +291,33 @@
       "body_ko": "배경\n프로(전문) 시장에 이어, 일반 사용자용 코인베이스에서도 살 수 있는지가 다음 이슈였습니다.\n\n무슨 일\n2021년 9월 16일 Coinbase.com과 iOS/Android 앱에서 SHIB 거래·보관이 가능해졌습니다. 공식 블로그와 CryptoBriefing 보도가 있습니다.\n\n시장·가격에 미친 영향\n소매 접근성 확대 국면과 하루 가격 급등일이 겹쳤다는 기록이 있습니다. 상장과 가격의 인과는 단정할 수 없지만, 관심·거래량 확대의 계기로 자주 언급됩니다.",
       "learn_points_ko": [
         "일반 앱·웹 상장은 더 많은 사람이 사고팔 수 있게 되는 변화입니다.",
-        "접근성 확대 시점과 가격 급등일이 겹칠 수는 있어도, 그것만의 원인으로 단정하긴 어렵습니다."
+        "접근성 확대 시점과 가격 급등일이 겹칠 수는 있어도, 그것만의 원인으로 단정하긴 어렵습니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "소매 상장 뉴스와 가격 차트를 같은 날짜로 맞춰 보면 학습에 도움이 됩니다."
+      "learn_if_again_ko": "소매 상장 뉴스와 가격 차트를 같은 날짜로 맞춰 보면 학습에 도움이 됩니다.",
+      "similar_event_ids": [
+        "coinbase-pro-shib",
+        "binance-shibusdt-listing",
+        "shib-ath-2021"
+      ],
+      "then_vs_now_ko": "Pro에 이은 소매 상장입니다. 같은 달·전후 시바 급등 구간·ATH와 날짜가 가깝지만, 그것만의 원인으로 단정하긴 어렵습니다.",
+      "angles_ko": {
+        "price_market": "접근성 확대 시점과 가격 급등일이 겹칠 수 있습니다. 차트로 날짜를 맞춰 보세요.",
+        "news_reg": "일반 웹·앱 지원 공지를 확인하세요.",
+        "shib_vs_btc_macro": "시바 소매 접근성 이슈입니다."
+      },
+      "further_reading": [
+        {
+          "title": "Shiba Inu (SHIB) is now available on Coinbase",
+          "url": "https://www.coinbase.com/th/blog/shiba-inu-shib-is-now-available-on-coinbase",
+          "why_ko": "당사자 공식 발표로, 무엇이 시작·포함됐는지 확인하기 좋습니다."
+        },
+        {
+          "title": "Shiba Inu Token Is Up 25% Following Coinbase Listing",
+          "url": "https://cryptobriefing.com/shiba-inu-token-is-up-25-following-coinbase-listing/",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "shib-ath-2021",
@@ -195,9 +341,33 @@
       "body_ko": "배경\n2021년 하반은 상장·소셜·알트코인 강세가 겹친 시기였습니다. 시바도 그 흐름 안에서 고점을 만들었습니다.\n\n무슨 일\n바이낸스 SHIB/USDT 하루 종가 기준 사상 최고는 2021-10-27의 0.00007906입니다. CoinGecko 등 다른 집계는 고점을 더 높게 표기하기도 합니다(거래소·집계 차이).\n\n시장·가격에 미친 영향\n이후 시바는 이 고점을 장기간 회복하지 못하는 흐름이 이어졌습니다. 이 사이트는 바이낸스 CSV 종가만을 ATH로 표시합니다.",
       "learn_points_ko": [
         "이 사이트는 바이낸스 하루 종가 기준으로 최고가를 표시합니다.",
-        "집계 사이트마다 고점 숫자가 다를 수 있으니 기준을 확인하세요."
+        "집계 사이트마다 고점 숫자가 다를 수 있으니 기준을 확인하세요.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "최고가 주장이 나오면 ‘어느 거래소·어떤 기준(종가/순간가)’인지 확인하세요."
+      "learn_if_again_ko": "최고가 주장이 나오면 ‘어느 거래소·어떤 기준(종가/순간가)’인지 확인하세요.",
+      "similar_event_ids": [
+        "btc-ath-2021",
+        "coinbase-retail-shib",
+        "binance-shibusdt-listing"
+      ],
+      "then_vs_now_ko": "바이낸스 일봉 종가 기준 ATH입니다. 같은 해 BTC도 사이클 고점을 찍었지만, 시바는 상장·소셜·밈 열기가 더 크게 겹친 구간으로 설명됩니다. 집계 사이트마다 고점 숫자가 다를 수 있습니다.",
+      "angles_ko": {
+        "price_market": "이 사이트는 바이낸스 하루 종가 기준을 씁니다.",
+        "news_reg": "거래소·집계 기준 차이를 먼저 확인하세요.",
+        "shib_vs_btc_macro": "시바 가격 이정표입니다. BTC ATH와 시기는 가깝지만 자산이 다릅니다."
+      },
+      "further_reading": [
+        {
+          "title": "Binance Vision — SHIBUSDT 일봉 klines API",
+          "url": "https://data-api.binance.vision/api/v3/klines?symbol=SHIBUSDT&interval=1d",
+          "why_ko": "이 사이트가 쓰는 가격 데이터의 출처를 직접 확인할 수 있습니다."
+        },
+        {
+          "title": "SHIB Full Price History Explained",
+          "url": "https://coinjuice.com/research-hub/shib-price-history-launch-to-ath-analysis",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "robinhood-shib",
@@ -221,9 +391,32 @@
       "body_ko": "배경\n로빈후드는 미국 소매 투자자에게 친숙한 앱입니다. 여기에 시바가 올라오면 접근 층이 더 넓어집니다.\n\n무슨 일\n2022년 4월 12일 Robinhood Crypto에서 COMP·MATIC·SOL·SHIB 매매가 시작됐습니다. 공식 뉴스룸이 발표했습니다.\n\n시장·가격에 미친 영향\n추가 거래 경로가 열린 이정표입니다. 상장 직후 가격 반응은 시장 환경에 따라 다르며, 이 페이지는 확정된 상장 사실만 강조합니다.",
       "learn_points_ko": [
         "주식 앱 기반 플랫폼 상장도 접근성을 넓히는 사건입니다.",
-        "여러 코인이 함께 상장되기도 합니다."
+        "여러 코인이 함께 상장되기도 합니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "플랫폼 상장 뉴스에서는 지원 국가·상품 종류를 공식 발표에서 확인하세요."
+      "learn_if_again_ko": "플랫폼 상장 뉴스에서는 지원 국가·상품 종류를 공식 발표에서 확인하세요.",
+      "similar_event_ids": [
+        "coinbase-retail-shib",
+        "binance-shibusdt-listing"
+      ],
+      "then_vs_now_ko": "주식 앱 기반 플랫폼 상장입니다. 바이낸스·Coinbase에 이은 접근성 확대 줄기입니다. 여러 코인이 함께 상장됐습니다.",
+      "angles_ko": {
+        "price_market": "접근성 확대 사건으로, 가격만의 뉴스로 단정하지 마세요.",
+        "news_reg": "공식 뉴스룸의 지원 자산·지역을 확인하세요.",
+        "shib_vs_btc_macro": "시바(및 동시 상장 자산) 플랫폼 이슈입니다."
+      },
+      "further_reading": [
+        {
+          "title": "Robinhood Lists Four New Crypto Assets",
+          "url": "https://www.robinhood.com/us/en/newsroom/robinhood-lists-four-new-crypto-assets",
+          "why_ko": "당사자 공식 발표로, 무엇이 시작·포함됐는지 확인하기 좋습니다."
+        },
+        {
+          "title": "Nasdaq — Shiba Inu listed on Robinhood",
+          "url": "https://www.nasdaq.com/articles/breaking:-shiba-inu-is-now-listed-on-robinhood.-should-you-buy",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "puppynet-beta",
@@ -247,9 +440,32 @@
       "body_ko": "배경\n시바 팀은 이더리움 수수료·속도 한계를 보완할 L2(레이어2) ‘Shibarium’을 준비해 왔습니다. 메인넷 전 공개 테스트가 필요했습니다.\n\n무슨 일\n2023년 3월 11일 공개 베타 테스트넷 PuppyNet이 라이브됐습니다. 개발·커뮤니티가 미리 시험하는 단계입니다.\n\n시장·가격에 미친 영향\n생태계 기대 뉴스로는 의미가 큽니다. 다만 테스트넷 단계이므로, 메인넷 안정화 이전까지는 실제 사용·가격 영향을 단정하기 어렵습니다.",
       "learn_points_ko": [
         "테스트넷·베타는 메인넷 전에 기능을 시험하는 단계입니다.",
-        "베타 시작과 메인넷 성공은 다른 단계입니다."
+        "베타 시작과 메인넷 성공은 다른 단계입니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "체인·L2 뉴스에서는 테스트넷인지 메인넷인지 먼저 구분하세요."
+      "learn_if_again_ko": "체인·L2 뉴스에서는 테스트넷인지 메인넷인지 먼저 구분하세요.",
+      "similar_event_ids": [
+        "shibarium-mainnet",
+        "shibaswap-launch"
+      ],
+      "then_vs_now_ko": "Shibarium 메인넷 전 공개 베타입니다. 메인넷(2023-08)과 비교하면 ‘시험’과 ‘실제 운영’ 단계가 다릅니다.",
+      "angles_ko": {
+        "price_market": "테스트넷 시작만으로 가격을 단정하기 어렵습니다.",
+        "news_reg": "테스트넷인지 메인넷인지 먼저 구분하세요.",
+        "shib_vs_btc_macro": "시바 L2 생태계 이슈입니다. BTC 매크로와 무관합니다."
+      },
+      "further_reading": [
+        {
+          "title": "Shiba Inu’s Highly Anticipated Shibarium Officially Launches in Beta Form – Here’s How To Test the Ethereum Scaling Protocol",
+          "url": "https://dailyhodl.com/2023/03/11/shiba-inus-highly-anticipated-shibarium-officially-launches-in-beta-form-heres-how-to-test-the-ethereum-scaling-protocol/",
+          "why_ko": "사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다."
+        },
+        {
+          "title": "Shiba Inu News: Shibarium Early Public Beta Test Puppynet Is Live",
+          "url": "https://coingape.com/shibarium-news-puppynet-early-public-beta-release-shiba-inu/",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "shibarium-mainnet",
@@ -281,9 +497,38 @@
       "body_ko": "배경\nL2 메인넷은 수수료를 낮추고 앱·NFT·DeFi를 키우려는 시바 생태계의 핵심 인프라입니다.\n\n무슨 일\n2023년 8월 16–17일 Shibarium 메인넷이 공개됐습니다. 직후 트래픽 폭주로 네트워크·브리지 장애가 보도됐고, PeckShield 등에서는 약 956 ETH 등이 브리지에 묶였다는 수치가 나왔습니다. 팀은 자금 안전과 스케일링 필요를 강조했습니다. CoinDesk·BeInCrypto·Cointelegraph 등이 전했습니다.\n\n시장·가격에 미친 영향\n출시 자체는 호재로 기대를 모았지만, 브리지 혼선이 신뢰·사용성을 단기적으로 해쳤습니다. 이후 복구 소식으로 이어집니다.",
       "learn_points_ko": [
         "메인넷 출시 직후 트래픽·브리지 문제가 생길 수 있다는 사례입니다.",
-        "새 인프라 뉴스에서는 ‘출시’와 ‘안정 운영’을 나눠 보면 좋습니다."
+        "새 인프라 뉴스에서는 ‘출시’와 ‘안정 운영’을 나눠 보면 좋습니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "L2·브리지 장애 뉴스가 나오면 팀 공지와 보안·모니터링 보도를 함께 보세요."
+      "learn_if_again_ko": "L2·브리지 장애 뉴스가 나오면 팀 공지와 보안·모니터링 보도를 함께 보세요.",
+      "similar_event_ids": [
+        "puppynet-beta",
+        "shibarium-bridge-restore",
+        "shibaswap-launch"
+      ],
+      "then_vs_now_ko": "메인넷 공개 직후 브리지·트래픽 문제가 보도됐고, 약 2주 뒤 브리지 재개로 이어졌습니다. ‘출시’와 ‘안정 운영’을 나누어 보는 사례입니다.",
+      "angles_ko": {
+        "price_market": "출시 직후 혼선이 시장 인식에 영향을 줄 수 있습니다.",
+        "news_reg": "팀 공지와 보안·모니터링 보도를 함께 보세요.",
+        "shib_vs_btc_macro": "시바 L2 인프라 이슈입니다. BTC·연준 뉴스와는 별개입니다."
+      },
+      "further_reading": [
+        {
+          "title": "CoinDesk — Shibarium goes live amid push for DeFi growth",
+          "url": "https://www.coindesk.com/tech/2023/08/16/shiba-inus-ethereum-layer-2-blockchain-shibarium-goes-live-amid-push-for-defi-growth",
+          "why_ko": "사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다."
+        },
+        {
+          "title": "Mainnet Launch for SHIB’s Ethereum Layer 2 Blockchain",
+          "url": "https://www.globenewswire.com/news-release/2023/08/16/2726831/0/en/Mainnet-Launch-for-SHIB-s-Ethereum-Layer-2-Blockchain-Shibarium-as-Foundation-Strives-for-a-More-Decentralized-and-Equitable-World.html",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        },
+        {
+          "title": "Shiba Inu Shibarium Launch Plagued With Problems, $1.7M in ETH Stuck in Bridge Contract",
+          "url": "https://beincrypto.com/shiba-inu-shibarium-launch-problems-1-7m-eth-stuck-bridge/",
+          "why_ko": "같은 사건을 다른 매체·문서로 교차 확인할 수 있습니다."
+        }
+      ]
     },
     {
       "id": "shibarium-bridge-restore",
@@ -307,9 +552,32 @@
       "body_ko": "배경\n메인넷 직후 중단·지연된 브리지 기능이 복구되는지가 사용자 신뢰의 분수령이었습니다.\n\n무슨 일\n2023년 8월 28일 브리지 출금 등이 복구되며 ‘fully functional’로 보도됐습니다. 모니터링·페일세이프를 강화한 뒤 재개했다는 설명이 있습니다. CoinDesk·Cointelegraph가 전했습니다.\n\n시장·가격에 미친 영향\n인프라 안정화 신호로 받아들여졌고, 지갑 수 증가 등 생태계 지표 보도와 함께 나왔습니다. 장애 구간에서 벗어나는 전환점으로 표시합니다.",
       "learn_points_ko": [
         "장애 이후 복구·재개는 운영 안정성을 보는 포인트입니다.",
-        "복구 보도와 함께 무엇을 강화했는지(모니터링 등) 읽어 두면 좋습니다."
+        "복구 보도와 함께 무엇을 강화했는지(모니터링 등) 읽어 두면 좋습니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "서비스 재개 뉴스가 나오면 중단 사유와 재발 방지 조치를 확인하세요."
+      "learn_if_again_ko": "서비스 재개 뉴스가 나오면 중단 사유와 재발 방지 조치를 확인하세요.",
+      "similar_event_ids": [
+        "shibarium-mainnet",
+        "puppynet-beta"
+      ],
+      "then_vs_now_ko": "메인넷 런칭 직후 장애에 대한 복구 단계입니다. 재개 보도와 함께 모니터링 강화 등이 언급됐습니다.",
+      "angles_ko": {
+        "price_market": "복구·재개는 운영 안정성을 보는 포인트입니다.",
+        "news_reg": "중단 사유와 재발 방지 조치를 확인하세요.",
+        "shib_vs_btc_macro": "시바 인프라 운영 이슈입니다."
+      },
+      "further_reading": [
+        {
+          "title": "CoinDesk — Shibarium bridge now fully functional",
+          "url": "https://www.coindesk.com/tech/2023/08/28/shiba-inus-highly-anticipated-shibarium-bridge-is-now-fully-functional",
+          "why_ko": "사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다."
+        },
+        {
+          "title": "Shibarium wallets surpass 100K after SHIB devs relaunch bridge",
+          "url": "https://cointelegraph.com/news/shibarium-wallets-reach-milestone-developers-relaunch-bridge",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "shibtorch-burn-portal",
@@ -333,9 +601,32 @@
       "body_ko": "배경\n시바 커뮤니티는 소각(유통량 줄이기)을 꾸준히 추진해 왔습니다. Shibarium 수수료 구조와 연결한 자동·커뮤니티 소각이 목표였습니다.\n\n무슨 일\n2024년 8월 16일 ShibTorch 포털이 메인넷에 열렸습니다. Shibarium의 EIP-1559 기반 수수료에서 나오는 BONE을 SHIB로 바꾼 뒤 소각하는 방식입니다. 공식 The Shib Daily 등이 전했습니다.\n\n시장·가격에 미친 영향\n거래가 늘수록 소각이 늘어날 수 있다는 구조적 이야기의 출발점입니다. 실제 소각량·가격 효과는 시점마다 다르므로 공시·대시보드를 확인해야 합니다.",
       "learn_points_ko": [
         "커뮤니티 소각 도구는 공급 감소 메커니즘을 누구나 볼 수 있게 만드는 시도입니다.",
-        "소각량과 가격을 바로 연결해 단정하지 않는 편이 안전합니다."
+        "소각량과 가격을 바로 연결해 단정하지 않는 편이 안전합니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "소각 포털·메커니즘 뉴스에서는 어떤 수수료·토큰이 소각되는지 확인하세요."
+      "learn_if_again_ko": "소각 포털·메커니즘 뉴스에서는 어떤 수수료·토큰이 소각되는지 확인하세요.",
+      "similar_event_ids": [
+        "vitalik-shib-burn",
+        "vitalik-shib-india-donation"
+      ],
+      "then_vs_now_ko": "커뮤니티가 소각 과정을 볼 수 있게 한 도구입니다. 2021년 비탈릭 대량 소각과는 주체·규모·목적이 다릅니다. 소각량≠가격 상승으로 단정하지 마세요.",
+      "angles_ko": {
+        "price_market": "공급 감소 메커니즘을 가시화한 시도로 설명됩니다.",
+        "news_reg": "어떤 수수료·토큰이 소각되는지(공식 The Shib Daily 등) 확인하세요.",
+        "shib_vs_btc_macro": "시바 소각·생태계 이슈입니다."
+      },
+      "further_reading": [
+        {
+          "title": "ShibTorch Ignites: Community-Driven SHIB Burning Now Live on Shibarium – The Shib Daily",
+          "url": "https://news.shib.io/2024/08/16/shibtorch-ignites-community-driven-shib-burning-now-live-on-shibarium/",
+          "why_ko": "사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다."
+        },
+        {
+          "title": "Every Transaction to Burn Shiba Inu as Long Awaited SHIB Burn Portal Goes Live",
+          "url": "https://thecryptobasic.com/2024/08/17/every-transaction-to-burn-shiba-inu-as-long-awaited-shib-burn-portal-goes-live/",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
     },
     {
       "id": "trowe-active-crypto-s1",
@@ -359,9 +650,33 @@
       "body_ko": "배경\n기관용 암호화폐 ETF 논의가 이어지는 가운데, ‘여러 코인을 담을 수 있는 액티브(운용사 재량)’ 상품이 등장했습니다. 시바 단독 ETF와는 다릅니다.\n\n무슨 일\n2025년 10월 22일 T. Rowe Price Active Crypto ETF가 Form S-1을 제출했습니다. SHIB는 적격(eligible) 자산 목록에 포함되지만, 반드시 담는다는 뜻은 아닙니다. SEC EDGAR 문서에서 확인됩니다.\n\n시장·가격에 미친 영향\n‘담을 수 있다’는 가능성은 관심 요인이 될 수 있으나, 실제 편입은 운용 재량입니다. SHIB 전용 승인으로 오해하면 안 됩니다.",
       "learn_points_ko": [
         "S-1 제출은 상품 출시 준비 단계이며, 승인·거래와는 다릅니다.",
-        "SHIB가 ‘담을 수 있는’ 목록에 있어도 반드시 담는다는 뜻은 아닙니다."
+        "SHIB가 ‘담을 수 있는’ 목록에 있어도 반드시 담는다는 뜻은 아닙니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "ETF·공시 뉴스에서는 적격자산 목록과 실제 편입을 구분해서 읽으세요."
+      "learn_if_again_ko": "ETF·공시 뉴스에서는 적격자산 목록과 실제 편입을 구분해서 읽으세요.",
+      "similar_event_ids": [
+        "tknz-sec-approval",
+        "tknz-trading-start",
+        "spot-btc-etf-approval-2024"
+      ],
+      "then_vs_now_ko": "S-1 제출(신청·공시 준비) 단계입니다. 이후 상장 규칙 승인(2026-06)·거래 개시(2026-07)로 이어졌습니다. BTC 현물 ETF와 달리 멀티토큰 액티브 상품이며 SHIB는 적격 목록 포함입니다.",
+      "angles_ko": {
+        "price_market": "제출만으로 거래가 시작된 것은 아닙니다.",
+        "news_reg": "적격자산 목록과 실제 편입을 구분하세요.",
+        "shib_vs_btc_macro": "시바가 ‘담길 수 있는’ 상품 공시입니다. BTC 단독 현물 ETF와 다릅니다."
+      },
+      "further_reading": [
+        {
+          "title": "SEC EDGAR — T. Rowe Price Active Crypto ETF Form S-1",
+          "url": "https://www.sec.gov/Archives/edgar/data/2089855/000199937125015832/activecrypto-s1_102225.htm",
+          "why_ko": "공식·규제 문서로, 표현과 날짜를 확인할 때 쓰기 좋습니다."
+        },
+        {
+          "title": "EDGAR Filing Documents for 0001999371-25-015832",
+          "url": "https://www.sec.gov/Archives/edgar/data/2089855/000199937125015832/0001999371-25-015832-index.htm",
+          "why_ko": "공식·규제 문서로, 표현과 날짜를 확인할 때 쓰기 좋습니다."
+        }
+      ]
     },
     {
       "id": "tknz-sec-approval",
@@ -385,9 +700,33 @@
       "body_ko": "배경\nS-1 제출 이후, 거래소 상장 규칙 변경이 SEC·연방관보 절차를 통과해야 실제 상장에 가까워집니다.\n\n무슨 일\n2026년 6월 17일 Federal Register/SEC 문서상 NYSE Arca의 T. Rowe Price Active Crypto ETF 관련 규칙 변경이 승인됐습니다. 시바만의 ETF 승인이 아니라, 여러 토큰을 담을 수 있는 액티브 ETP입니다.\n\n시장·가격에 미친 영향\n제도적 허들이 낮아졌다는 신호입니다. 그래도 구성 자산·비중은 운용사가 정하므로, SHIB 편입·비중을 단정할 수 없습니다.",
       "learn_points_ko": [
         "상장 규칙 승인은 거래 개시로 가는 중요 단계입니다.",
-        "SHIB 단독 ETF가 아니라 여러 토큰을 담을 수 있는 액티브 상품입니다."
+        "SHIB 단독 ETF가 아니라 여러 토큰을 담을 수 있는 액티브 상품입니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "승인 뉴스에서는 상품 유형(액티브/패시브·현물 등)과 대상 자산을 확인하세요."
+      "learn_if_again_ko": "승인 뉴스에서는 상품 유형(액티브/패시브·현물 등)과 대상 자산을 확인하세요.",
+      "similar_event_ids": [
+        "trowe-active-crypto-s1",
+        "tknz-trading-start",
+        "spot-btc-etf-approval-2024"
+      ],
+      "then_vs_now_ko": "거래소 상장 규칙 승인 단계입니다. S-1 제출과 거래 개시 사이에 있습니다. SHIB 단독 ETF 승인으로 오해하면 안 됩니다.",
+      "angles_ko": {
+        "price_market": "승인 후에도 실제 보유 여부는 공시를 봐야 합니다.",
+        "news_reg": "Federal Register·SEC 문서를 1차 자료로 쓰세요.",
+        "shib_vs_btc_macro": "멀티토큰 액티브 ETP입니다. BTC 현물 ETF 승인(2024)과 상품 구조가 다릅니다."
+      },
+      "further_reading": [
+        {
+          "title": "Federal Register — NYSE Arca order granting approval (Active Crypto ETF)",
+          "url": "https://www.federalregister.gov/documents/2026/06/17/2026-12160/self-regulatory-organizations-nyse-arca-inc-order-granting-approval-of-a-proposed-rule-change-as",
+          "why_ko": "공식·규제 문서로, 표현과 날짜를 확인할 때 쓰기 좋습니다."
+        },
+        {
+          "title": "SEC — Order approving NYSE Arca rule change (TKNZ / Active Crypto ETF)",
+          "url": "https://www.sec.gov/files/rules/sro/nysearca/2026/34-105681.pdf",
+          "why_ko": "공식·규제 문서로, 표현과 날짜를 확인할 때 쓰기 좋습니다."
+        }
+      ]
     },
     {
       "id": "tknz-trading-start",
@@ -411,9 +750,33 @@
       "body_ko": "배경\n승인 다음 단계는 실제 거래 개시입니다. 업계에서는 첫 액티브 멀티토큰 현물 크립토 ETP로 소개됐습니다.\n\n무슨 일\n2026년 7월 16일 TKNZ(T. Rowe Active Crypto) 거래가 시작됐습니다. 적격 자산에 SHIB가 포함되지만 보유를 보장하지는 않습니다. T. Rowe 뉴스룸·SEC 8-K를 참고하세요.\n\n시장·가격에 미친 영향\n기관 상품 경로가 하나 더 열린 이정표입니다. SHIB 가격에 대한 직접·지속 효과는 실제 편입 여부와 시장 전체에 달려 있습니다.",
       "learn_points_ko": [
         "거래 개시는 일반 투자자가 그 상품을 사고팔 수 있게 된 시점입니다.",
-        "적격 목록 포함 ≠ 운용사가 지금 SHIB를 보유 중이라는 뜻은 아닙니다."
+        "적격 목록 포함 ≠ 운용사가 지금 SHIB를 보유 중이라는 뜻은 아닙니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
       ],
-      "learn_if_again_ko": "상품 거래 개시 뉴스와 보유 내역(공시)을 혼동하지 마세요."
+      "learn_if_again_ko": "상품 거래 개시 뉴스와 보유 내역(공시)을 혼동하지 마세요.",
+      "similar_event_ids": [
+        "tknz-sec-approval",
+        "trowe-active-crypto-s1",
+        "spot-btc-etf-approval-2024"
+      ],
+      "then_vs_now_ko": "거래 개시로 일반 투자자가 상품을 사고팔 수 있게 된 시점입니다. 적격 목록에 SHIB가 있어도 지금 보유 중이라는 뜻은 아닙니다. S-1→승인→개시 순서를 한 줄로 보면 헷갈림이 줄어듭니다.",
+      "angles_ko": {
+        "price_market": "상품 거래와 SHIB 현물 가격을 바로 동일시하지 마세요.",
+        "news_reg": "운용사 보도자료·SEC 8-K를 확인하세요.",
+        "shib_vs_btc_macro": "시바 관련(적격) 규제 상품이지만, BTC 현물 ETF와는 다릅니다."
+      },
+      "further_reading": [
+        {
+          "title": "T. ROWE PRICE DEBUTS INDUSTRY'S FIRST ACTIVELY MANAGED MULTI-TOKEN SPOT EXCHANGE-TRADED PRODUCT",
+          "url": "https://investors.troweprice.com/news-releases/news-release-details/t-rowe-price-debuts-industrys-first-actively-managed-multi-token",
+          "why_ko": "당사자 공식 발표로, 무엇이 시작·포함됐는지 확인하기 좋습니다."
+        },
+        {
+          "title": "SEC EDGAR — TKNZ Form 8-K (trading debut)",
+          "url": "https://www.sec.gov/Archives/edgar/data/2089855/000199937126014983/tknz_8k-071426.htm",
+          "why_ko": "공식·규제 문서로, 표현과 날짜를 확인할 때 쓰기 좋습니다."
+        }
+      ]
     }
   ]
 }
