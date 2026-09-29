@@ -1,9 +1,9 @@
 {
-  "generated_at_kst": "2026-09-27",
+  "generated_at_kst": "2026-09-29",
   "timezone_note": "Event dates are calendar dates as reported (mostly US/ME/Asia news days). Chart overlays use UTC midnight of start/end unless noted. Prices come only from Binance klines CSV — never invented.",
   "data_choice": "Chart uses daily (1d) candles for 2017-08-17 → 2026-09-27 (~3.3k points) with rangeslider. Full-span hourly (~75k) would make Plotly HTML too heavy; hourly CSV kept for recent 1y (btc_usdt_1h_recent.csv) and original 2026 window (btc_usdt_1h.csv).",
   "hormuz_blockade_verdict": "NO single official 'Hormuz permanently sealed to all shipping' event; YES severe multi-month disruption from 2026-02-28 with Iranian transit warnings/attacks and a US naval blockade of Iranian ports. Traffic fell from ~125/day prewar to single digits at times in September 2026.",
-  "event_count": 36,
+  "event_count": 54,
   "events": [
     {
       "id": "binance-btcusdt-listing",
@@ -98,6 +98,57 @@
       ]
     },
     {
+      "id": "cme-btc-futures-2017",
+      "title_ko": "CME 비트코인 선물 상장",
+      "title_en": "CME Bitcoin futures launch",
+      "start": "2017-12-18",
+      "end": "2017-12-18",
+      "category": "markets",
+      "severity": 4,
+      "summary_ko": "CME Group이 규제 선물로 BTC 선물을 상장했다(거래일 2017-12-18). 기관이 현물 없이 롱·숏할 수 있게 된 이정표로, 2017 고점 전후와 자주 함께 이야기된다.",
+      "sources": [
+        {
+          "title": "CME Group self-certifies Bitcoin futures to launch Dec. 18",
+          "url": "https://www.cmegroup.com/media-room/press-releases/2017/12/01/cme_group_self-certifiesbitcoinfuturestolaunchdec18.html"
+        },
+        {
+          "title": "SF Fed Economic Letter — How Futures Trading Changed Bitcoin Prices",
+          "url": "https://www.frbsf.org/wp-content/uploads/el2018-12.pdf"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n선물은 나중에 정해진 가격으로 사고팔기로 약속하는 상품입니다. 현물을 직접 들고 있지 않아도 가격 방향에 베팅할 수 있습니다.\n\n무슨 일\nCME Group이 규제된 비트코인 선물 거래를 2017년 12월 18일(거래일)에 시작한다고 발표·상장했습니다. 기관이 현물 없이도 롱·숏할 수 있는 길이 열린 이정표로 자주 이야기됩니다. CME 보도자료와 SF Fed 경제편지 등에서 확인됩니다.\n\n시장·가격에 미친 영향\n2017년 고점 전후와 함께 언급되는 경우가 많습니다. 선물 상장 자체가 곧 가격 방향은 아니며, ‘기관·파생상품 진입’ 학습 포인트로 보면 됩니다.",
+      "learn_points_ko": [
+        "선물 = 미래 가격 베팅. 현물 보유와 다르다.",
+        "규제 거래소 선물은 기관이 현물 없이 롱·숏할 수 있게 한 이정표로 자주 인용됩니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "새 파생상품·선물 상장 뉴스가 나오면, 현물과 선물을 구분하고 공식 거래소 안내를 확인하세요.",
+      "similar_event_ids": [
+        "btc-ath-2017",
+        "bito-futures-etf-2021",
+        "spot-btc-etf-approval-2024"
+      ],
+      "then_vs_now_ko": "2017년 규제 선물 상장은 ‘현물 없이 베팅’ 경로를 연 사건입니다. 이후 2021 선물 ETF(BITO), 2024 현물 ETF처럼 접근 경로가 더 넓어졌지만, 상품 구조는 다릅니다.",
+      "angles_ko": {
+        "price_market": "2017 고점 전후와 자주 묶여 이야기됩니다. 상장일≠가격 방향입니다.",
+        "news_reg": "CME 보도자료·거래 개시일이 1차 일정입니다.",
+        "shib_vs_btc_macro": "비트코인 파생상품 이슈입니다. 시바 밈코인 상장과는 결이 다릅니다."
+      },
+      "further_reading": [
+        {
+          "title": "CME Group self-certifies Bitcoin futures to launch Dec. 18",
+          "url": "https://www.cmegroup.com/media-room/press-releases/2017/12/01/cme_group_self-certifiesbitcoinfuturestolaunchdec18.html",
+          "why_ko": "당사자 공식 발표로 개시일을 확인할 때 좋습니다."
+        },
+        {
+          "title": "SF Fed Economic Letter — How Futures Trading Changed Bitcoin Prices",
+          "url": "https://www.frbsf.org/wp-content/uploads/el2018-12.pdf",
+          "why_ko": "선물 도입과 가격 논의를 다른 시각으로 읽을 때 도움이 됩니다."
+        }
+      ]
+    },
+    {
       "id": "crypto-winter-2018",
       "title_ko": "2018 암호화폐 겨울(약세장)",
       "title_en": "2018 crypto winter",
@@ -156,6 +207,56 @@
           "title": "The Complete Bitcoin Timeline: 2008 to Today",
           "url": "https://bitcoincompleteguide.com/bitcoin-timeline/",
           "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
+    },
+    {
+      "id": "square-cash-btc-2018",
+      "title_ko": "Square Cash 앱 BTC 매매 확대",
+      "title_en": "Square Cash app expands Bitcoin trading",
+      "start": "2018-01-31",
+      "end": "2018-01-31",
+      "category": "crypto",
+      "severity": 3,
+      "summary_ko": "Jack Dorsey의 Square가 Cash 앱에서 대부분 미국 사용자에게 BTC 매매를 열었다(일부 주 제외). 모바일 결제 앱을 통한 대중 접근성 확대 사례.",
+      "sources": [
+        {
+          "title": "CNBC — Square launches bitcoin trading for Cash app users",
+          "url": "https://www.cnbc.com/2018/01/31/jack-dorseys-square-launches-bitcoin-trading-for-all-cash-app-users-except-those-in-four-states.html"
+        },
+        {
+          "title": "TechCrunch — Square Cash expands bitcoin buying and selling",
+          "url": "https://techcrunch.com/2018/01/31/square-cash-expands-bitcoin-buying-and-selling-to-all-users/"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n암호화폐는 전용 거래소뿐 아니라 일상 결제·송금 앱에서도 살 수 있게 되면 접근성이 달라집니다.\n\n무슨 일\n2018년 1월 31일 Square가 Cash 앱에서 대부분 미국 사용자에게 비트코인 매매를 열었습니다(일부 주 제외). CNBC·TechCrunch가 보도했습니다.\n\n시장·가격에 미친 영향\n거래소가 아닌 결제 앱 경로로 수요·접근성이 넓어진 사례로 기록됩니다. 개별 거래량·가격은 차트와 별도로 보세요.",
+      "learn_points_ko": [
+        "거래소뿐 아니라 결제 앱 경로도 수요를 키울 수 있다.",
+        "지역·주별로 서비스가 열리지 않을 수 있습니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "핀테크·결제 앱의 암호화폐 지원 뉴스가 나오면, 지원 지역과 실제 매매 가능 여부를 확인하세요.",
+      "similar_event_ids": [
+        "paypal-crypto-buy-2020",
+        "binance-btcusdt-listing"
+      ],
+      "then_vs_now_ko": "모바일 결제 앱에서 BTC 매매를 연 초기 사례입니다. 이후 PayPal(2020) 등 대형 핀테크 채택과 같은 ‘일상 앱 경로’ 줄기로 묶여 설명됩니다.",
+      "angles_ko": {
+        "price_market": "소매·핀테크 접근성 확대 사례로 자주 인용됩니다.",
+        "news_reg": "일부 주 제외 등 지역 제한이 함께 보도됐습니다.",
+        "shib_vs_btc_macro": "비트코인 소매 채택 소식입니다. 시바만의 뉴스는 아닙니다."
+      },
+      "further_reading": [
+        {
+          "title": "CNBC — Square launches bitcoin trading for Cash app users",
+          "url": "https://www.cnbc.com/2018/01/31/jack-dorseys-square-launches-bitcoin-trading-for-all-cash-app-users-except-those-in-four-states.html",
+          "why_ko": "일정과 지역 제한을 빠르게 훑기에 좋습니다."
+        },
+        {
+          "title": "TechCrunch — Square Cash expands bitcoin buying and selling",
+          "url": "https://techcrunch.com/2018/01/31/square-cash-expands-bitcoin-buying-and-selling-to-all-users/",
+          "why_ko": "같은 사건을 다른 매체로 교차 확인할 수 있습니다."
         }
       ]
     },
@@ -286,6 +387,107 @@
       ]
     },
     {
+      "id": "microstrategy-btc-treasury-2020",
+      "title_ko": "MicroStrategy, BTC를 재무 준비자산으로",
+      "title_en": "MicroStrategy adopts Bitcoin as treasury reserve",
+      "start": "2020-08-11",
+      "end": "2020-08-11",
+      "category": "crypto",
+      "severity": 5,
+      "summary_ko": "SEC 8-K/보도자료: 21,454 BTC를 수수료 포함 총 $250M에 매입하고 BTC를 주요 재무 준비자산으로 채택. 상장사 재무부서(treasury) BTC 보유 트렌드의 출발점으로 자주 인용된다.",
+      "sources": [
+        {
+          "title": "SEC EX-99.1 — MicroStrategy press release",
+          "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312520215604/d921849dex991.htm"
+        },
+        {
+          "title": "SEC 8-K — MicroStrategy",
+          "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312520215604/d921849d8k.htm"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n상장사가 현금·채권 대신 비트코인을 재무 준비자산으로 두는지는 2020년 이후 큰 관심사가 됐습니다.\n\n무슨 일\nMicroStrategy는 SEC 8-K·보도자료에서 21,454 BTC를 수수료 포함 총 약 2억 5천만 달러에 매입하고, 비트코인을 주요 재무 준비자산으로 채택했다고 밝혔습니다.\n\n시장·가격에 미친 영향\n상장사 treasury BTC 보유 트렌드의 출발점으로 자주 인용됩니다. 회사 매수는 ‘수요’ 뉴스이며, 규모·목적은 공시 원문에서 확인하는 것이 안전합니다.",
+      "learn_points_ko": [
+        "회사 매수는 ‘수요’ 뉴스. 재무제표·공시에서 확인한다.",
+        "상장사 treasury BTC 채택의 대표 출발점으로 자주 인용됩니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "기업·기관의 매입·매도 뉴스가 나오면 SEC 공시·보도 원문에서 수량·금액을 확인하세요.",
+      "similar_event_ids": [
+        "tesla-btc-buy-2021",
+        "spot-btc-etf-approval-2024",
+        "blackrock-spot-etf-filing-2023"
+      ],
+      "then_vs_now_ko": "상장사가 BTC를 재무 준비자산으로 채택한 교과서 사건입니다. 이후 테슬라 매입·현물 ETF 등과 ‘기관·기업 접근’ 줄기로 이어지지만, 기업 재무 보유와 ETF 상품은 구조가 다릅니다.",
+      "angles_ko": {
+        "price_market": "기업 매입 수요 내러티브가 강해진 출발점으로 자주 인용됩니다.",
+        "news_reg": "SEC 8-K·보도자료의 수량·금액이 1차 자료입니다.",
+        "shib_vs_btc_macro": "비트코인 기업 재무 채택입니다. 시바 밈코인 이슈와는 결이 다릅니다."
+      },
+      "further_reading": [
+        {
+          "title": "SEC EX-99.1 — MicroStrategy press release",
+          "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312520215604/d921849dex991.htm",
+          "why_ko": "공식 보도자료로 수량·금액을 확인할 때 좋습니다."
+        },
+        {
+          "title": "SEC 8-K — MicroStrategy",
+          "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312520215604/d921849d8k.htm",
+          "why_ko": "공시 원문으로 표현과 날짜를 대조할 때 쓰기 좋습니다."
+        }
+      ]
+    },
+    {
+      "id": "paypal-crypto-buy-2020",
+      "title_ko": "PayPal, 계정 내 암호화폐 매매 개시",
+      "title_en": "PayPal launches crypto buy/hold/sell",
+      "start": "2020-10-21",
+      "end": "2020-10-21",
+      "category": "crypto",
+      "severity": 4,
+      "summary_ko": "PayPal이 미국 계정에서 BTC·ETH 등 매입·보유·매도를 시작한다고 발표(조건부 NY BitLicense). 이후 전 미국 적격 사용자로 확대(11-12 업데이트).",
+      "sources": [
+        {
+          "title": "PayPal Newsroom — Launches New Service Enabling Users to Buy, Hold and Sell Cryptocurrency",
+          "url": "https://newsroom.paypal-corp.com/2020-10-21-PayPal-Launches-New-Service-Enabling-Users-to-Buy-Hold-and-Sell-Cryptocurrency"
+        },
+        {
+          "title": "BBC — PayPal allows Bitcoin and crypto spending",
+          "url": "https://www.bbc.com/news/technology-54630283"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n대형 결제사가 계정 안에서 암호화폐를 사고팔게 하면, 전용 거래소 없이도 접근할 수 있는 사람이 늘어납니다.\n\n무슨 일\n2020년 10월 21일 PayPal이 미국 계정에서 BTC·ETH 등 매입·보유·매도를 시작한다고 발표했습니다(조건부 NY BitLicense). 이후 전 미국 적격 사용자로 확대됐다는 업데이트가 이어졌습니다. PayPal 뉴스룸·BBC가 전했습니다.\n\n시장·가격에 미친 영향\n주류 결제사 채택 이정표로 평가됩니다. 발표≠즉시 전 세계 서비스이므로 지역·단계적 롤아웃을 구분하세요.",
+      "learn_points_ko": [
+        "대형 핀테크 발표 ≠ 즉시 전 세계. 지역·단계적 롤아웃을 본다.",
+        "계정 내 매매는 전용 거래소 없이도 접근성을 넓힐 수 있습니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "결제사·핀테크의 암호화폐 지원 발표가 나오면, 지원 국가·자산·일정을 공식 안내에서 확인하세요.",
+      "similar_event_ids": [
+        "square-cash-btc-2018",
+        "coinbase-direct-listing-2021"
+      ],
+      "then_vs_now_ko": "대형 결제사가 계정 내 암호화폐 매매를 연 사례입니다. Square Cash(2018)와 같은 ‘일상 앱 경로’ 줄기이며, 이후 현물 ETF 등 제도권 상품과는 구조가 다릅니다.",
+      "angles_ko": {
+        "price_market": "주류 결제 경로 확대 뉴스로 시장 관심에 영향을 줄 수 있습니다.",
+        "news_reg": "NY BitLicense 등 조건부·단계적 롤아웃이 보도에 함께 나옵니다.",
+        "shib_vs_btc_macro": "BTC·ETH 등 주요 자산 중심 채택입니다. 시바만의 뉴스는 아닙니다."
+      },
+      "further_reading": [
+        {
+          "title": "PayPal Newsroom — Launches New Service Enabling Users to Buy, Hold and Sell Cryptocurrency",
+          "url": "https://newsroom.paypal-corp.com/2020-10-21-PayPal-Launches-New-Service-Enabling-Users-to-Buy-Hold-and-Sell-Cryptocurrency",
+          "why_ko": "당사자 공식 발표입니다."
+        },
+        {
+          "title": "BBC — PayPal allows Bitcoin and crypto spending",
+          "url": "https://www.bbc.com/news/technology-54630283",
+          "why_ko": "일반 독자용으로 요지를 빠르게 훑기에 좋습니다."
+        }
+      ]
+    },
+    {
       "id": "tesla-btc-buy-2021",
       "title_ko": "테슬라, 비트코인 약 $15억 매입 공시",
       "title_en": "Tesla discloses ~$1.5B Bitcoin purchase",
@@ -332,6 +534,226 @@
           "title": "Tesla buys $1.5B in bitcoin, may accept the cryptocurrency as payment in the future",
           "url": "https://techcrunch.com/2021/02/08/tesla-buys-1-5b-in-bitcoin-may-accept-the-cryptocurrency-as-payment-in-the-future/",
           "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
+    },
+    {
+      "id": "coinbase-direct-listing-2021",
+      "title_ko": "Coinbase 나스닥 다이렉트 리스팅",
+      "title_en": "Coinbase Nasdaq direct listing",
+      "start": "2021-04-14",
+      "end": "2021-04-14",
+      "category": "crypto",
+      "severity": 4,
+      "summary_ko": "미국 대표 거래소 Coinbase가 나스닥에 다이렉트 리스팅(티커 COIN). CNBC: 종가 $328.28, 희석 기준 시총 약 $85.8B. 암호화폐 기업이 공개 시장에 선 상징적 날.",
+      "sources": [
+        {
+          "title": "CNBC — Coinbase Nasdaq debut",
+          "url": "https://www.cnbc.com/2021/04/14/coinbase-to-debut-on-nasdaq-in-direct-listing.html"
+        },
+        {
+          "title": "SEC 424B — Coinbase S-1 prospectus",
+          "url": "https://www.sec.gov/Archives/edgar/data/1679788/000162828021006850/coinbaseglobalinc424b.htm"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n암호화폐 거래소가 주식시장에 상장되면, 코인이 아닌 ‘거래소 회사 주식’으로도 업계에 투자할 수 있게 됩니다.\n\n무슨 일\n2021년 4월 14일 Coinbase가 나스닥에 다이렉트 리스팅(티커 COIN)으로 데뷔했습니다. CNBC는 종가 $328.28, 희석 기준 시총 약 $85.8B를 보도했습니다. SEC 안내서(424B)도 있습니다.\n\n시장·가격에 미친 영향\n업계가 공개 시장에 선 상징적 날로 자주 꼽힙니다. 거래소 주식≠코인 가격이며, 상관은 있어도 동일 자산이 아닙니다.",
+      "learn_points_ko": [
+        "거래소 주식 ≠ 코인 가격. 상관은 있어도 동일 자산이 아니다.",
+        "암호화폐 기업이 공개 시장에 선 상징적 이정표로 기록됩니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "거래소·크립토 기업 상장 뉴스가 나오면, 주식과 코인을 혼동하지 말고 공시·종가를 확인하세요.",
+      "similar_event_ids": [
+        "spot-btc-etf-approval-2024",
+        "paypal-crypto-buy-2020"
+      ],
+      "then_vs_now_ko": "미국 대표 거래소가 나스닥에 선 상징적 날입니다. 이후 현물 ETF 승인 등과 함께 ‘제도권 편입’ 이야기로 묶이지만, 회사 주식과 BTC 현물 상품은 다릅니다.",
+      "angles_ko": {
+        "price_market": "업계 상장·제도권 편입 상징으로 자주 인용됩니다.",
+        "news_reg": "CNBC 종가·시총 보도와 SEC 안내서를 교차 확인하세요.",
+        "shib_vs_btc_macro": "거래소 회사 상장입니다. 시바 토큰 상장과는 다른 층입니다."
+      },
+      "further_reading": [
+        {
+          "title": "CNBC — Coinbase Nasdaq debut",
+          "url": "https://www.cnbc.com/2021/04/14/coinbase-to-debut-on-nasdaq-in-direct-listing.html",
+          "why_ko": "종가·시총 등 당일 숫자를 확인할 때 좋습니다."
+        },
+        {
+          "title": "SEC 424B — Coinbase S-1 prospectus",
+          "url": "https://www.sec.gov/Archives/edgar/data/1679788/000162828021006850/coinbaseglobalinc424b.htm",
+          "why_ko": "공식 공시 문서로 표현을 대조할 때 쓰기 좋습니다."
+        }
+      ]
+    },
+    {
+      "id": "tesla-btc-payments-halt-2021",
+      "title_ko": "테슬라, 차량 BTC 결제 중단",
+      "title_en": "Tesla stops accepting Bitcoin for cars",
+      "start": "2021-05-12",
+      "end": "2021-05-12",
+      "category": "crypto",
+      "severity": 4,
+      "summary_ko": "Reuters/CNBC: Elon Musk가 채굴 화석연료(특히 석탄) 우려로 차량 BTC 결제를 중단한다고 발표. 보유 BTC는 유지. 2월 매입·3월 결제 허용과 대비되는 ‘채택 철회’ 학습 포인트.",
+      "sources": [
+        {
+          "title": "Reuters — Tesla stops taking bitcoin",
+          "url": "https://www.reuters.com/technology/tesla-stops-taking-bitcoin-cites-fossil-fuel-use-mining-cybercurrency-2021-05-12/"
+        },
+        {
+          "title": "CNBC — Tesla will stop accepting bitcoin",
+          "url": "https://www.cnbc.com/2021/05/12/elon-musk-says-tesla-will-stop-accepting-bitcoin-for-car-purchases.html"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n2021년 2월 테슬라의 BTC 매입·이후 결제 허용은 ‘기업 채택’ 이야기의 상징이었습니다. 몇 달 뒤 방향이 바뀌었습니다.\n\n무슨 일\n2021년 5월 12일 Elon Musk가 채굴에 쓰이는 화석연료(특히 석탄) 우려로 차량 BTC 결제를 중단한다고 발표했습니다. 보유 BTC는 유지한다고 했습니다. Reuters·CNBC가 보도했습니다.\n\n시장·가격에 미친 영향\n채택 철회 뉴스는 변동성을 키울 수 있습니다. 2월 매입 공시와 짝으로 ‘채택↔철회’를 배우는 사례입니다.",
+      "learn_points_ko": [
+        "유명인·기업의 말·행동 번복이 변동성을 키울 수 있다.",
+        "매입·결제 허용·결제 중단은 단계가 다릅니다. 날짜를 나눠 보세요.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "유명 기업·인물의 암호화폐 정책 변경 뉴스가 나오면, ‘보유’와 ‘결제 수용’을 구분하고 원문 발표를 확인하세요.",
+      "similar_event_ids": [
+        "tesla-btc-buy-2021",
+        "microstrategy-btc-treasury-2020"
+      ],
+      "then_vs_now_ko": "2월 매입·결제 허용과 대비되는 ‘채택 철회’입니다. 환경·채굴 이슈가 기업 정책에 영향을 준 사례로, 이후에도 유명인 발언이 단기 변동성을 키운 경우가 있습니다.",
+      "angles_ko": {
+        "price_market": "채택 철회 뉴스는 단기 분위기를 흔들 수 있습니다.",
+        "news_reg": "결제 중단과 보유 유지를 구분한 보도를 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·테슬라 정책 이슈입니다. 시바만의 뉴스는 아닙니다."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — Tesla stops taking bitcoin",
+          "url": "https://www.reuters.com/technology/tesla-stops-taking-bitcoin-cites-fossil-fuel-use-mining-cybercurrency-2021-05-12/",
+          "why_ko": "통신사 보도로 일정과 이유를 확인할 때 좋습니다."
+        },
+        {
+          "title": "CNBC — Tesla will stop accepting bitcoin",
+          "url": "https://www.cnbc.com/2021/05/12/elon-musk-says-tesla-will-stop-accepting-bitcoin-for-car-purchases.html",
+          "why_ko": "같은 발표를 다른 매체로 교차 확인할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "china-mining-crackdown-2021",
+      "title_ko": "중국, BTC 채굴·거래 단속 강화",
+      "title_en": "China vows crackdown on Bitcoin mining and trading",
+      "start": "2021-05-21",
+      "end": "2021-05-21",
+      "category": "policy",
+      "severity": 4,
+      "summary_ko": "Reuters: 국무원 금융안정발전위원회가 비트코인 채굴·거래 단속을 명시. 이후 내몽골·쓰촨 등 지역 조치로 이어진 ‘채굴 엑소더스’의 출발점. 9월 전면 금지와는 단계가 다름.",
+      "sources": [
+        {
+          "title": "Reuters — China vows to crack down on bitcoin mining, trading",
+          "url": "https://www.reuters.com/technology/china-says-it-will-crack-down-bitcoin-mining-trading-activities-2021-05-21/"
+        },
+        {
+          "title": "Reuters — Sichuan mining crackdown",
+          "url": "https://www.reuters.com/technology/chinas-cryptocurrency-mining-crackdown-spreads-sichuan-2021-06-19/"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n중국은 오래전부터 암호화폐 규제를 강화해 왔습니다. 2021년에는 채굴·거래 단속이 한 단계 더 구체화됐습니다.\n\n무슨 일\n2021년 5월 21일 Reuters 보도에 따르면 국무원 금융안정발전위원회가 비트코인 채굴·거래 단속을 명시했습니다. 이후 내몽골·쓰촨 등 지역 조치로 ‘채굴 엑소더스’가 이어졌다는 보도가 나왔습니다. 9월 전면 금지와는 단계가 다릅니다.\n\n시장·가격에 미친 영향\n채굴 지리 이동은 해시레이트·에너지 이슈와 함께 이야기됩니다. 기존 9월 금지 사건과 날짜·내용을 구분하세요.",
+      "learn_points_ko": [
+        "채굴 지리 이동 → 해시레이트·에너지 이슈를 같이 본다.",
+        "5월 채굴·거래 단속과 9월 전면 금지는 단계가 다릅니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "국가의 채굴·거래 단속 뉴스가 나오면, 발표 주체·적용 범위·후속 지역 조치를 나눠 확인하세요.",
+      "similar_event_ids": [
+        "china-crypto-ban-2021",
+        "btc-halving-2020"
+      ],
+      "then_vs_now_ko": "9월 전면 금지(`china-crypto-ban-2021`)보다 앞선 채굴·거래 단속 출발점입니다. ‘채굴 엑소더스’ 서사의 시작으로 자주 묶입니다.",
+      "angles_ko": {
+        "price_market": "채굴 단속·지리 이동 뉴스는 공급·네트워크 이야기에 영향을 줄 수 있습니다.",
+        "news_reg": "국무원 위원회 언급과 이후 지역 조치를 구분해 보세요.",
+        "shib_vs_btc_macro": "비트코인 채굴·중국 정책 이슈입니다. 시바만의 뉴스는 아닙니다."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — China vows to crack down on bitcoin mining, trading",
+          "url": "https://www.reuters.com/technology/china-says-it-will-crack-down-bitcoin-mining-trading-activities-2021-05-21/",
+          "why_ko": "5월 단속 발표 요지를 확인할 때 좋습니다."
+        },
+        {
+          "title": "Reuters — Sichuan mining crackdown",
+          "url": "https://www.reuters.com/technology/chinas-cryptocurrency-mining-crackdown-spreads-sichuan-2021-06-19/",
+          "why_ko": "이후 지역 확산 보도를 교차 확인할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "el-salvador-btc-legal-tender-2021",
+      "title_ko": "엘살바도르, BTC 법정화폐 시행",
+      "title_en": "El Salvador Bitcoin legal tender takes effect",
+      "start": "2021-09-07",
+      "end": "2021-09-07",
+      "category": "policy",
+      "severity": 5,
+      "summary_ko": "세계 최초로 BTC를 법정화폐로 시행(법률은 6월 의회 통과, 90일 후 발효). Reuters: Chivo 지갑 장애·시위·정부 추가 매입 등 첫날 혼란 보도.",
+      "sources": [
+        {
+          "title": "Reuters — El Salvador bumpy first day",
+          "url": "https://www.reuters.com/business/finance/el-salvador-leads-world-into-cryptocurrency-bitcoin-legal-tender-2021-09-07/"
+        },
+        {
+          "title": "Reuters — Congress approves law (Jun 9)",
+          "url": "https://www.reuters.com/world/americas/el-salvador-approves-first-law-bitcoin-legal-tender-2021-06-09/"
+        },
+        {
+          "title": "The Guardian — Congress vote",
+          "url": "https://www.theguardian.com/world/2021/jun/09/el-salvador-bitcoin-legal-tender-congress"
+        }
+      ],
+      "phases": [
+        {
+          "date": "2021-06-09",
+          "title_ko": "의회 법률 통과",
+          "note": "BTC 법정화폐 법안 통과(보도). 약 90일 후 발효."
+        },
+        {
+          "date": "2021-09-07",
+          "title_ko": "법정화폐 시행",
+          "note": "시행 첫날 Chivo 지갑 장애·시위 등 혼란 보도."
+        }
+      ],
+      "body_ko": "배경\n한 나라가 비트코인을 법정화폐로 쓰면, 세금·결제·환전 인프라까지 맞물립니다. ‘법률 통과’와 ‘실제 시행’은 날짜가 다를 수 있습니다.\n\n무슨 일\n엘살바도르는 세계 최초로 BTC를 법정화폐로 시행했습니다. 법률은 6월 의회에서 통과됐고, 약 90일 뒤인 2021년 9월 7일 발효됐습니다. Reuters는 Chivo 지갑 장애·시위·정부 추가 매입 등 첫날 혼란을 보도했습니다.\n\n시장·가격에 미친 영향\n국가 단위 채택 실험으로 자주 인용됩니다. 법정화폐≠누구나 바로 쓴다는 뜻은 아니며, 기술·신뢰·환전 인프라가 필요합니다.",
+      "learn_points_ko": [
+        "법정화폐 ≠ 누구나 바로 쓴다. 기술·신뢰·환전 인프라가 필요하다.",
+        "법률 통과일과 시행일을 구분하세요.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "국가의 암호화폐 법정화폐·준비자산 뉴스가 나오면, 통과·시행·실제 사용 범위를 나눠 확인하세요.",
+      "similar_event_ids": [
+        "us-strategic-btc-reserve-2025",
+        "microstrategy-btc-treasury-2020"
+      ],
+      "then_vs_now_ko": "세계 최초 국가 법정화폐 시행입니다. 이후 미국 Strategic Bitcoin Reserve EO(2025) 등과 ‘국가·정책 축’으로 비교되지만, 법정화폐와 몰수 BTC 준비자산은 구조가 다릅니다.",
+      "angles_ko": {
+        "price_market": "국가 채택 실험으로 시장 관심이 커진 구간으로 자주 인용됩니다.",
+        "news_reg": "6월 통과와 9월 시행, 첫날 장애 보도를 구분해 보세요.",
+        "shib_vs_btc_macro": "비트코인 국가 정책 이슈입니다. 시바만의 뉴스는 아닙니다."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — El Salvador bumpy first day",
+          "url": "https://www.reuters.com/business/finance/el-salvador-leads-world-into-cryptocurrency-bitcoin-legal-tender-2021-09-07/",
+          "why_ko": "시행 첫날 상황을 확인할 때 좋습니다."
+        },
+        {
+          "title": "Reuters — Congress approves law (Jun 9)",
+          "url": "https://www.reuters.com/world/americas/el-salvador-approves-first-law-bitcoin-legal-tender-2021-06-09/",
+          "why_ko": "법률 통과 일정을 대조할 때 쓰기 좋습니다."
+        },
+        {
+          "title": "The Guardian — Congress vote",
+          "url": "https://www.theguardian.com/world/2021/jun/09/el-salvador-bitcoin-legal-tender-congress",
+          "why_ko": "의회 표결을 다른 매체로 교차 확인할 수 있습니다."
         }
       ]
     },
@@ -487,6 +909,47 @@
       ]
     },
     {
+      "id": "btc-taproot-activation-2021",
+      "title_ko": "비트코인 Taproot 활성화",
+      "title_en": "Bitcoin Taproot activation",
+      "start": "2021-11-14",
+      "end": "2021-11-14",
+      "category": "crypto",
+      "severity": 3,
+      "summary_ko": "CoinDesk: 블록 709,632에서 Taproot 활성화(약 2021-11-14 05:15 UTC). Schnorr 서명 등으로 프라이버시·효율·스마트계약 여지 확대. 가격 이벤트보다 프로토콜 업그레이드.",
+      "sources": [
+        {
+          "title": "CoinDesk — Taproot has activated",
+          "url": "https://www.coindesk.com/tech/2021/11/13/taproot-bitcoins-long-anticipated-upgrade-activates-this-weekend"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n비트코인 프로토콜 업그레이드는 가격 뉴스와 결이 다릅니다. 합의된 소프트포크는 ‘전쟁’보다 ‘기능 개선’에 가깝습니다.\n\n무슨 일\nCoinDesk에 따르면 블록 709,632에서 Taproot가 활성화됐습니다(약 2021-11-14 05:15 UTC). Schnorr 서명 등으로 프라이버시·효율·스마트계약 여지가 넓어졌다고 설명됩니다.\n\n시장·가격에 미친 영향\n가격 이벤트보다 프로토콜 업그레이드로 보는 편이 안전합니다. 하드포크 전쟁과 달리 합의된 소프트포크 사례입니다.",
+      "learn_points_ko": [
+        "하드포크 전쟁과 달리 ‘합의된 소프트포크’ 업그레이드 사례.",
+        "프로토콜 뉴스와 가격 뉴스를 구분해 보세요.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "프로토콜 업그레이드 뉴스가 나오면, 활성화 블록·시각과 ‘합의 여부’를 기술 보도에서 확인하세요.",
+      "similar_event_ids": [
+        "btc-halving-2020",
+        "btc-halving-2024"
+      ],
+      "then_vs_now_ko": "가격보다 프로토콜 축의 이정표입니다. 반감기처럼 일정·블록 기준으로 기록되는 기술 사건과 같은 줄기로 볼 수 있습니다.",
+      "angles_ko": {
+        "price_market": "가격 이벤트보다 기술 업그레이드로 정리하는 편이 안전합니다.",
+        "news_reg": "활성화 블록·UTC 시각이 1차 일정입니다.",
+        "shib_vs_btc_macro": "비트코인 프로토콜 이슈입니다. 시바 L2·토큰 출시와는 결이 다릅니다."
+      },
+      "further_reading": [
+        {
+          "title": "CoinDesk — Taproot has activated",
+          "url": "https://www.coindesk.com/tech/2021/11/13/taproot-bitcoins-long-anticipated-upgrade-activates-this-weekend",
+          "why_ko": "활성화 일정·기술 요지를 확인할 때 좋습니다."
+        }
+      ]
+    },
+    {
       "id": "fed-hiking-cycle-2022-23",
       "title_ko": "연준 긴축 사이클(2022–2023)",
       "title_en": "Fed hiking cycle 2022–2023",
@@ -624,6 +1087,109 @@
       ]
     },
     {
+      "id": "three-arrows-liquidation-2022",
+      "title_ko": "Three Arrows Capital(3AC) 청산",
+      "title_en": "Three Arrows Capital enters liquidation",
+      "start": "2022-06-27",
+      "end": "2022-06-27",
+      "category": "crypto",
+      "severity": 5,
+      "summary_ko": "Reuters: BVI 법원 청산 명령(보도 기준 6/27 주), Voyager 대출 디폴트 등과 맞물림. Terra 붕괴 후 전염(contagion)의 핵심 헤지펀드 실패.",
+      "sources": [
+        {
+          "title": "Reuters — 3AC entered liquidation",
+          "url": "https://www.reuters.com/technology/crypto-hedge-fund-three-arrows-capital-has-entered-liquidation-source-says-2022-06-29/"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n2022년 Terra 붕괴 이후, 레버리지를 크게 쓴 헤지펀드·렌딩 업체들이 연쇄로 흔들렸습니다.\n\n무슨 일\nReuters에 따르면 Three Arrows Capital(3AC)은 BVI 법원 청산 명령 국면으로 들어갔고(보도 기준 6/27 주), Voyager 대출 디폴트 등과 맞물렸습니다. Terra 붕괴 후 전염의 핵심 헤지펀드 실패로 자주 꼽힙니다.\n\n시장·가격에 미친 영향\n레버리지·교차담보가 연쇄 부실을 만든 사례입니다. Celsius·FTX·Genesis와 같은 ‘2022 CeFi 전염’ 줄기로 이어집니다.",
+      "learn_points_ko": [
+        "‘레버리지·교차담보’가 연쇄 부실을 만든다.",
+        "한 펀드·렌딩의 실패가 다른 거래소·대출로 번질 수 있습니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "대형 펀드·렌딩 디폴트 뉴스가 나오면, 법원·채권자·연계 대출 보도를 함께 확인하세요.",
+      "similar_event_ids": [
+        "terra-luna-collapse-2022",
+        "celsius-bankruptcy-2022",
+        "ftx-collapse-2022",
+        "genesis-bankruptcy-2023"
+      ],
+      "then_vs_now_ko": "Terra 붕괴 직후 전염 고리의 핵심입니다. Celsius·FTX·Genesis와 함께 2022–23 CeFi 위기로 묶여 설명됩니다.",
+      "angles_ko": {
+        "price_market": "전염(contagion) 국면에서 위험자산 분위기가 악화된 구간으로 기록됩니다.",
+        "news_reg": "청산 명령·대출 디폴트 보도를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "업계 레버리지·상대방 위험 이슈입니다. 시바만의 뉴스는 아닙니다."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — 3AC entered liquidation",
+          "url": "https://www.reuters.com/technology/crypto-hedge-fund-three-arrows-capital-has-entered-liquidation-source-says-2022-06-29/",
+          "why_ko": "청산·전염 요지를 확인할 때 좋습니다."
+        }
+      ]
+    },
+    {
+      "id": "celsius-bankruptcy-2022",
+      "title_ko": "Celsius Network 파산 신청",
+      "title_en": "Celsius Network files for bankruptcy",
+      "start": "2022-07-13",
+      "end": "2022-07-13",
+      "category": "crypto",
+      "severity": 5,
+      "summary_ko": "Reuters/BusinessWire: 7월 13일 뉴욕 SDNY Chapter 11. 앞서 출금 동결. 고금리 예치 상품의 상대방 위험(counterparty risk)을 배우는 사례.",
+      "sources": [
+        {
+          "title": "Reuters — Celsius files for bankruptcy",
+          "url": "https://www.reuters.com/technology/crypto-lender-celsius-files-bankruptcy-2022-07-14/"
+        },
+        {
+          "title": "BusinessWire — Celsius Chapter 11",
+          "url": "https://www.businesswire.com/news/home/20220713005911/en/Celsius-Network-Initiates-Financial-Restructuring-to-Stabilize-Business-and-Maximize-Value-for-All-Stakeholders"
+        },
+        {
+          "title": "Stretto — Celsius cases",
+          "url": "https://cases.stretto.com/celsius/"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n고금리 ‘예치’ 상품은 은행 예금과 다릅니다. 상대방이 자산을 굴리다 문제가 나면 출금이 막힐 수 있습니다.\n\n무슨 일\nCelsius Network는 앞서 출금을 동결한 뒤, 2022년 7월 13일 뉴욕 SDNY에 Chapter 11 파산을 신청했습니다. Reuters·BusinessWire·Stretto 사건 페이지에서 확인됩니다.\n\n시장·가격에 미친 영향\n렌딩/CeFi 위기의 대표 교육 사례입니다. 3AC·FTX·Genesis와 같은 전염 줄기로 이어집니다.",
+      "learn_points_ko": [
+        "‘예치 이자’ = 상대방이 돈을 굴리는 것. 은행 예금과 다르다.",
+        "출금 동결 후 파산으로 이어질 수 있습니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "렌딩·예치 플랫폼 이슈가 나오면, 출금 가능 여부와 공식 파산·법원 자료를 우선 확인하세요.",
+      "similar_event_ids": [
+        "three-arrows-liquidation-2022",
+        "ftx-collapse-2022",
+        "genesis-bankruptcy-2023"
+      ],
+      "then_vs_now_ko": "고금리 예치의 상대방 위험을 보여주는 사례입니다. Terra→3AC→Celsius→FTX→Genesis로 이어지는 전염 서사 안에 있습니다.",
+      "angles_ko": {
+        "price_market": "CeFi 신뢰 추락 구간의 일부로 기록됩니다.",
+        "news_reg": "Chapter 11 신청일·출금 동결을 구분하세요.",
+        "shib_vs_btc_macro": "렌딩/CeFi 이슈입니다. 시바만의 뉴스는 아닙니다."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — Celsius files for bankruptcy",
+          "url": "https://www.reuters.com/technology/crypto-lender-celsius-files-bankruptcy-2022-07-14/",
+          "why_ko": "파산 신청 요지를 확인할 때 좋습니다."
+        },
+        {
+          "title": "BusinessWire — Celsius Chapter 11",
+          "url": "https://www.businesswire.com/news/home/20220713005911/en/Celsius-Network-Initiates-Financial-Restructuring-to-Stabilize-Business-and-Maximize-Value-for-All-Stakeholders",
+          "why_ko": "회사 측 발표 표현을 대조할 때 쓰기 좋습니다."
+        },
+        {
+          "title": "Stretto — Celsius cases",
+          "url": "https://cases.stretto.com/celsius/",
+          "why_ko": "법원 사건 포털로 일정·문서를 추적할 수 있습니다."
+        }
+      ]
+    },
+    {
       "id": "ftx-collapse-2022",
       "title_ko": "FTX 파산",
       "title_en": "FTX bankruptcy",
@@ -683,6 +1249,48 @@
       ]
     },
     {
+      "id": "genesis-bankruptcy-2023",
+      "title_ko": "Genesis 렌딩 유닛 미국 파산 신청",
+      "title_en": "Genesis lending unit files US bankruptcy",
+      "start": "2023-01-19",
+      "end": "2023-01-19",
+      "category": "crypto",
+      "severity": 4,
+      "summary_ko": "Reuters: Genesis 렌딩 유닛이 미국 파산 보호를 신청(보도 2023-01-20). FTX 여파 CeFi 전염의 연장. Celsius·FTX·3AC와 주제 겹침.",
+      "sources": [
+        {
+          "title": "Reuters — Genesis lending unit files for U.S. bankruptcy",
+          "url": "https://www.reuters.com/technology/crypto-lending-unit-genesis-files-us-bankruptcy-2023-01-20/"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\nFTX 붕괴 후 암호화폐 렌딩·중개 업체들의 출금·파산이 이어졌습니다. Genesis도 그 연장선에 있습니다.\n\n무슨 일\nReuters(2023-01-20)에 따르면 Genesis의 렌딩 유닛이 미국 파산 보호를 신청했습니다. FTX 여파로 고객 상환이 동결된 뒤의 절차로 보도됐습니다.\n\n시장·가격에 미친 영향\nCeFi 전염의 연장으로 자주 묶입니다. Celsius·3AC·FTX와 함께 ‘어디에 자산을 두는지’를 배우는 사례입니다.",
+      "learn_points_ko": [
+        "CeFi 렌딩 파산은 교차 담보·상대방 위험을 다시 보여준다.",
+        "FTX 이후에도 전염이 이어질 수 있습니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "렌딩·중개사 파산 뉴스가 나오면, 어느 법인이 신청했는지와 출금·채권자 보도를 확인하세요.",
+      "similar_event_ids": [
+        "celsius-bankruptcy-2022",
+        "ftx-collapse-2022",
+        "three-arrows-liquidation-2022"
+      ],
+      "then_vs_now_ko": "Celsius·FTX와 주제는 겹치지만, FTX 이후 2023년 초로 전염이 이어진 사례입니다. 날짜를 나눠 보면 연쇄가 보입니다.",
+      "angles_ko": {
+        "price_market": "CeFi 전염 연장 구간으로 기록됩니다.",
+        "news_reg": "파산 신청·채권자 규모 보도를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "렌딩/CeFi 이슈입니다. 시바만의 뉴스는 아닙니다."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — Genesis lending unit files for U.S. bankruptcy",
+          "url": "https://www.reuters.com/technology/crypto-lending-unit-genesis-files-us-bankruptcy-2023-01-20/",
+          "why_ko": "파산 신청 요지를 확인할 때 좋습니다."
+        }
+      ]
+    },
+    {
       "id": "svb-collapse-2023",
       "title_ko": "실리콘밸리은행(SVB) 파산",
       "title_en": "Silicon Valley Bank failure",
@@ -733,6 +1341,56 @@
       ]
     },
     {
+      "id": "sec-binance-charges-2023",
+      "title_ko": "SEC, Binance·CZ 민사 고소",
+      "title_en": "SEC files charges against Binance and CZ",
+      "start": "2023-06-05",
+      "end": "2023-06-05",
+      "category": "policy",
+      "severity": 4,
+      "summary_ko": "SEC press: Binance·Binance.US·Zhao에 미등록 거래소 등 13개 혐의. (이후 2025-05-29 합의로 기각 주석이 SEC 페이지에 있음 — 사건 ‘시작’ 날짜로 기록.)",
+      "sources": [
+        {
+          "title": "SEC PR 2023-101",
+          "url": "https://www.sec.gov/newsroom/press-releases/2023-101-sec-files-13-charges-against-binance-entities-founder-changpeng-zhao"
+        },
+        {
+          "title": "Reuters — SEC sues Binance",
+          "url": "https://www.reuters.com/legal/us-sec-sues-binance-founder-zhao-alleging-securities-law-violations-2023-06-05/"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n대형 거래소에 대한 미국 규제는 민사(SEC)와 형사(DOJ)가 따로 갈 수 있습니다. 날짜와 기관을 구분하는 것이 중요합니다.\n\n무슨 일\n2023년 6월 5일 SEC는 Binance·Binance.US·Changpeng Zhao에 미등록 거래소 등 13개 혐의로 민사 고소를 제기했다고 발표했습니다. (이후 2025-05-29 합의로 기각 주석이 SEC 페이지에 있다는 안내가 있으나, 이 페이지는 사건 ‘시작’ 날짜로 기록합니다.)\n\n시장·가격에 미친 영향\n대형 거래소 규제 리스크 학습 포인트입니다. 같은 해 11월 DOJ 형사 합의와 혼동하지 마세요.",
+      "learn_points_ko": [
+        "민사(SEC)와 형사(DOJ)를 혼동하지 말 것.",
+        "고소·합의·기각은 단계가 다릅니다. 날짜를 나눠 보세요.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "거래소 규제 뉴스가 나오면, SEC(민사)·DOJ(형사)·관할권을 구분하고 공식 보도자료를 확인하세요.",
+      "similar_event_ids": [
+        "binance-cz-doj-plea-2023",
+        "ftx-collapse-2022"
+      ],
+      "then_vs_now_ko": "SEC 민사 고소의 시작점입니다. 같은 해 11월 Binance·CZ의 DOJ 형사 합의와 짝으로 보면 ‘규제 리스크’를 나누어 배우기 좋습니다.",
+      "angles_ko": {
+        "price_market": "대형 거래소 규제 뉴스는 시장 분위기에 영향을 줄 수 있습니다.",
+        "news_reg": "SEC 보도자료의 혐의 요지가 1차 자료입니다.",
+        "shib_vs_btc_macro": "글로벌 거래소 규제 이슈입니다. 시바만의 뉴스는 아닙니다."
+      },
+      "further_reading": [
+        {
+          "title": "SEC PR 2023-101",
+          "url": "https://www.sec.gov/newsroom/press-releases/2023-101-sec-files-13-charges-against-binance-entities-founder-changpeng-zhao",
+          "why_ko": "공식 규제 보도자료입니다."
+        },
+        {
+          "title": "Reuters — SEC sues Binance",
+          "url": "https://www.reuters.com/legal/us-sec-sues-binance-founder-zhao-alleging-securities-law-violations-2023-06-05/",
+          "why_ko": "일정과 요지를 빠르게 훑기에 좋습니다."
+        }
+      ]
+    },
+    {
       "id": "blackrock-spot-etf-filing-2023",
       "title_ko": "블랙록, 현물 비트코인 ETF 신청",
       "title_en": "BlackRock files for spot Bitcoin ETF",
@@ -770,6 +1428,47 @@
           "title": "The Complete Bitcoin Timeline: 2008 to Today",
           "url": "https://bitcoincompleteguide.com/bitcoin-timeline/",
           "why_ko": "사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다."
+        }
+      ]
+    },
+    {
+      "id": "binance-cz-doj-plea-2023",
+      "title_ko": "Binance·CZ, 미국 형사 합의·유죄인정",
+      "title_en": "Binance and CZ plead guilty in US criminal settlement",
+      "start": "2023-11-21",
+      "end": "2023-11-21",
+      "category": "policy",
+      "severity": 5,
+      "summary_ko": "Reuters: Zhao AML 위반 유죄인정·CEO 사임, 약 $4.3B 규모 합의. FTX 이후 업계 컴플라이언스 전환점으로 자주 인용.",
+      "sources": [
+        {
+          "title": "Reuters — Zhao pleads guilty, steps down",
+          "url": "https://www.reuters.com/markets/us/us-authorities-set-unveil-settlement-with-binance-source-2023-11-21/"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\nFTX 파산 이후 대형 거래소의 자금세탁방지(AML)·제재 준수가 더 강하게 조명됐습니다.\n\n무슨 일\nReuters에 따르면 2023년 11월 21일 Changpeng Zhao가 AML 위반으로 유죄인정하고 CEO에서 사임했으며, 약 43억 달러 규모 합의가 보도됐습니다.\n\n시장·가격에 미친 영향\n글로벌 거래소 규제 정점으로 자주 인용됩니다. 거래소 리스크·관할권·제재를 초보자가 구분할 핵심 사건입니다.",
+      "learn_points_ko": [
+        "거래소 리스크·관할권·제재를 초보자가 꼭 구분할 사건.",
+        "민사(SEC) 고소와 형사(DOJ) 합의는 별개 절차일 수 있습니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "거래소 형사·합의 뉴스가 나오면, 유죄 인정 대상·벌금·경영진 변경을 공식·통신사 보도에서 확인하세요.",
+      "similar_event_ids": [
+        "sec-binance-charges-2023",
+        "ftx-collapse-2022"
+      ],
+      "then_vs_now_ko": "같은 해 6월 SEC 민사 고소와 짝을 이루는 형사 합의입니다. FTX 이후 업계 컴플라이언스 전환점으로 자주 인용됩니다.",
+      "angles_ko": {
+        "price_market": "대형 거래소 규제 정점 뉴스로 시장 관심이 컸던 구간입니다.",
+        "news_reg": "유죄인정·CEO 사임·합의 규모 보도가 핵심입니다.",
+        "shib_vs_btc_macro": "글로벌 거래소 규제입니다. 시바만의 뉴스는 아닙니다."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — Zhao pleads guilty, steps down",
+          "url": "https://www.reuters.com/markets/us/us-authorities-set-unveil-settlement-with-binance-source-2023-11-21/",
+          "why_ko": "합의·사임 요지를 확인할 때 좋습니다."
         }
       ]
     },
@@ -891,6 +1590,179 @@
           "title": "Bitcoin Cycles: The 4-Year Halving Pattern Explained",
           "url": "https://www.bit.com/knowledge-hub/bitcoin-cycle",
           "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
+    },
+    {
+      "id": "hk-spot-btc-eth-etf-2024",
+      "title_ko": "홍콩, 아시아 첫 현물 BTC·ETH ETF 거래 개시",
+      "title_en": "Hong Kong spot BTC/ETH ETFs debut",
+      "start": "2024-04-30",
+      "end": "2024-04-30",
+      "category": "crypto",
+      "severity": 4,
+      "summary_ko": "Reuters: 아시아 첫 현물 비트코인·이더 ETF가 홍콩에서 거래 개시(2024-04-30). 미국 1월 현물 BTC ETF 승인과 지리적으로 구분되는 이정표.",
+      "sources": [
+        {
+          "title": "Reuters — Asia's first spot bitcoin and ether ETFs Hong Kong debut",
+          "url": "https://www.reuters.com/markets/currencies/asias-first-spot-bitcoin-ether-etfs-gain-hong-kong-debut-2024-04-30/"
+        },
+        {
+          "title": "Reuters — Hong Kong initial approval Apr 15",
+          "url": "https://www.reuters.com/markets/currencies/hong-kong-gives-initial-approval-first-bitcoin-ether-spot-etfs-say-funds-2024-04-15/"
+        }
+      ],
+      "phases": [
+        {
+          "date": "2024-04-15",
+          "title_ko": "초기 승인 보도",
+          "note": "홍콩 현물 BTC·ETH ETF 초기 승인 관련 Reuters 보도."
+        },
+        {
+          "date": "2024-04-30",
+          "title_ko": "거래 개시",
+          "note": "아시아 첫 현물 BTC·ETH ETF 홍콩 데뷔."
+        }
+      ],
+      "body_ko": "배경\n미국이 2024년 1월 현물 비트코인 ETF를 연 뒤, 아시아에서도 비슷한 상품이 나올지가 관심사였습니다.\n\n무슨 일\nReuters에 따르면 2024년 4월 30일 아시아 첫 현물 비트코인·이더 ETF가 홍콩에서 거래를 시작했습니다. 4월 15일께 초기 승인 보도도 있었습니다.\n\n시장·가격에 미친 영향\n미국 승인과 지리적으로 구분되는 이정표입니다. 첫날 거래대금 등은 미국 데뷔와 비교해 ‘상대적으로 조용했다’는 보도가 있었습니다.",
+      "learn_points_ko": [
+        "같은 ‘현물 ETF’라도 국가·자산(BTC만/ETH 포함)·개시일이 다르다.",
+        "승인·거래 개시를 날짜로 구분하세요.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "해외 현물 ETF 뉴스가 나오면, 어떤 자산·어느 거래소·현금/현물 설정 방식을 확인하세요.",
+      "similar_event_ids": [
+        "spot-btc-etf-approval-2024",
+        "blackrock-spot-etf-filing-2023",
+        "bito-futures-etf-2021"
+      ],
+      "then_vs_now_ko": "미국 1월 현물 BTC ETF 승인 이후 아시아 첫 현물 BTC·ETH ETF 데뷔입니다. 지리·자산 범위(ETH 포함)가 다릅니다.",
+      "angles_ko": {
+        "price_market": "아시아 접근 경로 확대 이정표로 인용됩니다.",
+        "news_reg": "승인 보도일과 거래 개시일을 구분하세요.",
+        "shib_vs_btc_macro": "BTC·ETH 현물 ETF입니다. 시바 포함 액티브 상품과는 구분하세요."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — Asia's first spot bitcoin and ether ETFs Hong Kong debut",
+          "url": "https://www.reuters.com/markets/currencies/asias-first-spot-bitcoin-ether-etfs-gain-hong-kong-debut-2024-04-30/",
+          "why_ko": "데뷔일·요지를 확인할 때 좋습니다."
+        },
+        {
+          "title": "Reuters — Hong Kong initial approval Apr 15",
+          "url": "https://www.reuters.com/markets/currencies/hong-kong-gives-initial-approval-first-bitcoin-ether-spot-etfs-say-funds-2024-04-15/",
+          "why_ko": "초기 승인 일정을 대조할 때 쓰기 좋습니다."
+        }
+      ]
+    },
+    {
+      "id": "germany-btc-sale-2024",
+      "title_ko": "독일(작센), 압수 BTC ~49,858개 매각",
+      "title_en": "German (Saxony) seized Bitcoin sale ~49,858 BTC",
+      "start": "2024-06-19",
+      "end": "2024-07-12",
+      "category": "markets",
+      "severity": 4,
+      "summary_ko": "작센 검찰 공식: 약 49,858 BTC를 6/19–7/12 매각, 잠정 대금 €2,639,683,413.92. OTC 위주 분할 매각. 정부 매각·공급 이슈 학습용.",
+      "sources": [
+        {
+          "title": "Sachsen Medienservice — Notveräußerung abgeschlossen",
+          "url": "https://medienservice.sachsen.de/medien/news/1077662"
+        },
+        {
+          "title": "CNBC — Germany owns $2B bitcoin",
+          "url": "https://www.cnbc.com/2024/07/08/germany-owns-2-billion-in-bitcoin-btc-its-freaking-out-investors.html"
+        }
+      ],
+      "phases": [
+        {
+          "date": "2024-06-19",
+          "title_ko": "매각 시작",
+          "note": "작센 검찰 공식 안내에 따른 매각 기간 시작."
+        },
+        {
+          "date": "2024-07-12",
+          "title_ko": "매각 종료",
+          "note": "약 49,858 BTC 매각 완료(잠정 대금 €2,639,683,413.92)."
+        }
+      ],
+      "body_ko": "배경\n정부가 압수한 비트코인을 시장에 내놓으면 ‘공급’ 뉴스로 읽히는 경우가 많습니다. 누가·얼마나·어떻게(OTC vs 거래소)가 중요합니다.\n\n무슨 일\n독일 작센 검찰 공식 안내에 따르면 약 49,858 BTC를 2024년 6월 19일부터 7월 12일까지 매각했고, 잠정 대금은 €2,639,683,413.92입니다. OTC 위주 분할 매각으로 설명됩니다. CNBC 등도 당시 독일 보유·매각 이슈를 보도했습니다.\n\n시장·가격에 미친 영향\n정부 매도·공급 충격 학습용 사건입니다. 대량 매도 뉴스는 경로(OTC/거래소)를 함께 보세요.",
+      "learn_points_ko": [
+        "대량 매도 뉴스는 ‘누가·얼마나·어떻게(OTC vs 거래소)’를 본다.",
+        "정부·법원 매각은 기간이 길 수 있습니다. 시작·종료일을 확인하세요.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "정부·압수 BTC 매각 뉴스가 나오면, 공식 수량·기간·매각 방식(OTC 여부)을 확인하세요.",
+      "similar_event_ids": [
+        "mtgox-repayments-2024",
+        "spot-btc-etf-approval-2024"
+      ],
+      "then_vs_now_ko": "정부 압수분 매각으로 공급 이슈가 부각된 사례입니다. 같은 시기 Mt. Gox 상환과 함께 ‘대량 물량’ 이야기로 자주 묶입니다.",
+      "angles_ko": {
+        "price_market": "대량 공급 뉴스로 시장이 민감해질 수 있는 구간입니다.",
+        "news_reg": "작센 검찰 공식 수량·대금·기간이 1차 자료입니다.",
+        "shib_vs_btc_macro": "비트코인 공급·정부 매도 이슈입니다. 시바만의 뉴스는 아닙니다."
+      },
+      "further_reading": [
+        {
+          "title": "Sachsen Medienservice — Notveräußerung abgeschlossen",
+          "url": "https://medienservice.sachsen.de/medien/news/1077662",
+          "why_ko": "공식 수량·대금·기간을 확인할 때 좋습니다."
+        },
+        {
+          "title": "CNBC — Germany owns $2B bitcoin",
+          "url": "https://www.cnbc.com/2024/07/08/germany-owns-2-billion-in-bitcoin-btc-its-freaking-out-investors.html",
+          "why_ko": "당시 시장 관심 맥락을 빠르게 훑기에 좋습니다."
+        }
+      ]
+    },
+    {
+      "id": "mtgox-repayments-2024",
+      "title_ko": "Mt. Gox, 채권자 BTC·BCH 상환 개시",
+      "title_en": "Mt. Gox begins creditor BTC/BCH repayments",
+      "start": "2024-07-05",
+      "end": "2024-07-05",
+      "category": "markets",
+      "severity": 4,
+      "summary_ko": "Mt. Gox 관재인 측이 일부 채권자에게 비트코인·비트코인캐시 상환을 시작했다고 발표(CNBC 2024-07-05). 대량 상환·매도 압력 서사로 자주 인용된다.",
+      "sources": [
+        {
+          "title": "Mt. Gox trustee announcement PDF (2024-07-24)",
+          "url": "https://www.mtgox.com/img/pdf/20240724_aeedf9f1-7f27-40ec-ad70-26d2811167a5_announcement_en.pdf"
+        },
+        {
+          "title": "CNBC — Mt. Gox begins repaying bitcoin to creditors",
+          "url": "https://www.cnbc.com/2024/07/05/mt-gox-begins-repaying-bitcoin-to-creditors-a-decade-on-from-collapse.html"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n2014년 파산한 Mt. Gox 이용자들은 오랜 기간 자산을 돌려받지 못했습니다. 상환이 시작되면 일부가 매도할 수 있다는 기대·우려가 함께 나옵니다.\n\n무슨 일\nCNBC(2024-07-05)에 따르면 관재인 측이 일부 채권자에게 비트코인·비트코인캐시 상환을 시작했다고 밝혔습니다. 이후 관재인 PDF 공지(2024-07-24) 등도 있습니다.\n\n시장·가격에 미친 영향\n매도 압력 서사로 자주 인용됩니다. 실제 매도 규모·시점은 사람마다 다르며, 차트와 뉴스를 구분해 보세요.",
+      "learn_points_ko": [
+        "대량 상환 뉴스는 ‘누가 받는지·언제·얼마나 파는지’를 나눠 본다.",
+        "관재인 공식 공지와 시장 추측을 구분하세요.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "파산·관재인 상환 뉴스가 나오면, 공식 PDF·대상·자산 종류(BTC/BCH 등)를 확인하세요.",
+      "similar_event_ids": [
+        "germany-btc-sale-2024",
+        "ftx-collapse-2022"
+      ],
+      "then_vs_now_ko": "오래 묶였던 물량이 풀리기 시작한 사건입니다. 같은 시기 독일(작센) 매각과 함께 ‘공급·매도 압력’ 이야기로 자주 비교됩니다.",
+      "angles_ko": {
+        "price_market": "상환·매도 압력 서사가 시장 관심을 끈 구간입니다.",
+        "news_reg": "관재인 공지·CNBC 개시 보도가 1차 일정입니다.",
+        "shib_vs_btc_macro": "비트코인 공급·상환 이슈입니다. 시바만의 뉴스는 아닙니다."
+      },
+      "further_reading": [
+        {
+          "title": "CNBC — Mt. Gox begins repaying bitcoin to creditors",
+          "url": "https://www.cnbc.com/2024/07/05/mt-gox-begins-repaying-bitcoin-to-creditors-a-decade-on-from-collapse.html",
+          "why_ko": "상환 개시 요지를 빠르게 확인할 때 좋습니다."
+        },
+        {
+          "title": "Mt. Gox trustee announcement PDF (2024-07-24)",
+          "url": "https://www.mtgox.com/img/pdf/20240724_aeedf9f1-7f27-40ec-ad70-26d2811167a5_announcement_en.pdf",
+          "why_ko": "관재인 공식 문서로 표현을 대조할 때 쓰기 좋습니다."
         }
       ]
     },
@@ -1099,6 +1971,56 @@
           "title": "Bitcoin price: Cryptocurrency races past $100,000, fueled by post-election rally",
           "url": "https://abc7ny.com/post/bitcoin-price-cryptocurrency-races-past-100000-fueled-post-election-rally/15624358/",
           "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
+    },
+    {
+      "id": "us-strategic-btc-reserve-2025",
+      "title_ko": "미국, Strategic Bitcoin Reserve EO",
+      "title_en": "US Strategic Bitcoin Reserve executive order",
+      "start": "2025-03-06",
+      "end": "2025-03-06",
+      "category": "policy",
+      "severity": 4,
+      "summary_ko": "White House EO(2025-03-06)/EO 14233: 몰수 BTC로 Strategic Bitcoin Reserve 설립. 추가 매입은 budget-neutral 전략 수립 수준 — 즉시 대규모 신규 매수 명령이 아님.",
+      "sources": [
+        {
+          "title": "White House — Establishment of the Strategic Bitcoin Reserve…",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/03/establishment-of-the-strategic-bitcoin-reserve-and-united-states-digital-asset-stockpile/"
+        },
+        {
+          "title": "Federal Register — EO 14233",
+          "url": "https://www.federalregister.gov/documents/2025/03/11/2025-03992/establishment-of-the-strategic-bitcoin-reserve-and-united-states-digital-asset-stockpile"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n국가가 비트코인을 ‘준비자산’처럼 관리할지에 대한 논의가 커졌습니다. 행정명령의 문구를 그대로 읽는 것이 중요합니다.\n\n무슨 일\n2025년 3월 6일 White House 행정명령으로 Strategic Bitcoin Reserve와 United States Digital Asset Stockpile 설립이 발표됐습니다(Federal Register EO 14233). 자본은 주로 형사·민사 몰수 등으로 확보된 Government BTC로 합니다. 추가 BTC 취득은 budget-neutral 전략을 수립하라고 되어 있으며, 즉시 대규모 신규 매수 명령으로 읽히지 않습니다.\n\n시장·가격에 미친 영향\n정책·내러티브 사건입니다. ‘국가가 산다’로 단순화하지 말고, 몰수분 보관·매각 제한·추가 매입 조건을 구분하세요.",
+      "learn_points_ko": [
+        "몰수 BTC 준비자산 ≠ 즉시 대규모 신규 매수 명령.",
+        "행정명령 원문에서 ‘무엇을 하고/하지 않는지’를 확인하세요.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "국가 비트코인 준비자산·비축 뉴스가 나오면, 원문의 자금 출처·매각 제한·추가 매입 조건을 확인하세요.",
+      "similar_event_ids": [
+        "el-salvador-btc-legal-tender-2021",
+        "spot-btc-etf-approval-2024"
+      ],
+      "then_vs_now_ko": "엘살바도르 법정화폐와 달리, 미국 EO는 몰수 BTC 준비자산·스톡파일 관리에 가깝습니다. ‘국가 채택’ 이야기라도 구조가 다릅니다.",
+      "angles_ko": {
+        "price_market": "정책 내러티브가 시장 관심에 영향을 줄 수 있으나, 즉시 매수 규모는 원문을 봐야 합니다.",
+        "news_reg": "White House EO·Federal Register 문구가 1차 자료입니다.",
+        "shib_vs_btc_macro": "비트코인 국가 정책입니다. 시바만의 뉴스는 아닙니다."
+      },
+      "further_reading": [
+        {
+          "title": "White House — Establishment of the Strategic Bitcoin Reserve…",
+          "url": "https://www.whitehouse.gov/presidential-actions/2025/03/establishment-of-the-strategic-bitcoin-reserve-and-united-states-digital-asset-stockpile/",
+          "why_ko": "행정명령 원문입니다."
+        },
+        {
+          "title": "Federal Register — EO 14233",
+          "url": "https://www.federalregister.gov/documents/2025/03/11/2025-03992/establishment-of-the-strategic-bitcoin-reserve-and-united-states-digital-asset-stockpile",
+          "why_ko": "관보 등록본으로 표현을 대조할 때 쓰기 좋습니다."
         }
       ]
     },
@@ -1904,6 +2826,56 @@
       ]
     },
     {
+      "id": "centcom-iran-blockade-tally",
+      "title_ko": "CENTCOM, 이란 항만 봉쇄로 122척 우회 조치 발표",
+      "title_en": "CENTCOM: 122 ships redirected under Iran port blockade",
+      "start": "2026-09-25",
+      "end": "2026-09-25",
+      "category": "geo",
+      "severity": 3,
+      "summary_ko": "미 중부사령부가 이란 항만 입출항 봉쇄 집행 과정에서 상업선 122척을 우회시켰다고 발표(9/25 기준).",
+      "sources": [
+        {
+          "title": "CENTCOM says US redirected 122 ships under Iran blockade",
+          "url": "https://www.iranintl.com/en/202609250333"
+        },
+        {
+          "title": "Iran Shipping Update – September 25, 2026",
+          "url": "https://www.unitedagainstnucleariran.com/analysis/iran-shipping-update-september-25-2026"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n미국은 이란 항만 입출항을 막는 봉쇄를 집행해 왔습니다. 그 규모를 수치로 공개한 발표입니다.\n\n무슨 일\n2026년 9월 25일 기준, 미 중부사령부(CENTCOM)가 이란 항만 봉쇄 과정에서 상업선 122척을 우회시켰다고 발표했습니다. Iran International·UANI 분석 등에서 전했습니다.\n\n시장·가격에 미친 영향\n봉쇄가 ‘상징’이 아니라 실제로 선박 경로를 바꾸고 있다는 신호입니다. 해상 물류·에너지 공급 불안과 맞물려 매크로 리스크로 남습니다.",
+      "learn_points_ko": [
+        "군·사령부 발표 숫자는 현장 긴장을 가늠하는 한 자료입니다.",
+        "발표 기준일·집계 범위를 확인하면 과장·축소 해석을 줄일 수 있습니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "군사·봉쇄 관련 집계가 나오면 발표 기관과 기준일을 메모해 두세요.",
+      "similar_event_ids": [
+        "hormuz-single-digit-traffic",
+        "iran-war-hormuz-2026"
+      ],
+      "then_vs_now_ko": "미 중부사령부가 발표한 우회 척수 집계입니다. 통행 한 자릿수 보도와 함께 ‘현장 긴장’을 숫자로 보는 자료입니다. 기준일·집계 범위를 확인하세요.",
+      "angles_ko": {
+        "price_market": "직접 가격 뉴스라기보다 지정학 긴장 지표에 가깝습니다.",
+        "news_reg": "발표 기관(CENTCOM)과 기준일을 메모하세요.",
+        "shib_vs_btc_macro": "군사·봉쇄 집계입니다. 시바와 무관합니다."
+      },
+      "further_reading": [
+        {
+          "title": "CENTCOM says US redirected 122 ships under Iran blockade",
+          "url": "https://www.iranintl.com/en/202609250333",
+          "why_ko": "사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다."
+        },
+        {
+          "title": "Iran Shipping Update – September 25, 2026",
+          "url": "https://www.unitedagainstnucleariran.com/analysis/iran-shipping-update-september-25-2026",
+          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
+    },
+    {
       "id": "iran-7day-hormuz-proposal",
       "title_ko": "이란, 7일 내 호르무즈 재개 제안(미 응답 대기)",
       "title_en": "Iran offers 7-day Hormuz reopen plan",
@@ -1950,56 +2922,6 @@
         {
           "title": "‘Choice now rests with US’: Iran offers America 7-day plan to reopen Strait of Hormuz",
           "url": "https://timesofindia.indiatimes.com/world/middle-east/choice-now-rests-with-us-iran-offers-america-7-day-plan-to-reopen-strait-of-hormuz/articleshow/134495234.cms",
-          "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
-        }
-      ]
-    },
-    {
-      "id": "centcom-iran-blockade-tally",
-      "title_ko": "CENTCOM, 이란 항만 봉쇄로 122척 우회 조치 발표",
-      "title_en": "CENTCOM: 122 ships redirected under Iran port blockade",
-      "start": "2026-09-25",
-      "end": "2026-09-25",
-      "category": "geo",
-      "severity": 3,
-      "summary_ko": "미 중부사령부가 이란 항만 입출항 봉쇄 집행 과정에서 상업선 122척을 우회시켰다고 발표(9/25 기준).",
-      "sources": [
-        {
-          "title": "CENTCOM says US redirected 122 ships under Iran blockade",
-          "url": "https://www.iranintl.com/en/202609250333"
-        },
-        {
-          "title": "Iran Shipping Update – September 25, 2026",
-          "url": "https://www.unitedagainstnucleariran.com/analysis/iran-shipping-update-september-25-2026"
-        }
-      ],
-      "phases": [],
-      "body_ko": "배경\n미국은 이란 항만 입출항을 막는 봉쇄를 집행해 왔습니다. 그 규모를 수치로 공개한 발표입니다.\n\n무슨 일\n2026년 9월 25일 기준, 미 중부사령부(CENTCOM)가 이란 항만 봉쇄 과정에서 상업선 122척을 우회시켰다고 발표했습니다. Iran International·UANI 분석 등에서 전했습니다.\n\n시장·가격에 미친 영향\n봉쇄가 ‘상징’이 아니라 실제로 선박 경로를 바꾸고 있다는 신호입니다. 해상 물류·에너지 공급 불안과 맞물려 매크로 리스크로 남습니다.",
-      "learn_points_ko": [
-        "군·사령부 발표 숫자는 현장 긴장을 가늠하는 한 자료입니다.",
-        "발표 기준일·집계 범위를 확인하면 과장·축소 해석을 줄일 수 있습니다.",
-        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
-      ],
-      "learn_if_again_ko": "군사·봉쇄 관련 집계가 나오면 발표 기관과 기준일을 메모해 두세요.",
-      "similar_event_ids": [
-        "hormuz-single-digit-traffic",
-        "iran-war-hormuz-2026"
-      ],
-      "then_vs_now_ko": "미 중부사령부가 발표한 우회 척수 집계입니다. 통행 한 자릿수 보도와 함께 ‘현장 긴장’을 숫자로 보는 자료입니다. 기준일·집계 범위를 확인하세요.",
-      "angles_ko": {
-        "price_market": "직접 가격 뉴스라기보다 지정학 긴장 지표에 가깝습니다.",
-        "news_reg": "발표 기관(CENTCOM)과 기준일을 메모하세요.",
-        "shib_vs_btc_macro": "군사·봉쇄 집계입니다. 시바와 무관합니다."
-      },
-      "further_reading": [
-        {
-          "title": "CENTCOM says US redirected 122 ships under Iran blockade",
-          "url": "https://www.iranintl.com/en/202609250333",
-          "why_ko": "사건 요지를 짧게 확인하기 좋은 1차 보도·자료입니다."
-        },
-        {
-          "title": "Iran Shipping Update – September 25, 2026",
-          "url": "https://www.unitedagainstnucleariran.com/analysis/iran-shipping-update-september-25-2026",
           "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
         }
       ]

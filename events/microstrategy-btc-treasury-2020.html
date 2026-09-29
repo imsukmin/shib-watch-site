@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0b1020" />
+<title>MicroStrategy, BTC를 재무 준비자산으로 · 사건 자세히</title>
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<style>
+
+  :root {
+    --bg: #0b1020;
+    --bg2: #121933;
+    --card: #161e3a;
+    --card2: #1c2648;
+    --border: rgba(255,255,255,0.08);
+    --text: #e8ecf7;
+    --muted: #8b95b5;
+    --accent: #f39c12;
+    --link: #9db4ff;
+    --shib: #ff7a9a;
+    --btc: #f39c12;
+    --down: #e74c3c;
+    --up: #2ecc71;
+    --chip: #243056;
+    --radius: 14px;
+    --shadow: 0 8px 24px rgba(0,0,0,0.28);
+    --font: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font); }
+  body { min-height: 100vh; line-height: 1.55; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 16px 14px 48px; }
+  .hero {
+    background: linear-gradient(145deg, #182044 0%, #10162d 60%, #0d1328 100%);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 18px 16px 16px;
+    box-shadow: var(--shadow);
+    margin-bottom: 14px;
+  }
+  .hero h1 {
+    margin: 8px 0 6px;
+    font-size: 1.28rem;
+    letter-spacing: -0.02em;
+    font-weight: 750;
+    line-height: 1.35;
+  }
+  .hero .sub { color: var(--muted); font-size: 0.86rem; margin: 0 0 12px; }
+  .nav-links {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    position: sticky; top: 0; z-index: 40;
+    background: rgba(13,19,40,0.94);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 8px 2px;
+    margin: 0 -2px;
+    border-radius: 12px;
+  }
+  .nav-links a {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--chip); color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 999px; padding: 7px 12px;
+    font-size: 0.82rem; font-weight: 600;
+    text-decoration: none;
+  }
+  .nav-links a.btc { border-color: rgba(243,156,18,0.35); color: #ffc56a; }
+  .nav-links a.shib { border-color: rgba(255,122,154,0.4); color: #ffb0c4; }
+  .chip {
+    display: inline-block; font-size: 0.75rem; font-weight: 700;
+    padding: 2px 7px; border-radius: 999px; background: var(--chip); color: #c7d0ee;
+  }
+  .chip.geo { background: rgba(231,76,60,0.18); color: #ff9b91; }
+  .chip.fed { background: rgba(52,152,219,0.18); color: #8fd0ff; }
+  .chip.crypto, .chip.exchange { background: rgba(155,89,186,0.18); color: #d5a8ff; }
+  .chip.policy, .chip.etf_reg { background: rgba(26,188,156,0.18); color: #7ff0d6; }
+  .chip.markets { background: rgba(243,156,18,0.18); color: #ffd28a; }
+  .chip.burn_supply, .chip.ecosystem { background: rgba(255,122,154,0.18); color: #ffb0c4; }
+  .chip.covid { background: rgba(46,204,113,0.18); color: #8dffb8; }
+  .chip.btctag { background: rgba(243,156,18,0.22); color: #ffd28a; }
+  .chip.shibtag { background: rgba(255,122,154,0.22); color: #ffb0c4; }
+  .chip.sev-high { background: rgba(243,156,18,0.2); color: #ffd28a; }
+  .chip.sev-mid { background: rgba(139,149,181,0.22); color: #c7d0ee; }
+  .chip.sev-low { background: rgba(139,149,181,0.14); color: #8b95b5; }
+  .meta-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 4px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 14px;
+    box-shadow: var(--shadow);
+    margin-bottom: 12px;
+  }
+  .card.takeaway {
+    border: 1px solid rgba(243,156,18,0.35);
+    border-left: 4px solid var(--accent);
+    background: linear-gradient(145deg, #1a2748 0%, #161e3a 100%);
+  }
+  .card.takeaway .section-label { color: #ffd28a; }
+  .card.demoted {
+    padding: 12px;
+    box-shadow: none;
+    background: var(--bg2);
+    opacity: 0.92;
+  }
+  .card.demoted .section-label { font-size: 0.7rem; margin-bottom: 6px; }
+  .section-label {
+    color: var(--muted); font-size: 0.78rem; font-weight: 700;
+    margin: 0 0 8px;
+  }
+  .article-body h2 {
+    margin: 18px 0 8px; font-size: 1.02rem; font-weight: 720;
+    color: #ffd28a;
+  }
+  .article-body h2:first-child { margin-top: 0; }
+  .article-body p {
+    margin: 0 0 12px; color: var(--text); font-size: 0.92rem;
+  }
+  .article-body p:last-child { margin-bottom: 0; }
+  .phases { margin: 0; padding: 0; list-style: none; }
+  .phases li {
+    border-left: 2px solid rgba(243,156,18,0.35);
+    padding: 6px 0 6px 12px; margin-bottom: 6px;
+  }
+  .phases .pdate { color: var(--muted); font-size: 0.75rem; font-weight: 650; }
+  .phases .ptitle { font-weight: 700; font-size: 0.88rem; margin: 2px 0; }
+  .phases .pnote { color: var(--muted); font-size: 0.8rem; }
+  .sources { list-style: none; margin: 0; padding: 0; }
+  .sources li {
+    margin-bottom: 8px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .sources a { font-weight: 650; font-size: 0.88rem; word-break: break-word; }
+  .sources .url {
+    display: block; color: var(--muted); font-size: 0.72rem;
+    margin-top: 4px; word-break: break-all;
+  }
+  .sources .why { display: block; color: var(--muted); font-size: 0.78rem; margin-top: 4px; }
+  .footer {
+    margin-top: 22px; padding: 12px; color: var(--muted); font-size: 0.72rem;
+    border-top: 1px solid var(--border); text-align: center;
+  }
+  .footer a { color: var(--muted); }
+  .learn-list { margin: 0; padding: 0 0 0 18px; }
+  .learn-list li { margin-bottom: 8px; font-size: 0.9rem; color: var(--text); }
+  .learn-again {
+    margin-top: 12px; padding-top: 10px;
+    border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 0.85rem;
+  }
+  .learn-again strong { color: #ffd28a; font-weight: 700; }
+  .similar-list { list-style: none; margin: 0; padding: 0; }
+  .similar-list li {
+    margin-bottom: 8px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .similar-list a { font-weight: 650; font-size: 0.88rem; }
+  .angle-inline {
+    margin-top: 12px; padding-top: 10px;
+    border-top: 1px solid var(--border);
+  }
+  .angle-inline .alabel {
+    color: #ffd28a; font-size: 0.78rem; font-weight: 700; margin: 8px 0 2px;
+  }
+  .angle-inline p { margin: 0 0 6px; font-size: 0.88rem; color: var(--text); }
+  .angle-block {
+    margin-bottom: 10px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .angle-block .alabel {
+    color: #ffd28a; font-size: 0.78rem; font-weight: 700; margin-bottom: 4px;
+  }
+  .angle-block p { margin: 0; font-size: 0.88rem; color: var(--text); }
+
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="meta-row">
+      <span class="chip btctag">BTC</span>
+      <span class="chip crypto">크립토</span>
+      <span class="chip">2020-08-11</span>
+      <span class="chip sev-high">중요도 높음</span>
+    </div>
+    <h1>MicroStrategy, BTC를 재무 준비자산으로</h1>
+    <p class="sub">SEC 8-K/보도자료: 21,454 BTC를 수수료 포함 총 $250M에 매입하고 BTC를 주요 재무 준비자산으로 채택. 상장사 재무부서(treasury) BTC 보유 트렌드의 출발점으로 자주 인용된다.</p>
+    <nav class="nav-links" aria-label="페이지 이동">
+      <a href="../index.html">대시보드</a>
+      <a class="btc" href="../chart.html">BTC 차트</a>
+      <a class="shib" href="../shib.html">SHIB 비교</a>
+    </nav>
+  </header>
+
+
+  <section class="card">
+    <div class="section-label">비슷한 과거 상황</div>
+    <ul class="similar-list"><li><a href="tesla-btc-buy-2021.html">테슬라, 비트코인 약 $15억 매입 공시</a></li><li><a href="spot-btc-etf-approval-2024.html">SEC, 미국 현물 비트코인 ETF 승인</a></li><li><a href="blackrock-spot-etf-filing-2023.html">블랙록, 현물 비트코인 ETF 신청</a></li></ul>
+  </section>
+  <article class="card article-body">
+    <div class="section-label">자세히 읽기</div>
+    <h2>배경</h2>
+<p>상장사가 현금·채권 대신 비트코인을 재무 준비자산으로 두는지는 2020년 이후 큰 관심사가 됐습니다.</p>
+<h2>무슨 일</h2>
+<p>MicroStrategy는 SEC 8-K·보도자료에서 21,454 BTC를 수수료 포함 총 약 2억 5천만 달러에 매입하고, 비트코인을 주요 재무 준비자산으로 채택했다고 밝혔습니다.</p>
+<h2>시장·가격에 미친 영향</h2>
+<p>상장사 treasury BTC 보유 트렌드의 출발점으로 자주 인용됩니다. 회사 매수는 ‘수요’ 뉴스이며, 규모·목적은 공시 원문에서 확인하는 것이 안전합니다.</p>
+  </article>
+
+  <section class="card takeaway">
+    <div class="section-label">이 사건에서 배울 점</div>
+    <ul class="learn-list"><li>회사 매수는 ‘수요’ 뉴스. 재무제표·공시에서 확인한다.</li><li>상장사 treasury BTC 채택의 대표 출발점으로 자주 인용됩니다.</li><li>가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다.</li></ul>
+    <div class="learn-again"><strong>비슷한 일이 또 오면</strong> 기업·기관의 매입·매도 뉴스가 나오면 SEC 공시·보도 원문에서 수량·금액을 확인하세요.</div>
+    <div class="angle-inline"><div class="section-label" style="margin-top:4px;">여러 각도로 보기</div><div class="alabel">가격 · 시장 분위기</div><p>기업 매입 수요 내러티브가 강해진 출발점으로 자주 인용됩니다.</p><div class="alabel">뉴스 · 규제</div><p>SEC 8-K·보도자료의 수량·금액이 1차 자료입니다.</p><div class="alabel">SHIB만의 이슈 vs BTC·큰 뉴스</div><p>비트코인 기업 재무 채택입니다. 시바 밈코인 이슈와는 결이 다릅니다.</p></div>
+  </section>
+
+  <section class="card">
+    <div class="section-label">그때와 지금 · 비슷한 사건과의 차이</div>
+    <p style="margin:0;font-size:0.9rem;">상장사가 BTC를 재무 준비자산으로 채택한 교과서 사건입니다. 이후 테슬라 매입·현물 ETF 등과 ‘기관·기업 접근’ 줄기로 이어지지만, 기업 재무 보유와 ETF 상품은 구조가 다릅니다.</p>
+  </section>
+
+
+  <section class="card demoted">
+    <div class="section-label">출처 · 더 읽어볼 자료</div>
+    <ul class="sources"><li><a href="https://www.sec.gov/Archives/edgar/data/1050446/000119312520215604/d921849dex991.htm" target="_blank" rel="noopener noreferrer">SEC EX-99.1 — MicroStrategy press release</a><span class="why">공식 보도자료로 수량·금액을 확인할 때 좋습니다.</span><span class="url">https://www.sec.gov/Archives/edgar/data/1050446/000119312520215604/d921849dex991.htm</span></li><li><a href="https://www.sec.gov/Archives/edgar/data/1050446/000119312520215604/d921849d8k.htm" target="_blank" rel="noopener noreferrer">SEC 8-K — MicroStrategy</a><span class="why">공시 원문으로 표현과 날짜를 대조할 때 쓰기 좋습니다.</span><span class="url">https://www.sec.gov/Archives/edgar/data/1050446/000119312520215604/d921849d8k.htm</span></li></ul>
+  </section>
+
+  <footer class="footer">
+    숫자·날짜·주장은 위 출처와 바이낸스 공개 가격 CSV에만 기반합니다. 출처에 없는 내용은 적지 않았습니다. 투자 조언이 아닙니다.
+    <div style="margin-top:8px;"><a href="https://github.com/imsukmin/shib-watch-site" target="_blank" rel="noopener">GitHub</a></div>
+  </footer>
+</div>
+</body>
+</html>

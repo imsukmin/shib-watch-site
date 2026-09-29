@@ -1,5 +1,5 @@
 {
-  "generated_at_kst": "2026-09-27",
+  "generated_at_kst": "2026-09-29",
   "timezone_note": "Event dates are calendar dates as reported by cited sources. Prices never invented — only from Binance SHIBUSDT 1d klines CSV.",
   "price_data": {
     "symbol": "SHIBUSDT",
@@ -11,7 +11,7 @@
     "n_candles": 1967
   },
   "disclaimer_ko": "상관관계는 인과가 아님. 뉴스·가격 수치는 인용 소스와 Binance CSV에만 기반하며 창작하지 않음.",
-  "event_count": 15,
+  "event_count": 23,
   "events": [
     {
       "id": "binance-shibusdt-listing",
@@ -320,6 +320,57 @@
       ]
     },
     {
+      "id": "shiboshis-nft-2021",
+      "title_ko": "Shiboshis NFT 민트·완판",
+      "title_en": "Shiboshis NFT mint sell-out",
+      "start": "2021-10-14",
+      "end": "2021-10-14",
+      "category": "ecosystem",
+      "severity": 4,
+      "summary_ko": "Shytoshi Medium: 10,000개 Shiboshis가 2021-10-14 이더리움에 민트되어 약 34분 만에 완판. NFT·게임·생태계 확장의 초기 이정표(ATH 구간과도 인접).",
+      "sources": [
+        {
+          "title": "Shytoshi — Woof! A Shiboshi Update",
+          "url": "https://shytoshikusama.medium.com/woof-a-shiboshi-update-f2e0d829ef7e"
+        },
+        {
+          "title": "OpenSea — The Shiboshis",
+          "url": "https://opensea.io/collection/theshiboshis"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n밈코인이 NFT·게임으로 확장하면 ‘유틸리티’ 내러티브가 붙습니다. Shiboshis는 그 초기 이정표 중 하나입니다.\n\n무슨 일\nShytoshi Medium에 따르면 10,000개 Shiboshis가 2021년 10월 14일 이더리움에 민트되어 약 34분 만에 완판됐습니다. OpenSea 컬렉션 페이지에서도 확인할 수 있습니다.\n\n시장·가격에 미친 영향\nATH 구간과도 인접한 생태계(NFT) 사건입니다. 민트·완판≠가격 보장은 아닙니다.",
+      "learn_points_ko": [
+        "밈코인 → NFT/유틸리티 내러티브 전환을 본다.",
+        "민트·완판 속도와 토큰 가격은 따로 보세요.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "프로젝트 NFT 민트 뉴스가 나오면, 공식 채널·수량·체인·완판 여부를 확인하세요.",
+      "similar_event_ids": [
+        "shib-ath-2021",
+        "shib-metaverse-land-2022",
+        "shibaswap-launch"
+      ],
+      "then_vs_now_ko": "시바 생태계 NFT 확장의 초기 이정표입니다. 이후 메타버스 랜드·게임 출시와 같은 ‘유틸리티’ 줄기로 이어집니다.",
+      "angles_ko": {
+        "price_market": "ATH 인접 구간의 생태계 확장 뉴스로 자주 인용됩니다.",
+        "news_reg": "공식 Medium·OpenSea가 1차 확인 경로입니다.",
+        "shib_vs_btc_macro": "시바 생태계(NFT) 이슈입니다. BTC·연준 뉴스와는 별개입니다."
+      },
+      "further_reading": [
+        {
+          "title": "Shytoshi — Woof! A Shiboshi Update",
+          "url": "https://shytoshikusama.medium.com/woof-a-shiboshi-update-f2e0d829ef7e",
+          "why_ko": "공식 업데이트로 민트·완판 요지를 확인할 때 좋습니다."
+        },
+        {
+          "title": "OpenSea — The Shiboshis",
+          "url": "https://opensea.io/collection/theshiboshis",
+          "why_ko": "컬렉션 페이지로 교차 확인할 수 있습니다."
+        }
+      ]
+    },
+    {
       "id": "shib-ath-2021",
       "title_ko": "SHIB 사상 최고가 구간(바이낸스 일봉)",
       "title_en": "SHIB all-time high window (Binance daily)",
@@ -370,6 +421,49 @@
       ]
     },
     {
+      "id": "kraken-shib-listing-2021",
+      "title_ko": "Kraken SHIB 상장",
+      "title_en": "Kraken lists SHIB",
+      "start": "2021-11-30",
+      "end": "2021-11-30",
+      "category": "exchange",
+      "severity": 4,
+      "summary_ko": "Kraken 공식 블로그: 입금 개시 후 2021-11-30 거래 시작(USD·EUR). Binance/Coinbase/Robinhood 이후 또 다른 메이저 CEX.",
+      "sources": [
+        {
+          "title": "Kraken Blog — SHIB deposits live, trading Nov 30",
+          "url": "https://blog.kraken.com/product/asset-listings/shiba-inu-shib-deposits-are-live-trading-starts-november-30"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n메이저 거래소 상장은 접근성과 유동성 이야기의 기본 축입니다. 거래소마다 시점·페어·위험 고지가 다릅니다.\n\n무슨 일\nKraken 공식 블로그에 따르면 입금 개시 후 2021년 11월 30일 SHIB 거래가 시작됐습니다(USD·EUR).\n\n시장·가격에 미친 영향\nBinance·Coinbase·Robinhood 이후 또 다른 메이저 CEX 접근성 확대입니다. 상장일≠가격 방향입니다.",
+      "learn_points_ko": [
+        "거래소마다 상장 시점·페어·위험 고지가 다르다.",
+        "입금 개시와 거래 시작을 구분하세요.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "거래소 상장 뉴스가 나오면, 공식 블로그의 페어·개시 시각·지원 지역을 확인하세요.",
+      "similar_event_ids": [
+        "binance-shibusdt-listing",
+        "coinbase-pro-shib",
+        "robinhood-shib",
+        "upbit-shib-krw-2023"
+      ],
+      "then_vs_now_ko": "메이저 CEX 상장 타임라인을 보강하는 사건입니다. Coinbase·Robinhood와 같은 ‘접근성’ 줄기입니다.",
+      "angles_ko": {
+        "price_market": "접근성 확대 뉴스로 관심이 커질 수 있습니다.",
+        "news_reg": "Kraken 공식 블로그가 1차 자료입니다.",
+        "shib_vs_btc_macro": "시바 상장 이슈입니다. BTC 현물 ETF와는 상품·규제가 다릅니다."
+      },
+      "further_reading": [
+        {
+          "title": "Kraken Blog — SHIB deposits live, trading Nov 30",
+          "url": "https://blog.kraken.com/product/asset-listings/shiba-inu-shib-deposits-are-live-trading-starts-november-30",
+          "why_ko": "당사자 공식 안내입니다."
+        }
+      ]
+    },
+    {
       "id": "robinhood-shib",
       "title_ko": "Robinhood SHIB(및 SOL·MATIC·COMP) 상장",
       "title_en": "Robinhood lists SHIB (with SOL, MATIC, COMP)",
@@ -415,6 +509,232 @@
           "title": "Nasdaq — Shiba Inu listed on Robinhood",
           "url": "https://www.nasdaq.com/articles/breaking:-shiba-inu-is-now-listed-on-robinhood.-should-you-buy",
           "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
+    },
+    {
+      "id": "shib-metaverse-land-2022",
+      "title_ko": "SHIB: The Metaverse 랜드 세일",
+      "title_en": "SHIB: The Metaverse land sale",
+      "start": "2022-04-13",
+      "end": "2022-04-13",
+      "category": "ecosystem",
+      "severity": 4,
+      "summary_ko": "Cointelegraph: 도입 단계에서 36,431 필지 해제(4/13), 이후 5월 SHIB로 민트 옵션 추가. 메타버스·유틸리티 내러티브.",
+      "sources": [
+        {
+          "title": "Cointelegraph — Buying land in SHIB Metaverse",
+          "url": "https://cointelegraph.com/news/shiba-inu-has-a-new-use-case-buying-land-in-shib-the-metaverse"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n메타버스 랜드·NFT 판매는 ‘유틸리티’ 내러티브의 대표 형태입니다. 락업·결제 토큰·로드맵을 같이 봐야 합니다.\n\n무슨 일\nCointelegraph에 따르면 SHIB: The Metaverse 도입 단계에서 36,431 필지가 2022년 4월 13일 해제됐고, 이후 5월에는 SHIB로 민트하는 옵션이 추가됐습니다.\n\n시장·가격에 미친 영향\n메타버스 마일스톤으로 기록됩니다. 랜드 판매≠즉시 토큰 수요 보장은 아닙니다.",
+      "learn_points_ko": [
+        "랜드/NFT 판매는 ‘락업·결제 토큰·로드맵’을 같이 본다.",
+        "도입(세일)과 이후 SHIB 결제 민트는 단계가 다릅니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "메타버스·랜드 세일 뉴스가 나오면, 해제 수량·결제 수단·공식 채널을 확인하세요.",
+      "similar_event_ids": [
+        "shib-metaverse-shib-mint-2022",
+        "shiboshis-nft-2021",
+        "shiba-eternity-global-2022"
+      ],
+      "then_vs_now_ko": "메타버스 랜드 세일의 시작점입니다. 약 3주 뒤 SHIB 결제 민트 옵션(`shib-metaverse-shib-mint-2022`)이 이어집니다.",
+      "angles_ko": {
+        "price_market": "유틸리티·메타버스 내러티브로 관심이 커질 수 있습니다.",
+        "news_reg": "Cointelegraph 보도의 수량·날짜를 확인하세요.",
+        "shib_vs_btc_macro": "시바 생태계 이슈입니다. BTC·매크로와는 별개입니다."
+      },
+      "further_reading": [
+        {
+          "title": "Cointelegraph — Buying land in SHIB Metaverse",
+          "url": "https://cointelegraph.com/news/shiba-inu-has-a-new-use-case-buying-land-in-shib-the-metaverse",
+          "why_ko": "랜드 세일·SHIB 민트 옵션 요지를 확인할 때 좋습니다."
+        }
+      ]
+    },
+    {
+      "id": "shib-burn-portal-2022",
+      "title_ko": "공식 SHIB Burn Portal 출시",
+      "title_en": "Official SHIB Burn Portal launch",
+      "start": "2022-04-23",
+      "end": "2022-04-23",
+      "category": "burn_supply",
+      "severity": 4,
+      "summary_ko": "Decrypt 등: 주말 출시, 4/25 공식 계정 “첫 24시간에 80억+ SHIB 소각” 트윗. Ryoshis Vision 연계 보상형 소각. 2024-08 ShibTorch와는 별개 포털.",
+      "sources": [
+        {
+          "title": "Decrypt — Shiba Inu launches Burning Portal",
+          "url": "https://decrypt.co/98579/shiba-inu-launches-burning-portal-reward-shib-token-holders"
+        },
+        {
+          "title": "Bitcoin.com News — Burn Portal",
+          "url": "https://news.bitcoin.com/shiba-inus-new-burn-portal-rewards-shib-burners-for-destroying-their-tokens/"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n토큰을 없애(소각) 유통량을 줄인다는 이야기는 밈코인에서 자주 나옵니다. 다만 소각≠가격 보장입니다.\n\n무슨 일\nDecrypt 등에 따르면 공식 SHIB Burn Portal이 2022년 4월 주말에 출시됐고, 4월 25일 공식 계정은 첫 24시간에 80억+ SHIB가 소각됐다고 알렸습니다. Ryoshis Vision 연계 보상형 소각으로 설명됩니다. 2024년 8월 ShibTorch와는 별개 포털입니다.\n\n시장·가격에 미친 영향\n공급/소각 축의 이정표입니다. 유통량·인센티브 구조를 함께 보세요.",
+      "learn_points_ko": [
+        "소각 ≠ 가격 보장. 유통량·인센티브 구조를 확인.",
+        "2022 Burn Portal과 2024 ShibTorch는 별개입니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "소각 포털·캠페인 뉴스가 나오면, 공식 채널인지와 보상 구조를 확인하세요.",
+      "similar_event_ids": [
+        "shibtorch-burn-portal",
+        "vitalik-shib-burn"
+      ],
+      "then_vs_now_ko": "ShibTorch(2024-08)보다 앞선 공식 Burn Portal입니다. 둘 다 소각 축이지만 시기·제품이 다릅니다.",
+      "angles_ko": {
+        "price_market": "소각 뉴스는 공급 이야기로 읽히지만 가격을 보장하지 않습니다.",
+        "news_reg": "Decrypt 등 보도와 공식 계정 수치를 교차하세요.",
+        "shib_vs_btc_macro": "시바 공급/소각 이슈입니다. BTC 반감기와는 메커니즘이 다릅니다."
+      },
+      "further_reading": [
+        {
+          "title": "Decrypt — Shiba Inu launches Burning Portal",
+          "url": "https://decrypt.co/98579/shiba-inu-launches-burning-portal-reward-shib-token-holders",
+          "why_ko": "출시·보상 요지를 확인할 때 좋습니다."
+        },
+        {
+          "title": "Bitcoin.com News — Burn Portal",
+          "url": "https://news.bitcoin.com/shiba-inus-new-burn-portal-rewards-shib-burners-for-destroying-their-tokens/",
+          "why_ko": "같은 사건을 다른 매체로 교차 확인할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "shib-metaverse-shib-mint-2022",
+      "title_ko": "메타버스 랜드 SHIB 결제 민트",
+      "title_en": "Metaverse land minting with SHIB",
+      "start": "2022-05-04",
+      "end": "2022-05-04",
+      "category": "ecosystem",
+      "severity": 3,
+      "summary_ko": "Cointelegraph: @ShibTheMV가 ETH 상당 SHIB로 랜드 민트 옵션 발표(0.2–1 ETH 상당). 랜드 세일(4/13)의 후속 유틸리티.",
+      "sources": [
+        {
+          "title": "Cointelegraph — Buying land in SHIB Metaverse",
+          "url": "https://cointelegraph.com/news/shiba-inu-has-a-new-use-case-buying-land-in-shib-the-metaverse"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n같은 프로젝트도 단계적으로 발표됩니다. 랜드 세일 직후 ‘SHIB로 민트’ 옵션이 붙으면 유틸리티 이야기가 구체화됩니다.\n\n무슨 일\nCointelegraph에 따르면 @ShibTheMV가 ETH 상당의 SHIB로 랜드를 민트하는 옵션을 발표했습니다(0.2–1 ETH 상당). 2022년 4월 13일 랜드 세일의 후속입니다.\n\n시장·가격에 미친 영향\n유틸리티 세부 단계입니다. 랜드 세일 이벤트와 함께 보면 흐름이 보입니다.",
+      "learn_points_ko": [
+        "같은 프로젝트의 단계적 발표는 날짜를 나눠 본다.",
+        "결제 토큰 옵션(ETH 상당 SHIB)을 확인하세요.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "유틸리티 후속 발표가 나오면, 이전 세일·민트 조건 변경을 공식·보도에서 대조하세요.",
+      "similar_event_ids": [
+        "shib-metaverse-land-2022",
+        "shiboshis-nft-2021"
+      ],
+      "then_vs_now_ko": "4/13 랜드 세일의 후속(SHIB 결제 민트)입니다. 하나의 메타버스 줄기에서 단계만 다릅니다.",
+      "angles_ko": {
+        "price_market": "SHIB 결제 옵션은 수요 이야기로 읽힐 수 있으나 보장은 아닙니다.",
+        "news_reg": "동일 Cointelegraph 기사의 후속 발표 부분을 확인하세요.",
+        "shib_vs_btc_macro": "시바 메타버스 유틸리티입니다. BTC 매크로와는 별개입니다."
+      },
+      "further_reading": [
+        {
+          "title": "Cointelegraph — Buying land in SHIB Metaverse",
+          "url": "https://cointelegraph.com/news/shiba-inu-has-a-new-use-case-buying-land-in-shib-the-metaverse",
+          "why_ko": "랜드 세일·SHIB 민트 옵션을 한 기사에서 확인할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "shiba-eternity-global-2022",
+      "title_ko": "Shiba Eternity 글로벌 출시",
+      "title_en": "Shiba Eternity goes live worldwide",
+      "start": "2022-10-06",
+      "end": "2022-10-06",
+      "category": "ecosystem",
+      "severity": 3,
+      "summary_ko": "공식 @Shibtoken 발표(보도): iOS·Android 전 세계 다운로드. 카드 수집 게임으로 생태계 확장 시도.",
+      "sources": [
+        {
+          "title": "The Crypto Basic — Shiba Eternity goes live worldwide",
+          "url": "https://thecryptobasic.com/2022/10/06/shiba-inu-game-shiba-eternity-goes-live-now-availible-for-downloads-worldwide/"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n게임 출시는 밈코인이 ‘앱·유틸리티’로 확장하려는 시도입니다. 출시≠즉시 토큰 수요입니다.\n\n무슨 일\n보도에 따르면 공식 @Shibtoken 발표로 Shiba Eternity가 2022년 10월 6일 iOS·Android 전 세계 다운로드로 열렸습니다. 카드 수집 게임으로 설명됩니다.\n\n시장·가격에 미친 영향\n게임/유틸리티 축의 마일스톤입니다. 온체인 연동 여부는 별도로 확인하세요.",
+      "learn_points_ko": [
+        "게임 출시 ≠ 즉시 토큰 수요. 온체인 연동 여부를 확인.",
+        "공식 채널 발표와 앱스토어 등록을 함께 보면 좋습니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "생태계 게임 출시 뉴스가 나오면, 공식 계정·스토어 링크·토큰 연동 여부를 확인하세요.",
+      "similar_event_ids": [
+        "shib-metaverse-land-2022",
+        "shibaswap-launch",
+        "shibarium-mainnet"
+      ],
+      "then_vs_now_ko": "NFT·메타버스에 이은 게임 확장 시도입니다. 인프라(Shibarium)와는 층이 다릅니다.",
+      "angles_ko": {
+        "price_market": "유틸리티 뉴스로 관심이 갈 수 있으나 가격 보장은 아닙니다.",
+        "news_reg": "보도에 인용된 공식 발표·스토어를 확인하세요.",
+        "shib_vs_btc_macro": "시바 게임/생태계 이슈입니다. BTC 매크로와는 별개입니다."
+      },
+      "further_reading": [
+        {
+          "title": "The Crypto Basic — Shiba Eternity goes live worldwide",
+          "url": "https://thecryptobasic.com/2022/10/06/shiba-inu-game-shiba-eternity-goes-live-now-availible-for-downloads-worldwide/",
+          "why_ko": "글로벌 출시 요지를 확인할 때 좋습니다."
+        }
+      ]
+    },
+    {
+      "id": "upbit-shib-krw-2023",
+      "title_ko": "업비트 SHIB/KRW 상장",
+      "title_en": "Upbit lists SHIB/KRW",
+      "start": "2023-01-18",
+      "end": "2023-01-18",
+      "category": "exchange",
+      "severity": 4,
+      "summary_ko": "업비트 공지 id=3266: KRW·BTC 마켓에 SHIB·GAL 추가. 한국 학습자 대시보드에 특히 유의미한 접근성 사건.",
+      "sources": [
+        {
+          "title": "업비트 공지 — SHIB, GAL 추가",
+          "url": "https://www.upbit.com/service_center/notice?id=3266"
+        },
+        {
+          "title": "Watcher.Guru — Upbit listing report",
+          "url": "https://watcher.guru/news/shiba-inu-gala-enter-south-korean-market-with-upbit"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n국내 원화 마켓 상장은 한국 투자자 접근성과 유동성 시차를 바꿀 수 있습니다.\n\n무슨 일\n업비트 공지(id=3266)에 따르면 KRW·BTC 마켓에 SHIB·GAL이 추가됐습니다(2023-01-18). Watcher.Guru 등 2차 보도도 있습니다.\n\n시장·가격에 미친 영향\n한국 시장 접근성 사건입니다. 상장 당일 급등 언급이 있더라도, 이 사이트에서는 가격을 CSV로만 확인합니다.",
+      "learn_points_ko": [
+        "국내 거래소 상장은 유동성·시차(KST)를 차트와 맞춰 본다.",
+        "공식 공지의 마켓(KRW/BTC)과 개시 시각을 확인하세요.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "국내 거래소 상장 뉴스가 나오면, 공지 번호·마켓·거래 개시 시각을 확인하세요.",
+      "similar_event_ids": [
+        "binance-shibusdt-listing",
+        "kraken-shib-listing-2021",
+        "coinbase-pro-shib"
+      ],
+      "then_vs_now_ko": "해외 메이저 상장 이후 한국 KRW 접근성이 열린 사건입니다. 학습자 대시보드에서 시차·유동성을 볼 때 특히 유용합니다.",
+      "angles_ko": {
+        "price_market": "국내 접근성 확대는 단기 관심에 영향을 줄 수 있습니다.",
+        "news_reg": "업비트 공식 공지가 1차 자료입니다.",
+        "shib_vs_btc_macro": "시바 국내 상장 이슈입니다. BTC 매크로와는 별개입니다."
+      },
+      "further_reading": [
+        {
+          "title": "업비트 공지 — SHIB, GAL 추가",
+          "url": "https://www.upbit.com/service_center/notice?id=3266",
+          "why_ko": "당사자 공식 공지입니다."
+        },
+        {
+          "title": "Watcher.Guru — Upbit listing report",
+          "url": "https://watcher.guru/news/shiba-inu-gala-enter-south-korean-market-with-upbit",
+          "why_ko": "2차 보도로 맥락을 빠르게 훑을 수 있습니다."
         }
       ]
     },
@@ -625,6 +945,57 @@
           "title": "Every Transaction to Burn Shiba Inu as Long Awaited SHIB Burn Portal Goes Live",
           "url": "https://thecryptobasic.com/2024/08/17/every-transaction-to-burn-shiba-inu-as-long-awaited-shib-burn-portal-goes-live/",
           "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
+    },
+    {
+      "id": "treat-token-launch-2025",
+      "title_ko": "TREAT 토큰 CEX 거래 개시",
+      "title_en": "TREAT token goes live on CEX",
+      "start": "2025-01-14",
+      "end": "2025-01-14",
+      "category": "ecosystem",
+      "severity": 4,
+      "summary_ko": "@Shibtoken “$TREAT is officially LIVE”(보도 인용). Bitget·KuCoin·Gate 등에서 거래 시작. SHIB·LEASH·BONE 다음 생태계 토큰. 사칭 컨트랙트 주의.",
+      "sources": [
+        {
+          "title": "The Crypto Basic — TREAT goes live",
+          "url": "https://thecryptobasic.com/2025/01/14/shiba-inu-treat-token-officially-goes-live-for-trading/"
+        },
+        {
+          "title": "Shib Magazine — Treat launch",
+          "url": "https://magazine.shib.io/shiba-inu-treat-launches/"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n시바 생태계는 SHIB·LEASH·BONE에 이어 추가 토큰이 나올 수 있습니다. 동명 스캠 컨트랙트가 많으니 공식 채널만 봐야 합니다.\n\n무슨 일\n보도에 따르면 @Shibtoken이 “$TREAT is officially LIVE”라고 알렸고, Bitget·KuCoin·Gate 등에서 거래가 시작됐습니다(2025-01-14). Shib Magazine은 공식 컨트랙트로 `0xa02c49da76a085e4e1ee60a6b920ddbc8db599f4`를 인용했습니다.\n\n시장·가격에 미친 영향\n생태계 4번째 토큰 이정표입니다. 새 토큰 출시≠SHIB 가격 보장입니다.",
+      "learn_points_ko": [
+        "공식 컨트랙트·공식 채널만 확인. 동명 스캠 토큰이 많다.",
+        "새 생태계 토큰과 SHIB 가격을 혼동하지 마세요.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "새 생태계 토큰 출시 뉴스가 나오면, 공식 계정·공식 매거진·컨트랙트 주소를 교차 확인하세요.",
+      "similar_event_ids": [
+        "shibaswap-launch",
+        "shibarium-mainnet",
+        "shiboshis-nft-2021"
+      ],
+      "then_vs_now_ko": "SHIB·LEASH·BONE 다음 생태계 토큰입니다. DEX/L2 인프라 사건과 달리 ‘새 토큰 상장’ 층입니다.",
+      "angles_ko": {
+        "price_market": "새 토큰 거래 개시는 관심이 몰릴 수 있으나 SHIB과 동일하지 않습니다.",
+        "news_reg": "공식 채널·컨트랙트 주소 확인이 핵심입니다.",
+        "shib_vs_btc_macro": "시바 생태계 토큰 이슈입니다. BTC 매크로와는 별개입니다."
+      },
+      "further_reading": [
+        {
+          "title": "The Crypto Basic — TREAT goes live",
+          "url": "https://thecryptobasic.com/2025/01/14/shiba-inu-treat-token-officially-goes-live-for-trading/",
+          "why_ko": "거래 개시 요지를 확인할 때 좋습니다."
+        },
+        {
+          "title": "Shib Magazine — Treat launch",
+          "url": "https://magazine.shib.io/shiba-inu-treat-launches/",
+          "why_ko": "공식 매거진·컨트랙트 인용을 대조할 때 쓰기 좋습니다."
         }
       ]
     },

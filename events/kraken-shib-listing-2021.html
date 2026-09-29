@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0b1020" />
+<title>Kraken SHIB 상장 · 사건 자세히</title>
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<style>
+
+  :root {
+    --bg: #0b1020;
+    --bg2: #121933;
+    --card: #161e3a;
+    --card2: #1c2648;
+    --border: rgba(255,255,255,0.08);
+    --text: #e8ecf7;
+    --muted: #8b95b5;
+    --accent: #f39c12;
+    --link: #9db4ff;
+    --shib: #ff7a9a;
+    --btc: #f39c12;
+    --down: #e74c3c;
+    --up: #2ecc71;
+    --chip: #243056;
+    --radius: 14px;
+    --shadow: 0 8px 24px rgba(0,0,0,0.28);
+    --font: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font); }
+  body { min-height: 100vh; line-height: 1.55; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 16px 14px 48px; }
+  .hero {
+    background: linear-gradient(145deg, #182044 0%, #10162d 60%, #0d1328 100%);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 18px 16px 16px;
+    box-shadow: var(--shadow);
+    margin-bottom: 14px;
+  }
+  .hero h1 {
+    margin: 8px 0 6px;
+    font-size: 1.28rem;
+    letter-spacing: -0.02em;
+    font-weight: 750;
+    line-height: 1.35;
+  }
+  .hero .sub { color: var(--muted); font-size: 0.86rem; margin: 0 0 12px; }
+  .nav-links {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    position: sticky; top: 0; z-index: 40;
+    background: rgba(13,19,40,0.94);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 8px 2px;
+    margin: 0 -2px;
+    border-radius: 12px;
+  }
+  .nav-links a {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--chip); color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 999px; padding: 7px 12px;
+    font-size: 0.82rem; font-weight: 600;
+    text-decoration: none;
+  }
+  .nav-links a.btc { border-color: rgba(243,156,18,0.35); color: #ffc56a; }
+  .nav-links a.shib { border-color: rgba(255,122,154,0.4); color: #ffb0c4; }
+  .chip {
+    display: inline-block; font-size: 0.75rem; font-weight: 700;
+    padding: 2px 7px; border-radius: 999px; background: var(--chip); color: #c7d0ee;
+  }
+  .chip.geo { background: rgba(231,76,60,0.18); color: #ff9b91; }
+  .chip.fed { background: rgba(52,152,219,0.18); color: #8fd0ff; }
+  .chip.crypto, .chip.exchange { background: rgba(155,89,186,0.18); color: #d5a8ff; }
+  .chip.policy, .chip.etf_reg { background: rgba(26,188,156,0.18); color: #7ff0d6; }
+  .chip.markets { background: rgba(243,156,18,0.18); color: #ffd28a; }
+  .chip.burn_supply, .chip.ecosystem { background: rgba(255,122,154,0.18); color: #ffb0c4; }
+  .chip.covid { background: rgba(46,204,113,0.18); color: #8dffb8; }
+  .chip.btctag { background: rgba(243,156,18,0.22); color: #ffd28a; }
+  .chip.shibtag { background: rgba(255,122,154,0.22); color: #ffb0c4; }
+  .chip.sev-high { background: rgba(243,156,18,0.2); color: #ffd28a; }
+  .chip.sev-mid { background: rgba(139,149,181,0.22); color: #c7d0ee; }
+  .chip.sev-low { background: rgba(139,149,181,0.14); color: #8b95b5; }
+  .meta-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 4px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 14px;
+    box-shadow: var(--shadow);
+    margin-bottom: 12px;
+  }
+  .card.takeaway {
+    border: 1px solid rgba(243,156,18,0.35);
+    border-left: 4px solid var(--accent);
+    background: linear-gradient(145deg, #1a2748 0%, #161e3a 100%);
+  }
+  .card.takeaway .section-label { color: #ffd28a; }
+  .card.demoted {
+    padding: 12px;
+    box-shadow: none;
+    background: var(--bg2);
+    opacity: 0.92;
+  }
+  .card.demoted .section-label { font-size: 0.7rem; margin-bottom: 6px; }
+  .section-label {
+    color: var(--muted); font-size: 0.78rem; font-weight: 700;
+    margin: 0 0 8px;
+  }
+  .article-body h2 {
+    margin: 18px 0 8px; font-size: 1.02rem; font-weight: 720;
+    color: #ffd28a;
+  }
+  .article-body h2:first-child { margin-top: 0; }
+  .article-body p {
+    margin: 0 0 12px; color: var(--text); font-size: 0.92rem;
+  }
+  .article-body p:last-child { margin-bottom: 0; }
+  .phases { margin: 0; padding: 0; list-style: none; }
+  .phases li {
+    border-left: 2px solid rgba(243,156,18,0.35);
+    padding: 6px 0 6px 12px; margin-bottom: 6px;
+  }
+  .phases .pdate { color: var(--muted); font-size: 0.75rem; font-weight: 650; }
+  .phases .ptitle { font-weight: 700; font-size: 0.88rem; margin: 2px 0; }
+  .phases .pnote { color: var(--muted); font-size: 0.8rem; }
+  .sources { list-style: none; margin: 0; padding: 0; }
+  .sources li {
+    margin-bottom: 8px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .sources a { font-weight: 650; font-size: 0.88rem; word-break: break-word; }
+  .sources .url {
+    display: block; color: var(--muted); font-size: 0.72rem;
+    margin-top: 4px; word-break: break-all;
+  }
+  .sources .why { display: block; color: var(--muted); font-size: 0.78rem; margin-top: 4px; }
+  .footer {
+    margin-top: 22px; padding: 12px; color: var(--muted); font-size: 0.72rem;
+    border-top: 1px solid var(--border); text-align: center;
+  }
+  .footer a { color: var(--muted); }
+  .learn-list { margin: 0; padding: 0 0 0 18px; }
+  .learn-list li { margin-bottom: 8px; font-size: 0.9rem; color: var(--text); }
+  .learn-again {
+    margin-top: 12px; padding-top: 10px;
+    border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 0.85rem;
+  }
+  .learn-again strong { color: #ffd28a; font-weight: 700; }
+  .similar-list { list-style: none; margin: 0; padding: 0; }
+  .similar-list li {
+    margin-bottom: 8px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .similar-list a { font-weight: 650; font-size: 0.88rem; }
+  .angle-inline {
+    margin-top: 12px; padding-top: 10px;
+    border-top: 1px solid var(--border);
+  }
+  .angle-inline .alabel {
+    color: #ffd28a; font-size: 0.78rem; font-weight: 700; margin: 8px 0 2px;
+  }
+  .angle-inline p { margin: 0 0 6px; font-size: 0.88rem; color: var(--text); }
+  .angle-block {
+    margin-bottom: 10px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .angle-block .alabel {
+    color: #ffd28a; font-size: 0.78rem; font-weight: 700; margin-bottom: 4px;
+  }
+  .angle-block p { margin: 0; font-size: 0.88rem; color: var(--text); }
+
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="meta-row">
+      <span class="chip shibtag">SHIB</span>
+      <span class="chip exchange">거래소</span>
+      <span class="chip">2021-11-30</span>
+      <span class="chip sev-mid">중요도 중간</span>
+    </div>
+    <h1>Kraken SHIB 상장</h1>
+    <p class="sub">Kraken 공식 블로그: 입금 개시 후 2021-11-30 거래 시작(USD·EUR). Binance/Coinbase/Robinhood 이후 또 다른 메이저 CEX.</p>
+    <nav class="nav-links" aria-label="페이지 이동">
+      <a href="../index.html">대시보드</a>
+      <a class="btc" href="../chart.html">BTC 차트</a>
+      <a class="shib" href="../shib.html">SHIB 비교</a>
+    </nav>
+  </header>
+
+
+  <section class="card">
+    <div class="section-label">비슷한 과거 상황</div>
+    <ul class="similar-list"><li><a href="binance-shibusdt-listing.html">바이낸스 SHIB/USDT·SHIB/BUSD 상장(Innovation Zone)</a></li><li><a href="coinbase-pro-shib.html">Coinbase Pro SHIB 거래 개시</a></li><li><a href="robinhood-shib.html">Robinhood SHIB(및 SOL·MATIC·COMP) 상장</a></li><li><a href="upbit-shib-krw-2023.html">업비트 SHIB/KRW 상장</a></li></ul>
+  </section>
+  <article class="card article-body">
+    <div class="section-label">자세히 읽기</div>
+    <h2>배경</h2>
+<p>메이저 거래소 상장은 접근성과 유동성 이야기의 기본 축입니다. 거래소마다 시점·페어·위험 고지가 다릅니다.</p>
+<h2>무슨 일</h2>
+<p>Kraken 공식 블로그에 따르면 입금 개시 후 2021년 11월 30일 SHIB 거래가 시작됐습니다(USD·EUR).</p>
+<h2>시장·가격에 미친 영향</h2>
+<p>Binance·Coinbase·Robinhood 이후 또 다른 메이저 CEX 접근성 확대입니다. 상장일≠가격 방향입니다.</p>
+  </article>
+
+  <section class="card takeaway">
+    <div class="section-label">이 사건에서 배울 점</div>
+    <ul class="learn-list"><li>거래소마다 상장 시점·페어·위험 고지가 다르다.</li><li>입금 개시와 거래 시작을 구분하세요.</li><li>가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다.</li></ul>
+    <div class="learn-again"><strong>비슷한 일이 또 오면</strong> 거래소 상장 뉴스가 나오면, 공식 블로그의 페어·개시 시각·지원 지역을 확인하세요.</div>
+    <div class="angle-inline"><div class="section-label" style="margin-top:4px;">여러 각도로 보기</div><div class="alabel">가격 · 시장 분위기</div><p>접근성 확대 뉴스로 관심이 커질 수 있습니다.</p><div class="alabel">뉴스 · 규제</div><p>Kraken 공식 블로그가 1차 자료입니다.</p><div class="alabel">SHIB만의 이슈 vs BTC·큰 뉴스</div><p>시바 상장 이슈입니다. BTC 현물 ETF와는 상품·규제가 다릅니다.</p></div>
+  </section>
+
+  <section class="card">
+    <div class="section-label">그때와 지금 · 비슷한 사건과의 차이</div>
+    <p style="margin:0;font-size:0.9rem;">메이저 CEX 상장 타임라인을 보강하는 사건입니다. Coinbase·Robinhood와 같은 ‘접근성’ 줄기입니다.</p>
+  </section>
+
+
+  <section class="card demoted">
+    <div class="section-label">출처 · 더 읽어볼 자료</div>
+    <ul class="sources"><li><a href="https://blog.kraken.com/product/asset-listings/shiba-inu-shib-deposits-are-live-trading-starts-november-30" target="_blank" rel="noopener noreferrer">Kraken Blog — SHIB deposits live, trading Nov 30</a><span class="why">당사자 공식 안내입니다.</span><span class="url">https://blog.kraken.com/product/asset-listings/shiba-inu-shib-deposits-are-live-trading-starts-november-30</span></li></ul>
+  </section>
+
+  <footer class="footer">
+    숫자·날짜·주장은 위 출처와 바이낸스 공개 가격 CSV에만 기반합니다. 출처에 없는 내용은 적지 않았습니다. 투자 조언이 아닙니다.
+    <div style="margin-top:8px;"><a href="https://github.com/imsukmin/shib-watch-site" target="_blank" rel="noopener">GitHub</a></div>
+  </footer>
+</div>
+</body>
+</html>
