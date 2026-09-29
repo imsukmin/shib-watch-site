@@ -3,7 +3,7 @@
   "timezone_note": "Event dates are calendar dates as reported (mostly US/ME/Asia news days). Chart overlays use UTC midnight of start/end unless noted. Prices come only from Binance klines CSV — never invented.",
   "data_choice": "Chart uses daily (1d) candles for 2017-08-17 → 2026-09-27 (~3.3k points) with rangeslider. Full-span hourly (~75k) would make Plotly HTML too heavy; hourly CSV kept for recent 1y (btc_usdt_1h_recent.csv) and original 2026 window (btc_usdt_1h.csv).",
   "hormuz_blockade_verdict": "NO single official 'Hormuz permanently sealed to all shipping' event; YES severe multi-month disruption from 2026-02-28 with Iranian transit warnings/attacks and a US naval blockade of Iranian ports. Traffic fell from ~125/day prewar to single digits at times in September 2026.",
-  "event_count": 54,
+  "event_count": 69,
   "events": [
     {
       "id": "binance-btcusdt-listing",
@@ -310,7 +310,9 @@
       "similar_event_ids": [
         "fed-hiking-cycle-2022-23",
         "svb-collapse-2023",
-        "fed-cutting-cycle-2024"
+        "fed-cutting-cycle-2024",
+        "negative-wti-apr-2020",
+        "yen-carry-unwind-aug-2024"
       ],
       "then_vs_now_ko": "팬데믹 공포로 위험자산이 한꺼번에 흔들린 뒤, 연준이 긴급 완화로 대응한 구간입니다. 2022–23 긴축·2024 인하·2026 재인상과는 ‘위기 → 정책 대응’이라는 뼈대는 비슷하지만, 금리 방향은 반대였습니다.",
       "angles_ko": {
@@ -333,6 +335,61 @@
           "title": "The Complete Bitcoin Timeline: 2008 to Today",
           "url": "https://bitcoincompleteguide.com/bitcoin-timeline/",
           "why_ko": "같은 사건을 다른 매체·문서로 교차 확인할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "negative-wti-apr-2020",
+      "title_ko": "WTI 마이너스 오일",
+      "title_en": "WTI crude futures settle negative",
+      "start": "2020-04-20",
+      "end": "2020-04-20",
+      "category": "markets",
+      "severity": 5,
+      "summary_ko": "코로나19 수요 붕괴와 쿠싱 저장 용량 압박 속에, NYMEX WTI 5월물 선물이 사상 처음으로 마이너스 결제(약 −$37.63/배럴)를 기록한 날.",
+      "sources": [
+        {
+          "title": "Reuters — Oil price crashes into negative territory",
+          "url": "https://www.reuters.com/article/business/oil-price-crashes-into-negative-territory-for-the-first-time-in-history-amid-pan-idUSKBN2210V8/"
+        },
+        {
+          "title": "EIA — Crude oil prices briefly traded below $0 in spring 2020",
+          "url": "https://www.eia.gov/todayinenergy/detail.php?id=46336"
+        },
+        {
+          "title": "CFTC node — Arbitrage breakdown in WTI crude oil futures (Apr 20, 2020)",
+          "url": "https://www.cftc.gov/node/240446"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n코로나19로 석유 수요가 급감한 가운데, 미국 현물 인도 허브인 쿠싱의 저장 공간이 빠듯해졌습니다. 선물 만기가 다가오면 ‘실물 인도’를 피하려는 포지션이 한꺼번에 청산될 수 있습니다.\n\n무슨 일\n2020년 4월 20일 NYMEX WTI 5월물 선물이 사상 처음으로 마이너스 가격으로 결제됐습니다. 로이터 등은 결제 가격이 약 −37.63달러/배럴이었다고 전했고, EIA도 같은 날 WTI가 0달러 아래로 거래된 사실을 기록합니다.\n\n시장·가격에 미친 영향\n에너지 시장 충격의 상징적 날로 남았습니다. 선물 만기·저장·수요 붕괴가 겹치면 가격이 상식을 벗어나 움직일 수 있다는 학습 포인트입니다. 개별 코인 가격은 차트에서 따로 확인하세요.",
+      "learn_points_ko": [
+        "선물 가격은 실물 저장·인도 조건과 묶여 있을 수 있습니다.",
+        "수요 붕괴와 저장 한계가 겹치면 가격이 극단적으로 움직일 수 있습니다.",
+        "에너지 쇼크는 인플레·위험자산 분위기와도 간접적으로 연결될 수 있습니다."
+      ],
+      "learn_if_again_ko": "유가·원자재가 ‘이상하게’ 움직인다는 뉴스가 나오면, 만기 선물인지·현물인지·저장 이슈인지부터 구분하세요.",
+      "similar_event_ids": [
+        "covid-crash-fed-2020",
+        "ukraine-oil-spike-mar-2022",
+        "opec-cut-oct-2022"
+      ],
+      "then_vs_now_ko": "2020년 마이너스 유가는 ‘수요 붕괴+저장’ 쇼크였습니다. 이후 2022 우크라 전쟁·OPEC 감산은 공급·지정학 쪽 쇼크에 가깝습니다. 원인 축이 다릅니다.",
+      "angles_ko": {
+        "price_market": "에너지·원자재 극단 가격의 대표 사례로 자주 인용됩니다.",
+        "news_reg": "로이터·EIA·CFTC 관련 자료로 날짜와 결제 사실을 확인할 수 있습니다.",
+        "shib_vs_btc_macro": "매크로·전통금융·기술 이슈입니다. 시바만의 소식은 아닙니다. 그래도 위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — Oil price crashes into negative territory",
+          "url": "https://www.reuters.com/article/business/oil-price-crashes-into-negative-territory-for-the-first-time-in-history-amid-pan-idUSKBN2210V8/",
+          "why_ko": "당일 결제·배경을 빠르게 훑기에 좋습니다."
+        },
+        {
+          "title": "EIA — Crude oil prices briefly traded below $0 in spring 2020",
+          "url": "https://www.eia.gov/todayinenergy/detail.php?id=46336",
+          "why_ko": "공식 에너지 통계 시각으로 같은 사건을 확인할 수 있습니다."
         }
       ]
     },
@@ -887,7 +944,8 @@
       "similar_event_ids": [
         "btc-ath-2017",
         "btc-ath-2025-oct",
-        "btc-halving-2020"
+        "btc-halving-2020",
+        "spx-ath-jan-2024"
       ],
       "then_vs_now_ko": "2021년 사이클 고점(~$69k) 이후 2022 약세가 이어졌습니다. 2017 고점·2024 $100k·2025 신고점과 비교할 때는 시장 규모·참여자(기관·ETF)가 달라졌다는 점을 함께 둡니다.",
       "angles_ko": {
@@ -950,6 +1008,59 @@
       ]
     },
     {
+      "id": "ukraine-oil-spike-mar-2022",
+      "title_ko": "우크라 전쟁 오일 쇼크",
+      "title_en": "Ukraine war oil supply shock",
+      "start": "2022-02-24",
+      "end": "2022-03-08",
+      "category": "geo",
+      "severity": 5,
+      "summary_ko": "러시아의 우크라이나 전면 침공(2022-02-24) 이후 에너지 공급 불안으로 유가가 급등. EIA 등에 따르면 3월 8일 전후 Brent가 약 $134/b 부근까지 치솟은 구간.",
+      "sources": [
+        {
+          "title": "Reuters — Oil tops $105/bbl after Russia attacks Ukraine",
+          "url": "https://www.reuters.com/business/energy/oil-rises-us-says-russian-attack-ukraine-may-occur-soon-2022-02-24/"
+        },
+        {
+          "title": "EIA This Week In Petroleum — week of 2022-03-09",
+          "url": "https://www.eia.gov/petroleum/weekly/archive/2022/220309/includes/analysis_print.php"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n러시아는 주요 에너지 수출국입니다. 전쟁·제재 우려가 커지면 원유·가스 공급 불안이 바로 가격에 반영될 수 있습니다.\n\n무슨 일\n2022년 2월 24일 러시아의 우크라이나 전면 침공 이후 유가가 빠르게 올랐습니다. 로이터는 당일 Brent가 2014년 이후 처음으로 105달러 위로 올랐다고 전했고, EIA는 3월 8일 전후 Brent가 약 134달러/배럴 부근까지 치솟았다고 기록합니다.\n\n시장·가격에 미친 영향\n지정학 쇼크가 에너지→인플레→금리·위험자산 분위기로 이어질 수 있음을 보여주는 구간입니다. BTC·주식도 같은 시기에 크게 흔들렸지만, 원인은 ‘코인 자체 뉴스’가 아니라 매크로·지정학 쪽인 경우가 많습니다.",
+      "learn_points_ko": [
+        "전쟁·제재 뉴스는 유가·인플레 기대를 한꺼번에 올릴 수 있습니다.",
+        "에너지 쇼크는 연준 긴축·위험자산 약세와 겹쳐 이야기되는 경우가 많습니다.",
+        "날짜 구간(침공일~유가 고점 근처)을 차트와 같이 보면 흐름이 보입니다."
+      ],
+      "learn_if_again_ko": "에너지 수출국 충돌·제재 뉴스가 나오면, 유가·달러·주식 반응을 같이 보고 ‘코인만의 이슈인지’를 구분하세요.",
+      "similar_event_ids": [
+        "opec-cut-oct-2022",
+        "opec-surprise-cut-apr-2023",
+        "saudi-pipeline-hormuz-sep",
+        "negative-wti-apr-2020",
+        "fed-hiking-cycle-2022-23"
+      ],
+      "then_vs_now_ko": "2022년 초는 공급·지정학 충격으로 유가가 급등한 사례입니다. 2020년 마이너스 유가(수요 붕괴)와 원인 축이 반대에 가깝고, 이후 OPEC 감산·호르무즈 이슈와도 ‘에너지 불안’ 줄기로 비교됩니다.",
+      "angles_ko": {
+        "price_market": "유가 급등·인플레 우려가 위험자산 분위기와 겹친 대표 구간입니다.",
+        "news_reg": "침공일·제재·에너지 수입 제한 발표를 1차 보도로 확인합니다.",
+        "shib_vs_btc_macro": "매크로·전통금융·기술 이슈입니다. 시바만의 소식은 아닙니다. 그래도 위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — Oil tops $105/bbl after Russia attacks Ukraine",
+          "url": "https://www.reuters.com/business/energy/oil-rises-us-says-russian-attack-ukraine-may-occur-soon-2022-02-24/",
+          "why_ko": "침공 당일 유가 반응을 확인할 때 좋습니다."
+        },
+        {
+          "title": "EIA This Week In Petroleum — week of 2022-03-09",
+          "url": "https://www.eia.gov/petroleum/weekly/archive/2022/220309/includes/analysis_print.php",
+          "why_ko": "3월 초 유가 고점 근처를 공식 분석으로 볼 수 있습니다."
+        }
+      ]
+    },
+    {
       "id": "fed-hiking-cycle-2022-23",
       "title_ko": "연준 긴축 사이클(2022–2023)",
       "title_en": "Fed hiking cycle 2022–2023",
@@ -999,7 +1110,10 @@
       "similar_event_ids": [
         "fed-cutting-cycle-2024",
         "fomc-hike-sep-2026",
-        "covid-crash-fed-2020"
+        "covid-crash-fed-2020",
+        "hot-cpi-sep-2022",
+        "dxy-peak-sep-2022",
+        "spx-bear-bottom-oct-2022"
       ],
       "then_vs_now_ko": "인플레 대응 공격적 인상 구간입니다. 2024년 인하 사이클, 2026년 9월 재인상(+25bp)과 비교하면 ‘금리 방향’이 시장 분위기 설명에 자주 등장합니다. 한 번의 회의보다 사이클 전체를 보는 편이 낫습니다.",
       "angles_ko": {
@@ -1190,6 +1304,226 @@
       ]
     },
     {
+      "id": "hot-cpi-sep-2022",
+      "title_ko": "뜨거운 CPI 쇼크",
+      "title_en": "Hot August CPI print (Sep 13, 2022)",
+      "start": "2022-09-13",
+      "end": "2022-09-13",
+      "category": "markets",
+      "severity": 5,
+      "summary_ko": "2022-09-13 발표된 8월 CPI가 시장 예상보다 높게 나오며 ‘인플레가 쉽게 안 내려온다’는 충격을 준 날. 공격적 금리 인상 기대가 다시 커지며 위험자산이 크게 흔들린 구간.",
+      "sources": [
+        {
+          "title": "Reuters — Hot US Aug CPI seen cementing aggressive FOMC",
+          "url": "https://www.reuters.com/markets/us/view-hot-us-aug-cpi-seen-cementing-aggressive-fomc-2022-09-13/"
+        },
+        {
+          "title": "CNN — American inflation rose more than expected in August",
+          "url": "https://www.cnn.com/2022/09/13/economy/august-cpi-inflation"
+        },
+        {
+          "title": "AP — US inflation still stubbornly high despite August slowdown",
+          "url": "https://apnews.com/article/inflation-economy-prices-f2270f4c6ac55c084108d57cc1aec53a"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n2022년 미국은 높은 물가와 연준의 빠른 금리 인상이 겹친 해였습니다. 매달 나오는 소비자물가지수(CPI) 발표가 시장 일정을 좌우하는 경우가 많았습니다.\n\n무슨 일\n2022년 9월 13일 발표된 8월 CPI가 시장 예상보다 ‘뜨겁게’ 나왔다는 보도가 이어졌습니다. 로이터·CNN·AP 등은 인플레가 쉽게 꺾이지 않는다는 해석과 함께, 연준이 더 공격적으로 금리를 올릴 것이라는 기대를 전했습니다.\n\n시장·가격에 미친 영향\n같은 날 주식 등 위험자산이 크게 흔들렸다는 기록이 많습니다. ‘숫자 하나’가 금리 경로·달러·주식·코인 분위기를 한꺼번에 바꿀 수 있음을 배우는 대표 CPI 사례입니다. (같은 해 다른 CPI 고점은 중복 마커를 피하기 위해 여기에 모았습니다.)",
+      "learn_points_ko": [
+        "CPI는 ‘물가 숫자’이자 ‘앞으로 금리’ 기대를 흔드는 뉴스입니다.",
+        "예상보다 높은(뜨거운) 물가 발표는 위험자산에 부담이 되기 쉽습니다.",
+        "모든 CPI를 마커로 찍지 않고, 시장이 크게 놀란 날만 고르는 것이 좋습니다."
+      ],
+      "learn_if_again_ko": "물가 발표가 ‘예상보다 높다/낮다’고 나오면, 숫자 자체보다 금리 기대·달러·주식 반응을 같이 보세요.",
+      "similar_event_ids": [
+        "fed-hiking-cycle-2022-23",
+        "dxy-peak-sep-2022",
+        "spx-bear-bottom-oct-2022"
+      ],
+      "then_vs_now_ko": "2022년 9월 ‘뜨거운 CPI’는 긴축 기대가 다시 세지며 위험자산이 흔들린 사례입니다. 이후 연준 인하 사이클(2024)과 대비하면 ‘물가→금리→위험자산’ 연결을 배우기 좋습니다.",
+      "angles_ko": {
+        "price_market": "물가 서프라이즈가 주식·달러·금리 기대를 동시에 움직인 날로 자주 인용됩니다.",
+        "news_reg": "BLS 발표일·헤드라인/근원 CPI를 1차 보도로 확인합니다.",
+        "shib_vs_btc_macro": "매크로·전통금융·기술 이슈입니다. 시바만의 소식은 아닙니다. 그래도 위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — Hot US Aug CPI seen cementing aggressive FOMC",
+          "url": "https://www.reuters.com/markets/us/view-hot-us-aug-cpi-seen-cementing-aggressive-fomc-2022-09-13/",
+          "why_ko": "당일 시장 해석을 빠르게 볼 때 좋습니다."
+        },
+        {
+          "title": "CNN — American inflation rose more than expected in August",
+          "url": "https://www.cnn.com/2022/09/13/economy/august-cpi-inflation",
+          "why_ko": "일반 독자용으로 요지를 확인하기 좋습니다."
+        }
+      ]
+    },
+    {
+      "id": "dxy-peak-sep-2022",
+      "title_ko": "달러인덱스(DXY) 고점",
+      "title_en": "US Dollar Index (DXY) 2022 peak",
+      "start": "2022-09-28",
+      "end": "2022-09-28",
+      "category": "markets",
+      "severity": 4,
+      "summary_ko": "강한 달러·금리 인상 기대 속에 달러인덱스(DXY)가 2022년 9월 말(약 9/27–28) 20년 만에 고점권(보도에 따라 ~114.7대)을 찍은 구간. 위험자산·원자재에 역풍으로 자주 인용.",
+      "sources": [
+        {
+          "title": "The Irish Times — Dollar sweeps to 20-year high (2022-09-28)",
+          "url": "https://www.irishtimes.com/business/2022/09/28/dollar-sweeps-to-20-year-high-as-sterling-on-the-ropes-again/"
+        },
+        {
+          "title": "Dawn / Reuters wire — Dollar scales new 2-decade high",
+          "url": "https://www.dawn.com/news/1712395"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n달러가 강해지면 신흥국 자산·원자재·위험자산에는 부담이 되기 쉽습니다. 2022년은 연준 긴축과 맞물려 ‘강한 달러’가 세계 시장의 핵심 테마였습니다.\n\n무슨 일\n2022년 9월 말(약 27–28일) 달러인덱스(DXY)가 약 20년 만의 고점권을 기록했다는 보도가 이어졌습니다. 아일랜드 타임스·로이터 계열 통신은 9월 28일 전후 달러가 수십 년 고점으로 올랐다고 전합니다.\n\n시장·가격에 미친 영향\n강한 달러는 같은 시기 주식·암호화폐 약세 이야기와 자주 함께 나옵니다. ‘코인이 약하다’기보다 ‘달러·금리가 센 매크로’로 읽는 연습에 좋은 마커입니다.",
+      "learn_points_ko": [
+        "달러인덱스(DXY)는 여러 통화 대비 달러 강약을 보는 지표입니다.",
+        "달러가 강할 때는 위험자산이 부담을 받기 쉽다는 설명이 자주 나옵니다.",
+        "고점 날짜는 매체마다 하루 차이(9/27–28)가 날 수 있어 구간으로 봅니다."
+      ],
+      "learn_if_again_ko": "‘달러가 세다/약하다’ 뉴스가 나오면, 주식·원자재·코인이 같은 방향으로 움직이는지 같이 확인하세요.",
+      "similar_event_ids": [
+        "hot-cpi-sep-2022",
+        "spx-bear-bottom-oct-2022",
+        "fed-hiking-cycle-2022-23",
+        "yen-carry-unwind-aug-2024"
+      ],
+      "then_vs_now_ko": "2022년 가을 강한 달러는 긴축·인플레 국면의 상징입니다. 이후 엔캐리 청산(2024-08)처럼 환율이 위험자산을 흔든 다른 사례와 비교할 수 있습니다.",
+      "angles_ko": {
+        "price_market": "강한 달러가 위험자산 역풍으로 이야기된 대표 고점 구간입니다.",
+        "news_reg": "9월 말 고점권 보도와 연준 긴축 일정을 함께 봅니다.",
+        "shib_vs_btc_macro": "매크로·전통금융·기술 이슈입니다. 시바만의 소식은 아닙니다. 그래도 위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "The Irish Times — Dollar sweeps to 20-year high (2022-09-28)",
+          "url": "https://www.irishtimes.com/business/2022/09/28/dollar-sweeps-to-20-year-high-as-sterling-on-the-ropes-again/",
+          "why_ko": "9/28 전후 20년 고점 보도를 확인할 수 있습니다."
+        },
+        {
+          "title": "Dawn / Reuters wire — Dollar scales new 2-decade high",
+          "url": "https://www.dawn.com/news/1712395",
+          "why_ko": "같은 날 로이터 계열 요지를 교차 확인할 때 좋습니다."
+        }
+      ]
+    },
+    {
+      "id": "opec-cut-oct-2022",
+      "title_ko": "OPEC+ 대규모 감산",
+      "title_en": "OPEC+ large production cut (Oct 2022)",
+      "start": "2022-10-05",
+      "end": "2022-10-05",
+      "category": "geo",
+      "severity": 4,
+      "summary_ko": "OPEC+가 2022-10-05 회의에서 하루 약 200만 배럴 규모의 생산 목표 감산을 합의(11월부터). 코로나 이후 최대급 감산으로 평가되며 미국 등 소비국과 마찰이 커진 사건.",
+      "sources": [
+        {
+          "title": "Reuters — OPEC+ agrees deep oil production cuts",
+          "url": "https://www.reuters.com/business/energy/opec-heads-deep-supply-cuts-clash-with-us-2022-10-04/"
+        },
+        {
+          "title": "OPEC — 33rd OPEC and non-OPEC Ministerial Meeting (No 30/2022)",
+          "url": "https://www.opec.org/opec_web/en/press_room/7021.htm"
+        },
+        {
+          "title": "AP — How will OPEC+ cuts affect gas prices, inflation?",
+          "url": "https://apnews.com/article/russia-ukraine-inflation-economy-moscow-prices-9bcc886c4d5f8d341cf8939f88705781"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\nOPEC+는 주요 산유국 협의체입니다. 생산량을 줄이면 공급이 타이트해져 유가 지지 요인이 될 수 있습니다.\n\n무슨 일\n2022년 10월 5일 OPEC+는 하루 약 200만 배럴 규모의 생산 목표 감산을 합의했다고 로이터 등이 전했습니다. OPEC 공식 보도(33차 장관회의)로도 확인됩니다. 실제 감산량은 이미 목표 미달인 회원국 때문에 발표치보다 작을 수 있다는 분석도 함께 나왔습니다.\n\n시장·가격에 미친 영향\n인플레·경기 둔화 우려가 있던 시점에 에너지 가격을 다시 자극할 수 있는 결정으로 읽혔습니다. 우크라 전쟁 오일 쇼크·이후 깜짝 감산과 같은 ‘공급 쪽’ 줄기입니다.",
+      "learn_points_ko": [
+        "OPEC+ 결정은 ‘발표 감산’과 ‘실제 감산’이 다를 수 있습니다.",
+        "에너지 공급 뉴스는 인플레·금리 기대와도 연결됩니다.",
+        "정치·외교 갈등(소비국 반발)이 같이 보도되는 경우가 많습니다."
+      ],
+      "learn_if_again_ko": "OPEC·산유국 감산/증산 뉴스가 나오면, 발표 규모·시작 시점·시장 예상 대비 ‘깜짝’ 여부를 확인하세요.",
+      "similar_event_ids": [
+        "ukraine-oil-spike-mar-2022",
+        "opec-surprise-cut-apr-2023",
+        "saudi-pipeline-hormuz-sep",
+        "negative-wti-apr-2020"
+      ],
+      "then_vs_now_ko": "2022년 10월 대규모 감산은 전쟁·인플레 국면에서 공급을 조인 사례입니다. 2023년 4월 깜짝 자발적 감산과 비교하면 ‘예상 여부’가 시장 반응 차이를 만드는 점을 볼 수 있습니다.",
+      "angles_ko": {
+        "price_market": "공급 타이트 기대로 유가·인플레 이야기에 영향을 준 사건입니다.",
+        "news_reg": "OPEC 공식 성명과 로이터·AP 보도로 날짜·규모를 확인합니다.",
+        "shib_vs_btc_macro": "매크로·전통금융·기술 이슈입니다. 시바만의 소식은 아닙니다. 그래도 위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — OPEC+ agrees deep oil production cuts",
+          "url": "https://www.reuters.com/business/energy/opec-heads-deep-supply-cuts-clash-with-us-2022-10-04/",
+          "why_ko": "합의 규모와 미국 반응을 한눈에 볼 수 있습니다."
+        },
+        {
+          "title": "OPEC — 33rd OPEC and non-OPEC Ministerial Meeting",
+          "url": "https://www.opec.org/opec_web/en/press_room/7021.htm",
+          "why_ko": "당사자 공식 발표입니다."
+        }
+      ]
+    },
+    {
+      "id": "spx-bear-bottom-oct-2022",
+      "title_ko": "S&P 2022 베어 바닥",
+      "title_en": "S&P 500 2022 bear-market bottom",
+      "start": "2022-10-12",
+      "end": "2022-10-13",
+      "category": "markets",
+      "severity": 5,
+      "summary_ko": "2022년 약세장에서 S&P 500 종가 저점(약 3,577, 2022-10-12)이 기록된 구간. 다음날(10-13) 장중 더 낮은 저점이 나온 뒤 반등했다는 기록이 많아, 학습용으로 12–13일을 묶어 표시.",
+      "sources": [
+        {
+          "title": "Motley Fool — The Bear Market Ended Today (references Oct 12 close low)",
+          "url": "https://www.fool.com/investing/2023/06/08/the-bear-market-ended-today-at-least-by-this-measu/"
+        },
+        {
+          "title": "StatMuse — S&P 500 lowest close in 2022 (Oct 12)",
+          "url": "https://www.statmuse.com/money/ask/sandp500-low-in-2022"
+        },
+        {
+          "title": "Reuters — S&P 500 confirms bull market with record close (context)",
+          "url": "https://www.reuters.com/markets/us/sp-500-confirms-bull-market-with-record-close-2024-01-19/"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n2022년 미국 주식은 높은 인플레와 빠른 금리 인상 속에 큰 약세장을 겪었습니다. ‘바닥’은 지나고 나서야 더 분명해지는 경우가 많습니다.\n\n무슨 일\n여러 시장 기록이 S&P 500의 2022년 종가 저점을 2022년 10월 12일(약 3,577)로 둡니다. 다음날인 13일에는 장중 더 낮은 저점 후 반등했다는 설명도 자주 나옵니다. 그래서 학습 마커는 12–13일을 묶습니다.\n\n시장·가격에 미친 영향\n주식 베어 바닥 전후는 위험자산 분위기가 바뀌는 전환점으로 자주 이야기됩니다. BTC도 같은 매크로 역풍을 받던 시기로, ‘코인만의 바닥’이 아니라 주식·달러·금리와 함께 보는 연습에 적합합니다.",
+      "learn_points_ko": [
+        "약세장 바닥은 종가 저점과 장중 저점이 하루 차이일 수 있습니다.",
+        "주식 대세 전환은 암호화폐 분위기와도 겹쳐 읽히는 경우가 많습니다.",
+        "바닥을 ‘맞추기’보다, 전후 매크로(금리·달러·CPI)를 같이 보는 것이 중요합니다."
+      ],
+      "learn_if_again_ko": "주식·코인이 함께 급락한 뒤 ‘바닥인가?’ 논쟁이 나오면, 종가/장중·거래량·매크로 뉴스를 구분해 기록하세요.",
+      "similar_event_ids": [
+        "hot-cpi-sep-2022",
+        "dxy-peak-sep-2022",
+        "fed-hiking-cycle-2022-23",
+        "spx-ath-jan-2024",
+        "yen-carry-unwind-aug-2024"
+      ],
+      "then_vs_now_ko": "2022년 10월 저점 이후 주식은 회복했고, 2024년 1월 S&P 신고가 복귀로 ‘베어→불’ 전환이 확인되는 흐름과 자주 짝지어 설명됩니다.",
+      "angles_ko": {
+        "price_market": "광의의 위험자산 약세장 저점 마커입니다.",
+        "news_reg": "종가 저점(10/12)과 장중 저점(10/13)을 구분해 기록합니다.",
+        "shib_vs_btc_macro": "매크로·전통금융·기술 이슈입니다. 시바만의 소식은 아닙니다. 그래도 위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "Motley Fool — bear market close low Oct 12",
+          "url": "https://www.fool.com/investing/2023/06/08/the-bear-market-ended-today-at-least-by-this-measu/",
+          "why_ko": "종가 저점 숫자와 이후 20% 회복 정의를 확인할 때 좋습니다."
+        },
+        {
+          "title": "StatMuse — S&P 500 lowest close in 2022",
+          "url": "https://www.statmuse.com/money/ask/sandp500-low-in-2022",
+          "why_ko": "2022년 종가 저점 날짜를 간단히 확인할 수 있습니다."
+        }
+      ]
+    },
+    {
       "id": "ftx-collapse-2022",
       "title_ko": "FTX 파산",
       "title_en": "FTX bankruptcy",
@@ -1245,6 +1579,61 @@
           "title": "Bloomberg — Crypto contagion from Bitcoin to FTX",
           "url": "https://www.bloomberg.com/graphics/2022-crypto-contagion-from-bitcoin-to-FTX/",
           "why_ko": "같은 사건을 다른 매체·문서로 교차 확인할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "chatgpt-launch-2022",
+      "title_ko": "ChatGPT 공개",
+      "title_en": "ChatGPT public launch",
+      "start": "2022-11-30",
+      "end": "2022-11-30",
+      "category": "markets",
+      "severity": 4,
+      "summary_ko": "OpenAI가 2022-11-30 ChatGPT를 연구 미리보기로 공개. 이후 생성형 AI 붐·빅테크 실적·반도체 수요 이야기의 대중적 출발점으로 자주 인용.",
+      "sources": [
+        {
+          "title": "OpenAI — Introducing ChatGPT",
+          "url": "https://openai.com/index/chatgpt/"
+        },
+        {
+          "title": "Wikipedia — ChatGPT",
+          "url": "https://en.wikipedia.org/wiki/ChatGPT"
+        },
+        {
+          "title": "The Verge — Inside the launch of ChatGPT",
+          "url": "https://www.theverge.com/2024/12/12/24318650/chatgpt-openai-history-two-year-anniversary"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n생성형 AI는 대화·글쓰기·코딩을 돕는 도구로 빠르게 대중화됐습니다. 금융시장에서는 ‘AI 관련 기업·반도체 수요’ 이야기로 이어졌습니다.\n\n무슨 일\nOpenAI는 2022년 11월 30일 ChatGPT를 공개했습니다. 공식 소개 글과 위키피디아·The Verge 타임라인이 같은 날짜를 가리킵니다.\n\n시장·가격에 미친 영향\n공개 직후 하루의 ‘코인 뉴스’라기보다, 이후 엔비디아 실적(2023-05)·AI 관련 주식 강세 같은 위험선호(risk-on) 줄기의 출발점으로 보는 마커입니다. DeepSeek 쇼크(2025-01)처럼 AI 기대가 흔들릴 때와 대비해 읽으면 좋습니다.",
+      "learn_points_ko": [
+        "기술 공개일이 곧 가격 방향은 아닙니다. 이후 실적·투자 이야기로 이어집니다.",
+        "AI 붐은 주식·반도체뿐 아니라 위험자산 분위기에도 간접 영향을 줄 수 있습니다.",
+        "시바·BTC ‘전용 뉴스’가 아닌 매크로·기술 테마로 분류합니다."
+      ],
+      "learn_if_again_ko": "새 AI 제품·모델 공개 뉴스가 나오면, 당일 가격보다 관련 실적·반도체·규제 후속 뉴스를 같이 보세요.",
+      "similar_event_ids": [
+        "nvda-ai-earnings-may-2023",
+        "deepseek-ai-shock-jan-2025",
+        "spx-ath-jan-2024"
+      ],
+      "then_vs_now_ko": "ChatGPT 공개는 AI 대중화의 출발점이고, 엔비디아 2023년 5월 실적은 그 기대가 실적으로 확인된 날, DeepSeek 2025년 1월은 비용·경쟁 우려로 AI 주식이 흔들린 날로 자주 짝지어집니다.",
+      "angles_ko": {
+        "price_market": "AI risk-on 테마의 대중적 시작점으로 인용됩니다.",
+        "news_reg": "OpenAI 공식 공개일과 후속 제품 일정을 확인합니다.",
+        "shib_vs_btc_macro": "매크로·전통금융·기술 이슈입니다. 시바만의 소식은 아닙니다. 그래도 위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "OpenAI — Introducing ChatGPT",
+          "url": "https://openai.com/index/chatgpt/",
+          "why_ko": "당사자 공식 소개 글입니다."
+        },
+        {
+          "title": "The Verge — Inside the launch of ChatGPT",
+          "url": "https://www.theverge.com/2024/12/12/24318650/chatgpt-openai-history-two-year-anniversary",
+          "why_ko": "공개 전후 맥락을 읽기 좋습니다."
         }
       ]
     },
@@ -1319,7 +1708,9 @@
       "learn_if_again_ko": "은행·유동성 이슈가 커지면, 암호화폐만이 아니라 위험자산 전반 반응을 같이 보면 좋습니다.",
       "similar_event_ids": [
         "ftx-collapse-2022",
-        "covid-crash-fed-2020"
+        "covid-crash-fed-2020",
+        "credit-suisse-ubs-mar-2023",
+        "first-republic-may-2023"
       ],
       "then_vs_now_ko": "전통 은행 파산이 암호화폐 분위기와 겹친 사례입니다. FTX 같은 크립토 내부 사고와 달리, 전통 금융 불안 속에서 BTC가 상대적으로 강세를 보였다는 내러티브가 부각됐습니다.",
       "angles_ko": {
@@ -1337,6 +1728,280 @@
           "title": "The Complete Bitcoin Timeline: 2008 to Today",
           "url": "https://bitcoincompleteguide.com/bitcoin-timeline/",
           "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
+    },
+    {
+      "id": "credit-suisse-ubs-mar-2023",
+      "title_ko": "CS–UBS 긴급 인수",
+      "title_en": "UBS emergency takeover of Credit Suisse",
+      "start": "2023-03-19",
+      "end": "2023-03-19",
+      "category": "markets",
+      "severity": 5,
+      "summary_ko": "스위스 당국 중재로 UBS가 Credit Suisse를 긴급 인수하기로 합의(2023-03-19). SVB 사태 직후 글로벌 은행 불안이 유럽으로 확산된 상징적 주말 구조.",
+      "sources": [
+        {
+          "title": "Reuters — UBS to take over Credit Suisse",
+          "url": "https://www.reuters.com/business/finance/ubs-take-over-credit-suisse-central-bank-2023-03-19/"
+        },
+        {
+          "title": "Wikipedia — Acquisition of Credit Suisse by UBS",
+          "url": "https://en.wikipedia.org/wiki/Acquisition_of_Credit_Suisse_by_UBS"
+        },
+        {
+          "title": "NYT — UBS Agrees to Buy Rival Credit Suisse",
+          "url": "https://www.nytimes.com/2023/03/19/business/ubs-credit-suisse.html"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n2023년 3월 미국 SVB 폐쇄 직후, 유럽에서는 크레디트스위스(CS) 신뢰 문제가 부각됐습니다. 글로벌 은행 불안이 ‘한 나라’에 머물지 않을 수 있음을 보여 준 구간입니다.\n\n무슨 일\n2023년 3월 19일 UBS가 스위스 당국 중재 아래 Credit Suisse를 인수하기로 합의했다고 로이터·NYT 등이 전했습니다. 비상 구조(긴급 인수)로 분류됩니다.\n\n시장·가격에 미친 영향\n은행·금융 시스템 뉴스가 위험자산 분위기를 흔든 사례입니다. SVB·퍼스트리퍼블릭과 한 줄기로 묶어 ‘전통 금융 스트레스’ 마커로 봅니다.",
+      "learn_points_ko": [
+        "은행 위기는 국경을 넘어 확산될 수 있습니다.",
+        "긴급 인수·공적 중재는 ‘파산’과 다른 형태의 해법입니다.",
+        "전통 금융 스트레스도 암호화폐 분위기와 겹칠 수 있습니다."
+      ],
+      "learn_if_again_ko": "대형 은행 구제·인수 뉴스가 나오면, 예금자 보호·채권(AT1 등)·주주 손실 구조를 보도 원문으로 확인하세요.",
+      "similar_event_ids": [
+        "svb-collapse-2023",
+        "first-republic-may-2023",
+        "covid-crash-fed-2020"
+      ],
+      "then_vs_now_ko": "SVB(미국 지역은행) → CS–UBS(유럽 대형은행 구조) → First Republic(미국 후속 정리)로 이어진 2023년 봄 은행 불안 줄기의 한 축입니다.",
+      "angles_ko": {
+        "price_market": "글로벌 은행 불안이 위험자산 심리를 흔든 사건입니다.",
+        "news_reg": "스위스 당국·UBS·로이터 보도로 합의일을 확인합니다.",
+        "shib_vs_btc_macro": "매크로·전통금융·기술 이슈입니다. 시바만의 소식은 아닙니다. 그래도 위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — UBS to take over Credit Suisse",
+          "url": "https://www.reuters.com/business/finance/ubs-take-over-credit-suisse-central-bank-2023-03-19/",
+          "why_ko": "합의 당일 핵심을 확인할 때 좋습니다."
+        },
+        {
+          "title": "Wikipedia — Acquisition of Credit Suisse by UBS",
+          "url": "https://en.wikipedia.org/wiki/Acquisition_of_Credit_Suisse_by_UBS",
+          "why_ko": "일정·용어를 한눈에 정리할 때 도움이 됩니다."
+        }
+      ]
+    },
+    {
+      "id": "opec-surprise-cut-apr-2023",
+      "title_ko": "OPEC+ 깜짝 감산",
+      "title_en": "OPEC+ surprise voluntary cuts (Apr 2023)",
+      "start": "2023-04-02",
+      "end": "2023-04-02",
+      "category": "geo",
+      "severity": 4,
+      "summary_ko": "2023-04-02 사우디 등 OPEC+ 일부 산유국이 자발적 감산(합쳐 하루 약 116만 배럴 규모로 보도)을 예고보다 갑자기 발표. 유가 급등 요인으로 거론된 ‘서프라이즈’ 감산.",
+      "sources": [
+        {
+          "title": "Reuters — OPEC+ announces surprise oil output cuts",
+          "url": "https://www.reuters.com/business/energy/sarabia-other-opec-producers-announce-voluntary-oil-output-cuts-2023-04-02/"
+        },
+        {
+          "title": "CNBC — Saudi Arabia and OPEC producers announce voluntary cuts",
+          "url": "https://www.cnbc.com/2023/04/02/saudi-arabia-and-opec-producers-announce-voluntary-oil-output-cuts.html"
+        },
+        {
+          "title": "AP — Saudis, other oil giants announce surprise production cuts",
+          "url": "https://apnews.com/article/saudi-oil-production-cut-6d34316ce6820c749d2a6cd66a9fffea"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n시장이 ‘회의 전 예상’을 이미 가격에 넣는 경우가 많습니다. 그래서 예상보다 갑작스러운 감산·증산은 가격 반응이 커질 수 있습니다.\n\n무슨 일\n2023년 4월 2일 사우디 등 일부 OPEC+ 산유국이 자발적 감산을 발표했다고 로이터·CNBC·AP가 전했습니다. ‘깜짝(surprise)’이라는 표현이 보도에 반복됩니다.\n\n시장·가격에 미친 영향\n유가 반등 기대로 읽힌 사건입니다. 2022년 10월 대규모 감산과 같은 공급 줄기이지만, ‘예상 밖’이었다는 점이 학습 포인트입니다.",
+      "learn_points_ko": [
+        "같은 감산이라도 ‘예상된 결정’과 ‘깜짝 발표’는 시장 반응이 다를 수 있습니다.",
+        "자발적 감산은 공동 쿼터와 별도로 발표되기도 합니다.",
+        "에너지 뉴스는 인플레·위험자산 분위기와 간접 연결될 수 있습니다."
+      ],
+      "learn_if_again_ko": "산유국 발표가 ‘서프라이즈’로 보도되면, 규모·기간·시작월을 공식·통신 보도로 확인하세요.",
+      "similar_event_ids": [
+        "opec-cut-oct-2022",
+        "ukraine-oil-spike-mar-2022",
+        "saudi-pipeline-hormuz-sep"
+      ],
+      "then_vs_now_ko": "2022년 10월 대규모 감산(회의 합의)과 2023년 4월 깜짝 자발적 감산을 비교하면, ‘공급 뉴스’라도 전달 방식이 다르면 반응이 달라질 수 있음을 볼 수 있습니다.",
+      "angles_ko": {
+        "price_market": "서프라이즈 공급 축소가 유가 기대를 자극한 사례입니다.",
+        "news_reg": "로이터·CNBC·AP의 4/2 발표 보도가 1차 일정입니다.",
+        "shib_vs_btc_macro": "매크로·전통금융·기술 이슈입니다. 시바만의 소식은 아닙니다. 그래도 위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — OPEC+ announces surprise oil output cuts",
+          "url": "https://www.reuters.com/business/energy/sarabia-other-opec-producers-announce-voluntary-oil-output-cuts-2023-04-02/",
+          "why_ko": "깜짝 감산 요지를 확인할 때 좋습니다."
+        },
+        {
+          "title": "CNBC — voluntary oil output cuts",
+          "url": "https://www.cnbc.com/2023/04/02/saudi-arabia-and-opec-producers-announce-voluntary-oil-output-cuts.html",
+          "why_ko": "같은 날 다른 매체로 교차 확인용입니다."
+        }
+      ]
+    },
+    {
+      "id": "first-republic-may-2023",
+      "title_ko": "퍼스트리퍼블릭 파산",
+      "title_en": "First Republic Bank failure / JPMorgan assumption",
+      "start": "2023-05-01",
+      "end": "2023-05-01",
+      "category": "markets",
+      "severity": 4,
+      "summary_ko": "2023-05-01 캘리포니아 당국이 First Republic Bank를 폐쇄하고 FDIC가 관재인으로 지정. JPMorgan Chase가 예금·자산 상당 부분을 인수. SVB 이후 미국 지역은행 위기의 주요 후속 사건.",
+      "sources": [
+        {
+          "title": "FDIC — JPMorgan assumes deposits of First Republic Bank",
+          "url": "https://www.fdic.gov/news/press-releases/2023/pr23034.html"
+        },
+        {
+          "title": "FDIC Failed Bank List — First Republic Bank",
+          "url": "https://www.fdic.gov/resources/resolutions/bank-failures/failed-bank-list/first-republic.html"
+        },
+        {
+          "title": "Reuters — Regulators seize First Republic Bank, sell assets to JPMorgan",
+          "url": "https://www.reuters.com/business/finance/california-financial-regulator-takes-possession-first-republic-bank-2023-05-01/"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n2023년 3월 SVB 사태 이후에도 일부 미국 지역은행은 예금 이탈·자산 가치 압박을 겪었습니다. First Republic이 그 후속 초점 중 하나였습니다.\n\n무슨 일\n2023년 5월 1일 캘리포니아 당국이 First Republic을 폐쇄하고 FDIC를 관재인으로 지정했습니다. FDIC 보도에 따르면 JPMorgan Chase가 예금 등을 인수하는 형태로 정리됐습니다.\n\n시장·가격에 미친 영향\n은행 위기 ‘연장전’ 마커입니다. SVB·CS–UBS와 함께 전통 금융 스트레스가 위험자산 심리에 남긴 잔여 충격을 보는 데 유용합니다.",
+      "learn_points_ko": [
+        "은행 위기는 한 번에 끝나지 않고 후속 정리로 이어질 수 있습니다.",
+        "FDIC·인수 은행 발표가 1차 사실 확인 창구입니다.",
+        "전통 금융 이슈도 암호화폐 분위기와 간접 연결될 수 있습니다."
+      ],
+      "learn_if_again_ko": "은행 폐쇄·인수 뉴스가 나오면 FDIC·당국 보도자료에서 예금 보호·인수 범위를 확인하세요.",
+      "similar_event_ids": [
+        "svb-collapse-2023",
+        "credit-suisse-ubs-mar-2023"
+      ],
+      "then_vs_now_ko": "SVB(3월) → CS–UBS(3월) → First Republic(5월)로 이어진 2023년 은행 불안 줄기의 미국 후속 정리 사례입니다.",
+      "angles_ko": {
+        "price_market": "지역은행 위기 후속 정리로 시장 긴장을 다시 불러온 사건입니다.",
+        "news_reg": "FDIC 보도자료·실패 은행 목록이 1차 자료입니다.",
+        "shib_vs_btc_macro": "매크로·전통금융·기술 이슈입니다. 시바만의 소식은 아닙니다. 그래도 위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "FDIC — JPMorgan assumes deposits of First Republic Bank",
+          "url": "https://www.fdic.gov/news/press-releases/2023/pr23034.html",
+          "why_ko": "공식 정리 내용을 확인할 때 좋습니다."
+        },
+        {
+          "title": "Reuters — Regulators seize First Republic Bank",
+          "url": "https://www.reuters.com/business/finance/california-financial-regulator-takes-possession-first-republic-bank-2023-05-01/",
+          "why_ko": "당일 경과를 빠르게 훑기에 좋습니다."
+        }
+      ]
+    },
+    {
+      "id": "nvda-ai-earnings-may-2023",
+      "title_ko": "엔비디아 AI 실적",
+      "title_en": "NVIDIA AI earnings shock (May 2023)",
+      "start": "2023-05-24",
+      "end": "2023-05-25",
+      "category": "markets",
+      "severity": 5,
+      "summary_ko": "NVIDIA가 2023-05-24(미 장 마감 후) 실적·가이던스를 크게 상회하며 AI 반도체 수요를 입증. 시간외·익일 주식·AI 관련주 급등으로 ‘AI 실적 쇼크’의 대표 사례.",
+      "sources": [
+        {
+          "title": "NVIDIA — Financial Results for First Quarter Fiscal 2024",
+          "url": "https://investor.nvidia.com/news/press-release-details/2023/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2024/default.aspx"
+        },
+        {
+          "title": "Reuters — Nvidia shares soar as sales forecast jumps and AI booms",
+          "url": "https://www.reuters.com/technology/nvidia-forecasts-second-quarter-revenue-above-estimates-2023-05-24/"
+        },
+        {
+          "title": "Reuters — Nvidia's results spark nearly $300 billion rally in AI stocks",
+          "url": "https://www.reuters.com/technology/nvidias-results-spark-nearly-300-billion-rally-ai-stocks-2023-05-24/"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\nChatGPT 공개 이후 시장은 ‘AI에 얼마나 돈이 도는가’를 실적으로 확인하려 했습니다. 엔비디아는 AI 학습·추론용 GPU의 대표 공급사로 주목받았습니다.\n\n무슨 일\n2023년 5월 24일(미국 장 마감 후) 엔비디아는 분기 실적과 다음 분기 매출 전망을 발표했고, 로이터 등은 가이던스가 시장 예상을 크게 웃돌며 주가가 급등했다고 전했습니다. 공식 IR 보도자료로도 확인됩니다. 시장 반응은 25일 정규장까지 이어진 경우가 많아 24–25일을 묶습니다.\n\n시장·가격에 미친 영향\nAI risk-on 분위기를 키운 대표 실적 이벤트입니다. 주식·성장주 강세와 위험선호가 겹칠 때 암호화폐 분위기에도 간접적으로 도움이 될 수 있다는 학습용 마커입니다.",
+      "learn_points_ko": [
+        "장 마감 후 실적은 ‘발표일’과 ‘정규장 반영일’이 하루 차이일 수 있습니다.",
+        "AI 테마는 개별 기업 실적이 시장 전체 분위기를 바꿀 수 있습니다.",
+        "시바 전용 뉴스가 아니라 매크로·기술 위험선호 이슈로 봅니다."
+      ],
+      "learn_if_again_ko": "대형 반도체·AI 기업 실적이 ‘어닝 쇼크’로 보도되면, 가이던스(앞 전망)와 시장 반응을 구분해서 기록하세요.",
+      "similar_event_ids": [
+        "chatgpt-launch-2022",
+        "deepseek-ai-shock-jan-2025",
+        "spx-ath-jan-2024"
+      ],
+      "then_vs_now_ko": "ChatGPT(기대 시작) → 엔비디아 2023-05 실적(기대를 숫자로 확인) → DeepSeek 2025-01(비용·경쟁 우려로 AI 주식이 흔들림)으로 이어지는 AI 테마 삼단 비교에 자주 쓰입니다.",
+      "angles_ko": {
+        "price_market": "AI 관련 주식·위험선호를 키운 실적 쇼크로 인용됩니다.",
+        "news_reg": "엔비디아 IR·로이터 보도로 발표일과 요지를 확인합니다.",
+        "shib_vs_btc_macro": "매크로·전통금융·기술 이슈입니다. 시바만의 소식은 아닙니다. 그래도 위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "NVIDIA IR — Q1 FY2024 results",
+          "url": "https://investor.nvidia.com/news/press-release-details/2023/NVIDIA-Announces-Financial-Results-for-First-Quarter-Fiscal-2024/default.aspx",
+          "why_ko": "공식 실적 발표문입니다."
+        },
+        {
+          "title": "Reuters — Nvidia shares soar as AI booms",
+          "url": "https://www.reuters.com/technology/nvidia-forecasts-second-quarter-revenue-above-estimates-2023-05-24/",
+          "why_ko": "시장 반응 요지를 빠르게 볼 때 좋습니다."
+        }
+      ]
+    },
+    {
+      "id": "debt-ceiling-deal-jun-2023",
+      "title_ko": "미국 부채한도 타결",
+      "title_en": "US debt-ceiling deal (Fiscal Responsibility Act)",
+      "start": "2023-06-01",
+      "end": "2023-06-03",
+      "category": "markets",
+      "severity": 4,
+      "summary_ko": "2023년 미국 부채한도 위기 국면에서 의회가 Fiscal Responsibility Act를 처리하고(6/1 전후) 대통령이 2023-06-03 서명해 디폴트 우려를 일단 걷어낸 구간.",
+      "sources": [
+        {
+          "title": "Congress.gov — H.R.3746 Fiscal Responsibility Act of 2023",
+          "url": "https://www.congress.gov/bill/118th-congress/house-bill/3746/all-info"
+        },
+        {
+          "title": "AP — Senate gives final approval to debt ceiling deal",
+          "url": "https://apnews.com/article/debt-limit-biden-mccarthy-senate-house-default-b8c3566b0c9cb168d9706aa256e327f7"
+        },
+        {
+          "title": "Wikipedia — 2023 United States debt-ceiling crisis",
+          "url": "https://en.wikipedia.org/wiki/2023_United_States_debt-ceiling_crisis"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n미국 부채한도(debt ceiling) 협상이 길어지면 ‘정부 디폴트’ 우려가 금융시장을 흔들 수 있습니다. 2023년 봄에도 그런 긴장이 있었습니다.\n\n무슨 일\n의회는 Fiscal Responsibility Act of 2023(H.R.3746)을 처리했고, AP 등에 따르면 상원 최종 승인 후 대통령이 2023년 6월 3일 서명했습니다. 학습 마커는 처리·서명 구간인 6월 1–3일로 둡니다.\n\n시장·가격에 미친 영향\n‘최악의 시나리오(디폴트)’ 우려가 완화되면 위험자산 심리가 한숨 돌리는 경우가 있습니다. 정책·재정 매크로 마커로 분류합니다.",
+      "learn_points_ko": [
+        "부채한도 협상은 정치 이슈이자 시장 리스크입니다.",
+        "타결·서명 전에는 불확실성, 이후에는 ‘안도’가 보도되는 경우가 많습니다.",
+        "코인 전용 뉴스가 아니라 미국 재정·정책 매크로입니다."
+      ],
+      "learn_if_again_ko": "부채한도·셧다운 뉴스가 나오면, ‘합의 발표’와 ‘법 통과·서명’을 구분해 날짜를 기록하세요.",
+      "similar_event_ids": [
+        "liberation-day-tariffs-2025",
+        "fed-hiking-cycle-2022-23",
+        "spx-ath-jan-2024"
+      ],
+      "then_vs_now_ko": "2023년 부채한도 타결은 ‘미국 재정 리스크 완화’ 사례입니다. 이후 관세·무역 정책(2025 Liberation Day)처럼 정책 매크로가 위험자산을 흔드는 다른 축과 비교할 수 있습니다.",
+      "angles_ko": {
+        "price_market": "디폴트 우려 완화로 시장 긴장이 풀린 구간으로 자주 인용됩니다.",
+        "news_reg": "Congress.gov·서명일 보도가 1차 일정입니다.",
+        "shib_vs_btc_macro": "매크로·전통금융·기술 이슈입니다. 시바만의 소식은 아닙니다. 그래도 위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "Congress.gov — Fiscal Responsibility Act of 2023",
+          "url": "https://www.congress.gov/bill/118th-congress/house-bill/3746/all-info",
+          "why_ko": "법안 처리 정보를 공식으로 확인할 수 있습니다."
+        },
+        {
+          "title": "AP — Senate gives final approval to debt ceiling deal",
+          "url": "https://apnews.com/article/debt-limit-biden-mccarthy-senate-house-default-b8c3566b0c9cb168d9706aa256e327f7",
+          "why_ko": "최종 승인·서명 전후를 빠르게 훑기에 좋습니다."
         }
       ]
     },
@@ -1540,6 +2205,62 @@
           "title": "SEC Approves Bitcoin Exchange-Traded Products (ETPs)",
           "url": "https://www.congress.gov/crs-product/IF12573",
           "why_ko": "같은 사건을 다른 매체·문서로 교차 확인할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "spx-ath-jan-2024",
+      "title_ko": "S&P 신고가 복귀",
+      "title_en": "S&P 500 returns to all-time high",
+      "start": "2024-01-19",
+      "end": "2024-01-19",
+      "category": "markets",
+      "severity": 4,
+      "summary_ko": "S&P 500이 2024-01-19 종가 기준 약 2년 만의 사상 최고치 기록을 경신하며 2022 약세장 고점을 넘어선 날. ‘베어 탈출·신고가 복귀’ 학습 마커.",
+      "sources": [
+        {
+          "title": "Reuters — S&P 500 notches first record high close in 2 years",
+          "url": "https://www.reuters.com/markets/us/futures-climb-chips-megacaps-gain-corporate-earnings-tap-2024-01-19/"
+        },
+        {
+          "title": "Reuters — S&P 500 confirms bull market with record close",
+          "url": "https://www.reuters.com/markets/us/sp-500-confirms-bull-market-with-record-close-2024-01-19/"
+        },
+        {
+          "title": "Reuters — The S&P 500’s wild ride to an all-time high",
+          "url": "https://www.reuters.com/markets/us/sp-500s-wild-ride-an-all-time-high-2024-01-19/"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n2022년 약세장 이후 주식은 회복 국면에 들어갔지만, ‘이전 고점을 넘었는가’는 심리적으로 큰 이정표입니다.\n\n무슨 일\n로이터에 따르면 S&P 500은 2024년 1월 19일 종가로 약 2년 만의 신고가를 기록하며 직전 고점(2022년 초)을 넘어섰습니다.\n\n시장·가격에 미친 영향\n광의의 위험자산 자신감이 회복된 상징으로 읽힙니다. 2022년 10월 베어 바닥과 짝으로 보면 ‘바닥→신고가’ 사이클을 초보자가 익히기 좋습니다.",
+      "learn_points_ko": [
+        "신고가 복귀는 ‘약세장 종료’ 논의를 확인하는 이정표로 쓰이기도 합니다.",
+        "주식 강세 분위기는 암호화폐 위험선호와도 겹칠 수 있습니다.",
+        "고점만 보지 말고, 그 전 저점·매크로 배경을 같이 봅니다."
+      ],
+      "learn_if_again_ko": "지수가 ‘사상 최고’를 회복했다는 뉴스가 나오면, 직전 고점 날짜·약세장 저점과 함께 타임라인에 표시하세요.",
+      "similar_event_ids": [
+        "spx-bear-bottom-oct-2022",
+        "nvda-ai-earnings-may-2023",
+        "chatgpt-launch-2022",
+        "btc-ath-2021"
+      ],
+      "then_vs_now_ko": "2022년 10월 저점과 2024년 1월 신고가 복귀는 같은 사이클의 양 끝으로 자주 비교됩니다. AI 실적·연준 인하 기대 등 회복 요인도 함께 이야기됩니다.",
+      "angles_ko": {
+        "price_market": "광의 위험자산 자신감 회복의 상징적 날입니다.",
+        "news_reg": "로이터 등 종가 기준 신고가 보도가 1차 확인입니다.",
+        "shib_vs_btc_macro": "매크로·전통금융·기술 이슈입니다. 시바만의 소식은 아닙니다. 그래도 위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — first record high close in 2 years",
+          "url": "https://www.reuters.com/markets/us/futures-climb-chips-megacaps-gain-corporate-earnings-tap-2024-01-19/",
+          "why_ko": "당일 신고가 요지를 확인할 때 좋습니다."
+        },
+        {
+          "title": "Reuters — confirms bull market with record close",
+          "url": "https://www.reuters.com/markets/us/sp-500-confirms-bull-market-with-record-close-2024-01-19/",
+          "why_ko": "약세장·강세장 정의와 함께 읽을 때 도움이 됩니다."
         }
       ]
     },
@@ -1767,6 +2488,62 @@
       ]
     },
     {
+      "id": "yen-carry-unwind-aug-2024",
+      "title_ko": "엔캐리 청산 발작",
+      "title_en": "Yen carry-trade unwind shock (Aug 2024)",
+      "start": "2024-08-05",
+      "end": "2024-08-05",
+      "category": "markets",
+      "severity": 5,
+      "summary_ko": "2024-08-05 일본 증시가 하루 약 12%대 급락하는 등 글로벌 위험자산이 동시에 흔들린 날. BOJ 금리 인상·엔화 급등 속에 엔캐리 트레이드 청산이 증폭 요인으로 지목됨(BIS·CNBC 등).",
+      "sources": [
+        {
+          "title": "CNBC — Carry trades unwinding amid stock sell-off (2024-08-05)",
+          "url": "https://www.cnbc.com/2024/08/05/carry-trades-a-major-unwinding-is-underway-amid-a-stock-sell-off.html"
+        },
+        {
+          "title": "BIS Bulletin 90 — Market turbulence and carry trade unwind of August 2024",
+          "url": "https://www.bis.org/publications/bulletin-90-market-turbulence-and-carry-trade-unwind-august-2024.pdf"
+        },
+        {
+          "title": "FSG Journal — The Collapse of the Yen Carry Trade",
+          "url": "https://fsgjournal.nl/article/2024-09-25-the-collapse-of-the-yen-carry-trade"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n엔캐리 트레이드는 금리가 낮은 엔화를 빌려 다른 나라 자산에 투자하는 전략으로 자주 설명됩니다. 엔화가 갑자기 강해지거나 금리 차가 줄면 포지션을 한꺼번에 접는(청산) 압력이 커질 수 있습니다.\n\n무슨 일\n2024년 8월 5일 일본 증시가 하루 약 12%대 급락하는 등 글로벌 시장이 크게 흔들렸습니다. CNBC는 캐리 트레이드 청산이 진행 중이라고 전했고, BIS Bulletin도 같은 시기 변동성·캐리 청산을 분석합니다.\n\n시장·가격에 미친 영향\n환율·레버리지가 주식·위험자산을 한꺼번에 흔들 수 있음을 보여주는 마커입니다. 2022년 주식 바닥·강한 달러와 함께 ‘매크로가 코인 분위기를 흔든 날’로 비교하기 좋습니다.",
+      "learn_points_ko": [
+        "캐리 트레이드 청산은 한 나라 뉴스처럼 보여도 글로벌 위험자산에 퍼질 수 있습니다.",
+        "환율·금리 차가 바뀌면 레버리지 포지션이 한꺼번에 접힐 수 있습니다.",
+        "시바 전용 이슈가 아니라 글로벌 매크로 쇼크입니다."
+      ],
+      "learn_if_again_ko": "엔화·일본 증시가 동시에 급변한다는 뉴스가 나오면, ‘캐리 청산’ 언급과 미국·유럽 위험자산 반응을 같이 보세요.",
+      "similar_event_ids": [
+        "spx-bear-bottom-oct-2022",
+        "dxy-peak-sep-2022",
+        "covid-crash-fed-2020",
+        "liberation-day-tariffs-2025"
+      ],
+      "then_vs_now_ko": "2022년 가을이 ‘강한 달러·긴축’이었다면, 2024년 8월은 ‘엔화 급등·캐리 청산’이 위험자산을 흔든 사례로 대비됩니다.",
+      "angles_ko": {
+        "price_market": "글로벌 위험자산이 동시에 급변한 변동성 발작 구간입니다.",
+        "news_reg": "CNBC 당일 보도·BIS 분석으로 배경을 확인합니다.",
+        "shib_vs_btc_macro": "매크로·전통금융·기술 이슈입니다. 시바만의 소식은 아닙니다. 그래도 위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "CNBC — Carry trades unwinding (2024-08-05)",
+          "url": "https://www.cnbc.com/2024/08/05/carry-trades-a-major-unwinding-is-underway-amid-a-stock-sell-off.html",
+          "why_ko": "당일 시장 해석을 빠르게 볼 때 좋습니다."
+        },
+        {
+          "title": "BIS Bulletin 90 — August 2024 turbulence",
+          "url": "https://www.bis.org/publications/bulletin-90-market-turbulence-and-carry-trade-unwind-august-2024.pdf",
+          "why_ko": "국제결제은행의 분석 자료입니다."
+        }
+      ]
+    },
+    {
       "id": "fed-cutting-cycle-2024",
       "title_ko": "연준 금리 인하 사이클 개시(2024)",
       "title_en": "Fed begins cutting cycle (2024)",
@@ -1975,6 +2752,61 @@
       ]
     },
     {
+      "id": "deepseek-ai-shock-jan-2025",
+      "title_ko": "DeepSeek AI 쇼크",
+      "title_en": "DeepSeek AI market shock",
+      "start": "2025-01-27",
+      "end": "2025-01-27",
+      "category": "markets",
+      "severity": 4,
+      "summary_ko": "중국 DeepSeek AI 모델 비용·성능 논란이 확산되며 2025-01-27 엔비디아 등 AI 관련 주식이 급락한 날. ‘AI 낙관이 흔들릴 때’ 위험자산 반응을 보는 학습 마커.",
+      "sources": [
+        {
+          "title": "Reuters — DeepSeek sparks AI stock selloff; Nvidia posts record market-cap loss",
+          "url": "https://www.reuters.com/technology/chinas-deepseek-sets-off-ai-market-rout-2025-01-27/"
+        },
+        {
+          "title": "CNBC — How DeepSeek buzz sparked a massive Nasdaq sell-off",
+          "url": "https://www.cnbc.com/2025/01/27/how-the-buzz-around-chinese-ai-model-deepseek-sparked-a-massive-nasdaq-sell-off.html"
+        },
+        {
+          "title": "WSJ live coverage — Nvidia stock sinks in AI rout (2025-01-27)",
+          "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp500-nasdaq-live-01-27-2025"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\nAI 관련 주식은 ‘비싼 칩·큰 투자’ 가정 위에 올라간 경우가 많습니다. 더 저렴하게 비슷한 성능을 낸다는 이야기가 나오면, 그 가정이 흔들릴 수 있습니다.\n\n무슨 일\n2025년 1월 27일 로이터·CNBC·WSJ 등은 중국 DeepSeek 관련 buzz가 AI·반도체 주식 매도로 이어졌다고 전했습니다. 엔비디아 등 대표 AI 관련주가 크게 움직인 날로 기록됩니다.\n\n시장·가격에 미친 영향\nAI risk-on이 반대로 꺾일 때(위험회피)의 사례입니다. ChatGPT 공개·엔비디아 2023년 실적과 짝으로 보면 ‘기대→확인→흔들림’을 배우기 좋습니다.",
+      "learn_points_ko": [
+        "같은 AI 테마라도 호재(실적)와 악재(경쟁·비용 우려)의 시장 반응이 다릅니다.",
+        "기술 뉴스가 곧바로 코인 뉴스는 아니지만, 위험자산 분위기는 같이 움직일 수 있습니다.",
+        "헤드라인만 보지 말고, 어떤 가정(수요·마진·투자)이 흔들렸는지 봅니다."
+      ],
+      "learn_if_again_ko": "새 AI 모델·경쟁사 뉴스로 반도체주가 급락하면, ‘비용·성능 주장’과 ‘실제 수요 변화’를 구분해서 기록하세요.",
+      "similar_event_ids": [
+        "nvda-ai-earnings-may-2023",
+        "chatgpt-launch-2022",
+        "yen-carry-unwind-aug-2024"
+      ],
+      "then_vs_now_ko": "엔비디아 2023-05 실적이 AI 낙관을 키운 날이었다면, DeepSeek 2025-01은 그 낙관이 비용·경쟁 이슈로 흔들린 날로 대비됩니다.",
+      "angles_ko": {
+        "price_market": "AI 관련 주식 급락이 위험자산 심리를 흔든 날입니다.",
+        "news_reg": "로이터·CNBC·WSJ 당일 보도로 일정을 확인합니다.",
+        "shib_vs_btc_macro": "매크로·전통금융·기술 이슈입니다. 시바만의 소식은 아닙니다. 그래도 위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — DeepSeek sparks AI stock selloff",
+          "url": "https://www.reuters.com/technology/chinas-deepseek-sets-off-ai-market-rout-2025-01-27/",
+          "why_ko": "당일 매도 요지를 확인할 때 좋습니다."
+        },
+        {
+          "title": "CNBC — How DeepSeek buzz sparked Nasdaq sell-off",
+          "url": "https://www.cnbc.com/2025/01/27/how-the-buzz-around-chinese-ai-model-deepseek-sparked-a-massive-nasdaq-sell-off.html",
+          "why_ko": "배경 설명을 읽기 좋습니다."
+        }
+      ]
+    },
+    {
       "id": "us-strategic-btc-reserve-2025",
       "title_ko": "미국, Strategic Bitcoin Reserve EO",
       "title_en": "US Strategic Bitcoin Reserve executive order",
@@ -2073,7 +2905,9 @@
       "learn_if_again_ko": "관세·무역 뉴스가 나오면 적용 대상과 시행 시점을 먼저 정리해 보세요.",
       "similar_event_ids": [
         "trump-xi-truce-extension",
-        "trump-inauguration-2025"
+        "trump-inauguration-2025",
+        "yen-carry-unwind-aug-2024",
+        "debt-ceiling-deal-jun-2023"
       ],
       "then_vs_now_ko": "광범위 상호관세 발표로 무역·위험자산 변동성이 커진 사건입니다. 이후 미중 관세 휴전 연장(2026-09)과는 ‘긴장 → 일시 완화’ 흐름으로 이어져 비교할 수 있습니다.",
       "angles_ko": {
@@ -2658,7 +3492,10 @@
       "learn_if_again_ko": "유가·수송로 뉴스가 겹칠 때는 날짜별로 사건을 나눠 정리해 보세요.",
       "similar_event_ids": [
         "hormuz-single-digit-traffic",
-        "iran-war-hormuz-2026"
+        "iran-war-hormuz-2026",
+        "ukraine-oil-spike-mar-2022",
+        "opec-cut-oct-2022",
+        "opec-surprise-cut-apr-2023"
       ],
       "then_vs_now_ko": "호르무즈 통행 급감과 같은 시기에 에너지 인프라·유가 우려가 겹친 보도입니다. 한 이슈만 보기보다 날짜별로 사건을 나누면 헷갈림이 줄어듭니다.",
       "angles_ko": {
