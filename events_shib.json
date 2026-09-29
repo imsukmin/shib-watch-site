@@ -52,7 +52,7 @@
       "angles_ko": {
         "price_market": "상장 직후 관심·변동이 커질 수 있는 구간으로 보도됐습니다. CZ의 고위험 경고도 함께 나왔습니다.",
         "news_reg": "Innovation Zone 상장 공지·위험 고지가 핵심입니다.",
-        "shib_vs_btc_macro": "시바만의 상장 이슈입니다. 비트코인·매크로 사건과 직접 같지는 않습니다."
+        "shib_vs_btc_macro": "시바만의 상장 이슈입니다. 비트코인·매크로와는 층이 다릅니다(가격은 시장 분위기로 같이 움직일 수 있어요)."
       },
       "further_reading": [
         {
@@ -155,7 +155,7 @@
       "angles_ko": {
         "price_market": "유통에서 빠지는 물량으로 설명되지만, 가격과 1:1로 단정하지 마세요.",
         "news_reg": "소각 주소·본인 설명(권력의 중심이 되고 싶지 않다)이 보도에 나옵니다.",
-        "shib_vs_btc_macro": "시바 공급 이벤트입니다. 비트코인 매크로와는 별개입니다."
+        "shib_vs_btc_macro": "시바 공급 이벤트입니다. BTC 매크로와는 층이 다릅니다(가격은 시장 분위기로 같이 움직일 수 있어요)."
       },
       "further_reading": [
         {
@@ -204,7 +204,7 @@
       "angles_ko": {
         "price_market": "새 기능 출시 전후 변동이 있을 수 있으나 단정은 어렵습니다.",
         "news_reg": "무엇이 새로 가능해졌는지(스왑·스테이킹·BONE)를 기능 중심으로 정리하세요.",
-        "shib_vs_btc_macro": "시바 생태계 이슈입니다. BTC ETF·연준 뉴스와는 결이 다릅니다."
+        "shib_vs_btc_macro": "시바 생태계 이슈입니다. BTC ETF·연준 뉴스와는 층이 다릅니다(가격은 시장 분위기로 같이 움직일 수 있어요)."
       },
       "further_reading": [
         {
@@ -355,7 +355,7 @@
       "angles_ko": {
         "price_market": "ATH 인접 구간의 생태계 확장 뉴스로 자주 인용됩니다.",
         "news_reg": "공식 Medium·OpenSea가 1차 확인 경로입니다.",
-        "shib_vs_btc_macro": "시바 생태계(NFT) 이슈입니다. BTC·연준 뉴스와는 별개입니다."
+        "shib_vs_btc_macro": "시바 생태계(NFT) 이슈입니다. BTC·연준 뉴스와는 층이 다릅니다(가격은 시장 분위기로 같이 움직일 수 있어요)."
       },
       "further_reading": [
         {
@@ -544,7 +544,7 @@
       "angles_ko": {
         "price_market": "유틸리티·메타버스 내러티브로 관심이 커질 수 있습니다.",
         "news_reg": "Cointelegraph 보도의 수량·날짜를 확인하세요.",
-        "shib_vs_btc_macro": "시바 생태계 이슈입니다. BTC·매크로와는 별개입니다."
+        "shib_vs_btc_macro": "시바 생태계 이슈입니다. BTC·매크로와는 층이 다릅니다(가격은 시장 분위기로 같이 움직일 수 있어요)."
       },
       "further_reading": [
         {
@@ -635,7 +635,7 @@
       "angles_ko": {
         "price_market": "SHIB 결제 옵션은 수요 이야기로 읽힐 수 있으나 보장은 아닙니다.",
         "news_reg": "동일 Cointelegraph 기사의 후속 발표 부분을 확인하세요.",
-        "shib_vs_btc_macro": "시바 메타버스 유틸리티입니다. BTC 매크로와는 별개입니다."
+        "shib_vs_btc_macro": "시바 메타버스 유틸리티입니다. BTC 매크로와는 층이 다릅니다(가격은 시장 분위기로 같이 움직일 수 있어요)."
       },
       "further_reading": [
         {
@@ -677,7 +677,7 @@
       "angles_ko": {
         "price_market": "유틸리티 뉴스로 관심이 갈 수 있으나 가격 보장은 아닙니다.",
         "news_reg": "보도에 인용된 공식 발표·스토어를 확인하세요.",
-        "shib_vs_btc_macro": "시바 게임/생태계 이슈입니다. BTC 매크로와는 별개입니다."
+        "shib_vs_btc_macro": "시바 게임/생태계 이슈입니다. BTC 매크로와는 층이 다릅니다(가격은 시장 분위기로 같이 움직일 수 있어요)."
       },
       "further_reading": [
         {
@@ -723,7 +723,7 @@
       "angles_ko": {
         "price_market": "국내 접근성 확대는 단기 관심에 영향을 줄 수 있습니다.",
         "news_reg": "업비트 공식 공지가 1차 자료입니다.",
-        "shib_vs_btc_macro": "시바 국내 상장 이슈입니다. BTC 매크로와는 별개입니다."
+        "shib_vs_btc_macro": "시바 국내 상장 이슈입니다. BTC 매크로와는 층이 다릅니다(가격은 시장 분위기로 같이 움직일 수 있어요)."
       },
       "further_reading": [
         {
@@ -772,7 +772,7 @@
       "angles_ko": {
         "price_market": "테스트넷 시작만으로 가격을 단정하기 어렵습니다.",
         "news_reg": "테스트넷인지 메인넷인지 먼저 구분하세요.",
-        "shib_vs_btc_macro": "시바 L2 생태계 이슈입니다. BTC 매크로와 무관합니다."
+        "shib_vs_btc_macro": "시바 L2 생태계 이슈입니다. BTC 매크로와는 층이 다릅니다(가격은 시장 분위기로 같이 움직일 수 있어요)."
       },
       "further_reading": [
         {
@@ -830,7 +830,7 @@
       "angles_ko": {
         "price_market": "출시 직후 혼선이 시장 인식에 영향을 줄 수 있습니다.",
         "news_reg": "팀 공지와 보안·모니터링 보도를 함께 보세요.",
-        "shib_vs_btc_macro": "시바 L2 인프라 이슈입니다. BTC·연준 뉴스와는 별개입니다."
+        "shib_vs_btc_macro": "시바 L2 인프라 이슈입니다. BTC·연준 뉴스와는 층이 다릅니다(가격은 시장 분위기로 같이 움직일 수 있어요)."
       },
       "further_reading": [
         {
@@ -984,7 +984,7 @@
       "angles_ko": {
         "price_market": "새 토큰 거래 개시는 관심이 몰릴 수 있으나 SHIB과 동일하지 않습니다.",
         "news_reg": "공식 채널·컨트랙트 주소 확인이 핵심입니다.",
-        "shib_vs_btc_macro": "시바 생태계 토큰 이슈입니다. BTC 매크로와는 별개입니다."
+        "shib_vs_btc_macro": "시바 생태계 토큰 이슈입니다. BTC 매크로와는 층이 다릅니다(가격은 시장 분위기로 같이 움직일 수 있어요)."
       },
       "further_reading": [
         {
