@@ -3,8 +3,618 @@
   "timezone_note": "Event dates are calendar dates as reported (mostly US/ME/Asia news days). Chart overlays use UTC midnight of start/end unless noted. Prices come only from Binance klines CSV — never invented.",
   "data_choice": "Chart uses daily (1d) candles for 2017-08-17 → 2026-09-27 (~3.3k points) with rangeslider. Full-span hourly (~75k) would make Plotly HTML too heavy; hourly CSV kept for recent 1y (btc_usdt_1h_recent.csv) and original 2026 window (btc_usdt_1h.csv).",
   "hormuz_blockade_verdict": "NO single official 'Hormuz permanently sealed to all shipping' event; YES severe multi-month disruption from 2026-02-28 with Iranian transit warnings/attacks and a US naval blockade of Iranian ports. Traffic fell from ~125/day prewar to single digits at times in September 2026.",
-  "event_count": 69,
+  "event_count": 111,
   "events": [
+    {
+      "id": "bitcoin-whitepaper-2008",
+      "title_ko": "비트코인 백서 공개",
+      "title_en": "Bitcoin whitepaper published",
+      "start": "2008-10-31",
+      "end": "2008-10-31",
+      "category": "crypto",
+      "severity": 3,
+      "summary_ko": "Satoshi Nakamoto가 암호학 메일링 리스트에 'Bitcoin: A Peer-to-Peer Electronic Cash System' 백서를 공개. 신뢰 없이 P2P 전자화폐를 제안한 출발점. (참고: 바이낸스 BTCUSDT 일봉 차트는 2017-08-17부터라 이 사건은 차트 오버레이 이전·학습용 부록입니다.)",
+      "sources": [
+        {
+          "title": "Wikipedia — History of bitcoin",
+          "url": "https://en.wikipedia.org/wiki/History_of_bitcoin"
+        },
+        {
+          "title": "bitcoin.org whitepaper",
+          "url": "https://bitcoin.org/bitcoin.pdf"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n비트코인은 ‘은행 없이도 온라인에서 돈을 주고받을 수 있을까’라는 질문에서 출발한 프로젝트로 자주 소개됩니다.\n\n무슨 일\n2008년 10월 31일 Satoshi Nakamoto 명의로 ‘Bitcoin: A Peer-to-Peer Electronic Cash System’ 백서가 암호학 메일링 리스트에 공개됐습니다. 신뢰 기관 없이 P2P로 이중지불을 막는 전자화폐 설계를 제안한 출발점으로 기록됩니다.\n\n시장·가격에 미친 영향\n당시에는 거래소 시세가 거의 없었고, 이 사이트의 바이낸스 BTCUSDT 일봉도 2017-08-17부터입니다. 가격 숫자보다 ‘아이디어가 공개된 날’로 읽으면 됩니다.\n\n데이터 안내\n차트 오버레이 이전(pre_chart) 부록 사건입니다. 기본 차트(중요도 4+)에는 올리지 않습니다.",
+      "learn_points_ko": [
+        "일정(언제)과 가격 결과(그 뒤 얼마)를 섞어 단정하지 마세요.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "이 사이트 차트는 2017-08-17 이후라, 이전 사건은 부록·학습용으로 둡니다."
+      ],
+      "learn_if_again_ko": "비슷한 이정표가 다시 나오면, 공식 일정과 시장 반응을 나눠 기록해 두면 도움이 됩니다.",
+      "similar_event_ids": [
+        "bitcoin-genesis-2009",
+        "btc-halving-2012"
+      ],
+      "then_vs_now_ko": "차트 데이터 시작(2017-08-17) 이전 사건입니다. 이후 반감기·거래소 사고·ETF 등과 같은 ‘유형’으로 비교할 수는 있어도, 당시 가격 숫자를 이 사이트 CSV로 확인할 수는 없습니다.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "시바가 나오기 훨씬 전 시기입니다. 비트코인 초기 역사·제도 학습용으로 읽고, SHIB와의 직접 연결은 없다고 보는 편이 맞습니다."
+      },
+      "further_reading": [
+        {
+          "title": "Wikipedia — History of bitcoin",
+          "url": "https://en.wikipedia.org/wiki/History_of_bitcoin",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        },
+        {
+          "title": "bitcoin.org whitepaper",
+          "url": "https://bitcoin.org/bitcoin.pdf",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ],
+      "pre_chart": true
+    },
+    {
+      "id": "bitcoin-genesis-2009",
+      "title_ko": "비트코인 제네시스 블록",
+      "title_en": "Bitcoin genesis block mined",
+      "start": "2009-01-03",
+      "end": "2009-01-03",
+      "category": "crypto",
+      "severity": 3,
+      "summary_ko": "블록 0(제네시스) 채굴. 코인베이스에 The Times 헤드라인 'Chancellor on brink of second bailout for banks' 삽입. 네트워크 출범일. (참고: 바이낸스 BTCUSDT 일봉 차트는 2017-08-17부터라 이 사건은 차트 오버레이 이전·학습용 부록입니다.)",
+      "sources": [
+        {
+          "title": "Wikipedia — History of bitcoin",
+          "url": "https://en.wikipedia.org/wiki/History_of_bitcoin"
+        },
+        {
+          "title": "BitcoinWiki — Bitcoin history",
+          "url": "https://bitcoinwiki.org/wiki/Bitcoin_history"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n백서가 나온 뒤, 실제로 네트워크가 돌아가려면 첫 블록이 만들어져야 합니다.\n\n무슨 일\n2009년 1월 3일 블록 0(제네시스)이 채굴됐습니다. 코인베이스에 The Times 헤드라인 ‘Chancellor on brink of second bailout for banks’가 들어간 것으로 유명합니다. 네트워크 출범일로 자주 기념됩니다.\n\n시장·가격에 미친 영향\n초기에는 시장 가격 자료가 거의 없습니다. 이 사이트 CSV로는 확인할 수 없는 구간입니다.\n\n데이터 안내\n바이낸스 BTCUSDT 시작(2017-08-17) 이전 부록입니다. 학습·목록용이며 기본 차트 오버레이에는 올리지 않습니다.",
+      "learn_points_ko": [
+        "일정(언제)과 가격 결과(그 뒤 얼마)를 섞어 단정하지 마세요.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "이 사이트 차트는 2017-08-17 이후라, 이전 사건은 부록·학습용으로 둡니다."
+      ],
+      "learn_if_again_ko": "비슷한 이정표가 다시 나오면, 공식 일정과 시장 반응을 나눠 기록해 두면 도움이 됩니다.",
+      "similar_event_ids": [
+        "bitcoin-whitepaper-2008",
+        "bitcoin-pizza-day-2010"
+      ],
+      "then_vs_now_ko": "차트 데이터 시작(2017-08-17) 이전 사건입니다. 이후 반감기·거래소 사고·ETF 등과 같은 ‘유형’으로 비교할 수는 있어도, 당시 가격 숫자를 이 사이트 CSV로 확인할 수는 없습니다.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "시바가 나오기 훨씬 전 시기입니다. 비트코인 초기 역사·제도 학습용으로 읽고, SHIB와의 직접 연결은 없다고 보는 편이 맞습니다."
+      },
+      "further_reading": [
+        {
+          "title": "Wikipedia — History of bitcoin",
+          "url": "https://en.wikipedia.org/wiki/History_of_bitcoin",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        },
+        {
+          "title": "BitcoinWiki — Bitcoin history",
+          "url": "https://bitcoinwiki.org/wiki/Bitcoin_history",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ],
+      "pre_chart": true
+    },
+    {
+      "id": "bitcoin-pizza-day-2010",
+      "title_ko": "비트코인 피자 데이(1만 BTC)",
+      "title_en": "Bitcoin Pizza Day (10,000 BTC for pizzas)",
+      "start": "2010-05-22",
+      "end": "2010-05-22",
+      "category": "crypto",
+      "severity": 2,
+      "summary_ko": "Laszlo Hanyecz가 피자 2판에 10,000 BTC를 지불한 것으로 기록된 초기 실물 거래. 매년 5월 22일 '피자 데이'로 기념. (참고: 바이낸스 BTCUSDT 일봉 차트는 2017-08-17부터라 이 사건은 차트 오버레이 이전·학습용 부록입니다.)",
+      "sources": [
+        {
+          "title": "Wikipedia — History of bitcoin",
+          "url": "https://en.wikipedia.org/wiki/History_of_bitcoin"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n초기에 비트코인이 ‘실제로 물건과 교환될 수 있는가’를 보여주는 일화가 필요합니다.\n\n무슨 일\n2010년 5월 22일 Laszlo Hanyecz가 피자 2판에 10,000 BTC를 지불한 거래로 기록됩니다. 매년 같은 날을 ‘피자 데이’로 기념하는 커뮤니티 전통이 됐습니다.\n\n시장·가격에 미친 영향\n상징·교육용 사건입니다. 당시 달러 환산액은 출처마다 달라 여기서는 가격을 새로 적지 않습니다.\n\n데이터 안내\n차트 시작 이전 부록입니다.",
+      "learn_points_ko": [
+        "일정(언제)과 가격 결과(그 뒤 얼마)를 섞어 단정하지 마세요.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "이 사이트 차트는 2017-08-17 이후라, 이전 사건은 부록·학습용으로 둡니다."
+      ],
+      "learn_if_again_ko": "비슷한 이정표가 다시 나오면, 공식 일정과 시장 반응을 나눠 기록해 두면 도움이 됩니다.",
+      "similar_event_ids": [
+        "bitcoin-genesis-2009",
+        "mtgox-launch-2010"
+      ],
+      "then_vs_now_ko": "차트 데이터 시작(2017-08-17) 이전 사건입니다. 이후 반감기·거래소 사고·ETF 등과 같은 ‘유형’으로 비교할 수는 있어도, 당시 가격 숫자를 이 사이트 CSV로 확인할 수는 없습니다.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "시바가 나오기 훨씬 전 시기입니다. 비트코인 초기 역사·제도 학습용으로 읽고, SHIB와의 직접 연결은 없다고 보는 편이 맞습니다."
+      },
+      "further_reading": [
+        {
+          "title": "Wikipedia — History of bitcoin",
+          "url": "https://en.wikipedia.org/wiki/History_of_bitcoin",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ],
+      "pre_chart": true
+    },
+    {
+      "id": "mtgox-launch-2010",
+      "title_ko": "Mt. Gox 거래소 출범",
+      "title_en": "Mt. Gox exchange launches",
+      "start": "2010-07-18",
+      "end": "2010-07-18",
+      "category": "crypto",
+      "severity": 2,
+      "summary_ko": "초기 대표 BTC 거래소 Mt. Gox 출범. 이후 수년간 전 세계 BTC 거래의 상당 비중을 담당하다가 2014년 붕괴. (참고: 바이낸스 BTCUSDT 일봉 차트는 2017-08-17부터라 이 사건은 차트 오버레이 이전·학습용 부록입니다.)",
+      "sources": [
+        {
+          "title": "Wikipedia — Mt. Gox",
+          "url": "https://en.wikipedia.org/wiki/Mt._Gox"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n개인 간 직거래만으로는 가격 발견·유동성이 어렵습니다. 초기에 거래소가 등장합니다.\n\n무슨 일\n2010년 7월 18일경 Mt. Gox가 거래소 서비스를 시작한 것으로 Wikipedia 등에 정리됩니다. 이후 수년간 전 세계 BTC 거래의 큰 비중을 차지했다가 2014년 붕괴로 이어집니다.\n\n시장·가격에 미친 영향\n출범 자체는 ‘가격 급등 뉴스’라기보다 인프라 시작점입니다. 붕괴·상환은 별도 사건으로 이어집니다.\n\n데이터 안내\n차트 시작 이전 부록입니다.",
+      "learn_points_ko": [
+        "일정(언제)과 가격 결과(그 뒤 얼마)를 섞어 단정하지 마세요.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "이 사이트 차트는 2017-08-17 이후라, 이전 사건은 부록·학습용으로 둡니다."
+      ],
+      "learn_if_again_ko": "비슷한 이정표가 다시 나오면, 공식 일정과 시장 반응을 나눠 기록해 두면 도움이 됩니다.",
+      "similar_event_ids": [
+        "mtgox-collapse-2014",
+        "mtgox-repayments-2024"
+      ],
+      "then_vs_now_ko": "차트 데이터 시작(2017-08-17) 이전 사건입니다. 이후 반감기·거래소 사고·ETF 등과 같은 ‘유형’으로 비교할 수는 있어도, 당시 가격 숫자를 이 사이트 CSV로 확인할 수는 없습니다.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "시바가 나오기 훨씬 전 시기입니다. 비트코인 초기 역사·제도 학습용으로 읽고, SHIB와의 직접 연결은 없다고 보는 편이 맞습니다."
+      },
+      "further_reading": [
+        {
+          "title": "Wikipedia — Mt. Gox",
+          "url": "https://en.wikipedia.org/wiki/Mt._Gox",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ],
+      "pre_chart": true
+    },
+    {
+      "id": "btc-halving-2012",
+      "title_ko": "비트코인 1차 반감기",
+      "title_en": "Bitcoin 1st halving",
+      "start": "2012-11-28",
+      "end": "2012-11-28",
+      "category": "crypto",
+      "severity": 2,
+      "summary_ko": "블록 210,000에서 블록 보상이 50→25 BTC로 감소. 프로토콜에 내장된 첫 반감기. (참고: 바이낸스 BTCUSDT 일봉 차트는 2017-08-17부터라 이 사건은 차트 오버레이 이전·학습용 부록입니다.)",
+      "sources": [
+        {
+          "title": "BitcoinWiki — Bitcoin history",
+          "url": "https://bitcoinwiki.org/wiki/Bitcoin_history"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n비트코인은 약 4년마다 새로 만들어지는 코인 보상(블록 보상)이 절반으로 줄어드는 규칙이 있습니다.\n\n무슨 일\n2012년 11월 28일 블록 210,000에서 보상이 50→25 BTC로 줄었습니다. 프로토콜에 내장된 첫 반감기입니다.\n\n시장·가격에 미친 영향\n반감기 = 공급 일정입니다. 이후 가격은 수요·유동성과 함께 봐야 하며, 이 사이트 CSV 구간은 아닙니다.\n\n데이터 안내\n차트 시작 이전 부록. 이후 2016·2020·2024 반감기와 시리즈로 연결됩니다.",
+      "learn_points_ko": [
+        "일정(언제)과 가격 결과(그 뒤 얼마)를 섞어 단정하지 마세요.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "이 사이트 차트는 2017-08-17 이후라, 이전 사건은 부록·학습용으로 둡니다."
+      ],
+      "learn_if_again_ko": "비슷한 이정표가 다시 나오면, 공식 일정과 시장 반응을 나눠 기록해 두면 도움이 됩니다.",
+      "similar_event_ids": [
+        "btc-halving-2016",
+        "btc-halving-2020",
+        "btc-halving-2024"
+      ],
+      "then_vs_now_ko": "차트 데이터 시작(2017-08-17) 이전 사건입니다. 이후 반감기·거래소 사고·ETF 등과 같은 ‘유형’으로 비교할 수는 있어도, 당시 가격 숫자를 이 사이트 CSV로 확인할 수는 없습니다.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "시바가 나오기 훨씬 전 시기입니다. 비트코인 초기 역사·제도 학습용으로 읽고, SHIB와의 직접 연결은 없다고 보는 편이 맞습니다."
+      },
+      "further_reading": [
+        {
+          "title": "BitcoinWiki — Bitcoin history",
+          "url": "https://bitcoinwiki.org/wiki/Bitcoin_history",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ],
+      "pre_chart": true
+    },
+    {
+      "id": "cyprus-bailin-btc-2013",
+      "title_ko": "키프로스 은행 위기와 BTC 관심",
+      "title_en": "Cyprus bank crisis & early BTC interest",
+      "start": "2013-03-16",
+      "end": "2013-03-25",
+      "category": "markets",
+      "severity": 2,
+      "summary_ko": "보도·공개 자료 기준(세부 일정·수치는 원문 재확인 권장). 키프로스 예금 헤어컷(bail-in) 논의 시기. '은행 리스크 ↔ BTC 관심' 서사의 초기 사례로 자주 인용. 직접 인과는 과장될 수 있어 교육용 마커. (참고: 바이낸스 BTCUSDT 일봉 차트는 2017-08-17부터라 이 사건은 차트 오버레이 이전·학습용 부록입니다.)",
+      "sources": [
+        {
+          "title": "Wikipedia — 2012–2013 Cypriot financial crisis",
+          "url": "https://en.wikipedia.org/wiki/2012%E2%80%932013_Cypriot_financial_crisis"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n은행 예금에 손실(bail-in)이 논의되면, ‘은행에 맡긴 돈의 다른 자산’ 이야기가 커질 수 있습니다.\n\n무슨 일\n2013년 3월 중순 키프로스 예금 헤어컷 논의~합의 구간이 자주 인용됩니다. ‘은행 리스크 ↔ 초기 BTC 관심’ 서사의 교육용 마커로 쓰이지만, 직접 인과는 과장될 수 있습니다.\n\n시장·가격에 미친 영향\nBTC 직접 뉴스라기보다 매크로 배경입니다. 가격은 이 사이트 CSV에 없고, 숫자도 발명하지 않습니다.\n\n데이터 안내\n차트 시작 이전·확인 권장(needs_verify) 부록입니다.",
+      "learn_points_ko": [
+        "세부 날짜·수치가 출처마다 다를 수 있어, 원문 확인이 우선입니다.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "이 사이트 차트는 2017-08-17 이후라, 이전 사건은 부록·학습용으로 둡니다."
+      ],
+      "learn_if_again_ko": "비슷한 뉴스가 나오면 1차 자료(공시·법원·거래소·정부)부터 확인하고, 숫자·날짜는 재인용 전에 대조하세요.",
+      "similar_event_ids": [
+        "covid-crash-fed-2020",
+        "svb-collapse-2023"
+      ],
+      "then_vs_now_ko": "차트 데이터 시작(2017-08-17) 이전 사건입니다. 이후 반감기·거래소 사고·ETF 등과 같은 ‘유형’으로 비교할 수는 있어도, 당시 가격 숫자를 이 사이트 CSV로 확인할 수는 없습니다.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "시바가 나오기 훨씬 전 시기입니다. 비트코인 초기 역사·제도 학습용으로 읽고, SHIB와의 직접 연결은 없다고 보는 편이 맞습니다."
+      },
+      "further_reading": [
+        {
+          "title": "Wikipedia — 2012–2013 Cypriot financial crisis",
+          "url": "https://en.wikipedia.org/wiki/2012%E2%80%932013_Cypriot_financial_crisis",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ],
+      "pre_chart": true,
+      "needs_verify": true
+    },
+    {
+      "id": "silk-road-seizure-2013",
+      "title_ko": "실크로드 압수·폐쇄",
+      "title_en": "FBI seizes Silk Road",
+      "start": "2013-10-01",
+      "end": "2013-10-01",
+      "category": "policy",
+      "severity": 2,
+      "summary_ko": "보도·공개 자료 기준(세부 일정·수치는 원문 재확인 권장). FBI가 다크웹 마켓플레이스 Silk Road를 폐쇄·운영자 체포. 초기 BTC '범죄 이미지'를 고착시킨 사건. 가격은 급락 후 회복했다는 기록이 많음(가격은 CSV 없음 — 부록). (참고: 바이낸스 BTCUSDT 일봉 차트는 2017-08-17부터라 이 사건은 차트 오버레이 이전·학습용 부록입니다.)",
+      "sources": [
+        {
+          "title": "Wikipedia — Silk Road (marketplace)",
+          "url": "https://en.wikipedia.org/wiki/Silk_Road_(marketplace)"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n초기에 비트코인은 다크웹 거래와 함께 언급되며 ‘범죄 이미지’ 논쟁이 커졌습니다.\n\n무슨 일\n2013년 10월 1일 전후 FBI가 Silk Road를 폐쇄하고 운영자를 체포했다는 기록이 있습니다. 초기 규제·이미지 사건의 대표 사례로 자주 꼽힙니다.\n\n시장·가격에 미친 영향\n급락 후 회복 이야기가 많지만, 이 사이트에는 당시 일봉 CSV가 없어 가격을 새로 적지 않습니다.\n\n데이터 안내\n차트 시작 이전 부록(확인 권장).",
+      "learn_points_ko": [
+        "세부 날짜·수치가 출처마다 다를 수 있어, 원문 확인이 우선입니다.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "이 사이트 차트는 2017-08-17 이후라, 이전 사건은 부록·학습용으로 둡니다."
+      ],
+      "learn_if_again_ko": "비슷한 뉴스가 나오면 1차 자료(공시·법원·거래소·정부)부터 확인하고, 숫자·날짜는 재인용 전에 대조하세요.",
+      "similar_event_ids": [
+        "china-crypto-ban-2021",
+        "tornado-cash-ofac-2022"
+      ],
+      "then_vs_now_ko": "차트 데이터 시작(2017-08-17) 이전 사건입니다. 이후 반감기·거래소 사고·ETF 등과 같은 ‘유형’으로 비교할 수는 있어도, 당시 가격 숫자를 이 사이트 CSV로 확인할 수는 없습니다.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "시바가 나오기 훨씬 전 시기입니다. 비트코인 초기 역사·제도 학습용으로 읽고, SHIB와의 직접 연결은 없다고 보는 편이 맞습니다."
+      },
+      "further_reading": [
+        {
+          "title": "Wikipedia — Silk Road (marketplace)",
+          "url": "https://en.wikipedia.org/wiki/Silk_Road_(marketplace)",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ],
+      "pre_chart": true,
+      "needs_verify": true
+    },
+    {
+      "id": "btc-ath-near-1k-2013",
+      "title_ko": "2013년 BTC ~$1,000대 고점권",
+      "title_en": "2013 BTC approach ~$1,000",
+      "start": "2013-11-29",
+      "end": "2013-11-29",
+      "category": "markets",
+      "severity": 2,
+      "summary_ko": "보도·공개 자료 기준(세부 일정·수치는 원문 재확인 권장). 2013년 말 비트코인이 약 1,000달러대에 근접·도달한 초기 사이클 고점권으로 자주 인용. 거래소·집계마다 날짜·고점이 다름. (참고: 바이낸스 BTCUSDT 일봉 차트는 2017-08-17부터라 이 사건은 차트 오버레이 이전·학습용 부록입니다.)",
+      "sources": [
+        {
+          "title": "CoinMarketCap Academy — Bitcoin price history timeline",
+          "url": "https://coinmarketcap.com/academy/article/bitcoin-price-history-and-events-timeline"
+        },
+        {
+          "title": "Wikipedia — History of bitcoin",
+          "url": "https://en.wikipedia.org/wiki/History_of_bitcoin"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n2013년은 초기 사이클에서 ‘네 자릿수 달러’ 이야기가 나온 시기로 자주 정리됩니다.\n\n무슨 일\n2013년 11월 말 전후 비트코인이 약 1,000달러대에 근접·도달했다는 타임라인이 많습니다. 거래소·집계마다 날짜·고점이 다릅니다.\n\n시장·가격에 미친 영향\n정확한 고점 숫자는 출처마다 달라 여기서는 확정 가격을 쓰지 않습니다. 학습용 고점권 마커입니다.\n\n데이터 안내\n차트 시작 이전 부록(needs_verify).",
+      "learn_points_ko": [
+        "세부 날짜·수치가 출처마다 다를 수 있어, 원문 확인이 우선입니다.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "이 사이트 차트는 2017-08-17 이후라, 이전 사건은 부록·학습용으로 둡니다."
+      ],
+      "learn_if_again_ko": "비슷한 뉴스가 나오면 1차 자료(공시·법원·거래소·정부)부터 확인하고, 숫자·날짜는 재인용 전에 대조하세요.",
+      "similar_event_ids": [
+        "btc-ath-2017",
+        "btc-ath-2021"
+      ],
+      "then_vs_now_ko": "차트 데이터 시작(2017-08-17) 이전 사건입니다. 이후 반감기·거래소 사고·ETF 등과 같은 ‘유형’으로 비교할 수는 있어도, 당시 가격 숫자를 이 사이트 CSV로 확인할 수는 없습니다.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "시바가 나오기 훨씬 전 시기입니다. 비트코인 초기 역사·제도 학습용으로 읽고, SHIB와의 직접 연결은 없다고 보는 편이 맞습니다."
+      },
+      "further_reading": [
+        {
+          "title": "CoinMarketCap Academy — Bitcoin price history timeline",
+          "url": "https://coinmarketcap.com/academy/article/bitcoin-price-history-and-events-timeline",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        },
+        {
+          "title": "Wikipedia — History of bitcoin",
+          "url": "https://en.wikipedia.org/wiki/History_of_bitcoin",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ],
+      "pre_chart": true,
+      "needs_verify": true
+    },
+    {
+      "id": "mtgox-collapse-2014",
+      "title_ko": "Mt. Gox 붕괴·파산",
+      "title_en": "Mt. Gox collapse & bankruptcy",
+      "start": "2014-02-24",
+      "end": "2014-02-28",
+      "category": "crypto",
+      "severity": 3,
+      "summary_ko": "당시 최대 BTC 거래소 Mt. Gox가 출금 중단 후 일본에서 파산 신청. 고객 BTC 수십만 개 분실 보고. 'Not your keys, not your coins' 교훈의 상징. (참고: 바이낸스 BTCUSDT 일봉 차트는 2017-08-17부터라 이 사건은 차트 오버레이 이전·학습용 부록입니다.)",
+      "sources": [
+        {
+          "title": "Wikipedia — Mt. Gox",
+          "url": "https://en.wikipedia.org/wiki/Mt._Gox"
+        },
+        {
+          "title": "Bloomberg — Mt. Gox Seeks Bankruptcy After $480 Million Bitcoin Loss",
+          "url": "https://www.bloomberg.com/news/articles/2014-02-28/mt-gox-exchange-files-for-bankruptcy"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n당시 세계 최대급 BTC 거래소였던 Mt. Gox의 신뢰 붕괴는 ‘거래소 리스크’ 교과서 사례입니다.\n\n무슨 일\n2014년 2월 출금 중단 후 거래 중단·사이트 다운, 이어 2월 28일 도쿄에서 파산 보호를 신청했다는 기록이 있습니다. 고객 BTC 대규모 분실이 보고됐습니다. ‘Not your keys, not your coins’ 교훈과 자주 연결됩니다.\n\n시장·가격에 미친 영향\n업계 신뢰 충격의 상징입니다. 이 사이트 CSV 이전 구간이라 가격은 적지 않습니다. 상환 개시는 2024년 `mtgox-repayments-2024`와 이어집니다.\n\n데이터 안내\n차트 시작 이전 부록(아이코닉·목록용, 기본 오버레이 임계 미만).",
+      "learn_points_ko": [
+        "일정(언제)과 가격 결과(그 뒤 얼마)를 섞어 단정하지 마세요.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "이 사이트 차트는 2017-08-17 이후라, 이전 사건은 부록·학습용으로 둡니다."
+      ],
+      "learn_if_again_ko": "비슷한 이정표가 다시 나오면, 공식 일정과 시장 반응을 나눠 기록해 두면 도움이 됩니다.",
+      "similar_event_ids": [
+        "mtgox-launch-2010",
+        "mtgox-repayments-2024",
+        "ftx-collapse-2022"
+      ],
+      "then_vs_now_ko": "차트 데이터 시작(2017-08-17) 이전 사건입니다. 이후 반감기·거래소 사고·ETF 등과 같은 ‘유형’으로 비교할 수는 있어도, 당시 가격 숫자를 이 사이트 CSV로 확인할 수는 없습니다.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "시바가 나오기 훨씬 전 시기입니다. 비트코인 초기 역사·제도 학습용으로 읽고, SHIB와의 직접 연결은 없다고 보는 편이 맞습니다."
+      },
+      "further_reading": [
+        {
+          "title": "Wikipedia — Mt. Gox",
+          "url": "https://en.wikipedia.org/wiki/Mt._Gox",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        },
+        {
+          "title": "Bloomberg — Mt. Gox Seeks Bankruptcy After $480 Million Bitcoin Loss",
+          "url": "https://www.bloomberg.com/news/articles/2014-02-28/mt-gox-exchange-files-for-bankruptcy",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ],
+      "pre_chart": true
+    },
+    {
+      "id": "btc-halving-2016",
+      "title_ko": "비트코인 2차 반감기",
+      "title_en": "Bitcoin 2nd halving",
+      "start": "2016-07-09",
+      "end": "2016-07-09",
+      "category": "crypto",
+      "severity": 2,
+      "summary_ko": "블록 420,000에서 블록 보상 25→12.5 BTC. 2017 강세장 직전 반감기로 자주 이야기됨. (참고: 바이낸스 BTCUSDT 일봉 차트는 2017-08-17부터라 이 사건은 차트 오버레이 이전·학습용 부록입니다.)",
+      "sources": [
+        {
+          "title": "BitcoinWiki — Bitcoin history",
+          "url": "https://bitcoinwiki.org/wiki/Bitcoin_history"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n두 번째 반감기는 2017년 강세장 직전 공급 일정으로 자주 이야기됩니다.\n\n무슨 일\n2016년 7월 9일 블록 420,000에서 보상이 25→12.5 BTC로 줄었습니다.\n\n시장·가격에 미친 영향\n일정 자체와 이후 가격은 별개입니다. 차트 CSV는 약 1년 뒤부터입니다.\n\n데이터 안내\n차트 시작 이전 부록.",
+      "learn_points_ko": [
+        "일정(언제)과 가격 결과(그 뒤 얼마)를 섞어 단정하지 마세요.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "이 사이트 차트는 2017-08-17 이후라, 이전 사건은 부록·학습용으로 둡니다."
+      ],
+      "learn_if_again_ko": "비슷한 이정표가 다시 나오면, 공식 일정과 시장 반응을 나눠 기록해 두면 도움이 됩니다.",
+      "similar_event_ids": [
+        "btc-halving-2012",
+        "btc-halving-2020",
+        "btc-ath-2017"
+      ],
+      "then_vs_now_ko": "차트 데이터 시작(2017-08-17) 이전 사건입니다. 이후 반감기·거래소 사고·ETF 등과 같은 ‘유형’으로 비교할 수는 있어도, 당시 가격 숫자를 이 사이트 CSV로 확인할 수는 없습니다.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "시바가 나오기 훨씬 전 시기입니다. 비트코인 초기 역사·제도 학습용으로 읽고, SHIB와의 직접 연결은 없다고 보는 편이 맞습니다."
+      },
+      "further_reading": [
+        {
+          "title": "BitcoinWiki — Bitcoin history",
+          "url": "https://bitcoinwiki.org/wiki/Bitcoin_history",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ],
+      "pre_chart": true
+    },
+    {
+      "id": "bitfinex-hack-2016",
+      "title_ko": "Bitfinex 해킹(~12만 BTC)",
+      "title_en": "Bitfinex hack (~120k BTC)",
+      "start": "2016-08-02",
+      "end": "2016-08-02",
+      "category": "crypto",
+      "severity": 2,
+      "summary_ko": "보도·공개 자료 기준(세부 일정·수치는 원문 재확인 권장). Bitfinex에서 약 119,756 BTC가 유출된 대형 해킹. 이후 채권(IOU)·보상 구조 등이 이어진 CeFi 보안 사고 사례. (참고: 바이낸스 BTCUSDT 일봉 차트는 2017-08-17부터라 이 사건은 차트 오버레이 이전·학습용 부록입니다.)",
+      "sources": [
+        {
+          "title": "Wikipedia — Bitfinex",
+          "url": "https://en.wikipedia.org/wiki/Bitfinex"
+        },
+        {
+          "title": "Reuters — Bitfinex hacked (2016)",
+          "url": "https://www.reuters.com/article/us-bitfinex-hacked-hongkong-idUSKCN10E0KP/"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n거래소 핫월렛·보안 실패는 반복되는 CeFi 리스크 유형입니다.\n\n무슨 일\n2016년 8월 2일 Bitfinex에서 약 12만 BTC 규모 유출이 보고된 대형 해킹으로 정리됩니다. 이후 채권(IOU)·보상 구조 논의가 이어졌습니다.\n\n시장·가격에 미친 영향\n수량·세부 일정은 출처를 대조하세요. 차트 CSV 이전이라 가격은 발명하지 않습니다.\n\n데이터 안내\n차트 시작 이전 부록(needs_verify).",
+      "learn_points_ko": [
+        "세부 날짜·수치가 출처마다 다를 수 있어, 원문 확인이 우선입니다.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "이 사이트 차트는 2017-08-17 이후라, 이전 사건은 부록·학습용으로 둡니다."
+      ],
+      "learn_if_again_ko": "비슷한 뉴스가 나오면 1차 자료(공시·법원·거래소·정부)부터 확인하고, 숫자·날짜는 재인용 전에 대조하세요.",
+      "similar_event_ids": [
+        "mtgox-collapse-2014",
+        "coincheck-hack-2018",
+        "ftx-collapse-2022"
+      ],
+      "then_vs_now_ko": "차트 데이터 시작(2017-08-17) 이전 사건입니다. 이후 반감기·거래소 사고·ETF 등과 같은 ‘유형’으로 비교할 수는 있어도, 당시 가격 숫자를 이 사이트 CSV로 확인할 수는 없습니다.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "시바가 나오기 훨씬 전 시기입니다. 비트코인 초기 역사·제도 학습용으로 읽고, SHIB와의 직접 연결은 없다고 보는 편이 맞습니다."
+      },
+      "further_reading": [
+        {
+          "title": "Wikipedia — Bitfinex",
+          "url": "https://en.wikipedia.org/wiki/Bitfinex",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        },
+        {
+          "title": "Reuters — Bitfinex hacked (2016)",
+          "url": "https://www.reuters.com/article/us-bitfinex-hacked-hongkong-idUSKCN10E0KP/",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ],
+      "pre_chart": true,
+      "needs_verify": true
+    },
+    {
+      "id": "winklevoss-etf-reject-2017",
+      "title_ko": "SEC, Winklevoss 현물 BTC ETF 거절",
+      "title_en": "SEC rejects Winklevoss Bitcoin ETF",
+      "start": "2017-03-10",
+      "end": "2017-03-10",
+      "category": "policy",
+      "severity": 2,
+      "summary_ko": "보도·공개 자료 기준(세부 일정·수치는 원문 재확인 권장). SEC가 Winklevoss 형제의 현물 BTC ETF를 거절(시장 조작·감시 우려). 이후 수년간 반복된 현물 ETF 거절의 초기 이정표. 2024년 승인까지 긴 여정의 출발점. (참고: 바이낸스 BTCUSDT 일봉 차트는 2017-08-17부터라 이 사건은 차트 오버레이 이전·학습용 부록입니다.)",
+      "sources": [
+        {
+          "title": "Federal Register — SEC disapproval of Winklevoss Bitcoin Trust listing",
+          "url": "https://www.federalregister.gov/documents/2017/03/16/2017-05213/self-regulatory-organizations-bats-bzx-exchange-inc-order-disapproving-a-proposed-rule-change-as"
+        },
+        {
+          "title": "Bloomberg — SEC rejects Winklevoss Bitcoin ETF",
+          "url": "https://www.bloomberg.com/news/articles/2017-03-10/sec-rejects-bitcoin-etf-setting-digital-currency-up-for-big-drop"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n현물 비트코인 ETF는 수년간 거절과 재신청이 반복된 뒤 2024년에야 승인됩니다.\n\n무슨 일\n2017년 3월 10일 SEC가 Winklevoss Bitcoin Trust의 거래소 상장 규칙 변경을 거절했습니다(시장 조작·감시 우려). Federal Register·Bloomberg 등에 일정이 남습니다.\n\n시장·가격에 미친 영향\n당시 가격 반응 보도는 많지만, 이 사이트 차트는 아직 시작 전입니다. ‘거절 → 이후 승인’ 여정의 출발점으로 읽습니다.\n\n데이터 안내\n차트 시작(2017-08-17) 이전 부록.",
+      "learn_points_ko": [
+        "세부 날짜·수치가 출처마다 다를 수 있어, 원문 확인이 우선입니다.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "이 사이트 차트는 2017-08-17 이후라, 이전 사건은 부록·학습용으로 둡니다."
+      ],
+      "learn_if_again_ko": "비슷한 뉴스가 나오면 1차 자료(공시·법원·거래소·정부)부터 확인하고, 숫자·날짜는 재인용 전에 대조하세요.",
+      "similar_event_ids": [
+        "spot-btc-etf-approval-2024",
+        "grayscale-gbtc-court-win-2023",
+        "blackrock-spot-etf-filing-2023"
+      ],
+      "then_vs_now_ko": "차트 데이터 시작(2017-08-17) 이전 사건입니다. 이후 반감기·거래소 사고·ETF 등과 같은 ‘유형’으로 비교할 수는 있어도, 당시 가격 숫자를 이 사이트 CSV로 확인할 수는 없습니다.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "시바가 나오기 훨씬 전 시기입니다. 비트코인 초기 역사·제도 학습용으로 읽고, SHIB와의 직접 연결은 없다고 보는 편이 맞습니다."
+      },
+      "further_reading": [
+        {
+          "title": "Federal Register — SEC disapproval of Winklevoss Bitcoin Trust listing",
+          "url": "https://www.federalregister.gov/documents/2017/03/16/2017-05213/self-regulatory-organizations-bats-bzx-exchange-inc-order-disapproving-a-proposed-rule-change-as",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        },
+        {
+          "title": "Bloomberg — SEC rejects Winklevoss Bitcoin ETF",
+          "url": "https://www.bloomberg.com/news/articles/2017-03-10/sec-rejects-bitcoin-etf-setting-digital-currency-up-for-big-drop",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ],
+      "pre_chart": true,
+      "needs_verify": true
+    },
+    {
+      "id": "bitcoin-cash-fork-2017",
+      "title_ko": "비트코인 캐시(BCH) 하드포크",
+      "title_en": "Bitcoin Cash hard fork",
+      "start": "2017-08-01",
+      "end": "2017-08-01",
+      "category": "crypto",
+      "severity": 2,
+      "summary_ko": "블록 478,558 부근에서 BCH가 분리. 온체인 확장(큰 블록) vs SegWit 진영 갈등의 결과. 차트 데이터 시작(8/17) 직전 사건. (참고: 바이낸스 BTCUSDT 일봉 차트는 2017-08-17부터라 이 사건은 차트 오버레이 이전·학습용 부록입니다.)",
+      "sources": [
+        {
+          "title": "CoinDesk — Bitcoin Cash first block",
+          "url": "https://www.coindesk.com/markets/2017/08/01/bitcoin-cash-just-mined-its-first-block-making-blockchain-split-official"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n온체인 확장(큰 블록) vs SegWit 진영 갈등이 하드포크로 이어졌습니다.\n\n무슨 일\n2017년 8월 1일 블록 478,558 부근에서 Bitcoin Cash(BCH)가 분리됐습니다. 차트 데이터 시작(8/17) 직전 사건입니다.\n\n시장·가격에 미친 영향\n포크는 프로토콜·커뮤니티 분기입니다. 가격 영향은 거래소·시장마다 달랐고, 이 사이트 본격 시계열은 며칠 뒤부터입니다.\n\n데이터 안내\npre_chart(차트 시작 16일 전). SegWit(8/24)과 짝으로 보세요.",
+      "learn_points_ko": [
+        "일정(언제)과 가격 결과(그 뒤 얼마)를 섞어 단정하지 마세요.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "이 사이트 차트는 2017-08-17 이후라, 이전 사건은 부록·학습용으로 둡니다."
+      ],
+      "learn_if_again_ko": "비슷한 이정표가 다시 나오면, 공식 일정과 시장 반응을 나눠 기록해 두면 도움이 됩니다.",
+      "similar_event_ids": [
+        "segwit-activation-2017",
+        "btc-taproot-activation-2021"
+      ],
+      "then_vs_now_ko": "차트 데이터 시작(2017-08-17) 이전 사건입니다. 이후 반감기·거래소 사고·ETF 등과 같은 ‘유형’으로 비교할 수는 있어도, 당시 가격 숫자를 이 사이트 CSV로 확인할 수는 없습니다.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "시바가 나오기 훨씬 전 시기입니다. 비트코인 초기 역사·제도 학습용으로 읽고, SHIB와의 직접 연결은 없다고 보는 편이 맞습니다."
+      },
+      "further_reading": [
+        {
+          "title": "CoinDesk — Bitcoin Cash first block",
+          "url": "https://www.coindesk.com/markets/2017/08/01/bitcoin-cash-just-mined-its-first-block-making-blockchain-split-official",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ],
+      "pre_chart": true
+    },
     {
       "id": "binance-btcusdt-listing",
       "title_ko": "바이낸스 BTCUSDT 상장(데이터 시작)",
@@ -29,7 +639,6 @@
       ],
       "learn_if_again_ko": "새 거래소·새 가격 출처를 쓸 때도 ‘어느 날부터 기록이 있는지’를 먼저 확인하면 좋습니다.",
       "similar_event_ids": [
-        "binance-shibusdt-listing",
         "btc-ath-2017"
       ],
       "then_vs_now_ko": "그때는 이 사이트가 쓰는 비트코인 하루 가격 기록이 막 시작된 시점입니다. 지금 차트·사건 비교도 모두 그 이후 바이낸스 가격만 씁니다. 시바 쪽은 훨씬 늦은 2021년 바이낸스 상장부터 기록이 있습니다.",
@@ -43,6 +652,140 @@
           "title": "Binance Vision — BTCUSDT 일봉 klines API",
           "url": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&startTime=0&limit=1",
           "why_ko": "이 사이트가 쓰는 가격 데이터의 출처를 직접 확인할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "segwit-activation-2017",
+      "title_ko": "SegWit 활성화",
+      "title_en": "SegWit activates on Bitcoin",
+      "start": "2017-08-24",
+      "end": "2017-08-24",
+      "category": "crypto",
+      "severity": 3,
+      "summary_ko": "BIP141 Segregated Witness가 블록 481,824에서 활성화. 트랜잭션 가단성(malleability) 개선·라이트닝 등 2계층 기반. BCH 포크 직후 소프트포크 업그레이드.",
+      "sources": [
+        {
+          "title": "Cointelegraph — BCH first birthday / SegWit note",
+          "url": "https://cointelegraph.com/features/bitcoin-cash-celebrates-its-first-birthday-from-a-hard-fork-to-easy-going"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\nSegWit은 트랜잭션 가단성(malleability)을 개선하고 라이트닝 등 2계층의 기반이 된 소프트포크입니다.\n\n무슨 일\n2017년 8월 24일 BIP141 Segregated Witness가 블록 481,824에서 활성화됐습니다. BCH 하드포크 직후의 업그레이드입니다.\n\n시장·가격에 미친 영향\n가격보다 기술·용량·수수료 구조 축의 이벤트입니다. 차트 구간에는 들어옵니다.",
+      "learn_points_ko": [
+        "일정(언제)과 가격 결과(그 뒤 얼마)를 섞어 단정하지 마세요.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 이정표가 다시 나오면, 공식 일정과 시장 반응을 나눠 기록해 두면 도움이 됩니다.",
+      "similar_event_ids": [
+        "bitcoin-cash-fork-2017",
+        "btc-taproot-activation-2021"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "Cointelegraph — BCH first birthday / SegWit note",
+          "url": "https://cointelegraph.com/features/bitcoin-cash-celebrates-its-first-birthday-from-a-hard-fork-to-easy-going",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ]
+    },
+    {
+      "id": "china-ico-ban-2017",
+      "title_ko": "중국 ICO·거래소 금지(2017)",
+      "title_en": "China bans ICOs and domestic exchanges",
+      "start": "2017-09-04",
+      "end": "2017-09-15",
+      "category": "policy",
+      "severity": 5,
+      "summary_ko": "중국 당국이 ICO를 금지하고 국내 암호화폐 거래소 폐쇄를 지시. 2017 붐 속 규제 쇼크로, 이후 채굴·거래 단속(2021)의 전조.",
+      "sources": [
+        {
+          "title": "sFOX — Timeline of Bitcoin in China",
+          "url": "https://www.sfox.com/coin-analysis/a-timeline-of-bitcoin-in-china/"
+        },
+        {
+          "title": "bitcoincompleteguide timeline",
+          "url": "https://bitcoincompleteguide.com/bitcoin-timeline/"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n2017년 ICO 붐 속에서 중국 당국의 규제는 전 세계 시장 심리에 큰 충격을 준 사례로 자주 꼽힙니다.\n\n무슨 일\n2017년 9월 4일 전후 ICO 금지와 이어진 국내 거래소 폐쇄 지시가 타임라인에 정리됩니다. 이후 2021년 채굴·거래 단속의 전조로도 읽힙니다.\n\n시장·가격에 미친 영향\n규제 쇼크는 변동성을 키울 수 있습니다. 종료일은 대략적이며, 일봉은 차트에서 확인하세요.",
+      "learn_points_ko": [
+        "일정(언제)과 가격 결과(그 뒤 얼마)를 섞어 단정하지 마세요.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 이정표가 다시 나오면, 공식 일정과 시장 반응을 나눠 기록해 두면 도움이 됩니다.",
+      "similar_event_ids": [
+        "china-mining-crackdown-2021",
+        "china-crypto-ban-2021",
+        "btc-ath-2017"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "sFOX — Timeline of Bitcoin in China",
+          "url": "https://www.sfox.com/coin-analysis/a-timeline-of-bitcoin-in-china/",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        },
+        {
+          "title": "bitcoincompleteguide timeline",
+          "url": "https://bitcoincompleteguide.com/bitcoin-timeline/",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ]
+    },
+    {
+      "id": "cboe-btc-futures-2017",
+      "title_ko": "Cboe 비트코인 선물 상장",
+      "title_en": "Cboe Bitcoin futures launch",
+      "start": "2017-12-10",
+      "end": "2017-12-10",
+      "category": "markets",
+      "severity": 3,
+      "summary_ko": "Cboe(CBOE)가 XBT 비트코인 선물을 개시. CME(12/18)보다 며칠 빠른 규제 선물 데뷔. 2017 고점권과 겹침.",
+      "sources": [
+        {
+          "title": "CNBC — Bitcoin futures set to trade on Cboe",
+          "url": "https://www.cnbc.com/2017/12/10/bitcoin-futures-set-to-trade-on-cboe-sunday-evening.html"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n규제 거래소 선물은 기관이 현물 없이 가격에 노출될 경로를 엽니다.\n\n무슨 일\n2017년 12월 10일 Cboe(CBOE)가 XBT 비트코인 선물을 개시했습니다. CME(12/18)보다 며칠 빠른 규제 선물 데뷔로, 2017 고점권과 겹칩니다.\n\n시장·가격에 미친 영향\n상장일≠가격 방향입니다. 기존 CME 사건과 구분해 학습하세요.",
+      "learn_points_ko": [
+        "일정(언제)과 가격 결과(그 뒤 얼마)를 섞어 단정하지 마세요.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 이정표가 다시 나오면, 공식 일정과 시장 반응을 나눠 기록해 두면 도움이 됩니다.",
+      "similar_event_ids": [
+        "cme-btc-futures-2017",
+        "bito-futures-etf-2021",
+        "btc-ath-2017"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "CNBC — Bitcoin futures set to trade on Cboe",
+          "url": "https://www.cnbc.com/2017/12/10/bitcoin-futures-set-to-trade-on-cboe-sunday-evening.html",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
         }
       ]
     },
@@ -211,6 +954,48 @@
       ]
     },
     {
+      "id": "coincheck-hack-2018",
+      "title_ko": "Coincheck 해킹(NEM ~5.3억$)",
+      "title_en": "Coincheck hack (NEM theft)",
+      "start": "2018-01-26",
+      "end": "2018-01-26",
+      "category": "crypto",
+      "severity": 4,
+      "summary_ko": "일본 Coincheck에서 NEM 약 5억 달러 규모 유출. 핫월렛 보안 실패 사례. BTC 직접 도난은 아니나 거래소 리스크·일본 규제 강화 서사에 영향.",
+      "sources": [
+        {
+          "title": "CNBC — Japanese exchange loses $500M+",
+          "url": "https://www.cnbc.com/2018/01/26/japanese-cryptocurrency-exchange-loses-more-than-500-million-to-hackers.html"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n거래소 보안 사고는 자산 종류와 무관하게 ‘맡긴 곳 리스크’를 보여 줍니다.\n\n무슨 일\n2018년 1월 26일 일본 Coincheck에서 NEM 약 5억 달러 규모 유출이 보도됐습니다. BTC 직접 도난은 아니나 거래소 리스크·일본 규제 강화 서사에 영향을 줬습니다.\n\n시장·가격에 미친 영향\n2018 약세장 초입과 겹칩니다. 심리·규제 학습용으로 봅니다.",
+      "learn_points_ko": [
+        "일정(언제)과 가격 결과(그 뒤 얼마)를 섞어 단정하지 마세요.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 이정표가 다시 나오면, 공식 일정과 시장 반응을 나눠 기록해 두면 도움이 됩니다.",
+      "similar_event_ids": [
+        "mtgox-collapse-2014",
+        "bitfinex-hack-2016",
+        "crypto-winter-2018"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "CNBC — Japanese exchange loses $500M+",
+          "url": "https://www.cnbc.com/2018/01/26/japanese-cryptocurrency-exchange-loses-more-than-500-million-to-hackers.html",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ]
+    },
+    {
       "id": "square-cash-btc-2018",
       "title_ko": "Square Cash 앱 BTC 매매 확대",
       "title_en": "Square Cash app expands Bitcoin trading",
@@ -259,6 +1044,345 @@
           "why_ko": "같은 사건을 다른 매체로 교차 확인할 수 있습니다."
         }
       ]
+    },
+    {
+      "id": "bakkt-announcement-2018",
+      "title_ko": "ICE, Bakkt 출범 발표",
+      "title_en": "ICE announces Bakkt",
+      "start": "2018-08-03",
+      "end": "2018-08-03",
+      "category": "markets",
+      "severity": 3,
+      "summary_ko": "보도·공개 자료 기준(세부 일정·수치는 원문 재확인 권장). NYSE 모기업 ICE가 기관용 디지털자산 플랫폼 Bakkt 계획을 발표. 실물인도 선물·커스터디 인프라 서사의 시작. 실제 선물 개시는 2019-09.",
+      "sources": [
+        {
+          "title": "ICE — Announces Bakkt",
+          "url": "https://ir.theice.com/press/news-details/2018/Intercontinental-Exchange-Announces-Bakkt/default.aspx"
+        },
+        {
+          "title": "CNBC — ICE launches Bakkt",
+          "url": "https://www.cnbc.com/2018/08/03/ice-owner-of-nyse-to-launch-bakkt-a-platform-to-buy-and-sell-bitcoin.html"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\nNYSE 모기업 ICE가 기관용 디지털자산 인프라를 예고하면서 ‘실물인도·커스터디’ 서사가 커졌습니다.\n\n무슨 일\n2018년 8월 3일 ICE가 Bakkt 계획을 발표했습니다. 실제 실물인도 BTC 선물 개시는 2019-09입니다.\n\n시장·가격에 미친 영향\n발표≠즉시 거래입니다. 후속 `bakkt-btc-futures-2019`와 짝으로 보세요.",
+      "learn_points_ko": [
+        "세부 날짜·수치가 출처마다 다를 수 있어, 원문 확인이 우선입니다.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 뉴스가 나오면 1차 자료(공시·법원·거래소·정부)부터 확인하고, 숫자·날짜는 재인용 전에 대조하세요.",
+      "similar_event_ids": [
+        "bakkt-btc-futures-2019",
+        "cme-btc-futures-2017"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "ICE — Announces Bakkt",
+          "url": "https://ir.theice.com/press/news-details/2018/Intercontinental-Exchange-Announces-Bakkt/default.aspx",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        },
+        {
+          "title": "CNBC — ICE launches Bakkt",
+          "url": "https://www.cnbc.com/2018/08/03/ice-owner-of-nyse-to-launch-bakkt-a-platform-to-buy-and-sell-bitcoin.html",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ],
+      "needs_verify": true
+    },
+    {
+      "id": "btc-bear-bottom-2018",
+      "title_ko": "2018 약세장 저점권(~$3k대)",
+      "title_en": "2018 bear-market bottom zone (~$3k)",
+      "start": "2018-12-15",
+      "end": "2018-12-15",
+      "category": "markets",
+      "severity": 4,
+      "summary_ko": "바이낸스 BTCUSDT 일봉 기준 2018년 최저가일(2018-12-15, low≈확인은 CSV). 2017 고점 대비 깊은 약세장 바닥권. 기존 crypto-winter-2018과 짝.",
+      "sources": [
+        {
+          "title": "Binance BTCUSDT daily klines (package CSV)",
+          "url": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&startTime=0&limit=1"
+        },
+        {
+          "title": "bitcoincompleteguide — Bear market bottoms",
+          "url": "https://bitcoincompleteguide.com/bitcoin-timeline/"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n2017 고점 이후 긴 하락(암호화폐 겨울)의 ‘바닥권’을 표시하면 사이클 학습에 도움이 됩니다.\n\n무슨 일\n이 패키지 바이낸스 BTCUSDT 일봉 기준 2018년 최저가일(low)은 2018-12-15입니다. 기존 `crypto-winter-2018`과 짝입니다.\n\n시장·가격에 미친 영향\n저점 날짜는 CSV low 기준입니다. 본문에서 달러 고점을 새로 만들지 않고, 차트·CSV로 확인하세요.",
+      "learn_points_ko": [
+        "일정(언제)과 가격 결과(그 뒤 얼마)를 섞어 단정하지 마세요.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 이정표가 다시 나오면, 공식 일정과 시장 반응을 나눠 기록해 두면 도움이 됩니다.",
+      "similar_event_ids": [
+        "crypto-winter-2018",
+        "btc-ath-2017",
+        "btc-recovery-high-2019"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "Binance BTCUSDT daily klines (package CSV)",
+          "url": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&startTime=0&limit=1",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        },
+        {
+          "title": "bitcoincompleteguide — Bear market bottoms",
+          "url": "https://bitcoincompleteguide.com/bitcoin-timeline/",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ]
+    },
+    {
+      "id": "facebook-libra-2019",
+      "title_ko": "페이스북 Libra(디엠) 발표",
+      "title_en": "Facebook unveils Libra",
+      "start": "2019-06-18",
+      "end": "2019-06-18",
+      "category": "policy",
+      "severity": 4,
+      "summary_ko": "Facebook이 스테이블코인 프로젝트 Libra를 공개. 전 세계 규제 당국의 암호화폐·스테이블코인 감시가 급격히 강화된 계기. 이후 Diem으로 개명 후 사실상 철수.",
+      "sources": [
+        {
+          "title": "bitcoincompleteguide — Facebook unveils Libra",
+          "url": "https://bitcoincompleteguide.com/bitcoin-timeline/"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n대형 플랫폼의 스테이블코인 구상은 규제 당국의 관심을 급격히 키웠습니다.\n\n무슨 일\n2019년 6월 18일 Facebook이 Libra(이후 Diem)를 공개했습니다. 전 세계 암호화폐·스테이블코인 감시가 강화된 계기로 자주 평가됩니다.\n\n시장·가격에 미친 영향\nBTC 직접 자산은 아니나 규제·CBDC 담론에 큰 영향이 있었습니다. 이후 프로젝트는 사실상 철수했습니다.",
+      "learn_points_ko": [
+        "일정(언제)과 가격 결과(그 뒤 얼마)를 섞어 단정하지 마세요.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 이정표가 다시 나오면, 공식 일정과 시장 반응을 나눠 기록해 두면 도움이 됩니다.",
+      "similar_event_ids": [
+        "us-infra-bill-crypto-2021",
+        "spot-btc-etf-approval-2024"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "bitcoincompleteguide — Facebook unveils Libra",
+          "url": "https://bitcoincompleteguide.com/bitcoin-timeline/",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ]
+    },
+    {
+      "id": "btc-recovery-high-2019",
+      "title_ko": "2019년 반등 고점권(~$13k대)",
+      "title_en": "2019 recovery local high (~$13k)",
+      "start": "2019-06-26",
+      "end": "2019-06-26",
+      "category": "markets",
+      "severity": 3,
+      "summary_ko": "바이낸스 일봉 기준 2019년 5–7월 구간 고점일(2019-06-26). Libra 발표(6/18) 전후 반등권. 가격은 CSV만.",
+      "sources": [
+        {
+          "title": "Binance BTCUSDT daily klines (package CSV)",
+          "url": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&startTime=0&limit=1"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n2018 바닥 이후 2019년 반등 구간을 표시하면 ‘약세장 후 회복’ 학습에 도움이 됩니다.\n\n무슨 일\n바이낸스 일봉 기준 2019년 고점일(high)은 2019-06-26입니다. Libra 발표(6/18) 전후와 겹칩니다.\n\n시장·가격에 미친 영향\n가격은 CSV로만 확인하세요. 고점권 마커이며 미래 수익을 보장하지 않습니다.",
+      "learn_points_ko": [
+        "일정(언제)과 가격 결과(그 뒤 얼마)를 섞어 단정하지 마세요.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 이정표가 다시 나오면, 공식 일정과 시장 반응을 나눠 기록해 두면 도움이 됩니다.",
+      "similar_event_ids": [
+        "btc-bear-bottom-2018",
+        "facebook-libra-2019",
+        "covid-crash-fed-2020"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "Binance BTCUSDT daily klines (package CSV)",
+          "url": "https://data-api.binance.vision/api/v3/klines?symbol=BTCUSDT&interval=1d&startTime=0&limit=1",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ]
+    },
+    {
+      "id": "bakkt-btc-futures-2019",
+      "title_ko": "Bakkt 실물인도 BTC 선물 개시",
+      "title_en": "Bakkt physically settled BTC futures launch",
+      "start": "2019-09-23",
+      "end": "2019-09-23",
+      "category": "markets",
+      "severity": 3,
+      "summary_ko": "ICE의 Bakkt가 규제 하에 실물인도 비트코인 선물을 개시. 초기 거래량은 적었으나 기관 인프라 이정표.",
+      "sources": [
+        {
+          "title": "Bakkt Blog — We have liftoff",
+          "url": "https://medium.com/bakkt-blog/we-have-liftoff-an-important-milestone-for-the-industry-7b9843fb53eb"
+        },
+        {
+          "title": "Bitget Academy milestones",
+          "url": "https://www.bitgetapp.com/academy/A-compendium-of-crypto-important-milestones"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n현금결제(CME)와 달리 실물인도 선물은 실제 BTC 인도와 커스터디 인프라와 연결됩니다.\n\n무슨 일\n2019년 9월 23일 Bakkt가 규제 하에 실물인도 비트코인 선물을 개시했습니다. 초기 거래량은 적었다는 평가가 많지만 기관 인프라 이정표로 남습니다.\n\n시장·가격에 미친 영향\n상장≠즉시 대규모 유동성입니다. CME 현금결제 선물과 구분해 보세요.",
+      "learn_points_ko": [
+        "일정(언제)과 가격 결과(그 뒤 얼마)를 섞어 단정하지 마세요.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 이정표가 다시 나오면, 공식 일정과 시장 반응을 나눠 기록해 두면 도움이 됩니다.",
+      "similar_event_ids": [
+        "bakkt-announcement-2018",
+        "cme-btc-futures-2017",
+        "bito-futures-etf-2021"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "Bakkt Blog — We have liftoff",
+          "url": "https://medium.com/bakkt-blog/we-have-liftoff-an-important-milestone-for-the-industry-7b9843fb53eb",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        },
+        {
+          "title": "Bitget Academy milestones",
+          "url": "https://www.bitgetapp.com/academy/A-compendium-of-crypto-important-milestones",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ]
+    },
+    {
+      "id": "xi-blockchain-speech-2019",
+      "title_ko": "시진핑, 블록체인 육성 발언",
+      "title_en": "Xi Jinping endorses blockchain development",
+      "start": "2019-10-24",
+      "end": "2019-10-24",
+      "category": "policy",
+      "severity": 3,
+      "summary_ko": "시진핑 주석이 블록체인 기술 육성을 강조. 암호화폐 거래 금지와 별개로 '체인 기술' 지원 서사. BTC·알트 단기 심리에 영향을 줬다는 보도가 많음.",
+      "sources": [
+        {
+          "title": "CoinMarketCap Academy timeline",
+          "url": "https://coinmarketcap.com/academy/article/bitcoin-price-history-and-events-timeline"
+        },
+        {
+          "title": "sFOX China timeline",
+          "url": "https://www.sfox.com/coin-analysis/a-timeline-of-bitcoin-in-china/"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n중국은 암호화폐 거래를 막으면서도 ‘블록체인 기술’은 육성한다는 이중 메시지로 자주 설명됩니다.\n\n무슨 일\n2019년 10월 24일 시진핑 주석이 블록체인 기술 육성을 강조한 발언이 타임라인에 잡힙니다. 암호화폐 합법화와는 다릅니다.\n\n시장·가격에 미친 영향\n단기 심리에 영향을 줬다는 보도가 많습니다. 이후 채굴·거래 단속(2021)과 같은 줄기로 비교하세요.",
+      "learn_points_ko": [
+        "일정(언제)과 가격 결과(그 뒤 얼마)를 섞어 단정하지 마세요.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 이정표가 다시 나오면, 공식 일정과 시장 반응을 나눠 기록해 두면 도움이 됩니다.",
+      "similar_event_ids": [
+        "china-ico-ban-2017",
+        "china-mining-crackdown-2021",
+        "china-crypto-ban-2021"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "CoinMarketCap Academy timeline",
+          "url": "https://coinmarketcap.com/academy/article/bitcoin-price-history-and-events-timeline",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        },
+        {
+          "title": "sFOX China timeline",
+          "url": "https://www.sfox.com/coin-analysis/a-timeline-of-bitcoin-in-china/",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ]
+    },
+    {
+      "id": "grayscale-gbtc-sec-reporting-2020",
+      "title_ko": "Grayscale GBTC, SEC 보고 기업화",
+      "title_en": "Grayscale GBTC becomes SEC reporting",
+      "start": "2020-01-21",
+      "end": "2020-01-21",
+      "category": "crypto",
+      "severity": 3,
+      "summary_ko": "보도·공개 자료 기준(세부 일정·수치는 원문 재확인 권장). Grayscale가 BTC 신탁을 SEC 보고 체계로 전환하고 OTC(핑크시트) 거래 기반을 강화. 이후 현물 ETF 전환 소송·2024 승인의 전사.",
+      "sources": [
+        {
+          "title": "Reuters — Bitcoin wild ride timeline (GBTC context)",
+          "url": "https://www.reuters.com/technology/bitcoins-wild-ride-toward-100000-2024-11-21/"
+        },
+        {
+          "title": "SEC EDGAR — Grayscale Bitcoin Trust filings",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001588489"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\nGBTC는 현물 ETF 전환 전, 신탁·OTC 경로로 BTC 노출을 제공한 대표 상품입니다.\n\n무슨 일\n2020년 1월 전후 Grayscale가 BTC 신탁을 SEC 보고 체계로 전환·강화했다는 타임라인이 있습니다. 이후 ETF 전환 소송·2024 승인의 전사로 읽힙니다.\n\n시장·가격에 미친 영향\n정확한 전환 시각은 공시를 다시 확인하세요(needs_verify). 상품 구조≠현물 ETF입니다.",
+      "learn_points_ko": [
+        "세부 날짜·수치가 출처마다 다를 수 있어, 원문 확인이 우선입니다.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 뉴스가 나오면 1차 자료(공시·법원·거래소·정부)부터 확인하고, 숫자·날짜는 재인용 전에 대조하세요.",
+      "similar_event_ids": [
+        "grayscale-gbtc-court-win-2023",
+        "spot-btc-etf-approval-2024",
+        "blackrock-spot-etf-filing-2023"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — Bitcoin wild ride timeline (GBTC context)",
+          "url": "https://www.reuters.com/technology/bitcoins-wild-ride-toward-100000-2024-11-21/",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        },
+        {
+          "title": "SEC EDGAR — Grayscale Bitcoin Trust filings",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001588489",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ],
+      "needs_verify": true
     },
     {
       "id": "covid-crash-fed-2020",
@@ -394,6 +1518,57 @@
       ]
     },
     {
+      "id": "paul-tudor-jones-btc-2020",
+      "title_ko": "Paul Tudor Jones, BTC 매수·인플레 헤지 서한",
+      "title_en": "Paul Tudor Jones Bitcoin inflation-hedge letter",
+      "start": "2020-05-07",
+      "end": "2020-05-07",
+      "category": "crypto",
+      "severity": 4,
+      "summary_ko": "보도·공개 자료 기준(세부 일정·수치는 원문 재확인 권장). 매크로 헤지펀드 매니저 Paul Tudor Jones가 'Great Monetary Inflation' 서한 등으로 BTC를 인플레이션·통화팽창 헤지 후보로 공개. 기관 내러티브의 초기 신호.",
+      "sources": [
+        {
+          "title": "Bloomberg — Paul Tudor Jones buys bitcoin (inflation hedge context)",
+          "url": "https://www.bloomberg.com/news/articles/2020-05-07/paul-tudor-jones-buys-bitcoin-says-he-s-looking-at-inflation"
+        },
+        {
+          "title": "CNBC — Paul Tudor Jones bullish on bitcoin",
+          "url": "https://www.cnbc.com/2020/05/07/paul-tudor-jones-is-bullish-on-bitcoin-even-more-now-rally-still-in-the-first-inning.html"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n매크로 헤지펀드 매니저의 BTC 언급은 ‘인플레·통화팽창 헤지’ 서사를 키운 사례로 자주 인용됩니다.\n\n무슨 일\n2020년 5월 7일 전후 Paul Tudor Jones가 BTC를 매수·인플레 헤지 관점에서 언급했다는 보도가 나왔습니다(Bloomberg·CNBC).\n\n시장·가격에 미친 영향\n유명인·매니저 발언≠투자 권유입니다. 3차 반감기(5/11) 직전과 겹칩니다.",
+      "learn_points_ko": [
+        "세부 날짜·수치가 출처마다 다를 수 있어, 원문 확인이 우선입니다.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 뉴스가 나오면 1차 자료(공시·법원·거래소·정부)부터 확인하고, 숫자·날짜는 재인용 전에 대조하세요.",
+      "similar_event_ids": [
+        "microstrategy-btc-treasury-2020",
+        "btc-halving-2020"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "Bloomberg — Paul Tudor Jones buys bitcoin (inflation hedge context)",
+          "url": "https://www.bloomberg.com/news/articles/2020-05-07/paul-tudor-jones-buys-bitcoin-says-he-s-looking-at-inflation",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        },
+        {
+          "title": "CNBC — Paul Tudor Jones bullish on bitcoin",
+          "url": "https://www.cnbc.com/2020/05/07/paul-tudor-jones-is-bullish-on-bitcoin-even-more-now-rally-still-in-the-first-inning.html",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ],
+      "needs_verify": true
+    },
+    {
       "id": "btc-halving-2020",
       "title_ko": "비트코인 3차 반감기",
       "title_en": "Bitcoin 3rd halving",
@@ -491,6 +1666,48 @@
           "title": "SEC 8-K — MicroStrategy",
           "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312520215604/d921849d8k.htm",
           "why_ko": "공시 원문으로 표현과 날짜를 대조할 때 쓰기 좋습니다."
+        }
+      ]
+    },
+    {
+      "id": "square-btc-treasury-2020",
+      "title_ko": "Square, BTC 5,000만$ 재무 매입",
+      "title_en": "Square invests $50M in Bitcoin",
+      "start": "2020-10-08",
+      "end": "2020-10-08",
+      "category": "crypto",
+      "severity": 4,
+      "summary_ko": "Square(현 Block)가 약 4,709 BTC를 총 5,000만 달러에 매입했다고 발표. Cash App 매매·MicroStrategy 재무 채택과 같은 시기의 상장사 재무 매입 사례.",
+      "sources": [
+        {
+          "title": "Square press — Invests $50 Million in Bitcoin",
+          "url": "https://squareup.com/us/en/press/2020-bitcoin-investment"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n상장사 재무(treasury) BTC 매입은 MicroStrategy와 같은 시기에 확대된 트렌드입니다.\n\n무슨 일\n2020년 10월 8일 Square(현 Block)가 약 4,709 BTC를 총 5,000만 달러에 매입했다고 발표했습니다(보도·보도자료).\n\n시장·가격에 미친 영향\n회사 매수는 수요 뉴스입니다. 수량·금액은 공식 발표를 확인하세요.",
+      "learn_points_ko": [
+        "일정(언제)과 가격 결과(그 뒤 얼마)를 섞어 단정하지 마세요.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 이정표가 다시 나오면, 공식 일정과 시장 반응을 나눠 기록해 두면 도움이 됩니다.",
+      "similar_event_ids": [
+        "microstrategy-btc-treasury-2020",
+        "square-cash-btc-2018",
+        "tesla-btc-buy-2021"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "Square press — Invests $50 Million in Bitcoin",
+          "url": "https://squareup.com/us/en/press/2020-bitcoin-investment",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
         }
       ]
     },
@@ -593,6 +1810,58 @@
           "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
         }
       ]
+    },
+    {
+      "id": "canada-purpose-btc-etf-2021",
+      "title_ko": "캐나다 Purpose 현물 BTC ETF 상장",
+      "title_en": "Canada Purpose Bitcoin ETF (BTCC) launches",
+      "start": "2021-02-18",
+      "end": "2021-02-18",
+      "category": "crypto",
+      "severity": 4,
+      "summary_ko": "보도·공개 자료 기준(세부 일정·수치는 원문 재확인 권장). Purpose Investments의 현물 수탁 BTC ETF가 캐나다에서 거래 개시. 미국 현물 ETF(2024-01)보다 약 3년 앞선 '현물 ETF' 선례.",
+      "sources": [
+        {
+          "title": "Reuters — Bitcoin wild ride timeline (Purpose ETF context)",
+          "url": "https://www.reuters.com/technology/bitcoins-wild-ride-toward-100000-2024-11-21/"
+        },
+        {
+          "title": "Purpose Investments — Bitcoin ETF",
+          "url": "https://www.purposeinvest.com/funds/purpose-bitcoin-etf"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n미국 현물 ETF(2024-01)보다 앞서, 캐나다에서 현물 수탁 BTC ETF가 거래된 선례가 있습니다.\n\n무슨 일\n2021년 2월 18일 Purpose Investments의 현물 BTC ETF(BTCC 등)가 캐나다에서 거래 개시된 것으로 타임라인에 정리됩니다.\n\n시장·가격에 미친 영향\n관할·상품 구조가 미국 ETF와 다릅니다. 티커·상장일은 운용사 안내로 재확인하세요.",
+      "learn_points_ko": [
+        "세부 날짜·수치가 출처마다 다를 수 있어, 원문 확인이 우선입니다.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 뉴스가 나오면 1차 자료(공시·법원·거래소·정부)부터 확인하고, 숫자·날짜는 재인용 전에 대조하세요.",
+      "similar_event_ids": [
+        "spot-btc-etf-approval-2024",
+        "bito-futures-etf-2021",
+        "hk-spot-btc-eth-etf-2024"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — Bitcoin wild ride timeline (Purpose ETF context)",
+          "url": "https://www.reuters.com/technology/bitcoins-wild-ride-toward-100000-2024-11-21/",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        },
+        {
+          "title": "Purpose Investments — Bitcoin ETF",
+          "url": "https://www.purposeinvest.com/funds/purpose-bitcoin-etf",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ],
+      "needs_verify": true
     },
     {
       "id": "coinbase-direct-listing-2021",
@@ -743,6 +2012,57 @@
           "why_ko": "이후 지역 확산 보도를 교차 확인할 수 있습니다."
         }
       ]
+    },
+    {
+      "id": "us-infra-bill-crypto-2021",
+      "title_ko": "미국 인프라법 암호화폐 브로커 조항",
+      "title_en": "US infrastructure bill crypto broker provision",
+      "start": "2021-08-10",
+      "end": "2021-08-10",
+      "category": "policy",
+      "severity": 3,
+      "summary_ko": "보도·공개 자료 기준(세부 일정·수치는 원문 재확인 권장). 미국 인프라 투자·고용법에 암호화폐 '브로커' 보고 확대 조항이 포함되어 업계 반발. 채굴자·DeFi·지갑까지 범위가 불명확하다는 논쟁.",
+      "sources": [
+        {
+          "title": "CoinDesk — Senate passes infrastructure bill with crypto provision",
+          "url": "https://www.coindesk.com/policy/2021/08/10/senate-passes-1t-infrastructure-bill-with-crypto-provision-intact"
+        },
+        {
+          "title": "White House — Bipartisan Infrastructure Deal fact sheet",
+          "url": "https://www.whitehouse.gov/briefing-room/statements-releases/2021/11/15/fact-sheet-the-bipartisan-infrastructure-deal-is-an-investment-in-america/"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n세금 보고 ‘브로커’ 정의가 넓어지면 채굴·DeFi·지갑까지 범위 논쟁이 생깁니다.\n\n무슨 일\n2021년 8월 10일 전후 미국 인프라 투자·고용법에 암호화폐 브로커 보고 확대 조항이 포함된 채 상원을 통과했다는 보도가 있습니다. 서명일과는 구분하세요.\n\n시장·가격에 미친 영향\n규제·세무 이슈이지 즉시 가격 공식은 아닙니다. 세부 시행은 후속 지침을 봐야 합니다.",
+      "learn_points_ko": [
+        "세부 날짜·수치가 출처마다 다를 수 있어, 원문 확인이 우선입니다.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 뉴스가 나오면 1차 자료(공시·법원·거래소·정부)부터 확인하고, 숫자·날짜는 재인용 전에 대조하세요.",
+      "similar_event_ids": [
+        "sec-binance-charges-2023",
+        "clarity-act-senate-fail"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "CoinDesk — Senate passes infrastructure bill with crypto provision",
+          "url": "https://www.coindesk.com/policy/2021/08/10/senate-passes-1t-infrastructure-bill-with-crypto-provision-intact",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        },
+        {
+          "title": "White House — Bipartisan Infrastructure Deal fact sheet",
+          "url": "https://www.whitehouse.gov/briefing-room/statements-releases/2021/11/15/fact-sheet-the-bipartisan-infrastructure-deal-is-an-investment-in-america/",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ],
+      "needs_verify": true
     },
     {
       "id": "el-salvador-btc-legal-tender-2021",
@@ -1008,6 +2328,47 @@
       ]
     },
     {
+      "id": "kazakhstan-mining-outage-2022",
+      "title_ko": "카자흐스탄 시위·인터넷 차단과 채굴 차질",
+      "title_en": "Kazakhstan unrest & mining outage",
+      "start": "2022-01-05",
+      "end": "2022-01-07",
+      "category": "geo",
+      "severity": 3,
+      "summary_ko": "중국 채굴 엑소더스 후 카자흐스탄에 몰린 채굴이 대규모 시위·인터넷 차단으로 차질. 글로벌 해시레이트 급감 보도. (연도는 2022이나 2021 중국 단속의 후속).",
+      "sources": [
+        {
+          "title": "CoinMarketCap Academy timeline",
+          "url": "https://coinmarketcap.com/academy/article/bitcoin-price-history-and-events-timeline"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n중국 채굴 엑소더스 후 카자흐스탄 등지로 해시레이트가 이동했습니다.\n\n무슨 일\n2022년 1월 초 대규모 시위·인터넷 차단으로 채굴이 차질을 빚었다는 보도가 있습니다. 글로벌 해시레이트 급감 이야기의 한 축입니다.\n\n시장·가격에 미친 영향\n해시레이트 수치는 외부 지표·보도로만 확인하고, 가격은 차트로 보세요.",
+      "learn_points_ko": [
+        "일정(언제)과 가격 결과(그 뒤 얼마)를 섞어 단정하지 마세요.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 이정표가 다시 나오면, 공식 일정과 시장 반응을 나눠 기록해 두면 도움이 됩니다.",
+      "similar_event_ids": [
+        "china-mining-crackdown-2021",
+        "btc-halving-2020"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "CoinMarketCap Academy timeline",
+          "url": "https://coinmarketcap.com/academy/article/bitcoin-price-history-and-events-timeline",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ]
+    },
+    {
       "id": "ukraine-oil-spike-mar-2022",
       "title_ko": "우크라 전쟁 오일 쇼크",
       "title_en": "Ukraine war oil supply shock",
@@ -1140,6 +2501,49 @@
       ]
     },
     {
+      "id": "luna-ust-depeg-start-2022",
+      "title_ko": "UST 디페그 시작(Terra 붕괴 초입)",
+      "title_en": "UST depeg begins (Terra collapse onset)",
+      "start": "2022-05-09",
+      "end": "2022-05-12",
+      "category": "crypto",
+      "severity": 3,
+      "summary_ko": "보도·공개 자료 기준(세부 일정·수치는 원문 재확인 권장). 테라 USD(UST)가 달러 페그를 잃기 시작하며 LUNA·UST 붕괴가 본격화. 기존 `terra-luna-collapse-2022`가 대표 이벤트로 있으면, 이 후보는 '초입 날짜'로 세분용. 중복 승격 시 하나로 병합 권장.",
+      "sources": [
+        {
+          "title": "Wikipedia — Terra (blockchain)",
+          "url": "https://en.wikipedia.org/wiki/Terra_(blockchain)"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n이미 사이트에 `terra-luna-collapse-2022`가 대표 이벤트로 있습니다. 이 항목은 UST 페그가 깨지기 시작한 ‘초입’을 세분한 학습용 마커입니다.\n\n무슨 일\n2022년 5월 9–12일 전후 UST가 달러 페그를 잃기 시작하며 LUNA·UST 붕괴가 본격화했다는 기록이 있습니다.\n\n시장·가격에 미친 영향\n대표 사건은 terra-luna 쪽을 우선 보세요. 여기서는 초입 날짜만 강조하며 가격을 새로 만들지 않습니다.",
+      "learn_points_ko": [
+        "세부 날짜·수치가 출처마다 다를 수 있어, 원문 확인이 우선입니다.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 뉴스가 나오면 1차 자료(공시·법원·거래소·정부)부터 확인하고, 숫자·날짜는 재인용 전에 대조하세요.",
+      "similar_event_ids": [
+        "terra-luna-collapse-2022",
+        "three-arrows-liquidation-2022",
+        "ftx-collapse-2022"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "Wikipedia — Terra (blockchain)",
+          "url": "https://en.wikipedia.org/wiki/Terra_(blockchain)",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ],
+      "needs_verify": true
+    },
+    {
       "id": "terra-luna-collapse-2022",
       "title_ko": "Terra/LUNA·UST 붕괴",
       "title_en": "Terra/LUNA & UST collapse",
@@ -1244,6 +2648,57 @@
       ]
     },
     {
+      "id": "voyager-bankruptcy-2022",
+      "title_ko": "Voyager Digital 파산 신청",
+      "title_en": "Voyager Digital Chapter 11",
+      "start": "2022-07-05",
+      "end": "2022-07-05",
+      "category": "crypto",
+      "severity": 4,
+      "summary_ko": "미국 암호화폐 대출·브로커 Voyager가 Chapter 11 신청. 3AC 디폴트 전염의 한 축. Celsius(7/13)·FTX(11월)와 함께 CeFi 위기 시리즈.",
+      "sources": [
+        {
+          "title": "RegStak — Voyager Chapter 11",
+          "url": "https://www.regstak.com/major-crypto-regulatory-events/"
+        },
+        {
+          "title": "Stretto Voyager schedules (petition date)",
+          "url": "https://cases.stretto.com/public/x193/11755/PLEADINGS/1175508222280000000057.pdf"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n3AC 디폴트 이후 미국 암호화폐 대출·브로커로 전염이 확산됐습니다.\n\n무슨 일\n2022년 7월 5일 Voyager Digital이 Chapter 11을 신청했습니다. Celsius(7/13)·FTX(11월)와 함께 CeFi 위기 시리즈로 묶입니다.\n\n시장·가격에 미친 영향\n거래소·대출 플랫폼 신뢰 문제입니다. 고객 자산 위치의 중요성을 배우는 사례입니다.",
+      "learn_points_ko": [
+        "일정(언제)과 가격 결과(그 뒤 얼마)를 섞어 단정하지 마세요.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 이정표가 다시 나오면, 공식 일정과 시장 반응을 나눠 기록해 두면 도움이 됩니다.",
+      "similar_event_ids": [
+        "celsius-bankruptcy-2022",
+        "three-arrows-liquidation-2022",
+        "blockfi-bankruptcy-2022"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "RegStak — Voyager Chapter 11",
+          "url": "https://www.regstak.com/major-crypto-regulatory-events/",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        },
+        {
+          "title": "Stretto Voyager schedules (petition date)",
+          "url": "https://cases.stretto.com/public/x193/11755/PLEADINGS/1175508222280000000057.pdf",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ]
+    },
+    {
       "id": "celsius-bankruptcy-2022",
       "title_ko": "Celsius Network 파산 신청",
       "title_en": "Celsius Network files for bankruptcy",
@@ -1300,6 +2755,48 @@
           "title": "Stretto — Celsius cases",
           "url": "https://cases.stretto.com/celsius/",
           "why_ko": "법원 사건 포털로 일정·문서를 추적할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "tornado-cash-ofac-2022",
+      "title_ko": "OFAC, Tornado Cash 제재",
+      "title_en": "US Treasury OFAC sanctions Tornado Cash",
+      "start": "2022-08-08",
+      "end": "2022-08-08",
+      "category": "policy",
+      "severity": 4,
+      "summary_ko": "미 재무부 OFAC이 믹서 Tornado Cash를 SDN에 올림. 스마트컨트랙트·오픈소스 제재 논쟁. BTC보다 ETH 생태계 직격이나 '온체인 프라이버시·제재' 학습용. 이후 2025 일부 해제 보도.",
+      "sources": [
+        {
+          "title": "RegStak — Tornado Cash OFAC",
+          "url": "https://www.regstak.com/major-crypto-regulatory-events/"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n온체인 프라이버시 도구에 대한 제재는 스마트컨트랙트·오픈소스 논쟁을 키웠습니다.\n\n무슨 일\n2022년 8월 8일 미 재무부 OFAC이 Tornado Cash를 SDN에 올렸습니다. BTC보다 ETH 생태계 직격이나 ‘제재·프라이버시’ 학습용입니다.\n\n시장·가격에 미친 영향\n이후 2025년 일부 해제(`tornado-cash-ofac-delist-2025`)와 짝으로 보세요.",
+      "learn_points_ko": [
+        "일정(언제)과 가격 결과(그 뒤 얼마)를 섞어 단정하지 마세요.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 이정표가 다시 나오면, 공식 일정과 시장 반응을 나눠 기록해 두면 도움이 됩니다.",
+      "similar_event_ids": [
+        "tornado-cash-ofac-delist-2025",
+        "silk-road-seizure-2013",
+        "china-crypto-ban-2021"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "RegStak — Tornado Cash OFAC",
+          "url": "https://www.regstak.com/major-crypto-regulatory-events/",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
         }
       ]
     },
@@ -1583,6 +3080,49 @@
       ]
     },
     {
+      "id": "blockfi-bankruptcy-2022",
+      "title_ko": "BlockFi 파산 신청",
+      "title_en": "BlockFi Chapter 11 bankruptcy",
+      "start": "2022-11-28",
+      "end": "2022-11-28",
+      "category": "crypto",
+      "severity": 4,
+      "summary_ko": "FTX 붕괴 직후 BlockFi가 Chapter 11 신청. FTX 노출·CeFi 전염의 연장. Celsius·Voyager·Genesis와 시리즈.",
+      "sources": [
+        {
+          "title": "RegStak — BlockFi Chapter 11",
+          "url": "https://www.regstak.com/major-crypto-regulatory-events/"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\nFTX 붕괴는 노출이 있는 다른 CeFi로 전염됐습니다.\n\n무슨 일\n2022년 11월 28일 BlockFi가 Chapter 11을 신청했습니다. FTX(11/11) 직후입니다.\n\n시장·가격에 미친 영향\nCelsius·Voyager·Genesis와 같은 ‘맡긴 자산’ 리스크 시리즈로 읽습니다.",
+      "learn_points_ko": [
+        "일정(언제)과 가격 결과(그 뒤 얼마)를 섞어 단정하지 마세요.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 이정표가 다시 나오면, 공식 일정과 시장 반응을 나눠 기록해 두면 도움이 됩니다.",
+      "similar_event_ids": [
+        "ftx-collapse-2022",
+        "celsius-bankruptcy-2022",
+        "voyager-bankruptcy-2022",
+        "genesis-bankruptcy-2023"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "RegStak — BlockFi Chapter 11",
+          "url": "https://www.regstak.com/major-crypto-regulatory-events/",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ]
+    },
+    {
       "id": "chatgpt-launch-2022",
       "title_ko": "ChatGPT 공개",
       "title_en": "ChatGPT public launch",
@@ -1678,6 +3218,57 @@
           "why_ko": "파산 신청 요지를 확인할 때 좋습니다."
         }
       ]
+    },
+    {
+      "id": "ordinals-inscriptions-2023",
+      "title_ko": "비트코인 Ordinals 인스크립션 등장",
+      "title_en": "Bitcoin Ordinals inscriptions launch",
+      "start": "2023-01-21",
+      "end": "2023-01-21",
+      "category": "crypto",
+      "severity": 3,
+      "summary_ko": "보도·공개 자료 기준(세부 일정·수치는 원문 재확인 권장). Casey Rodarmor의 Ordinals 프로토콜로 BTC 사토시에 데이터(이미지 등)를 '각인'. Taproot 이후 온체인 NFT-like 활동·수수료 급등 논쟁의 시작.",
+      "sources": [
+        {
+          "title": "Ordinals documentation",
+          "url": "https://docs.ordinals.com/"
+        },
+        {
+          "title": "CoinDesk — What are Bitcoin Ordinals and inscriptions",
+          "url": "https://www.coindesk.com/tech/2023/02/01/what-are-bitcoin-ordinals-and-inscriptions"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\nTaproot 이후 사토시에 데이터를 각인하는 실험이 늘어났습니다.\n\n무슨 일\n2023년 1월 20–21일 전후 Casey Rodarmor의 Ordinals로 인스크립션 활동이 본격화됐다는 기록이 있습니다. 온체인 NFT-like·수수료 급등 논쟁의 시작으로 자주 인용됩니다.\n\n시장·가격에 미친 영향\n프로토콜·수수료 축 이벤트입니다. 정확한 첫 인스크립션 시각은 출처마다 다를 수 있습니다.",
+      "learn_points_ko": [
+        "세부 날짜·수치가 출처마다 다를 수 있어, 원문 확인이 우선입니다.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 뉴스가 나오면 1차 자료(공시·법원·거래소·정부)부터 확인하고, 숫자·날짜는 재인용 전에 대조하세요.",
+      "similar_event_ids": [
+        "btc-taproot-activation-2021",
+        "segwit-activation-2017"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "Ordinals documentation",
+          "url": "https://docs.ordinals.com/",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        },
+        {
+          "title": "CoinDesk — What are Bitcoin Ordinals and inscriptions",
+          "url": "https://www.coindesk.com/tech/2023/02/01/what-are-bitcoin-ordinals-and-inscriptions",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ],
+      "needs_verify": true
     },
     {
       "id": "svb-collapse-2023",
@@ -2097,6 +3688,150 @@
       ]
     },
     {
+      "id": "ripple-sec-partial-win-2023",
+      "title_ko": "Ripple, SEC 소송 일부 승소(기관 vs 거래소)",
+      "title_en": "Ripple partial win vs SEC (July 2023)",
+      "start": "2023-07-13",
+      "end": "2023-07-13",
+      "category": "policy",
+      "severity": 3,
+      "summary_ko": "보도·공개 자료 기준(세부 일정·수치는 원문 재확인 권장). SDNY가 XRP 거래소 판매 일부에 대해 '증권 아님' 취지 판단을 내림(기관 판매는 별도). BTC 직접은 아니나 '어떤 토큰이 증권인가' 논쟁·시장 심리에 영향.",
+      "sources": [
+        {
+          "title": "Reuters — Ripple wins partial victory against SEC",
+          "url": "https://www.reuters.com/legal/us-judge-says-ripple-labs-xrp-token-not-security-some-cases-2023-07-13/"
+        },
+        {
+          "title": "CNBC — Ripple scores partial win in SEC case",
+          "url": "https://www.cnbc.com/2023/07/13/ripple-labs-wins-partial-victory-against-sec-as-judge-says-xrp-is-not-a-security-when-sold-to-public.html"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n‘어떤 토큰 판매가 증권인가’ 논쟁은 BTC 직접은 아니어도 시장 심리·알트 규제에 영향을 줍니다.\n\n무슨 일\n2023년 7월 13일 SDNY가 XRP의 일부 거래소 판매에 대해 증권 아님 취지 판단을 내렸습니다(기관 판매는 별도).\n\n시장·가격에 미친 영향\n판결 범위는 한정돼 있습니다. 원문·후속 절차를 확인하세요.",
+      "learn_points_ko": [
+        "세부 날짜·수치가 출처마다 다를 수 있어, 원문 확인이 우선입니다.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 뉴스가 나오면 1차 자료(공시·법원·거래소·정부)부터 확인하고, 숫자·날짜는 재인용 전에 대조하세요.",
+      "similar_event_ids": [
+        "sec-binance-charges-2023",
+        "spot-btc-etf-approval-2024"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — Ripple wins partial victory against SEC",
+          "url": "https://www.reuters.com/legal/us-judge-says-ripple-labs-xrp-token-not-security-some-cases-2023-07-13/",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        },
+        {
+          "title": "CNBC — Ripple scores partial win in SEC case",
+          "url": "https://www.cnbc.com/2023/07/13/ripple-labs-wins-partial-victory-against-sec-as-judge-says-xrp-is-not-a-security-when-sold-to-public.html",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ],
+      "needs_verify": true
+    },
+    {
+      "id": "grayscale-gbtc-court-win-2023",
+      "title_ko": "Grayscale, SEC 상대 GBTC 소송 승소",
+      "title_en": "DC Circuit rules for Grayscale vs SEC (GBTC ETF)",
+      "start": "2023-08-29",
+      "end": "2023-08-29",
+      "category": "policy",
+      "severity": 5,
+      "summary_ko": "DC 순회항소법원이 SEC의 GBTC→현물 ETF 전환 거절이 자의적이라고 판단. 2024-01 현물 ETF 승인으로 가는 법적 전환점. BlackRock 신청(`blackrock-spot-etf-filing-2023`)과 짝.",
+      "sources": [
+        {
+          "title": "CNBC — Court rules in favor of Grayscale",
+          "url": "https://www.cnbc.com/2023/08/29/first-bitcoin-etf-could-be-coming-soon-as-court-rules-in-favor-of-grayscale-over-sec.html"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\nSEC의 GBTC→현물 ETF 전환 거절이 법원에서 뒤집힌 것은 2024년 현물 ETF 승인의 법적 전환점으로 평가됩니다.\n\n무슨 일\n2023년 8월 29일 DC 순회항소법원이 SEC 거절이 자의적이라고 판단했습니다. BlackRock 신청·2024-01 승인과 짝입니다.\n\n시장·가격에 미친 영향\n소송 승소≠즉시 ETF 거래입니다. 이후 승인·상장 일정을 구분하세요.",
+      "learn_points_ko": [
+        "일정(언제)과 가격 결과(그 뒤 얼마)를 섞어 단정하지 마세요.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 이정표가 다시 나오면, 공식 일정과 시장 반응을 나눠 기록해 두면 도움이 됩니다.",
+      "similar_event_ids": [
+        "spot-btc-etf-approval-2024",
+        "blackrock-spot-etf-filing-2023",
+        "grayscale-gbtc-sec-reporting-2020"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "CNBC — Court rules in favor of Grayscale",
+          "url": "https://www.cnbc.com/2023/08/29/first-bitcoin-etf-could-be-coming-soon-as-court-rules-in-favor-of-grayscale-over-sec.html",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ]
+    },
+    {
+      "id": "sbf-ftx-conviction-2023",
+      "title_ko": "SBF(FTX) 유죄 평결",
+      "title_en": "SBF convicted in FTX fraud trial",
+      "start": "2023-11-02",
+      "end": "2023-11-02",
+      "category": "policy",
+      "severity": 3,
+      "summary_ko": "보도·공개 자료 기준(세부 일정·수치는 원문 재확인 권장). Sam Bankman-Fried가 FTX 관련 사기 혐의로 배심 유죄. `ftx-collapse-2022`의 법적 후속. 초보 대시보드에서는 tip으로만 둬도 됨.",
+      "sources": [
+        {
+          "title": "Reuters — Sam Bankman-Fried convicted of FTX fraud",
+          "url": "https://www.reuters.com/legal/ftx-founder-sam-bankman-fried-thought-rules-did-not-apply-him-prosecutor-says-2023-11-02/"
+        },
+        {
+          "title": "CNBC — SBF found guilty on all seven counts",
+          "url": "https://www.cnbc.com/2023/11/02/sam-bankman-fried-found-guilty-on-all-seven-criminal-fraud-counts.html"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\nFTX 파산(`ftx-collapse-2022`)의 법적 후속입니다.\n\n무슨 일\n2023년 11월 2일 Sam Bankman-Fried가 FTX 관련 사기 혐의로 배심 유죄 평결을 받았습니다(Reuters·CNBC).\n\n시장·가격에 미친 영향\n형사 평결은 파산·시장 충격의 후속 절차입니다. 대시보드에서는 tip 수준으로도 충분할 수 있습니다.",
+      "learn_points_ko": [
+        "세부 날짜·수치가 출처마다 다를 수 있어, 원문 확인이 우선입니다.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 뉴스가 나오면 1차 자료(공시·법원·거래소·정부)부터 확인하고, 숫자·날짜는 재인용 전에 대조하세요.",
+      "similar_event_ids": [
+        "ftx-collapse-2022",
+        "binance-cz-doj-plea-2023"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — Sam Bankman-Fried convicted of FTX fraud",
+          "url": "https://www.reuters.com/legal/ftx-founder-sam-bankman-fried-thought-rules-did-not-apply-him-prosecutor-says-2023-11-02/",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        },
+        {
+          "title": "CNBC — SBF found guilty on all seven counts",
+          "url": "https://www.cnbc.com/2023/11/02/sam-bankman-fried-found-guilty-on-all-seven-criminal-fraud-counts.html",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ],
+      "needs_verify": true
+    },
+    {
       "id": "binance-cz-doj-plea-2023",
       "title_ko": "Binance·CZ, 미국 형사 합의·유죄인정",
       "title_en": "Binance and CZ plead guilty in US criminal settlement",
@@ -2315,6 +4050,57 @@
       ]
     },
     {
+      "id": "binance-cz-sentencing-2024",
+      "title_ko": "CZ(자오창펑) 미국 형 선고",
+      "title_en": "CZ sentenced in US criminal case",
+      "start": "2024-04-30",
+      "end": "2024-04-30",
+      "category": "policy",
+      "severity": 3,
+      "summary_ko": "보도·공개 자료 기준(세부 일정·수치는 원문 재확인 권장). Binance 전 CEO Changpeng Zhao에 대한 미국 형사 사건 선고. `binance-cz-doj-plea-2023`의 후속. 초보 대시보드에서는 tip으로도 충분.",
+      "sources": [
+        {
+          "title": "Reuters — CZ sentenced to four months",
+          "url": "https://www.reuters.com/legal/binances-ceo-zhao-faces-sentencing-over-money-laundering-violations-2024-04-30/"
+        },
+        {
+          "title": "CNBC — CZ sentenced to 4 months",
+          "url": "https://www.cnbc.com/2024/04/30/binance-founder-changpeng-zhao-cz-sentenced-to-four-months-in-prison-.html"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n`binance-cz-doj-plea-2023`의 후속 형사 절차입니다.\n\n무슨 일\n2024년 4월 30일 Changpeng Zhao(CZ)에 대한 미국 형사 사건 선고가 있었습니다(약 4개월형 보도).\n\n시장·가격에 미친 영향\n선고일≠거래소 운영 중단을 단정하지 마세요. 공식 보도를 확인하세요.",
+      "learn_points_ko": [
+        "세부 날짜·수치가 출처마다 다를 수 있어, 원문 확인이 우선입니다.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 뉴스가 나오면 1차 자료(공시·법원·거래소·정부)부터 확인하고, 숫자·날짜는 재인용 전에 대조하세요.",
+      "similar_event_ids": [
+        "binance-cz-doj-plea-2023",
+        "sec-binance-charges-2023"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters — CZ sentenced to four months",
+          "url": "https://www.reuters.com/legal/binances-ceo-zhao-faces-sentencing-over-money-laundering-violations-2024-04-30/",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        },
+        {
+          "title": "CNBC — CZ sentenced to 4 months",
+          "url": "https://www.cnbc.com/2024/04/30/binance-founder-changpeng-zhao-cz-sentenced-to-four-months-in-prison-.html",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ],
+      "needs_verify": true
+    },
+    {
       "id": "hk-spot-btc-eth-etf-2024",
       "title_ko": "홍콩, 아시아 첫 현물 BTC·ETH ETF 거래 개시",
       "title_en": "Hong Kong spot BTC/ETH ETFs debut",
@@ -2484,6 +4270,108 @@
           "title": "Mt. Gox trustee announcement PDF (2024-07-24)",
           "url": "https://www.mtgox.com/img/pdf/20240724_aeedf9f1-7f27-40ec-ad70-26d2811167a5_announcement_en.pdf",
           "why_ko": "관재인 공식 문서로 표현을 대조할 때 쓰기 좋습니다."
+        }
+      ]
+    },
+    {
+      "id": "spot-eth-etf-trading-2024",
+      "title_ko": "미국 현물 ETH ETF 거래 개시",
+      "title_en": "US spot Ether ETFs begin trading",
+      "start": "2024-07-23",
+      "end": "2024-07-23",
+      "category": "crypto",
+      "severity": 3,
+      "summary_ko": "보도·공개 자료 기준(세부 일정·수치는 원문 재확인 권장). 현물 이더리움 ETF가 미국 거래소에서 거래 시작. BTC 현물 ETF(1월) 후속. BTC 직접은 아니나 '현물 크립토 ETF' 제도화 연장.",
+      "sources": [
+        {
+          "title": "CNBC — Ether ETFs first day of trading",
+          "url": "https://www.cnbc.com/2024/07/23/ether-etfs-first-day-of-trading.html"
+        },
+        {
+          "title": "Nasdaq — Grayscale Ethereum Trusts begin trading as spot ETPs",
+          "url": "https://www.nasdaq.com/press-release/grayscale-ethereum-mini-trust-ticker-eth-and-grayscale-ethereum-trust-ticker-ethe"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\nBTC 현물 ETF(2024-01)에 이어 이더리움 현물 ETF가 제도권 상품으로 이어졌습니다.\n\n무슨 일\n2024년 7월 23일 미국 거래소에서 현물 Ether ETF 거래가 시작됐습니다(CNBC·발행사 보도).\n\n시장·가격에 미친 영향\nBTC 직접 상품은 아니나 ‘현물 크립토 ETF’ 제도화 연장입니다. 승인일과 거래개시일을 구분하세요.",
+      "learn_points_ko": [
+        "세부 날짜·수치가 출처마다 다를 수 있어, 원문 확인이 우선입니다.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 뉴스가 나오면 1차 자료(공시·법원·거래소·정부)부터 확인하고, 숫자·날짜는 재인용 전에 대조하세요.",
+      "similar_event_ids": [
+        "spot-btc-etf-approval-2024",
+        "hk-spot-btc-eth-etf-2024"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "CNBC — Ether ETFs first day of trading",
+          "url": "https://www.cnbc.com/2024/07/23/ether-etfs-first-day-of-trading.html",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        },
+        {
+          "title": "Nasdaq — Grayscale Ethereum Trusts begin trading as spot ETPs",
+          "url": "https://www.nasdaq.com/press-release/grayscale-ethereum-mini-trust-ticker-eth-and-grayscale-ethereum-trust-ticker-ethe",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ],
+      "needs_verify": true
+    },
+    {
+      "id": "trump-bitcoin-nashville-2024",
+      "title_ko": "트럼프, 내슈빌 비트코인 컨퍼런스 연설",
+      "title_en": "Trump speaks at Bitcoin 2024 Nashville",
+      "start": "2024-07-27",
+      "end": "2024-07-27",
+      "category": "policy",
+      "severity": 4,
+      "summary_ko": "트럼프가 Bitcoin 2024(내슈빌)에서 전략비축·자기수탁 보호 등을 언급. 이후 대선(`trump-election-2024`)·2025 Strategic Reserve EO와 연결되는 정치·크립토 서사.",
+      "sources": [
+        {
+          "title": "CNBC — Trump Bitcoin conference",
+          "url": "https://www.cnbc.com/2024/07/27/trump-bitcoin-conference-harris.html"
+        },
+        {
+          "title": "CoinDesk — Trump crypto embrace Nashville",
+          "url": "https://www.coindesk.com/policy/2024/07/27/if-we-dont-do-it-china-will-trumps-crypto-embrace-tightens-as-he-speaks-at-bitcoin-event-in-nashville"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n대선 국면에서 정치인의 비트코인 컨퍼런스 연설은 정책 기대 서사를 키웠습니다.\n\n무슨 일\n2024년 7월 27일 트럼프가 Bitcoin 2024(내슈빌)에서 전략비축·자기수탁 보호 등을 언급했습니다.\n\n시장·가격에 미친 영향\n연설≠즉시 행정명령입니다. 이후 대선·2025 Strategic Reserve EO와 연결해 보세요.",
+      "learn_points_ko": [
+        "일정(언제)과 가격 결과(그 뒤 얼마)를 섞어 단정하지 마세요.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 이정표가 다시 나오면, 공식 일정과 시장 반응을 나눠 기록해 두면 도움이 됩니다.",
+      "similar_event_ids": [
+        "trump-election-2024",
+        "us-strategic-btc-reserve-2025",
+        "trump-inauguration-2025"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "CNBC — Trump Bitcoin conference",
+          "url": "https://www.cnbc.com/2024/07/27/trump-bitcoin-conference-harris.html",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        },
+        {
+          "title": "CoinDesk — Trump crypto embrace Nashville",
+          "url": "https://www.coindesk.com/policy/2024/07/27/if-we-dont-do-it-china-will-trumps-crypto-embrace-tightens-as-he-speaks-at-bitcoin-event-in-nashville",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
         }
       ]
     },
@@ -2855,6 +4743,109 @@
           "why_ko": "관보 등록본으로 표현을 대조할 때 쓰기 좋습니다."
         }
       ]
+    },
+    {
+      "id": "tornado-cash-ofac-delist-2025",
+      "title_ko": "재무부, Tornado Cash 제재 일부 해제",
+      "title_en": "Treasury removes Tornado Cash OFAC sanctions",
+      "start": "2025-03-21",
+      "end": "2025-03-21",
+      "category": "policy",
+      "severity": 3,
+      "summary_ko": "보도·공개 자료 기준(세부 일정·수치는 원문 재확인 권장). 미 재무부가 Tornado Cash 관련 OFAC 제재를 해제했다는 타임라인. 2022 제재의 반전. BTC 직접성 중간.",
+      "sources": [
+        {
+          "title": "U.S. Treasury — Tornado Cash Delisting",
+          "url": "https://home.treasury.gov/news/press-releases/sb0057"
+        },
+        {
+          "title": "OFAC — Cyber-related designation removal (2025-03-21)",
+          "url": "https://ofac.treasury.gov/recent-actions/20250321"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n2022년 OFAC 제재의 반전으로, 스마트컨트랙트 제재 권한 논쟁과 맞물립니다.\n\n무슨 일\n2025년 3월 21일 미 재무부가 Tornado Cash 관련 OFAC 제재를 해제했다고 밝혔습니다(Treasury·OFAC).\n\n시장·가격에 미친 영향\nBTC 직접성 중간입니다. 제재 해제≠모든 관련 형사 이슈 종료를 단정하지 마세요.",
+      "learn_points_ko": [
+        "세부 날짜·수치가 출처마다 다를 수 있어, 원문 확인이 우선입니다.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 뉴스가 나오면 1차 자료(공시·법원·거래소·정부)부터 확인하고, 숫자·날짜는 재인용 전에 대조하세요.",
+      "similar_event_ids": [
+        "tornado-cash-ofac-2022",
+        "us-strategic-btc-reserve-2025"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "U.S. Treasury — Tornado Cash Delisting",
+          "url": "https://home.treasury.gov/news/press-releases/sb0057",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        },
+        {
+          "title": "OFAC — Cyber-related designation removal (2025-03-21)",
+          "url": "https://ofac.treasury.gov/recent-actions/20250321",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ],
+      "needs_verify": true
+    },
+    {
+      "id": "microstrategy-500k-btc-2025",
+      "title_ko": "MicroStrategy(Strategy) BTC 보유 ~50만개 돌파권",
+      "title_en": "MicroStrategy approaches/surpasses ~500k BTC",
+      "start": "2025-03-31",
+      "end": "2025-03-31",
+      "category": "crypto",
+      "severity": 3,
+      "summary_ko": "보도·공개 자료 기준(세부 일정·수치는 원문 재확인 권장). 기업 재무 BTC 매입의 상징인 MicroStrategy(후 Strategy)가 보유량 50만 BTC 전후 구간에 도달했다는 보도·공시 흐름. 정확한 돌파일은 8-K/공시로 확인.",
+      "sources": [
+        {
+          "title": "Strategy (MicroStrategy) — Bitcoin purchases / disclosures",
+          "url": "https://www.strategy.com/purchases"
+        },
+        {
+          "title": "SEC EDGAR — MicroStrategy / Strategy filings",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001050446"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n기업 재무 BTC 매입의 상징인 MicroStrategy(후 Strategy)의 보유량 구간을 학습용으로 표시합니다.\n\n무슨 일\n2025년 1분기 말 전후 보유량이 약 50만 BTC 구간에 도달했다는 보도·공시 흐름이 있습니다. 정확한 돌파일·수량은 8-K/공시로 확인해야 합니다.\n\n시장·가격에 미친 영향\n가격·수량을 여기서 발명하지 않습니다. 공시 원문을 우선하세요(needs_verify).",
+      "learn_points_ko": [
+        "세부 날짜·수치가 출처마다 다를 수 있어, 원문 확인이 우선입니다.",
+        "공식·1차 자료와 2차 요약을 구분하면 헷갈림이 줄어듭니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "비슷한 뉴스가 나오면 1차 자료(공시·법원·거래소·정부)부터 확인하고, 숫자·날짜는 재인용 전에 대조하세요.",
+      "similar_event_ids": [
+        "microstrategy-btc-treasury-2020",
+        "tesla-btc-buy-2021",
+        "spot-btc-etf-approval-2024"
+      ],
+      "then_vs_now_ko": "같은 유형의 사건(규제·거래소·프로토콜·제도권 상품 등)이 나중에 다시 나올 수 있습니다. 그때도 ‘일정’과 ‘가격 결과’를 구분해 보세요.",
+      "angles_ko": {
+        "price_market": "가격 방향 예측이 아니라, 일정과 시장 맥락을 배우는 마커입니다.",
+        "news_reg": "보도·공시·공식 안내의 날짜를 1차로 확인하세요.",
+        "shib_vs_btc_macro": "비트코인·매크로·규제 쪽 맥락입니다. 시바 전용 뉴스는 아니지만, BTC·위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(직접 뉴스가 아니라 시장을 통한 간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "Strategy (MicroStrategy) — Bitcoin purchases / disclosures",
+          "url": "https://www.strategy.com/purchases",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        },
+        {
+          "title": "SEC EDGAR — MicroStrategy / Strategy filings",
+          "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001050446",
+          "why_ko": "일정·개요를 교차 확인할 때 참고하세요."
+        }
+      ],
+      "needs_verify": true
     },
     {
       "id": "liberation-day-tariffs-2025",
