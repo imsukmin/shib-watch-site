@@ -403,16 +403,18 @@
     <p id="periodSummaryText">—</p>
   </div>
 
-  <div class="section-title">
+    <div class="section-title">
     <h2>같이 움직이는 정도</h2>
-    <p class="sec-desc">일별 수익률 상관계수(피어슨). 아래 30·90일은 <strong>차트 기간과 별개</strong>인 고정 통계입니다.</p>
+    <p class="sec-desc">하루하루 가격이 비슷한 방향으로 움직였는지 보는 숫자입니다. 아래 30·90일 숫자는 <strong>위 차트에서 고른 기간과 별개</strong>입니다.</p>
   </div>
   <div class="corr-explain">
-    <strong>일별 수익률 상관계수 (피어슨)</strong> —
-    하루 종가 대비 전일 종가 변화율(일별 수익률)이 같은 날 얼마나 비슷한 방향으로 움직였는지를 −1~+1로 본 값입니다.
-    <div class="scale">−1 반대 방향 · 0 뚜렷한 선형 관계 없음 · +1 같은 방향<br/>
-    예: 0.81 ≠ “같이 오를 확률 81%”. 동행 경향일 뿐 인과·확률이 아닙니다.<br/>
-    쉬운 말 구간: ≥0.7 꽤 같이 / ≥0.4 어느 정도 / ≥0.15 가끔 / |값|&lt;0.15 거의 따로 / 음수 반대쪽.</div>
+    <strong>쉽게 보면</strong> —
+    SHIB와 BTC가 같은 날 오르고 내린 정도가 얼마나 비슷한지 −1~+1로 나타낸 값입니다.
+    <div class="scale">
+      +1에 가까우면 거의 같이 움직임 · 0이면 거의 관계 없음 · −1에 가까우면 반대로 움직임<br/>
+      예: 0.81은 “같이 오를 확률 81%”가 아닙니다. 비슷한 날 비슷한 방향으로 움직인 경향일 뿐입니다.<br/>
+      읽는 기준: 0.7 이상 → 꽤 같이 / 0.4 이상 → 어느 정도 / 0.15 이상 → 가끔 / 0에 가까움 → 거의 따로
+    </div>
   </div>
   <div class="corr-grid" id="corrCards"></div>
 
@@ -420,7 +422,7 @@
     <h2>SHIB 주요 사건</h2>
     <p class="sec-desc">SHIB에 가까운 상장·소각·생태계·ETF 관련 사건</p>
   </div>
-  <div class="sev-legend">중요도: 편집 점수 1–5 → 높음(5)·중간(3–4)·낮음(1–2). 학습용 표시이며 가격 예측이 아닙니다.</div>
+  <div class="sev-legend">중요도: 높음·중간·낮음(학습용 표시, 가격 예측 아님).</div>
   <div id="shibEvents"></div>
 
   <div class="section-title">
@@ -563,10 +565,10 @@ function renderPrices(shib, btc, opts) {
 function renderCorr() {
   const c = DATA.corr || {};
   const items = [
-    { label: '전체 겹침 기간', val: c.full_corr, hint: (c.overlap_start || '') + ' → ' + (c.overlap_end || '') + ' · ' + (c.n_days || '') + '거래일 · 차트 기간과 별개' },
-    { label: '최근 30거래일', val: c.roll30_latest, hint: '최근 30거래일 일별 수익률 상관계수 — 차트 기간과 별개 · 겹치는 전 기간 동안 30일 롤링 상관계수의 평균 ' + (c.roll30_mean != null ? Number(c.roll30_mean).toFixed(3) : '—') },
-    { label: '최근 90거래일', val: c.roll90_latest, hint: '최근 90거래일 일별 수익률 상관계수 — 차트 기간과 별개 · 겹치는 전 기간 동안 90일 롤링 상관계수의 평균 ' + (c.roll90_mean != null ? Number(c.roll90_mean).toFixed(3) : '—') },
-    { label: '최고 일봉 종가', val: null, hint: 'Binance SHIBUSDT · 겹침/상장~최신 · 일봉 종가 최대 · 기록일 ' + (c.shib_ath_date || '—') + ' · 단위 USDT (장중 고가와 다름)', custom: fmtShib(c.shib_ath) + ' USDT' },
+    { label: '처음부터 지금까지', val: c.full_corr, hint: (c.overlap_start || '') + ' → ' + (c.overlap_end || '') + ' · ' + (c.n_days || '') + '일 · 위 차트 기간과 별개' },
+    { label: '최근 30일', val: c.roll30_latest, hint: '위 차트와 별개 · 그전에도 30일씩 잘라 본 평균은 ' + (c.roll30_mean != null ? Number(c.roll30_mean).toFixed(3) : '—') },
+    { label: '최근 90일', val: c.roll90_latest, hint: '위 차트와 별개 · 그전에도 90일씩 잘라 본 평균은 ' + (c.roll90_mean != null ? Number(c.roll90_mean).toFixed(3) : '—') },
+    { label: 'SHIB 하루 종가 최고', val: null, hint: '바이낸스 SHIBUSDT · 하루 마감가 기준 최고 · ' + (c.shib_ath_date || '—') + ' · 장중 최고가와는 다름', custom: fmtShib(c.shib_ath) + ' USDT' },
   ];
   const box = document.getElementById('corrCards');
   box.innerHTML = items.map(it => {
@@ -819,7 +821,7 @@ function renderSoWhat() {
   const roll = Number(c.roll30_latest);
   let corrLine = '';
   if (!isNaN(roll)) {
-    if (roll >= 0.7) corrLine = '최근 30거래일 일별 수익률로는 SHIB와 BTC이 꽤 같이 움직인 편입니다.';
+    if (roll >= 0.7) corrLine = '최근 30거래일 최근 30일에는 SHIB와 BTC가 꽤 같이 움직인 편입니다.';
     else if (roll >= 0.4) corrLine = '최근 30거래일에는 둘이 어느 정도 비슷한 방향으로 움직였습니다.';
     else if (roll >= 0.15) corrLine = '최근 30거래일에는 둘이 가끔 같이, 가끔은 다르게 움직인 편입니다.';
     else corrLine = '최근 30거래일에는 둘이 꽤 다른 날 움직임을 보인 편입니다.';
