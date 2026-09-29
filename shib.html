@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="theme-color" content="#0b1020" />
-<title>시바 vs 비트코인</title>
+<title>SHIB vs BTC</title>
 <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
 <style>
@@ -342,12 +342,12 @@
 <body>
 <div class="wrap">
   <header class="hero">
-    <h1>시바 vs 비트코인</h1>
+    <h1>SHIB vs BTC</h1>
     <p class="sub">같은 출발선 비교 · 일별 수익률 상관 · SHIBUSDT / BTCUSDT</p>
     <nav class="nav-links" aria-label="페이지 이동">
       <a class="" href="index.html">대시보드</a>
-      <a class="btc" href="chart.html">비트코인 차트</a>
-      <a class="shib active" href="shib.html">시바 비교</a>
+      <a class="btc" href="chart.html">BTC 차트</a>
+      <a class="shib active" href="shib.html">SHIB 비교</a>
     </nav>
   </header>
 
@@ -393,7 +393,7 @@
   <div class="corr-grid" id="corrCards"></div>
 
   <div class="section-title" id="events">
-    <h2>시바 주요 사건</h2>
+    <h2>SHIB 주요 사건</h2>
     <p class="sec-desc">상장·소각·생태계·ETF 소식 · 분류·연도 필터</p>
   </div>
   <div class="sev-legend">중요도: 편집 점수 1–5 → 높음(5)·중간(3–4)·낮음(1–2).</div>
@@ -610,7 +610,7 @@ function renderEvents() {
     const selected = selectedEventId && e.id === selectedEventId ? ' selected' : '';
     return `<article class="event${selected}">
       <div class="event-top">
-        <span class="chip shibtag">시바</span>
+        <span class="chip shibtag">SHIB</span>
         <span class="chip ${e.category || ''}">${cat}</span>
         <span class="chip">${e.start}${e.end && e.end !== e.start ? ' ~ ' + e.end : ''}</span>
         ${sev.text ? `<span class="sev ${sev.cls}">${sev.text}</span>` : ''}
@@ -673,10 +673,10 @@ function renderChart() {
     shapes, hovermode: 'x unified',
   };
   const traces = [
-    { x: ch.dates, y: ch.btc_norm, name: '비트코인', type: 'scatter', mode: 'lines',
-      line: { color: '#f39c12', width: 1.6 }, hovertemplate: '비트코인 %{y:.1f}<extra></extra>' },
-    { x: ch.dates, y: ch.shib_norm, name: '시바', type: 'scatter', mode: 'lines',
-      line: { color: '#ff7a9a', width: 1.6 }, hovertemplate: '시바 %{y:.1f}<extra></extra>' },
+    { x: ch.dates, y: ch.btc_norm, name: 'BTC', type: 'scatter', mode: 'lines',
+      line: { color: '#f39c12', width: 1.6 }, hovertemplate: 'BTC %{y:.1f}<extra></extra>' },
+    { x: ch.dates, y: ch.shib_norm, name: 'SHIB', type: 'scatter', mode: 'lines',
+      line: { color: '#ff7a9a', width: 1.6 }, hovertemplate: 'SHIB %{y:.1f}<extra></extra>' },
   ];
   if (marks.length) {
     traces.push({
@@ -720,7 +720,7 @@ function updatePeriodUI() {
     else if (roll >= 0.4) corrWord = ' 최근 30거래일 상관은 어느 정도 같이 움직이는 편입니다(차트 기간과 별개).';
     else corrWord = ' 최근 30거래일에는 둘이 꽤 다르게 움직인 구간도 있습니다(차트 기간과 별개).';
   }
-  sum.textContent = `이 기간(${w.base_date}→${w.end_date}) 시바 ${fmtPct(w.shib_ret, 1)}, 비트코인 ${fmtPct(w.btc_ret, 1)}. `
+  sum.textContent = `이 기간(${w.base_date}→${w.end_date}) SHIB ${fmtPct(w.shib_ret, 1)}, BTC ${fmtPct(w.btc_ret, 1)}. `
     + corrWord
     + ' 둘이 비슷하게 움직여도, 한쪽이 다른 쪽을 움직이게 했다는 뜻은 아닙니다.';
 }
@@ -782,7 +782,7 @@ function zoomToEvent(id, date) {
   document.getElementById('periodMeta').textContent =
     `사건 주변 확대: ${d[0]} → ${d[d.length - 1]} (사건일 ${date}) · 하루 마감 가격으로만 본 참고 · '이 사건 때문'이라고 단정할 수 없음`;
   document.getElementById('shibSummaryText').textContent =
-    `사건일 ${date} 전후 약 3주씩을 시작 100으로 맞춰 본 구간입니다. 시바 ${fmtPct(windowData.shib_ret, 1)}, 비트코인 ${fmtPct(windowData.btc_ret, 1)}. 하루 마감 가격만으로는 장중 움직임이나 '이 사건 때문'이라고 말할 수 없습니다.`;
+    `사건일 ${date} 전후 약 3주씩을 시작 100으로 맞춰 본 구간입니다. SHIB ${fmtPct(windowData.shib_ret, 1)}, BTC ${fmtPct(windowData.btc_ret, 1)}. 하루 마감 가격만으로는 장중 움직임이나 '이 사건 때문'이라고 말할 수 없습니다.`;
   renderChart();
   renderEvents();
   document.getElementById('chart')?.scrollIntoView({ behavior: 'smooth', block: 'center' });

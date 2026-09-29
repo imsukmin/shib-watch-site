@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="theme-color" content="#0b1020" />
-<title>비트코인 가격과 큰 사건</title>
+<title>BTC 가격과 큰 사건</title>
 <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
 <style>
@@ -342,17 +342,17 @@
 <body>
 <div class="wrap">
   <header class="hero">
-    <h1>비트코인 가격과 큰 사건</h1>
+    <h1>BTC 가격과 큰 사건</h1>
     <p class="sub">BTCUSDT 하루 종가 · 주요 사건 · 바이낸스 공개 가격</p>
     <nav class="nav-links" aria-label="페이지 이동">
       <a class="" href="index.html">대시보드</a>
-      <a class="btc active" href="chart.html">비트코인 차트</a>
-      <a class="shib" href="shib.html">시바 비교</a>
+      <a class="btc active" href="chart.html">BTC 차트</a>
+      <a class="shib" href="shib.html">SHIB 비교</a>
     </nav>
   </header>
 
   <div class="intro">
-    <strong>비트코인 하루 종가(USDT)</strong>에 전쟁·금리·규제 같은 주요 사건을 겹쳐 봅니다. 동행이 있어도 그 뉴스만의 원인으로 단정할 수 없습니다.
+    <strong>BTC 하루 종가(USDT)</strong>에 전쟁·금리·규제 같은 주요 사건을 겹쳐 봅니다. 동행이 있어도 그 뉴스만의 원인으로 단정할 수 없습니다.
   </div>
 
   <div class="summary-card" id="chartSummary">
@@ -369,7 +369,7 @@
   <div id="chart" class="card full tall" style="padding:0;"></div>
 
   <div class="section-title" id="events">
-    <h2>비트코인 주요 사건</h2>
+    <h2>BTC 주요 사건</h2>
     <p class="sec-desc">중요도 높은 소식 · 분류·연도 필터</p>
   </div>
   <div class="sev-legend">중요도: 편집 점수 1–5 → 높음(5)·중간(3–4)·낮음(1–2).</div>
@@ -570,7 +570,7 @@ function renderEvents() {
     const selected = selectedEventId && e.id === selectedEventId ? ' selected' : '';
     return `<article class="event${selected}">
       <div class="event-top">
-        <span class="chip btctag">비트코인</span>
+        <span class="chip btctag">BTC</span>
         <span class="chip ${e.category}">${cat}</span>
         <span class="chip">${e.start}${e.end && e.end !== e.start ? ' ~ ' + e.end : ''}</span>
         ${sev.text ? `<span class="sev ${sev.cls}">${sev.text}</span>` : ''}

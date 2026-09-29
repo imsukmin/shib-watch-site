@@ -349,24 +349,24 @@
     </p>
     <nav class="nav-links" aria-label="페이지 이동">
       <a class="active" href="index.html">대시보드</a>
-      <a class="btc" href="chart.html">비트코인 차트</a>
-      <a class="shib" href="shib.html">시바 비교</a>
+      <a class="btc" href="chart.html">BTC 차트</a>
+      <a class="shib" href="shib.html">SHIB 비교</a>
     </nav>
   </header>
 
   <div class="intro">
-    <strong>시바(SHIB)·비트코인(BTC)</strong> 가격·같이 움직인 정도·주요 사건을 한 화면에서 봅니다. 투자 조언이 아닙니다.
+    <strong>SHIB·BTC</strong> 가격·같이 움직인 정도·주요 사건을 한 화면에서 봅니다. 투자 조언이 아닙니다.
   </div>
 
   <div class="grid" id="priceCards">
     <div class="card price-card">
-      <div class="label">시바 · SHIBUSDT</div>
+      <div class="label">SHIB · SHIBUSDT</div>
       <div class="price" id="shibPrice">—</div>
       <div class="chg" id="shibChg">—</div>
       <div class="meta" id="shibMeta">하루 기준 가격</div>
     </div>
     <div class="card price-card">
-      <div class="label">비트코인 · BTCUSDT</div>
+      <div class="label">BTC · BTCUSDT</div>
       <div class="price" id="btcPrice">—</div>
       <div class="chg" id="btcChg">—</div>
       <div class="meta" id="btcMeta">하루 기준 가격</div>
@@ -417,14 +417,14 @@
   <div class="corr-grid" id="corrCards"></div>
 
   <div class="section-title">
-    <h2>시바 주요 사건</h2>
-    <p class="sec-desc">시바에 가까운 상장·소각·생태계·ETF 관련 사건</p>
+    <h2>SHIB 주요 사건</h2>
+    <p class="sec-desc">SHIB에 가까운 상장·소각·생태계·ETF 관련 사건</p>
   </div>
   <div class="sev-legend">중요도: 편집 점수 1–5 → 높음(5)·중간(3–4)·낮음(1–2). 학습용 표시이며 가격 예측이 아닙니다.</div>
   <div id="shibEvents"></div>
 
   <div class="section-title">
-    <h2>비트코인 주요 사건</h2>
+    <h2>BTC 주요 사건</h2>
     <p class="sec-desc">지정학 · 연준 · 규제 등 큰 뉴스</p>
   </div>
   <div id="btcEvents"></div>
@@ -668,10 +668,10 @@ function renderChart() {
   };
   const marks = show ? markersInWindow(ch.dates[0], ch.dates[ch.dates.length - 1]) : [];
   const traces = [
-    { x: ch.dates, y: ch.btc_norm, name: '비트코인', type: 'scatter', mode: 'lines',
-      line: { color: '#f39c12', width: 1.8 }, hovertemplate: '비트코인 %{y:.1f}<extra></extra>' },
-    { x: ch.dates, y: ch.shib_norm, name: '시바', type: 'scatter', mode: 'lines',
-      line: { color: '#ff7a9a', width: 1.8 }, hovertemplate: '시바 %{y:.1f}<extra></extra>' },
+    { x: ch.dates, y: ch.btc_norm, name: 'BTC', type: 'scatter', mode: 'lines',
+      line: { color: '#f39c12', width: 1.8 }, hovertemplate: 'BTC %{y:.1f}<extra></extra>' },
+    { x: ch.dates, y: ch.shib_norm, name: 'SHIB', type: 'scatter', mode: 'lines',
+      line: { color: '#ff7a9a', width: 1.8 }, hovertemplate: 'SHIB %{y:.1f}<extra></extra>' },
   ];
   if (marks.length) {
     traces.push({
@@ -705,8 +705,8 @@ function updatePeriodUI() {
   meta.textContent = `비교 구간: ${w.base_date} → ${w.end_date} · 시작 종가=100 · ${PERIOD_LABEL[currentPeriod] || ''} · 공통 거래일 ${w.dates.length}일`;
   const sWord = w.shib_ret >= 0 ? '상승' : '하락';
   const bWord = w.btc_ret >= 0 ? '상승' : '하락';
-  sum.textContent = `이 기간(${w.base_date}→${w.end_date}) 시바 ${fmtPct(w.shib_ret, 1)} (${sWord}), 비트코인 ${fmtPct(w.btc_ret, 1)} (${bWord}). `
-    + `시작 가격을 둘 다 100으로 맞춰 놓고 본 변화입니다. 시바가 비트코인 때문에(또는 그 반대로) 움직였다는 뜻은 아닙니다.`;
+  sum.textContent = `이 기간(${w.base_date}→${w.end_date}) SHIB ${fmtPct(w.shib_ret, 1)} (${sWord}), BTC ${fmtPct(w.btc_ret, 1)} (${bWord}). `
+    + `시작 가격을 둘 다 100으로 맞춰 놓고 본 변화입니다. SHIB가 BTC 때문에(또는 그 반대로) 움직였다는 뜻은 아닙니다.`;
   renderSoWhat();
 }
 function applyPeriod(key) {
@@ -759,11 +759,11 @@ function zoomToEvent(id, date) {
     `사건 주변 확대: ${d[0]} → ${d[d.length - 1]} (사건일 ${date}) · 하루 마감 가격으로만 본 참고 · '이 사건 때문'이라고 단정할 수 없음`;
   document.getElementById('periodSummaryText').textContent =
     `사건일 ${date} 전후 약 3주씩을, 시작을 100으로 맞춰 본 구간입니다. `
-    + `시바 ${fmtPct(windowData.shib_ret, 1)}, 비트코인 ${fmtPct(windowData.btc_ret, 1)}. `
+    + `SHIB ${fmtPct(windowData.shib_ret, 1)}, BTC ${fmtPct(windowData.btc_ret, 1)}. `
     + `하루 마감 가격만으로는 그날 장중 움직임이나 '이 사건 때문'이라고 말할 수 없습니다.`;
   renderChart();
-  renderEvents('shibEvents', DATA.events_shib_recent, 'shibtag', '시바', 'shib.html#events', '전체 사건 보기');
-  renderEvents('btcEvents', DATA.events_btc_recent, 'btctag', '비트코인', 'chart.html#events', '전체 사건 보기');
+  renderEvents('shibEvents', DATA.events_shib_recent, 'shibtag', 'SHIB', 'shib.html#events', '전체 사건 보기');
+  renderEvents('btcEvents', DATA.events_btc_recent, 'btctag', 'BTC', 'chart.html#events', '전체 사건 보기');
   document.getElementById('chart')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 function restorePeriod() {
@@ -773,8 +773,8 @@ function restorePeriod() {
   document.getElementById('restoreBar').classList.remove('open');
   closeMarkerPanel();
   applyPeriod(prev);
-  renderEvents('shibEvents', DATA.events_shib_recent, 'shibtag', '시바', 'shib.html#events', '전체 사건 보기');
-  renderEvents('btcEvents', DATA.events_btc_recent, 'btctag', '비트코인', 'chart.html#events', '전체 사건 보기');
+  renderEvents('shibEvents', DATA.events_shib_recent, 'shibtag', 'SHIB', 'shib.html#events', '전체 사건 보기');
+  renderEvents('btcEvents', DATA.events_btc_recent, 'btctag', 'BTC', 'chart.html#events', '전체 사건 보기');
 }
 async function fetchLive() {
   const base = 'https://data-api.binance.vision/api/v3';
@@ -819,7 +819,7 @@ function renderSoWhat() {
   const roll = Number(c.roll30_latest);
   let corrLine = '';
   if (!isNaN(roll)) {
-    if (roll >= 0.7) corrLine = '최근 30거래일 일별 수익률로는 시바와 비트코인이 꽤 같이 움직인 편입니다.';
+    if (roll >= 0.7) corrLine = '최근 30거래일 일별 수익률로는 SHIB와 BTC이 꽤 같이 움직인 편입니다.';
     else if (roll >= 0.4) corrLine = '최근 30거래일에는 둘이 어느 정도 비슷한 방향으로 움직였습니다.';
     else if (roll >= 0.15) corrLine = '최근 30거래일에는 둘이 가끔 같이, 가끔은 다르게 움직인 편입니다.';
     else corrLine = '최근 30거래일에는 둘이 꽤 다른 날 움직임을 보인 편입니다.';
@@ -829,7 +829,7 @@ function renderSoWhat() {
     const sPct = windowData.shib_ret, bPct = windowData.btc_ret;
     const sWord = sPct >= 0 ? '올라' : '내려';
     const bWord = bPct >= 0 ? '올라' : '내려';
-    priceLine = `선택한 ${PERIOD_LABEL[currentPeriod]}(${windowData.base_date}→${windowData.end_date}) 같은 출발선 기준으로 시바 약 ${Math.abs(sPct).toFixed(0)}% ${sWord}가고 비트코인 약 ${Math.abs(bPct).toFixed(0)}% ${bWord}간 자리입니다.`;
+    priceLine = `선택한 ${PERIOD_LABEL[currentPeriod]}(${windowData.base_date}→${windowData.end_date}) 같은 출발선 기준으로 SHIB 약 ${Math.abs(sPct).toFixed(0)}% ${sWord}가고 BTC 약 ${Math.abs(bPct).toFixed(0)}% ${bWord}간 자리입니다.`;
   }
   const main = [corrLine, priceLine].filter(Boolean).join(' ');
   const full = Number(c.full_corr);
@@ -846,8 +846,8 @@ function boot() {
   const p = DATA.prices || {};
   renderPrices(p.shib || {}, p.btc || {}, { sourceLabel: '저장된 하루 종가' });
   renderCorr();
-  renderEvents('shibEvents', DATA.events_shib_recent, 'shibtag', '시바', 'shib.html#events', '전체 사건 보기');
-  renderEvents('btcEvents', DATA.events_btc_recent, 'btctag', '비트코인', 'chart.html#events', '전체 사건 보기');
+  renderEvents('shibEvents', DATA.events_shib_recent, 'shibtag', 'SHIB', 'shib.html#events', '전체 사건 보기');
+  renderEvents('btcEvents', DATA.events_btc_recent, 'btctag', 'BTC', 'chart.html#events', '전체 사건 보기');
   document.querySelectorAll('#periodBar button').forEach(btn => {
     btn.addEventListener('click', () => applyPeriod(btn.getAttribute('data-period')));
   });
