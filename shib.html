@@ -581,7 +581,7 @@ function renderCorr() {
     { label: '처음부터 지금까지', val: c.full_corr, hint: (c.overlap_start || '') + ' → ' + (c.overlap_end || '') + ' · ' + (c.n_days || '') + '일 · 위 차트 기간과 별개' },
     { label: '최근 30일', val: c.roll30_latest, hint: '위 차트와 별개 · 그전에도 30일씩 잘라 본 평균은 ' + (c.roll30_mean != null ? Number(c.roll30_mean).toFixed(3) : '—') },
     { label: '최근 90일', val: c.roll90_latest, hint: '위 차트와 별개 · 그전에도 90일씩 잘라 본 평균은 ' + (c.roll90_mean != null ? Number(c.roll90_mean).toFixed(3) : '—') },
-    { label: '최고 일봉 종가', val: null, hint: 'Binance SHIBUSDT · 상장~최신 겹침 · 일봉 종가 최대 · 기록일 ' + (c.shib_ath_date || '—') + ' · USDT (장중 고가 아님)', custom: fmtShib(c.shib_ath) + ' USDT' },
+    { label: 'SHIB 하루 종가 최고', val: null, hint: '바이낸스 SHIBUSDT · 하루 마감가 기준 최고 · ' + (c.shib_ath_date || '—') + ' · 장중 최고가와는 다름', custom: fmtShib(c.shib_ath) + ' USDT' },
   ];
   document.getElementById('corrCards').innerHTML = items.map(it => {
     if (it.custom != null) {
@@ -720,7 +720,7 @@ function updatePeriodUI() {
   if (!isNaN(roll)) {
     if (roll >= 0.7) corrWord = ' 최근 30일에는 꽤 같이 움직이는 편입니다(위 차트와 별개).';
     else if (roll >= 0.4) corrWord = ' 최근 30일에는 어느 정도 같이 움직이는 편입니다(위 차트와 별개).';
-    else corrWord = ' 최근 30거래일에는 둘이 꽤 다르게 움직인 구간도 있습니다(위 차트와 별개).';
+    else corrWord = ' 최근 30일에는 둘이 꽤 다르게 움직인 구간도 있습니다(위 차트와 별개).';
   }
   sum.textContent = `이 기간(${w.base_date}→${w.end_date}) SHIB ${fmtPct(w.shib_ret, 1)}, BTC ${fmtPct(w.btc_ret, 1)}. `
     + corrWord
