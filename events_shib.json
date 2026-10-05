@@ -11,7 +11,7 @@
     "n_candles": 1967
   },
   "disclaimer_ko": "상관관계는 인과가 아님. 뉴스·가격 수치는 인용 소스와 Binance CSV에만 기반하며 창작하지 않음.",
-  "event_count": 23,
+  "event_count": 24,
   "events": [
     {
       "id": "binance-shibusdt-listing",
@@ -1146,6 +1146,57 @@
           "title": "SEC EDGAR — TKNZ Form 8-K (trading debut)",
           "url": "https://www.sec.gov/Archives/edgar/data/2089855/000199937126014983/tknz_8k-071426.htm",
           "why_ko": "공식·규제 문서로, 표현과 날짜를 확인할 때 쓰기 좋습니다."
+        }
+      ]
+    },
+    {
+      "id": "shib-solana-sunrise-2026",
+      "title_ko": "SHIB, 솔라나에 상륙 (Sunrise 경유)",
+      "title_en": "SHIB goes live on Solana via Sunrise",
+      "start": "2026-10-04",
+      "end": "2026-10-04",
+      "category": "ecosystem",
+      "severity": 3,
+      "summary_ko": "솔라나 공식 계정이 SHIB가 Wormhole Labs의 Sunrise를 통해 솔라나에 상장됐다고 발표. Jupiter·Raydium·Phantom·Kamino 등에서 거래 가능. 원본은 여전히 이더리움 ERC-20이며 이주·Shibarium 이전이 아님. 보도상 가격 반응은 미미.",
+      "sources": [
+        {
+          "title": "TradingView News — Solana: SHIB deploys via Sunrise (04 Oct 2026)",
+          "url": "https://www.tradingview.com/news/coinmarketcal:03422a440094b:0-solana-shib-deploys-via-sunrise-04-oct-2026/"
+        },
+        {
+          "title": "cryptonews.net — Shiba Inu (SHIB) Goes Live on Solana Network",
+          "url": "https://cryptonews.net/news/altcoins/33537752/"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\nSHIB는 이더리움 위의 ERC-20 토큰이고, 자체 레이어2로 Shibarium이 있습니다. Wormhole Labs가 만든 Sunrise는 다른 체인의 자산을 솔라나로 들여오는 관문으로, 2025년 11월 MON을 시작으로 2026년 9월 18일에는 PEPE도 솔라나에 들여왔습니다.\n\n무슨 일\n2026년 10월 4일 솔라나 공식 계정이 \"SHIB가 Sunrise를 통해 솔라나에 상장됐다\"고 발표했습니다. Jupiter·Raydium(탈중앙 거래소), Phantom(지갑), Kamino(디파이) 같은 솔라나 앱에서 SHIB를 바로 다룰 수 있게 됐습니다. 보도에 따르면 이건 이주가 아닙니다. 원본 SHIB는 그대로 이더리움에 있고, Shibarium이 솔라나로 옮겨 가는 것도 아닙니다. 솔라나 안에서 공식으로 인정된 SHIB 표현(정식 토큰)이 하나 생긴 것입니다.\n\n시장·가격에 미친 영향\n거래할 수 있는 곳이 넓어진 접근성 사건입니다. 다만 보도들은 발표 직후 가격 반응이 크지 않았다고 전했습니다. 실제 가격 흐름은 이 사이트의 바이낸스 일봉 차트로 확인하세요.",
+      "learn_points_ko": [
+        "다른 체인 상륙(브리지·게이트웨이)은 '이사'가 아니라 '지점 개설'에 가깝습니다. 원본 토큰은 그대로 남습니다.",
+        "공식 계정 발표와, 실제 거래량이 붙는지는 별개입니다.",
+        "가격·뉴스·(해당되면) 시바만의 이슈인지 매크로인지 나눠 보면 덜 헷갈립니다."
+      ],
+      "learn_if_again_ko": "'○○ 체인 상장' 뉴스가 나오면 이주인지, 원본은 그대로인지, 어떤 앱에서 거래되는지 먼저 확인하세요.",
+      "similar_event_ids": [
+        "upbit-shib-krw-2023",
+        "robinhood-shib",
+        "shibarium-mainnet"
+      ],
+      "then_vs_now_ko": "업비트·로빈후드 상장처럼 'SHIB를 살 수 있는 곳'이 넓어진 사건이지만, 이번엔 거래소가 아니라 다른 블록체인의 앱들입니다. Shibarium 메인넷은 SHIB 진영이 직접 만든 체인이었고, 이번은 솔라나 쪽 관문을 통해 들어간 것이라는 점이 다릅니다.",
+      "angles_ko": {
+        "price_market": "접근성 확대는 관심을 끌 수 있지만, 보도상 즉각적인 가격 반응은 작았습니다.",
+        "news_reg": "솔라나 공식 계정 발표와 Sunrise 측 안내가 1차 자료입니다.",
+        "shib_vs_btc_macro": "시바만의 생태계 이슈입니다. BTC·매크로와는 층이 다릅니다(가격은 시장 분위기로 같이 움직일 수 있어요)."
+      },
+      "further_reading": [
+        {
+          "title": "TradingView News — Solana: SHIB deploys via Sunrise (04 Oct 2026)",
+          "url": "https://www.tradingview.com/news/coinmarketcal:03422a440094b:0-solana-shib-deploys-via-sunrise-04-oct-2026/",
+          "why_ko": "솔라나 공식 발표 내용을 짧게 정리했습니다."
+        },
+        {
+          "title": "cryptonews.net — Shiba Inu (SHIB) Goes Live on Solana Network",
+          "url": "https://cryptonews.net/news/altcoins/33537752/",
+          "why_ko": "이주가 아니라는 점, Sunrise가 뭔지 맥락을 설명합니다."
         }
       ]
     }
