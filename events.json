@@ -3,7 +3,7 @@
   "timezone_note": "Event dates are calendar dates as reported (mostly US/ME/Asia news days). Chart overlays use UTC midnight of start/end unless noted. Prices come only from Binance klines CSV — never invented.",
   "data_choice": "Chart uses daily (1d) candles for 2017-08-17 → 2026-09-27 (~3.3k points) with rangeslider. Full-span hourly (~75k) would make Plotly HTML too heavy; hourly CSV kept for recent 1y (btc_usdt_1h_recent.csv) and original 2026 window (btc_usdt_1h.csv).",
   "hormuz_blockade_verdict": "NO single official 'Hormuz permanently sealed to all shipping' event; YES severe multi-month disruption from 2026-02-28 with Iranian transit warnings/attacks and a US naval blockade of Iranian ports. Traffic fell from ~125/day prewar to single digits at times in September 2026.",
-  "event_count": 111,
+  "event_count": 112,
   "events": [
     {
       "id": "bitcoin-whitepaper-2008",
@@ -5751,6 +5751,74 @@
           "title": "‘Choice now rests with US’: Iran offers America 7-day plan to reopen Strait of Hormuz",
           "url": "https://timesofindia.indiatimes.com/world/middle-east/choice-now-rests-with-us-iran-offers-america-7-day-plan-to-reopen-strait-of-hormuz/articleshow/134495234.cms",
           "why_ko": "날짜·숫자·공식 표현을 원문에서 대조할 때 도움이 됩니다."
+        }
+      ]
+    },
+    {
+      "id": "kospi-circuit-breaker-oct-2026",
+      "title_ko": "코스피·코스닥 8%대 폭락, 서킷브레이커 발동",
+      "title_en": "Kospi/Kosdaq plunge 8%+, circuit breakers triggered (Oct 15, 2026)",
+      "start": "2026-10-15",
+      "end": "2026-10-15",
+      "category": "markets",
+      "severity": 5,
+      "summary_ko": "2026-10-15 미국 CPI 예상 상회(3.7%)·추가 금리 인상 우려·AI 투자 수익성 의심에 코스피·코스닥이 장중 8% 넘게 급락해 두 시장 모두 1단계 서킷브레이커(20분 거래 중단)가 발동됨. 장 초반 매도 사이드카도 동시 발동. 같은 날 BTC·SHIB 반응은 상대적으로 작았음.",
+      "sources": [
+        {
+          "title": "연합뉴스 — 코스피·코스닥 1단계 서킷브레이커 발동…8% 넘게 폭락(종합) (2026-10-15)",
+          "url": "https://www.yna.co.kr/view/AKR20261015093551008"
+        },
+        {
+          "title": "Korea JoongAng Daily — Kospi plunges over 7% as AI doubts, U.S. rate fears hit Seoul (2026-10-15)",
+          "url": "https://www.koreajoongangdaily.com/business/kospinbspplunges-over-7-as-ai-doubts-us-rate-fears-hit-seoul/12922059"
+        },
+        {
+          "title": "AP — A deepened tech sell-off drags Asian stocks lower (2026-10-15)",
+          "url": "https://apnews.com/article/stock-markets-kospi-tech-shares-e889ad7dee2b7dd959f1b8bc87366914"
+        },
+        {
+          "title": "문화일보 — 2시간만에 8% 폭락… ‘CPI·금리·AI거품’ 3각파도 (2026-10-15)",
+          "url": "https://www.munhwa.com/article/11623774"
+        },
+        {
+          "title": "한국거래소 — 매매거래중단제도(서킷브레이커) 안내",
+          "url": "https://regulation.krx.co.kr/contents/RGL/03/03010402/RGL03010402.jsp"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n전날(미국 시간 10월 14일) 발표된 미국 9월 소비자물가(CPI)가 1년 전보다 3.7% 올라 예상(3.6%)을 웃돌았습니다. 미국 증시는 나스닥 −1.9%, S&P 500 −1.1%로 7월 이후 가장 나쁜 하루를 보냈고, 추가 금리 인상 가능성이 다시 거론됐습니다. 여기에 AI 투자의 수익성에 대한 의심과 중국 메모리 반도체 공급 확대 우려가 겹쳤습니다.\n\n무슨 일\n10월 15일 코스피는 5.59% 내린 5,673으로 출발해 곧바로 코스피·코스닥 모두 매도 사이드카(프로그램 매도 일시 정지)가 걸렸습니다. 이후 낙폭이 8%를 넘자 두 시장에 1단계 서킷브레이커가 발동돼 20분 동안 거래가 멈췄습니다(연합뉴스). 서킷브레이커는 코스피가 전날보다 8% 이상 떨어지면 시장 전체 거래를 잠시 멈추는 장치입니다(한국거래소). 외국인 순매도가 하락을 이끌었다고 보도됐습니다(Korea JoongAng Daily).\n\n시장·가격에 미친 영향\n한국·일본 등 아시아 기술주가 크게 흔들렸습니다(AP). 같은 시간대 바이낸스 기준 비트코인은 1시간에 약 −0.75%, 시바(SHIB)는 약 −0.2%로, 주식만큼 크게 떨어지지는 않았습니다. 다만 위험자산 분위기가 나빠지는 날이라 코인도 며칠간 영향을 받을 수 있습니다.",
+      "learn_points_ko": [
+        "서킷브레이커는 ‘시장이 너무 빨리 떨어질 때 잠깐 멈추는 장치’입니다. 발동 자체가 하락의 끝이나 시작을 뜻하지는 않습니다.",
+        "미국 물가 → 금리 걱정 → 기술주 매도 → 아시아 증시 급락처럼 뉴스가 사슬로 이어질 수 있습니다.",
+        "시바 고유 뉴스가 아니라 매크로·주식 쇼크입니다. 코인은 같은 날 덜 움직일 수도, 나중에 따라 움직일 수도 있습니다."
+      ],
+      "learn_if_again_ko": "한국 증시 서킷브레이커 뉴스가 나오면, 원인이 미국 물가·금리인지 AI·반도체인지 먼저 보고, 비트코인과 시바가 같은 시간에 얼마나 움직였는지 비교해 보세요.",
+      "similar_event_ids": [
+        "yen-carry-unwind-aug-2024",
+        "hot-cpi-sep-2022",
+        "deepseek-ai-shock-jan-2025"
+      ],
+      "then_vs_now_ko": "2024년 8월 엔캐리 청산 때도 한국·일본 증시가 하루에 크게 무너졌습니다. 그때는 엔화·캐리 청산이 중심이었고, 이번에는 미국 물가·금리와 AI 투자 의심이 중심입니다. 2022년 9월 ‘뜨거운 CPI’ 날과는 물가 충격이라는 점이 닮았습니다.",
+      "angles_ko": {
+        "price_market": "한국 대표 지수가 하루에 8% 넘게 빠진 드문 급락일입니다.",
+        "news_reg": "연합뉴스·한국거래소 안내로 발동 사실과 규칙을, AP·JoongAng Daily로 배경을 확인합니다.",
+        "shib_vs_btc_macro": "매크로·주식 이슈입니다. 시바만의 소식은 아닙니다. 그래도 위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(간접 영향)."
+      },
+      "further_reading": [
+        {
+          "title": "연합뉴스 — 코스피·코스닥 1단계 서킷브레이커 발동…8% 넘게 폭락(종합) (2026-10-15)",
+          "url": "https://www.yna.co.kr/view/AKR20261015093551008",
+          "why_ko": "발동 사실과 낙폭을 한국어로 빠르게 확인할 수 있습니다."
+        },
+        {
+          "title": "한국거래소 — 매매거래중단제도(서킷브레이커) 안내",
+          "url": "https://regulation.krx.co.kr/contents/RGL/03/03010402/RGL03010402.jsp",
+          "why_ko": "8%·15%·20% 단계별 거래 중단 규칙을 원문으로 볼 수 있습니다."
+        },
+        {
+          "title": "Korea JoongAng Daily — Kospi plunges over 7% as AI doubts, U.S. rate fears hit Seoul (2026-10-15)",
+          "url": "https://www.koreajoongangdaily.com/business/kospinbspplunges-over-7-as-ai-doubts-us-rate-fears-hit-seoul/12922059",
+          "why_ko": "사이드카 시각, 외국인 매도 규모 등 배경 숫자가 정리돼 있습니다."
         }
       ]
     }

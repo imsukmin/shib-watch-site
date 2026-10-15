@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0b1020" />
+<title>코스피·코스닥 8%대 폭락, 서킷브레이커 발동 · 사건 자세히</title>
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<style>
+
+  :root {
+    --bg: #0b1020;
+    --bg2: #121933;
+    --card: #161e3a;
+    --card2: #1c2648;
+    --border: rgba(255,255,255,0.08);
+    --text: #e8ecf7;
+    --muted: #8b95b5;
+    --accent: #f39c12;
+    --link: #9db4ff;
+    --shib: #ff7a9a;
+    --btc: #f39c12;
+    --down: #e74c3c;
+    --up: #2ecc71;
+    --chip: #243056;
+    --radius: 14px;
+    --shadow: 0 8px 24px rgba(0,0,0,0.28);
+    --font: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font); }
+  body { min-height: 100vh; line-height: 1.55; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 16px 14px 48px; }
+  .hero {
+    background: linear-gradient(145deg, #182044 0%, #10162d 60%, #0d1328 100%);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 18px 16px 16px;
+    box-shadow: var(--shadow);
+    margin-bottom: 14px;
+  }
+  .hero h1 {
+    margin: 8px 0 6px;
+    font-size: 1.28rem;
+    letter-spacing: -0.02em;
+    font-weight: 750;
+    line-height: 1.35;
+  }
+  .hero .sub { color: var(--muted); font-size: 0.86rem; margin: 0 0 12px; }
+  .nav-links {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    position: sticky; top: 0; z-index: 40;
+    background: rgba(13,19,40,0.94);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 8px 2px;
+    margin: 0 -2px;
+    border-radius: 12px;
+  }
+  .nav-links a {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--chip); color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 999px; padding: 7px 12px;
+    font-size: 0.82rem; font-weight: 600;
+    text-decoration: none;
+  }
+  .nav-links a.btc { border-color: rgba(243,156,18,0.35); color: #ffc56a; }
+  .nav-links a.shib { border-color: rgba(255,122,154,0.4); color: #ffb0c4; }
+  .chip {
+    display: inline-block; font-size: 0.75rem; font-weight: 700;
+    padding: 2px 7px; border-radius: 999px; background: var(--chip); color: #c7d0ee;
+  }
+  .chip.geo { background: rgba(231,76,60,0.18); color: #ff9b91; }
+  .chip.fed { background: rgba(52,152,219,0.18); color: #8fd0ff; }
+  .chip.crypto, .chip.exchange { background: rgba(155,89,186,0.18); color: #d5a8ff; }
+  .chip.policy, .chip.etf_reg { background: rgba(26,188,156,0.18); color: #7ff0d6; }
+  .chip.markets { background: rgba(243,156,18,0.18); color: #ffd28a; }
+  .chip.burn_supply, .chip.ecosystem { background: rgba(255,122,154,0.18); color: #ffb0c4; }
+  .chip.covid { background: rgba(46,204,113,0.18); color: #8dffb8; }
+  .chip.btctag { background: rgba(243,156,18,0.22); color: #ffd28a; }
+  .chip.shibtag { background: rgba(255,122,154,0.22); color: #ffb0c4; }
+  .chip.sev-high { background: rgba(243,156,18,0.2); color: #ffd28a; }
+  .chip.sev-mid { background: rgba(139,149,181,0.22); color: #c7d0ee; }
+  .chip.sev-low { background: rgba(139,149,181,0.14); color: #8b95b5; }
+  .meta-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 4px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 14px;
+    box-shadow: var(--shadow);
+    margin-bottom: 12px;
+  }
+  .card.takeaway {
+    border: 1px solid rgba(243,156,18,0.35);
+    border-left: 4px solid var(--accent);
+    background: linear-gradient(145deg, #1a2748 0%, #161e3a 100%);
+  }
+  .card.takeaway .section-label { color: #ffd28a; }
+  .card.demoted {
+    padding: 12px;
+    box-shadow: none;
+    background: var(--bg2);
+    opacity: 0.92;
+  }
+  .card.demoted .section-label { font-size: 0.7rem; margin-bottom: 6px; }
+  .section-label {
+    color: var(--muted); font-size: 0.78rem; font-weight: 700;
+    margin: 0 0 8px;
+  }
+  .article-body h2 {
+    margin: 18px 0 8px; font-size: 1.02rem; font-weight: 720;
+    color: #ffd28a;
+  }
+  .article-body h2:first-child { margin-top: 0; }
+  .article-body p {
+    margin: 0 0 12px; color: var(--text); font-size: 0.92rem;
+  }
+  .article-body p:last-child { margin-bottom: 0; }
+  .phases { margin: 0; padding: 0; list-style: none; }
+  .phases li {
+    border-left: 2px solid rgba(243,156,18,0.35);
+    padding: 6px 0 6px 12px; margin-bottom: 6px;
+  }
+  .phases .pdate { color: var(--muted); font-size: 0.75rem; font-weight: 650; }
+  .phases .ptitle { font-weight: 700; font-size: 0.88rem; margin: 2px 0; }
+  .phases .pnote { color: var(--muted); font-size: 0.8rem; }
+  .sources { list-style: none; margin: 0; padding: 0; }
+  .sources li {
+    margin-bottom: 8px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .sources a { font-weight: 650; font-size: 0.88rem; word-break: break-word; }
+  .sources .url {
+    display: block; color: var(--muted); font-size: 0.72rem;
+    margin-top: 4px; word-break: break-all;
+  }
+  .sources .why { display: block; color: var(--muted); font-size: 0.78rem; margin-top: 4px; }
+  .footer {
+    margin-top: 22px; padding: 12px; color: var(--muted); font-size: 0.72rem;
+    border-top: 1px solid var(--border); text-align: center;
+  }
+  .footer a { color: var(--muted); }
+  .learn-list { margin: 0; padding: 0 0 0 18px; }
+  .learn-list li { margin-bottom: 8px; font-size: 0.9rem; color: var(--text); }
+  .learn-again {
+    margin-top: 12px; padding-top: 10px;
+    border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 0.85rem;
+  }
+  .learn-again strong { color: #ffd28a; font-weight: 700; }
+  .similar-list { list-style: none; margin: 0; padding: 0; }
+  .similar-list li {
+    margin-bottom: 8px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .similar-list a { font-weight: 650; font-size: 0.88rem; }
+  .similar-list .sdate { color: var(--muted); font-size: 0.75rem; font-weight: 650; margin-bottom: 2px; }
+  .angle-inline {
+    margin-top: 12px; padding-top: 10px;
+    border-top: 1px solid var(--border);
+  }
+  .angle-inline .alabel {
+    color: #ffd28a; font-size: 0.78rem; font-weight: 700; margin: 8px 0 2px;
+  }
+  .angle-inline p { margin: 0 0 6px; font-size: 0.88rem; color: var(--text); }
+  .angle-block {
+    margin-bottom: 10px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .angle-block .alabel {
+    color: #ffd28a; font-size: 0.78rem; font-weight: 700; margin-bottom: 4px;
+  }
+  .angle-block p { margin: 0; font-size: 0.88rem; color: var(--text); }
+
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="meta-row">
+      <span class="chip btctag">BTC</span>
+      <span class="chip markets">시장</span>
+      <span class="chip">2026-10-15</span>
+      <span class="chip sev-high">중요도 높음</span>
+    </div>
+    <h1>코스피·코스닥 8%대 폭락, 서킷브레이커 발동</h1>
+    <p class="sub">2026-10-15 미국 CPI 예상 상회(3.7%)·추가 금리 인상 우려·AI 투자 수익성 의심에 코스피·코스닥이 장중 8% 넘게 급락해 두 시장 모두 1단계 서킷브레이커(20분 거래 중단)가 발동됨. 장 초반 매도 사이드카도 동시 발동. 같은 날 BTC·SHIB 반응은 상대적으로 작았음.</p>
+    <nav class="nav-links" aria-label="페이지 이동">
+      <a href="../index.html">대시보드</a>
+      <a class="btc" href="../chart.html">BTC 차트</a>
+      <a class="shib" href="../shib.html">SHIB 비교</a>
+    </nav>
+  </header>
+
+
+  <section class="card">
+    <div class="section-label">비슷한 과거 상황</div>
+    <ul class="similar-list"><li><div class="sdate">2024-08-05</div><a href="yen-carry-unwind-aug-2024.html">엔캐리 청산 발작</a></li><li><div class="sdate">2022-09-13</div><a href="hot-cpi-sep-2022.html">뜨거운 CPI 쇼크</a></li><li><div class="sdate">2025-01-27</div><a href="deepseek-ai-shock-jan-2025.html">DeepSeek AI 쇼크</a></li></ul>
+  </section>
+  <article class="card article-body">
+    <div class="section-label">자세히 읽기</div>
+    <h2>배경</h2>
+<p>전날(미국 시간 10월 14일) 발표된 미국 9월 소비자물가(CPI)가 1년 전보다 3.7% 올라 예상(3.6%)을 웃돌았습니다. 미국 증시는 나스닥 −1.9%, S&amp;P 500 −1.1%로 7월 이후 가장 나쁜 하루를 보냈고, 추가 금리 인상 가능성이 다시 거론됐습니다. 여기에 AI 투자의 수익성에 대한 의심과 중국 메모리 반도체 공급 확대 우려가 겹쳤습니다.</p>
+<h2>무슨 일</h2>
+<p>10월 15일 코스피는 5.59% 내린 5,673으로 출발해 곧바로 코스피·코스닥 모두 매도 사이드카(프로그램 매도 일시 정지)가 걸렸습니다. 이후 낙폭이 8%를 넘자 두 시장에 1단계 서킷브레이커가 발동돼 20분 동안 거래가 멈췄습니다(연합뉴스). 서킷브레이커는 코스피가 전날보다 8% 이상 떨어지면 시장 전체 거래를 잠시 멈추는 장치입니다(한국거래소). 외국인 순매도가 하락을 이끌었다고 보도됐습니다(Korea JoongAng Daily).</p>
+<h2>시장·가격에 미친 영향</h2>
+<p>한국·일본 등 아시아 기술주가 크게 흔들렸습니다(AP). 같은 시간대 바이낸스 기준 비트코인은 1시간에 약 −0.75%, 시바(SHIB)는 약 −0.2%로, 주식만큼 크게 떨어지지는 않았습니다. 다만 위험자산 분위기가 나빠지는 날이라 코인도 며칠간 영향을 받을 수 있습니다.</p>
+  </article>
+
+  <section class="card takeaway">
+    <div class="section-label">이 사건에서 배울 점</div>
+    <ul class="learn-list"><li>서킷브레이커는 ‘시장이 너무 빨리 떨어질 때 잠깐 멈추는 장치’입니다. 발동 자체가 하락의 끝이나 시작을 뜻하지는 않습니다.</li><li>미국 물가 → 금리 걱정 → 기술주 매도 → 아시아 증시 급락처럼 뉴스가 사슬로 이어질 수 있습니다.</li><li>시바 고유 뉴스가 아니라 매크로·주식 쇼크입니다. 코인은 같은 날 덜 움직일 수도, 나중에 따라 움직일 수도 있습니다.</li></ul>
+    <div class="learn-again"><strong>비슷한 일이 또 오면</strong> 한국 증시 서킷브레이커 뉴스가 나오면, 원인이 미국 물가·금리인지 AI·반도체인지 먼저 보고, 비트코인과 시바가 같은 시간에 얼마나 움직였는지 비교해 보세요.</div>
+    <div class="angle-inline"><div class="section-label" style="margin-top:4px;">여러 각도로 보기</div><div class="alabel">가격 · 시장 분위기</div><p>한국 대표 지수가 하루에 8% 넘게 빠진 드문 급락일입니다.</p><div class="alabel">뉴스 · 규제</div><p>연합뉴스·한국거래소 안내로 발동 사실과 규칙을, AP·JoongAng Daily로 배경을 확인합니다.</p><div class="alabel">직접 이슈 vs 간접 영향</div><p>매크로·주식 이슈입니다. 시바만의 소식은 아닙니다. 그래도 위험자산 분위기가 흔들리면 SHIB도 같이 움직일 수 있어요(간접 영향).</p></div>
+  </section>
+
+  <section class="card">
+    <div class="section-label">그때와 지금 · 비슷한 사건과의 차이</div>
+    <p style="margin:0;font-size:0.9rem;">2024년 8월 엔캐리 청산 때도 한국·일본 증시가 하루에 크게 무너졌습니다. 그때는 엔화·캐리 청산이 중심이었고, 이번에는 미국 물가·금리와 AI 투자 의심이 중심입니다. 2022년 9월 ‘뜨거운 CPI’ 날과는 물가 충격이라는 점이 닮았습니다.</p>
+  </section>
+
+
+  <section class="card demoted">
+    <div class="section-label">출처 · 더 읽어볼 자료</div>
+    <ul class="sources"><li><a href="https://www.yna.co.kr/view/AKR20261015093551008" target="_blank" rel="noopener noreferrer">연합뉴스 — 코스피·코스닥 1단계 서킷브레이커 발동…8% 넘게 폭락(종합) (2026-10-15)</a><span class="why">발동 사실과 낙폭을 한국어로 빠르게 확인할 수 있습니다.</span><span class="url">https://www.yna.co.kr/view/AKR20261015093551008</span></li><li><a href="https://regulation.krx.co.kr/contents/RGL/03/03010402/RGL03010402.jsp" target="_blank" rel="noopener noreferrer">한국거래소 — 매매거래중단제도(서킷브레이커) 안내</a><span class="why">8%·15%·20% 단계별 거래 중단 규칙을 원문으로 볼 수 있습니다.</span><span class="url">https://regulation.krx.co.kr/contents/RGL/03/03010402/RGL03010402.jsp</span></li><li><a href="https://www.koreajoongangdaily.com/business/kospinbspplunges-over-7-as-ai-doubts-us-rate-fears-hit-seoul/12922059" target="_blank" rel="noopener noreferrer">Korea JoongAng Daily — Kospi plunges over 7% as AI doubts, U.S. rate fears hit Seoul (2026-10-15)</a><span class="why">사이드카 시각, 외국인 매도 규모 등 배경 숫자가 정리돼 있습니다.</span><span class="url">https://www.koreajoongangdaily.com/business/kospinbspplunges-over-7-as-ai-doubts-us-rate-fears-hit-seoul/12922059</span></li><li><a href="https://apnews.com/article/stock-markets-kospi-tech-shares-e889ad7dee2b7dd959f1b8bc87366914" target="_blank" rel="noopener noreferrer">AP — A deepened tech sell-off drags Asian stocks lower (2026-10-15)</a><span class="url">https://apnews.com/article/stock-markets-kospi-tech-shares-e889ad7dee2b7dd959f1b8bc87366914</span></li><li><a href="https://www.munhwa.com/article/11623774" target="_blank" rel="noopener noreferrer">문화일보 — 2시간만에 8% 폭락… ‘CPI·금리·AI거품’ 3각파도 (2026-10-15)</a><span class="url">https://www.munhwa.com/article/11623774</span></li></ul>
+  </section>
+
+  <footer class="footer">
+    숫자·날짜·주장은 위 출처와 바이낸스 공개 가격 CSV에만 기반합니다. 출처에 없는 내용은 적지 않았습니다. 투자 조언이 아닙니다.
+    <div style="margin-top:8px;"><a href="https://github.com/imsukmin/shib-watch-site" target="_blank" rel="noopener">GitHub</a></div>
+  </footer>
+</div>
+</body>
+</html>
