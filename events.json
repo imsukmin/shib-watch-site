@@ -1,9 +1,9 @@
 {
-  "generated_at_kst": "2026-10-30",
+  "generated_at_kst": "2026-11-02",
   "timezone_note": "Event dates are calendar dates as reported (mostly US/ME/Asia news days). Chart overlays use UTC midnight of start/end unless noted. Prices come only from Binance klines CSV — never invented.",
   "data_choice": "Chart uses daily (1d) candles for 2017-08-17 → 2026-09-27 (~3.3k points) with rangeslider. Full-span hourly (~75k) would make Plotly HTML too heavy; hourly CSV kept for recent 1y (btc_usdt_1h_recent.csv) and original 2026 window (btc_usdt_1h.csv).",
   "hormuz_blockade_verdict": "NO single official 'Hormuz permanently sealed to all shipping' event; YES severe multi-month disruption from 2026-02-28 with Iranian transit warnings/attacks and a US naval blockade of Iranian ports. Traffic fell from ~125/day prewar to single digits at times in September 2026.",
-  "event_count": 113,
+  "event_count": 114,
   "events": [
     {
       "id": "bitcoin-whitepaper-2008",
@@ -5906,6 +5906,90 @@
           "title": "Lookonchain (X) — Binance hacker dumping altcoins on-chain (2026-10-29)",
           "url": "https://x.com/lookonchain/status/2115938836757037428",
           "why_ko": "해커가 아직 들고 있는 알트코인 목록과 수량을 볼 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "binance-btc-withdrawals-reopen-2026",
+      "title_ko": "바이낸스 BTC 출금 재개(해킹 후)",
+      "title_en": "Binance reopens BTC withdrawals after hot-wallet hack",
+      "start": "2026-11-01",
+      "end": "2026-11-01",
+      "category": "crypto",
+      "severity": 4,
+      "summary_ko": "10월 29일 핫월렛 해킹으로 출금을 멈췄던 바이낸스가 2026-11-01(UTC 06:00, 한국 시간 오후 3시)부터 출금을 단계적으로 다시 열었음. 비트코인 네트워크의 BTC 출금은 한국 시간 오후 4시 19분쯤 재개가 확인됨(Lookonchain). 바이낸스는 피해액을 약 $6.3B로 추정하고, 그중 약 95%를 회사 자금으로 메웠으며 손실을 이용자에게 넘기지 않겠다고 밝힘. 남은 코인·네트워크 출금과 최종 손실액은 아직 확정되지 않음.",
+      "sources": [
+        {
+          "title": "CoinDesk — Binance opens crypto withdrawals in phases starting with bitcoin following $6.3 billion hack (2026-11-01)",
+          "url": "https://www.coindesk.com/markets/2026/11/01/binance-opens-crypto-withdrawals-in-phases-starting-with-bitcoin-following-usd6-3-billion-hack"
+        },
+        {
+          "title": "CNBC — Binance sees $3.64 billion in net outflows as withdrawals resume (2026-11-02)",
+          "url": "https://www.cnbc.com/2026/11/02/binance-outflow-hack-bitcoin.html"
+        },
+        {
+          "title": "TechCrunch — Binance resumes withdrawals following $6.3 billion breach (2026-11-01)",
+          "url": "https://techcrunch.com/2026/11/01/binance-resumes-withdrawals-following-6-3-billion-breach/"
+        },
+        {
+          "title": "South China Morning Post (Reuters) — Binance sees spike in withdrawals as exchange returns online after US$6.3 billion hack (2026-11-02 KST)",
+          "url": "https://www.scmp.com/business/cryptocurrency/article/3372910/binance-sees-spike-withdrawals-exchange-returns-online-after-us63-billion-hack"
+        },
+        {
+          "title": "Lookonchain (X) — Binance has reopened BTC withdrawals on the Bitcoin network (2026-11-01 07:19 UTC)",
+          "url": "https://x.com/lookonchain/status/2116792207076434170"
+        },
+        {
+          "title": "Lookonchain (X) — Binance SAFU Fund transferred 7,500 BTC ($580.88M) to a new wallet (2026-10-31 15:52 UTC)",
+          "url": "https://x.com/lookonchain/status/2116558971352027299"
+        },
+        {
+          "title": "Lookonchain (X) — Binance hacker swapping stolen 970,522 SOL ($95.9M) for BTC via Relay (2026-11-01 10:35 UTC)",
+          "url": "https://x.com/lookonchain/status/2116841508599144917"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n바이낸스는 10월 29일(UTC) 저녁, 한국 시간 10월 30일 새벽에 핫월렛(인터넷에 연결된 지갑) 해킹을 당했고, 여러 네트워크에서 출금을 멈췄습니다. 이 마커는 해킹 그 자체가 아니라, 그 뒤 출금이 다시 열린 ‘복구 단계’를 표시합니다. 해킹 자체는 ‘바이낸스 핫월렛 해킹’ 마커를 보세요.\n\n무슨 일\n바이낸스는 11월 1일 06:00(UTC), 한국 시간 오후 3시부터 출금을 단계적으로 다시 열었습니다. 1단계에는 BTC·ETH·USDT·USDC·BNB·XRP 등 요청이 많은 네트워크가 먼저 들어갔고(CoinDesk), 온체인 추적 계정 Lookonchain은 한국 시간 오후 4시 19분쯤 ‘비트코인 네트워크 BTC 출금이 다시 열렸다’고 전했습니다. 바이낸스는 UTC 12:36까지 1단계 15개 네트워크·자산의 출금을 모두 재개했고, 나머지는 보안·안정성 점검을 마치는 대로 연다고 했습니다.\n바이낸스는 이제 피해액을 약 $6.3B로 추정합니다(첫 보도 때의 온체인 추정 ~$5.8B보다 큼). 회사 자금과 긴급 준비금(SAFU)으로 피해액의 약 95%를 메웠고, 손실을 이용자에게 넘기지 않겠다고 밝혔습니다(CoinDesk·TechCrunch). 남은 5%는 유동성이 낮은 알트코인이라 시장·장외(OTC)에서 사들이는 중이라고 했습니다. 동결된 금액은 약 $3B로, 대부분 발행사가 막을 수 있는 USDT·USDC입니다. FBI는 이번 공격을 북한 연계 해킹 조직(TraderTraitor)의 소행으로 봤습니다(CNBC).\n출금 재개 전, Lookonchain은 바이낸스 SAFU 펀드가 7,500 BTC(약 $580M)를 새 지갑으로 옮겼다고 전했습니다(한국 시간 11월 1일 0시 전후). 출금 재개 뒤에는 해커가 훔친 SOL 약 97만 개(약 $96M)를 Relay를 통해 BTC로 바꾸고 있다는 추적도 나왔습니다.\n\n시장·가격에 미친 영향\n바이낸스 발표로는 11월 1일 06:00~15:30(UTC) 사이 출금 $4.65B, 입금 $1.01B로 순유출이 약 $3.64B였습니다. 이는 바이낸스 전체 자산($171B, 10월 28일 준비금 증명 기준)의 약 2.1%입니다. 처음에 출금이 몰렸다가 점차 안정되고 있다고 바이낸스는 밝혔습니다(CNBC·Reuters). 해커가 SOL을 BTC로 바꾸는 것처럼, 훔친 코인이 시장에서 움직이면 해당 코인에 매도 압력이 생길 수 있습니다. SHIB에 대한 직접 영향은 확인되지 않았습니다.\n\n아직 확정되지 않은 것\n최종 손실액, 남은 코인·네트워크의 출금 재개 시점, 바이낸스가 약속한 상세 사고 보고서와 새 준비금 증명 보고서는 아직 나오지 않았습니다. 숫자는 앞으로 바뀔 수 있습니다.",
+      "learn_points_ko": [
+        "거래소는 해킹 뒤 보통 출금을 먼저 멈추고, 점검이 끝난 네트워크부터 하나씩 다시 엽니다. ‘출금 재개’는 사건이 끝났다는 뜻이 아니라 복구가 한 단계 진행됐다는 뜻입니다.",
+        "출금이 다시 열리면 한꺼번에 돈을 빼는 사람이 몰릴 수 있습니다. 순유출 규모를 전체 자산과 비교해 보면 그 크기를 가늠할 수 있습니다.",
+        "SAFU 같은 긴급 준비금은 이런 사고에 대비해 거래소가 따로 쌓아 둔 돈입니다. 준비금 증명(PoR) 보고서로 거래소가 고객 자산을 실제로 갖고 있는지 확인할 수 있습니다.",
+        "해커가 훔친 코인을 다른 코인으로 바꾸는 움직임은 온체인에서 추적됩니다. 다만 추적 계정의 글은 공식 발표와 구분해서 읽어야 합니다."
+      ],
+      "learn_if_again_ko": "거래소가 해킹 뒤 출금을 다시 열면, ① 거래소 공식 채널에서 어떤 네트워크가 열렸는지, ② 손실을 누가 부담한다고 했는지, ③ 순유출 규모가 전체 자산의 몇 %인지, ④ 준비금 증명 보고서가 새로 나왔는지, ⑤ 아직 열리지 않은 코인이 있는지를 차례로 확인해 보세요.",
+      "similar_event_ids": [
+        "binance-hot-wallet-hack-2026",
+        "bitfinex-hack-2016",
+        "coincheck-hack-2018",
+        "mtgox-collapse-2014",
+        "ftx-collapse-2022"
+      ],
+      "then_vs_now_ko": "2014년 마운트곡스와 2022년 FTX는 출금을 멈춘 뒤 다시 열지 못하고 파산했고, 고객은 수년을 기다려야 했습니다. 2018년 코인체크는 해킹 뒤 회사가 피해를 보상하고 몇 주에 걸쳐 출금을 다시 열었습니다. 이번 바이낸스는 해킹 약 사흘 만에 주요 네트워크 출금을 단계적으로 재개하고, 손실을 회사가 떠안겠다고 밝힌 점이 다릅니다.",
+      "angles_ko": {
+        "price_market": "출금 재개 첫날 순유출은 약 $3.64B(전체 자산의 약 2.1%)였고, 바이낸스는 이후 안정되고 있다고 밝혔습니다. 해커의 코인 교환은 계속 추적되고 있습니다.",
+        "news_reg": "CoinDesk·CNBC·TechCrunch·Reuters 보도와 바이낸스 공식 발표로 출금 재개·피해 보전을 확인합니다. FBI는 북한 연계 조직의 소행으로 봤고, 최종 손실액은 아직 확정되지 않았습니다.",
+        "shib_vs_btc_macro": "BTC 출금이 가장 먼저 열린 것은 거래소 신뢰 회복의 한 단계입니다. SHIB에 대한 직접 영향은 확인되지 않았고, 영향이 있다면 크립토 시장 전체 분위기를 통한 간접 영향입니다."
+      },
+      "further_reading": [
+        {
+          "title": "CoinDesk — Binance opens crypto withdrawals in phases starting with bitcoin (2026-11-01)",
+          "url": "https://www.coindesk.com/markets/2026/11/01/binance-opens-crypto-withdrawals-in-phases-starting-with-bitcoin-following-usd6-3-billion-hack",
+          "why_ko": "1단계 재개 네트워크, 95% 보전, $3B 동결, TRM Labs가 집계한 도난 코인 목록이 정리돼 있습니다."
+        },
+        {
+          "title": "CNBC — Binance sees $3.64 billion in net outflows as withdrawals resume (2026-11-02)",
+          "url": "https://www.cnbc.com/2026/11/02/binance-outflow-hack-bitcoin.html",
+          "why_ko": "출금 재개 첫날의 출금·입금·순유출 숫자와 FBI의 북한 연계 판단을 볼 수 있습니다."
+        },
+        {
+          "title": "Lookonchain (X) — Binance has reopened BTC withdrawals on the Bitcoin network (2026-11-01)",
+          "url": "https://x.com/lookonchain/status/2116792207076434170",
+          "why_ko": "비트코인 네트워크 BTC 출금 재개를 온체인 관점에서 처음 알린 글입니다."
+        },
+        {
+          "title": "Lookonchain (X) — Binance hacker swapping stolen SOL for BTC (2026-11-01)",
+          "url": "https://x.com/lookonchain/status/2116841508599144917",
+          "why_ko": "출금 재개 뒤에도 해커 자금이 어떻게 움직이는지 볼 수 있습니다."
         }
       ]
     }
