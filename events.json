@@ -1,9 +1,9 @@
 {
-  "generated_at_kst": "2026-11-02",
+  "generated_at_kst": "2026-11-03",
   "timezone_note": "Event dates are calendar dates as reported (mostly US/ME/Asia news days). Chart overlays use UTC midnight of start/end unless noted. Prices come only from Binance klines CSV — never invented.",
   "data_choice": "Chart uses daily (1d) candles for 2017-08-17 → 2026-09-27 (~3.3k points) with rangeslider. Full-span hourly (~75k) would make Plotly HTML too heavy; hourly CSV kept for recent 1y (btc_usdt_1h_recent.csv) and original 2026 window (btc_usdt_1h.csv).",
   "hormuz_blockade_verdict": "NO single official 'Hormuz permanently sealed to all shipping' event; YES severe multi-month disruption from 2026-02-28 with Iranian transit warnings/attacks and a US naval blockade of Iranian ports. Traffic fell from ~125/day prewar to single digits at times in September 2026.",
-  "event_count": 114,
+  "event_count": 115,
   "events": [
     {
       "id": "bitcoin-whitepaper-2008",
@@ -5990,6 +5990,109 @@
           "title": "Lookonchain (X) — Binance hacker swapping stolen SOL for BTC (2026-11-01)",
           "url": "https://x.com/lookonchain/status/2116841508599144917",
           "why_ko": "출금 재개 뒤에도 해커 자금이 어떻게 움직이는지 볼 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "us-midterms-2026",
+      "title_ko": "미국 중간선거 (BTC $77k 하회, 청산 $100M+)",
+      "title_en": "US midterm elections 2026 (BTC under $77k, $100M+ liquidations)",
+      "start": "2026-11-03",
+      "end": "2026-11-03",
+      "category": "policy",
+      "severity": 4,
+      "summary_ko": "2026-11-03(미국 시간) 미국 중간선거. 하원 전체·상원 3분의 1·주지사 36곳을 뽑음(Reuters). 한국 시간으로는 11월 3일 밤 투표가 시작되고, 11월 4일 오전 8시(미 동부 오후 6시)부터 투표가 끝나는 주의 결과가 나오기 시작함. 선거를 앞둔 11월 2일(UTC) 밤 BTC가 $77,000 아래로 내려가 바이낸스 기준 저점 약 $76,660을 기록했고, 약 1시간 동안 롱(상승 베팅) 포지션 $100M 이상이 청산됐다는 보도가 나옴. 시바만의 뉴스가 아닌 매크로·선거 위험 마커.",
+      "sources": [
+        {
+          "title": "X News (Trending) — Bitcoin Dips Below $77,000 Before U.S. Midterm Elections (2026-11-02)",
+          "url": "https://x.com/i/trending/2117258463185457563"
+        },
+        {
+          "title": "Phemex News — Crypto Selloff: BTC Dumps Below $77K, Over $100M in Longs Liquidated in One Hour (2026-11-02)",
+          "url": "https://phemex.com/news/article/crypto-selloff-btc-dumps-below-77k-over-100m-in-longs-liquidated-in-one-hour-102141"
+        },
+        {
+          "title": "Benzinga — Bitcoin Falls Below $77,000, Ethereum, XRP, Dogecoin Flat Ahead of Midterms (2026-11-02)",
+          "url": "https://www.benzinga.com/crypto/cryptocurrency/26/11/62795952/bitcoin-falls-below-77000-ethereum-xrp-dogecoin-flat-ahead-of-midterms"
+        },
+        {
+          "title": "Reuters (via Investing.com) — Explainer: What you need to know about the 2026 US midterm elections (2026-11-02)",
+          "url": "https://www.investing.com/news/politics-news/explainerwhat-you-need-to-know-about-the-2026-us-midterm-elections-4992965"
+        },
+        {
+          "title": "CoinDesk — Bitcoin's 'volatility curve' has a midterm bump: Crypto Daily (2026-11-02)",
+          "url": "https://www.coindesk.com/daybook-us/2026/11/02/bitcoin-s-volatility-curve-has-a-midterm-bump"
+        },
+        {
+          "title": "CoinDesk — Bitcoin ETFs saw $643M outflows Friday; 2026 barely green (2026-11-02)",
+          "url": "https://www.coindesk.com/markets/2026/11/02/bitcoin-etfs-lost-usd643-million-in-outflows-friday-and-2026-is-barely-green-now"
+        },
+        {
+          "title": "CoinDesk — Bitcoin price analysis: BTC traders hopeful for post-election gains (2026-11-02)",
+          "url": "https://www.coindesk.com/markets/2026/11/02/bitcoin-traders-eye-post-election-rally-as-exchange-outflows-point-to-supply-squeeze"
+        },
+        {
+          "title": "The Block — Strategy scoops up another 811 bitcoin for $65.5 million (2026-11-02)",
+          "url": "https://www.theblock.co/news/business/2026-11-02-we-found-room-for-even-more-orange-michael-saylor-strategy-bitcoin-btc-432275"
+        },
+        {
+          "title": "64비트사령부 (X) — Strategy BTC 매입·보유량 발표, SEC 8-K 요약 (2026-11-02)",
+          "url": "https://x.com/64bitcoinkr/status/2117241380687036797"
+        },
+        {
+          "title": "ISM (PR Newswire) — Manufacturing PMI at 55.5%; October 2026 ISM Manufacturing PMI Report (2026-11-02)",
+          "url": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-55-5-october-2026-ism-manufacturing-pmi-report-302925617.html"
+        },
+        {
+          "title": "Sniffshiba (X) — 10월 ISM 제조업 퀵 해설 (2026-11-03 KST)",
+          "url": "https://x.com/sniffshiba/status/2117283503775830361"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n미국 중간선거는 대통령 임기 4년의 한가운데에 열리는 의회 선거입니다. 2026년 선거일은 11월 3일(미국 시간)이고, 하원 435석 전체와 상원 약 3분의 1, 주지사 36곳을 뽑습니다. 현재 하원·상원 모두 공화당이 근소한 다수이고, 민주당은 두 곳 모두 순증 4석이 필요합니다(Reuters). 선거 결과는 의회에서 논의 중인 크립토 시장 구조 법안(CLARITY Act) 등 규제 일정에 영향을 줄 수 있다고 보도됐습니다(CoinDesk).\n\n한국 시간으로 보면\n미국 동부 기준 오후 6시(한국 시간 11월 4일 오전 8시)에 인디애나·켄터키 투표가 먼저 끝나고, 그 뒤로 여러 주의 결과 예측(race call)이 차례로 나옵니다. 그래서 한국에서는 11월 3일 밤~11월 4일 낮이 결과가 쏟아지는 시간대입니다. 접전 지역은 당일 밤에 결론이 안 날 수도 있습니다.\n\n무슨 일\n선거를 앞둔 11월 2일(UTC) 밤, 한국 시간 11월 3일 새벽에 비트코인이 $77,000 아래로 내려갔습니다. 바이낸스 1시간봉 기준 BTC는 11월 2일 0시(UTC) $78,354에서 출발해, 한국 시간 11월 3일 오전 9시 전후 저점 약 $76,660까지 내려왔습니다. 이더리움·솔라나·XRP도 함께 밀렸고, 약 1시간 만에 롱 포지션 $100M 이상이 강제 청산됐다는 보도가 나왔습니다(Phemex·X 뉴스 요약). 24시간 청산은 약 $226M로 집계됐습니다(Benzinga, Coinglass 인용).\n같은 주에는 선거 말고도 압력이 겹쳤습니다. 미국 현물 비트코인 ETF에서 10월 30일 하루 $643M이 빠져 6월 이후 최대 유출을 기록했고(CoinDesk), 바이낸스 해킹 여파도 이어지고 있습니다. 옵션 시장에서는 선거 바로 다음 날(11월 4일) 만기 옵션의 내재변동성이 약 43%로, 그 뒤 만기(약 36%)보다 높게 매겨졌습니다. 시장이 ‘결과 발표 직후 짧은 출렁임’을 예상하고 있다는 뜻으로 해석됐습니다(CoinDesk).\n\n같은 날 참고로 본 다른 소식\n스트래티지(옛 마이크로스트래티지)는 10월 26일~11월 1일 BTC 811개를 평균 $80,846에 샀고, 보유량이 849,327 BTC가 됐다고 SEC 8-K로 공시했습니다(The Block). 같은 날 나온 미국 10월 ISM 제조업 지수는 55.5로 예상(54.5)보다 높았고, 가격지수는 75.2로 9월보다 내려왔습니다(ISM). 이 마커의 중심은 선거이고, 두 소식은 같은 주의 배경입니다.\n\n과거 중간선거 때는\n과거 중간선거 뒤 비트코인이 크게 떨어졌다는 이야기가 많이 돌고 있습니다. 바이낸스 일봉으로 확인하면, 2018년 선거일(11월 6일) 종가 $6,519에서 12월 15일 저점 $3,156까지 약 −52%, 2022년 선거일(11월 8일) 종가 $18,547에서 11월 21일 저점 $15,476까지 약 −17%였습니다. 다만 2018년은 이미 크립토 하락장이 이어지던 시기였고, 2022년은 선거와 같은 주에 FTX가 무너졌습니다. 즉 선거 때문에 떨어졌다고 단정하기는 어렵습니다. 두 경우 모두 1년 뒤 종가는 선거일보다 높았습니다(2018년 +43%, 2022년 +92%). 표본이 몇 번뿐이라 이번에도 똑같이 될 거라는 근거는 아닙니다.\n\n아직 확정되지 않은 것\n이 마커는 선거 당일 아침(한국 시간)에 만들었습니다. 선거 결과, 결과 발표 뒤의 가격 움직임, 크립토 법안 일정에 미칠 영향은 아직 알 수 없습니다. 청산 금액은 집계 업체·시간 범위마다 다르게 나옵니다.",
+      "learn_points_ko": [
+        "선거 같은 ‘날짜가 정해진 큰 이벤트’ 전에는 결과를 모르는 불확실성 때문에 위험자산이 미리 출렁이기도 합니다. 옵션의 내재변동성이 그 날짜 근처만 높아지는지 보면 시장의 기대를 짐작할 수 있습니다.",
+        "청산은 빌린 돈으로 큰 포지션을 잡은 사람이 손실 한도에 닿아 강제로 정리되는 것입니다. 청산이 몰리면 짧은 시간에 가격이 더 크게 움직일 수 있습니다.",
+        "‘과거 중간선거 뒤 폭락’ 같은 이야기는 그때 같이 일어난 다른 사건(하락장, FTX 붕괴)을 함께 봐야 합니다. 몇 번 안 되는 사례로 패턴을 단정하면 헷갈리기 쉽습니다.",
+        "이번 일은 시바만의 뉴스가 아니라 미국 정치·매크로 이벤트입니다."
+      ],
+      "learn_if_again_ko": "다음 선거나 큰 정치 이벤트가 오면, ① 한국 시간으로 결과가 나오는 시간대, ② 옵션 변동성이 선거 직후 만기에만 높은지, ③ 같은 주에 ETF 자금 흐름·고용지표 같은 다른 변수가 있는지, ④ 선거 결과가 크립토 법안에 어떤 영향을 줄 수 있다고 보도되는지를 차례로 확인해 보세요. 그리고 비트코인과 시바가 같은 시간에 얼마나 움직였는지 비교해 보세요.",
+      "similar_event_ids": [
+        "trump-election-2024",
+        "ftx-collapse-2022",
+        "clarity-act-senate-fail"
+      ],
+      "then_vs_now_ko": "2024년 11월 대선 때는 결과가 나온 뒤 친크립토 정책 기대로 비트코인이 크게 올랐습니다. 2022년 중간선거는 FTX 붕괴와 겹쳐 선거 효과를 따로 떼어 보기 어려웠습니다. 이번에는 바이낸스 해킹 여파와 ETF 자금 유출, 연준의 추가 금리 인상 걱정이 겹친 상태에서 선거를 맞습니다. 선거 결과가 의회 권력과 크립토 법안 전망을 어떻게 바꾸는지가 2024년과 비교할 포인트입니다.",
+      "angles_ko": {
+        "price_market": "선거 전날 밤 BTC가 $77k 아래(바이낸스 저점 약 $76,660)로 내려가고 1시간 만에 롱 $100M 이상이 청산됐다는 보도가 나왔습니다. 옵션 시장은 선거 직후 짧은 변동성을 예상하는 모습입니다.",
+        "news_reg": "선거 날짜·의석 구도는 Reuters로, 가격·청산은 Phemex·Benzinga·X 뉴스 요약으로, 변동성·ETF 흐름은 CoinDesk로 확인합니다. 선거 결과는 크립토 시장 구조 법안 일정에 영향을 줄 수 있다고 보도됐지만 아직 결과는 나오지 않았습니다.",
+        "shib_vs_btc_macro": "미국 정치·매크로 이벤트입니다. 시바(SHIB)만의 소식은 아닙니다. 다만 비트코인 위험 선호가 바뀌면 SHIB도 함께 움직일 수 있어요(간접 영향). 11월 2일(UTC) 바이낸스 일봉 기준 SHIB는 약 −2.8%였습니다."
+      },
+      "further_reading": [
+        {
+          "title": "Reuters (via Investing.com) — Explainer: What you need to know about the 2026 US midterm elections (2026-11-02)",
+          "url": "https://www.investing.com/news/politics-news/explainerwhat-you-need-to-know-about-the-2026-us-midterm-elections-4992965",
+          "why_ko": "선거일, 뽑는 자리, 현재 의석 구도, 여론조사를 한 번에 볼 수 있습니다."
+        },
+        {
+          "title": "CoinDesk — Bitcoin's 'volatility curve' has a midterm bump (2026-11-02)",
+          "url": "https://www.coindesk.com/daybook-us/2026/11/02/bitcoin-s-volatility-curve-has-a-midterm-bump",
+          "why_ko": "옵션 시장이 선거 직후 변동성을 어떻게 가격에 반영했는지 설명합니다."
+        },
+        {
+          "title": "Phemex News — BTC Dumps Below $77K, Over $100M in Longs Liquidated in One Hour (2026-11-02)",
+          "url": "https://phemex.com/news/article/crypto-selloff-btc-dumps-below-77k-over-100m-in-longs-liquidated-in-one-hour-102141",
+          "why_ko": "$77k 하회와 1시간 청산 규모를 짧게 정리한 기사입니다."
+        },
+        {
+          "title": "The Block — Strategy scoops up another 811 bitcoin for $65.5 million (2026-11-02)",
+          "url": "https://www.theblock.co/news/business/2026-11-02-we-found-room-for-even-more-orange-michael-saylor-strategy-bitcoin-btc-432275",
+          "why_ko": "같은 날 스트래티지의 BTC 매입 공시(811개, 평균 $80,846, 보유 849,327개)를 볼 수 있습니다."
+        },
+        {
+          "title": "ISM (PR Newswire) — October 2026 ISM Manufacturing PMI Report (2026-11-02)",
+          "url": "https://www.prnewswire.com/news-releases/manufacturing-pmi-at-55-5-october-2026-ism-manufacturing-pmi-report-302925617.html",
+          "why_ko": "같은 주 매크로 배경인 10월 제조업 지수 원문입니다."
         }
       ]
     }
