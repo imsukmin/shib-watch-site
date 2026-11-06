@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0b1020" />
+<title>미국 증시 급락 (AI 규제 우려, 나스닥 −5.5%) · 사건 자세히</title>
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<style>
+
+  :root {
+    --bg: #0b1020;
+    --bg2: #121933;
+    --card: #161e3a;
+    --card2: #1c2648;
+    --border: rgba(255,255,255,0.08);
+    --text: #e8ecf7;
+    --muted: #8b95b5;
+    --accent: #f39c12;
+    --link: #9db4ff;
+    --shib: #ff7a9a;
+    --btc: #f39c12;
+    --down: #e74c3c;
+    --up: #2ecc71;
+    --chip: #243056;
+    --radius: 14px;
+    --shadow: 0 8px 24px rgba(0,0,0,0.28);
+    --font: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font); }
+  body { min-height: 100vh; line-height: 1.55; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 16px 14px 48px; }
+  .hero {
+    background: linear-gradient(145deg, #182044 0%, #10162d 60%, #0d1328 100%);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 18px 16px 16px;
+    box-shadow: var(--shadow);
+    margin-bottom: 14px;
+  }
+  .hero h1 {
+    margin: 8px 0 6px;
+    font-size: 1.28rem;
+    letter-spacing: -0.02em;
+    font-weight: 750;
+    line-height: 1.35;
+  }
+  .hero .sub { color: var(--muted); font-size: 0.86rem; margin: 0 0 12px; }
+  .nav-links {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    position: sticky; top: 0; z-index: 40;
+    background: rgba(13,19,40,0.94);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 8px 2px;
+    margin: 0 -2px;
+    border-radius: 12px;
+  }
+  .nav-links a {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--chip); color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 999px; padding: 7px 12px;
+    font-size: 0.82rem; font-weight: 600;
+    text-decoration: none;
+  }
+  .nav-links a.btc { border-color: rgba(243,156,18,0.35); color: #ffc56a; }
+  .nav-links a.shib { border-color: rgba(255,122,154,0.4); color: #ffb0c4; }
+  .chip {
+    display: inline-block; font-size: 0.75rem; font-weight: 700;
+    padding: 2px 7px; border-radius: 999px; background: var(--chip); color: #c7d0ee;
+  }
+  .chip.geo { background: rgba(231,76,60,0.18); color: #ff9b91; }
+  .chip.fed { background: rgba(52,152,219,0.18); color: #8fd0ff; }
+  .chip.crypto, .chip.exchange { background: rgba(155,89,186,0.18); color: #d5a8ff; }
+  .chip.policy, .chip.etf_reg { background: rgba(26,188,156,0.18); color: #7ff0d6; }
+  .chip.markets { background: rgba(243,156,18,0.18); color: #ffd28a; }
+  .chip.burn_supply, .chip.ecosystem { background: rgba(255,122,154,0.18); color: #ffb0c4; }
+  .chip.covid { background: rgba(46,204,113,0.18); color: #8dffb8; }
+  .chip.btctag { background: rgba(243,156,18,0.22); color: #ffd28a; }
+  .chip.shibtag { background: rgba(255,122,154,0.22); color: #ffb0c4; }
+  .chip.sev-high { background: rgba(243,156,18,0.2); color: #ffd28a; }
+  .chip.sev-mid { background: rgba(139,149,181,0.22); color: #c7d0ee; }
+  .chip.sev-low { background: rgba(139,149,181,0.14); color: #8b95b5; }
+  .meta-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 4px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 14px;
+    box-shadow: var(--shadow);
+    margin-bottom: 12px;
+  }
+  .card.takeaway {
+    border: 1px solid rgba(243,156,18,0.35);
+    border-left: 4px solid var(--accent);
+    background: linear-gradient(145deg, #1a2748 0%, #161e3a 100%);
+  }
+  .card.takeaway .section-label { color: #ffd28a; }
+  .card.demoted {
+    padding: 12px;
+    box-shadow: none;
+    background: var(--bg2);
+    opacity: 0.92;
+  }
+  .card.demoted .section-label { font-size: 0.7rem; margin-bottom: 6px; }
+  .section-label {
+    color: var(--muted); font-size: 0.78rem; font-weight: 700;
+    margin: 0 0 8px;
+  }
+  .article-body h2 {
+    margin: 18px 0 8px; font-size: 1.02rem; font-weight: 720;
+    color: #ffd28a;
+  }
+  .article-body h2:first-child { margin-top: 0; }
+  .article-body p {
+    margin: 0 0 12px; color: var(--text); font-size: 0.92rem;
+  }
+  .article-body p:last-child { margin-bottom: 0; }
+  .phases { margin: 0; padding: 0; list-style: none; }
+  .phases li {
+    border-left: 2px solid rgba(243,156,18,0.35);
+    padding: 6px 0 6px 12px; margin-bottom: 6px;
+  }
+  .phases .pdate { color: var(--muted); font-size: 0.75rem; font-weight: 650; }
+  .phases .ptitle { font-weight: 700; font-size: 0.88rem; margin: 2px 0; }
+  .phases .pnote { color: var(--muted); font-size: 0.8rem; }
+  .sources { list-style: none; margin: 0; padding: 0; }
+  .sources li {
+    margin-bottom: 8px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .sources a { font-weight: 650; font-size: 0.88rem; word-break: break-word; }
+  .sources .url {
+    display: block; color: var(--muted); font-size: 0.72rem;
+    margin-top: 4px; word-break: break-all;
+  }
+  .sources .why { display: block; color: var(--muted); font-size: 0.78rem; margin-top: 4px; }
+  .footer {
+    margin-top: 22px; padding: 12px; color: var(--muted); font-size: 0.72rem;
+    border-top: 1px solid var(--border); text-align: center;
+  }
+  .footer a { color: var(--muted); }
+  .learn-list { margin: 0; padding: 0 0 0 18px; }
+  .learn-list li { margin-bottom: 8px; font-size: 0.9rem; color: var(--text); }
+  .learn-again {
+    margin-top: 12px; padding-top: 10px;
+    border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 0.85rem;
+  }
+  .learn-again strong { color: #ffd28a; font-weight: 700; }
+  .similar-list { list-style: none; margin: 0; padding: 0; }
+  .similar-list li {
+    margin-bottom: 8px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .similar-list a { font-weight: 650; font-size: 0.88rem; }
+  .similar-list .sdate { color: var(--muted); font-size: 0.75rem; font-weight: 650; margin-bottom: 2px; }
+  .angle-inline {
+    margin-top: 12px; padding-top: 10px;
+    border-top: 1px solid var(--border);
+  }
+  .angle-inline .alabel {
+    color: #ffd28a; font-size: 0.78rem; font-weight: 700; margin: 8px 0 2px;
+  }
+  .angle-inline p { margin: 0 0 6px; font-size: 0.88rem; color: var(--text); }
+  .angle-block {
+    margin-bottom: 10px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .angle-block .alabel {
+    color: #ffd28a; font-size: 0.78rem; font-weight: 700; margin-bottom: 4px;
+  }
+  .angle-block p { margin: 0; font-size: 0.88rem; color: var(--text); }
+
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="meta-row">
+      <span class="chip btctag">BTC</span>
+      <span class="chip markets">시장</span>
+      <span class="chip">2026-11-05</span>
+      <span class="chip sev-mid">중요도 중간</span>
+    </div>
+    <h1>미국 증시 급락 (AI 규제 우려, 나스닥 −5.5%)</h1>
+    <p class="sub">2026-11-05(미국 세션, 한국 시간 11월 6일 새벽) 미국 증시가 AI·데이터센터 규제 우려로 급락. S&amp;P 500 −4.4%, 나스닥 −5.5%(조정장 진입), 다우 −3.4%. 2025년 4월 관세 충격 이후 최악. 반도체·빅테크가 중심이었고, 매그니피센트7 시가총액이 약 $1조 줄었다는 집계(CNBC). 같은 시간대(한국 시간 11월 5일 22:30~6일 06:00) 바이낸스 1시간봉 기준 BTC는 약 −4.3%($79,662→$76,236), SHIB는 약 −3.6%(0.00000473→0.00000456).</p>
+    <nav class="nav-links" aria-label="페이지 이동">
+      <a href="../index.html">대시보드</a>
+      <a class="btc" href="../chart.html">BTC 차트</a>
+      <a class="shib" href="../shib.html">SHIB 비교</a>
+    </nav>
+  </header>
+
+
+  <section class="card">
+    <div class="section-label">비슷한 과거 상황</div>
+    <ul class="similar-list"><li><div class="sdate">2026-10-15</div><a href="kospi-circuit-breaker-oct-2026.html">코스피·코스닥 8%대 폭락, 서킷브레이커 발동</a></li><li><div class="sdate">2025-01-27</div><a href="deepseek-ai-shock-jan-2025.html">DeepSeek AI 쇼크</a></li><li><div class="sdate">2025-04-02 ~ 2025-04-09</div><a href="liberation-day-tariffs-2025.html">해방의 날(Liberation Day) 상호관세</a></li><li><div class="sdate">2026-11-03</div><a href="us-midterms-2026.html">미국 중간선거 (민주당 상·하원 장악, BTC $77k 하회)</a></li></ul>
+  </section>
+  <article class="card article-body">
+    <div class="section-label">자세히 읽기</div>
+    <h2>배경</h2>
+<p>미국 중간선거(2026-11-03)에서 민주당이 의회 양원을 장악한 뒤, 시장은 하루 반등했다가 다시 흔들렸습니다. 투자자들은 AI 데이터센터 건설과 전력·반도체 투자 규모가 앞으로도 같은 속도로 갈 수 있는지, 그리고 새 의회에서 규제가 커질지를 다시 따져 보기 시작했습니다.</p>
+<h2>무슨 일</h2>
+<p>2026년 11월 5일(미국 시간) 미국 증시가 크게 빠졌습니다. AP는 S&amp;P 500 −4.4%로 2025년 4월 ‘해방의 날’ 관세 충격 이후 최악이라고 전했고, 나스닥은 5.5%, 다우는 3.4%(약 1,833포인트) 하락했다고 했습니다. CNBC도 나스닥 −5.5%로 조정장(고점 대비 10% 이상 하락)에 들어갔고, S&amp;P 500은 약 4.4%, 다우는 약 3.4% 내렸으며 매그니피센트7 시가총액이 합쳐 약 $1조 줄었다고 정리했습니다. 로이터(야후 파이낸스 전재) 마감 수치도 S&amp;P 500 −4.36%, 나스닥 −5.52%, 다우 −3.44%로 같은 그림입니다. 엔비디아는 9%대 하락, 필라델피아 반도체 지수는 두 자릿수 급락이 보도됐습니다. 원인은 AI·데이터센터 규제·투자 수익성 우려와 중간선거 이후 정책 불확실성이 겹친 것으로 설명됩니다.</p>
+<h2>시장·가격에 미친 영향</h2>
+<p>주식 급락과 같은 시간대(한국 시간 11월 5일 밤 10시 30분쯤~6일 오전 6시) 바이낸스 공개 1시간봉으로 보면, 비트코인은 약 $79,662에서 $76,236으로 약 −4.3% 움직였고(구간 저점 약 $75,568), 시바(SHIB)는 약 0.00000473에서 0.00000456으로 약 −3.6% 움직였습니다. 시바만의 뉴스가 아니라, 위험자산 분위기가 같이 나빠진 매크로·주식 쇼크 마커입니다.</p>
+  </article>
+
+  <section class="card takeaway">
+    <div class="section-label">이 사건에서 배울 점</div>
+    <ul class="learn-list"><li>나스닥 ‘조정장’은 보통 최근 고점 대비 10% 이상 빠진 상태를 말합니다. 하루 −5.5%와 ‘조정 진입’은 같이 보도되지만 뜻이 완전히 같지는 않습니다.</li><li>AI 테마는 호재(실적)와 악재(규제·수익성 의심)에 따라 시장 반응이 크게 달라질 수 있습니다.</li><li>시바·비트코인 고유 뉴스가 아니어도, 미국 기술주가 크게 흔들리면 같은 시간대 코인도 같이 움직일 수 있습니다(간접 영향).</li></ul>
+    <div class="learn-again"><strong>비슷한 일이 또 오면</strong> 미국 기술주·반도체 급락 뉴스가 나오면, ① 지수 낙폭(S&amp;P·나스닥·다우), ② 원인이 규제인지 실적인지, ③ 같은 시간 바이낸스 BTC·SHIB 1시간봉 움직임을 나란히 기록해 보세요.</div>
+    <div class="angle-inline"><div class="section-label" style="margin-top:4px;">여러 각도로 보기</div><div class="alabel">가격 · 시장 분위기</div><p>S&amp;P 500 −4.4%, 나스닥 −5.5%(조정 진입), 다우 −3.4%. 매그니피센트7 시총 약 $1조 감소가 보도됐습니다.</p><div class="alabel">뉴스 · 규제</div><p>AP·CNBC·로이터(야후 전재)로 마감 수치와 AI·데이터센터 규제 우려 배경을 확인합니다. 중간선거 결과와 이어 읽으면 좋습니다.</p><div class="alabel">직접 이슈 vs 간접 영향</div><p>매크로·미국 주식 이슈입니다. 시바만의 소식은 아닙니다. 같은 시간대 BTC 약 −4.3%, SHIB 약 −3.6%(바이낸스 1시간봉)로 위험자산이 같이 흔들린 구간입니다.</p></div>
+  </section>
+
+  <section class="card">
+    <div class="section-label">그때와 지금 · 비슷한 사건과의 차이</div>
+    <p style="margin:0;font-size:0.9rem;">2025년 1월 DeepSeek 쇼크는 AI 비용·경쟁 우려로 반도체주가 흔들린 날이고, 2026년 10월 15일 코스피 서킷브레이커는 미국 물가·금리·AI 의심이 아시아로 번진 날입니다. 이번 11월 5일은 중간선거 직후 미국 본장에서 AI·데이터센터 규제 우려가 나스닥을 조정장으로 밀어 넣은 날로 대비됩니다. 2025년 4월 관세 충격과도 ‘하루 단위 최악’ 비교가 자주 나옵니다.</p>
+  </section>
+
+
+  <section class="card demoted">
+    <div class="section-label">출처 · 더 읽어볼 자료</div>
+    <ul class="sources"><li><a href="https://apnews.com/article/stocks-markets-ai-midterm-oil-trump-7ee9c212805aa5e70cf34d25aab7a36e" target="_blank" rel="noopener noreferrer">AP — A brutal sell-off for AI stocks; S&amp;P 500 tumbles 4.4% (2026-11-05)</a><span class="why">S&amp;P·나스닥·다우 낙폭과 ‘4월 관세 이후 최악’ 표현을 한눈에 볼 수 있습니다.</span><span class="url">https://apnews.com/article/stocks-markets-ai-midterm-oil-trump-7ee9c212805aa5e70cf34d25aab7a36e</span></li><li><a href="https://www.cnbc.com/2026/11/05/stock-market-selloff-ai-fears.html" target="_blank" rel="noopener noreferrer">CNBC — Magnificent 7 loses $1 trillion (2026-11-05)</a><span class="why">매그니피센트7 시총 감소, 나스닥 조정 진입 등 숫자 요약이 정리돼 있습니다.</span><span class="url">https://www.cnbc.com/2026/11/05/stock-market-selloff-ai-fears.html</span></li><li><a href="https://finance.yahoo.com/markets/stocks/articles/p-500-futures-steady-midterm-105838388.html" target="_blank" rel="noopener noreferrer">Reuters (via Yahoo Finance) — Nasdaq biggest drop in 19 months on AI regulation fears (2026-11-05)</a><span class="why">마감 지수 수치(S&amp;P −4.36% 등)와 반도체·데이터센터 관련 배경이 자세히 나옵니다.</span><span class="url">https://finance.yahoo.com/markets/stocks/articles/p-500-futures-steady-midterm-105838388.html</span></li><li><a href="https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html" target="_blank" rel="noopener noreferrer">CNBC — AI meltdown: Nvidia and Qualcomm drop more than 9%; Nasdaq worst day since April 2025 (2026-11-05)</a><span class="url">https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html</span></li><li><a href="https://x.com/64bitcoinkr/status/2118471870517575962" target="_blank" rel="noopener noreferrer">64비트사령부 (X) — 미국 주식 시장 2.8조 달러 증발, 역사상 가장 큰 하루 손실 (2026-11-05)</a><span class="url">https://x.com/64bitcoinkr/status/2118471870517575962</span></li><li><a href="https://x.com/krakenmiller/status/2118400451229937719" target="_blank" rel="noopener noreferrer">Krakenmiller (X) — 에쎈피 −4%, 나스닥 −5% (2026-11-05)</a><span class="url">https://x.com/krakenmiller/status/2118400451229937719</span></li></ul>
+  </section>
+
+  <footer class="footer">
+    숫자·날짜·주장은 위 출처와 바이낸스 공개 가격 CSV에만 기반합니다. 출처에 없는 내용은 적지 않았습니다. 투자 조언이 아닙니다.
+    <div style="margin-top:8px;"><a href="https://github.com/imsukmin/shib-watch-site" target="_blank" rel="noopener">GitHub</a></div>
+  </footer>
+</div>
+</body>
+</html>
