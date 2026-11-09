@@ -1,9 +1,9 @@
 {
-  "generated_at_kst": "2026-11-06 09:24",
+  "generated_at_kst": "2026-11-09 09:27",
   "timezone_note": "Event dates are calendar dates as reported (mostly US/ME/Asia news days). Chart overlays use UTC midnight of start/end unless noted. Prices come only from Binance klines CSV — never invented.",
   "data_choice": "Chart uses daily (1d) candles for 2017-08-17 → 2026-09-27 (~3.3k points) with rangeslider. Full-span hourly (~75k) would make Plotly HTML too heavy; hourly CSV kept for recent 1y (btc_usdt_1h_recent.csv) and original 2026 window (btc_usdt_1h.csv).",
   "hormuz_blockade_verdict": "NO single official 'Hormuz permanently sealed to all shipping' event; YES severe multi-month disruption from 2026-02-28 with Iranian transit warnings/attacks and a US naval blockade of Iranian ports. Traffic fell from ~125/day prewar to single digits at times in September 2026.",
-  "event_count": 116,
+  "event_count": 117,
   "events": [
     {
       "id": "bitcoin-whitepaper-2008",
@@ -6194,6 +6194,79 @@
           "title": "Reuters (via Yahoo Finance) — Nasdaq biggest drop in 19 months on AI regulation fears (2026-11-05)",
           "url": "https://finance.yahoo.com/markets/stocks/articles/p-500-futures-steady-midterm-105838388.html",
           "why_ko": "마감 지수 수치(S&P −4.36% 등)와 반도체·데이터센터 관련 배경이 자세히 나옵니다."
+        }
+      ]
+    },
+    {
+      "id": "btc-flash-crash-nov-2026",
+      "title_ko": "비트코인 급락 ($74k 하회·청산 약 $8.6억)",
+      "title_en": "Bitcoin flash crash below $74k (~$856M liquidations)",
+      "start": "2026-11-09",
+      "end": "2026-11-09",
+      "category": "crypto",
+      "severity": 4,
+      "summary_ko": "2026-11-08 21:45~21:55(UTC), 한국 시간 11월 9일 오전 6시 45분~7시쯤 비트코인이 약 10~15분 만에 $74,000 아래로 급락. 바이낸스 5분봉 기준 직전 약 $75,607에서 저점 $73,510(약 −2.8%). 같은 구간 SHIB는 약 0.00000445→0.00000426(약 −4.3%). CoinGlass(BeInCrypto 인용) 기준 24시간 청산 약 $8.56억(롱 비중 약 90%), TokenPost는 약 20분 동안 롱 청산 $7억+로 전함. 공포·탐욕 지수는 11월 7일 25(극도의 공포)→8일 28(공포). 바이낸스 주봉은 10/5·10/12·10/19·10/26·11/2 연속 5주 음봉. 이후 $75k 근처로 일부 회복. 앞날(11/11) MSCI가 Strategy(옛 MicroStrategy) 등 지수 편입 여부를 확정 발표 예정.",
+      "sources": [
+        {
+          "title": "BeInCrypto — Crypto liquidations surge as Bitcoin falls below $74K; CoinGlass $855.69M/24h, BTC touched $73,708 (2026-11-08)",
+          "url": "https://beincrypto.com/bitcoin-price-crash-crypto-liquidations-market-risks/"
+        },
+        {
+          "title": "TokenPost — Bitcoin's slide below $74,000 triggers $700M+ liquidation wave in ~20 minutes (2026-11-08)",
+          "url": "https://www.tokenpost.com/news/investing/51872"
+        },
+        {
+          "title": "PANews — CoinGlass: $745M liquidated in past hour (longs >90%); BTC 24h low ~$73,500 (2026-11-09)",
+          "url": "https://www.panews.io/articles/01a1bd42-9a21-72e5-8fed-60e56685d1f2"
+        },
+        {
+          "title": "CoinDesk — MSCI rules could eject Strategy/Metaplanet; final affected list due Nov 11 (2026-10-16)",
+          "url": "https://www.coindesk.com/markets/2026/10/16/msci-approves-rules-that-could-eject-strategy-metaplanet-from-equity-indexes"
+        },
+        {
+          "title": "Alternative.me / Fear & Greed snapshots — 2026-11-07 = 25 Extreme Fear; 2026-11-08 = 28 Fear",
+          "url": "https://coindesk.cc/services/fear-greed-index"
+        },
+        {
+          "title": "Binance public API — BTCUSDT/SHIBUSDT 5m & 1h klines (crash window 2026-11-08 21:00–23:00 UTC)",
+          "url": "https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=5m"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n11월 초 비트코인은 미국 중간선거·AI 기술주 급락·현물 ETF 자금 유출·바이낸스 해킹 여파가 겹치며 이미 약해져 있었습니다. 바이낸스 주봉(월요일 기준)으로 보면 10월 5일·12일·19일·26일·11월 2일 주가 연속 5주 음봉이었습니다. 공포·탐욕 지수는 11월 7일 25(극도의 공포), 11월 8일 28(공포)이었습니다.\n\n무슨 일\n한국 시간 2026년 11월 9일 오전 6시 45분~7시(UTC 11월 8일 21:45~21:55) 전후에 강제 청산이 몰리며 비트코인이 짧게 급락했습니다. 바이낸스 공개 5분봉으로 보면, 급락 직전(21:40 UTC 종가) 약 $75,607에서 21:55 UTC 봉 저점 $73,510까지 약 −2.8% 움직였고, $74,000을 하회했습니다. 같은 1시간봉(21:00 UTC) 시가 $75,744·저점 $73,510·종가 $74,136입니다. BeInCrypto는 CoinGlass를 인용해 24시간 청산 약 $8.56억(거래자 14만 명 이상, 롱 비중 약 90.2%), 비트코인 저점 약 $73,708을 전했고, TokenPost는 약 20분 동안 롱 포지션 $7억 이상 청산을, PANews는 한 시간 청산 약 $7.45억·OKX 기준 24시간 저점 약 $73,500을 전했습니다. 청산 금액은 집계 창·거래소마다 달라서 ‘약 $7억~$8.6억’으로 적습니다.\n같은 구간 시바(SHIB)는 바이낸스 5분봉 기준 약 0.00000445에서 저점 0.00000426으로 약 −4.3% 움직였습니다. 업비트 KRW-SHIB는 같은 날 저점 약 0.00595원으로, 최근 1년 일봉 저점권입니다(업비트 공개 일봉).\n급락 직후 비트코인은 수 시간 안에 $75,000 근처까지 일부 회복했고, 확인 시점 전후 바이낸스 기준 약 $75,000대에서 거래됐습니다.\n\n앞날 일정(맥락)\n2026년 11월 11일 MSCI가 새 ‘비영업 회사’ 기준에 따라 Strategy(옛 MicroStrategy)·Metaplanet 등 지수 편입 제외 대상 최종 명단을 발표할 예정입니다(CoinDesk·MSCI). 제외되면 패시브 펀드가 주식(MSTR 등)을 팔 수 있고, JPMorgan 추산으로 Strategy 주식 유출이 약 $28억에 이를 수 있다는 보도가 있습니다. 이는 회사의 비트코인 매수 여력·심리에 영향을 줄 수 있는 일정이지, 이번 급락의 직접 원인으로 확인된 것은 아닙니다.\n\n시장·가격에 미친 영향\n시바만의 뉴스가 아니라, 비트코인 주도 레버리지 청산·위험자산 약세 구간입니다. 바이낸스 기준으로 BTC 저점 $73,510(직전 대비 약 −2.8%), SHIB 저점 0.00000426(약 −4.3%)을 같은 10~15분 창에서 기록했습니다.",
+      "learn_points_ko": [
+        "청산(liquidation)은 빌린 돈으로 잡은 포지션이 손실 한도에 닿아 강제로 정리되는 것입니다. 짧은 시간에 몰리면 가격이 더 빨리 움직일 수 있습니다.",
+        "‘24시간 청산 $8.6억’과 ‘20분 청산 $7억+’처럼 창(window)이 다르면 숫자가 달라집니다. 출처와 시간 범위를 같이 적어두세요.",
+        "주봉 연속 음봉·공포·탐욕 지수는 ‘분위기’ 지표입니다. 가격 저점과는 별개로, 같은 날 숫자와 함께 보면 맥락이 잡힙니다."
+      ],
+      "learn_if_again_ko": "짧은 급락 뉴스가 나오면 ① 바이낸스 5분·1시간봉 저점과 직전 가격, ② 청산 집계의 시간 창(20분/1시간/24시간), ③ 같은 구간 SHIB·업비트 KRW 저점, ④ 공포·탐욕·주봉 음봉 여부를 나란히 기록해 보세요.",
+      "similar_event_ids": [
+        "us-equity-ai-selloff-nov-2026",
+        "yen-carry-unwind-aug-2024",
+        "covid-crash-fed-2020",
+        "binance-hot-wallet-hack-2026"
+      ],
+      "then_vs_now_ko": "2024년 8월 엔캐리 청산 발작은 매크로·환율이 레버리지를 건드리며 하루 단위로 위험자산이 출렁인 사례이고, 2026년 11월 5일 미국 증시 AI 급락은 주식 쇼크가 코인으로 번진 날입니다. 이번 11월 9일(한국 시간) 사건은 이미 약해진 코인 장세 위에서 선물 롱 청산이 짧게 폭발한 ‘플래시 급락’에 가깝습니다.",
+      "angles_ko": {
+        "price_market": "바이낸스 5분봉: BTC 약 $75,607→저점 $73,510(약 −2.8%, $74k 하회), SHIB 약 0.00000445→0.00000426(약 −4.3%). 이후 BTC는 $75k 근처로 일부 회복.",
+        "news_reg": "BeInCrypto(CoinGlass $855.69M/24h)·TokenPost($700M+/약 20분)·PANews($745M/1h)로 청산 규모를 교차 확인. 11월 11일 MSCI Strategy 지수 편입 여부 발표는 앞날 일정(CoinDesk).",
+        "shib_vs_btc_macro": "시바 단독 이슈가 아닙니다. BTC 청산 급락과 같은 10~15분 창에서 SHIB도 약 −4%대 저점을 찍었고, 업비트 KRW-SHIB는 약 0.00595원으로 최근 1년 저점권이었습니다."
+      },
+      "further_reading": [
+        {
+          "title": "BeInCrypto — Liquidations as Bitcoin falls below $74K (2026-11-08)",
+          "url": "https://beincrypto.com/bitcoin-price-crash-crypto-liquidations-market-risks/",
+          "why_ko": "CoinGlass 24시간 청산액·BTC 저점·ETF 유출 등 배경이 한곳에 정리돼 있습니다."
+        },
+        {
+          "title": "TokenPost — $700M+ liquidation wave below $74,000 (2026-11-08)",
+          "url": "https://www.tokenpost.com/news/investing/51872",
+          "why_ko": "약 20분 단위의 짧은 청산 파동으로 보도된 숫자입니다."
+        },
+        {
+          "title": "CoinDesk — MSCI could eject Strategy; list due Nov 11 (2026-10-16)",
+          "url": "https://www.coindesk.com/markets/2026/10/16/msci-approves-rules-that-could-eject-strategy-metaplanet-from-equity-indexes",
+          "why_ko": "급락 직후 시장이 보는 11월 11일 MSCI 일정과 Strategy 관련 맥락입니다."
         }
       ]
     }
