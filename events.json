@@ -1,9 +1,9 @@
 {
-  "generated_at_kst": "2026-11-11 09:30",
+  "generated_at_kst": "2026-11-12 09:31",
   "timezone_note": "Event dates are calendar dates as reported (mostly US/ME/Asia news days). Chart overlays use UTC midnight of start/end unless noted. Prices come only from Binance klines CSV — never invented.",
   "data_choice": "Chart uses daily (1d) candles for 2017-08-17 → 2026-09-27 (~3.3k points) with rangeslider. Full-span hourly (~75k) would make Plotly HTML too heavy; hourly CSV kept for recent 1y (btc_usdt_1h_recent.csv) and original 2026 window (btc_usdt_1h.csv).",
   "hormuz_blockade_verdict": "NO single official 'Hormuz permanently sealed to all shipping' event; YES severe multi-month disruption from 2026-02-28 with Iranian transit warnings/attacks and a US naval blockade of Iranian ports. Traffic fell from ~125/day prewar to single digits at times in September 2026.",
-  "event_count": 118,
+  "event_count": 119,
   "events": [
     {
       "id": "bitcoin-whitepaper-2008",
@@ -6336,6 +6336,108 @@
           "title": "AP — Inflation runs hotter than expected (2026-11-10)",
           "url": "https://apnews.com/article/consumer-prices-holiday-inflation-tariffs-trump-fcd3c7766d3cdb36057f6dab19ff3a8e",
           "why_ko": "헤드라인·근원이 예상보다 각각 0.1%포인트 높았다는 점을 짧게 정리했습니다."
+        }
+      ]
+    },
+    {
+      "id": "msci-strategy-exclusion-nov-2026",
+      "title_ko": "MSCI, 스트래티지 지수 제외 확정 (11/30 적용)",
+      "title_en": "MSCI confirms Strategy (MSTR) index deletion (effective Nov 30 close)",
+      "start": "2026-11-11",
+      "end": "2026-11-11",
+      "category": "crypto",
+      "severity": 4,
+      "summary_ko": "2026-11-11 오후 5시(미국 동부, 한국 시간 11월 12일 오전 7시) 직후 MSCI가 11월 지수 리뷰 결과를 공개. 공식 추가·제외 명단에서 스트래티지(Strategy, 옛 MicroStrategy, 종목코드 MSTR, 증권명 STRATEGY A)가 MSCI USA 지수와 MSCI US 프라임 마켓 750 지수에서 제외로 확정됨. 적용은 2026-11-30 종가 기준. 같은 리뷰에서 일본 메타플래닛(Metaplanet)은 MSCI 일본 스몰캡, 영국 옐로 케이크(Yellow Cake)는 MSCI 영국 스몰캡, 업렉시(Upexi)는 MSCI 미국 마이크로캡 제외 명단에 올랐음. MSCI는 유출 규모를 밝히지 않았고, JPMorgan은 2025년 이전 제안 기준으로 약 $28억, 다른 지수 사업자가 따르면 최대 약 $88억을 제시한 바 있음. 스트래티지가 밝힌 MSCI 추종 펀드 보유 약 1,300만 주(기본 주식의 3.1%)를 당일 정규장 종가 $122.35에 곱하면 약 $15.9억. 규칙상 회사가 BTC를 팔 의무는 없음. 바이낸스 5분봉 기준 발표 직전(21:55 UTC) BTC 약 $74,390에서 약 70분 뒤 저점 $73,480(약 −1.2%), SHIB는 약 0.00000442에서 저점 0.00000431(약 −2.5%). MSTR은 바이낸스에 상장돼 있지 않아 시간외는 보도로만 확인(비트코인 매거진 오후 5:34 동부 $120.50/−1.51%, 더블록 $119.06/−2.6%, 로이터 시간외 −2.5%).",
+      "sources": [
+        {
+          "title": "MSCI — Equity Indexes November 2026 Index Review (press release, London, 2026-11-11); changes as of the close of 2026-11-30",
+          "url": "https://app2.msci.com/eqb/pressreleases/archive/MSCI_Nov26_QIRPR.pdf"
+        },
+        {
+          "title": "MSCI — Global Standard Indexes additions/deletions (Geneva, 2026-11-11); STRATEGY A deleted from MSCI USA Index, effective close of 2026-11-30",
+          "url": "https://app2.msci.com/eqb/gimi/stdindex/MSCI_Nov26_STPublicList.pdf"
+        },
+        {
+          "title": "MSCI — US Equity Indexes additions/deletions (New York, 2026-11-11); STRATEGY A deleted from MSCI US Prime Market 750 Index",
+          "url": "https://app2.msci.com/eqb/us/MSCI_Nov26_USPublicList.pdf"
+        },
+        {
+          "title": "MSCI — Small Cap Indexes additions/deletions (2026-11-11); METAPLANET deleted from MSCI Japan Index, YELLOW CAKE from MSCI United Kingdom Index",
+          "url": "https://app2.msci.com/eqb/gimi/smallcap/MSCI_Nov26_SCPublicList.pdf"
+        },
+        {
+          "title": "MSCI — Global Micro Cap Indexes additions/deletions (2026-11-11); UPEXI deleted from MSCI USA Index (micro cap list)",
+          "url": "https://app2.msci.com/eqb/gimi/stdindex/MSCI_Nov26_MicroPublicList.pdf"
+        },
+        {
+          "title": "Reuters (via Investing.com) — MSCI to drop Strategy from global indexes; shares −2.5% extended, J.P. Morgan up to $8.8B if others follow (2026-11-11)",
+          "url": "https://www.investing.com/news/stock-market-news/msci-to-drop-strategy-from-global-indexes-putting-billions-in-fund-inflows-at-risk-5020015"
+        },
+        {
+          "title": "Bitcoin Magazine — MSCI removes Strategy from USA Index; posted shortly after 5 p.m. ET, close $122.35 then AH $120.50/−1.51% as of 5:34 p.m. ET; 850,364 BTC as of Nov 8 (2026-11-11)",
+          "url": "https://bitcoinmagazine.com/markets/msci-removes-strategy-mstr-usa-index"
+        },
+        {
+          "title": "The Block — Strategy, Metaplanet lose MSCI index membership; MSTR AH $119.06/−2.6%; Metaplanet closed −2.53% at 231 yen before the announcement (2026-11-11, 6:09 p.m. EST)",
+          "url": "https://www.theblock.co/news/markets/2026-11-11-strategy-metaplanet-lose-msci-index-membership-november-reshuffle-438437"
+        },
+        {
+          "title": "Cointelegraph — MSCI confirms Strategy, Metaplanet, Upexi deletions; Strategy said MSCI-linked funds held ~13 million shares (3.1%) (2026-11-12)",
+          "url": "https://cointelegraph.com/news/msci-confirms-strategys-removal-from-indexes-end-november"
+        },
+        {
+          "title": "CoinDesk — MSCI approves rules that could eject Strategy/Metaplanet; final list due Nov 11, effective close of Nov 30; JPMorgan ~$2.8B (2026-10-16)",
+          "url": "https://www.coindesk.com/markets/2026/10/16/msci-approves-rules-that-could-eject-strategy-metaplanet-from-equity-indexes"
+        },
+        {
+          "title": "CoinDesk — JPMorgan warns MSCI exclusion could drive ~$2.8B, as much as $8.8B if other providers follow (2025-11-20)",
+          "url": "https://www.coindesk.com/markets/2025/11/20/jpmorgan-warns-msci-decision-could-force-strategy-out-of-top-equity-indices"
+        },
+        {
+          "title": "Binance public API — BTCUSDT/SHIBUSDT 5m & 1h klines (announcement window 2026-11-11 21:00–2026-11-12 00:00 UTC)",
+          "url": "https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=5m"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\nMSCI는 2025년 말 디지털 자산이 총자산의 50% 이상인 회사를 지수에서 빼는 안을 냈다가, 2026년 1월에는 그 안을 바로 시행하지 않았습니다. 이후 2026년 8월에는 ‘비영업 회사(non-operating companies)’를 가리는 더 넓은 기준으로 의견을 물었고, 10월 15일(미국 시간)에 새 방법론을 채택했습니다. 핵심은 영업 자산이 총자산의 50% 이상인지를 먼저 보고, 그렇지 않으면 다섯 가지 재무 비율 중 네 개 이상에 걸리면 지수 편입 자격이 없다는 규칙입니다. 규칙 문구에 비트코인은 직접 나오지 않습니다. 현재 편입 종목은 최근 두 번의 연간 공시 기간에서 모두 이 기준에 걸려야 빠집니다(MSCI·CoinDesk).\n스트래티지(옛 마이크로스트래티지)는 공개 기업 가운데 비트코인을 가장 많이 보유한 곳으로 자주 소개됩니다. 비트코인 매거진은 11월 8일 기준 보유량 850,364 BTC, 평균 매입가 $75,456라고 전했습니다. 회사는 주식을 팔아 비트코인을 사는 방식으로 보유량을 늘려 왔고, 지수에서 빠지면 패시브 펀드가 주식(MSTR)을 팔 수 있어 주가와 추가 매수 여력에 영향을 줄 수 있다는 관측이 나왔습니다. 다만 회사는 서한에서 제외가 “사업에 의미 있는 영향은 없을 것”이라고 밝힌 바 있습니다(비트코인 매거진·The Block).\n이번 발표는 이미 예고된 일정이었습니다. 이 사이트에는 10월 규칙 채택을 따로 찍은 마커는 없고, 11월 9일(한국 시간) ‘비트코인 급락’ 마커에 11월 11일 최종 명단 발표가 앞날 일정으로 적혀 있습니다.\n\n무슨 일\nMSCI는 2026년 11월 11일(런던·제네바 일자) 11월 지수 리뷰 결과를 공개했습니다. 비트코인 매거진은 명단이 미국 동부 오후 5시(한국 시간 11월 12일 오전 7시, 중부유럽 오후 11시와 같음) 직후에 올라왔다고 전했습니다. 공식 발표문은 모든 변경이 2026년 11월 30일 종가 기준으로 적용된다고 적었습니다. 로이터가 “12월 1일 제외”라고 쓴 것은, 11월 30일 종가 적용 다음 거래일부터 지수에서 빠지는 일정으로 이해하면 됩니다.\nMSCI 글로벌 스탠더드 공개 명단에는 MSCI USA 지수 제외 종목에 ‘STRATEGY A’가 들어 있습니다. USA 지수에서 빠지면 이를 바탕으로 하는 MSCI World·ACWI에서도 빠집니다. 같은 날 나온 MSCI 미국 주식 지수 명단에서는 MSCI US 프라임 마켓 750 지수의 제외 종목에도 ‘STRATEGY A’가 있습니다.\n같은 리뷰에서 다른 회사도 확인됩니다. 스몰캡 공개 명단의 MSCI 일본 지수 제외 종목에 메타플래닛(METAPLANET), MSCI 영국 지수 제외 종목에 우라늄 보유 회사 옐로 케이크(YELLOW CAKE)가 있고, 글로벌 마이크로캡 공개 명단의 MSCI USA 지수 제외 종목에는 업렉시(UPEXI)가 있습니다. 이더리움 재무 회사 샤프링크(SharpLink)는 로이터·비트코인 매거진이 ‘관심(워치) 명단’에 있었다고 전했지만, 이날 공개된 제외 명단에서는 찾지 못했습니다.\n유출 규모는 출처와 전제가 다릅니다. MSCI 자체는 금액을 밝히지 않았습니다. JPMorgan은 2025년 11월, 당시 디지털 자산 제안에 맞춰 스트래티지 주식 유출을 약 $28억, 다른 지수 사업자가 따르면 최대 약 $88억으로 추산했습니다(CoinDesk·비트코인 매거진). 스트래티지는 MSCI 지수를 추종하는 펀드가 약 1,300만 주(기본 주식의 3.1%)를 들고 있다고 밝혔고, 코인텔레그래프도 이 숫자를 전했습니다. 이 주식 수에 11월 11일 정규장 종가 $122.35(비트코인 매거진)를 곱하면 약 $15.9억입니다. 규칙상 회사가 보유 비트코인을 팔 의무는 없습니다. 압력은 주식과, 주식을 팔아 비트코인을 사 온 자금 조달 쪽에 있습니다.\n\n시장·가격에 미친 영향\n스트래티지 주식은 바이낸스에 없어, 시간외 숫자는 보도로만 적습니다. 비트코인 매거진에 따르면 정규장 종가는 $122.35(+1.06%)였고, 발표 직후인 동부 오후 5시 34분 시간외는 $120.50(−1.51%)이었습니다. 더블록(동부 오후 6시 9분 기사)은 시간외 $119.06(−2.6%)을, 로이터(인베스팅닷컴 전재, 오후 6시 13분 수정)는 시간외 −2.5%를 전했습니다. 시점마다 숫자가 조금 다릅니다. 메타플래닛은 도쿄 장에서 231엔, −2.53%로 마감했는데, 더블록은 이 종가가 MSCI 발표 전 가격이라고 명시했습니다.\n바이낸스 공개 5분봉으로 보면, 발표 직전(21:55 UTC, 한국 시간 오전 6시 55분) 비트코인은 약 $74,390이었습니다. 오전 7시 직후 바로 큰 갭이 난 것은 아니고, 약 70분 뒤인 23:10 UTC(한국 시간 오전 8시 10분) 봉 저점 $73,480까지 약 −1.2% 움직였습니다. 같은 창에서 시바(SHIB)는 직전 종가 약 0.00000442에서 저점 0.00000431로 약 −2.5% 움직였습니다. 23:00 UTC(한국 시간 오전 8시) 1시간봉 종가는 비트코인 약 $74,015, 시바 약 0.00000437이었습니다. 시바만의 뉴스가 아니라, 비트코인 재무 기업의 지수 편입이 확정적으로 바뀐 암호자산·주식 교차 마커입니다. 가격 움직임은 같은 시간대 반응이지, 이 발표만이 원인이라고 단정할 수는 없습니다.",
+      "learn_points_ko": [
+        "지수 제외는 그 지수를 따라가는 펀드가 해당 회사의 주식(여기서는 MSTR)을 팔게 되는 일입니다. 회사가 보유한 비트코인을 팔라는 뜻은 아닙니다.",
+        "유출 추산은 출처와 전제가 다릅니다. JPMorgan의 약 $28억은 2025년 이전 제안 기준이고, 회사가 밝힌 약 1,300만 주를 당일 종가에 곱하면 약 $16억입니다. MSCI는 금액을 발표하지 않았습니다.",
+        "미국 지수 리뷰는 정규장 마감 뒤에 나오는 경우가 많아, 주식 반응은 시간외에 먼저 나타납니다. 도쿄 장은 이미 끝난 뒤라 메타플래닛 당일 종가는 발표 전 가격입니다."
+      ],
+      "learn_if_again_ko": "지수 리뷰 ‘제외 확정’ 뉴스가 나오면, ① 공식 추가·제외 명단과 적용일(종가 기준인지), ② 같이 빠진 종목, ③ 유출 추산의 출처와 전제, ④ 주식 시간외(보도 시각과 가격)와 같은 시간 바이낸스 BTC·SHIB 5분봉을 나란히 기록해 보세요.",
+      "similar_event_ids": [
+        "btc-flash-crash-nov-2026",
+        "microstrategy-btc-treasury-2020",
+        "microstrategy-500k-btc-2025",
+        "us-cpi-oct-2026"
+      ],
+      "then_vs_now_ko": "2020년 8월 마이크로스트래티지(현 스트래티지)가 비트코인을 재무 자산으로 사기 시작하면서, 주식으로 비트코인에 간접 노출되는 길이 열렸습니다. 2025년 말 MSCI의 디지털 자산 특화 제외안은 2026년 1월에 당장 시행되지 않았고, 2026년 10월 15일에는 ‘비영업 회사’ 기준으로 바뀐 규칙이 채택됐습니다. 그때는 최종 명단이 11월 11일에 나온다고만 예고됐습니다. 이번 11월 11일은 그 예고가 실제 제외로 확정된 날입니다. 11월 9일(한국 시간) 비트코인 급락 마커에는 이 발표가 ‘앞날 일정’으로만 적혀 있습니다.",
+      "angles_ko": {
+        "price_market": "바이낸스 5분봉: 발표 직전 BTC 약 $74,390→저점 $73,480(약 −1.2%, 한국 시간 오전 8시 10분), SHIB 약 0.00000442→0.00000431(약 −2.5%). MSTR 정규장 종가 $122.35, 시간외는 보도 시점별로 $120.50(−1.51%, 오후 5:34 동부)~$119.06(−2.6%).",
+        "news_reg": "MSCI 공식 발표문·USA/프라임750/스몰캡/마이크로캡 명단에서 STRATEGY A·메타플래닛·옐로 케이크·업렉시 제외를 확인하고, 로이터·비트코인 매거진·더블록으로 시간외와 유출 추산의 전제를 대조합니다.",
+        "shib_vs_btc_macro": "시바 단독 이슈가 아닙니다. 비트코인 재무 기업의 지수 편입 소식과 같은 시간대에 BTC·SHIB가 같이 밀린 간접 영향 구간입니다. 회사가 BTC를 팔아야 하는 것은 아닙니다."
+      },
+      "further_reading": [
+        {
+          "title": "MSCI — November 2026 Index Review press release (2026-11-11)",
+          "url": "https://app2.msci.com/eqb/pressreleases/archive/MSCI_Nov26_QIRPR.pdf",
+          "why_ko": "적용일이 11월 30일 종가 기준이라는 공식 문구를 원문으로 확인할 수 있습니다."
+        },
+        {
+          "title": "MSCI — Global Standard Indexes additions/deletions (2026-11-11)",
+          "url": "https://app2.msci.com/eqb/gimi/stdindex/MSCI_Nov26_STPublicList.pdf",
+          "why_ko": "MSCI USA 지수 제외 종목에 STRATEGY A가 적혀 있는 공식 명단입니다."
+        },
+        {
+          "title": "Reuters (via Investing.com) — MSCI to drop Strategy from global indexes (2026-11-11)",
+          "url": "https://www.investing.com/news/stock-market-news/msci-to-drop-strategy-from-global-indexes-putting-billions-in-fund-inflows-at-risk-5020015",
+          "why_ko": "시간외 −2.5%, 메타플래닛·옐로 케이크 언급, JPMorgan의 최대 $88억 추산을 전한 통신사 기사입니다."
+        },
+        {
+          "title": "Bitcoin Magazine — MSCI removes Strategy from USA Index (2026-11-11)",
+          "url": "https://bitcoinmagazine.com/markets/msci-removes-strategy-mstr-usa-index",
+          "why_ko": "발표 시각(동부 오후 5시 직후), 정규장·시간외 초기 가격, 보유량과 유출 추산의 전제 차이를 한곳에서 볼 수 있습니다."
         }
       ]
     }
