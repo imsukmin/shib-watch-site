@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0b1020" />
+<title>엔비디아 젠슨 황 CEO 사임 (BTC $72k 하회) · 사건 자세히</title>
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<style>
+
+  :root {
+    --bg: #0b1020;
+    --bg2: #121933;
+    --card: #161e3a;
+    --card2: #1c2648;
+    --border: rgba(255,255,255,0.08);
+    --text: #e8ecf7;
+    --muted: #8b95b5;
+    --accent: #f39c12;
+    --link: #9db4ff;
+    --shib: #ff7a9a;
+    --btc: #f39c12;
+    --down: #e74c3c;
+    --up: #2ecc71;
+    --chip: #243056;
+    --radius: 14px;
+    --shadow: 0 8px 24px rgba(0,0,0,0.28);
+    --font: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font); }
+  body { min-height: 100vh; line-height: 1.55; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 16px 14px 48px; }
+  .hero {
+    background: linear-gradient(145deg, #182044 0%, #10162d 60%, #0d1328 100%);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 18px 16px 16px;
+    box-shadow: var(--shadow);
+    margin-bottom: 14px;
+  }
+  .hero h1 {
+    margin: 8px 0 6px;
+    font-size: 1.28rem;
+    letter-spacing: -0.02em;
+    font-weight: 750;
+    line-height: 1.35;
+  }
+  .hero .sub { color: var(--muted); font-size: 0.86rem; margin: 0 0 12px; }
+  .nav-links {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    position: sticky; top: 0; z-index: 40;
+    background: rgba(13,19,40,0.94);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 8px 2px;
+    margin: 0 -2px;
+    border-radius: 12px;
+  }
+  .nav-links a {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--chip); color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 999px; padding: 7px 12px;
+    font-size: 0.82rem; font-weight: 600;
+    text-decoration: none;
+  }
+  .nav-links a.btc { border-color: rgba(243,156,18,0.35); color: #ffc56a; }
+  .nav-links a.shib { border-color: rgba(255,122,154,0.4); color: #ffb0c4; }
+  .chip {
+    display: inline-block; font-size: 0.75rem; font-weight: 700;
+    padding: 2px 7px; border-radius: 999px; background: var(--chip); color: #c7d0ee;
+  }
+  .chip.geo { background: rgba(231,76,60,0.18); color: #ff9b91; }
+  .chip.fed, .chip.macro { background: rgba(52,152,219,0.18); color: #8fd0ff; }
+  .chip.crypto, .chip.exchange { background: rgba(155,89,186,0.18); color: #d5a8ff; }
+  .chip.policy, .chip.etf_reg { background: rgba(26,188,156,0.18); color: #7ff0d6; }
+  .chip.markets, .chip.equity { background: rgba(243,156,18,0.18); color: #ffd28a; }
+  .chip.burn_supply, .chip.ecosystem { background: rgba(255,122,154,0.18); color: #ffb0c4; }
+  .chip.covid { background: rgba(46,204,113,0.18); color: #8dffb8; }
+  .chip.btctag { background: rgba(243,156,18,0.22); color: #ffd28a; }
+  .chip.shibtag { background: rgba(255,122,154,0.22); color: #ffb0c4; }
+  .chip.sev-high { background: rgba(243,156,18,0.2); color: #ffd28a; }
+  .chip.sev-mid { background: rgba(139,149,181,0.22); color: #c7d0ee; }
+  .chip.sev-low { background: rgba(139,149,181,0.14); color: #8b95b5; }
+  .meta-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 4px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 14px;
+    box-shadow: var(--shadow);
+    margin-bottom: 12px;
+  }
+  .card.takeaway {
+    border: 1px solid rgba(243,156,18,0.35);
+    border-left: 4px solid var(--accent);
+    background: linear-gradient(145deg, #1a2748 0%, #161e3a 100%);
+  }
+  .card.takeaway .section-label { color: #ffd28a; }
+  .card.demoted {
+    padding: 12px;
+    box-shadow: none;
+    background: var(--bg2);
+    opacity: 0.92;
+  }
+  .card.demoted .section-label { font-size: 0.7rem; margin-bottom: 6px; }
+  .section-label {
+    color: var(--muted); font-size: 0.78rem; font-weight: 700;
+    margin: 0 0 8px;
+  }
+  .article-body h2 {
+    margin: 18px 0 8px; font-size: 1.02rem; font-weight: 720;
+    color: #ffd28a;
+  }
+  .article-body h2:first-child { margin-top: 0; }
+  .article-body p {
+    margin: 0 0 12px; color: var(--text); font-size: 0.92rem;
+  }
+  .article-body p:last-child { margin-bottom: 0; }
+  .phases { margin: 0; padding: 0; list-style: none; }
+  .phases li {
+    border-left: 2px solid rgba(243,156,18,0.35);
+    padding: 6px 0 6px 12px; margin-bottom: 6px;
+  }
+  .phases .pdate { color: var(--muted); font-size: 0.75rem; font-weight: 650; }
+  .phases .ptitle { font-weight: 700; font-size: 0.88rem; margin: 2px 0; }
+  .phases .pnote { color: var(--muted); font-size: 0.8rem; }
+  .sources { list-style: none; margin: 0; padding: 0; }
+  .sources li {
+    margin-bottom: 8px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .sources a { font-weight: 650; font-size: 0.88rem; word-break: break-word; }
+  .sources .url {
+    display: block; color: var(--muted); font-size: 0.72rem;
+    margin-top: 4px; word-break: break-all;
+  }
+  .sources .why { display: block; color: var(--muted); font-size: 0.78rem; margin-top: 4px; }
+  .footer {
+    margin-top: 22px; padding: 12px; color: var(--muted); font-size: 0.72rem;
+    border-top: 1px solid var(--border); text-align: center;
+  }
+  .footer a { color: var(--muted); }
+  .learn-list { margin: 0; padding: 0 0 0 18px; }
+  .learn-list li { margin-bottom: 8px; font-size: 0.9rem; color: var(--text); }
+  .learn-again {
+    margin-top: 12px; padding-top: 10px;
+    border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 0.85rem;
+  }
+  .learn-again strong { color: #ffd28a; font-weight: 700; }
+  .similar-list { list-style: none; margin: 0; padding: 0; }
+  .similar-list li {
+    margin-bottom: 8px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .similar-list a { font-weight: 650; font-size: 0.88rem; }
+  .similar-list .sdate { color: var(--muted); font-size: 0.75rem; font-weight: 650; margin-bottom: 2px; }
+  .angle-inline {
+    margin-top: 12px; padding-top: 10px;
+    border-top: 1px solid var(--border);
+  }
+  .angle-inline .alabel {
+    color: #ffd28a; font-size: 0.78rem; font-weight: 700; margin: 8px 0 2px;
+  }
+  .angle-inline p { margin: 0 0 6px; font-size: 0.88rem; color: var(--text); }
+  .angle-block {
+    margin-bottom: 10px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .angle-block .alabel {
+    color: #ffd28a; font-size: 0.78rem; font-weight: 700; margin-bottom: 4px;
+  }
+  .angle-block p { margin: 0; font-size: 0.88rem; color: var(--text); }
+
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="meta-row">
+      <span class="chip btctag">BTC</span>
+      <span class="chip equity">증시</span>
+      <span class="chip">2026-11-12</span>
+      <span class="chip sev-mid">중요도 중간</span>
+    </div>
+    <h1>엔비디아 젠슨 황 CEO 사임 (BTC $72k 하회)</h1>
+    <p class="sub">2026-11-12 엔비디아 이사회가 젠슨 황(Jen-Hsun Huang)의 사장·CEO·이사 사임을 즉시 효력으로 발표. 공식 뉴스룸과 같은 날 제출된 8-K(최초 사건일 11월 11일)로 확인됨. 임시 CEO는 최고재무책임자 콜레트 크레스, 이사회 의장(신설)은 하비 C. 존스. 전날(11월 11일) 장 마감 뒤 WSJ·NYT가 이사회가 해임을 준비 중이라고 보도했고, 야후 파이낸스 기준 시간외 오후 8시(동부) 마지막 가격은 $158.78로 정규장 종가 $173.73 대비 약 −8.6%. 11월 12일 정규장은 시가 $151.01(약 −13.1%), 저점 $148.80(약 −14.4%), 종가 $166.19(약 −4.3%). 공식 발표가 퍼진 한국 시간 저녁, 바이낸스 5분봉 기준 BTC는 20:00 약 $73,464에서 11월 13일 00:00 저점 $71,255(약 −3.0%)까지 밀렸고, 23:20에 8월 20일 이후 처음으로 $72,000을 하회(해당 봉 저점 $71,897). 같은 구간 SHIB는 약 0.00000431→저점 0.00000422(약 −2.1%, 22:10). 11월 12일(UTC) 하루 종가는 $71,460, 저점은 $71,113(한국 시간 13일 08:20).</p>
+    <nav class="nav-links" aria-label="페이지 이동">
+      <a href="../index.html">대시보드</a>
+      <a class="btc" href="../chart.html">BTC 차트</a>
+      <a class="shib" href="../shib.html">SHIB 비교</a>
+    </nav>
+  </header>
+
+
+  <section class="card">
+    <div class="section-label">비슷한 과거 상황</div>
+    <ul class="similar-list"><li><div class="sdate">2026-11-05</div><a href="us-equity-ai-selloff-nov-2026.html">미국 증시 급락 (AI 규제 우려, 나스닥 −5.5%)</a></li><li><div class="sdate">2025-01-27</div><a href="deepseek-ai-shock-jan-2025.html">DeepSeek AI 쇼크</a></li><li><div class="sdate">2023-05-24 ~ 2023-05-25</div><a href="nvda-ai-earnings-may-2023.html">엔비디아 AI 실적</a></li><li><div class="sdate">2026-11-09</div><a href="btc-flash-crash-nov-2026.html">비트코인 급락 ($74k 하회·청산 약 $8.6억)</a></li><li><div class="sdate">2026-11-10</div><a href="us-cpi-oct-2026.html">미국 10월 CPI 예상 상회 (근원 0.3%)</a></li><li><div class="sdate">2026-11-11</div><a href="msci-strategy-exclusion-nov-2026.html">MSCI, 스트래티지 지수 제외 확정 (11/30 적용)</a></li></ul>
+  </section>
+  <article class="card article-body">
+    <div class="section-label">자세히 읽기</div>
+    <h2>배경</h2>
+<p>11월 들어 미국 기술주와 비트코인은 이미 약해져 있었습니다. 이 사이트에는 11월 5일 미국 증시 급락(나스닥 −5.5%), 11월 9일(한국 시간) 비트코인 $74,000 하회, 11월 10일 미국 10월 CPI 예상 상회, 11월 11일(미국 시간) MSCI의 스트래티지 지수 제외 확정이 마커로 있습니다. 11월 11일 정규장에서 엔비디아(NVDA)는 $173.73에 마감하며 약 +2.9% 올랐습니다. 같은 날 장 마감 직후 월스트리트저널과 뉴욕타임스가 이사회가 젠슨 황 해임을 준비 중이라고 보도했고, CNBC는 시간외 낙폭이 9%를 넘었다고 전했습니다.</p>
+<h2>무슨 일</h2>
+<p>엔비디아 공식 뉴스룸(2026년 11월 12일)은 이사회가 젠슨 황의 사장·CEO·이사 사임을 즉시 효력으로 발표했다고 밝혔습니다. 임시 CEO는 2013년부터 최고재무책임자를 맡아 온 콜레트 크레스이며, 이사회는 내외부 후보를 검토하는 정식 CEO 탐색을 시작했습니다. 이사회는 또한 하비 C. 존스를 창사 이후 첫 의장으로 임명했습니다. 같은 날 제출된 미국 증권거래위원회(SEC) 8-K는 ‘최초 사건일’을 11월 11일로 적고, 이사회가 그날 사임을 수락했다고 적었습니다. 보도들은 사임 배경으로 두 건의 불륜 의혹(그중 하나는 미국 정보당국이 중국 스파이로 본다는 여성)을 거론했지만, 회사 발표문 자체에는 사임 사유가 없습니다. 3분기(회계연도 2027) 실적 발표는 예정대로 11월 17일 오후 1시 20분(태평양 시간)입니다.</p>
+<h2>시장·가격에 미친 영향</h2>
+<p>주식 숫자는 어느 거래를 보느냐에 따라 다릅니다. 야후 파이낸스 1분봉을 인용한 집계로는 11월 11일 동부 오후 8시 시간외 마지막 가격이 $158.78로, 정규장 종가 $173.73 대비 약 −8.6%였고, 시간외 저점은 $156.46(약 −9.9%)이었습니다. 24/7월스트리트는 오후 5시 25분쯤 저점 $156.20(약 −10.1%)을 전했습니다. 11월 12일 정규장(StockAnalysis)은 시가 $151.01(전일 종가 대비 약 −13.1%), 저점 $148.80(약 −14.4%), 종가 $166.19(약 −4.3%)였습니다. 인수인계에 있던 ‘시간외 약 −8.5%’는 오후 8시 기준 −8.6%에 가깝고, ‘프리마켓 약 −10%’는 시간외 저점 부근과 비슷하지만 개장 시가는 이보다 더 낮았습니다.</p>
+<p>비트코인이 $72,000을 하회한 것은 공식 발표가 퍼진 같은 날 저녁(한국 시간)입니다. 바이낸스 공개 5분봉으로 보면, 11월 12일 20:00(한국 시간, 미국 목요일 오전 개장 전후) 시가 약 $73,464에서 13일 00:00 봉 저점 $71,255까지 약 −3.0% 움직였습니다. $72,000을 처음 하회한 것은 23:20 봉(저점 $71,897)입니다. 더 버지는 13:53 UTC(한국 시간 22:53), 64비트사령부 글은 약 22:49로 이 구간과 맞습니다. 11월 12일(UTC) 하루 종가는 $71,460, 같은 날 봉의 저점은 13일 08:20(한국 시간) $71,113이었습니다. 바이낸스 하루 봉 기준으로 종가나 저점이 $72,000을 밑돈 것은 8월 19일(종가 $69,335)·8월 20일(저점 $68,902) 이후 처음입니다. 같은 20:00~13일 00:00 구간에서 SHIB는 약 0.00000431에서 22:10 저점 0.00000422(약 −2.1%)까지 내렸습니다. 한국 시간 12일 오전 7~8시에 있었던 BTC 약 −1.2%·SHIB 약 −2.5% 움직임은 이미 ‘MSCI 스트래티지 지수 제외’ 마커에 적혀 있으며, 그 시각은 WSJ·NYT의 시간외 보도와도 겹칩니다. 그래서 이 마커는 그 오전 구간을 다시 세지 않고, 공식 발표가 나온 저녁 구간을 적습니다.</p>
+<p>현물 ETF와 청산 숫자도 출처·시점마다 다릅니다. lookonchain의 11월 12일 업데이트는 미국 현물 비트코인 ETF 하루 순유출 3,621 BTC(약 $2.628억), 7일 19,453 BTC(약 $14.1억)입니다. 이와 별개로 Farside Investors(Coinpaper·CryptoBriefing 인용)는 11월 11일(수) 순유출 $2.998억, 11월 5~11일 다섯 거래일 합계 약 $14.4억으로 전했습니다. 하루와 기간 정의가 달라 두 숫자를 하나로 합치지 않았습니다. 청산은 Coinpaper가 인용한 CoinGlass 기준으로 비트코인 선물 24시간 약 $3.045억(롱 약 $2.658억)이고, news.bitcoin.com은 동부 오전 9:33 스냅샷으로 전체 파생 청산 약 $6.56억(롱 약 $5.55억, 이 중 BTC 약 $2.37억)을 전했습니다. 인수인계의 ‘롱 청산 약 $3.47억’은 같은 출처로 확인하지 못해 쓰지 않았습니다.</p>
+  </article>
+
+  <section class="card takeaway">
+    <div class="section-label">이 사건에서 배울 점</div>
+    <ul class="learn-list"><li>대형 기업 최고경영자 ‘사임’ 소식은 소셜 미디어나 시간외 보도만으로 단정하지 않고, 회사 공식 발표와 증권 공시(여기서는 8-K)로 확인하는 편이 안전합니다. 이 건은 둘 다 있습니다.</li><li>주식 낙폭은 시간외·프리마켓·시가·저점·종가가 서로 다릅니다. 엔비디아는 시간외 오후 8시 약 −8.6%, 개장 약 −13.1%, 정규장 종가는 약 −4.3%였습니다.</li><li>같은 날 아침(한국 시간) 비트코인 움직임은 이미 MSCI 마커에 있습니다. 저녁의 $72,000 하회는 공식 사임 발표와 같은 시간대여서, 이 마커에 저녁 구간만 적었습니다.</li></ul>
+    <div class="learn-again"><strong>비슷한 일이 또 오면</strong> 메가캡 최고경영자 해임·사임 뉴스가 나오면, ① 공식 발표·공시 여부(루머와 구분), ② 주식의 시간외·시가·종가를 따로 기록, ③ 발표 시각에 맞춘 바이낸스 BTC·SHIB 5분봉, ④ ETF 유출·청산은 출처와 집계 시점을 밝혀 적어 보세요.</div>
+    <div class="angle-inline"><div class="section-label" style="margin-top:4px;">여러 각도로 보기</div><div class="alabel">가격 · 시장 분위기</div><p>NVDA: 11월 11일 시간외 오후 8시 약 −8.6%($158.78), 12일 시가 $151.01(약 −13.1%)·저점 $148.80(약 −14.4%)·종가 $166.19(약 −4.3%). 바이낸스 5분봉: 한국 시간 20:00 BTC 약 $73,464→13일 00:00 저점 $71,255(약 −3.0%), 23:20에 $72k 하회. SHIB 약 0.00000431→0.00000422(약 −2.1%, 22:10).</p><div class="alabel">뉴스 · 규제</div><p>엔비디아 뉴스룸(11월 12일)과 SEC 8-K(최초 사건일 11월 11일, 제출일 12일)로 사임·임시 CEO(크레스)·초대 의장(존스)을 확인합니다. 사임 사유는 회사 발표문에 없고, 배경 보도는 WSJ·NYT·CNBC를 참고합니다.</p><div class="alabel">직접 이슈 vs 간접 영향</div><p>시바 단독 이슈가 아닙니다. 미국 주식·AI 기업 지배구조 소식이 위험자산 분위기와 함께 BTC·SHIB를 같은 시간대에 밀어낸 간접 영향 구간입니다.</p></div>
+  </section>
+
+  <section class="card">
+    <div class="section-label">그때와 지금 · 비슷한 사건과의 차이</div>
+    <p style="margin:0;font-size:0.9rem;">2023년 5월 엔비디아 실적 발표는 AI 투자 기대를 키운 사례로 이 사이트에 마커가 있습니다. 2025년 1월 DeepSeek 쇼크와 2026년 11월 5일 미국 기술주 급락은, 엔비디아를 중심으로 한 AI 주식 충격이 위험자산 분위기를 흔든 최근 사례입니다. 이번 11월 12일은 실적이나 규제 우려가 아니라, 창업자 겸 최고경영자의 즉시 사임이 공식 확인된 날입니다. 같은 주에는 이미 CPI·비트코인 급락·MSCI 스트래티지 제외 마커가 있습니다.</p>
+  </section>
+
+
+  <section class="card demoted">
+    <div class="section-label">출처 · 더 읽어볼 자료</div>
+    <ul class="sources"><li><a href="https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition" target="_blank" rel="noopener noreferrer">NVIDIA Newsroom — CEO Transition (2026-11-12)</a><span class="why">사임이 즉시 효력이고, 임시 CEO와 초대 이사회 의장 임명이 적힌 회사 공식 발표입니다.</span><span class="url">https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition</span></li><li><a href="https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm" target="_blank" rel="noopener noreferrer">SEC Form 8-K — NVIDIA item 5.02 (filed 2026-11-12)</a><span class="why">이사회가 11월 11일에 사임을 수락했다는 증권 공시입니다. 보도만 보지 않고 날짜를 대조할 수 있습니다.</span><span class="url">https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm</span></li><li><a href="https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-ceo-live-updates.html" target="_blank" rel="noopener noreferrer">CNBC — Jensen Huang resignation live updates (2026-11-12)</a><span class="why">공식 발표 이후 진행 상황을 통신사가 시간 순으로 정리한 기사입니다.</span><span class="url">https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-ceo-live-updates.html</span></li><li><a href="https://bitcoinmagazine.com/markets/bitcoin-price-falls-below-72000" target="_blank" rel="noopener noreferrer">Bitcoin Magazine — BTC falls below $72,000 (2026-11-12)</a><span class="why">사임 발표와 같은 날 비트코인이 8월 중순 이후 처음으로 $72,000을 밑돈 흐름을 시간대로 정리했습니다.</span><span class="url">https://bitcoinmagazine.com/markets/bitcoin-price-falls-below-72000</span></li><li><a href="https://www.theverge.com/ai-artificial-intelligence/1031689/jensen-huang-nvidia-ceo-resigns" target="_blank" rel="noopener noreferrer">The Verge — Nvidia CEO Jensen Huang resigns amid spy, affair scandals (2026-11-12, 13:53 UTC)</a><span class="url">https://www.theverge.com/ai-artificial-intelligence/1031689/jensen-huang-nvidia-ceo-resigns</span></li><li><a href="https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html" target="_blank" rel="noopener noreferrer">CNBC — Nvidia board meets to decide CEO Jensen Huang’s fate; shares fell more than 9% after hours after WSJ/NYT reports (2026-11-11, updated 2026-11-12)</a><span class="url">https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html</span></li><li><a href="https://stockanalysis.com/stocks/nvda/history/" target="_blank" rel="noopener noreferrer">StockAnalysis — NVIDIA (NVDA) daily prices: 2026-11-11 close $173.73; 2026-11-12 open $151.01, low $148.80, close $166.19 (−4.34%)</a><span class="url">https://stockanalysis.com/stocks/nvda/history/</span></li><li><a href="https://kepo.ai/blog/track-nvidia-stock-nov-12-on-mac" target="_blank" rel="noopener noreferrer">Yahoo Finance extended-hours tape via Kepo — after-hours last $158.78 (−8.61%) at 8:00 p.m. ET Nov 11, AH low $156.46</a><span class="url">https://kepo.ai/blog/track-nvidia-stock-nov-12-on-mac</span></li><li><a href="https://247wallst.com/investing/2026/11/12/nvidia-is-back-below-4-trillion-and-microsoft-just-passed-it/" target="_blank" rel="noopener noreferrer">24/7 Wall St. — after-hours around 5:25 p.m. ET low $156.20 (about −10.1% vs close); 7:59 p.m. ET $158.76 (−8.62%) (2026-11-11)</a><span class="url">https://247wallst.com/investing/2026/11/12/nvidia-is-back-below-4-trillion-and-microsoft-just-passed-it/</span></li><li><a href="https://x.com/lookonchain/status/2120876365113336029" target="_blank" rel="noopener noreferrer">Lookonchain — Nov 12 update: BTC ETFs 1D −3,621 BTC (−$262.8M), 7D −19,453 BTC (−$1.41B)</a><span class="url">https://x.com/lookonchain/status/2120876365113336029</span></li><li><a href="https://coinpaper.com/38754/why-is-bitcoin-crashing-today-btc-falls-below-72-k-as-long-liquidations-accelerate" target="_blank" rel="noopener noreferrer">Coinpaper (CoinGlass / Farside) — BTC futures liquidations ~$304.5M/24h (longs $265.8M); spot ETF −$299.8M on Nov 11, ~$1.44B over Nov 5–11 (2026-11-12)</a><span class="url">https://coinpaper.com/38754/why-is-bitcoin-crashing-today-btc-falls-below-72-k-as-long-liquidations-accelerate</span></li><li><a href="https://news.bitcoin.com/market-updates/bitcoin-price-breaks-below-72k-656m-liquidation-bloodbath/" target="_blank" rel="noopener noreferrer">Bitcoin.com — CoinGlass at 9:33 a.m. ET: ~$656M liquidated/24h (longs ~$555M; BTC ~$237M) (2026-11-12)</a><span class="url">https://news.bitcoin.com/market-updates/bitcoin-price-breaks-below-72k-656m-liquidation-bloodbath/</span></li><li><a href="https://x.com/64bitcoinkr/status/2120877100169379957" target="_blank" rel="noopener noreferrer">64비트사령부 (X) — 젠슨 황 즉시 사임 보도, NVDA 개장 전 약 −10% (2026-11-12 22:49 KST)</a><span class="url">https://x.com/64bitcoinkr/status/2120877100169379957</span></li><li><a href="https://api.binance.com/api/v3/klines?symbol=BTCUSDT&amp;interval=5m" target="_blank" rel="noopener noreferrer">Binance public API — BTCUSDT/SHIBUSDT 5m &amp; 1h klines (2026-11-12 11:00–16:00 UTC window)</a><span class="url">https://api.binance.com/api/v3/klines?symbol=BTCUSDT&amp;interval=5m</span></li></ul>
+  </section>
+
+  <footer class="footer">
+    숫자·날짜·주장은 위 출처와 바이낸스 공개 가격 CSV에만 기반합니다. 출처에 없는 내용은 적지 않았습니다. 투자 조언이 아닙니다.
+    <div style="margin-top:8px;"><a href="https://github.com/imsukmin/shib-watch-site" target="_blank" rel="noopener">GitHub</a></div>
+  </footer>
+</div>
+</body>
+</html>

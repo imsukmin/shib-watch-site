@@ -1,9 +1,9 @@
 {
-  "generated_at_kst": "2026-11-12 09:31",
+  "generated_at_kst": "2026-11-13 09:35",
   "timezone_note": "Event dates are calendar dates as reported (mostly US/ME/Asia news days). Chart overlays use UTC midnight of start/end unless noted. Prices come only from Binance klines CSV — never invented.",
   "data_choice": "Chart uses daily (1d) candles for 2017-08-17 → 2026-09-27 (~3.3k points) with rangeslider. Full-span hourly (~75k) would make Plotly HTML too heavy; hourly CSV kept for recent 1y (btc_usdt_1h_recent.csv) and original 2026 window (btc_usdt_1h.csv).",
   "hormuz_blockade_verdict": "NO single official 'Hormuz permanently sealed to all shipping' event; YES severe multi-month disruption from 2026-02-28 with Iranian transit warnings/attacks and a US naval blockade of Iranian ports. Traffic fell from ~125/day prewar to single digits at times in September 2026.",
-  "event_count": 119,
+  "event_count": 120,
   "events": [
     {
       "id": "bitcoin-whitepaper-2008",
@@ -6440,6 +6440,119 @@
           "why_ko": "발표 시각(동부 오후 5시 직후), 정규장·시간외 초기 가격, 보유량과 유출 추산의 전제 차이를 한곳에서 볼 수 있습니다."
         }
       ]
+    },
+    {
+      "id": "nvidia-ceo-resignation-nov-2026",
+      "title_ko": "엔비디아 젠슨 황 CEO 사임 (BTC $72k 하회)",
+      "title_en": "Nvidia CEO Jensen Huang resigns (BTC breaks below $72k)",
+      "start": "2026-11-12",
+      "end": "2026-11-12",
+      "category": "equity",
+      "severity": 4,
+      "summary_ko": "2026-11-12 엔비디아 이사회가 젠슨 황(Jen-Hsun Huang)의 사장·CEO·이사 사임을 즉시 효력으로 발표. 공식 뉴스룸과 같은 날 제출된 8-K(최초 사건일 11월 11일)로 확인됨. 임시 CEO는 최고재무책임자 콜레트 크레스, 이사회 의장(신설)은 하비 C. 존스. 전날(11월 11일) 장 마감 뒤 WSJ·NYT가 이사회가 해임을 준비 중이라고 보도했고, 야후 파이낸스 기준 시간외 오후 8시(동부) 마지막 가격은 $158.78로 정규장 종가 $173.73 대비 약 −8.6%. 11월 12일 정규장은 시가 $151.01(약 −13.1%), 저점 $148.80(약 −14.4%), 종가 $166.19(약 −4.3%). 공식 발표가 퍼진 한국 시간 저녁, 바이낸스 5분봉 기준 BTC는 20:00 약 $73,464에서 11월 13일 00:00 저점 $71,255(약 −3.0%)까지 밀렸고, 23:20에 8월 20일 이후 처음으로 $72,000을 하회(해당 봉 저점 $71,897). 같은 구간 SHIB는 약 0.00000431→저점 0.00000422(약 −2.1%, 22:10). 11월 12일(UTC) 하루 종가는 $71,460, 저점은 $71,113(한국 시간 13일 08:20).",
+      "sources": [
+        {
+          "title": "NVIDIA Newsroom — NVIDIA Announces CEO Transition (2026-11-12)",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+        },
+        {
+          "title": "SEC Form 8-K — NVIDIA Corporation (item 5.02; date of earliest event 2026-11-11, filed 2026-11-12)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm"
+        },
+        {
+          "title": "CNBC — Nvidia CEO Jensen Huang resigns: Live updates (2026-11-12)",
+          "url": "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-ceo-live-updates.html"
+        },
+        {
+          "title": "The Verge — Nvidia CEO Jensen Huang resigns amid spy, affair scandals (2026-11-12, 13:53 UTC)",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1031689/jensen-huang-nvidia-ceo-resigns"
+        },
+        {
+          "title": "CNBC — Nvidia board meets to decide CEO Jensen Huang’s fate; shares fell more than 9% after hours after WSJ/NYT reports (2026-11-11, updated 2026-11-12)",
+          "url": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-affair-employee.html"
+        },
+        {
+          "title": "StockAnalysis — NVIDIA (NVDA) daily prices: 2026-11-11 close $173.73; 2026-11-12 open $151.01, low $148.80, close $166.19 (−4.34%)",
+          "url": "https://stockanalysis.com/stocks/nvda/history/"
+        },
+        {
+          "title": "Yahoo Finance extended-hours tape via Kepo — after-hours last $158.78 (−8.61%) at 8:00 p.m. ET Nov 11, AH low $156.46",
+          "url": "https://kepo.ai/blog/track-nvidia-stock-nov-12-on-mac"
+        },
+        {
+          "title": "24/7 Wall St. — after-hours around 5:25 p.m. ET low $156.20 (about −10.1% vs close); 7:59 p.m. ET $158.76 (−8.62%) (2026-11-11)",
+          "url": "https://247wallst.com/investing/2026/11/12/nvidia-is-back-below-4-trillion-and-microsoft-just-passed-it/"
+        },
+        {
+          "title": "Bitcoin Magazine — Bitcoin price falls below $72,000 as Huang steps down; lowest since mid-August (2026-11-12)",
+          "url": "https://bitcoinmagazine.com/markets/bitcoin-price-falls-below-72000"
+        },
+        {
+          "title": "Lookonchain — Nov 12 update: BTC ETFs 1D −3,621 BTC (−$262.8M), 7D −19,453 BTC (−$1.41B)",
+          "url": "https://x.com/lookonchain/status/2120876365113336029"
+        },
+        {
+          "title": "Coinpaper (CoinGlass / Farside) — BTC futures liquidations ~$304.5M/24h (longs $265.8M); spot ETF −$299.8M on Nov 11, ~$1.44B over Nov 5–11 (2026-11-12)",
+          "url": "https://coinpaper.com/38754/why-is-bitcoin-crashing-today-btc-falls-below-72-k-as-long-liquidations-accelerate"
+        },
+        {
+          "title": "Bitcoin.com — CoinGlass at 9:33 a.m. ET: ~$656M liquidated/24h (longs ~$555M; BTC ~$237M) (2026-11-12)",
+          "url": "https://news.bitcoin.com/market-updates/bitcoin-price-breaks-below-72k-656m-liquidation-bloodbath/"
+        },
+        {
+          "title": "64비트사령부 (X) — 젠슨 황 즉시 사임 보도, NVDA 개장 전 약 −10% (2026-11-12 22:49 KST)",
+          "url": "https://x.com/64bitcoinkr/status/2120877100169379957"
+        },
+        {
+          "title": "Binance public API — BTCUSDT/SHIBUSDT 5m & 1h klines (2026-11-12 11:00–16:00 UTC window)",
+          "url": "https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=5m"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n11월 들어 미국 기술주와 비트코인은 이미 약해져 있었습니다. 이 사이트에는 11월 5일 미국 증시 급락(나스닥 −5.5%), 11월 9일(한국 시간) 비트코인 $74,000 하회, 11월 10일 미국 10월 CPI 예상 상회, 11월 11일(미국 시간) MSCI의 스트래티지 지수 제외 확정이 마커로 있습니다. 11월 11일 정규장에서 엔비디아(NVDA)는 $173.73에 마감하며 약 +2.9% 올랐습니다. 같은 날 장 마감 직후 월스트리트저널과 뉴욕타임스가 이사회가 젠슨 황 해임을 준비 중이라고 보도했고, CNBC는 시간외 낙폭이 9%를 넘었다고 전했습니다.\n\n무슨 일\n엔비디아 공식 뉴스룸(2026년 11월 12일)은 이사회가 젠슨 황의 사장·CEO·이사 사임을 즉시 효력으로 발표했다고 밝혔습니다. 임시 CEO는 2013년부터 최고재무책임자를 맡아 온 콜레트 크레스이며, 이사회는 내외부 후보를 검토하는 정식 CEO 탐색을 시작했습니다. 이사회는 또한 하비 C. 존스를 창사 이후 첫 의장으로 임명했습니다. 같은 날 제출된 미국 증권거래위원회(SEC) 8-K는 ‘최초 사건일’을 11월 11일로 적고, 이사회가 그날 사임을 수락했다고 적었습니다. 보도들은 사임 배경으로 두 건의 불륜 의혹(그중 하나는 미국 정보당국이 중국 스파이로 본다는 여성)을 거론했지만, 회사 발표문 자체에는 사임 사유가 없습니다. 3분기(회계연도 2027) 실적 발표는 예정대로 11월 17일 오후 1시 20분(태평양 시간)입니다.\n\n시장·가격에 미친 영향\n주식 숫자는 어느 거래를 보느냐에 따라 다릅니다. 야후 파이낸스 1분봉을 인용한 집계로는 11월 11일 동부 오후 8시 시간외 마지막 가격이 $158.78로, 정규장 종가 $173.73 대비 약 −8.6%였고, 시간외 저점은 $156.46(약 −9.9%)이었습니다. 24/7월스트리트는 오후 5시 25분쯤 저점 $156.20(약 −10.1%)을 전했습니다. 11월 12일 정규장(StockAnalysis)은 시가 $151.01(전일 종가 대비 약 −13.1%), 저점 $148.80(약 −14.4%), 종가 $166.19(약 −4.3%)였습니다. 인수인계에 있던 ‘시간외 약 −8.5%’는 오후 8시 기준 −8.6%에 가깝고, ‘프리마켓 약 −10%’는 시간외 저점 부근과 비슷하지만 개장 시가는 이보다 더 낮았습니다.\n\n비트코인이 $72,000을 하회한 것은 공식 발표가 퍼진 같은 날 저녁(한국 시간)입니다. 바이낸스 공개 5분봉으로 보면, 11월 12일 20:00(한국 시간, 미국 목요일 오전 개장 전후) 시가 약 $73,464에서 13일 00:00 봉 저점 $71,255까지 약 −3.0% 움직였습니다. $72,000을 처음 하회한 것은 23:20 봉(저점 $71,897)입니다. 더 버지는 13:53 UTC(한국 시간 22:53), 64비트사령부 글은 약 22:49로 이 구간과 맞습니다. 11월 12일(UTC) 하루 종가는 $71,460, 같은 날 봉의 저점은 13일 08:20(한국 시간) $71,113이었습니다. 바이낸스 하루 봉 기준으로 종가나 저점이 $72,000을 밑돈 것은 8월 19일(종가 $69,335)·8월 20일(저점 $68,902) 이후 처음입니다. 같은 20:00~13일 00:00 구간에서 SHIB는 약 0.00000431에서 22:10 저점 0.00000422(약 −2.1%)까지 내렸습니다. 한국 시간 12일 오전 7~8시에 있었던 BTC 약 −1.2%·SHIB 약 −2.5% 움직임은 이미 ‘MSCI 스트래티지 지수 제외’ 마커에 적혀 있으며, 그 시각은 WSJ·NYT의 시간외 보도와도 겹칩니다. 그래서 이 마커는 그 오전 구간을 다시 세지 않고, 공식 발표가 나온 저녁 구간을 적습니다.\n\n현물 ETF와 청산 숫자도 출처·시점마다 다릅니다. lookonchain의 11월 12일 업데이트는 미국 현물 비트코인 ETF 하루 순유출 3,621 BTC(약 $2.628억), 7일 19,453 BTC(약 $14.1억)입니다. 이와 별개로 Farside Investors(Coinpaper·CryptoBriefing 인용)는 11월 11일(수) 순유출 $2.998억, 11월 5~11일 다섯 거래일 합계 약 $14.4억으로 전했습니다. 하루와 기간 정의가 달라 두 숫자를 하나로 합치지 않았습니다. 청산은 Coinpaper가 인용한 CoinGlass 기준으로 비트코인 선물 24시간 약 $3.045억(롱 약 $2.658억)이고, news.bitcoin.com은 동부 오전 9:33 스냅샷으로 전체 파생 청산 약 $6.56억(롱 약 $5.55억, 이 중 BTC 약 $2.37억)을 전했습니다. 인수인계의 ‘롱 청산 약 $3.47억’은 같은 출처로 확인하지 못해 쓰지 않았습니다.",
+      "learn_points_ko": [
+        "대형 기업 최고경영자 ‘사임’ 소식은 소셜 미디어나 시간외 보도만으로 단정하지 않고, 회사 공식 발표와 증권 공시(여기서는 8-K)로 확인하는 편이 안전합니다. 이 건은 둘 다 있습니다.",
+        "주식 낙폭은 시간외·프리마켓·시가·저점·종가가 서로 다릅니다. 엔비디아는 시간외 오후 8시 약 −8.6%, 개장 약 −13.1%, 정규장 종가는 약 −4.3%였습니다.",
+        "같은 날 아침(한국 시간) 비트코인 움직임은 이미 MSCI 마커에 있습니다. 저녁의 $72,000 하회는 공식 사임 발표와 같은 시간대여서, 이 마커에 저녁 구간만 적었습니다."
+      ],
+      "learn_if_again_ko": "메가캡 최고경영자 해임·사임 뉴스가 나오면, ① 공식 발표·공시 여부(루머와 구분), ② 주식의 시간외·시가·종가를 따로 기록, ③ 발표 시각에 맞춘 바이낸스 BTC·SHIB 5분봉, ④ ETF 유출·청산은 출처와 집계 시점을 밝혀 적어 보세요.",
+      "similar_event_ids": [
+        "us-equity-ai-selloff-nov-2026",
+        "deepseek-ai-shock-jan-2025",
+        "nvda-ai-earnings-may-2023",
+        "btc-flash-crash-nov-2026",
+        "us-cpi-oct-2026",
+        "msci-strategy-exclusion-nov-2026"
+      ],
+      "then_vs_now_ko": "2023년 5월 엔비디아 실적 발표는 AI 투자 기대를 키운 사례로 이 사이트에 마커가 있습니다. 2025년 1월 DeepSeek 쇼크와 2026년 11월 5일 미국 기술주 급락은, 엔비디아를 중심으로 한 AI 주식 충격이 위험자산 분위기를 흔든 최근 사례입니다. 이번 11월 12일은 실적이나 규제 우려가 아니라, 창업자 겸 최고경영자의 즉시 사임이 공식 확인된 날입니다. 같은 주에는 이미 CPI·비트코인 급락·MSCI 스트래티지 제외 마커가 있습니다.",
+      "angles_ko": {
+        "price_market": "NVDA: 11월 11일 시간외 오후 8시 약 −8.6%($158.78), 12일 시가 $151.01(약 −13.1%)·저점 $148.80(약 −14.4%)·종가 $166.19(약 −4.3%). 바이낸스 5분봉: 한국 시간 20:00 BTC 약 $73,464→13일 00:00 저점 $71,255(약 −3.0%), 23:20에 $72k 하회. SHIB 약 0.00000431→0.00000422(약 −2.1%, 22:10).",
+        "news_reg": "엔비디아 뉴스룸(11월 12일)과 SEC 8-K(최초 사건일 11월 11일, 제출일 12일)로 사임·임시 CEO(크레스)·초대 의장(존스)을 확인합니다. 사임 사유는 회사 발표문에 없고, 배경 보도는 WSJ·NYT·CNBC를 참고합니다.",
+        "shib_vs_btc_macro": "시바 단독 이슈가 아닙니다. 미국 주식·AI 기업 지배구조 소식이 위험자산 분위기와 함께 BTC·SHIB를 같은 시간대에 밀어낸 간접 영향 구간입니다."
+      },
+      "further_reading": [
+        {
+          "title": "NVIDIA Newsroom — CEO Transition (2026-11-12)",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+          "why_ko": "사임이 즉시 효력이고, 임시 CEO와 초대 이사회 의장 임명이 적힌 회사 공식 발표입니다."
+        },
+        {
+          "title": "SEC Form 8-K — NVIDIA item 5.02 (filed 2026-11-12)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm",
+          "why_ko": "이사회가 11월 11일에 사임을 수락했다는 증권 공시입니다. 보도만 보지 않고 날짜를 대조할 수 있습니다."
+        },
+        {
+          "title": "CNBC — Jensen Huang resignation live updates (2026-11-12)",
+          "url": "https://www.cnbc.com/2026/11/12/nvidia-jensen-huang-ceo-live-updates.html",
+          "why_ko": "공식 발표 이후 진행 상황을 통신사가 시간 순으로 정리한 기사입니다."
+        },
+        {
+          "title": "Bitcoin Magazine — BTC falls below $72,000 (2026-11-12)",
+          "url": "https://bitcoinmagazine.com/markets/bitcoin-price-falls-below-72000",
+          "why_ko": "사임 발표와 같은 날 비트코인이 8월 중순 이후 처음으로 $72,000을 밑돈 흐름을 시간대로 정리했습니다."
+        }
+      ],
+      "pre_chart": null
     }
   ]
 }

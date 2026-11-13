@@ -150,7 +150,7 @@
   .chip.fed, .chip.macro { background: rgba(52,152,219,0.18); color: #8fd0ff; }
   .chip.crypto, .chip.exchange { background: rgba(155,89,186,0.18); color: #d5a8ff; }
   .chip.policy, .chip.etf_reg { background: rgba(26,188,156,0.18); color: #7ff0d6; }
-  .chip.markets { background: rgba(243,156,18,0.18); color: #ffd28a; }
+  .chip.markets, .chip.equity { background: rgba(243,156,18,0.18); color: #ffd28a; }
   .chip.burn_supply, .chip.ecosystem { background: rgba(255,122,154,0.18); color: #ffb0c4; }
   .chip.shibtag { background: rgba(255,122,154,0.22); color: #ffb0c4; }
   .chip.btctag { background: rgba(243,156,18,0.22); color: #ffd28a; }
@@ -509,7 +509,7 @@ function sliceWindow(overlap, key) {
 const PERIOD_LABEL = { '1m': '1개월', '3m': '3개월', '1y': '1년', 'all': '전체' };
 
 const CAT_LABEL = {
-  geo: '지정학', fed: '연준', macro: '매크로', crypto: '크립토', markets: '시장',
+  geo: '지정학', fed: '연준', macro: '매크로', equity: '증시', crypto: '크립토', markets: '시장',
   policy: '정책', covid: 'COVID', exchange: '거래소', etf_reg: 'ETF·규제',
   burn: '소각', burn_supply: '소각', chain: '체인', listing: '상장',
   ecosystem: '생태계'
