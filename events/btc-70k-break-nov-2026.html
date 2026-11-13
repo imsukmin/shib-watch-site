@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0b1020" />
+<title>비트코인 $70k 이탈 (대규모 청산) · 사건 자세히</title>
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<style>
+
+  :root {
+    --bg: #0b1020;
+    --bg2: #121933;
+    --card: #161e3a;
+    --card2: #1c2648;
+    --border: rgba(255,255,255,0.08);
+    --text: #e8ecf7;
+    --muted: #8b95b5;
+    --accent: #f39c12;
+    --link: #9db4ff;
+    --shib: #ff7a9a;
+    --btc: #f39c12;
+    --down: #e74c3c;
+    --up: #2ecc71;
+    --chip: #243056;
+    --radius: 14px;
+    --shadow: 0 8px 24px rgba(0,0,0,0.28);
+    --font: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font); }
+  body { min-height: 100vh; line-height: 1.55; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 16px 14px 48px; }
+  .hero {
+    background: linear-gradient(145deg, #182044 0%, #10162d 60%, #0d1328 100%);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 18px 16px 16px;
+    box-shadow: var(--shadow);
+    margin-bottom: 14px;
+  }
+  .hero h1 {
+    margin: 8px 0 6px;
+    font-size: 1.28rem;
+    letter-spacing: -0.02em;
+    font-weight: 750;
+    line-height: 1.35;
+  }
+  .hero .sub { color: var(--muted); font-size: 0.86rem; margin: 0 0 12px; }
+  .nav-links {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    position: sticky; top: 0; z-index: 40;
+    background: rgba(13,19,40,0.94);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 8px 2px;
+    margin: 0 -2px;
+    border-radius: 12px;
+  }
+  .nav-links a {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--chip); color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 999px; padding: 7px 12px;
+    font-size: 0.82rem; font-weight: 600;
+    text-decoration: none;
+  }
+  .nav-links a.btc { border-color: rgba(243,156,18,0.35); color: #ffc56a; }
+  .nav-links a.shib { border-color: rgba(255,122,154,0.4); color: #ffb0c4; }
+  .chip {
+    display: inline-block; font-size: 0.75rem; font-weight: 700;
+    padding: 2px 7px; border-radius: 999px; background: var(--chip); color: #c7d0ee;
+  }
+  .chip.geo { background: rgba(231,76,60,0.18); color: #ff9b91; }
+  .chip.fed, .chip.macro { background: rgba(52,152,219,0.18); color: #8fd0ff; }
+  .chip.crypto, .chip.exchange { background: rgba(155,89,186,0.18); color: #d5a8ff; }
+  .chip.policy, .chip.etf_reg { background: rgba(26,188,156,0.18); color: #7ff0d6; }
+  .chip.markets, .chip.equity { background: rgba(243,156,18,0.18); color: #ffd28a; }
+  .chip.burn_supply, .chip.ecosystem { background: rgba(255,122,154,0.18); color: #ffb0c4; }
+  .chip.covid { background: rgba(46,204,113,0.18); color: #8dffb8; }
+  .chip.btctag { background: rgba(243,156,18,0.22); color: #ffd28a; }
+  .chip.shibtag { background: rgba(255,122,154,0.22); color: #ffb0c4; }
+  .chip.sev-high { background: rgba(243,156,18,0.2); color: #ffd28a; }
+  .chip.sev-mid { background: rgba(139,149,181,0.22); color: #c7d0ee; }
+  .chip.sev-low { background: rgba(139,149,181,0.14); color: #8b95b5; }
+  .meta-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 4px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 14px;
+    box-shadow: var(--shadow);
+    margin-bottom: 12px;
+  }
+  .card.takeaway {
+    border: 1px solid rgba(243,156,18,0.35);
+    border-left: 4px solid var(--accent);
+    background: linear-gradient(145deg, #1a2748 0%, #161e3a 100%);
+  }
+  .card.takeaway .section-label { color: #ffd28a; }
+  .card.demoted {
+    padding: 12px;
+    box-shadow: none;
+    background: var(--bg2);
+    opacity: 0.92;
+  }
+  .card.demoted .section-label { font-size: 0.7rem; margin-bottom: 6px; }
+  .section-label {
+    color: var(--muted); font-size: 0.78rem; font-weight: 700;
+    margin: 0 0 8px;
+  }
+  .article-body h2 {
+    margin: 18px 0 8px; font-size: 1.02rem; font-weight: 720;
+    color: #ffd28a;
+  }
+  .article-body h2:first-child { margin-top: 0; }
+  .article-body p {
+    margin: 0 0 12px; color: var(--text); font-size: 0.92rem;
+  }
+  .article-body p:last-child { margin-bottom: 0; }
+  .phases { margin: 0; padding: 0; list-style: none; }
+  .phases li {
+    border-left: 2px solid rgba(243,156,18,0.35);
+    padding: 6px 0 6px 12px; margin-bottom: 6px;
+  }
+  .phases .pdate { color: var(--muted); font-size: 0.75rem; font-weight: 650; }
+  .phases .ptitle { font-weight: 700; font-size: 0.88rem; margin: 2px 0; }
+  .phases .pnote { color: var(--muted); font-size: 0.8rem; }
+  .sources { list-style: none; margin: 0; padding: 0; }
+  .sources li {
+    margin-bottom: 8px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .sources a { font-weight: 650; font-size: 0.88rem; word-break: break-word; }
+  .sources .url {
+    display: block; color: var(--muted); font-size: 0.72rem;
+    margin-top: 4px; word-break: break-all;
+  }
+  .sources .why { display: block; color: var(--muted); font-size: 0.78rem; margin-top: 4px; }
+  .footer {
+    margin-top: 22px; padding: 12px; color: var(--muted); font-size: 0.72rem;
+    border-top: 1px solid var(--border); text-align: center;
+  }
+  .footer a { color: var(--muted); }
+  .learn-list { margin: 0; padding: 0 0 0 18px; }
+  .learn-list li { margin-bottom: 8px; font-size: 0.9rem; color: var(--text); }
+  .learn-again {
+    margin-top: 12px; padding-top: 10px;
+    border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 0.85rem;
+  }
+  .learn-again strong { color: #ffd28a; font-weight: 700; }
+  .similar-list { list-style: none; margin: 0; padding: 0; }
+  .similar-list li {
+    margin-bottom: 8px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .similar-list a { font-weight: 650; font-size: 0.88rem; }
+  .similar-list .sdate { color: var(--muted); font-size: 0.75rem; font-weight: 650; margin-bottom: 2px; }
+  .angle-inline {
+    margin-top: 12px; padding-top: 10px;
+    border-top: 1px solid var(--border);
+  }
+  .angle-inline .alabel {
+    color: #ffd28a; font-size: 0.78rem; font-weight: 700; margin: 8px 0 2px;
+  }
+  .angle-inline p { margin: 0 0 6px; font-size: 0.88rem; color: var(--text); }
+  .angle-block {
+    margin-bottom: 10px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .angle-block .alabel {
+    color: #ffd28a; font-size: 0.78rem; font-weight: 700; margin-bottom: 4px;
+  }
+  .angle-block p { margin: 0; font-size: 0.88rem; color: var(--text); }
+
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="meta-row">
+      <span class="chip btctag">BTC</span>
+      <span class="chip crypto">크립토</span>
+      <span class="chip">2026-11-13</span>
+      <span class="chip sev-mid">중요도 중간</span>
+    </div>
+    <h1>비트코인 $70k 이탈 (대규모 청산)</h1>
+    <p class="sub">2026-11-13 한국 시간 오전~낮, 바이낸스 5분봉 기준 비트코인이 $70,000을 하회. 처음 저점이 $70,000 아래로 찍힌 봉은 11:50(저점 $69,900, 종가는 다시 $70,254), 종가가 처음 $70,000 아래로 마감된 봉은 12:10(종가 $69,794). 같은 날 09:00 시가 약 $71,460에서 12:50 저점 $68,527.89까지 약 −4.1%. 13:25 종가는 약 $68,926. 같은 09:00~12:50 구간 SHIB는 약 0.00000437→저점 0.00000417(약 −4.6%). 바이낸스 하루 봉 기준으로 저점·종가가 $70,000을 밑돈 것은 8월 20일(저점 $68,902)·8월 19일(종가 $69,335) 이후 처음. CoinGlass 인용 24시간 청산은 시점마다 다름: CryptoBriefing(12:46 KST) 약 4시간 $6.22억(롱 $5.49억), EconoTimes(13:03 KST) 24시간 약 $12.3억(롱 $10.9억), CoinDesk(12:37~12:59 KST)는 24시간 $13억 초과·BTC $6.77억.</p>
+    <nav class="nav-links" aria-label="페이지 이동">
+      <a href="../index.html">대시보드</a>
+      <a class="btc" href="../chart.html">BTC 차트</a>
+      <a class="shib" href="../shib.html">SHIB 비교</a>
+    </nav>
+  </header>
+
+
+  <section class="card">
+    <div class="section-label">비슷한 과거 상황</div>
+    <ul class="similar-list"><li><div class="sdate">2026-11-12</div><a href="nvidia-ceo-resignation-nov-2026.html">엔비디아 젠슨 황 CEO 사임 (BTC $72k 하회)</a></li><li><div class="sdate">2026-11-09</div><a href="btc-flash-crash-nov-2026.html">비트코인 급락 ($74k 하회·청산 약 $8.6억)</a></li><li><div class="sdate">2026-11-10</div><a href="us-cpi-oct-2026.html">미국 10월 CPI 예상 상회 (근원 0.3%)</a></li><li><div class="sdate">2026-11-11</div><a href="msci-strategy-exclusion-nov-2026.html">MSCI, 스트래티지 지수 제외 확정 (11/30 적용)</a></li><li><div class="sdate">2026-11-05</div><a href="us-equity-ai-selloff-nov-2026.html">미국 증시 급락 (AI 규제 우려, 나스닥 −5.5%)</a></li></ul>
+  </section>
+  <article class="card article-body">
+    <div class="section-label">자세히 읽기</div>
+    <h2>배경</h2>
+<p>바로 전날(한국 시간 11월 12일 저녁) 엔비디아가 젠슨 황 CEO의 즉시 사임을 공식 발표한 뒤, 바이낸스에서 비트코인이 23:20에 $72,000을 하회했습니다. 그 구간은 ‘엔비디아 젠슨 황 CEO 사임 (BTC $72k 하회)’ 마커에 적혀 있습니다. 같은 주에는 이미 미국 10월 CPI 예상 상회, MSCI의 스트래티지 지수 제외, 11월 9일 $74,000 하회 급락 마커가 있습니다. 현물 비트코인 ETF에서는 11월 11일(Farside) 순유출 약 $2.998억, lookonchain의 11월 12일 업데이트는 하루 약 $2.628억·7일 약 $14.1억이었습니다.</p>
+<h2>무슨 일</h2>
+<p>한국 시간 2026년 11월 13일 낮, 비트코인이 $70,000 아래로 내려갔습니다. 바이낸스 공개 5분봉으로 보면, 처음 저점이 $70,000을 밑돈 봉은 11:50(저점 $69,900, 종가는 $70,254로 다시 올라옴)이고, 종가가 처음 $70,000 아래로 마감된 봉은 12:10(종가 $69,794, 저점 $69,722)입니다. 낙폭이 커진 12:00~12:59 1시간봉의 저점은 12:50 봉의 $68,527.89이고, 이 1시간봉 종가는 $68,965이었습니다. 13:25 종가는 약 $68,926으로, 인수인계의 ‘13:28쯤 약 $68,900’과 같고, 12시 구간 저점 ‘약 $68,500’은 $68,527.89로 확인됩니다. 이 글을 적는 13:30(한국 시간)까지는 12:50 저점이 당일 확인 저점입니다. 바이낸스 하루 봉 기준으로 저점이 $70,000을 밑돈 것은 8월 20일(저점 $68,902), 종가가 밑돈 것은 8월 19일(종가 $69,335) 이후 처음입니다. 5분봉으로 더 좁히면, $70,000 아래 마지막 종가는 8월 20일 17:00(한국 시간, 종가 $69,850), 마지막 저점(심지)은 같은 날 17:05(저점 $69,844)였습니다. 이날 저점 $68,527.89는 8월 20일 저점보다 조금 더 낮아, 8월 19일 이후 가장 낮은 수준입니다.</p>
+<h2>시장·가격에 미친 영향</h2>
+<p>09:00(한국 시간) 시가 약 $71,460에서 12:50 저점 $68,527.89까지 약 −4.1%입니다. 같은 구간 SHIB는 약 0.00000437에서 12:50 저점 0.00000417까지 약 −4.6% 움직였습니다. 시바 단독 소식은 확인되지 않았고, 같은 시간대에 같이 밀린 모습입니다.</p>
+<p>청산 규모는 집계 시점에 따라 다릅니다. BeInCrypto가 인용한 CoinGlass는 $70,000 이탈 전인 01:54 UTC(한국 시간 10:54) 스냅샷으로 24시간 청산 약 $6.808억(롱 비중 88%, BTC 약 $3.253억)이었습니다. CryptoBriefing(동부 22:46, 한국 시간 12:46)은 약 4시간 동안 $6.22억이 청산됐고, CoinGlass 기준으로 롱 $5.49억·숏 $7,246만이었다고 전했습니다. 이 기사가 적은 당일 저점 $68,943은 바이낸스 12:20 봉 저점과 같고, 그 뒤 12:50에 더 낮아졌습니다. EconoTimes(04:03 UTC, 한국 시간 13:03)는 24시간 청산 약 $12.3억(롱 $10.9억, 숏 $1.44억), 이 중 BTC $6.77억·ETH $1.91억이라고 적었습니다. CoinDesk(동부 22:37 게재·22:59 수정, 한국 시간 12:37~12:59)는 CoinGlass 기준 24시간 $13억 초과, BTC $6.77억, $70,000 하회 구간에만 약 $5억이 청산됐다고 전했습니다. X 트렌드 요약의 ‘24시간 $10억 초과’는 이후 스냅샷($12.3억~$13억대)과 맞지만, 이탈 직전·직후 스냅샷은 $6억대였습니다. lookonchain이 전에 전한 ‘$70,000 하회 시 롱 청산 $6.22억’은 체결된 금액이 아니라 청산 밀도(intensity) 차트 수치라는 설명이 붙어 있어, 위 24시간 합계와 같은 숫자로 보지 않았습니다.</p>
+<p>lookonchain은 같은 날 03:22 UTC(한국 시간 12:22)에 고래 4곳의 포지션이 각각 $1,000만 이상으로 청산됐고, 합계 $1.4389억이라고 적었습니다. 구성은 0x6046이 ETH 12,742개($2,520만)와 BTC 536.89개($3,877만), 0x01e2가 BTC 511개($3,640만), 0x5f91이 BTC 357.09개($2,515만), 0x4a20이 SOL 112,176개($900만)·BTC 82.66개($585만)·ETH 1,771.2개($352만)입니다. 네 지갑 합계는 $1.4389억으로 맞고, 시장 전체 청산 합계와는 다른 일부 집계입니다. 여러 매체가 전한 단일 최대 청산(하이퍼리퀴드 BTC 롱 약 $3,109만, 가격 약 $72,250)은 CryptoBriefing이 ‘$70,000에 닿기 전’이라고 적어, 전날 $72,000 하회 구간의 포지션으로 보입니다.</p>
+<p>원인으로 기사들이 겹쳐 적은 것은 전날 엔비디아 최고경영자 사임 이후의 위험자산 약세, 10월 CPI 이후 금리 인상 기대와 달러 강세(CoinDesk는 달러지수가 2025년 4월 이후 최고, 103 위로 전함), 현물 ETF 자금 유출(CryptoBriefing은 약 3주 $20억 안팎)입니다. CoinDesk는 이란 혁명수비대가 바레인 주둔 미국 조기경보 레이더를 파괴했다고 주장한 보도가 매도세를 키웠다고도 적었지만, 같은 기사에서 WTI 유가는 전날 고점 $89.15에서 약 $88로 조금 내린 상태였다고 했습니다. 그래서 원유·호르무즈만의 충격으로 단정하지는 않았습니다.</p>
+  </article>
+
+  <section class="card takeaway">
+    <div class="section-label">이 사건에서 배울 점</div>
+    <ul class="learn-list"><li>둥근 숫자 지지선이 깨질 때는 ‘처음 저점이 그 아래로 찍힌 봉’과 ‘처음 종가가 아래로 마감된 봉’이 다를 수 있습니다. 이날은 11:50에 저점 $69,900, 12:10에 종가 $69,794였습니다.</li><li>청산 24시간 합계는 스냅샷 시각에 따라 $6억대에서 $12억~13억대로 달라집니다. 숫자를 쓸 때는 출처와 기사·집계 시각을 같이 적어야 합니다.</li><li>고래 지갑 몇 곳의 합계(이날 lookonchain $1.4389억)는 시장 전체 청산과 다른 일부 집계입니다. 청산 밀도 차트 숫자와도 구분합니다.</li></ul>
+    <div class="learn-again"><strong>비슷한 일이 또 오면</strong> 큰 가격대가 깨졌다는 뉴스가 나오면, ① 바이낸스 5분봉에서 첫 하회(심지)와 첫 종가 하회 시각, ② 당일 저점 시각, ③ CoinGlass 24시간 청산은 기사 시각과 함께, ④ 전날·같은 주 마커(사임·CPI·ETF)와의 선후 관계를 나눠 적어 보세요.</div>
+    <div class="angle-inline"><div class="section-label" style="margin-top:4px;">여러 각도로 보기</div><div class="alabel">가격 · 시장 분위기</div><p>바이낸스 5분봉: 11:50 첫 저점 $69,900, 12:10 첫 종가 $69,794, 09:00 약 $71,460→12:50 저점 $68,527.89(약 −4.1%). SHIB 같은 구간 약 0.00000437→0.00000417(약 −4.6%). 13:25 종가 약 $68,926.</p><div class="alabel">뉴스 · 규제</div><p>CoinDesk는 달러 강세·금리 기대와 중동 보도를, CryptoBriefing은 레버리지 청산과 현물 ETF 유출을 겹쳐 적습니다. 전날 엔비디아 사임 공식 발표는 별도 마커에 있습니다. 유가(WTI)는 같은 CoinDesk 기사에서 오히려 조금 내린 것으로 나와, 원유만의 원인으로 보지 않았습니다.</p><div class="alabel">직접 이슈 vs 간접 영향</div><p>시바 단독 이슈가 아닙니다. 비트코인이 $70,000을 하회한 같은 시간대에 SHIB도 같이 밀린 간접 영향 구간입니다.</p></div>
+  </section>
+
+  <section class="card">
+    <div class="section-label">그때와 지금 · 비슷한 사건과의 차이</div>
+    <p style="margin:0;font-size:0.9rem;">8월 20일(한국 시간) 17:00~17:05 5분봉을 마지막으로 비트코인 종가·저점은 $70,000 위에 있었습니다. 11월 9일 급락 마커는 $74,000 하회, 11월 12일 엔비디아 사임 마커는 $72,000 하회까지입니다. 이번 11월 13일은 그 다음 날, 같은 약세 흐름 안에서 $70,000이 깨진 날입니다. 전날 저녁의 $72,000 하회와 숫자를 섞지 않고, 날짜를 나눠 보았습니다.</p>
+  </section>
+
+
+  <section class="card demoted">
+    <div class="section-label">출처 · 더 읽어볼 자료</div>
+    <ul class="sources"><li><a href="https://www.coindesk.com/markets/2026/11/13/bitcoin-dips-below-usd70-000-as-selloff-gathers-pace" target="_blank" rel="noopener noreferrer">CoinDesk — Bitcoin dips below $70,000 (updated 2026-11-12 22:59 ET)</a><span class="why">달러 강세, 중동 보도, CoinGlass 24시간 $13억 초과·하회 구간 약 $5억을 같은 기사에서 확인할 수 있습니다.</span><span class="url">https://www.coindesk.com/markets/2026/11/13/bitcoin-dips-below-usd70-000-as-selloff-gathers-pace</span></li><li><a href="https://econotimes.com/Long-Trades-Account-for-1-09-Billion-in-Crypto-Liquidations-1776160" target="_blank" rel="noopener noreferrer">EconoTimes — Long trades account for $1.09B of $1.23B (2026-11-13 04:03 UTC)</a><span class="why">24시간 청산의 롱·숏 분해와 BTC $6.77억 수치, 집계 시각이 적혀 있습니다.</span><span class="url">https://econotimes.com/Long-Trades-Account-for-1-09-Billion-in-Crypto-Liquidations-1776160</span></li><li><a href="https://cryptobriefing.com/bitcoin-below-70000-liquidations-622m/" target="_blank" rel="noopener noreferrer">CryptoBriefing — Liquidations reach $622M in four hours (2026-11-12 22:46 ET)</a><span class="why">이탈 직후 더 이른 스냅샷입니다. 당시 저점 $68,943은 바이낸스 12:20 봉과 같고, 이후 저점은 더 낮아졌습니다.</span><span class="url">https://cryptobriefing.com/bitcoin-below-70000-liquidations-622m/</span></li><li><a href="https://x.com/lookonchain/status/2121081124336415037" target="_blank" rel="noopener noreferrer">Lookonchain (X) — Four whales liquidated, total $143.89M (2026-11-13 03:22 UTC)</a><span class="why">시장 전체 합계가 아니라, 고래 4곳 포지션의 내역과 합계를 원문으로 확인할 수 있습니다.</span><span class="url">https://x.com/lookonchain/status/2121081124336415037</span></li><li><a href="https://api.binance.com/api/v3/klines?symbol=BTCUSDT&amp;interval=5m" target="_blank" rel="noopener noreferrer">Binance public API — BTCUSDT/SHIBUSDT 5m &amp; 1h klines (2026-11-13 00:00–04:30 UTC)</a><span class="url">https://api.binance.com/api/v3/klines?symbol=BTCUSDT&amp;interval=5m</span></li><li><a href="https://beincrypto.com/crypto-liquidations-bitcoin-ethereum-3-month-low/" target="_blank" rel="noopener noreferrer">BeInCrypto — CoinGlass 24h $680.81M (longs 88%); BTC $325.28M, snapshot before the $70k break (2026-11-13 01:54 UTC)</a><span class="url">https://beincrypto.com/crypto-liquidations-bitcoin-ethereum-3-month-low/</span></li><li><a href="https://www.chaincatcher.com/en/article/2304397" target="_blank" rel="noopener noreferrer">ChainCatcher — Lookonchain four-whale breakdown totaling $143.89M (2026-11-13)</a><span class="url">https://www.chaincatcher.com/en/article/2304397</span></li></ul>
+  </section>
+
+  <footer class="footer">
+    숫자·날짜·주장은 위 출처와 바이낸스 공개 가격 CSV에만 기반합니다. 출처에 없는 내용은 적지 않았습니다. 투자 조언이 아닙니다.
+    <div style="margin-top:8px;"><a href="https://github.com/imsukmin/shib-watch-site" target="_blank" rel="noopener">GitHub</a></div>
+  </footer>
+</div>
+</body>
+</html>
