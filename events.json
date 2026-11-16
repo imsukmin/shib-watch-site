@@ -1,9 +1,9 @@
 {
-  "generated_at_kst": "2026-11-13 13:30",
+  "generated_at_kst": "2026-11-16 09:32",
   "timezone_note": "Event dates are calendar dates as reported (mostly US/ME/Asia news days). Chart overlays use UTC midnight of start/end unless noted. Prices come only from Binance klines CSV — never invented.",
   "data_choice": "Chart uses daily (1d) candles for 2017-08-17 → 2026-09-27 (~3.3k points) with rangeslider. Full-span hourly (~75k) would make Plotly HTML too heavy; hourly CSV kept for recent 1y (btc_usdt_1h_recent.csv) and original 2026 window (btc_usdt_1h.csv).",
   "hormuz_blockade_verdict": "NO single official 'Hormuz permanently sealed to all shipping' event; YES severe multi-month disruption from 2026-02-28 with Iranian transit warnings/attacks and a US naval blockade of Iranian ports. Traffic fell from ~125/day prewar to single digits at times in September 2026.",
-  "event_count": 121,
+  "event_count": 122,
   "events": [
     {
       "id": "bitcoin-whitepaper-2008",
@@ -6607,9 +6607,10 @@
         "btc-flash-crash-nov-2026",
         "us-cpi-oct-2026",
         "msci-strategy-exclusion-nov-2026",
-        "us-equity-ai-selloff-nov-2026"
+        "us-equity-ai-selloff-nov-2026",
+        "btc-62k-low-nov-2026"
       ],
-      "then_vs_now_ko": "8월 20일(한국 시간) 17:00~17:05 5분봉을 마지막으로 비트코인 종가·저점은 $70,000 위에 있었습니다. 11월 9일 급락 마커는 $74,000 하회, 11월 12일 엔비디아 사임 마커는 $72,000 하회까지입니다. 이번 11월 13일은 그 다음 날, 같은 약세 흐름 안에서 $70,000이 깨진 날입니다. 전날 저녁의 $72,000 하회와 숫자를 섞지 않고, 날짜를 나눠 보았습니다.",
+      "then_vs_now_ko": "8월 20일(한국 시간) 17:00~17:05 5분봉을 마지막으로 비트코인 종가·저점은 $70,000 위에 있었습니다. 11월 9일 급락 마커는 $74,000 하회, 11월 12일 엔비디아 사임 마커는 $72,000 하회까지입니다. 이번 11월 13일은 그 다음 날, 같은 약세 흐름 안에서 $70,000이 깨진 날입니다. 전날 저녁의 $72,000 하회와 숫자를 섞지 않고, 날짜를 나눠 보았습니다. 그 다음 주말(한국 시간 11월 14~15일) 비트코인은 $62,006까지 내려갔고, 그 구간은 별도 마커로 적어 두었습니다.",
       "angles_ko": {
         "price_market": "바이낸스 5분봉: 11:50 첫 저점 $69,900, 12:10 첫 종가 $69,794, 09:00 약 $71,460→12:50 저점 $68,527.89(약 −4.1%). SHIB 같은 구간 약 0.00000437→0.00000417(약 −4.6%). 13:25 종가 약 $68,926.",
         "news_reg": "CoinDesk는 달러 강세·금리 기대와 중동 보도를, CryptoBriefing은 레버리지 청산과 현물 ETF 유출을 겹쳐 적습니다. 전날 엔비디아 사임 공식 발표는 별도 마커에 있습니다. 유가(WTI)는 같은 CoinDesk 기사에서 오히려 조금 내린 것으로 나와, 원유만의 원인으로 보지 않았습니다.",
@@ -6635,6 +6636,102 @@
           "title": "Lookonchain (X) — Four whales liquidated, total $143.89M (2026-11-13 03:22 UTC)",
           "url": "https://x.com/lookonchain/status/2121081124336415037",
           "why_ko": "시장 전체 합계가 아니라, 고래 4곳 포지션의 내역과 합계를 원문으로 확인할 수 있습니다."
+        }
+      ],
+      "pre_chart": null
+    },
+    {
+      "id": "btc-62k-low-nov-2026",
+      "title_ko": "비트코인 $62k · 4개월 최저 (청산 롱 약 $18억)",
+      "title_en": "Bitcoin $62k, 4-month low (~$1.8B long liquidations)",
+      "start": "2026-11-14",
+      "end": "2026-11-15",
+      "category": "crypto",
+      "severity": 4,
+      "summary_ko": "주말(한국 시간 11월 14~15일) 비트코인이 4개월 만에 가장 낮은 수준까지 하락. 바이낸스 5분봉 기준 13일 21:00 시가 약 $69,318에서 15일 10:45 저점 $62,006까지 약 −10.6%. 이 저점은 7월 14일(한국 시간) 저점 $61,825 이후 최저이며, 8월 중순 저점(약 $62,535~$62,751)보다도 낮음. 같은 구간 SHIB는 13일 21:00 약 0.00000428에서 15일 06:15(그리고 07:10·10:45) 저점 0.00000370까지 약 −13.6%. 바이낸스 하루 봉 기준으로는 2021-05-10 상장 이후, 그리고 최근 52주 최저. 7월 저점은 0.00000413이 아니라 7월 17일 0.00000406이었고, 그 전 저점은 6월 25~26일 0.00000405. CoinGlass 인용 청산은 시점마다 다름: BeInCrypto(11/14 03:35 UTC) 24시간 약 $12.3억(롱 $10.2억), CryptoBriefing(11/15 00:17 UTC) 24시간 $19억 초과(롱 약 $18억, 숏 $1.235억), The Defiant는 같은 주말 CoinGlass 스냅샷으로 전체 약 $20.5억(바이낸스 약 $8억).",
+      "sources": [
+        {
+          "title": "Binance public API — BTCUSDT/SHIBUSDT 5m, 1h, 1d & 1w klines (window from 2026-11-13 12:00 UTC)",
+          "url": "https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=5m"
+        },
+        {
+          "title": "CryptoBriefing — Crypto liquidations surge past $1.9B; longs $1.8B (93%), shorts $123.5M (2026-11-15 00:17 UTC)",
+          "url": "https://cryptobriefing.com/crypto-market-liquidations-bitcoin-slide/"
+        },
+        {
+          "title": "The Defiant — Binance liquidations near $800M; CoinGlass total $2.05B (2026-11-14 weekend snapshot)",
+          "url": "https://thedefiant.io/news/markets/binance-liquidations-near-800-million-as-bitcoin-sinks"
+        },
+        {
+          "title": "BeInCrypto — CoinGlass 24h $1.23B (longs $1.02B, 82.7%); BTC $637.24M (2026-11-14 03:35 UTC, earlier Saturday snapshot)",
+          "url": "https://beincrypto.com/bitcoin-below-68000-crypto-liquidations-bulls/"
+        },
+        {
+          "title": "BLS — Producer Price Indexes, October 2026 (USDL-26-1687, released 2026-11-13 08:30 ET): final demand +0.3% m/m SA, +6.5% y/y NSA, largest 12-month rise since Nov 2022 (+7.4%)",
+          "url": "https://www.bls.gov/news.release/ppi.nr0.htm"
+        },
+        {
+          "title": "CNBC — Wholesale prices rose 0.3% in October; annual rate 6.5%, highest since November 2022 (2026-11-13)",
+          "url": "https://www.cnbc.com/2026/11/13/ppi-inflation-report-october-2026.html"
+        },
+        {
+          "title": "Fed Governor Christopher J. Waller — The Economic Outlook and Some Thoughts on Labor Market Dynamism, London (2026-11-10)",
+          "url": "https://www.federalreserve.gov/newsevents/speech/waller20261110a.htm"
+        },
+        {
+          "title": "krakenmiller (X) — ~$1.8B long liquidations, 4th largest since 2022 (2026-11-14)",
+          "url": "https://x.com/krakenmiller/status/2121826546843623427"
+        },
+        {
+          "title": "U.Today (X) — SHIB broke July low 0.00000413 to ~0.00000395 (weekend report; Binance low was lower, at 0.00000370)",
+          "url": "https://x.com/Utoday_en/status/2122118106583564717"
+        },
+        {
+          "title": "Upbit public API — KRW-SHIB ticker and minute candles",
+          "url": "https://api.upbit.com/v1/ticker?markets=KRW-SHIB"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n한국 시간 11월 13일 낮에 비트코인이 $70,000을 하회한 뒤, 같은 날 밤 22:30(미국 동부 08:30) 미국 노동통계국(BLS)이 10월 생산자물가지수(PPI)를 발표했습니다. 공식 수치는 계절조정 전월비 최종수요 +0.3%(CNBC가 전한 예상 +0.4%보다는 낮음), 계절미조정 전년 동월비 +6.5%입니다. BLS는 이를 “2022년 11월 +7.4% 이후 가장 큰 12개월 상승”이라고 적었습니다. 미리 의심했던 수치지만, 공식 발표와 일치합니다. 그보다 앞선 11월 10일, 연준 이사 크리스토퍼 월러는 런던 연설에서 12월에는 0.25%포인트 인상에 기울어 있다고 하면서도, 근원 CPI가 0.3% 안팎 이상으로 나오면 0.50%포인트 인상을 “검토해야 한다”고 했습니다. 그날 나온 10월 근원 CPI는 +0.3%로, 그 조건에 해당했습니다. 월러가 0.50%포인트 인상을 확정하거나 단독으로 발표한 것은 아닙니다. 같은 주의 엔비디아 CEO 사임, CPI, MSCI 스트래티지 제외, $70,000 하회는 이미 이 사이트 마커에 있습니다.\n\n무슨 일\n주말 동안 낙폭이 이어졌습니다. 바이낸스 공개 5분봉으로 보면, 13일 21:00(한국 시간) 시가 약 $69,318에서 15일 10:45 저점 $62,006까지 약 −10.6% 움직였습니다. $62,006은 7월 14일 03:20(한국 시간) 저점 $61,825 이후 가장 낮고, 8월 중순 저점(8월 14일 $62,535, 8월 17일 $62,751)보다도 낮습니다. $62,006 이하로 마지막으로 내려갔던 5분봉은 7월 14일 08:05(저점 $61,962)입니다. 그래서 ‘4개월 최저’는 이 날짜를 기준으로 한 표현입니다. 일부 보도가 쓴 ‘8월 중순 이후 최저’는 당일 저점이 $63,320 부근이던 이른 스냅샷에는 맞을 수 있지만, 바이낸스 최종 저점 $62,006에는 맞지 않습니다.\n\n200주 이동평균 하회 보도도 확인됩니다. 바이낸스 주봉(월요일 00:00 UTC 시작)으로 11월 9일 주 종가(11월 16일 00:00 UTC, 한국 시간 09:00 마감)는 $65,351이고, 같은 주 종가까지 포함한 200주 단순이동평균은 약 $67,983입니다. 하루 종가가 이 선 아래로 내려간 것은 11월 14일 종가 $64,150부터입니다.\n\n같은 주말 SHIB는 13일 21:00 약 0.00000428에서 15일 06:15 저점 0.00000370까지 약 −13.6% 움직였고, 07:10과 비트코인 저점과 같은 10:45에도 다시 0.00000370을 찍었습니다. 0.00000413을 처음 하회한 것은 14일 11:25(저점 0.00000412)입니다. 유투데이가 전한 ‘7월 저점 0.00000413을 깨고 약 0.00000395’는 중간 시점의 가격에 가깝고(15일 01:00 종가는 0.00000396), 바이낸스 주말 저점은 그보다 낮은 0.00000370입니다. 7월 최저 저점은 7월 17일 0.00000406이고, 그 전 저점은 6월 25~26일 0.00000405입니다. 0.00000370은 바이낸스 하루 봉 기준으로 2021년 5월 10일 상장 이후, 그리고 최근 52주 최저입니다. 업비트 KRW-SHIB의 주말 저점은 15일 10:45 0.00513원이었습니다.\n\n시장·가격에 미친 영향\n16일 09:30(한국 시간) 바이낸스 5분봉 종가는 비트코인 약 $64,936, SHIB 약 0.00000393이었습니다. 청산 규모는 집계 시점에 따라 다릅니다. BeInCrypto가 인용한 CoinGlass는 토요일 이른 시각(03:35 UTC, 한국 시간 12:35) 스냅샷으로 24시간 약 $12.3억(롱 $10.2억, 비중 82.7%, BTC $6.372억)이었습니다. CryptoBriefing(00:17 UTC 15일, 한국 시간 09:17)은 직전 24시간 청산이 $19억을 넘었고 롱이 약 $18억(약 93%), 숏이 $1.235억이며, 마지막 4시간에만 약 $9.25억이 청산됐다고 전했습니다. The Defiant는 같은 주말 CoinGlass 스냅샷으로 전체 약 $20.5억, 이 중 바이낸스 약 $8억이라고 적었습니다. krakenmiller는 롱 청산 약 $18억을 2022년 이후 네 번째로 큰 규모라고 적었지만, 그 순위 자체는 여기서 별도로 재확인하지 못했습니다. 시바 단독 소식은 확인되지 않았고, 비트코인과 같은 주말 구간에 같이 밀린 모습입니다.",
+      "learn_points_ko": [
+        "물가 숫자가 크게 들리면 공식 발표문(이번엔 BLS PPI)에서 전월비·전년비, 계절조정 여부를 먼저 확인하는 편이 안전합니다. 10월 PPI 전년비 +6.5%는 의심스러워 보여도 공식 수치였고, BLS는 2022년 11월 +7.4% 이후 최대라고 적었습니다.",
+        "청산 ‘하루 $18억’ 같은 숫자는 24시간 창이 언제 끝나는지에 따라 $12억대에서 $20억대로 달라집니다. 롱만 따로 적은 숫자와 전체 합계도 구분해야 합니다.",
+        "알트코인의 ‘7월 저점’ 보도는 실제 최저 날짜·거래소 저점과 다를 수 있습니다. SHIB의 7월 바이낸스 최저 저점은 0.00000413이 아니라 7월 17일 0.00000406이었고, 주말 저점은 0.00000370까지 내려갔습니다."
+      ],
+      "learn_if_again_ko": "주말 급락 뉴스가 나오면, ① 바이낸스 5분봉으로 주말 저점 시각과 금요일 저녁 시가 대비 낙폭, ② 이전 저점(몇 월 며칠)과의 비교, ③ CoinGlass 청산은 기사 시각과 롱/전체 구분, ④ 물가·인사 발언은 공식 발표·연설문 원문으로 확인해 보세요.",
+      "similar_event_ids": [
+        "btc-70k-break-nov-2026",
+        "nvidia-ceo-resignation-nov-2026",
+        "btc-flash-crash-nov-2026",
+        "us-cpi-oct-2026",
+        "us-equity-ai-selloff-nov-2026"
+      ],
+      "then_vs_now_ko": "7월 14일(한국 시간) 저점 $61,825를 마지막으로, 8월 중순 저점은 $62,535~$62,751 부근에서 그쳤고 그 뒤로는 $62,006까지 내려가지 않았습니다. 11월 13일 마커는 $70,000 하회까지입니다. 이번 주말은 그 다음 날부터 이어진 낙폭으로, $62,006까지 내려간 구간입니다. $70,000 이탈과 주말 저점을 같은 날의 숫자로 섞지 않고 날짜를 나눠 보았습니다.",
+      "angles_ko": {
+        "price_market": "바이낸스 5분봉: 13일 21:00 약 $69,318→15일 10:45 저점 $62,006(약 −10.6%). SHIB 약 0.00000428→0.00000370(약 −13.6%, 15일 06:15·07:10·10:45). 16일 09:30 종가 BTC 약 $64,936, SHIB 약 0.00000393. 업비트 KRW-SHIB 주말 저점 15일 10:45 0.00513원.",
+        "news_reg": "BLS 10월 PPI는 전월비 +0.3%·전년비 +6.5%(2022년 11월 이후 최대). 월러 이사는 12월 0.25%포인트를 기본으로 하되, 근원 CPI 0.3% 이상이면 0.50%포인트를 검토하라고 했습니다. 청산은 CryptoBriefing(롱 약 $18억)과 The Defiant(전체 약 $20.5억)처럼 스냅샷을 구분해 적습니다.",
+        "shib_vs_btc_macro": "시바 단독 이슈가 아닙니다. 비트코인 주말 급락과 같은 시간대에 SHIB도 52주·상장 이후 최저까지 같이 밀린 간접 영향 구간입니다."
+      },
+      "further_reading": [
+        {
+          "title": "BLS — Producer Price Indexes, October 2026 (USDL-26-1687)",
+          "url": "https://www.bls.gov/news.release/ppi.nr0.htm",
+          "why_ko": "전년비 +6.5%가 공식 수치인지, 2022년 11월 +7.4% 이후 최대라는 표현을 원문으로 확인할 수 있습니다."
+        },
+        {
+          "title": "CryptoBriefing — Liquidations past $1.9B, longs $1.8B (2026-11-15 00:17 UTC)",
+          "url": "https://cryptobriefing.com/crypto-market-liquidations-bitcoin-slide/",
+          "why_ko": "롱 약 $18억, 숏 $1.235억, 마지막 4시간 약 $9.25억이 적힌 스냅샷입니다. 집계 시각이 있습니다."
+        },
+        {
+          "title": "The Defiant — CoinGlass total $2.05B, Binance near $800M",
+          "url": "https://thedefiant.io/news/markets/binance-liquidations-near-800-million-as-bitcoin-sinks",
+          "why_ko": "같은 주말의 다른 CoinGlass 스냅샷(전체 약 $20.5억)을 대조할 수 있습니다."
+        },
+        {
+          "title": "Fed Governor Waller speech, London (2026-11-10)",
+          "url": "https://www.federalreserve.gov/newsevents/speech/waller20261110a.htm",
+          "why_ko": "0.50%포인트 인상은 ‘검토’ 조건이지 확정이 아니라는 점을 연설 원문에서 확인할 수 있습니다."
         }
       ],
       "pre_chart": null
