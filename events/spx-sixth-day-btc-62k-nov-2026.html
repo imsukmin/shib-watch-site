@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0b1020" />
+<title>S&amp;P −2% 6연속 하락 · BTC $62k 하회 · 사건 자세히</title>
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<style>
+
+  :root {
+    --bg: #0b1020;
+    --bg2: #121933;
+    --card: #161e3a;
+    --card2: #1c2648;
+    --border: rgba(255,255,255,0.08);
+    --text: #e8ecf7;
+    --muted: #8b95b5;
+    --accent: #f39c12;
+    --link: #9db4ff;
+    --shib: #ff7a9a;
+    --btc: #f39c12;
+    --down: #e74c3c;
+    --up: #2ecc71;
+    --chip: #243056;
+    --radius: 14px;
+    --shadow: 0 8px 24px rgba(0,0,0,0.28);
+    --font: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font); }
+  body { min-height: 100vh; line-height: 1.55; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 16px 14px 48px; }
+  .hero {
+    background: linear-gradient(145deg, #182044 0%, #10162d 60%, #0d1328 100%);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 18px 16px 16px;
+    box-shadow: var(--shadow);
+    margin-bottom: 14px;
+  }
+  .hero h1 {
+    margin: 8px 0 6px;
+    font-size: 1.28rem;
+    letter-spacing: -0.02em;
+    font-weight: 750;
+    line-height: 1.35;
+  }
+  .hero .sub { color: var(--muted); font-size: 0.86rem; margin: 0 0 12px; }
+  .nav-links {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    position: sticky; top: 0; z-index: 40;
+    background: rgba(13,19,40,0.94);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 8px 2px;
+    margin: 0 -2px;
+    border-radius: 12px;
+  }
+  .nav-links a {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--chip); color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 999px; padding: 7px 12px;
+    font-size: 0.82rem; font-weight: 600;
+    text-decoration: none;
+  }
+  .nav-links a.btc { border-color: rgba(243,156,18,0.35); color: #ffc56a; }
+  .nav-links a.shib { border-color: rgba(255,122,154,0.4); color: #ffb0c4; }
+  .chip {
+    display: inline-block; font-size: 0.75rem; font-weight: 700;
+    padding: 2px 7px; border-radius: 999px; background: var(--chip); color: #c7d0ee;
+  }
+  .chip.geo { background: rgba(231,76,60,0.18); color: #ff9b91; }
+  .chip.fed, .chip.macro { background: rgba(52,152,219,0.18); color: #8fd0ff; }
+  .chip.crypto, .chip.exchange { background: rgba(155,89,186,0.18); color: #d5a8ff; }
+  .chip.policy, .chip.etf_reg { background: rgba(26,188,156,0.18); color: #7ff0d6; }
+  .chip.markets, .chip.equity { background: rgba(243,156,18,0.18); color: #ffd28a; }
+  .chip.burn_supply, .chip.ecosystem { background: rgba(255,122,154,0.18); color: #ffb0c4; }
+  .chip.covid { background: rgba(46,204,113,0.18); color: #8dffb8; }
+  .chip.btctag { background: rgba(243,156,18,0.22); color: #ffd28a; }
+  .chip.shibtag { background: rgba(255,122,154,0.22); color: #ffb0c4; }
+  .chip.sev-high { background: rgba(243,156,18,0.2); color: #ffd28a; }
+  .chip.sev-mid { background: rgba(139,149,181,0.22); color: #c7d0ee; }
+  .chip.sev-low { background: rgba(139,149,181,0.14); color: #8b95b5; }
+  .meta-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 4px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 14px;
+    box-shadow: var(--shadow);
+    margin-bottom: 12px;
+  }
+  .card.takeaway {
+    border: 1px solid rgba(243,156,18,0.35);
+    border-left: 4px solid var(--accent);
+    background: linear-gradient(145deg, #1a2748 0%, #161e3a 100%);
+  }
+  .card.takeaway .section-label { color: #ffd28a; }
+  .card.demoted {
+    padding: 12px;
+    box-shadow: none;
+    background: var(--bg2);
+    opacity: 0.92;
+  }
+  .card.demoted .section-label { font-size: 0.7rem; margin-bottom: 6px; }
+  .section-label {
+    color: var(--muted); font-size: 0.78rem; font-weight: 700;
+    margin: 0 0 8px;
+  }
+  .article-body h2 {
+    margin: 18px 0 8px; font-size: 1.02rem; font-weight: 720;
+    color: #ffd28a;
+  }
+  .article-body h2:first-child { margin-top: 0; }
+  .article-body p {
+    margin: 0 0 12px; color: var(--text); font-size: 0.92rem;
+  }
+  .article-body p:last-child { margin-bottom: 0; }
+  .phases { margin: 0; padding: 0; list-style: none; }
+  .phases li {
+    border-left: 2px solid rgba(243,156,18,0.35);
+    padding: 6px 0 6px 12px; margin-bottom: 6px;
+  }
+  .phases .pdate { color: var(--muted); font-size: 0.75rem; font-weight: 650; }
+  .phases .ptitle { font-weight: 700; font-size: 0.88rem; margin: 2px 0; }
+  .phases .pnote { color: var(--muted); font-size: 0.8rem; }
+  .sources { list-style: none; margin: 0; padding: 0; }
+  .sources li {
+    margin-bottom: 8px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .sources a { font-weight: 650; font-size: 0.88rem; word-break: break-word; }
+  .sources .url {
+    display: block; color: var(--muted); font-size: 0.72rem;
+    margin-top: 4px; word-break: break-all;
+  }
+  .sources .why { display: block; color: var(--muted); font-size: 0.78rem; margin-top: 4px; }
+  .footer {
+    margin-top: 22px; padding: 12px; color: var(--muted); font-size: 0.72rem;
+    border-top: 1px solid var(--border); text-align: center;
+  }
+  .footer a { color: var(--muted); }
+  .learn-list { margin: 0; padding: 0 0 0 18px; }
+  .learn-list li { margin-bottom: 8px; font-size: 0.9rem; color: var(--text); }
+  .learn-again {
+    margin-top: 12px; padding-top: 10px;
+    border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 0.85rem;
+  }
+  .learn-again strong { color: #ffd28a; font-weight: 700; }
+  .similar-list { list-style: none; margin: 0; padding: 0; }
+  .similar-list li {
+    margin-bottom: 8px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .similar-list a { font-weight: 650; font-size: 0.88rem; }
+  .similar-list .sdate { color: var(--muted); font-size: 0.75rem; font-weight: 650; margin-bottom: 2px; }
+  .angle-inline {
+    margin-top: 12px; padding-top: 10px;
+    border-top: 1px solid var(--border);
+  }
+  .angle-inline .alabel {
+    color: #ffd28a; font-size: 0.78rem; font-weight: 700; margin: 8px 0 2px;
+  }
+  .angle-inline p { margin: 0 0 6px; font-size: 0.88rem; color: var(--text); }
+  .angle-block {
+    margin-bottom: 10px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .angle-block .alabel {
+    color: #ffd28a; font-size: 0.78rem; font-weight: 700; margin-bottom: 4px;
+  }
+  .angle-block p { margin: 0; font-size: 0.88rem; color: var(--text); }
+
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="meta-row">
+      <span class="chip btctag">BTC</span>
+      <span class="chip equity">증시</span>
+      <span class="chip">2026-11-19</span>
+      <span class="chip sev-mid">중요도 중간</span>
+    </div>
+    <h1>S&amp;P −2% 6연속 하락 · BTC $62k 하회</h1>
+    <p class="sub">미국 시간 11월 19일(한국 시간으로는 주로 20일) 미국 증시가 6거래일 연속 하락했다. CNBC 집계로 S&amp;P 500은 −2.02%에 7,175.83, 나스닥 종합은 −2.25%에 23,879.20, 다우는 −1,101.11포인트(−2.19%)에 49,097.06으로 마감했다. 같은 날 오후(한국 시간 20일 05:25, 미국 동부 15:25) 바이낸스에서 비트코인이 $62,000을 처음 하회했고, 20일 06:30(동부 16:30, 정규장 마감 이후) 저점 $61,428.26을 찍었다. 이 저점은 11월 15일 주말 저점 $62,006을 깨며, 7월 6일(한국 시간 22:35, $61,307) 이후 최저다. ‘약 $61,650’은 바이낸스 저점과 다르다. 10월 고점 대비 낙폭은 10월 2일 고점 $87,220 기준 약 −29.6%이고, ‘10월 고점 약 $81k에서 −25%’는 10월 29일 고점 $81,971을 쓴 경우에 가깝다. Farside 기준 11월 18일 미국 현물 비트코인 ETF 순유출은 $3.065억, 11월 2~18일 합계는 $28.855억이다.</p>
+    <nav class="nav-links" aria-label="페이지 이동">
+      <a href="../index.html">대시보드</a>
+      <a class="btc" href="../chart.html">BTC 차트</a>
+      <a class="shib" href="../shib.html">SHIB 비교</a>
+    </nav>
+  </header>
+
+
+  <section class="card">
+    <div class="section-label">비슷한 과거 상황</div>
+    <ul class="similar-list"><li><div class="sdate">2026-11-14 ~ 2026-11-15</div><a href="btc-62k-low-nov-2026.html">비트코인 $62k · 4개월 최저 (청산 롱 약 $18억)</a></li><li><div class="sdate">2026-11-12</div><a href="nvidia-ceo-resignation-nov-2026.html">엔비디아 젠슨 황 CEO 사임 (BTC $72k 하회)</a></li><li><div class="sdate">2026-11-13</div><a href="btc-70k-break-nov-2026.html">비트코인 $70k 이탈 (대규모 청산)</a></li><li><div class="sdate">2026-11-05</div><a href="us-equity-ai-selloff-nov-2026.html">미국 증시 급락 (AI 규제 우려, 나스닥 −5.5%)</a></li><li><div class="sdate">2026-11-09</div><a href="btc-flash-crash-nov-2026.html">비트코인 급락 ($74k 하회·청산 약 $8.6억)</a></li></ul>
+  </section>
+  <article class="card article-body">
+    <div class="section-label">자세히 읽기</div>
+    <h2>배경</h2>
+<p>11월 들어 미국 증시와 비트코인은 이미 약해져 있었습니다. 이 사이트에는 11월 5일 미국 증시 급락(나스닥 −5.5%), 11월 12일 엔비디아 CEO 사임과 $72,000 하회, 11월 13일 $70,000 이탈, 11월 14~15일 주말 $62,006 저점 마커가 있습니다. S&amp;P 500은 11월 11일 7,619.38로 오른 뒤, 12일부터 18일까지 다섯 거래일 연속 하락해 18일 종가 7,323.63이었습니다.</p>
+<h2>무슨 일</h2>
+<p>미국 시간 11월 19일(목) 정규장에서 주요 지수가 일제히 내렸습니다. CNBC(동부 오후 5:20 업데이트)에 따르면 S&amp;P 500은 −2.02%에 7,175.83으로 마감했고, 나스닥 종합은 −2.25%에 23,879.20, 다우존스 산업평균은 −1,101.11포인트(−2.19%)에 49,097.06이었습니다. 다우가 50,000 아래로 종가를 마감한 것은 6월 이후 처음이라고 CNBC는 적었습니다. 11월 12일부터 세면 이날이 여섯 번째 연속 하락일입니다. CNBC는 인공지능 기업 앤트로픽의 상장 직후 주요 지수가 당일 저점으로 밀렸고, 엔비디아·마이크로소프트·메타 등 기술주가 오전 상승분을 반납했으며 AMD는 거의 −8% 내렸다고 전했습니다.</p>
+<p>스트래티지(MSTR)는 종가 $86.13으로 −4.64% 내렸고, 당일 저점은 $86.02였습니다. 11월 12일부터 여섯 거래일 연속 하락입니다. 다만 52주 최저가는 아닙니다. CNBC 시세 기준 52주 저점은 2026년 6월 26일의 $81.81입니다.</p>
+<p>같은 날 오후, 비트코인도 $62,000 아래로 내려갔습니다. 바이낸스 공개 5분봉으로 보면, $62,000과 11월 15일 저점 $62,006을 처음 하회한 것은 한국 시간 20일 05:25(미국 동부 15:25, 정규장 시간) 봉으로 저점 $61,847, 종가 $61,898이었습니다. 저점은 20일 06:30(동부 16:30, 정규장 마감 30분 뒤) 봉의 $61,428.26입니다. 일부 보도의 ‘약 $61,650’ 또는 $61,658은 이 바이낸스 저점과 다릅니다. $61,428.26은 7월 14일(한국 시간) 저점 $61,825보다도 낮고, 이보다 낮거나 같았던 마지막 5분봉은 7월 6일 22:35(저점 $61,307)입니다. $62,000 아래 마지막 심지는 7월 14일 08:05(저점 $61,962)였습니다. 11월 19일(UTC) 하루 종가는 $61,986.73으로, $62,000 아래 하루 종가는 7월 2일(종가 $61,560) 이후 처음입니다.</p>
+<p>10월 고점 대비 ‘약 −25%’는 기준 가격을 어디에 두느냐에 따라 달라집니다. 바이낸스 10월 최고 고점은 10월 2일의 $87,220이고, 여기부터 $61,428까지는 약 −29.6%입니다. 10월 29일 고점 $81,971을 기준으로 하면 약 −25.1%입니다. ‘10월 고점 약 $81k’는 10월의 최고점이 아닙니다.</p>
+<h2>시장·가격에 미친 영향</h2>
+<p>미국 정규장 개장 시각(한국 시간 19일 23:30) 시가 약 $63,936에서 저점 $61,428까지 약 −3.9%입니다. 같은 구간 SHIB는 약 0.00000389에서 20일 06:30 저점 0.00000375까지 약 −3.6% 움직였고, 비트코인 저점과 같은 5분봉이었습니다. 주말 저점 0.00000370은 깨지 않았습니다. 그보다 앞선 20일 아닌 19일 01:20경 SHIB는 0.00000374까지 내려간 적이 있으나, 이 역시 주말 저점 위입니다. 업비트 KRW-SHIB는 미국 정규장~비트코인 저점 구간에서 20일 06:50~06:55 저점 0.00511원이었고, 16일 마커에 적힌 주말 저점 0.00513원보다는 조금 낮습니다. 그보다 앞선 19일 01:20에는 0.00509원까지 내려가, 업비트 시세의 52주 최저(날짜는 11월 18일 봉으로 표시)와 같습니다. 20일 09:30 바이낸스 5분봉 종가는 비트코인 약 $62,120, SHIB 약 0.00000380, 업비트는 0.00515원이었습니다.</p>
+<p>미국 현물 비트코인 ETF 자금은 Farside Investors 표 기준으로 11월 18일(수) 순유출 $3.065억입니다. 구성은 IBIT −$1.487억, FBTC −$6,930만, BITB −$3,660만 등이며, 플러스인 펀드는 없었습니다. 11월 2일부터 18일까지 열세 거래일 합계는 순유출 $28.855억(약 $29억)입니다. 11월 19일 행은 이날 아침 기준으로 일부 펀드만 채워져 있어, 확정 숫자로 쓰지 않았습니다. 시바 단독 소식은 확인되지 않았고, 미국 증시·비트코인과 같은 시간에 같이 움직인 모습입니다.</p>
+  </article>
+
+  <section class="card takeaway">
+    <div class="section-label">이 사건에서 배울 점</div>
+    <ul class="learn-list"><li>지수 ‘연속 하락’은 주말을 건너뛴 거래일 기준입니다. S&amp;P 500은 11월 12일부터 19일까지 여섯 거래일 연속 하락했고, 19일 낙폭(−2.02%)이 그 구간에서 가장 컸습니다.</li><li>비트코인 ‘4개월 최저’나 ‘$62k 하회’는 직전 저점과 비교해야 합니다. 11월 15일 저점 $62,006은 $62,000을 깨지 않았고, 이날 $61,428이 그 저점과 $62,000을 함께 하회했습니다. ‘약 $61,650’은 바이낸스 저점이 아닙니다.</li><li>고점 대비 낙폭은 어느 고점을 쓰는지에 따라 달라집니다. 10월 최고 고점 $87,220 대비는 약 −29.6%이고, 10월 29일 고점 $81,971 대비는 약 −25%입니다. ETF 유출도 날짜(11월 18일 $3.065억)와 월 합계($28.855억, 18일까지)를 구분해 적어야 합니다.</li></ul>
+    <div class="learn-again"><strong>비슷한 일이 또 오면</strong> 미국 증시와 비트코인이 같은 날 크게 움직이면, ① 지수 종가·등락률·연속 하락 일수는 정규장 마감 수치로, ② 비트코인 저점은 바이낸스 5분봉의 한국 시간으로, ③ ‘몇 개월 최저’는 직전 저점 날짜와 함께, ④ ETF 유출은 발표된 거래일과 월 합계를 구분해 확인해 보세요.</div>
+    <div class="angle-inline"><div class="section-label" style="margin-top:4px;">여러 각도로 보기</div><div class="alabel">가격 · 시장 분위기</div><p>S&amp;P 500 −2.02%에 7,175.83(6거래일 연속 하락), 나스닥 −2.25%에 23,879.20, 다우 −1,101.11포인트에 49,097.06. 바이낸스 BTC는 20일 05:25에 $62,000 하회, 06:30 저점 $61,428(미국 개장 시가 약 $63,936 대비 약 −3.9%). SHIB는 같은 06:30 저점 0.00000375(약 −3.6%). 업비트 같은 구간 저점 0.00511원(06:50~06:55).</p><div class="alabel">뉴스 · 규제</div><p>CNBC는 앤트로픽 상장 직후 지수가 당일 저점으로 밀렸고, 기술주 오름폭이 되돌려졌다고 전했습니다. Farside 기준 현물 비트코인 ETF는 11월 18일 순유출 $3.065억, 11월 2~18일 합계 $28.855억입니다. 11월 19일 ETF 숫자는 아직 확정으로 보지 않았습니다.</p><div class="alabel">직접 이슈 vs 간접 영향</div><p>시바 단독 이슈가 아닙니다. 미국 증시 급락·비트코인 $62,000 하회와 같은 시간대에 SHIB도 같이 움직였고, 주말 저점 0.00000370은 하회하지 않았습니다.</p></div>
+  </section>
+
+  <section class="card">
+    <div class="section-label">그때와 지금 · 비슷한 사건과의 차이</div>
+    <p style="margin:0;font-size:0.9rem;">11월 14~15일 주말 마커의 바이낸스 저점은 $62,006으로, $62,000은 깨지 않았습니다. 이번 11월 19일(한국 시간 20일 새벽~아침)에 $62,000과 그 주말 저점을 함께 하회해 $61,428까지 내려갔습니다. 미국 증시 쪽은 11월 5일 급락 마커 이후, 11월 12일부터 이어진 여섯 거래일 연속 하락이 이날 −2.02%로 커진 날입니다. 주말 저점과 이날 저점, 증시 연속 하락을 같은 날의 숫자로 섞지 않고 날짜를 나눠 보았습니다.</p>
+  </section>
+
+
+  <section class="card demoted">
+    <div class="section-label">출처 · 더 읽어볼 자료</div>
+    <ul class="sources"><li><a href="https://www.cnbc.com/2026/11/18/stock-market-today-live-updates.html" target="_blank" rel="noopener noreferrer">CNBC — Stock market news for Nov. 19, 2026</a><span class="why">S&amp;P 500·나스닥·다우 종가와 앤트로픽 상장 이후 기술주 흐름을 원문에서 확인할 수 있습니다.</span><span class="url">https://www.cnbc.com/2026/11/18/stock-market-today-live-updates.html</span></li><li><a href="https://farside.co.uk/btc/" target="_blank" rel="noopener noreferrer">Farside Investors — Bitcoin ETF Flow</a><span class="why">11월 18일 순유출 $3.065억과 월 합계를 펀드별 표로 확인할 수 있습니다. 최신 행은 수정될 수 있습니다.</span><span class="url">https://farside.co.uk/btc/</span></li><li><a href="https://www.cnbc.com/quotes/MSTR" target="_blank" rel="noopener noreferrer">CNBC — Strategy (MSTR) quote</a><span class="why">종가 $86.13(−4.64%)과 52주 저점 $81.81(6월 26일)을 구분해 볼 수 있습니다.</span><span class="url">https://www.cnbc.com/quotes/MSTR</span></li><li><a href="https://apnews.com/article/wall-street-stocks-dow-nasdaq-2f178054aea79d282e5ccf8d62f26a28" target="_blank" rel="noopener noreferrer">AP News — How major US stock indexes fared Thursday 11/19/2026</a><span class="url">https://apnews.com/article/wall-street-stocks-dow-nasdaq-2f178054aea79d282e5ccf8d62f26a28</span></li><li><a href="https://api.binance.com/api/v3/klines?symbol=BTCUSDT&amp;interval=5m" target="_blank" rel="noopener noreferrer">Binance public API — BTCUSDT/SHIBUSDT 5m and 1d klines</a><span class="url">https://api.binance.com/api/v3/klines?symbol=BTCUSDT&amp;interval=5m</span></li><li><a href="https://api.upbit.com/v1/ticker?markets=KRW-SHIB" target="_blank" rel="noopener noreferrer">Upbit public API — KRW-SHIB ticker and 5-minute candles</a><span class="url">https://api.upbit.com/v1/ticker?markets=KRW-SHIB</span></li></ul>
+  </section>
+
+  <footer class="footer">
+    숫자·날짜·주장은 위 출처와 바이낸스 공개 가격 CSV에만 기반합니다. 출처에 없는 내용은 적지 않았습니다. 투자 조언이 아닙니다.
+    <div style="margin-top:8px;"><a href="https://github.com/imsukmin/shib-watch-site" target="_blank" rel="noopener">GitHub</a></div>
+  </footer>
+</div>
+</body>
+</html>
