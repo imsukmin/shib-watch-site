@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#0b1020" />
+<title>S&amp;P −3.7% 조정 진입 · 엔비디아 SEC 조사 보도 · 사건 자세히</title>
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+<style>
+
+  :root {
+    --bg: #0b1020;
+    --bg2: #121933;
+    --card: #161e3a;
+    --card2: #1c2648;
+    --border: rgba(255,255,255,0.08);
+    --text: #e8ecf7;
+    --muted: #8b95b5;
+    --accent: #f39c12;
+    --link: #9db4ff;
+    --shib: #ff7a9a;
+    --btc: #f39c12;
+    --down: #e74c3c;
+    --up: #2ecc71;
+    --chip: #243056;
+    --radius: 14px;
+    --shadow: 0 8px 24px rgba(0,0,0,0.28);
+    --font: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: var(--font); }
+  body { min-height: 100vh; line-height: 1.55; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 16px 14px 48px; }
+  .hero {
+    background: linear-gradient(145deg, #182044 0%, #10162d 60%, #0d1328 100%);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 18px 16px 16px;
+    box-shadow: var(--shadow);
+    margin-bottom: 14px;
+  }
+  .hero h1 {
+    margin: 8px 0 6px;
+    font-size: 1.28rem;
+    letter-spacing: -0.02em;
+    font-weight: 750;
+    line-height: 1.35;
+  }
+  .hero .sub { color: var(--muted); font-size: 0.86rem; margin: 0 0 12px; }
+  .nav-links {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    position: sticky; top: 0; z-index: 40;
+    background: rgba(13,19,40,0.94);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 8px 2px;
+    margin: 0 -2px;
+    border-radius: 12px;
+  }
+  .nav-links a {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--chip); color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 999px; padding: 7px 12px;
+    font-size: 0.82rem; font-weight: 600;
+    text-decoration: none;
+  }
+  .nav-links a.btc { border-color: rgba(243,156,18,0.35); color: #ffc56a; }
+  .nav-links a.shib { border-color: rgba(255,122,154,0.4); color: #ffb0c4; }
+  .chip {
+    display: inline-block; font-size: 0.75rem; font-weight: 700;
+    padding: 2px 7px; border-radius: 999px; background: var(--chip); color: #c7d0ee;
+  }
+  .chip.geo { background: rgba(231,76,60,0.18); color: #ff9b91; }
+  .chip.fed, .chip.macro { background: rgba(52,152,219,0.18); color: #8fd0ff; }
+  .chip.crypto, .chip.exchange { background: rgba(155,89,186,0.18); color: #d5a8ff; }
+  .chip.policy, .chip.etf_reg { background: rgba(26,188,156,0.18); color: #7ff0d6; }
+  .chip.markets, .chip.equity { background: rgba(243,156,18,0.18); color: #ffd28a; }
+  .chip.burn_supply, .chip.ecosystem { background: rgba(255,122,154,0.18); color: #ffb0c4; }
+  .chip.covid { background: rgba(46,204,113,0.18); color: #8dffb8; }
+  .chip.btctag { background: rgba(243,156,18,0.22); color: #ffd28a; }
+  .chip.shibtag { background: rgba(255,122,154,0.22); color: #ffb0c4; }
+  .chip.sev-high { background: rgba(243,156,18,0.2); color: #ffd28a; }
+  .chip.sev-mid { background: rgba(139,149,181,0.22); color: #c7d0ee; }
+  .chip.sev-low { background: rgba(139,149,181,0.14); color: #8b95b5; }
+  .meta-row { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 4px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 14px;
+    box-shadow: var(--shadow);
+    margin-bottom: 12px;
+  }
+  .card.takeaway {
+    border: 1px solid rgba(243,156,18,0.35);
+    border-left: 4px solid var(--accent);
+    background: linear-gradient(145deg, #1a2748 0%, #161e3a 100%);
+  }
+  .card.takeaway .section-label { color: #ffd28a; }
+  .card.demoted {
+    padding: 12px;
+    box-shadow: none;
+    background: var(--bg2);
+    opacity: 0.92;
+  }
+  .card.demoted .section-label { font-size: 0.7rem; margin-bottom: 6px; }
+  .section-label {
+    color: var(--muted); font-size: 0.78rem; font-weight: 700;
+    margin: 0 0 8px;
+  }
+  .article-body h2 {
+    margin: 18px 0 8px; font-size: 1.02rem; font-weight: 720;
+    color: #ffd28a;
+  }
+  .article-body h2:first-child { margin-top: 0; }
+  .article-body p {
+    margin: 0 0 12px; color: var(--text); font-size: 0.92rem;
+  }
+  .article-body p:last-child { margin-bottom: 0; }
+  .phases { margin: 0; padding: 0; list-style: none; }
+  .phases li {
+    border-left: 2px solid rgba(243,156,18,0.35);
+    padding: 6px 0 6px 12px; margin-bottom: 6px;
+  }
+  .phases .pdate { color: var(--muted); font-size: 0.75rem; font-weight: 650; }
+  .phases .ptitle { font-weight: 700; font-size: 0.88rem; margin: 2px 0; }
+  .phases .pnote { color: var(--muted); font-size: 0.8rem; }
+  .sources { list-style: none; margin: 0; padding: 0; }
+  .sources li {
+    margin-bottom: 8px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .sources a { font-weight: 650; font-size: 0.88rem; word-break: break-word; }
+  .sources .url {
+    display: block; color: var(--muted); font-size: 0.72rem;
+    margin-top: 4px; word-break: break-all;
+  }
+  .sources .why { display: block; color: var(--muted); font-size: 0.78rem; margin-top: 4px; }
+  .footer {
+    margin-top: 22px; padding: 12px; color: var(--muted); font-size: 0.72rem;
+    border-top: 1px solid var(--border); text-align: center;
+  }
+  .footer a { color: var(--muted); }
+  .learn-list { margin: 0; padding: 0 0 0 18px; }
+  .learn-list li { margin-bottom: 8px; font-size: 0.9rem; color: var(--text); }
+  .learn-again {
+    margin-top: 12px; padding-top: 10px;
+    border-top: 1px solid var(--border);
+    color: var(--muted); font-size: 0.85rem;
+  }
+  .learn-again strong { color: #ffd28a; font-weight: 700; }
+  .similar-list { list-style: none; margin: 0; padding: 0; }
+  .similar-list li {
+    margin-bottom: 8px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .similar-list a { font-weight: 650; font-size: 0.88rem; }
+  .similar-list .sdate { color: var(--muted); font-size: 0.75rem; font-weight: 650; margin-bottom: 2px; }
+  .angle-inline {
+    margin-top: 12px; padding-top: 10px;
+    border-top: 1px solid var(--border);
+  }
+  .angle-inline .alabel {
+    color: #ffd28a; font-size: 0.78rem; font-weight: 700; margin: 8px 0 2px;
+  }
+  .angle-inline p { margin: 0 0 6px; font-size: 0.88rem; color: var(--text); }
+  .angle-block {
+    margin-bottom: 10px; padding: 10px 12px;
+    background: var(--card2); border-radius: 10px;
+    border: 1px solid var(--border);
+  }
+  .angle-block .alabel {
+    color: #ffd28a; font-size: 0.78rem; font-weight: 700; margin-bottom: 4px;
+  }
+  .angle-block p { margin: 0; font-size: 0.88rem; color: var(--text); }
+
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="meta-row">
+      <span class="chip btctag">BTC</span>
+      <span class="chip equity">증시</span>
+      <span class="chip">2026-11-20</span>
+      <span class="chip sev-mid">중요도 중간</span>
+    </div>
+    <h1>S&amp;P −3.7% 조정 진입 · 엔비디아 SEC 조사 보도</h1>
+    <p class="sub">미국 시간 11월 20일(금) 정규장에서 S&amp;P 500이 −3.7%에 6,910.39로 마감했다. 11월 12일부터 일곱 번째 연속 하락이며, 사상 최고 종가 대비 10% 이상 내려 조정(correction)에 들어갔다. 다우는 −949.73포인트(−1.93%)에 48,147.33으로 역시 조정, 나스닥 종합은 −5.28%에 22,617.73으로 2026년 연초 대비 마이너스가 됐다. 나스닥 100은 −5.61%에 25,028.98. CNBC는 장중에 최근 고점 대비 20%를 넘겨 약세장에 들어갔다고 적었고, 종가는 10월 6일 최고 종가 대비 약 −19.8%로 그 선에 조금 못 미쳤다. 로이터가 미국 증권거래위원회(SEC)의 엔비디아 회계 조사를 보도한 뒤, 엔비디아는 −14.01%에 $125.53, AMD는 −13.25%, 마이크론은 −13.89%로 내렸다. 같은 정규장 구간(한국 시간 20일 23:30~21일 06:00) 바이낸스 비트코인은 시가 약 $62,106에서 21일 00:40에 $60,000을 처음 하회했고, 04:25 저점 $57,778, 마감 시각 종가 $58,386이었다.</p>
+    <nav class="nav-links" aria-label="페이지 이동">
+      <a href="../index.html">대시보드</a>
+      <a class="btc" href="../chart.html">BTC 차트</a>
+      <a class="shib" href="../shib.html">SHIB 비교</a>
+    </nav>
+  </header>
+
+
+  <section class="card">
+    <div class="section-label">비슷한 과거 상황</div>
+    <ul class="similar-list"><li><div class="sdate">2026-11-19</div><a href="spx-sixth-day-btc-62k-nov-2026.html">S&amp;P −2% 6연속 하락 · BTC $62k 하회</a></li><li><div class="sdate">2026-11-21</div><a href="btc-55k-low-nov-2026.html">BTC 2년 최저 $55,130 (청산 약 $25억)</a></li><li><div class="sdate">2026-11-12</div><a href="nvidia-ceo-resignation-nov-2026.html">엔비디아 젠슨 황 CEO 사임 (BTC $72k 하회)</a></li><li><div class="sdate">2026-11-05</div><a href="us-equity-ai-selloff-nov-2026.html">미국 증시 급락 (AI 규제 우려, 나스닥 −5.5%)</a></li><li><div class="sdate">2026-11-14 ~ 2026-11-15</div><a href="btc-62k-low-nov-2026.html">비트코인 $62k · 4개월 최저 (청산 롱 약 $18억)</a></li></ul>
+  </section>
+  <article class="card article-body">
+    <div class="section-label">자세히 읽기</div>
+    <h2>배경</h2>
+<p>바로 전날(미국 시간 11월 19일) S&amp;P 500은 −2.02%에 7,175.83으로 여섯 거래일 연속 하락했고, 같은 날 오후 바이낸스에서 비트코인이 $62,000을 하회해 $61,428까지 내려갔습니다. 그 구간은 ‘S&amp;P −2% 6연속 하락 · BTC $62k 하회’ 마커에 있습니다. 그보다 앞선 11월 12일에는 엔비디아가 젠슨 황 CEO의 즉시 사임을 공식 발표했습니다. 20일 정규장을 앞두고는 앤트로픽 상장 다음 날, 인공지능 주식에 대한 부담이 이어진 상태였습니다.</p>
+<h2>무슨 일</h2>
+<p>미국 시간 11월 20일(금) 정규장에서 주요 지수가 일제히 내렸습니다. CNBC(동부 오후 6:46 업데이트)에 따르면 S&amp;P 500은 −3.7%에 6,910.39로 마감했고, 11월 12일부터 일곱 번째 연속 하락입니다. 로이터는 이 연속 하락이 2020년 2월 이후 가장 길다고 적었습니다. 사상 최고 종가 대비 10% 이상 내려 S&amp;P 500과 다우 모두 조정(correction)에 들어갔습니다. 다우는 −949.73포인트(−1.93%)에 48,147.33, 나스닥 종합은 −5.28%에 22,617.73이었고, CNBC는 나스닥이 2026년 연초 대비 약 −2.7%가 됐다고 했습니다.</p>
+<p>나스닥 100은 −5.61%(1,488.07포인트)에 25,028.98로 마감했습니다. CNBC는 장중에 최근 고점 대비 20%를 넘겨 약세장(bear market)에 들어갔다고 적었습니다. 종가 기준으로는 10월 6일 최고 종가 대비 약 −19.8%로, 20% 선에는 조금 못 미쳤습니다.</p>
+<p>같은 날 로이터는 미국 증권거래위원회(SEC)가 엔비디아 회계를 조사 중이라고 전했습니다. 보도 전에 이미 6% 이상 내리고 있었고, 보도 뒤 낙폭이 커졌습니다. 종가는 $125.53으로 −14.01%, 당일 저점은 $124.50이었습니다. AMD는 −13.25%, 마이크론은 −13.89%였습니다. CNBC는 앤트로픽이 −8.5% 내렸다고 적었습니다. 일주일 전체로는 다우 약 −8%(2020년 3월 이후 최악의 주간), 나스닥 종합 약 −10%, S&amp;P 500 약 −8.6%(2025년 4월 이후 최악)였습니다. CNBC는 엔비디아의 주간 연속 하락이 2008년 금융위기 이후 가장 길었다고도 적었습니다.</p>
+<h2>시장·가격에 미친 영향</h2>
+<p>같은 미국 정규장 구간(한국 시간 20일 23:30~21일 06:00)에 비트코인도 같이 밀렸습니다. 바이낸스 5분봉으로 보면 23:30 시가 약 $62,106에서, 21일 00:40(미국 동부 20일 10:40) 봉이 $60,000을 처음 하회했습니다(저점 $59,841, 종가 $59,919). 정규장 구간 저점은 21일 04:25의 $57,778이고, 마감 시각(06:00) 종가는 $58,386이었습니다. 시가 대비 저점까지 약 −7.0%, 종가까지 약 −6.0%입니다. ‘마감 무렵 약 $58,386’은 06:00 종가이고, 그보다 아래 $57,778 저점이 먼저 있었습니다.</p>
+<p>같은 구간 SHIB는 23:30 시가 0.00000370에서 21일 05:30 저점 0.00000348까지 약 −6.0% 움직였고, 06:00 종가는 0.00000350이었습니다. 11월 15일 저점 0.00000370은 이미 이날 정규장 전인 20일 11:30(저점 0.00000369)에 깨진 상태였고, 정규장에서 더 낮아졌습니다. 그 다음 날(한국 시간 21일 오후) 비트코인은 $55,130까지 내려갔고, 그 주말 저점은 별도 마커에 있습니다. 시바 단독 소식은 확인되지 않았고, 미국 증시·비트코인과 같은 정규장 구간에 같이 움직인 모습입니다.</p>
+  </article>
+
+  <section class="card takeaway">
+    <div class="section-label">이 사건에서 배울 점</div>
+    <ul class="learn-list"><li>지수 ‘조정’과 ‘약세장’은 기준이 다릅니다. 조정은 최고 종가 대비 10% 이상, 약세장은 보통 20%입니다. 이날 S&amp;P 500과 다우는 종가로 조정에 들어갔고, 나스닥 100은 장중에만 20%를 넘겼으며 종가는 약 −19.8%였습니다.</li><li>연속 하락 일수는 주말을 건너뛴 거래일 기준입니다. S&amp;P 500의 일곱 번째 연속 하락은 19일의 여섯 번째 다음 거래일이고, 낙폭(−3.7%)은 그 구간에서 더 컸습니다.</li><li>같은 날 암호화폐 숫자를 적을 때는 정규장 마감 가격과 그 안에서의 저점을 구분해 보세요. 비트코인 06:00 종가는 $58,386이었지만, 정규장 구간 저점은 04:25의 $57,778이었습니다. $55,130은 그 다음 날 주말 시간대의 저점입니다.</li></ul>
+    <div class="learn-again"><strong>비슷한 일이 또 오면</strong> 미국 증시가 ‘조정 진입’이나 ‘약세장’으로 보도되면, ① 종가가 최고 종가 대비 10%인지 20%인지, ② 장중 저점과 종가를 나누고, ③ 개별 종목(이번엔 엔비디아)은 공시·보도 시각과 종가 등락률을, ④ 같은 정규장 구간의 비트코인·시바 저점과 마감 시각 가격을 따로 확인해 보세요.</div>
+    <div class="angle-inline"><div class="section-label" style="margin-top:4px;">여러 각도로 보기</div><div class="alabel">가격 · 시장 분위기</div><p>S&amp;P 500 −3.7%에 6,910.39(7거래일 연속 하락, 조정 진입), 다우 −949.73포인트에 48,147.33(조정), 나스닥 −5.28%에 22,617.73, 나스닥 100 −5.61%에 25,028.98(장중 약세장, 종가는 최고 종가 대비 약 −19.8%). 엔비디아 −14.01%에 $125.53, AMD −13.25%, 마이크론 −13.89%. 주간 다우 약 −8%, 나스닥 약 −10%, S&amp;P 약 −8.6%.</p><div class="alabel">뉴스 · 규제</div><p>로이터가 SEC의 엔비디아 회계 조사를 보도한 뒤 엔비디아 낙폭이 커졌습니다. CNBC는 앤트로픽 상장 다음 날 인공지능 주식 차익 실현, 엔비디아 사임·실적 이후에도 부담이 이어진 점을 배경으로 적었습니다.</p><div class="alabel">직접 이슈 vs 간접 영향</div><p>시바 단독 이슈가 아닙니다. 같은 미국 정규장 구간에서 비트코인은 $60,000을 하회해 저점 $57,778·마감 $58,386, SHIB는 0.00000370에서 0.00000348까지 같이 밀렸습니다.</p></div>
+  </section>
+
+  <section class="card">
+    <div class="section-label">그때와 지금 · 비슷한 사건과의 차이</div>
+    <p style="margin:0;font-size:0.9rem;">11월 19일 마커는 S&amp;P 500 −2.02% 여섯 거래일 연속 하락과 비트코인 $62,000 하회($61,428)까지입니다. 이번 11월 20일은 그 다음 거래일로, S&amp;P 500이 −3.7% 내리며 조정에 들어갔고 나스닥이 −5.28% 내린 날입니다. 엔비디아 CEO 사임은 12일 마커에 있고, 이날은 그 일주일 뒤 SEC 회계 조사 보도와 −14.01% 하락입니다. 비트코인 $55,130은 정규장 마감 이후 21일 주말 시간대의 저점으로, 별도 마커에 적었습니다.</p>
+  </section>
+
+
+  <section class="card demoted">
+    <div class="section-label">출처 · 더 읽어볼 자료</div>
+    <ul class="sources"><li><a href="https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html" target="_blank" rel="noopener noreferrer">CNBC — Stock market news for Nov. 20, 2026</a><span class="why">S&amp;P 500·다우 조정 진입, 나스닥 종가, 주간 낙폭, 엔비디아·SEC 보도 언급을 원문에서 확인할 수 있습니다.</span><span class="url">https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html</span></li><li><a href="https://www.reuters.com/5f374b32b07b/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/" target="_blank" rel="noopener noreferrer">Reuters — US SEC probing Nvidia accounting practices</a><span class="why">엔비디아 회계 조사 보도의 원문입니다. 회사·SEC 모두 당시에는 공식 논평이 없었습니다.</span><span class="url">https://www.reuters.com/5f374b32b07b/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/</span></li><li><a href="https://stockanalysis.com/news/nasdaq-100-ends-just-short-of-bear-market/" target="_blank" rel="noopener noreferrer">StockAnalysis — Nasdaq-100 closed just short of a bear market</a><span class="why">나스닥 100이 장중에는 20%를 넘기고, 종가는 약 −19.8%였다는 구분을 확인할 수 있습니다.</span><span class="url">https://stockanalysis.com/news/nasdaq-100-ends-just-short-of-bear-market/</span></li><li><a href="https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-slip-anthropic-104746137.html" target="_blank" rel="noopener noreferrer">Reuters — Wall St ends sharply lower on AI selloff; S&amp;P 500 and Dow in correction; S&amp;P seventh consecutive drop, longest since February 2020</a><span class="url">https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-slip-anthropic-104746137.html</span></li><li><a href="https://apnews.com/article/wall-street-stocks-dow-nasdaq-c10b797a17c2acf37924d834efebe135" target="_blank" rel="noopener noreferrer">AP News — How major US stock indexes fared Friday 11/20/2026</a><span class="url">https://apnews.com/article/wall-street-stocks-dow-nasdaq-c10b797a17c2acf37924d834efebe135</span></li><li><a href="https://api.binance.com/api/v3/klines?symbol=BTCUSDT&amp;interval=5m" target="_blank" rel="noopener noreferrer">Binance public API — BTCUSDT/SHIBUSDT 5m klines during the US cash session (23:30–06:00 KST)</a><span class="url">https://api.binance.com/api/v3/klines?symbol=BTCUSDT&amp;interval=5m</span></li></ul>
+  </section>
+
+  <footer class="footer">
+    숫자·날짜·주장은 위 출처와 바이낸스 공개 가격 CSV에만 기반합니다. 출처에 없는 내용은 적지 않았습니다. 투자 조언이 아닙니다.
+    <div style="margin-top:8px;"><a href="https://github.com/imsukmin/shib-watch-site" target="_blank" rel="noopener">GitHub</a></div>
+  </footer>
+</div>
+</body>
+</html>
