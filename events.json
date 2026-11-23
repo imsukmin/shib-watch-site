@@ -1,9 +1,9 @@
 {
-  "generated_at_kst": "2026-11-20 09:38",
+  "generated_at_kst": "2026-11-23 09:37",
   "timezone_note": "Event dates are calendar dates as reported (mostly US/ME/Asia news days). Chart overlays use UTC midnight of start/end unless noted. Prices come only from Binance klines CSV — never invented.",
   "data_choice": "Chart uses daily (1d) candles for 2017-08-17 → 2026-09-27 (~3.3k points) with rangeslider. Full-span hourly (~75k) would make Plotly HTML too heavy; hourly CSV kept for recent 1y (btc_usdt_1h_recent.csv) and original 2026 window (btc_usdt_1h.csv).",
   "hormuz_blockade_verdict": "NO single official 'Hormuz permanently sealed to all shipping' event; YES severe multi-month disruption from 2026-02-28 with Iranian transit warnings/attacks and a US naval blockade of Iranian ports. Traffic fell from ~125/day prewar to single digits at times in September 2026.",
-  "event_count": 123,
+  "event_count": 124,
   "events": [
     {
       "id": "bitcoin-whitepaper-2008",
@@ -6705,9 +6705,10 @@
         "btc-flash-crash-nov-2026",
         "us-cpi-oct-2026",
         "us-equity-ai-selloff-nov-2026",
-        "spx-sixth-day-btc-62k-nov-2026"
+        "spx-sixth-day-btc-62k-nov-2026",
+        "btc-55k-low-nov-2026"
       ],
-      "then_vs_now_ko": "7월 14일(한국 시간) 저점 $61,825를 마지막으로, 8월 중순 저점은 $62,535~$62,751 부근에서 그쳤고 그 뒤로는 $62,006까지 내려가지 않았습니다. 11월 13일 마커는 $70,000 하회까지입니다. 이번 주말은 그 다음 날부터 이어진 낙폭으로, $62,006까지 내려간 구간입니다. $70,000 이탈과 주말 저점을 같은 날의 숫자로 섞지 않고 날짜를 나눠 보았습니다. 그 뒤 11월 19일(한국 시간 20일) 바이낸스 저점은 $61,428까지 내려가 이 주말 저점 $62,006을 하회했고, 그 구간은 별도 마커로 적어 두었습니다.",
+      "then_vs_now_ko": "7월 14일(한국 시간) 저점 $61,825를 마지막으로, 8월 중순 저점은 $62,535~$62,751 부근에서 그쳤고 그 뒤로는 $62,006까지 내려가지 않았습니다. 11월 13일 마커는 $70,000 하회까지입니다. 이번 주말은 그 다음 날부터 이어진 낙폭으로, $62,006까지 내려간 구간입니다. $70,000 이탈과 주말 저점을 같은 날의 숫자로 섞지 않고 날짜를 나눠 보았습니다. 그 뒤 11월 19일(한국 시간 20일) 바이낸스 저점은 $61,428까지 내려가 이 주말 저점 $62,006을 하회했고, 그 구간은 별도 마커로 적어 두었습니다. 그 뒤 11월 21일(토) 바이낸스 저점은 $55,130까지 내려가 이 주말 저점과 11월 19일 저점을 모두 하회했고, 그 구간은 별도 마커로 적어 두었습니다.",
       "angles_ko": {
         "price_market": "바이낸스 5분봉: 13일 21:00 약 $69,318→15일 10:45 저점 $62,006(약 −10.6%). SHIB 약 0.00000428→0.00000370(약 −13.6%, 15일 06:15·07:10·10:45). 16일 09:30 종가 BTC 약 $64,936, SHIB 약 0.00000393. 업비트 KRW-SHIB 주말 저점 15일 10:45 0.00513원.",
         "news_reg": "BLS 10월 PPI는 전월비 +0.3%·전년비 +6.5%(2022년 11월 이후 최대). 월러 이사는 12월 0.25%포인트를 기본으로 하되, 근원 CPI 0.3% 이상이면 0.50%포인트를 검토하라고 했습니다. 청산은 CryptoBriefing(롱 약 $18억)과 The Defiant(전체 약 $20.5억)처럼 스냅샷을 구분해 적습니다.",
@@ -6785,9 +6786,10 @@
         "nvidia-ceo-resignation-nov-2026",
         "btc-70k-break-nov-2026",
         "us-equity-ai-selloff-nov-2026",
-        "btc-flash-crash-nov-2026"
+        "btc-flash-crash-nov-2026",
+        "btc-55k-low-nov-2026"
       ],
-      "then_vs_now_ko": "11월 14~15일 주말 마커의 바이낸스 저점은 $62,006으로, $62,000은 깨지 않았습니다. 이번 11월 19일(한국 시간 20일 새벽~아침)에 $62,000과 그 주말 저점을 함께 하회해 $61,428까지 내려갔습니다. 미국 증시 쪽은 11월 5일 급락 마커 이후, 11월 12일부터 이어진 여섯 거래일 연속 하락이 이날 −2.02%로 커진 날입니다. 주말 저점과 이날 저점, 증시 연속 하락을 같은 날의 숫자로 섞지 않고 날짜를 나눠 보았습니다.",
+      "then_vs_now_ko": "11월 14~15일 주말 마커의 바이낸스 저점은 $62,006으로, $62,000은 깨지 않았습니다. 이번 11월 19일(한국 시간 20일 새벽~아침)에 $62,000과 그 주말 저점을 함께 하회해 $61,428까지 내려갔습니다. 미국 증시 쪽은 11월 5일 급락 마커 이후, 11월 12일부터 이어진 여섯 거래일 연속 하락이 이날 −2.02%로 커진 날입니다. 주말 저점과 이날 저점, 증시 연속 하락을 같은 날의 숫자로 섞지 않고 날짜를 나눠 보았습니다. 그 다음 거래일(미국 시간 11월 20일) 증시가 다시 크게 내린 뒤, 한국 시간 21일 주말에 비트코인은 $55,130까지 내려갔고 그 구간은 별도 마커로 적어 두었습니다.",
       "angles_ko": {
         "price_market": "S&P 500 −2.02%에 7,175.83(6거래일 연속 하락), 나스닥 −2.25%에 23,879.20, 다우 −1,101.11포인트에 49,097.06. 바이낸스 BTC는 20일 05:25에 $62,000 하회, 06:30 저점 $61,428(미국 개장 시가 약 $63,936 대비 약 −3.9%). SHIB는 같은 06:30 저점 0.00000375(약 −3.6%). 업비트 같은 구간 저점 0.00511원(06:50~06:55).",
         "news_reg": "CNBC는 앤트로픽 상장 직후 지수가 당일 저점으로 밀렸고, 기술주 오름폭이 되돌려졌다고 전했습니다. Farside 기준 현물 비트코인 ETF는 11월 18일 순유출 $3.065억, 11월 2~18일 합계 $28.855억입니다. 11월 19일 ETF 숫자는 아직 확정으로 보지 않았습니다.",
@@ -6808,6 +6810,98 @@
           "title": "CNBC — Strategy (MSTR) quote",
           "url": "https://www.cnbc.com/quotes/MSTR",
           "why_ko": "종가 $86.13(−4.64%)과 52주 저점 $81.81(6월 26일)을 구분해 볼 수 있습니다."
+        }
+      ],
+      "pre_chart": null
+    },
+    {
+      "id": "btc-55k-low-nov-2026",
+      "title_ko": "BTC 2년 최저 $55,130 (청산 약 $25억)",
+      "title_en": "Bitcoin 2-year low $55,130 (~$2.5B liquidations)",
+      "start": "2026-11-21",
+      "end": "2026-11-21",
+      "category": "crypto",
+      "severity": 4,
+      "summary_ko": "한국 시간 11월 21일(토) 오후, 바이낸스 비트코인이 2024년 9월 이후 처음으로 $55,130까지 하락했다. 5분봉 저점은 15:15(1분봉 기준으로는 15:17)이며, 직전 같은 수준 이하는 2024년 9월 10일 00:25(저점 $55,104)였다. 이 저점은 11월 15일 $62,006, 11월 19~20일 $61,428을 크게 하회한다. 낙폭은 금요일 미국 정규장에서 이미 시작됐다. $60,000 첫 하회는 21일 00:40(미국 동부 20일 10:40)이고, 정규장 마감(21일 06:00) 종가는 약 $58,386이었다. 그 뒤 주말 시간대에 $55,130까지 이어졌다. CoinGlass 인용 청산은 시점마다 다르다. Coindaro가 전한 21일 05:54 UTC(저점 직전) 스냅샷은 24시간 약 $23.8억(롱 $22.1억), Bitcoin.com이 전한 동부 02:11(저점 직후) 스냅샷은 약 $25.4억(롱 $22.7억)이다. 같은 15:15 봉에서 SHIB는 0.00000337까지 내려가 11월 15일 저점 0.00000370과 상장 이후 최저를 경신했다.",
+      "sources": [
+        {
+          "title": "Binance public API — BTCUSDT/SHIBUSDT 1m, 5m and 1d klines",
+          "url": "https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=5m"
+        },
+        {
+          "title": "Coindaro — CoinGlass 24h liquidations $2.38B (longs $2.21B, 92.6%) as of 05:54 UTC 21 Nov, just before the Binance low",
+          "url": "https://www.coindaro.com/crypto-liquidations-2-38-billion-bitcoin-september-2024-low/"
+        },
+        {
+          "title": "Bitcoin.com — CoinGlass 24h $2.54B (longs $2.27B, 89.4%; shorts $270.23M; 360,995 traders) in the 24 hours through 2:11 a.m. ET 21 Nov; CoinGlass BTC low $55,126.70",
+          "url": "https://news.bitcoin.com/market-updates/bitcoin-sinks-below-56k-as-arthur-hayes-says-wait-for-the-bailout/"
+        },
+        {
+          "title": "Bitcoin.com — CoinGlass 24h $2.67B, BTC near $1.3B (published 10:18 a.m. ET 21 Nov); CoinGecko price cited near $55,300",
+          "url": "https://news.bitcoin.com/market-updates/bitcoin-price-rebounds-60k-crash-near-55k-billions-liquidations/"
+        },
+        {
+          "title": "CNBC — Nov 20, 2026: S&P 500 −3.7% to 6,910.39 (7th straight drop, correction); Dow −949.73 (−1.93%) to 48,147.33; Nasdaq −5.28% to 22,617.73; Nvidia about −14%",
+          "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html"
+        },
+        {
+          "title": "Reuters — Wall St ends sharply lower; S&P 500 and Dow in correction; S&P seventh consecutive drop (Nov 20 close)",
+          "url": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-slip-anthropic-104746137.html"
+        },
+        {
+          "title": "Reuters — US SEC probing Nvidia accounting practices (Nov 20)",
+          "url": "https://www.reuters.com/5f374b32b07b/world/us-secs-nvidia-probe-is-examining-potential-accounting-issues-sources-say-2026-11-20/"
+        },
+        {
+          "title": "Alternative.me — Crypto Fear & Greed Index (Nov 21, 2026: 12, Extreme Fear)",
+          "url": "https://alternative.me/crypto/fear-and-greed-index/"
+        },
+        {
+          "title": "Upbit public API — KRW-SHIB ticker and 5-minute candles",
+          "url": "https://api.upbit.com/v1/ticker?markets=KRW-SHIB"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n이 사이트에는 이미 11월 14~15일 주말 저점 $62,006, 11월 19일 S&P 500 −2.02% 6거래일 연속 하락과 비트코인 $62,000 하회(바이낸스 저점 $61,428) 마커가 있습니다. 그 다음 거래일인 미국 시간 11월 20일(금) 정규장에서 증시가 한 번 더 크게 밀렸습니다. CNBC에 따르면 S&P 500은 −3.7%에 6,910.39로 마감했고, 12일부터 세면 일곱 번째 연속 하락이며 사상 최고 종가 대비 10% 이상 내려 ‘조정(correction)’에 들어갔습니다. 다우는 −949.73포인트(−1.93%)에 48,147.33으로 역시 조정, 나스닥 종합은 −5.28%에 22,617.73이었습니다. 같은 날 로이터는 미국 증권거래위원회(SEC)가 엔비디아 회계를 조사 중이라고 전했고, CNBC는 엔비디아가 약 −14% 내렸다고 적었습니다. 이 금요일 증시 급락은 날짜가 달라 별도 마커로 남겨 두는 편이 맞고, 여기에서는 주말 비트코인 저점의 배경으로만 적습니다. 주말 원유는 크게 움직이지 않았습니다. 금요일 WTI는 되레 올랐고, 토요일 시간대 가격은 거의 제자리였습니다.\n\n무슨 일\n비트코인 하락은 금요일 미국 정규장에서 이미 시작됐습니다. 바이낸스 5분봉으로 보면 $60,000을 처음 하회한 것은 한국 시간 21일 00:40(미국 동부 20일 10:40)이고, 정규장 마감 시각인 21일 06:00 종가는 약 $58,386이었습니다. 주말 시간대에 낙폭이 이어져, 21일 15:15 5분봉(시가 $55,729, 종가 $56,017)에서 저점 $55,130.00을 찍었습니다. 1분봉으로 더 좁히면 저점은 15:17(시가 $55,402, 종가 $55,733)입니다. 시간봉으로 보면 15:00 봉의 저점이 $55,130이라, ‘15:00쯤’이라는 표현은 시간봉 기준에는 맞지만 정확한 시각은 15:17입니다.\n\n이 $55,130은 바이낸스 하루 봉 기준으로 2024년 9월 이후 처음입니다. $55,130 이하로 마지막으로 내려갔던 5분봉은 2024년 9월 10일 00:25(저점 $55,104)입니다. 그해 9월의 실제 최저 저점은 9월 6일 $52,550이었습니다. 그래서 ‘2년 최저’, ‘2024년 9월 이후 최저’는 맞고, 9월 저점 자체보다 더 낮다는 뜻은 아닙니다. 11월 15일 저점 $62,006과 11월 19~20일 저점 $61,428은 모두 이보다 높습니다. 20일 09:00 시가 약 $61,987에서 저점까지는 약 −11.1%입니다.\n\n시장·가격에 미친 영향\n청산 규모는 CoinGlass 24시간 창이 언제 끝나느냐에 따라 달라집니다. Coindaro가 사이트에서 읽은 21일 05:54 UTC(한국 시간 14:54, 저점 약 20분 전) 스냅샷은 24시간 약 $23.8억(롱 $22.1억·비중 92.6%, 숏 $1.762억, 청산 계정 343,883개, BTC $10.5억)이었습니다. Bitcoin.com이 전한 동부 21일 오전 2:11(한국 시간 16:11, 저점 직후) 스냅샷은 24시간 약 $25.4억(롱 $22.7억·비중 89.4%, 숏 $2.702억, 360,995명)이고, 같은 글이 적은 CoinGlass 비트코인 저점 $55,126.70은 바이낸스 $55,130과 거의 같습니다. 같은 날 동부 오전 10:18에 나온 다른 Bitcoin.com 기사는 24시간 청산을 $26.7억, 이 중 BTC를 약 $13억으로 적었습니다. 숫자를 하나로 합치지 않았습니다.\n\n같은 15:15 5분봉(1분봉 15:17)에서 SHIB는 저점 0.00000337을 찍었습니다. 11월 15일 저점 0.00000370은 이미 20일 11:30(저점 0.00000369)에 깨졌고, 20일 하루 저점은 0.00000348이었습니다. 0.00000337은 그 아래이자, 바이낸스 하루 봉 기준으로 2021년 5월 10일 상장 이후 최저입니다. 21일 09:00 시가 약 0.00000358에서 저점까지는 약 −5.9%입니다. 업비트 KRW-SHIB도 같은 15:15 봉에서 저점 0.00466원으로, 시세에 적힌 52주 최저와 같습니다.\n\n23일 09:30(한국 시간) 바이낸스 5분봉 종가는 비트코인 $61,345(고점 $61,464), SHIB는 0.00000359였습니다. 저점 $55,130에서 09:30 종가까지는 약 +11.3% 되돌렸습니다. ‘약 $61,400’은 이 시각의 대략값이고, 09:35 종가는 $61,275이었습니다. Alternative.me 공포·탐욕 지수는 21일 12(극단적 공포)였고, 22일과 23일은 11입니다. 일부 글이 전한 ‘8’은 이 공식 지수와 다르며, 여기서는 Alternative.me 숫자를 씁니다. 주간 암호화폐 시가총액이 ‘약 $1,120억’ 줄었다는 주장은 출처·시점마다 기준이 달라 확인하지 못해 적지 않았습니다. 시바 단독 소식은 확인되지 않았고, 비트코인과 같은 시각에 같이 밀린 모습입니다.",
+      "learn_points_ko": [
+        "시간봉 저점 시각과 5분·1분봉 저점 시각은 다를 수 있습니다. ‘15:00쯤 $55,130’은 15:00 시간봉에는 맞지만, 바이낸스 1분봉 저점은 15:17이었습니다.",
+        "‘2년 최저’나 ‘몇 월 이후 최저’는 직전 저점 날짜를 같이 보는 편이 안전합니다. $55,130 이하 마지막 5분봉은 2024년 9월 10일 00:25($55,104)이고, 그달의 실제 최저 저점은 9월 6일 $52,550이었습니다.",
+        "청산과 공포 지수는 출처·집계 시각을 적어야 합니다. CoinGlass 24시간 합계는 저점 직전 약 $23.8억, 직후 약 $25.4억~$26.7억으로 달랐고, Alternative.me 공포·탐욕 지수는 21일 12이지 ‘8’이 아니었습니다."
+      ],
+      "learn_if_again_ko": "주말 급락 소식을 월요일에 듣게 되면, ① 바이낸스 5분·1분봉으로 저점 시각과 금요일 정규장 마감 가격 대비 추가 낙폭, ② ‘몇 년 최저’는 직전 저점 날짜, ③ 청산은 기사 시각과 롱/전체 구분, ④ 공포 지수는 Alternative.me처럼 출처를 확인해 보세요. 금요일 증시 급락과 토요일 암호화폐 저점은 날짜를 나눠 보는 편이 덜 헷갈립니다.",
+      "similar_event_ids": [
+        "btc-62k-low-nov-2026",
+        "spx-sixth-day-btc-62k-nov-2026",
+        "btc-70k-break-nov-2026",
+        "nvidia-ceo-resignation-nov-2026",
+        "btc-flash-crash-nov-2026"
+      ],
+      "then_vs_now_ko": "11월 15일 주말 저점은 $62,006, 11월 19일(한국 시간 20일) 저점은 $61,428이었습니다. 이번 11월 21일 15:17 저점 $55,130은 그 두 저점을 모두 하회하고, 바이낸스 기준으로는 2024년 9월 이후 처음인 수준입니다. 금요일 미국 증시의 일곱 번째 연속 하락·조정 진입은 20일(미국 시간) 정규장 일이고, $55,130은 그 마감 이후 주말 시간대에 나온 저점입니다. 두 구간을 같은 날의 숫자로 섞지 않고 날짜를 나눠 보았습니다.",
+      "angles_ko": {
+        "price_market": "바이낸스 BTC 저점 $55,130(21일 15:15 5분봉, 1분봉 15:17). 금요일 미국 개장 시가 약 $62,106→마감 약 $58,386, 이후 주말에 $55,130. 23일 09:30 종가 $61,345. SHIB 같은 시각 저점 0.00000337(11월 15일 0.00000370 하회, 상장 이후 최저). 업비트 같은 15:15 저점 0.00466원.",
+        "news_reg": "배경은 미국 시간 20일 증시 급락(S&P −3.7%로 조정 진입, 나스닥 −5.28%, 엔비디아 약 −14%·SEC 회계 조사 보도)입니다. 청산은 CoinGlass 스냅샷으로 저점 직전 약 $23.8억, 직후 약 $25.4억~$26.7억. Alternative.me 공포·탐욕 지수는 21일 12입니다.",
+        "shib_vs_btc_macro": "시바 단독 이슈가 아닙니다. 비트코인 2년 최저와 같은 1분(15:17)에 SHIB도 상장 이후 최저까지 같이 밀린 간접 영향 구간입니다."
+      },
+      "further_reading": [
+        {
+          "title": "Coindaro — CoinGlass liquidations $2.38B as of 05:54 UTC 21 Nov",
+          "url": "https://www.coindaro.com/crypto-liquidations-2-38-billion-bitcoin-september-2024-low/",
+          "why_ko": "바이낸스 저점 직전의 CoinGlass 24시간 스냅샷(롱 $22.1억)을 시각과 함께 확인할 수 있습니다."
+        },
+        {
+          "title": "Bitcoin.com — $2.54B liquidations through 2:11 a.m. ET 21 Nov",
+          "url": "https://news.bitcoin.com/market-updates/bitcoin-sinks-below-56k-as-arthur-hayes-says-wait-for-the-bailout/",
+          "why_ko": "저점 직후 스냅샷(약 $25.4억, 롱 $22.7억)과 CoinGlass가 적은 저점 $55,126.70을 대조할 수 있습니다."
+        },
+        {
+          "title": "CNBC — Stock market news for Nov. 20, 2026",
+          "url": "https://www.cnbc.com/2026/11/19/stock-market-today-live-updates.html",
+          "why_ko": "S&P 500 조정 진입, 7거래일 연속 하락, 나스닥·엔비디아 수치를 원문에서 확인할 수 있습니다."
+        },
+        {
+          "title": "Alternative.me — Crypto Fear & Greed Index",
+          "url": "https://alternative.me/crypto/fear-and-greed-index/",
+          "why_ko": "21일 공식 값은 12(극단적 공포)입니다. ‘8’과 구분해 볼 수 있습니다."
         }
       ],
       "pre_chart": null
