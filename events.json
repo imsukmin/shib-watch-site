@@ -1,9 +1,9 @@
 {
-  "generated_at_kst": "2026-11-23 09:40",
+  "generated_at_kst": "2026-11-24 09:35",
   "timezone_note": "Event dates are calendar dates as reported (mostly US/ME/Asia news days). Chart overlays use UTC midnight of start/end unless noted. Prices come only from Binance klines CSV — never invented.",
   "data_choice": "Chart uses daily (1d) candles for 2017-08-17 → 2026-09-27 (~3.3k points) with rangeslider. Full-span hourly (~75k) would make Plotly HTML too heavy; hourly CSV kept for recent 1y (btc_usdt_1h_recent.csv) and original 2026 window (btc_usdt_1h.csv).",
   "hormuz_blockade_verdict": "NO single official 'Hormuz permanently sealed to all shipping' event; YES severe multi-month disruption from 2026-02-28 with Iranian transit warnings/attacks and a US naval blockade of Iranian ports. Traffic fell from ~125/day prewar to single digits at times in September 2026.",
-  "event_count": 125,
+  "event_count": 126,
   "events": [
     {
       "id": "bitcoin-whitepaper-2008",
@@ -6524,9 +6524,10 @@
         "us-cpi-oct-2026",
         "msci-strategy-exclusion-nov-2026",
         "btc-70k-break-nov-2026",
-        "spx-correction-nvda-sec-nov-2026"
+        "spx-correction-nvda-sec-nov-2026",
+        "nvidia-ceo-reinstated-nov-2026"
       ],
-      "then_vs_now_ko": "2023년 5월 엔비디아 실적 발표는 AI 투자 기대를 키운 사례로 이 사이트에 마커가 있습니다. 2025년 1월 DeepSeek 쇼크와 2026년 11월 5일 미국 기술주 급락은, 엔비디아를 중심으로 한 AI 주식 충격이 위험자산 분위기를 흔든 최근 사례입니다. 이번 11월 12일은 실적이나 규제 우려가 아니라, 창업자 겸 최고경영자의 즉시 사임이 공식 확인된 날입니다. 같은 주에는 이미 CPI·비트코인 급락·MSCI 스트래티지 제외 마커가 있습니다. 다음 날(한국 시간 11월 13일) 비트코인은 $70,000을 하회했고, 그 구간은 별도 마커로 적어 두었습니다. 그로부터 일주일 뒤인 11월 20일에는 SEC의 엔비디아 회계 조사 보도와 함께 주가가 −14.01% 내렸고, 그 구간은 별도 마커로 적어 두었습니다.",
+      "then_vs_now_ko": "2023년 5월 엔비디아 실적 발표는 AI 투자 기대를 키운 사례로 이 사이트에 마커가 있습니다. 2025년 1월 DeepSeek 쇼크와 2026년 11월 5일 미국 기술주 급락은, 엔비디아를 중심으로 한 AI 주식 충격이 위험자산 분위기를 흔든 최근 사례입니다. 이번 11월 12일은 실적이나 규제 우려가 아니라, 창업자 겸 최고경영자의 즉시 사임이 공식 확인된 날입니다. 같은 주에는 이미 CPI·비트코인 급락·MSCI 스트래티지 제외 마커가 있습니다. 다음 날(한국 시간 11월 13일) 비트코인은 $70,000을 하회했고, 그 구간은 별도 마커로 적어 두었습니다. 그로부터 일주일 뒤인 11월 20일에는 SEC의 엔비디아 회계 조사 보도와 함께 주가가 −14.01% 내렸고, 그 구간은 별도 마커로 적어 두었습니다. 11일 뒤인 11월 23일, 이사회는 황을 CEO로 복귀시켰고 그 구간은 별도 마커로 적어 두었습니다.",
       "angles_ko": {
         "price_market": "NVDA: 11월 11일 시간외 오후 8시 약 −8.6%($158.78), 12일 시가 $151.01(약 −13.1%)·저점 $148.80(약 −14.4%)·종가 $166.19(약 −4.3%). 바이낸스 5분봉: 한국 시간 20:00 BTC 약 $73,464→13일 00:00 저점 $71,255(약 −3.0%), 23:20에 $72k 하회. SHIB 약 0.00000431→0.00000422(약 −2.1%, 22:10).",
         "news_reg": "엔비디아 뉴스룸(11월 12일)과 SEC 8-K(최초 사건일 11월 11일, 제출일 12일)로 사임·임시 CEO(크레스)·초대 의장(존스)을 확인합니다. 사임 사유는 회사 발표문에 없고, 배경 보도는 WSJ·NYT·CNBC를 참고합니다.",
@@ -6864,9 +6865,10 @@
         "btc-55k-low-nov-2026",
         "nvidia-ceo-resignation-nov-2026",
         "us-equity-ai-selloff-nov-2026",
-        "btc-62k-low-nov-2026"
+        "btc-62k-low-nov-2026",
+        "nvidia-ceo-reinstated-nov-2026"
       ],
-      "then_vs_now_ko": "11월 19일 마커는 S&P 500 −2.02% 여섯 거래일 연속 하락과 비트코인 $62,000 하회($61,428)까지입니다. 이번 11월 20일은 그 다음 거래일로, S&P 500이 −3.7% 내리며 조정에 들어갔고 나스닥이 −5.28% 내린 날입니다. 엔비디아 CEO 사임은 12일 마커에 있고, 이날은 그 일주일 뒤 SEC 회계 조사 보도와 −14.01% 하락입니다. 비트코인 $55,130은 정규장 마감 이후 21일 주말 시간대의 저점으로, 별도 마커에 적었습니다.",
+      "then_vs_now_ko": "11월 19일 마커는 S&P 500 −2.02% 여섯 거래일 연속 하락과 비트코인 $62,000 하회($61,428)까지입니다. 이번 11월 20일은 그 다음 거래일로, S&P 500이 −3.7% 내리며 조정에 들어갔고 나스닥이 −5.28% 내린 날입니다. 엔비디아 CEO 사임은 12일 마커에 있고, 이날은 그 일주일 뒤 SEC 회계 조사 보도와 −14.01% 하락입니다. 비트코인 $55,130은 정규장 마감 이후 21일 주말 시간대의 저점으로, 별도 마커에 적었습니다. 그 다음 거래일(미국 시간 11월 23일) 이사회가 젠슨 황을 CEO로 복귀시켰고, 엔비디아 종가는 +31.48%였습니다. 그 구간은 별도 마커로 적어 두었습니다.",
       "angles_ko": {
         "price_market": "S&P 500 −3.7%에 6,910.39(7거래일 연속 하락, 조정 진입), 다우 −949.73포인트에 48,147.33(조정), 나스닥 −5.28%에 22,617.73, 나스닥 100 −5.61%에 25,028.98(장중 약세장, 종가는 최고 종가 대비 약 −19.8%). 엔비디아 −14.01%에 $125.53, AMD −13.25%, 마이크론 −13.89%. 주간 다우 약 −8%, 나스닥 약 −10%, S&P 약 −8.6%.",
         "news_reg": "로이터가 SEC의 엔비디아 회계 조사를 보도한 뒤 엔비디아 낙폭이 커졌습니다. CNBC는 앤트로픽 상장 다음 날 인공지능 주식 차익 실현, 엔비디아 사임·실적 이후에도 부담이 이어진 점을 배경으로 적었습니다.",
@@ -6980,6 +6982,102 @@
           "title": "Alternative.me — Crypto Fear & Greed Index",
           "url": "https://alternative.me/crypto/fear-and-greed-index/",
           "why_ko": "21일 공식 값은 12(극단적 공포)입니다. ‘8’과 구분해 볼 수 있습니다."
+        }
+      ],
+      "pre_chart": null
+    },
+    {
+      "id": "nvidia-ceo-reinstated-nov-2026",
+      "title_ko": "젠슨 황 엔비디아 CEO 복귀 (NVDA +31%)",
+      "title_en": "Jensen Huang reinstated as Nvidia CEO (NVDA +31%)",
+      "start": "2026-11-23",
+      "end": "2026-11-23",
+      "category": "equity",
+      "severity": 4,
+      "summary_ko": "엔비디아 이사회가 젠슨 황을 사장·CEO·이사로 복귀시켰다. 증권거래위원회(SEC) 8-K는 이사회 결정을 11월 22일로 적고, 발표·제출은 23일이다. 8-K 제출 시각은 동부 08:57:54(한국 시간 22:57)이다. 임시 CEO를 맡았던 콜레트 크레스는 최고재무책임자(CFO)로 남는다. 엔비디아 공식 시세 기준 23일 정규장 종가는 $165.05로, 전일 종가 $125.53 대비 +$39.52(+31.48%), 고점 $171.50, 저점 $156.93이었다. ‘하루 30% 이상’은 정규장 종가 기준이며, 고점 기준으로는 전일 종가 대비 약 +36.6%다. 트럼프 대통령은 이사회가 ‘옳고 적절한 결정’을 했다고 밝혔고, CNBC 인터뷰에서는 이사회와 대화해 ‘설득했다’고 했다. 같은 시각 바이낸스 비트코인은 22:54 종가 $61,126에서 23:27 고점 $64,603까지 약 +5.7% 올랐고, ‘약 $63k’는 22:57~22:59 구간의 중간 가격이다. 24일 09:30 종가는 $61,176으로, 급등분은 대부분 되돌려졌다.",
+      "sources": [
+        {
+          "title": "NVIDIA Newsroom — Board Reinstates Jensen Huang as President, CEO and Board Director (Nov 23, 2026)",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
+        },
+        {
+          "title": "SEC Form 8-K — NVIDIA Corporation (earliest event Nov 22, 2026; filed Nov 23, 2026, 08:57:54 ET)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nvda-20261122.htm"
+        },
+        {
+          "title": "NVIDIA Investor Relations — stock quote Nov 23, 2026: close $165.05 (+31.48%), open $167.03, high $171.50, low $156.93, previous close $125.53",
+          "url": "https://investor.nvidia.com/stock-info/stock-quote-and-chart/default.aspx"
+        },
+        {
+          "title": "CNBC — Jensen Huang reinstated as Nvidia CEO; stock skyrockets 31%; Trump comments (Nov 23, 2026)",
+          "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html"
+        },
+        {
+          "title": "CNBC — Stock market news for Nov. 23, 2026: S&P 500 +4.73% to 7,237.17; Nasdaq +6.51% to 24,089.56; Dow +1,447.98 (+3.01%) to 49,595.31",
+          "url": "https://www.cnbc.com/2026/11/22/stock-market-today-live-updates.html"
+        },
+        {
+          "title": "Binance public API — BTCUSDT/SHIBUSDT 1m and 5m klines",
+          "url": "https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=1m"
+        },
+        {
+          "title": "CryptoSlate — CoinGlass one-hour snapshot Nov 23: market liquidations about $425M, shorts $376.93M; BTC $188.54M",
+          "url": "https://cryptoslate.com/bitcoin-rockets-above-64000-as-nvidia-reinstates-jensen-huang-wiping-out-372-million-in-shorts/"
+        },
+        {
+          "title": "Farside Investors — US spot Bitcoin ETF flows (Nov 23 row still incomplete as of Nov 24; Nov 20 total −669.2)",
+          "url": "https://farside.co.uk/btc/"
+        },
+        {
+          "title": "CFTC Press Release 9331-26 — Staff advisory on crypto assets and financial resources requirements (Nov 23, 2026)",
+          "url": "https://www.cftc.gov/PressRoom/PressReleases/9331-26"
+        },
+        {
+          "title": "Upbit public API — KRW-SHIB ticker and 5-minute candles",
+          "url": "https://api.upbit.com/v1/ticker?markets=KRW-SHIB"
+        }
+      ],
+      "phases": [],
+      "body_ko": "배경\n이 사이트에는 11월 12일 젠슨 황의 사장·CEO·이사 사임(임시 CEO 콜레트 크레스)과, 11월 20일 S&P 500 조정 진입·로이터발 SEC 엔비디아 회계 조사 보도(엔비디아 종가 −14.01%, $125.53) 마커가 있습니다. 그 사이 비트코인은 21일 한국 시간 15:17에 $55,130까지 내려간 적도 있습니다.\n\n무슨 일\n엔비디아 공식 뉴스룸(11월 23일)은 이사회가 만장일치로 젠슨 황을 사장·CEO·이사로 즉시 복귀시켰다고 발표했습니다. SEC 8-K는 ‘최초 사건일’을 11월 22일로 적고, 이사회가 그날 복귀를 즉시 효력으로 결정했다고 적었습니다. 제출 시각은 동부 시간 23일 08:57:54(한국 시간 22:57)입니다. 발표는 미국 정규장 개장(동부 09:30, 한국 시간 23:30) 약 30분 전이었습니다. 크레스는 임시 CEO를 맡은 뒤, 최고재무책임자(CFO)로 남습니다. 하비 C. 존스는 이사회 의장을 유지합니다. 이사회는 미국 정부 고위층의 의견을 들었고, 복귀가 국가안보 위험이 되지 않는다고 본다고 적었습니다. 이와 별개로, 이전에 구성한 독립 이사 조사위원회와 국가안보·수출통제 위원회는 계속 진행되며, 최고준법책임자 신설 공채도 시작한다고 했습니다.\n\n트럼프 대통령은 이사회가 ‘옳고 적절한 결정’을 했다고 밝혔습니다. CNBC 인터뷰에서는 황이 ‘잘못된 일을 하지 않았다’며, 이사회와 직간접으로 대화해 ‘설득했다’, 일요일에 황과도 통화했다고 했습니다.\n\n시장·가격에 미친 영향\n엔비디아 공식 시세(정규장, 동부 오후 4시)로 23일 종가는 $165.05, 전일(20일) 종가 $125.53 대비 +$39.52(+31.48%)입니다. 시가 $167.03, 고점 $171.50, 저점 $156.93이었습니다. ‘하루 30% 이상’은 이 정규장 종가 기준으로 맞습니다. 고점 $171.50은 전일 종가 대비 약 +36.6%입니다. 시간외 초반 보도의 ‘약 +33%, $170 부근’은 고점 부근과 비슷하고, 종가 +31.48%와는 구분해야 합니다. CNBC에 따르면 같은 날 S&P 500은 +4.73%에 7,237.17, 나스닥 종합은 +6.51%에 24,089.56으로 2025년 4월 이후 가장 큰 하루 상승이었고, 다우는 +1,447.98포인트(+3.01%)에 49,595.31이었습니다. 마이크론은 +19%, 코어위브는 +22%, AMD는 거의 +7%였습니다.\n\n바이낸스 1분봉으로 보면, 발표 직전 22:54 종가는 $61,126이었습니다. 22:55부터 오르기 시작해, 8-K 제출과 같은 22:57 봉에서 고점 $63,188·종가 $62,946을 찍었고, 22:59 고점은 $63,899이었습니다. ‘약 $63k’는 이 첫 구간입니다. 고점은 23:27의 $64,603.12이고, 22:54 종가 대비 약 +5.7%입니다. 미국 정규장 개장(23:30) 시가는 약 $64,275였으나, 이후 되돌려져 24일 06:00 종가 $61,250, 09:30 종가 $61,176이었습니다. 11월 23일 UTC 하루 봉도 시가 $61,271, 고점 $64,603, 종가 $61,271로, 급등분은 하루 종가에는 거의 남지 않았습니다.\n\n같은 22:55 구간 SHIB는 시가 0.00000362에서 23:27 고점 0.00000386까지 약 +6.6% 움직였고, 24일 09:30 종가는 0.00000367이었습니다. 업비트 KRW-SHIB도 22:55 시가 0.00494원에서 23:25 고점 0.00523원, 24일 09:30 종가 0.005원이었습니다.\n\n청산 숫자는 창구마다 다릅니다. CryptoSlate가 전한 CoinGlass 1시간 스냅샷(23일)은 전체 약 $4.25억, 숏 $3.769억, 이 중 BTC $1.885억이었습니다. 같은 글 제목의 ‘숏 $3.72억’과는 약간 다릅니다. 다른 집계는 24시간 비트코인 청산 약 $2.66억(숏 비중 84.8%, 약 $2.26억)을 전했습니다. 사전에 전해진 ‘숏 약 $2.5억’은 이 가운데 어느 창과도 정확히 같지 않아, 스냅샷을 구분해 적었습니다.\n\nlookonchain이 전한 ‘11월 23일 현물 비트코인 ETF 순유출 약 $6.46억’은 Farside 표로는 확인되지 않았습니다. 24일 아침 기준 23일 행은 IBIT 등이 비어 있고 일부만 합쳐 −$7370만입니다. 가까운 확정 숫자는 11월 20일 순유출 $6.692억(IBIT −$5.447억)입니다.\n\n같은 날 미국 상품선물거래위원회(CFTC) 직원은, 스왑집행시설·지정계약시장·파생상품청산기관이 비트코인·이더·지급 스테이블코인을 12개월 운영비용 충당 재무 재원으로 계산할 수 있다는 안내를 냈습니다. 20% 이상의 헤어컷이 적용되고, 별도로 요구되는 현금·고유동성 증권 부분은 해당하지 않습니다. 이는 위원회가 만든 새 규칙이 아니라 직원 안내이며, 이날 가격 움직임의 원인으로 단정하지는 않았습니다. 시바 단독 소식은 확인되지 않았고, 엔비디아 발표와 같은 시각에 비트코인과 같이 움직인 모습입니다.",
+      "learn_points_ko": [
+        "공식 결정 날짜와 발표·제출 시각은 다를 수 있습니다. 이사회 결정은 8-K 기준 11월 22일이고, 발표와 SEC 제출은 23일 동부 08:57(한국 시간 22:57)입니다.",
+        "주식 ‘하루 +30%’는 정규장 종가인지, 고점·시간외인지를 나눠 보세요. 엔비디아 종가는 +31.48%($165.05)였고, 고점 $171.50은 전일 종가 대비 약 +36.6%였습니다.",
+        "비트코인 ‘+5.7%, 약 $63k’는 발표 직후 몇 분의 움직임입니다. 고점은 23:27의 $64,603이었고, 다음 날 아침에는 $61,200 부근으로 대부분 되돌려졌습니다. 청산·ETF 숫자도 날짜와 집계 창을 확인해야 합니다."
+      ],
+      "learn_if_again_ko": "경영진 복귀 뉴스가 나오면, ① 공식 뉴스룸과 SEC 8-K에서 결정일·제출 시각을 확인하고, ② 주식은 정규장 종가와 고점을 나누고, ③ 비트코인은 발표 직전 1분봉부터 고점·다음 날 아침 가격까지, ④ 청산과 ETF는 날짜가 맞는 확정 표인지를 봐 주세요.",
+      "similar_event_ids": [
+        "nvidia-ceo-resignation-nov-2026",
+        "spx-correction-nvda-sec-nov-2026",
+        "btc-55k-low-nov-2026",
+        "spx-sixth-day-btc-62k-nov-2026",
+        "us-equity-ai-selloff-nov-2026"
+      ],
+      "then_vs_now_ko": "11월 12일 마커는 젠슨 황의 즉시 사임과 그날 저녁 비트코인 $72,000 하회까지입니다. 11월 20일 마커는 S&P 500 조정 진입과 엔비디아 종가 −14.01%($125.53), SEC 회계 조사 보도까지입니다. 이번 11월 23일은 이사회가 황을 복귀시킨 발표가 나온 날로, 정규장 종가는 $165.05(+31.48%)였습니다. 비트코인은 발표 직후 $64,603까지 올랐다가 다음 날 아침에는 다시 $61,200 부근이었습니다. 사임과 복귀, 금요일 급락과 월요일 반등을 같은 날의 숫자로 섞지 않고 날짜를 나눠 보았습니다.",
+      "angles_ko": {
+        "price_market": "NVDA 정규장 종가 $165.05(+31.48%, 전일 $125.53), 고점 $171.50. S&P 500 +4.73%에 7,237.17, 나스닥 +6.51%에 24,089.56, 다우 +1,447.98포인트에 49,595.31. 바이낸스 BTC는 22:54 종가 $61,126→23:27 고점 $64,603(약 +5.7%), 24일 09:30 종가 $61,176. SHIB 같은 시각 0.00000362→고점 0.00000386, 09:30 종가 0.00000367. 업비트 고점 0.00523원(23:25).",
+        "news_reg": "공식 발표와 8-K로 복귀가 확인됩니다. 결정일은 22일, 발표·제출은 23일 22:57(한국 시간)입니다. 트럼프 대통령은 이사회 결정을 환영하고 설득했다고 했습니다. 같은 날 CFTC 직원 안내는 비트코인·이더를 일부 재무 재원으로 볼 수 있다는 내용이며, 새 규칙이 아닙니다.",
+        "shib_vs_btc_macro": "시바 단독 이슈가 아닙니다. 엔비디아 CEO 복귀 발표와 같은 몇 분 동안 비트코인·SHIB가 같이 올랐고, 다음 날 아침에는 그 급등분이 상당 부분 되돌려졌습니다."
+      },
+      "further_reading": [
+        {
+          "title": "NVIDIA Newsroom — Board reinstates Jensen Huang (Nov 23, 2026)",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+          "why_ko": "복귀 발표문 원문입니다. 임시 CEO였던 크레스가 CFO로 남는다는 점도 여기 있습니다."
+        },
+        {
+          "title": "SEC Form 8-K — earliest event Nov 22, filed Nov 23",
+          "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nvda-20261122.htm",
+          "why_ko": "이사회 결정일을 11월 22일로 적은 공식 제출 문서입니다."
+        },
+        {
+          "title": "CNBC — Huang reinstated; stock +31%; Trump interview",
+          "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
+          "why_ko": "정규장 상승과 트럼프 대통령 발언을 같은 기사에서 확인할 수 있습니다."
+        },
+        {
+          "title": "CFTC Press Release 9331-26 — staff advisory on crypto financial resources",
+          "url": "https://www.cftc.gov/PressRoom/PressReleases/9331-26",
+          "why_ko": "같은 날 나온 직원 안내의 범위와 한계(새 규칙이 아님, 유동성 요건은 제외)를 원문으로 볼 수 있습니다."
         }
       ],
       "pre_chart": null
